@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#0a0a08"/>
+  <polygon points="32,6 52,50 32,40 12,50" fill="#2d6a4f"/>
+  <polygon points="32,12 50,48 32,36 14,48" fill="#3a8c61"/>
+  <circle cx="32" cy="26" r="5" fill="#c9a96e"/>
+  <text x="32" y="58" font-family="Arial,sans-serif" font-size="7" font-weight="bold" fill="#c9a96e" text-anchor="middle" letter-spacing="1">NE</text>
+</svg>

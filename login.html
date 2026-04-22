@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Acceso a tu zona privada Nómada Extremo — logbook, historial, reservas y certificaciones.">
+<title>Acceso | Nómada Extremo</title>
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<style>
+.login-bg {
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, var(--noche) 0%, var(--mar) 100%);
+  padding: 2rem 1rem;
+}
+.login-wrap { width: 100%; max-width: 900px; display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-radius: var(--radio); overflow: hidden; box-shadow: 0 25px 60px rgba(0,0,0,0.4); }
+@media(max-width:768px) { .login-wrap { grid-template-columns: 1fr; } }
+.login-left { background: linear-gradient(160deg, rgba(30,74,107,0.85) 0%, rgba(15,26,19,0.9) 100%), url('assets/images/actividades/familia-montana.jpg') center/cover; padding: 3rem 2.5rem; display: flex; flex-direction: column; justify-content: space-between; }
+.login-right { background: var(--blanco); padding: 3rem 2.5rem; }
+.login-logo { display: flex; align-items: center; gap: 0.7rem; }
+.login-logo img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
+.login-logo-txt { font-family: var(--display); font-size: 1.1rem; letter-spacing: 3px; color: var(--blanco); }
+.login-tagline { font-family: var(--serif); font-style: italic; font-size: 1.1rem; color: rgba(245,242,236,0.8); line-height: 1.75; }
+.login-features { list-style: none; }
+.login-features li { font-size: 0.78rem; color: rgba(200,213,223,0.7); padding: 0.3rem 0; display: flex; gap: 0.6rem; align-items: center; }
+.login-features li::before { content: '✓'; color: var(--arena-claro); font-weight: 700; }
+.login-title { font-family: var(--display); font-size: 1.8rem; letter-spacing: 2px; color: var(--gris-oscuro); margin-bottom: 0.5rem; }
+.login-subtitle { font-size: 0.8rem; color: var(--piedra); margin-bottom: 2rem; }
+.login-input-group { margin-bottom: 1.2rem; }
+.login-input-group label { display: block; font-size: 0.68rem; letter-spacing: 2px; text-transform: uppercase; color: var(--gris-calido); margin-bottom: 0.4rem; font-weight: 600; }
+.login-input-group input {
+  width: 100%; padding: 0.7rem 1rem; background: var(--cielo);
+  border: 1.5px solid var(--cielo-medio); border-radius: var(--radio);
+  font-size: 0.9rem; color: var(--gris-oscuro); font-family: var(--sans);
+  transition: border-color 0.2s; box-sizing: border-box;
+}
+.login-input-group input:focus { outline: none; border-color: var(--mar); background: var(--blanco); }
+.login-sep { border: none; border-top: 1px solid var(--crema-media); margin: 1.5rem 0; }
+.login-tab { display: flex; gap: 0; border: 1px solid var(--crema-media); border-radius: var(--radio); overflow: hidden; margin-bottom: 2rem; }
+.login-tab button { flex: 1; padding: 0.65rem; font-size: 0.68rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; cursor: pointer; border: none; background: var(--blanco); color: var(--piedra); transition: all 0.2s; font-family: var(--sans); }
+.login-tab button.active { background: var(--mar); color: var(--blanco); }
+.admin-badge { background: rgba(196,150,106,0.1); border: 1px dashed var(--arena); border-radius: var(--radio); padding: 0.8rem 1rem; font-size: 0.73rem; color: var(--tierra); line-height: 1.65; margin-top: 1rem; }
+</style>
+</head>
+<body>
+<div class="login-bg">
+  <div class="login-wrap">
+
+    <!-- LEFT: Brand -->
+    <div class="login-left">
+      <div>
+        <div class="login-logo">
+          <img src="assets/images/logo-oficial.png" alt="Nómada Extremo">
+          <div class="login-logo-txt">NÓMADA EXTREMO</div>
+        </div>
+        <p class="login-tagline" style="margin-top:2.5rem;">"Tu aventura, documentada. Tu progresión, trazable."</p>
+      </div>
+      <div>
+        <p style="font-size:0.62rem;letter-spacing:3px;text-transform:uppercase;color:var(--arena-claro);margin-bottom:0.8rem;">Zona privada</p>
+        <ul class="login-features">
+          <li>Historial de actividades y reservas</li>
+          <li>Logbook digital y certificaciones</li>
+          <li>Bonos regalo y créditos</li>
+          <li>Insignias y progresión</li>
+          <li>Valoraciones y comunidad</li>
+          <li>Gestión de contenido (Propietario)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- RIGHT: Form -->
+    <div class="login-right">
+      <div class="login-tab">
+        <button class="active" id="tabLogin" onclick="showTab('login')">Entrar</button>
+        <button id="tabReg" onclick="showTab('reg')">Registrarse</button>
+      </div>
+
+      <!-- LOGIN FORM -->
+      <div id="panelLogin">
+        <div class="login-title">BIENVENIDO</div>
+        <p class="login-subtitle">Accede con tu email y contraseña</p>
+        <div class="login-input-group">
+          <label>Email o usuario</label>
+          <input type="text" id="loginUser" placeholder="hola@nomadaextremo.com">
+        </div>
+        <div class="login-input-group">
+          <label>Contraseña</label>
+          <input type="password" id="loginPass" placeholder="••••••••">
+        </div>
+        <button onclick="handleLogin()" class="btn btn-mar" style="width:100%;margin-top:0.5rem;padding:0.85rem;font-size:0.75rem;letter-spacing:2px;">
+          ACCEDER →
+        </button>
+        <p style="text-align:center;font-size:0.72rem;color:var(--piedra);margin-top:1rem;cursor:pointer;" onclick="alert('Enviaremos un enlace de recuperación a tu email.')">¿Olvidaste tu contraseña?</p>
+        <hr class="login-sep">
+        <div class="admin-badge">
+          <strong style="display:block;font-size:0.65rem;letter-spacing:2px;color:var(--tierra);text-transform:uppercase;margin-bottom:0.3rem;">⚙️ Acceso Propietario (Demo)</strong>
+          Usuario: <code style="background:rgba(196,150,106,0.15);padding:0.1rem 0.4rem;border-radius:4px;">diegodavidextremo</code><br>
+          Contraseña: solo disponible en entorno local de administración.
+          <br><em style="font-size:0.67rem;color:var(--piedra);">Este es un proyecto demo. El sistema de autenticación requiere backend para producción.</em>
+        </div>
+      </div>
+
+      <!-- REGISTRO FORM -->
+      <div id="panelReg" style="display:none;">
+        <div class="login-title">ÚNETE</div>
+        <p class="login-subtitle">Crea tu perfil de aventurero Nómada</p>
+        <div class="login-input-group">
+          <label>Nombre completo</label>
+          <input type="text" placeholder="Tu nombre">
+        </div>
+        <div class="login-input-group">
+          <label>Email</label>
+          <input type="email" placeholder="hola@email.com">
+        </div>
+        <div class="login-input-group">
+          <label>Contraseña</label>
+          <input type="password" placeholder="Mínimo 8 caracteres">
+        </div>
+        <div class="login-input-group">
+          <label>Confirmar contraseña</label>
+          <input type="password" placeholder="Repite tu contraseña">
+        </div>
+        <button onclick="alert('Registro recibido. Recibirás un email de confirmación en breve.')" class="btn btn-bosque" style="width:100%;margin-top:0.5rem;padding:0.85rem;font-size:0.75rem;letter-spacing:2px;">
+          CREAR PERFIL →
+        </button>
+        <p style="font-size:0.68rem;color:var(--piedra);text-align:center;margin-top:1rem;line-height:1.65;">Al registrarte aceptas los <a href="condiciones.html" style="color:var(--mar);">Términos de uso</a> y la <a href="politica-privacidad.html" style="color:var(--mar);">Política de privacidad</a>.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function showTab(tab) {
+  document.getElementById('panelLogin').style.display = tab === 'login' ? 'block' : 'none';
+  document.getElementById('panelReg').style.display   = tab === 'reg'   ? 'block' : 'none';
+  document.getElementById('tabLogin').classList.toggle('active', tab === 'login');
+  document.getElementById('tabReg').classList.toggle('active',   tab === 'reg');
+}
+
+function handleLogin() {
+  const u = document.getElementById('loginUser').value.trim();
+  const p = document.getElementById('loginPass').value.trim();
+  if (u === 'diegodavidextremo' && p === 'arroztresdeliciasconsalsaagridulce88') {
+    alert('✅ Acceso propietario concedido.\n\nBienvenido, Diego David.\n\nNota: Este es un panel demo. El sistema de gestión completo requiere backend en producción.');
+    window.location.href = 'index.html';
+  } else if (u && p.length >= 6) {
+    alert('✅ Acceso simulado correcto.\n\nBienvenido a tu zona privada Nómada Extremo.\n\nNota: Sistema demo — la autenticación real requiere backend.');
+    window.location.href = 'comunidad.html';
+  } else {
+    alert('⚠️ Por favor completa todos los campos correctamente.');
+  }
+}
+</script>
+</body>
+</html>

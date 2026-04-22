@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Preguntas frecuentes Nómada Extremo — todo lo que necesitas saber sobre reservas, actividades, material, seguridad y más.">
+<title>Preguntas Frecuentes | Nómada Extremo</title>
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<style>
+/* ─── FAQ PREMIUM REDESIGN ─── */
+.faq-page { background: var(--blanco); }
+
+.faq-cat-block { margin-bottom: 3.5rem; }
+.faq-cat-header {
+  display: flex; align-items: center; gap: 1rem;
+  margin-bottom: 1.5rem; padding-bottom: 0.8rem;
+  border-bottom: 2px solid var(--cielo-medio);
+}
+.faq-cat-icon { font-size: 1.6rem; }
+.faq-cat-titulo {
+  font-family: var(--display); font-size: 1.5rem; letter-spacing: 3px;
+  color: var(--gris-oscuro);
+}
+.faq-cat-count {
+  font-size: 0.62rem; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--piedra); background: var(--crema); padding: 0.2rem 0.6rem;
+  border-radius: 20px; margin-left: auto;
+}
+
+.faq-item-v2 {
+  border: 1px solid var(--crema-media); border-radius: var(--radio);
+  margin-bottom: 0.6rem; overflow: hidden; transition: box-shadow 0.2s;
+  background: var(--blanco);
+}
+.faq-item-v2:hover { box-shadow: 0 2px 12px rgba(30,74,107,0.08); }
+.faq-item-v2.open  { border-color: var(--mar-claro); box-shadow: 0 3px 18px rgba(30,74,107,0.12); }
+
+.faq-q {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1.1rem 1.5rem; cursor: pointer; gap: 1rem;
+  background: var(--blanco); user-select: none;
+  transition: background 0.15s;
+}
+.faq-q:hover { background: var(--cielo); }
+.faq-item-v2.open .faq-q { background: var(--cielo); }
+
+.faq-q-text {
+  font-size: 0.9rem; font-weight: 500; color: var(--gris-oscuro);
+  line-height: 1.5; flex: 1;
+}
+.faq-item-v2.open .faq-q-text { color: var(--mar); }
+
+.faq-q-icon {
+  width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
+  background: var(--cielo); display: flex; align-items: center; justify-content: center;
+  font-size: 0.9rem; color: var(--mar); transition: all 0.3s;
+  border: 1px solid var(--cielo-medio);
+}
+.faq-item-v2.open .faq-q-icon {
+  background: var(--mar); color: var(--blanco); transform: rotate(45deg);
+  border-color: var(--mar);
+}
+
+.faq-a {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.faq-item-v2.open .faq-a { max-height: 600px; }
+.faq-a-inner {
+  padding: 0 1.5rem 1.3rem 1.5rem;
+  border-top: 1px solid var(--cielo-medio);
+  margin-top: 0;
+}
+.faq-a-inner p {
+  font-size: 0.86rem; color: var(--gris-texto); line-height: 1.9;
+  padding-top: 1rem;
+}
+.faq-a-inner p strong { color: var(--gris-oscuro); font-weight: 600; }
+.faq-a-inner a { color: var(--mar); text-decoration: underline; }
+.faq-a-inner ul {
+  list-style: none; padding: 0.8rem 0 0; display: flex; flex-direction: column; gap: 0.4rem;
+}
+.faq-a-inner ul li {
+  font-size: 0.83rem; color: var(--gris-texto); padding: 0.2rem 0;
+  display: flex; gap: 0.5rem;
+}
+.faq-a-inner ul li::before { content: '—'; color: var(--mar-claro); flex-shrink: 0; }
+
+/* Quick contact */
+.faq-contact-strip {
+  background: linear-gradient(135deg, var(--mar), var(--bosque));
+  border-radius: var(--radio); padding: 2rem; text-align: center;
+  margin-top: 3rem;
+}
+.faq-contact-strip h3 {
+  font-family: var(--display); font-size: 1.4rem; letter-spacing: 2px;
+  color: var(--blanco); margin-bottom: 0.5rem;
+}
+.faq-contact-strip p {
+  font-size: 0.82rem; color: rgba(200,213,223,0.85); margin-bottom: 1.5rem;
+}
+.faq-contact-strip .faq-btns { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<section class="page-hero" style="min-height:50vh;">
+  <div class="page-hero-bg" style="background-image:url('assets/images/actividades/ficha-trekking-crestas.jpg');background-position:center 40%;"></div>
+  <div class="page-hero-gradient"></div>
+  <div class="container page-hero-inner">
+    <nav class="breadcrumb"><ul><li><a href="index.html">Inicio</a></li><li>FAQ</li></ul></nav>
+    <span class="label label-blanco" style="display:block;margin-top:1.5rem;">Todo lo que necesitas saber</span>
+    <h1 class="titulo" style="font-size:clamp(3rem,8vw,6rem);color:var(--blanco);">PREGUNTAS<br><span style="color:var(--arena-claro);">FRECUENTES</span></h1>
+  </div>
+</section>
+
+<!-- FAQ BODY -->
+<section class="bg-blanco faq-page">
+  <div class="container" style="max-width:860px;">
+
+    <!-- RESERVAS -->
+    <div class="faq-cat-block">
+      <div class="faq-cat-header">
+        <div class="faq-cat-icon">📅</div>
+        <div class="faq-cat-titulo">RESERVAS</div>
+        <span class="faq-cat-count">6 preguntas</span>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Cómo puedo reservar una actividad?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Puedes reservar de tres formas: a través del <a href="reservas.html">formulario online</a>, por <strong>WhatsApp</strong> al +34 600 000 000 o por <strong>email</strong> a hola@nomadaextremo.com. Respondemos en menos de 24 horas con confirmación, punto de encuentro y todo lo que necesitas saber.</p></div></div>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Con cuánta antelación debo reservar?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Para actividades individuales recomendamos entre <strong>48 y 72 horas</strong>. Para grupos de más de 6 personas, packs de fin de semana o cursos de la Escuela Nómada, entre <strong>1 y 2 semanas</strong>. En temporada alta (julio-agosto) cuanto antes, mejor.</p></div></div>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Qué formas de pago aceptáis?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">
+          <p>Aceptamos:</p>
+          <ul>
+            <li>Tarjeta bancaria (Visa, Mastercard, Amex)</li>
+            <li>Bizum al +34 600 000 000</li>
+            <li>Transferencia bancaria (hasta 48h para confirmar)</li>
+            <li>Señal del 30% + resto el día (actividades hasta 100€/p)</li>
+            <li>Pago a plazos para cursos superiores a 200€</li>
+            <li>Bonos regalo Nómada Extremo</li>
+            <li>Factura para empresa (indica CIF al reservar)</li>
+          </ul>
+        </div></div>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Puedo cancelar mi reserva?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">
+          <p>Política de cancelación:</p>
+          <ul>
+            <li><strong>+72h de antelación:</strong> Cancelación gratuita o reprogramación sin coste</li>
+            <li><strong>48–72h:</strong> 50% de devolución. El resto puede usarse como crédito</li>
+            <li><strong>Menos de 48h:</strong> Sin devolución, pero puedes ceder tu plaza a otra persona</li>
+            <li><strong>Causa meteorológica:</strong> Siempre se reprograma sin coste. La seguridad es prioritaria</li>
+          </ul>
+        </div></div>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Cómo funciona el check-in digital?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>48 horas antes de tu actividad recibirás un enlace por WhatsApp y email. Desde él confirmas asistencia, completas el formulario de salud y firmas digitalmente el documento de responsabilidad. Al llegar, todo estará listo — sin papeles ni esperas. El punto de encuentro exacto y el contacto de tu guía también llegan por este canal.</p></div></div>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Cómo funcionan los bonos regalo?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Los bonos tienen <strong>12 meses de validez</strong> desde la fecha de emisión. Se canjean por cualquier actividad del catálogo hasta el importe del bono. Si la actividad cuesta menos, la diferencia queda como crédito. Están disponibles en <strong>50€, 100€ y 200€</strong>. Se entregan en formato digital premium por email.</p></div></div>
+      </div>
+    </div>
+
+    <!-- ACTIVIDADES -->
+    <div class="faq-cat-block">
+      <div class="faq-cat-header">
+        <div class="faq-cat-icon">🎯</div>
+        <div class="faq-cat-titulo">ACTIVIDADES</div>
+        <span class="faq-cat-count">6 preguntas</span>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Necesito experiencia previa para participar?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>La mayoría de nuestras actividades están diseñadas para <strong>personas sin experiencia previa</strong>: senderismo, kayak, SUP, bautismo de buceo, paracaidismo tándem o parapente biplaza son perfectas para empezar. Las actividades técnicas como escalada, ferrata o buceo nocturno tienen opciones de iniciación con guía. Rope jumping, puenting y cliff diving requieren validación específica.</p></div></div>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Cuál es la edad mínima?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">
+          <p>Varía por actividad:</p>
+          <ul>
+            <li>Senderismo, kayak suave, SUP: desde <strong>8 años</strong> (con adulto)</li>
+            <li>Bautismo de buceo: desde <strong>10 años</strong> con autorización</li>
+            <li>Open Water: desde <strong>10 años</strong> (Junior OWD)</li>
+            <li>Paracaidismo tándem: <strong>16 años</strong> mínimo, 18 en algunos centros</li>
+            <li>Parapente biplaza: desde <strong>5 años</strong> con autorización parental</li>
+            <li>Rope jumping y puenting: <strong>18 años</strong> y entre 45–110 kg</li>
+          </ul>
+        </div></div>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Qué pasa si el tiempo es malo?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>La seguridad es innegociable. Si las condiciones meteorológicas no son aptas para la actividad, <strong>la salida se pospone o adapta</strong> — nunca se cancela sin alternativa. Revisamos el parte cada mañana y avisamos con la máxima antelación posible. En casos de cancelación por meteorología, la reprogramación es siempre gratuita.</p></div></div>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Las actividades pueden hacerse en privado?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Sí. Todas las actividades del catálogo pueden contratarse en <strong>formato privado</strong>: para parejas, grupos de amigos, familias o equipos. El precio es superior (+30% sobre el precio estándar) pero incluye horario flexible, atención exclusiva y adaptación completa del recorrido. Consulta disponibilidad.</p></div></div>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Dónde se realizan las actividades?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>La base de operaciones es <strong>Águilas, Murcia</strong>. Las actividades marítimas, senderismo, BTT y la mayoría de actividades aéreas se realizan en el litoral y sierra aguileña. El barranquismo y el rafting se desarrollan en zonas fluviales reales de Murcia y Andalucía. El punto de encuentro exacto se comunica al confirmar la reserva.</p></div></div>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Puedo añadir el servicio audiovisual a cualquier actividad?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>La mayoría sí. Puedes contratar grabación GoPro, DJI, Insta360 360°, dron estabilizado o FPV cinemático según la actividad. Las restricciones aplican en actividades con especiales condiciones de seguridad o normativa de drones. Consulta la <a href="audiovisual.html">sección audiovisual</a> para ver qué aplica a tu actividad. Los packs van desde <strong>39€</strong> (raw vía enlace digital) hasta <strong>289€</strong> (FPV total editado).</p></div></div>
+      </div>
+    </div>
+
+    <!-- MATERIAL -->
+    <div class="faq-cat-block">
+      <div class="faq-cat-header">
+        <div class="faq-cat-icon">🦺</div>
+        <div class="faq-cat-titulo">MATERIAL</div>
+        <span class="faq-cat-count">4 preguntas</span>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿El material técnico está incluido en el precio?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Sí, en todas las actividades guiadas el material técnico va incluido: arneses, cascos, equipos de buceo, kayaks, chalecos, etc. Te especificaremos al confirmar qué debes traer tú (generalmente ropa cómoda, calzado adecuado, protector solar y agua).</p></div></div>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Puedo alquilar material por mi cuenta?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Sí, para muchas categorías. Kayaks, tablas SUP, material de ferrata, BTT, equipos de buceo, mochilas y material de vivac están disponibles para alquiler independiente. El equipamiento de <strong>paracaidismo, parapente, paramotor y puenting</strong> no se alquila por libre: siempre va integrado en la experiencia guiada. Consulta el <a href="alquiler.html">catálogo de alquiler completo</a>.</p></div></div>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Qué debo llevar a una actividad?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">
+          <p>Depende de la actividad, pero como regla general:</p>
+          <ul>
+            <li>Ropa cómoda y adaptada a la actividad (sin vaqueros para técnica)</li>
+            <li>Calzado cerrado y seguro (para montaña y vertical, zapatillas de deporte como mínimo)</li>
+            <li>Agua y snack energético</li>
+            <li>Protector solar y gorra</li>
+            <li>Bañador y toalla si hay agua</li>
+            <li>Documentación personal</li>
+          </ul>
+          <p>Al confirmar la reserva recibirás una lista específica para tu actividad.</p>
+        </div></div>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿El material está revisado y en buen estado?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Sí. Todo el material de Nómada Extremo pasa por una <strong>revisión técnica antes de cada entrega</strong>. Cada pieza tiene un código QR con su historial de revisiones, fechas de caducidad y estado de uso. Nada sale del almacén sin pasar ese control. Es parte del sistema de seguridad de la empresa.</p></div></div>
+      </div>
+    </div>
+
+    <!-- SEGURIDAD -->
+    <div class="faq-cat-block">
+      <div class="faq-cat-header">
+        <div class="faq-cat-icon">🛡️</div>
+        <div class="faq-cat-titulo">SEGURIDAD</div>
+        <span class="faq-cat-count">4 preguntas</span>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Las actividades incluyen seguro?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Todas las actividades de Nómada Extremo incluyen un <strong>seguro de accidentes</strong> durante la práctica. Para actividades de alta intensidad (paracaidismo, etc.) el seguro específico está integrado en el precio. Los instructores y guías disponen además de titulación en primeros auxilios específica para su disciplina.</p></div></div>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Tengo que rellenar algún formulario antes?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Sí. Para cualquier actividad guiada necesitas completar la <a href="formularios.html">Ficha de Participación</a> más el Anexo correspondiente a tu disciplina (A para aire, B para buceo, C para vertical, D para barrancos, E para montaña técnica, F para BTT). Las actividades con mayor exigencia técnica requieren además una Validación Especial previa. Todo está centralizado en nuestra <a href="formularios.html">página de formularios</a>.</p></div></div>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Qué pasa si no me siento seguro durante la actividad?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Nunca habrá presión para continuar. El guía evaluará la situación contigo y siempre habrá una salida digna y segura. La seguridad en Nómada Extremo es real, no aparente. Si necesitas parar, paramos.</p></div></div>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Qué condiciones médicas impiden participar?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Depende de la actividad. Algunas condiciones (embarazo, cardiopatías severas, epilepsia no controlada, hernias discales activas) pueden ser incompatibles con actividades de alta intensidad o buceo. El formulario médico previo ayuda al guía a preparar la actividad de forma adecuada. En caso de duda, consúltanos antes de reservar.</p></div></div>
+      </div>
+    </div>
+
+    <!-- ESCUELA -->
+    <div class="faq-cat-block">
+      <div class="faq-cat-header">
+        <div class="faq-cat-icon">🎓</div>
+        <div class="faq-cat-titulo">ESCUELA Y CERTIFICACIONES</div>
+        <span class="faq-cat-count">4 preguntas</span>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Los cursos de buceo dan certificación real?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Sí. Los cursos de buceo de la Escuela Nómada siguen los marcos de certificación <strong>PADI y SSI</strong>, dos de las principales certificadoras del mundo. El Open Water, Advanced, Rescue y Divemaster son reconocidos internacionalmente. En Nómada Extremo trabajamos con orientación preferente hacia SSI, aunque ofrecemos compatibilidad con PADI según el alumno.</p></div></div>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Qué es el Logbook Digital?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Es tu historial personal de aventuras y formación. Cada actividad completada queda registrada con fecha, guía y tipo. Los módulos formativos generan <strong>credenciales digitales con QR verificable</strong> descargables en PDF. También incluye tu mapa de progresión por disciplinas, badges desbloqueados y próximos objetivos. La futura app de Nómada Extremo lo llevará contigo offline.</p></div></div>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Puedo empezar AFF sin haber hecho un tándem?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Sí, aunque recomendamos el tándem previo. El AFF (Accelerated Free Fall) es la vía directa hacia el vuelo autónomo y no requiere obligatoriamente haber hecho un tándem antes, aunque ayuda a entender la experiencia. Consta de 8 niveles de entrenamiento progresivo con instructores RFAE.</p></div></div>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Con qué antelación hay que preinscribirse en un curso?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Los cursos tienen plazas limitadas por nivel y disciplina. Para el Open Water, AFF o cursos técnicos, recomendamos <strong>reservar con 2–4 semanas de antelación</strong>. Para módulos puntuales de la Escuela Nómada, 1 semana puede ser suficiente. Hay lista de espera para las fechas más demandadas.</p></div></div>
+      </div>
+    </div>
+
+    <!-- LÍNEA NATURISTA -->
+    <div class="faq-cat-block">
+      <div class="faq-cat-header">
+        <div class="faq-cat-icon">🌿</div>
+        <div class="faq-cat-titulo">LÍNEA NATURISTA</div>
+        <span class="faq-cat-count">3 preguntas</span>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Qué es la línea naturista de Nómada Extremo?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Es una línea específica, diferenciada y puntual que se realiza <strong>un día al mes o algunos fines de semana concretos</strong>. Consiste en actividades suaves en entornos seleccionados (kayak, SUP, yoga, senderismo, snorkel, meditación, natación) para personas que comparten una filosofía naturista respetuosa y libre. Requiere inscripción y aceptación de las normas de la jornada.</p></div></div>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Se graban o fotografían las actividades naturistas?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p><strong>Por defecto, no.</strong> La grabación audiovisual no está activa en las jornadas naturistas. Solo podría contemplarse bajo protocolo estricto de privacidad, consentimiento escrito explícito de todos los participantes y zonas delimitadas. El cliente debe solicitarlo expresamente y aceptar dicho protocolo. Si tienes dudas, consúltanos.</p></div></div>
+      </div>
+
+      <div class="faq-item-v2">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">¿Qué nivel físico se necesita para las jornadas naturistas?</span>
+          <div class="faq-q-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Las actividades de la línea naturista son <strong>suaves o de baja complejidad técnica</strong>. No se requiere experiencia previa ni condición física especial. El objetivo es la conexión con la naturaleza, no el reto físico. Son jornadas accesibles para adultos de cualquier nivel.</p></div></div>
+      </div>
+    </div>
+
+    <!-- CONTACTO FINAL -->
+    <div class="faq-contact-strip">
+      <h3>¿NO ENCUENTRAS TU RESPUESTA?</h3>
+      <p>El equipo real de Nómada Extremo responde en menos de 2 horas.</p>
+      <div class="faq-btns">
+        <a href="https://wa.me/34600000000" class="btn btn-arena" target="_blank">💬 WhatsApp</a>
+        <a href="contacto.html" class="btn btn-outline-blanco">Formulario de contacto</a>
+        <a href="formularios.html" class="btn" style="background:rgba(255,255,255,0.12);color:white;border:1.5px solid rgba(255,255,255,0.3);font-size:0.68rem;letter-spacing:2px;">📋 Formularios</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="assets/js/components.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/chatbot.js"></script>
+</body>
+</html>

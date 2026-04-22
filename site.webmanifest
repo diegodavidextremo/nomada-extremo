@@ -1,0 +1,12 @@
+{
+  "name": "Nómada Extremo",
+  "short_name": "NómadaExtremo",
+  "description": "Deportes de aventura, naturaleza y formación técnica en Águilas, Murcia",
+  "start_url": "/nomada-extremo/",
+  "display": "standalone",
+  "background_color": "#0a0a08",
+  "theme_color": "#2d6a4f",
+  "icons": [
+    { "src": "assets/icons/favicon.svg", "type": "image/svg+xml", "sizes": "any" }
+  ]
+}

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Centro de Formularios Nómada Extremo — ficha de participación, valoración, anexos por disciplina y validaciones especiales.">
+<title>Formularios y Check-in | Nómada Extremo</title>
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('assets/images/actividades/familia-montana.jpg');background-position:center 40%;"></div>
+  <div class="page-hero-gradient"></div>
+  <div class="container page-hero-inner">
+    <nav class="breadcrumb"><ul><li><a href="index.html">Inicio</a></li><li>Formularios y Check-in</li></ul></nav>
+    <span class="label label-blanco" style="display:block;margin-top:1.5rem;">Sistema documental digital</span>
+    <h1 class="titulo" style="font-size:clamp(3rem,9vw,7rem);color:var(--blanco);">CENTRO DE<br><span style="color:var(--arena-claro);">FORMULARIOS</span></h1>
+    <p style="font-family:var(--serif);font-style:italic;font-size:1.1rem;color:rgba(245,242,236,0.85);max-width:600px;margin-top:1rem;line-height:1.8;">El proceso digital que agiliza tu aventura — sin papel, sin colas, sin esperas en el punto de encuentro.</p>
+  </div>
+</section>
+
+<!-- ═══ FLUJO GENERAL ═══ -->
+<section class="bg-blanco">
+  <div class="container">
+    <span class="label">Cómo funciona</span>
+    <h2 class="titulo">EL PROCESO<br><span class="mar">PASO A PASO</span></h2>
+    <div class="divisor"></div>
+    <p class="texto" style="margin-bottom:3rem;">Los formularios digitales de Nómada Extremo agilizan la parte administrativa y de validación. No sustituyen el contacto humano: lo complementan. Siempre tendrás al equipo disponible para cualquier duda.</p>
+    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:0;position:relative;margin-bottom:3rem;">
+      <!-- Línea de conexión -->
+      <div style="position:absolute;top:18px;left:10%;right:10%;height:2px;background:linear-gradient(to right,var(--mar),var(--arena),var(--bosque));z-index:0;"></div>
+      <div style="text-align:center;position:relative;z-index:1;">
+        <div style="width:36px;height:36px;background:var(--mar);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:1rem;color:white;margin:0 auto 0.6rem;">1</div>
+        <div style="font-size:0.62rem;letter-spacing:1px;text-transform:uppercase;color:var(--gris-calido);line-height:1.4;">Reserva<br>online</div>
+      </div>
+      <div style="text-align:center;position:relative;z-index:1;">
+        <div style="width:36px;height:36px;background:var(--mar-vivo);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:1rem;color:white;margin:0 auto 0.6rem;">2</div>
+        <div style="font-size:0.62rem;letter-spacing:1px;text-transform:uppercase;color:var(--gris-calido);line-height:1.4;">Ficha de<br>participación</div>
+      </div>
+      <div style="text-align:center;position:relative;z-index:1;">
+        <div style="width:36px;height:36px;background:var(--arena);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:1rem;color:white;margin:0 auto 0.6rem;">3</div>
+        <div style="font-size:0.62rem;letter-spacing:1px;text-transform:uppercase;color:var(--gris-calido);line-height:1.4;">Anexo de<br>actividad</div>
+      </div>
+      <div style="text-align:center;position:relative;z-index:1;">
+        <div style="width:36px;height:36px;background:#b83232;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:1rem;color:white;margin:0 auto 0.6rem;">4</div>
+        <div style="font-size:0.62rem;letter-spacing:1px;text-transform:uppercase;color:var(--gris-calido);line-height:1.4;">Validación<br>especial *</div>
+      </div>
+      <div style="text-align:center;position:relative;z-index:1;">
+        <div style="width:36px;height:36px;background:var(--bosque);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:1rem;color:white;margin:0 auto 0.6rem;">5</div>
+        <div style="font-size:0.62rem;letter-spacing:1px;text-transform:uppercase;color:var(--gris-calido);line-height:1.4;">Check-in<br>digital</div>
+      </div>
+      <div style="text-align:center;position:relative;z-index:1;">
+        <div style="width:36px;height:36px;background:var(--salvia);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:1rem;color:white;margin:0 auto 0.6rem;">6</div>
+        <div style="font-size:0.62rem;letter-spacing:1px;text-transform:uppercase;color:var(--gris-calido);line-height:1.4;">Valoración<br>posterior</div>
+      </div>
+    </div>
+    <div class="av-disclaimer">
+      * El paso 4 (Validación especial) solo aplica a actividades de alta exigencia técnica o riesgo específico: cliff diving/jumping, rope jumping, puenting y buceo nocturno o técnico. Si tu actividad no está en esta lista, puedes omitir este paso.
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FORMULARIO GENERAL ═══ -->
+<section class="bg-cielo">
+  <div class="container">
+    <span class="label label-bosque">Paso 1 para casi todas las experiencias</span>
+    <h2 class="titulo">FICHA DE<br><span class="bosque">PARTICIPACIÓN</span></h2>
+    <div class="divisor divisor-mar"></div>
+    <div class="grid-2" style="gap:4rem;align-items:center;margin-top:2.5rem;">
+      <div>
+        <p class="texto" style="margin-bottom:1.5rem;">La Ficha de Participación es el documento base de Nómada Extremo. Recoge tus datos personales, nivel de experiencia, condición física relevante y conformidad con las condiciones generales.</p>
+        <p class="texto" style="margin-bottom:1.5rem;">Puedes rellenarlo antes de tu reserva o en las 48 horas previas a la actividad. Se recomienda completarlo cuanto antes para agilizar el check-in.</p>
+        <div style="display:flex;flex-direction:column;gap:0.6rem;margin-bottom:2rem;">
+          <div style="display:flex;gap:0.8rem;align-items:center;font-size:0.8rem;color:var(--gris-texto);"><span style="color:var(--bosque);font-size:1rem;">✓</span> Necesario para cualquier actividad guiada</div>
+          <div style="display:flex;gap:0.8rem;align-items:center;font-size:0.8rem;color:var(--gris-texto);"><span style="color:var(--bosque);font-size:1rem;">✓</span> Rellenar UNA VEZ — válido para el año en curso</div>
+          <div style="display:flex;gap:0.8rem;align-items:center;font-size:0.8rem;color:var(--gris-texto);"><span style="color:var(--bosque);font-size:1rem;">✓</span> Compatible con reserva individual o de grupo</div>
+          <div style="display:flex;gap:0.8rem;align-items:center;font-size:0.8rem;color:var(--gris-texto);"><span style="color:var(--bosque);font-size:1rem;">✓</span> Datos procesados según RGPD</div>
+        </div>
+        <a href="https://forms.gle/rbgrUiPuMVL5pQnHA" target="_blank" rel="noopener" class="btn btn-bosque" style="display:inline-flex;align-items:center;gap:0.5rem;font-size:0.72rem;">
+          📋 Completar Ficha de Participación →
+        </a>
+      </div>
+      <div class="form-card obligatorio" style="max-width:380px;">
+        <div class="form-card-header">
+          <span class="form-tipo-badge obligatorio">✅ Obligatorio · Paso base</span>
+          <div class="form-icono">📋</div>
+          <div class="form-titulo">FICHA DE PARTICIPACIÓN</div>
+        </div>
+        <div class="form-card-body">
+          <p class="form-desc">Datos personales, nivel de experiencia, condición física, grupos de edad y conformidad con condiciones generales de Nómada Extremo.</p>
+          <p class="form-when">⏱ Rellenar antes de la actividad</p>
+        </div>
+        <div class="form-card-footer">
+          <a href="https://forms.gle/rbgrUiPuMVL5pQnHA" target="_blank" rel="noopener" class="btn-form verde">
+            📋 Abrir formulario
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ANEXOS POR FAMILIA ═══ -->
+<section class="bg-blanco">
+  <div class="container">
+    <span class="label">Después de la ficha general</span>
+    <h2 class="titulo">ANEXOS POR<br><span class="mar">DISCIPLINA</span></h2>
+    <div class="divisor"></div>
+    <p class="texto" style="margin-bottom:0.8rem;">Cada familia de actividades tiene su propio anexo con información específica sobre la disciplina, sus riesgos particulares, requisitos técnicos y condiciones de participación.</p>
+    <p class="texto" style="margin-bottom:3rem;color:var(--mar);font-weight:500;">Completa solo el anexo que corresponde a la actividad que has reservado.</p>
+
+    <div class="grid-3" style="gap:1.2rem;">
+
+      <!-- ANEXO A - AÉREO -->
+      <div class="form-card anexo reveal">
+        <div class="form-card-header">
+          <span class="form-tipo-badge anexo">📎 Anexo A · Aire</span>
+          <div class="form-icono">🪂</div>
+          <div class="form-titulo">ACTIVIDADES AÉREAS</div>
+        </div>
+        <div class="form-card-body">
+          <p class="form-desc">Para paracaidismo (tándem y AFF), parapente (biplaza e iniciación), paramotor y paratrike. Incluye declaración de aptitud médica y reconocimiento de condiciones meteorológicas.</p>
+          <p class="form-when">Para: Paracaidismo · Parapente · Paramotor · Paratrike</p>
+        </div>
+        <div class="form-card-footer">
+          <a href="https://forms.gle/4vFcuUSfDRBPHBva7" target="_blank" rel="noopener" class="btn-form arena">
+            📎 Abrir Anexo A
+          </a>
+        </div>
+      </div>
+
+      <!-- ANEXO B - BUCEO -->
+      <div class="form-card anexo reveal">
+        <div class="form-card-header">
+          <span class="form-tipo-badge anexo">📎 Anexo B · Buceo</span>
+          <div class="form-icono">🤿</div>
+          <div class="form-titulo">BUCEO Y SUBACUÁTICO</div>
+        </div>
+        <div class="form-card-body">
+          <p class="form-desc">Para bautismo de buceo, buceo guiado, snorkel de aventura y cursos de certificación (Open Water, Advanced, Rescue). Declaración médica y aptitud física subacuática.</p>
+          <p class="form-when">Para: Bautismo · Buceo guiado · Open Water · Advanced</p>
+        </div>
+        <div class="form-card-footer">
+          <a href="https://forms.gle/PgF7AqVReKjcvKgN6" target="_blank" rel="noopener" class="btn-form">
+            📎 Abrir Anexo B
+          </a>
+        </div>
+      </div>
+
+      <!-- ANEXO C - VERTICAL -->
+      <div class="form-card anexo reveal">
+        <div class="form-card-header">
+          <span class="form-tipo-badge anexo">📎 Anexo C · Vertical</span>
+          <div class="form-icono">🧗</div>
+          <div class="form-titulo">VERTICAL, ROCA Y CUEVA</div>
+        </div>
+        <div class="form-card-body">
+          <p class="form-desc">Para escalada deportiva y clásica, vías ferratas, rápel y espeleología. Uso de material específico, alturas y entornos de roca. Declaración de vértigo si procede.</p>
+          <p class="form-when">Para: Escalada · Ferrata · Rápel · Espeleología</p>
+        </div>
+        <div class="form-card-footer">
+          <a href="https://forms.gle/cERsa735iKmieYno8" target="_blank" rel="noopener" class="btn-form arena">
+            📎 Abrir Anexo C
+          </a>
+        </div>
+      </div>
+
+      <!-- ANEXO D - BARRANCOS -->
+      <div class="form-card anexo reveal">
+        <div class="form-card-header">
+          <span class="form-tipo-badge anexo">📎 Anexo D · Agua</span>
+          <div class="form-icono">💧</div>
+          <div class="form-titulo">BARRANCOS Y COSTA TÉCNICA</div>
+        </div>
+        <div class="form-card-body">
+          <p class="form-desc">Para barranquismo seco y acuático, rafting, coasteering y kayak técnico. Condición física y aptitud en entornos de agua corriente o mar picado.</p>
+          <p class="form-when">Para: Barranquismo · Rafting · Coasteering · Kayak técnico</p>
+        </div>
+        <div class="form-card-footer">
+          <a href="https://forms.gle/bqHJqWwaiYSrp3FR6" target="_blank" rel="noopener" class="btn-form">
+            📎 Abrir Anexo D
+          </a>
+        </div>
+      </div>
+
+      <!-- ANEXO E - MONTAÑA -->
+      <div class="form-card anexo reveal">
+        <div class="form-card-header">
+          <span class="form-tipo-badge anexo">📎 Anexo E · Montaña</span>
+          <div class="form-icono">⛰️</div>
+          <div class="form-titulo">MONTAÑA TÉCNICA Y VIVAC</div>
+        </div>
+        <div class="form-card-body">
+          <p class="form-desc">Para montañismo técnico, vivac, bushcraft y expediciones de varios días. Material personal, condición física para esfuerzo prolongado y aptitud para entornos remotos.</p>
+          <p class="form-when">Para: Vivac · Bushcraft · Expediciones · Montañismo avanzado</p>
+        </div>
+        <div class="form-card-footer">
+          <a href="https://forms.gle/5jMKKby2JhBG4NSn7" target="_blank" rel="noopener" class="btn-form arena">
+            📎 Abrir Anexo E
+          </a>
+        </div>
+      </div>
+
+      <!-- ANEXO F - BTT -->
+      <div class="form-card anexo reveal">
+        <div class="form-card-header">
+          <span class="form-tipo-badge anexo">📎 Anexo F · BTT</span>
+          <div class="form-icono">🚵</div>
+          <div class="form-titulo">BTT Y CICLOTURISMO</div>
+        </div>
+        <div class="form-card-body">
+          <p class="form-desc">Para BTT técnico, cicloturismo de aventura y experiencias combinadas que incluyan bicicleta. Nivel técnico, equipo de protección y gestión de terrenos irregulares.</p>
+          <p class="form-when">Para: BTT · Cicloturismo · Experiencias combinadas con bici</p>
+        </div>
+        <div class="form-card-footer">
+          <a href="https://forms.gle/dHZhMyUDnBFQ4nSd7" target="_blank" rel="noopener" class="btn-form">
+            📎 Abrir Anexo F
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ VALIDACIONES ESPECIALES ═══ -->
+<section class="bg-gris">
+  <div class="container">
+    <span class="label">Actividades de exigencia máxima</span>
+    <h2 class="titulo">VALIDACIONES<br><span style="color:#b83232;">ESPECIALES</span></h2>
+    <div class="divisor" style="background:linear-gradient(to right,#b83232,transparent);"></div>
+    <div style="background:rgba(196,50,50,0.06);border:1px solid rgba(196,50,50,0.2);border-radius:var(--radio);padding:1.2rem 1.5rem;margin-bottom:2.5rem;">
+      <p style="font-size:0.8rem;color:var(--roca);line-height:1.75;">⚠️ <strong>Estas validaciones son adicionales</strong> a la Ficha de Participación y al Anexo correspondiente. Se requieren específicamente para actividades con mayor riesgo técnico inherente o condiciones de exigencia especial. Sin completar este formulario, no es posible participar en estas modalidades.</p>
+    </div>
+    <div class="grid-3" style="gap:1.2rem;">
+
+      <div class="form-card especial reveal">
+        <div class="form-card-header">
+          <span class="form-tipo-badge especial">🔒 Validación especial</span>
+          <div class="form-icono">🪨</div>
+          <div class="form-titulo">CLIFF DIVING / CLIFF JUMPING</div>
+        </div>
+        <div class="form-card-body">
+          <p class="form-desc">Salto desde acantilado al mar. Requiere experiencia acreditada previa, aptitud física documentada y validación técnica por parte del instructor. No disponible para principiantes bajo ningún concepto.</p>
+          <p class="form-when">⚠️ Solo para participantes con experiencia validada</p>
+        </div>
+        <div class="form-card-footer">
+          <a href="https://forms.gle/4HWCbPCPsL3yJ12N7" target="_blank" rel="noopener" class="btn-form rojo">
+            🔒 Abrir validación Cliff Diving
+          </a>
+        </div>
+      </div>
+
+      <div class="form-card especial reveal">
+        <div class="form-card-header">
+          <span class="form-tipo-badge especial">🔒 Validación especial</span>
+          <div class="form-icono">🪢</div>
+          <div class="form-titulo">ROPE JUMPING Y PUENTING</div>
+        </div>
+        <div class="form-card-body">
+          <p class="form-desc">Saltos con cuerda (rope jumping) y puenting en péndulo. Requiere control de peso (45–110 kg), declaración de ausencia de condiciones contraindicadas y aceptación del protocolo específico.</p>
+          <p class="form-when">Para: Rope jumping · Puenting · Saltos con cuerda</p>
+        </div>
+        <div class="form-card-footer">
+          <a href="https://forms.gle/p1k6kNrCwp2x7JYh7" target="_blank" rel="noopener" class="btn-form rojo">
+            🔒 Abrir validación Rope / Puenting
+          </a>
+        </div>
+      </div>
+
+      <div class="form-card especial reveal">
+        <div class="form-card-header">
+          <span class="form-tipo-badge especial">🔒 Validación especial</span>
+          <div class="form-icono">🌙</div>
+          <div class="form-titulo">BUCEO NOCTURNO Y TÉCNICO</div>
+        </div>
+        <div class="form-card-body">
+          <p class="form-desc">Para inmersiones nocturnas y modalidades de buceo técnico. Requiere certificación Open Water activa como mínimo, equipo de iluminación adecuado y validación por el instructor Laura V.</p>
+          <p class="form-when">Requisito mínimo: certificación Open Water vigente</p>
+        </div>
+        <div class="form-card-footer">
+          <a href="https://forms.gle/5aYRaiHHmgooTEvs8" target="_blank" rel="noopener" class="btn-form rojo">
+            🔒 Abrir validación Buceo Nocturno
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ VALORACIÓN POST-EXPERIENCIA ═══ -->
+<section class="bg-blanco">
+  <div class="container">
+    <div class="grid-2" style="gap:4rem;align-items:center;">
+      <div>
+        <span class="label label-bosque">Después de tu aventura</span>
+        <h2 class="titulo">VALORA TU<br><span class="bosque">EXPERIENCIA</span></h2>
+        <div class="divisor divisor-mar"></div>
+        <p class="texto" style="margin-bottom:1.5rem;">Tu feedback es fundamental para que Nómada Extremo mejore. Cada valoración ayuda a refinar guías, materiales, rutas y servicios para la próxima persona que viva lo que tú acabas de vivir.</p>
+        <p class="texto" style="margin-bottom:2rem;">El formulario es breve, anónimo si lo prefieres, y abierto: puedes contar exactamente cómo fue, qué mejorarías y qué te pareció increíble.</p>
+        <a href="https://forms.gle/xYYVc6xYsJeRiPNy6" target="_blank" rel="noopener" class="btn btn-bosque" style="display:inline-flex;align-items:center;gap:0.5rem;font-size:0.72rem;">
+          ⭐ Valorar mi experiencia →
+        </a>
+      </div>
+      <div class="form-card post" style="max-width:400px;">
+        <div class="form-card-header">
+          <span class="form-tipo-badge post">⭐ Paso final</span>
+          <div class="form-icono">⭐</div>
+          <div class="form-titulo">VALORACIÓN DE EXPERIENCIA</div>
+        </div>
+        <div class="form-card-body">
+          <p class="form-desc">Cuéntanos cómo fue tu aventura en Nómada Extremo. ¿Qué te encantó? ¿Qué mejorarías? ¿Lo recomendarías? Tu opinión importa de verdad.</p>
+          <div style="margin-top:1rem;display:flex;flex-direction:column;gap:0.4rem;">
+            <div style="display:flex;gap:0.5rem;align-items:center;font-size:0.72rem;color:var(--gris-calido);"><span style="color:var(--bosque);">✓</span> Anónimo si lo prefieres</div>
+            <div style="display:flex;gap:0.5rem;align-items:center;font-size:0.72rem;color:var(--gris-calido);"><span style="color:var(--bosque);">✓</span> 2–3 minutos de tiempo</div>
+            <div style="display:flex;gap:0.5rem;align-items:center;font-size:0.72rem;color:var(--gris-calido);"><span style="color:var(--bosque);">✓</span> Ayuda directa al equipo</div>
+          </div>
+          <p class="form-when">⏱ Rellenar tras la actividad · En las primeras 48h</p>
+        </div>
+        <div class="form-card-footer">
+          <a href="https://forms.gle/xYYVc6xYsJeRiPNy6" target="_blank" rel="noopener" class="btn-form verde">
+            ⭐ Abrir formulario de valoración
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GUÍA DE SELECCIÓN ═══ -->
+<section class="bg-crema">
+  <div class="container">
+    <span class="label">No sé cuál me corresponde</span>
+    <h2 class="titulo">GUÍA RÁPIDA<br><span class="mar">DE SELECCIÓN</span></h2>
+    <div class="divisor"></div>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2.5rem;" class="grid-2">
+      <div class="flujo-paso reveal">
+        <div class="flujo-num" style="background:var(--mar);">🤿</div>
+        <div>
+          <div class="flujo-titulo">¿Tu actividad es buceo, snorkel o subacuática?</div>
+          <p class="flujo-desc">Ficha de Participación + Anexo B. Si es nocturna o técnica, también la Validación Especial de Buceo.</p>
+          <a href="https://forms.gle/PgF7AqVReKjcvKgN6" target="_blank" rel="noopener" class="flujo-link">→ Ir al Anexo B</a>
+        </div>
+      </div>
+      <div class="flujo-paso reveal">
+        <div class="flujo-num" style="background:var(--arena);">🪂</div>
+        <div>
+          <div class="flujo-titulo">¿Tu actividad es paracaidismo, parapente o paramotor?</div>
+          <p class="flujo-desc">Ficha de Participación + Anexo A. Siempre.</p>
+          <a href="https://forms.gle/4vFcuUSfDRBPHBva7" target="_blank" rel="noopener" class="flujo-link">→ Ir al Anexo A</a>
+        </div>
+      </div>
+      <div class="flujo-paso reveal">
+        <div class="flujo-num" style="background:var(--bosque);">🧗</div>
+        <div>
+          <div class="flujo-titulo">¿Tu actividad es ferrata, escalada, rápel o espeleología?</div>
+          <p class="flujo-desc">Ficha de Participación + Anexo C. Si incluye rope jumping o puenting, también la Validación Especial.</p>
+          <a href="https://forms.gle/cERsa735iKmieYno8" target="_blank" rel="noopener" class="flujo-link">→ Ir al Anexo C</a>
+        </div>
+      </div>
+      <div class="flujo-paso reveal">
+        <div class="flujo-num" style="background:var(--roca);">💧</div>
+        <div>
+          <div class="flujo-titulo">¿Tu actividad es barranquismo, rafting o coasteering?</div>
+          <p class="flujo-desc">Ficha de Participación + Anexo D.</p>
+          <a href="https://forms.gle/bqHJqWwaiYSrp3FR6" target="_blank" rel="noopener" class="flujo-link">→ Ir al Anexo D</a>
+        </div>
+      </div>
+      <div class="flujo-paso reveal">
+        <div class="flujo-num" style="background:var(--tierra);">⛰️</div>
+        <div>
+          <div class="flujo-titulo">¿Es una actividad de montaña básica, senderismo o kayak suave?</div>
+          <p class="flujo-desc">Solo la Ficha de Participación general es suficiente para la mayoría de estos casos.</p>
+          <a href="https://forms.gle/rbgrUiPuMVL5pQnHA" target="_blank" rel="noopener" class="flujo-link">→ Ir a la Ficha general</a>
+        </div>
+      </div>
+      <div class="flujo-paso verde reveal">
+        <div class="flujo-num verde" style="background:var(--bosque);">❓</div>
+        <div>
+          <div class="flujo-titulo">¿No sabes cuál te corresponde?</div>
+          <p class="flujo-desc">Escríbenos por WhatsApp o usa el formulario de contacto. Te indicamos exactamente qué rellenar en menos de 2 horas.</p>
+          <a href="https://wa.me/34600000000" target="_blank" rel="noopener" class="flujo-link">→ Preguntar por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TABLA RESUMEN ═══ -->
+<section class="bg-blanco">
+  <div class="container">
+    <span class="label">Referencia rápida</span>
+    <h2 class="titulo">TABLA DE<br><span class="mar">FORMULARIOS</span></h2>
+    <div class="divisor"></div>
+    <div style="background:var(--blanco);border:1px solid var(--crema-media);border-radius:var(--radio);overflow:hidden;margin-top:2.5rem;">
+      <table style="width:100%;border-collapse:collapse;">
+        <thead>
+          <tr style="background:var(--crema);">
+            <th style="padding:0.9rem 1.2rem;text-align:left;font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-oscuro);">Formulario</th>
+            <th style="padding:0.9rem 1.2rem;text-align:left;font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-oscuro);">Para</th>
+            <th style="padding:0.9rem 1.2rem;text-align:left;font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-oscuro);">Cuándo</th>
+            <th style="padding:0.9rem 1.2rem;text-align:center;font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-oscuro);">Acceso</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--crema-media);">
+            <td style="padding:0.85rem 1.2rem;"><span class="form-tipo-badge obligatorio">Obligatorio</span><div style="font-size:0.82rem;font-weight:500;color:var(--gris-oscuro);margin-top:0.2rem;">Ficha de Participación</div></td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:var(--gris-calido);">Todas las actividades guiadas</td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:var(--gris-calido);">Antes de la actividad (48h)</td>
+            <td style="padding:0.85rem 1.2rem;text-align:center;"><a href="https://forms.gle/rbgrUiPuMVL5pQnHA" target="_blank" rel="noopener" style="font-size:0.68rem;color:var(--mar);text-decoration:underline;">Abrir →</a></td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--crema-media);">
+            <td style="padding:0.85rem 1.2rem;"><span class="form-tipo-badge anexo">Anexo A</span><div style="font-size:0.82rem;font-weight:500;color:var(--gris-oscuro);margin-top:0.2rem;">Actividades Aéreas</div></td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:var(--gris-calido);">Paracaidismo · Parapente · Paramotor</td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:var(--gris-calido);">Con la ficha general</td>
+            <td style="padding:0.85rem 1.2rem;text-align:center;"><a href="https://forms.gle/4vFcuUSfDRBPHBva7" target="_blank" rel="noopener" style="font-size:0.68rem;color:var(--mar);text-decoration:underline;">Abrir →</a></td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--crema-media);">
+            <td style="padding:0.85rem 1.2rem;"><span class="form-tipo-badge anexo">Anexo B</span><div style="font-size:0.82rem;font-weight:500;color:var(--gris-oscuro);margin-top:0.2rem;">Buceo y Subacuático</div></td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:var(--gris-calido);">Buceo · Bautismo · Open Water</td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:var(--gris-calido);">Con la ficha general</td>
+            <td style="padding:0.85rem 1.2rem;text-align:center;"><a href="https://forms.gle/PgF7AqVReKjcvKgN6" target="_blank" rel="noopener" style="font-size:0.68rem;color:var(--mar);text-decoration:underline;">Abrir →</a></td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--crema-media);">
+            <td style="padding:0.85rem 1.2rem;"><span class="form-tipo-badge anexo">Anexo C</span><div style="font-size:0.82rem;font-weight:500;color:var(--gris-oscuro);margin-top:0.2rem;">Vertical, Roca y Cueva</div></td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:var(--gris-calido);">Escalada · Ferrata · Rápel · Espeleología</td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:var(--gris-calido);">Con la ficha general</td>
+            <td style="padding:0.85rem 1.2rem;text-align:center;"><a href="https://forms.gle/cERsa735iKmieYno8" target="_blank" rel="noopener" style="font-size:0.68rem;color:var(--mar);text-decoration:underline;">Abrir →</a></td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--crema-media);">
+            <td style="padding:0.85rem 1.2rem;"><span class="form-tipo-badge anexo">Anexo D</span><div style="font-size:0.82rem;font-weight:500;color:var(--gris-oscuro);margin-top:0.2rem;">Barrancos y Costa Técnica</div></td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:var(--gris-calido);">Barranquismo · Rafting · Coasteering</td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:var(--gris-calido);">Con la ficha general</td>
+            <td style="padding:0.85rem 1.2rem;text-align:center;"><a href="https://forms.gle/bqHJqWwaiYSrp3FR6" target="_blank" rel="noopener" style="font-size:0.68rem;color:var(--mar);text-decoration:underline;">Abrir →</a></td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--crema-media);">
+            <td style="padding:0.85rem 1.2rem;"><span class="form-tipo-badge anexo">Anexo E</span><div style="font-size:0.82rem;font-weight:500;color:var(--gris-oscuro);margin-top:0.2rem;">Montaña Técnica y Vivac</div></td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:var(--gris-calido);">Vivac · Bushcraft · Expedición</td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:var(--gris-calido);">Con la ficha general</td>
+            <td style="padding:0.85rem 1.2rem;text-align:center;"><a href="https://forms.gle/5jMKKby2JhBG4NSn7" target="_blank" rel="noopener" style="font-size:0.68rem;color:var(--mar);text-decoration:underline;">Abrir →</a></td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--crema-media);">
+            <td style="padding:0.85rem 1.2rem;"><span class="form-tipo-badge anexo">Anexo F</span><div style="font-size:0.82rem;font-weight:500;color:var(--gris-oscuro);margin-top:0.2rem;">BTT y Cicloturismo</div></td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:var(--gris-calido);">BTT · Cicloturismo · Combinas con bici</td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:var(--gris-calido);">Con la ficha general</td>
+            <td style="padding:0.85rem 1.2rem;text-align:center;"><a href="https://forms.gle/dHZhMyUDnBFQ4nSd7" target="_blank" rel="noopener" style="font-size:0.68rem;color:var(--mar);text-decoration:underline;">Abrir →</a></td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--crema-media);background:rgba(196,50,50,0.03);">
+            <td style="padding:0.85rem 1.2rem;"><span class="form-tipo-badge especial">🔒 Especial</span><div style="font-size:0.82rem;font-weight:500;color:var(--gris-oscuro);margin-top:0.2rem;">Cliff Diving / Cliff Jumping</div></td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:var(--gris-calido);">Saltos desde acantilado</td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:#b83232;">Solo con validación previa</td>
+            <td style="padding:0.85rem 1.2rem;text-align:center;"><a href="https://forms.gle/4HWCbPCPsL3yJ12N7" target="_blank" rel="noopener" style="font-size:0.68rem;color:#b83232;text-decoration:underline;">Abrir →</a></td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--crema-media);background:rgba(196,50,50,0.03);">
+            <td style="padding:0.85rem 1.2rem;"><span class="form-tipo-badge especial">🔒 Especial</span><div style="font-size:0.82rem;font-weight:500;color:var(--gris-oscuro);margin-top:0.2rem;">Rope Jumping y Puenting</div></td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:var(--gris-calido);">Rope jumping y puenting</td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:#b83232;">Solo con validación previa</td>
+            <td style="padding:0.85rem 1.2rem;text-align:center;"><a href="https://forms.gle/p1k6kNrCwp2x7JYh7" target="_blank" rel="noopener" style="font-size:0.68rem;color:#b83232;text-decoration:underline;">Abrir →</a></td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--crema-media);background:rgba(196,50,50,0.03);">
+            <td style="padding:0.85rem 1.2rem;"><span class="form-tipo-badge especial">🔒 Especial</span><div style="font-size:0.82rem;font-weight:500;color:var(--gris-oscuro);margin-top:0.2rem;">Buceo Nocturno y Técnico</div></td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:var(--gris-calido);">Buceo nocturno y técnico</td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:#b83232;">Requiere cert. OWD activa</td>
+            <td style="padding:0.85rem 1.2rem;text-align:center;"><a href="https://forms.gle/5aYRaiHHmgooTEvs8" target="_blank" rel="noopener" style="font-size:0.68rem;color:#b83232;text-decoration:underline;">Abrir →</a></td>
+          </tr>
+          <tr>
+            <td style="padding:0.85rem 1.2rem;"><span class="form-tipo-badge post">⭐ Post-actividad</span><div style="font-size:0.82rem;font-weight:500;color:var(--gris-oscuro);margin-top:0.2rem;">Valoración de Experiencia</div></td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:var(--gris-calido);">Cualquier actividad completada</td>
+            <td style="padding:0.85rem 1.2rem;font-size:0.75rem;color:var(--bosque);">Tras la actividad (48h)</td>
+            <td style="padding:0.85rem 1.2rem;text-align:center;"><a href="https://forms.gle/xYYVc6xYsJeRiPNy6" target="_blank" rel="noopener" style="font-size:0.68rem;color:var(--bosque);text-decoration:underline;">Abrir →</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SOPORTE -->
+<div class="cta-band" style="background:var(--mar);">
+  <div class="container">
+    <h3 class="cta-band-titulo" style="color:var(--blanco);">¿TIENES DUDAS<br>CON LOS FORMULARIOS?</h3>
+    <p class="cta-band-sub" style="color:rgba(200,213,223,0.85);">El equipo real de Nómada Extremo te orienta en menos de 2 horas. Los formularios agilizan el proceso, pero siempre estamos al otro lado.</p>
+    <div class="cta-band-btns">
+      <a href="https://wa.me/34600000000" class="btn btn-arena" target="_blank">💬 WhatsApp</a>
+      <a href="contacto.html" class="btn btn-outline-blanco">Formulario de contacto</a>
+      <a href="reservas.html" class="btn" style="background:rgba(255,255,255,0.1);color:white;border:1.5px solid rgba(255,255,255,0.3);">Ir a reservas</a>
+    </div>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+<script src="assets/js/components.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/chatbot.js"></script>
+</body>
+</html>
