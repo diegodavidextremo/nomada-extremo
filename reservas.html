@@ -1,494 +1,243 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Reserva online Nómada Extremo — actividades, packs, bonos regalo, check-in digital, firma online y múltiples formas de pago.">
-<title>Reservas | Nómada Extremo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Reserva demo Nómada Extremo: formulario demostrativo por pasos para proyecto académico ficticio. No se realizan cobros ni reservas reales.">
+<meta property="og:title" content="Reserva Demo | Nómada Extremo">
+<meta property="og:description" content="Solicitud simulada de experiencias Nómada Extremo, sin pagos reales.">
+<meta property="og:type" content="website">
+<title>Reservas Demo | Nómada Extremo</title>
 <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 <div id="nav-placeholder"></div>
+
 <section class="page-hero">
   <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80')"></div>
   <div class="page-hero-gradient"></div>
   <div class="container page-hero-inner">
-    <nav class="breadcrumb"><ul><li><a href="index.html">Inicio</a></li><li>Reservas</li></ul></nav>
-    <span class="label label-blanco" style="display:block;margin-top:1.5rem;">Rápido · Seguro · Sin llamadas</span>
-    <h1 class="titulo" style="font-size:clamp(3rem,9vw,7rem);color:var(--blanco);">RESERVA TU<br><span style="color:var(--arena-claro);">AVENTURA</span></h1>
-    <p style="font-family:var(--serif);font-style:italic;font-size:1.2rem;color:rgba(245,242,236,0.85);max-width:600px;margin-top:1rem;line-height:1.8;">100% digital. Confirmación en minutos. Firma online y check-in antes de llegar.</p>
+    <nav class="breadcrumb"><ul><li><a href="index.html">Inicio</a></li><li>Reservas demo</li></ul></nav>
+    <span class="label label-blanco" style="display:block;margin-top:1.5rem;">Modo demo · Sin cobros reales</span>
+    <h1 class="titulo" style="font-size:clamp(3rem,9vw,7rem);color:var(--blanco);">SOLICITUD<br><span style="color:var(--arena-claro);">SIMULADA</span></h1>
+    <p style="font-family:var(--serif);font-style:italic;font-size:1.2rem;color:rgba(245,242,236,0.85);max-width:680px;margin-top:1rem;line-height:1.8;">Formulario demostrativo para proyecto académico. No se realizan reservas, cobros, señales, pagos ni confirmaciones operativas reales.</p>
   </div>
 </section>
 
-<!-- TIPO DE RESERVA -->
 <section class="bg-blanco">
   <div class="container">
-    <span class="label">Elige cómo quieres reservar</span>
-    <h2 class="titulo">¿QUÉ TIPO DE<br><span class="mar">RESERVA?</span></h2>
-    <div class="divisor"></div>
-    <div class="res-tipo-grid" style="margin-top:2.5rem;">
-      <div class="res-tipo reveal" onclick="this.classList.toggle('activo')">
-        <div class="res-tipo-icon">🗓️</div>
-        <div class="res-tipo-nombre">ACTIVIDAD<br>ESTÁNDAR</div>
-        <p class="res-tipo-desc">Elige actividad, fecha, número de personas y confirma. El formato más rápido.</p>
-      </div>
-      <div class="res-tipo reveal" onclick="this.classList.toggle('activo')">
-        <div class="res-tipo-icon">👑</div>
-        <div class="res-tipo-nombre">EXPERIENCIA<br>PRIVADA</div>
-        <p class="res-tipo-desc">Solo tú y tu grupo. Horario a medida, recorrido personalizado, atención exclusiva.</p>
-      </div>
-      <div class="res-tipo reveal" onclick="this.classList.toggle('activo')">
-        <div class="res-tipo-icon">🏢</div>
-        <div class="res-tipo-nombre">GRUPO /<br>EMPRESA</div>
-        <p class="res-tipo-desc">Team building, incentivos, grupos de más de 10 personas. Presupuesto a medida.</p>
-      </div>
-      <div class="res-tipo reveal" onclick="this.classList.toggle('activo')">
-        <div class="res-tipo-icon">📚</div>
-        <div class="res-tipo-nombre">PREINSCRIPCIÓN<br>ESCUELA</div>
-        <p class="res-tipo-desc">Cursos, módulos y certificaciones. Plazas limitadas por nivel y disciplina.</p>
-      </div>
-      <div class="res-tipo reveal" onclick="this.classList.toggle('activo')">
-        <div class="res-tipo-icon">🎁</div>
-        <div class="res-tipo-nombre">BONO<br>REGALO</div>
-        <p class="res-tipo-desc">Compra un bono y regala la experiencia. 12 meses de validez, flexible total.</p>
-      </div>
-      <div class="res-tipo reveal" onclick="this.classList.toggle('activo')">
-        <div class="res-tipo-icon">🎯</div>
-        <div class="res-tipo-nombre">PACK<br>ESPECIAL</div>
-        <p class="res-tipo-desc">Packs combinados con disciplinas múltiples. Mejor precio que actividades sueltas.</p>
-      </div>
+    <div class="notice-card">
+      <strong>Aviso importante:</strong> Nómada Extremo es actualmente un proyecto académico ficticio creado por Diego David Gómez García, alumno de 1.º GMN del IES Europa de Águilas. No realiza reservas, cobros ni actividades reales en este momento. Este formulario solo muestra cómo funcionaría una reserva en una versión real.
     </div>
   </div>
 </section>
 
-<!-- FORMULARIO PRINCIPAL -->
 <section class="bg-crema" id="formulario">
   <div class="container">
-    <span class="label">Formulario de reserva</span>
-    <h2 class="titulo">COMPLETA TU<br><span class="mar">SOLICITUD</span></h2>
+    <span class="label">Reserva por pasos</span>
+    <h2 class="titulo">FORMULARIO<br><span class="mar">DEMOSTRATIVO</span></h2>
     <div class="divisor"></div>
 
-    <!-- STEPPER -->
-    <div class="stepper" style="margin-top:2.5rem;">
-      <div class="step activo">
-        <div class="step-circle">1</div>
-        <div class="step-nombre">Actividad</div>
-      </div>
-      <div class="step-line"></div>
-      <div class="step">
-        <div class="step-circle">2</div>
-        <div class="step-nombre">Participantes</div>
-      </div>
-      <div class="step-line"></div>
-      <div class="step">
-        <div class="step-circle">3</div>
-        <div class="step-nombre">Extras</div>
-      </div>
-      <div class="step-line"></div>
-      <div class="step">
-        <div class="step-circle">4</div>
-        <div class="step-nombre">Pago</div>
-      </div>
-      <div class="step-line"></div>
-      <div class="step">
-        <div class="step-circle">5</div>
-        <div class="step-nombre">Confirmar</div>
-      </div>
+    <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin:2rem 0;">
+      <span class="step-chip activo">1 Tipo</span>
+      <span class="step-chip">2 Familia</span>
+      <span class="step-chip">3 Actividad</span>
+      <span class="step-chip">4 Fecha y nivel</span>
+      <span class="step-chip">5 Audiovisual</span>
+      <span class="step-chip">6 Resumen</span>
+      <span class="step-chip">7 Enviar demo</span>
     </div>
 
-    <form id="formReserva" style="max-width:820px;margin:0 auto;">
-      <div style="background:var(--blanco);border:1px solid var(--crema-media);border-radius:var(--radio);padding:2.5rem;margin-bottom:1.5rem;">
-        <h3 style="font-family:var(--display);font-size:1.2rem;letter-spacing:3px;color:var(--gris-oscuro);margin-bottom:1.5rem;">PASO 1 — ACTIVIDAD Y FECHA</h3>
+    <form id="formReserva" style="max-width:920px;margin:0 auto;">
+      <div class="reserve-step">
+        <h3>Paso 1: tipo de experiencia</h3>
         <div class="form-grupo">
-          <label>Actividad o experiencia *</label>
-          <select required>
-            <option value="">Selecciona actividad o pack...</option>
-            <optgroup label="⛰️ Montaña a pie">
-              <option>Senderismo guiado (25€/p)</option>
-              <option>Trekking · Marcha de montaña (30€/p)</option>
-              <option>Trekking de crestas (40€/p)</option>
-              <option>Montañismo · Ascensiones guiadas (55€/p)</option>
-              <option>Scrambling y trepadas (50€/p)</option>
-              <option>Vivac y travesía — 2 días (85€/p)</option>
-              <option>Bushcraft y supervivencia outdoor (65€/p)</option>
-            </optgroup>
-            <optgroup label="🧗 Vertical · Roca · Cueva">
-              <option>Escalada deportiva iniciación (55€/p)</option>
-              <option>Escalada clásica / tradicional (65€/p)</option>
-              <option>Escalada de varios largos (consultar)</option>
-              <option>Vía ferrata (65€/p)</option>
-              <option>Rápel técnico (50€/p)</option>
-              <option>Rope jumping (65€/p) ⚠️ requiere validación</option>
-              <option>Puenting (70€/p) ⚠️ requiere validación</option>
-              <option>Espeleoaventura horizontal (60€/p)</option>
-              <option>Espeleología vertical (consultar)</option>
-            </optgroup>
-            <optgroup label="🌊 Mar y Costa">
-              <option>Kayak de mar (45€/p)</option>
-              <option>Travesía en kayak (55€/p)</option>
-              <option>Paddle Surf / SUP (35€/p)</option>
-              <option>Snorkel de aventura (30€/p)</option>
-              <option>Coasteering (55€/p)</option>
-              <option>Parasailing (65€/p)</option>
-              <option>Cliff diving / Jumping ⚠️ solo exp. validada (consultar)</option>
-            </optgroup>
-            <optgroup label="🤿 Buceo y Subacuático">
-              <option>Bautismo de buceo (75€/p)</option>
-              <option>Buceo guiado autónomo (65€/p)</option>
-              <option>Buceo nocturno (85€/p) ⚠️ req. OWD</option>
-              <option>Open Water PADI / SSI (350€/p)</option>
-              <option>Advanced Open Water (280€/p)</option>
-              <option>Rescue Diver (450€/p)</option>
-              <option>Especialidad: Fotografía submarina (90€/p)</option>
-              <option>Especialidad: Nitrox (consultar)</option>
-              <option>Divemaster / Dive Guide (consultar)</option>
-            </optgroup>
-            <optgroup label="🪂 Aire">
-              <option>Paracaidismo tándem (195€/p)</option>
-              <option>AFF paracaidismo — curso completo (consultar)</option>
-              <option>Parapente biplaza (85€/p)</option>
-              <option>Paramotor (120€/p)</option>
-              <option>Paratrike (120€/p)</option>
-            </optgroup>
-            <optgroup label="💧 Barrancos · Río · Agua">
-              <option>Barranquismo seco (65€/p)</option>
-              <option>Barranquismo acuático (75€/p)</option>
-              <option>Rafting (45€/p)</option>
-              <option>Descenso de cañones (consultar)</option>
-            </optgroup>
-            <optgroup label="🏄 Foil y Waterman">
-              <option>E-foil — Iniciación (90€/p)</option>
-              <option>Wingfoil — Sesión guiada (100€/p)</option>
-              <option>Jetsurf — Sesión (120€/p)</option>
-              <option>Waterman Training 3 días (320€/p)</option>
-            </optgroup>
-            <optgroup label="🚵 BTT y Cicloturismo">
-              <option>BTT costero litoral (35€/p)</option>
-              <option>BTT técnico interior (45€/p)</option>
-              <option>Cicloturismo de aventura (45€/p)</option>
-            </optgroup>
-            <optgroup label="⚡ Packs especiales">
-              <option>Pack Horizonte Salvaje — Mar + Montaña (95€/p)</option>
-              <option>Pack Costa Vertical — Ferrata + Rápel + Kayak (135€/p)</option>
-              <option>Pack Mar de Acero — Buceo nocturno + Kayak (149€/p)</option>
-              <option>Pack Cielo Nómada — Parapente + Paramotor (185€/p)</option>
-              <option>Pack Abismo Mediterráneo — Barranco + Buceo (139€/p)</option>
-              <option>Pack Trilogía Extrema — Paracaidismo + Buceo + Paramotor (289€/p)</option>
-              <option>Pack Cumbres y Calas — 2 días (175€/p)</option>
-              <option>Pack Inmersión Nómada — OWD + Multiaventura (389€/p)</option>
-              <option>Pack Élite Nómada (349€/p)</option>
-              <option>Pack Aventura Filmada con Audiovisual (199€/p)</option>
-              <option>Experiencia personalizada (consultar precio)</option>
-              <option>Weekend Bruto Murcia — Ferrata+Barrancos+Kayak+Buceo (249€/p)</option>
-              <option>Weekend Élite Aire — Paracaidismo+Parapente biplaza (295€/p)</option>
-              <option>Weekend Waterman — E-foil+Wingfoil+Kitesurf (310€/p)</option>
-              <option>Pack Élite Nómada Extremo — 2 días todo incluido (399€/p)</option>
-              <option>Pack Escuela + Experiencia — Módulo+Actividad (a consultar)</option>
-              <option>Pack Audiovisual Premium — Actividad+Edición FPV (199€/p)</option>
-              <option>Pack Privado Alto Nivel — grupo reducido máx 4p (a consultar)</option>
-            </optgroup>
-            <optgroup label="🌿 Packs Naturistas">
-              <option>Mar en Calma Naturista (55€/p)</option>
-              <option>Sendero y Sol Naturista (65€/p)</option>
-              <option>Paddle & Snorkel Naturista (60€/p)</option>
-              <option>Amanecer Nómada Naturista (45€/p)</option>
-              <option>Día Naturista Activo (85€/p)</option>
-            </optgroup>
-            <optgroup label="🎁 Bonos Regalo">
-              <option>Bono Iniciación (50€)</option>
-              <option>Bono Aventurero (100€)</option>
-              <option>Bono Extremo (200€)</option>
-            </optgroup>
-          </select>
-        </div>
-        <div class="form-fila">
-          <div class="form-grupo"><label>Fecha preferida *</label><input type="date" required></div>
-          <div class="form-grupo"><label>Fecha alternativa</label><input type="date"></div>
-        </div>
-        <div class="form-fila">
-          <div class="form-grupo">
-            <label>Tipo de reserva</label>
-            <select>
-              <option>Grupo abierto</option>
-              <option>Experiencia privada (+30%)</option>
-              <option>Grupo de empresa / equipo</option>
-              <option>Solo — actividad individual</option>
-            </select>
-          </div>
-          <div class="form-grupo">
-            <label>Número de personas *</label>
-            <select required>
-              <option>1 persona</option><option>2 personas</option><option>3 personas</option>
-              <option>4 personas</option><option>5 personas</option><option>6 personas</option>
-              <option>7–10 personas</option><option>11–20 personas</option><option>+20 personas</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-grupo">
-          <label>¿Quieres añadir servicio audiovisual?</label>
-          <select>
-            <option>No, gracias</option>
-            <option>Pack Action Raw — 39€</option>
-            <option>Pack 360 Raw — 49€</option>
-            <option>Pack Dual Cam Raw — 69€</option>
-            <option>Pack Drone Standard Raw — 89€</option>
-            <option>Pack Action Edit — 119€</option>
-            <option>Pack Dual Edit — 149€ (recomendado)</option>
-            <option>Pack Action Total — 149€</option>
-            <option>Pack Dual Total — 189€</option>
-            <option>Consultar disponibilidad FPV</option>
+          <label>Tipo de experiencia *</label>
+          <select id="resTipo" required>
+            <option>Actividad estándar</option>
+            <option>Experiencia privada</option>
+            <option>Pack especial</option>
+            <option>Escuela Nómada</option>
+            <option>Bono regalo</option>
+            <option>Naturista</option>
+            <option>Personalizada</option>
           </select>
         </div>
       </div>
 
-      <div style="background:var(--blanco);border:1px solid var(--crema-media);border-radius:var(--radio);padding:2.5rem;margin-bottom:1.5rem;">
-        <h3 style="font-family:var(--display);font-size:1.2rem;letter-spacing:3px;color:var(--gris-oscuro);margin-bottom:1.5rem;">PASO 2 — TUS DATOS</h3>
-        <div class="form-fila">
-          <div class="form-grupo"><label>Nombre *</label><input type="text" placeholder="Tu nombre" required></div>
-          <div class="form-grupo"><label>Apellidos *</label><input type="text" placeholder="Tus apellidos" required></div>
-        </div>
-        <div class="form-fila">
-          <div class="form-grupo"><label>Email *</label><input type="email" placeholder="tu@email.com" required></div>
-          <div class="form-grupo"><label>Teléfono / WhatsApp *</label><input type="tel" placeholder="+34 600 000 000" required></div>
-        </div>
-        <div class="form-fila">
-          <div class="form-grupo"><label>Fecha de nacimiento</label><input type="date"></div>
-          <div class="form-grupo"><label>Nivel de experiencia</label>
-            <select>
-              <option>Sin experiencia previa</option>
-              <option>Iniciación (1–2 actividades)</option>
-              <option>Medio (experiencia regular)</option>
-              <option>Avanzado (practicante habitual)</option>
-            </select>
-          </div>
-        </div>
+      <div class="reserve-step">
+        <h3>Paso 2: familia</h3>
         <div class="form-grupo">
-          <label>¿Alguna condición médica o física relevante? (opcional)</label>
-          <textarea placeholder="Alergias, lesiones recientes, limitaciones físicas, embarazo... Solo si crees que puede ser importante para la actividad elegida." style="height:80px;"></textarea>
-        </div>
-        <div class="form-grupo">
-          <label>Mensaje o solicitud especial</label>
-          <textarea placeholder="¿Estás celebrando algo? ¿Tienes alguna petición especial? ¿Es sorpresa para alguien?"></textarea>
-        </div>
-      </div>
-
-      <!-- PAGO -->
-      <div style="background:var(--blanco);border:1px solid var(--crema-media);border-radius:var(--radio);padding:2.5rem;margin-bottom:1.5rem;">
-        <h3 style="font-family:var(--display);font-size:1.2rem;letter-spacing:3px;color:var(--gris-oscuro);margin-bottom:1.5rem;">PASO 3 — FORMA DE PAGO</h3>
-        <div style="display:flex;flex-direction:column;gap:0.7rem;margin-bottom:1.5rem;">
-          <div class="pago-option reveal">
-            <div class="pago-icon">💳</div>
-            <div><div class="pago-nombre">Tarjeta bancaria</div><div class="pago-desc">Visa, Mastercard, Amex. Pago seguro online. Importe completo.</div></div>
-          </div>
-          <div class="pago-option reveal">
-            <div class="pago-icon">📱</div>
-            <div><div class="pago-nombre">Bizum</div><div class="pago-desc">Transferencia instantánea al +34 600 000 000. Confirmación en minutos.</div></div>
-          </div>
-          <div class="pago-option reveal">
-            <div class="pago-icon">🏦</div>
-            <div><div class="pago-nombre">Transferencia bancaria</div><div class="pago-desc">IBAN facilitado por email. Hasta 48h para confirmar.</div></div>
-          </div>
-          <div class="pago-option reveal">
-            <div class="pago-icon">💰</div>
-            <div><div class="pago-nombre">Señal + resto el día</div><div class="pago-desc">30% al reservar, 70% restante en el punto de encuentro. Solo para actividades hasta 100€/persona.</div></div>
-          </div>
-          <div class="pago-option reveal">
-            <div class="pago-icon">📅</div>
-            <div><div class="pago-nombre">Pago a plazos (cursos)</div><div class="pago-desc">Para cursos de escuela y packs superiores a 200€. 50% al inscribirse, resto al inicio del curso.</div></div>
-          </div>
-          <div class="pago-option reveal">
-            <div class="pago-icon">🎁</div>
-            <div><div class="pago-nombre">Canjear bono regalo</div><div class="pago-desc">Introduce el código del bono. Si hay diferencia, se abona el resto.</div></div>
-          </div>
-          <div class="pago-option reveal">
-            <div class="pago-icon">🏢</div>
-            <div><div class="pago-nombre">Factura para empresa</div><div class="pago-desc">Indica CIF y razón social en el formulario. Factura en 24h.</div></div>
-          </div>
-        </div>
-        <div class="form-grupo">
-          <label>Modalidad de pago preferida *</label>
-          <select required>
-            <option value="">Selecciona forma de pago...</option>
-            <option>Tarjeta bancaria — pago completo</option>
-            <option>Bizum — pago completo</option>
-            <option>Transferencia bancaria</option>
-            <option>Señal 30% + resto el día</option>
-            <option>Pago a plazos (cursos +200€)</option>
-            <option>Bono regalo — indicar código</option>
-            <option>Factura empresa</option>
+          <label>Familia de actividad *</label>
+          <select id="resFamilia" required>
+            <option>Montaña</option>
+            <option>Vertical</option>
+            <option>Mar y Costa</option>
+            <option>Buceo y Subacuático</option>
+            <option>Aire</option>
+            <option>Barrancos, Río y Agua Interior</option>
+            <option>BTT y Cicloturismo</option>
+            <option>Foil y Waterman</option>
+            <option>Multiaventura y Packs</option>
+            <option>Nómada Naturista</option>
           </select>
         </div>
-        <div class="form-grupo"><label>Código de bono / descuento (si tienes)</label><input type="text" placeholder="NE-XXXX-XXXX"></div>
       </div>
 
-      <!-- POLÍTICA Y FIRMA -->
-      <div style="background:var(--blanco);border:1px solid var(--crema-media);border-radius:var(--radio);padding:2rem;margin-bottom:1.5rem;">
-        <h3 style="font-family:var(--display);font-size:1rem;letter-spacing:3px;color:var(--gris-oscuro);margin-bottom:1.2rem;">POLÍTICA DE CAMBIOS Y CANCELACIÓN</h3>
-        <div style="display:flex;flex-direction:column;gap:0.6rem;margin-bottom:1.5rem;">
-          <div style="display:flex;gap:0.8rem;padding:0.6rem 0.8rem;background:rgba(45,90,61,0.06);border-radius:var(--radio);font-size:0.78rem;align-items:center;">
-            <span style="color:var(--bosque);font-size:1rem;">✅</span><span><strong>+72h de antelación:</strong> Cancelación gratuita o reprogramación sin coste.</span>
-          </div>
-          <div style="display:flex;gap:0.8rem;padding:0.6rem 0.8rem;background:rgba(196,150,106,0.08);border-radius:var(--radio);font-size:0.78rem;align-items:center;">
-            <span style="color:var(--arena);font-size:1rem;">⚠️</span><span><strong>48–72h:</strong> 50% de devolución. El 50% restante puede usarse como crédito para otra fecha.</span>
-          </div>
-          <div style="display:flex;gap:0.8rem;padding:0.6rem 0.8rem;background:rgba(196,50,50,0.06);border-radius:var(--radio);font-size:0.78rem;align-items:center;">
-            <span style="color:#b83232;font-size:1rem;">❌</span><span><strong>Menos de 48h:</strong> Sin devolución, pero puedes ceder tu plaza a otra persona.</span>
-          </div>
-          <div style="display:flex;gap:0.8rem;padding:0.6rem 0.8rem;background:rgba(30,74,107,0.07);border-radius:var(--radio);font-size:0.78rem;align-items:center;">
-            <span style="color:var(--mar);font-size:1rem;">☁️</span><span><strong>Causa meteorológica:</strong> Reprogramación siempre sin coste. La seguridad manda.</span>
-          </div>
+      <div class="reserve-step">
+        <h3>Paso 3: actividad concreta</h3>
+        <div class="form-grupo">
+          <label>Actividad según familia seleccionada *</label>
+          <select id="resActividad" required></select>
         </div>
-        <div style="display:flex;flex-direction:column;gap:0.6rem;">
-          <div style="display:flex;align-items:start;gap:0.7rem;"><input type="checkbox" id="ch1" required style="width:auto;margin-top:3px;"><label for="ch1" style="font-size:0.72rem;color:var(--gris-calido);text-transform:none;letter-spacing:0;">He leído y acepto las <a href="condiciones.html" style="color:var(--mar);">condiciones generales</a> y la política de cancelación.</label></div>
-          <div style="display:flex;align-items:start;gap:0.7rem;"><input type="checkbox" id="ch2" required style="width:auto;margin-top:3px;"><label for="ch2" style="font-size:0.72rem;color:var(--gris-calido);text-transform:none;letter-spacing:0;">Declaro que la información de salud indicada es verídica y que estoy en condiciones físicas aptas para la actividad elegida.</label></div>
-          <div style="display:flex;align-items:start;gap:0.7rem;"><input type="checkbox" id="ch3" required style="width:auto;margin-top:3px;"><label for="ch3" style="font-size:0.72rem;color:var(--gris-calido);text-transform:none;letter-spacing:0;">Acepto la <a href="politica-privacidad.html" style="color:var(--mar);">política de privacidad</a>.</label></div>
+        <p id="familyHint" style="font-size:0.76rem;color:var(--piedra);line-height:1.7;margin-top:0.6rem;"></p>
+      </div>
+
+      <div class="reserve-step">
+        <h3>Paso 4: fecha, personas y nivel</h3>
+        <div class="form-fila">
+          <div class="form-grupo"><label>Fecha</label><input id="resFecha" type="text" value="Próxima disponibilidad simulada"></div>
+          <div class="form-grupo"><label>Personas *</label><select id="resPersonas" required><option>1 persona</option><option>2 personas</option><option>3-4 personas</option><option>5-8 personas</option><option>9-12 personas</option><option>Grupo a consultar</option></select></div>
+        </div>
+        <div class="form-fila">
+          <div class="form-grupo"><label>Nivel *</label><select id="resNivel" required><option>Iniciación</option><option>Intermedio</option><option>Avanzado</option><option>Extremo con validación</option></select></div>
+          <div class="form-grupo"><label>Modalidad</label><select id="resModalidad"><option>Grupo abierto simulado</option><option>Privada simulada</option><option>Curso / escuela</option><option>Pack a medida</option></select></div>
         </div>
       </div>
 
-      <button type="submit" class="btn btn-arena" style="width:100%;font-size:0.8rem;padding:1.1rem;">ENVIAR SOLICITUD DE RESERVA</button>
-      <p style="font-size:0.7rem;color:var(--piedra);text-align:center;margin-top:0.8rem;">Recibirás confirmación por email y WhatsApp en menos de 2h.</p>
-      <div id="reservaMsg" style="display:none;margin-top:1rem;padding:1.2rem;background:rgba(45,90,61,0.08);border:1px solid var(--bosque-claro);border-radius:var(--radio);text-align:center;">
-        <div style="font-family:var(--display);font-size:1.5rem;color:var(--bosque);margin-bottom:0.3rem;">✓ RESERVA RECIBIDA</div>
-        <p style="font-size:0.8rem;color:var(--bosque);">Te confirmamos por email y WhatsApp en menos de 2 horas. ¡Prepárate para la aventura!</p>
+      <div class="reserve-step" id="audiovisual">
+        <h3>Paso 5: extras audiovisuales</h3>
+        <div class="form-grupo">
+          <label>Pack audiovisual</label>
+          <select id="resAudiovisual">
+            <option>Sin audiovisual</option>
+            <option>Pack Recuerdo</option>
+            <option>Pack Pro</option>
+            <option>Pack Extremo</option>
+            <option>Pack Cine Nómada</option>
+            <option>Pack RAW + Editado</option>
+            <option>Sujeto a validación técnica</option>
+          </select>
+        </div>
+        <p style="font-size:0.76rem;color:var(--piedra);line-height:1.7;">El uso de dron o FPV queda sujeto a normativa AESA, zona, permisos, meteorología, privacidad, distancia a personas, espacios protegidos y restricciones locales.</p>
+      </div>
+
+      <div class="reserve-step">
+        <h3>Simulación de método de pago</h3>
+        <div class="notice-card">
+          <strong>Modo demo:</strong> no se solicitan datos bancarios, no se procesa tarjeta, no se usa Bizum y no se realiza ningún cobro real. Cualquier precio mostrado es orientativo para explicar el modelo de negocio del proyecto académico.
+        </div>
+        <div class="form-grupo" style="margin-top:1rem;">
+          <label>Preferencia simulada</label>
+          <select id="resPago">
+            <option>Sin pago, solo solicitud simulada</option>
+            <option>Simulación de tarjeta, sin datos reales</option>
+            <option>Simulación de bono regalo</option>
+            <option>Simulación de presupuesto personalizado</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="reserve-step">
+        <h3>Paso 6: resumen final</h3>
+        <div class="summary-grid">
+          <div class="summary-item"><span>Actividad</span><strong id="sumActividad">Senderismo guiado</strong></div>
+          <div class="summary-item"><span>Fecha</span><strong id="sumFecha">Próxima disponibilidad simulada</strong></div>
+          <div class="summary-item"><span>Personas</span><strong id="sumPersonas">1 persona</strong></div>
+          <div class="summary-item"><span>Modalidad</span><strong id="sumModalidad">Grupo abierto simulado</strong></div>
+          <div class="summary-item"><span>Audiovisual</span><strong id="sumAudiovisual">Sin audiovisual</strong></div>
+          <div class="summary-item"><span>Precio estimado</span><strong id="sumPrecio">Desde 25€ · demo</strong></div>
+          <div class="summary-item"><span>Documentación</span><strong id="sumDocs">Ficha de participación + anexo si procede</strong></div>
+          <div class="summary-item"><span>Cobro real</span><strong>No se realiza ningún cobro real</strong></div>
+        </div>
+      </div>
+
+      <div class="reserve-step">
+        <h3>Paso 7: enviar solicitud simulada</h3>
+        <div class="form-fila">
+          <div class="form-grupo"><label>Nombre de ejemplo *</label><input type="text" placeholder="Nombre para la demo" required></div>
+          <div class="form-grupo"><label>Email de ejemplo *</label><input type="email" placeholder="correo@ejemplo.com" required></div>
+        </div>
+        <div style="display:flex;align-items:start;gap:0.7rem;margin:1rem 0;">
+          <input type="checkbox" id="demoCheck" required style="width:auto;margin-top:5px;">
+          <label for="demoCheck" style="font-size:0.76rem;color:var(--gris-calido);text-transform:none;letter-spacing:0;">Entiendo que esto es una simulación académica, que no estoy reservando una actividad real y que no se realizará ningún cobro.</label>
+        </div>
+        <button type="submit" class="btn btn-arena" style="width:100%;font-size:0.8rem;padding:1.1rem;">Enviar solicitud simulada</button>
+        <div id="reservaMsg" style="display:none;margin-top:1rem;padding:1.2rem;background:rgba(45,90,61,0.08);border:1px solid var(--bosque-claro);border-radius:var(--radio);text-align:center;">
+          <div style="font-family:var(--display);font-size:1.5rem;color:var(--bosque);margin-bottom:0.3rem;">Solicitud demo recibida</div>
+          <p style="font-size:0.8rem;color:var(--bosque);">Mensaje simulado. No se ha creado una reserva real ni se ha realizado ningún pago.</p>
+        </div>
       </div>
     </form>
   </div>
 </section>
 
-<!-- BONOS -->
 <section id="bonos" class="bg-blanco">
   <div class="container">
-    <span class="label">El regalo que no se olvida</span>
-    <h2 class="titulo">BONOS<br><span class="arena">REGALO</span></h2>
+    <span class="label">Bono regalo demo</span>
+    <h2 class="titulo">BONOS<br><span class="arena">SIMULADOS</span></h2>
     <div class="divisor"></div>
-    <p class="texto" style="margin-bottom:3rem;">12 meses de validez. Canjeables por cualquier actividad del catálogo. Se entregan en formato digital premium listo para imprimir o compartir.</p>
+    <p class="texto" style="margin-bottom:2rem;">Los bonos regalo son una propuesta de diseño comercial. No se venden bonos reales ni se cobra ningún importe en esta versión académica.</p>
     <div class="grid-3">
-      <div class="bono-card reveal">
-        <div class="bono-precio">50€</div>
-        <div class="bono-nombre">Bono Iniciación</div>
-        <p class="bono-desc">Senderismo, kayak, snorkel o bautismo de buceo. El primer paso hacia la aventura real.</p>
-        <a href="#formulario" class="btn btn-outline" style="margin-top:1.5rem;display:inline-block;font-size:0.68rem;">Comprar bono →</a>
-      </div>
-      <div class="bono-card popular reveal">
-        <div class="bono-badge">⭐ Más popular</div>
-        <div class="bono-precio">100€</div>
-        <div class="bono-nombre">Bono Aventurero</div>
-        <p class="bono-desc">Jornadas completas y packs combinados. El favorito para cumpleaños, San Valentín y regalos de empresa.</p>
-        <a href="#formulario" class="btn btn-arena" style="margin-top:1.5rem;display:inline-block;font-size:0.68rem;">Comprar bono →</a>
-      </div>
-      <div class="bono-card reveal">
-        <div class="bono-precio">200€</div>
-        <div class="bono-nombre">Bono Extremo</div>
-        <p class="bono-desc">Para paracaidismo, paramotor, packs premium o cursos de la Escuela Nómada.</p>
-        <a href="#formulario" class="btn btn-outline" style="margin-top:1.5rem;display:inline-block;font-size:0.68rem;">Comprar bono →</a>
-      </div>
+      <div class="bono-card reveal"><div class="bono-precio">50€</div><div class="bono-nombre">Bono Iniciación</div><p class="bono-desc">Ejemplo para experiencias suaves.</p></div>
+      <div class="bono-card popular reveal"><div class="bono-badge">Demo</div><div class="bono-precio">100€</div><div class="bono-nombre">Bono Aventurero</div><p class="bono-desc">Ejemplo para jornadas o packs combinados.</p></div>
+      <div class="bono-card reveal"><div class="bono-precio">200€</div><div class="bono-nombre">Bono Extremo</div><p class="bono-desc">Ejemplo para experiencias premium o cursos.</p></div>
     </div>
   </div>
 </section>
-
-<!-- CHECK-IN DIGITAL -->
-<section class="bg-cielo">
-  <div class="container">
-    <div class="grid-2" style="gap:4rem;align-items:center;">
-      <div>
-        <span class="label label-bosque">Proceso sin papel</span>
-        <h2 class="titulo">CHECK-IN<br><span class="bosque">DIGITAL</span></h2>
-        <div class="divisor divisor-mar"></div>
-        <p class="texto" style="margin-bottom:1.5rem;">48 horas antes de tu actividad recibirás un enlace de check-in digital. Sin colas, sin papeles, sin perder tiempo en el punto de encuentro.</p>
-        <div style="display:flex;flex-direction:column;gap:0.7rem;">
-          <div class="pilar"><div class="pilar-num">✅</div><div><strong>Confirmación de asistencia</strong><span>Un clic y listo</span></div></div>
-          <div class="pilar"><div class="pilar-num">📋</div><div><strong>Formulario médico online</strong><span>Cumplimentado antes de llegar</span></div></div>
-          <div class="pilar"><div class="pilar-num">✍️</div><div><strong>Firma digital</strong><span>El documento de responsabilidad firmado desde el móvil</span></div></div>
-          <div class="pilar"><div class="pilar-num">📍</div><div><strong>Punto de encuentro</strong><span>Mapa y hora exacta por WhatsApp</span></div></div>
-          <div class="pilar"><div class="pilar-num">📞</div><div><strong>Contacto del guía</strong><span>Teléfono directo del responsable de tu salida</span></div></div>
-        </div>
-      </div>
-      <div style="background:var(--blanco);border:1px solid var(--crema-media);border-radius:12px;padding:2rem;">
-        <div style="font-family:var(--display);font-size:1.1rem;letter-spacing:3px;color:var(--mar);margin-bottom:1.5rem;">RESUMEN DE RESERVA</div>
-        <div style="display:flex;flex-direction:column;gap:0.7rem;">
-          <div style="display:flex;justify-content:space-between;padding:0.6rem 0;border-bottom:1px solid var(--crema);">
-            <span style="font-size:0.78rem;color:var(--gris-calido);">Actividad</span><span style="font-size:0.8rem;font-weight:600;color:var(--gris-oscuro);">Kayak de Mar</span>
-          </div>
-          <div style="display:flex;justify-content:space-between;padding:0.6rem 0;border-bottom:1px solid var(--crema);">
-            <span style="font-size:0.78rem;color:var(--gris-calido);">Fecha</span><span style="font-size:0.8rem;color:var(--mar);">Sábado 14 Jun 2025</span>
-          </div>
-          <div style="display:flex;justify-content:space-between;padding:0.6rem 0;border-bottom:1px solid var(--crema);">
-            <span style="font-size:0.78rem;color:var(--gris-calido);">Guía asignado</span><span style="font-size:0.8rem;color:var(--gris-oscuro);">Sara R.</span>
-          </div>
-          <div style="display:flex;justify-content:space-between;padding:0.6rem 0;border-bottom:1px solid var(--crema);">
-            <span style="font-size:0.78rem;color:var(--gris-calido);">Audiovisual</span><span style="font-size:0.8rem;color:var(--arena);">Pack Dual Total</span>
-          </div>
-          <div style="display:flex;justify-content:space-between;padding:0.6rem 0;border-bottom:1px solid var(--crema);">
-            <span style="font-size:0.78rem;color:var(--gris-calido);">Personas</span><span style="font-size:0.8rem;color:var(--gris-oscuro);">2</span>
-          </div>
-          <div style="display:flex;justify-content:space-between;padding:0.8rem 0;background:var(--cielo);border-radius:var(--radio);padding:0.8rem 1rem;margin-top:0.3rem;">
-            <span style="font-size:0.8rem;font-weight:600;color:var(--gris-oscuro);">Total estimado</span>
-            <span style="font-family:var(--display);font-size:1.4rem;color:var(--arena);">279€</span>
-          </div>
-        </div>
-        <div style="margin-top:1.2rem;padding:0.7rem;background:rgba(45,90,61,0.08);border-radius:var(--radio);text-align:center;">
-          <span style="font-size:0.7rem;color:var(--bosque);">✓ Check-in digital 48h antes · Confirmación WhatsApp inmediata</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- EMAIL INTEGRATION NOTE
-     To activate automatic email sending to diegodavidexplorer@gmail.com:
-     1. Change form action to: action="https://formsubmit.co/diegodavidexplorer@gmail.com"
-     2. Add: <input type="hidden" name="_subject" value="Nueva reserva — Nómada Extremo">
-     3. Add: <input type="hidden" name="_next" value="https://nomadaextremo.com/gracias.html">
-     4. FormSubmit will send a verification email to the address on first use.
-     5. Full docs: https://formsubmit.co/
-  -->
-<!-- ═══ FORMULARIOS Y ANEXOS ═══ -->
-<section class="bg-cielo">
-  <div class="container">
-    <span class="label label-bosque">Antes de tu actividad</span>
-    <h2 class="titulo">COMPLETA TU<br><span class="bosque">DOCUMENTACIÓN</span></h2>
-    <div class="divisor divisor-mar"></div>
-    <p class="texto" style="margin-bottom:2rem;">Después de reservar, completa tu Ficha de Participación y el Anexo correspondiente a tu actividad. Es el paso previo al check-in digital.</p>
-    <div class="grid-3" style="gap:1rem;margin-bottom:2rem;">
-      <div style="background:var(--blanco);border:1px solid var(--crema-media);border-radius:var(--radio);padding:1.5rem;border-left:3px solid var(--bosque);">
-        <div style="font-size:0.6rem;letter-spacing:3px;text-transform:uppercase;color:var(--bosque);margin-bottom:0.5rem;">✅ Paso 1 · Obligatorio</div>
-        <div style="font-family:var(--display);font-size:1rem;letter-spacing:2px;color:var(--gris-oscuro);margin-bottom:0.5rem;">FICHA DE PARTICIPACIÓN</div>
-        <p style="font-size:0.75rem;color:var(--gris-calido);margin-bottom:1rem;line-height:1.6;">Datos personales, nivel y condición física. Válido para todo el año.</p>
-        <a href="https://forms.gle/rbgrUiPuMVL5pQnHA" target="_blank" rel="noopener" class="btn btn-bosque" style="display:block;text-align:center;font-size:0.65rem;">Completar ficha →</a>
-      </div>
-      <div style="background:var(--blanco);border:1px solid var(--crema-media);border-radius:var(--radio);padding:1.5rem;border-left:3px solid var(--arena);">
-        <div style="font-size:0.6rem;letter-spacing:3px;text-transform:uppercase;color:var(--arena);margin-bottom:0.5rem;">📎 Paso 2 · Según actividad</div>
-        <div style="font-family:var(--display);font-size:1rem;letter-spacing:2px;color:var(--gris-oscuro);margin-bottom:0.5rem;">ANEXO DE DISCIPLINA</div>
-        <p style="font-size:0.75rem;color:var(--gris-calido);margin-bottom:1rem;line-height:1.6;">Hay 6 anexos (A–F). Solo rellenas el que corresponde a tu actividad.</p>
-        <a href="formularios.html" class="btn btn-arena" style="display:block;text-align:center;font-size:0.65rem;">Ver todos los anexos →</a>
-      </div>
-      <div style="background:var(--blanco);border:1px solid var(--crema-media);border-radius:var(--radio);padding:1.5rem;border-left:3px solid var(--salvia);">
-        <div style="font-size:0.6rem;letter-spacing:3px;text-transform:uppercase;color:var(--salvia);margin-bottom:0.5rem;">⭐ Paso final · Opcional</div>
-        <div style="font-family:var(--display);font-size:1rem;letter-spacing:2px;color:var(--gris-oscuro);margin-bottom:0.5rem;">VALORACIÓN</div>
-        <p style="font-size:0.75rem;color:var(--gris-calido);margin-bottom:1rem;line-height:1.6;">Después de la aventura, cuéntanos cómo fue. Nos ayuda a mejorar.</p>
-        <a href="https://forms.gle/xYYVc6xYsJeRiPNy6" target="_blank" rel="noopener" class="btn btn-outline" style="display:block;text-align:center;font-size:0.65rem;">Valorar experiencia →</a>
-      </div>
-    </div>
-    <div style="text-align:center;"><a href="formularios.html" class="btn btn-mar" style="font-size:0.7rem;">Ver centro completo de formularios →</a></div>
-  </div>
-</section>
-
-<div class="cta-band" style="background:var(--mar);">
-  <div class="container">
-    <h3 class="cta-band-titulo" style="color:var(--blanco);">¿PREFIERES HABLARLO<br>DIRECTAMENTE?</h3>
-    <p class="cta-band-sub" style="color:rgba(200,213,223,0.8);">El equipo está disponible 7 días a la semana para ayudarte a diseñar tu aventura ideal.</p>
-    <div class="cta-band-btns">
-      <a href="https://wa.me/34600000000" class="btn btn-arena" target="_blank">💬 WhatsApp</a>
-      <a href="contacto.html" class="btn btn-outline-blanco">Formulario de contacto</a>
-    </div>
-  </div>
-</div>
 
 <div id="footer-placeholder"></div>
 <script src="assets/js/components.js"></script>
 <script src="assets/js/main.js"></script>
+<script>
+const actividadesPorFamilia = {
+  'Montaña': ['Senderismo guiado', 'Trekking de crestas', 'Montañismo', 'Vivac y travesía', 'Bushcraft'],
+  'Vertical': ['Escalada deportiva', 'Vía ferrata', 'Rápel técnico', 'Rope jumping (validación)', 'Puenting (validación)', 'Espeleología'],
+  'Mar y Costa': ['Kayak de mar', 'SUP', 'Snorkel de aventura', 'Coasteering', 'Cliff jumping (validación)'],
+  'Buceo y Subacuático': ['Bautismo de buceo', 'Buceo guiado', 'Open Water PADI/SSI', 'Buceo nocturno (validación)', 'Fotografía submarina'],
+  'Aire': ['Parapente biplaza', 'Paramotor', 'Paratrike', 'Paracaidismo tándem', 'AFF simulado'],
+  'Barrancos, Río y Agua Interior': ['Barranquismo seco', 'Barranquismo acuático', 'Rafting', 'Descenso de cañones'],
+  'BTT y Cicloturismo': ['BTT costero', 'BTT técnico interior', 'Cicloturismo de aventura'],
+  'Foil y Waterman': ['E-foil', 'Wingfoil', 'Kitesurf', 'Windsurf', 'Jetsurf', 'SUP foil', 'Waterman Training'],
+  'Multiaventura y Packs': ['Mar + Montaña', 'Costa Vertical', 'Cielo Nómada', 'Abismo Mediterráneo', 'Experiencia a medida'],
+  'Nómada Naturista': ['Kayak naturista suave', 'SUP y snorkel naturista', 'Senderismo naturista', 'Yoga y meditación naturista']
+};
+const hints = {
+  'Mar y Costa': 'Cliff jumping y costa técnica requieren experiencia previa, profundidad comprobada, acceso y salida seguros, estado del mar favorable y validación técnica.',
+  'Foil y Waterman': 'E-foil y jetsurf usan motor. Wingfoil, kitesurf y windsurf requieren viento. SUP foil depende de ola, remada o condiciones concretas.',
+  'Nómada Naturista': 'Solo mayores de edad, consentimiento informado, privacidad reforzada y no fotografías sin autorización expresa.',
+  'Aire': 'Las experiencias aéreas quedan sujetas a meteorología, centro colaborador, normativa, peso, edad y validación operativa.'
+};
+function updateReservaDemo() {
+  const familia = document.getElementById('resFamilia');
+  const actividad = document.getElementById('resActividad');
+  const list = actividadesPorFamilia[familia.value] || [];
+  actividad.innerHTML = list.map(a => `<option>${a}</option>`).join('');
+  document.getElementById('familyHint').textContent = hints[familia.value] || 'Actividad demostrativa sujeta a disponibilidad simulada, meteorología, nivel y documentación previa.';
+  updateSummary();
+}
+function updateSummary() {
+  const get = id => document.getElementById(id)?.value || '';
+  const actividad = get('resActividad') || 'Actividad demo';
+  document.getElementById('sumActividad').textContent = actividad;
+  document.getElementById('sumFecha').textContent = get('resFecha');
+  document.getElementById('sumPersonas').textContent = get('resPersonas');
+  document.getElementById('sumModalidad').textContent = get('resModalidad');
+  document.getElementById('sumAudiovisual').textContent = get('resAudiovisual');
+  const base = actividad.includes('E-foil') || actividad.includes('Jetsurf') ? 'Desde 90€ · demo' : actividad.includes('validación') ? 'Consultar · demo' : 'Desde 25€ · demo';
+  document.getElementById('sumPrecio').textContent = base;
+  document.getElementById('sumDocs').textContent = actividad.includes('validación') ? 'Ficha + anexo + validación especial' : 'Ficha de participación + anexo si procede';
+}
+document.addEventListener('DOMContentLoaded', () => {
+  ['resFamilia','resActividad','resFecha','resPersonas','resModalidad','resAudiovisual'].forEach(id => {
+    document.getElementById(id)?.addEventListener('change', id === 'resFamilia' ? updateReservaDemo : updateSummary);
+    document.getElementById(id)?.addEventListener('input', updateSummary);
+  });
+  updateReservaDemo();
+});
+</script>
 <script src="assets/js/chatbot.js"></script>
 </body>
 </html>

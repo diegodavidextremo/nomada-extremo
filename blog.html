@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Blog Nómada Extremo — guías, rutas, técnica, seguridad, equipo, waterman y aventura desde Águilas, Murcia.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Blog Nómada Extremo: rutas, seguridad, técnica, buceo, aire, foil, material, audiovisual outdoor y naturismo consciente desde Águilas, Murcia.">
 <title>Blog Nómada | Nómada Extremo</title>
 <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -10,166 +11,74 @@
 </head>
 <body>
 <div id="nav-placeholder"></div>
-
 <section class="page-hero" style="min-height:55vh;">
   <div class="page-hero-bg" style="background-image:url('assets/images/actividades/ficha-trekking-crestas.jpg');background-position:center 40%;"></div>
   <div class="page-hero-gradient"></div>
   <div class="container page-hero-inner">
     <nav class="breadcrumb"><ul><li><a href="index.html">Inicio</a></li><li>Blog</li></ul></nav>
-    <span class="label label-blanco" style="display:block;margin-top:1.5rem;">Ideas, técnica y aventura desde Águilas</span>
+    <span class="label label-blanco" style="display:block;margin-top:1.5rem;">Guías útiles, técnica y cultura outdoor</span>
     <h1 class="titulo" style="font-size:clamp(3rem,8vw,6rem);color:var(--blanco);">BLOG<br><span style="color:var(--arena-claro);">NÓMADA</span></h1>
   </div>
 </section>
 
-<!-- FILTROS POR CATEGORÍA -->
-<div style="background:var(--crema);border-bottom:1px solid var(--crema-media);padding:0.9rem 0;position:sticky;top:66px;z-index:50;">
+<section class="bg-crema" style="padding:3rem 0;">
   <div class="container">
-    <div style="display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center;">
-      <span style="font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--piedra);">Categoría:</span>
-      <span class="blog-cat-pill montana" style="cursor:pointer;">⛰️ Montaña</span>
-      <span class="blog-cat-pill mar" style="cursor:pointer;">🌊 Mar y Costa</span>
-      <span class="blog-cat-pill aire" style="cursor:pointer;">🪂 Aire</span>
-      <span class="blog-cat-pill foil" style="cursor:pointer;">🏄 Foil / Waterman</span>
-      <span class="blog-cat-pill tecnica" style="cursor:pointer;">🔧 Técnica</span>
-      <span class="blog-cat-pill guia" style="cursor:pointer;">📋 Guías</span>
-      <span class="blog-cat-pill" style="cursor:pointer;background:rgba(140,20,20,0.1);color:#b83232;">🛡️ Seguridad</span>
-      <span class="blog-cat-pill" style="cursor:pointer;background:rgba(196,150,106,0.1);color:var(--tierra);">📹 Tecnología</span>
-      <span class="blog-cat-pill" style="cursor:pointer;background:rgba(45,90,61,0.1);color:var(--bosque);">🌿 Naturismo</span>
-    </div>
-  </div>
-</div>
-
-<!-- ARTÍCULO DESTACADO -->
-<section class="bg-blanco">
-  <div class="container">
-    <span class="label">Artículo destacado</span>
-    <div class="divisor"></div>
-    <div class="blog-card-featured reveal" style="margin-bottom:4rem;">
-      <div class="blog-img" style="background-image:url('assets/images/actividades/familia-montana.jpg');background-size:cover;background-position:center 40%;min-height:320px;"></div>
-      <div class="blog-card-featured-body">
-        <span class="blog-cat-pill montana">⛰️ Montaña</span>
-        <h2 class="blog-featured-titulo">LAS 5 RUTAS OCULTAS DE ÁGUILAS QUE NADIE CONOCE AÚN</h2>
-        <p class="blog-featured-extracto">El litoral aguileño guarda senderos que ni los mapas recogen bien. Cinco rutas reales, con coordenadas y tramos técnicos documentados por el equipo Nómada. Desde la Sierra Almenara hasta Cabo Cope, pasando por los cortados del Castillo de San Juan.</p>
-        <div style="display:flex;gap:1.5rem;align-items:center;margin-top:1.5rem;">
-          <div>
-            <div style="font-size:0.7rem;font-weight:600;color:var(--gris-oscuro);">Diego David Extremo</div>
-            <div style="font-size:0.62rem;color:var(--piedra);">Marzo 2025 · 8 min lectura</div>
-          </div>
-          <a href="#" class="btn btn-mar" style="font-size:0.65rem;margin-left:auto;">Leer artículo →</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- GRID ARTÍCULOS -->
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;" class="grid-3">
-
-      <div class="blog-card reveal">
-        <div class="blog-img" style="background-image:url('assets/images/actividades/ficha-open-water.jpg');background-size:cover;background-position:center;height:180px;"></div>
-        <div style="padding:1.3rem;">
-          <span class="blog-cat-pill mar">🌊 Buceo</span>
-          <h3 class="blog-titulo" style="margin-top:0.5rem;">¿Open Water PADI o SSI? Diferencias reales en 2025</h3>
-          <p class="blog-extracto" style="margin-top:0.5rem;font-size:0.8rem;line-height:1.7;">Analizamos en profundidad las dos principales certificaciones de buceo y te decimos cuál es mejor según tu objetivo, nivel y estilo de inmersión.</p>
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:1rem;">
-            <span style="font-size:0.62rem;color:var(--piedra);">Erika Hernández · Feb 2025</span>
-            <a href="#" style="font-size:0.65rem;color:var(--mar);">Leer →</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="blog-card reveal">
-        <div class="blog-img" style="background-image:url('assets/images/actividades/ficha-efoil.jpg');background-size:cover;background-position:center;height:180px;"></div>
-        <div style="padding:1.3rem;">
-          <span class="blog-cat-pill foil">🏄 Foil</span>
-          <h3 class="blog-titulo" style="margin-top:0.5rem;">E-foil: el deporte más adictivo que existe y por qué</h3>
-          <p class="blog-extracto" style="margin-top:0.5rem;font-size:0.8rem;line-height:1.7;">Probamos el e-foil durante una semana en el litoral de Águilas. Curva de aprendizaje real, sensaciones, comparativa con wingfoil y nuestra valoración honesta.</p>
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:1rem;">
-            <span style="font-size:0.62rem;color:var(--piedra);">Jorge P. · Ene 2025</span>
-            <a href="#" style="font-size:0.65rem;color:var(--mar);">Leer →</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="blog-card reveal">
-        <div class="blog-img" style="background-image:url('assets/images/actividades/ficha-parapente-biplaza.jpg');background-size:cover;background-position:center;height:180px;"></div>
-        <div style="padding:1.3rem;">
-          <span class="blog-cat-pill aire">🪂 Aire</span>
-          <h3 class="blog-titulo" style="margin-top:0.5rem;">Guía completa para tu primer vuelo en parapente tándem</h3>
-          <p class="blog-extracto" style="margin-top:0.5rem;font-size:0.8rem;line-height:1.7;">Qué llevar, qué esperar, cuánto dura, cómo se siente y por qué el litoral de Águilas es uno de los mejores spots del sureste para el vuelo en tándem.</p>
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:1rem;">
-            <span style="font-size:0.62rem;color:var(--piedra);">Álvaro González · Dic 2024</span>
-            <a href="#" style="font-size:0.65rem;color:var(--mar);">Leer →</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="blog-card reveal">
-        <div class="blog-img" style="background-image:url('assets/images/actividades/ficha-barranquismo-seco.webp');background-size:cover;background-position:center;height:180px;"></div>
-        <div style="padding:1.3rem;">
-          <span class="blog-cat-pill tecnica">🔧 Técnica</span>
-          <h3 class="blog-titulo" style="margin-top:0.5rem;">Primeros auxilios en barranquismo: lo que todo grupo debe saber</h3>
-          <p class="blog-extracto" style="margin-top:0.5rem;font-size:0.8rem;line-height:1.7;">Un guía técnico real, sin dramatismo, sobre cómo actuar ante las situaciones más comunes en descensos de barrancos con agua.</p>
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:1rem;">
-            <span style="font-size:0.62rem;color:var(--piedra);">Raúl Giménez · Nov 2024</span>
-            <a href="#" style="font-size:0.65rem;color:var(--mar);">Leer →</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="blog-card reveal">
-        <div class="blog-img" style="background-image:url('assets/images/actividades/ficha-escalada-deportiva.jpg');background-size:cover;background-position:center;height:180px;"></div>
-        <div style="padding:1.3rem;">
-          <span class="blog-cat-pill guia">📋 Guía</span>
-          <h3 class="blog-titulo" style="margin-top:0.5rem;">De 0 a ferrata: el camino real para empezar a escalar en exterior</h3>
-          <p class="blog-extracto" style="margin-top:0.5rem;font-size:0.8rem;line-height:1.7;">Sin romanticismos. Cómo pasar de no saber nada a moverte cómodo por una vía ferrata en 4 salidas bien planificadas.</p>
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:1rem;">
-            <span style="font-size:0.62rem;color:var(--piedra);">Adrián Martínez · Oct 2024</span>
-            <a href="#" style="font-size:0.65fg;color:var(--mar);">Leer →</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="blog-card reveal">
-        <div class="blog-img" style="background-image:url('assets/images/actividades/familia-mar-costa.jpg');background-size:cover;background-position:center;height:180px;"></div>
-        <div style="padding:1.3rem;">
-          <span class="blog-cat-pill mar">🌊 Mar</span>
-          <h3 class="blog-titulo" style="margin-top:0.5rem;">Las mejores calas para kayak de Águilas que no aparecen en Google</h3>
-          <p class="blog-extracto" style="margin-top:0.5rem;font-size:0.8rem;line-height:1.7;">Con años de salidas en kayak por el litoral de Águilas, el equipo Nómada comparte las calas que solo se conocen metiéndose al agua.</p>
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:1rem;">
-            <span style="font-size:0.62rem;color:var(--piedra);">Laura García · Sep 2024</span>
-            <a href="#" style="font-size:0.65rem;color:var(--mar);">Leer →</a>
-          </div>
-        </div>
-      </div>
-
+    <span class="label">Categorías</span>
+    <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:1rem;">
+      <span class="blog-cat-pill montana">Rutas y spots</span>
+      <span class="blog-cat-pill" style="background:rgba(140,20,20,0.1);color:#b83232;">Seguridad</span>
+      <span class="blog-cat-pill tecnica">Técnica</span>
+      <span class="blog-cat-pill mar">Buceo</span>
+      <span class="blog-cat-pill aire">Aire</span>
+      <span class="blog-cat-pill foil">Foil y Waterman</span>
+      <span class="blog-cat-pill guia">Material</span>
+      <span class="blog-cat-pill" style="background:rgba(196,150,106,0.1);color:var(--tierra);">Audiovisual outdoor</span>
+      <span class="blog-cat-pill" style="background:rgba(45,90,61,0.1);color:var(--bosque);">Naturismo consciente</span>
     </div>
   </div>
 </section>
 
-<!-- PROPONER TEMA -->
+<section class="bg-blanco">
+  <div class="container">
+    <span class="label">Artículos desarrollados</span>
+    <h2 class="titulo">LECTURAS<br><span class="mar">DESTACADAS</span></h2>
+    <div class="divisor"></div>
+    <div class="grid-3" style="margin-top:3rem;gap:1.5rem;">
+      <article class="blog-card reveal">
+        <div class="blog-img" style="background-image:url('assets/images/actividades/familia-mar-costa.jpg');height:210px;background-size:cover;background-position:center;"></div>
+        <div style="padding:1.4rem;">
+          <span class="blog-cat-pill mar">Mar y Costa</span>
+          <h3 class="blog-titulo" style="margin-top:0.7rem;">Qué llevar a tu primera ruta de kayak de mar en Águilas</h3>
+          <p class="blog-extracto" style="margin-top:0.6rem;">Una guía práctica para preparar ropa, agua, protección solar, calzado, bolsa estanca y mentalidad antes de entrar al mar.</p>
+          <a href="articulo-kayak-aguilas.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;display:inline-block;">Leer artículo</a>
+        </div>
+      </article>
+      <article class="blog-card reveal">
+        <div class="blog-img" style="background-image:url('assets/images/actividades/ficha-bautismo-buceo.jpg');height:210px;background-size:cover;background-position:center;"></div>
+        <div style="padding:1.4rem;">
+          <span class="blog-cat-pill mar">Buceo</span>
+          <h3 class="blog-titulo" style="margin-top:0.7rem;">Bautismo de buceo: qué esperar antes de entrar al agua</h3>
+          <p class="blog-extracto" style="margin-top:0.6rem;">Briefing, respiración, señales, presión en los oídos, ritmo y acompañamiento: lo esencial para llegar tranquilo.</p>
+          <a href="articulo-bautismo-buceo.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;display:inline-block;">Leer artículo</a>
+        </div>
+      </article>
+      <article class="blog-card reveal">
+        <div class="blog-img" style="background-image:url('assets/images/actividades/ficha-parapente-biplaza.jpg');height:210px;background-size:cover;background-position:center;"></div>
+        <div style="padding:1.4rem;">
+          <span class="blog-cat-pill aire">Aire</span>
+          <h3 class="blog-titulo" style="margin-top:0.7rem;">Parapente, paramotor o paratrike: diferencias para elegir tu primer vuelo</h3>
+          <p class="blog-extracto" style="margin-top:0.6rem;">Tres formas de despegar, tres sensaciones y distintos requisitos de viento, logística y comodidad.</p>
+          <a href="articulo-primer-vuelo.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;display:inline-block;">Leer artículo</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section class="bg-cielo">
   <div class="container">
-    <div class="grid-2" style="gap:5rem;align-items:center;">
-      <div>
-        <span class="label">¿Tienes una idea?</span>
-        <h2 class="titulo">PROPÓN UN<br><span class="mar">TEMA</span></h2>
-        <div class="divisor"></div>
-        <p class="texto" style="margin-bottom:1.5rem;">El Blog Nómada lo hace el equipo, pero también la comunidad. Si hay algo que quieres que expliquemos — una técnica, una ruta, una comparativa de material o un testimonio real — cuéntanoslo.</p>
-        <a href="contacto.html" class="btn btn-mar">Proponer tema →</a>
-      </div>
-      <div style="background:var(--blanco);border-radius:var(--radio);padding:2rem;border:1px solid var(--crema-media);">
-        <div style="font-size:0.62rem;letter-spacing:3px;text-transform:uppercase;color:var(--mar);margin-bottom:1.2rem;">Categorías con más demanda</div>
-        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
-          <span class="blog-cat-pill montana">⛰️ Rutas y spots</span>
-          <span class="blog-cat-pill mar">🌊 Técnica de buceo</span>
-          <span class="blog-cat-pill foil">🏄 Foil y waterman</span>
-          <span class="blog-cat-pill tecnica">🔧 Material y equipo</span>
-          <span class="blog-cat-pill guia">📋 Guías de iniciación</span>
-          <span class="blog-cat-pill" style="background:rgba(140,20,20,0.1);color:#b83232;">🛡️ Seguridad real</span>
-          <span class="blog-cat-pill aire">🪂 Aire y vuelo</span>
-          <span class="blog-cat-pill" style="background:rgba(196,150,106,0.1);color:var(--tierra);">📹 Audiovisual outdoor</span>
-          <span class="blog-cat-pill" style="background:rgba(45,90,61,0.1);color:var(--bosque);">🌿 Naturismo</span>
-        </div>
-      </div>
+    <div class="notice-card">
+      El blog forma parte del proyecto académico ficticio. Sus textos son divulgativos y no sustituyen formación oficial, guía profesional ni evaluación técnica de condiciones reales.
     </div>
   </div>
 </section>

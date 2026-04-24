@@ -24,15 +24,15 @@
     },
     'reservar': {
       q:'¿Cómo puedo reservar?',
-      r:'Tienes varias formas: formulario web en la página de Reservas, WhatsApp directo al +34 600 000 000 o email a hola@nomadaextremo.com. Respondemos en menos de 24h y te confirmamos disponibilidad, punto de encuentro y detalles.'
+      r:'Ahora mismo no se pueden hacer reservas reales. La página de Reservas muestra una solicitud simulada para el proyecto académico, sin cobros ni confirmación operativa.'
     },
     'bono': {
       q:'¿Cómo funciona un bono regalo?',
-      r:'Los bonos tienen validez de 12 meses y se canjean por cualquier actividad del catálogo. Disponibles en 50€, 100€ y 200€. Puedes pedirlos por email o WhatsApp. Te enviamos el bono en formato digital con diseño premium.'
+      r:'Los bonos son una propuesta comercial simulada. No se venden bonos reales ni se cobra ningún importe en esta versión académica.'
     },
     'audiovisual': {
       q:'¿Puedo grabar mi experiencia?',
-      r:'¡Sí! Ofrecemos servicio audiovisual con GoPro, DJI, Insta360, cámaras 360 y dron. Desde clips brutos en tarjeta (desde 39€) hasta vídeo editado horizontal + vertical en 1 semana. Consulta disponibilidad en reservas.'
+      r:'El servicio audiovisual es demostrativo: Insta360 X5, DJI Osmo Action 6, GoPro MISSION 1 PRO, Insta360 GO Ultra, dron 4K y FPV sujeto a normativa AESA. No se graban actividades reales desde esta web.'
     },
     'privado': {
       q:'¿Hay experiencias privadas?',
@@ -40,11 +40,11 @@
     },
     'escuela': {
       q:'¿Cómo funcionan los cursos de la Escuela?',
-      r:'La Escuela Nómada ofrece formación técnica real: Open Water PADI/SSI, AFF paracaidismo, parapente, paramotor, escalada, montaña y más. Con logbook digital, credenciales y progresión trazable. ¿Qué disciplina te interesa?'
+      r:'La Escuela Nómada es una propuesta formativa demostrativa con rutas por disciplina, niveles, logbook y credenciales simuladas. No sustituye titulaciones oficiales salvo colaboración real con entidad certificadora.'
     },
     'cancelar': {
       q:'¿Puedo cancelar mi reserva?',
-      r:'+72h de antelación: devolución completa. 48-72h: 50%. Menos de 48h: sin devolución pero puedes traspasar a otra persona o reprogramar. Por causa meteorológica siempre se reprograma sin coste.'
+      r:'Las cancelaciones son simuladas porque no hay reservas ni pagos reales. En una empresa operativa se definirían condiciones, meteorología, reprogramaciones y responsabilidades.'
     }
   };
 
@@ -55,7 +55,7 @@
     <div class="chat-avatar">🧭</div>
     <div>
       <div class="chat-nombre">ASISTENTE NÓMADA</div>
-      <div class="chat-estado"><div class="chat-dot"></div> En línea · responde rápido</div>
+      <div class="chat-estado"><div class="chat-dot"></div> Modo demo académico</div>
     </div>
     <button class="chat-close" id="chatClose">✕</button>
   </div>
@@ -70,7 +70,7 @@
     </div>
     <div class="chat-ctas">
       <a href="https://wa.me/34600000000" class="chat-cta-wa" target="_blank">💬 WhatsApp</a>
-      <a href="reservas.html" class="chat-cta-custom">Reservar</a>
+      <a href="reservas.html" class="chat-cta-custom">Reserva demo</a>
     </div>
   </div>
 </div>`;
@@ -130,7 +130,7 @@
 
   function initChat() {
     setTimeout(() => {
-      addMsg('¡Hola! Soy el asistente de <strong>Nómada Extremo</strong>. Puedo resolver dudas rápidas. Para algo más personalizado, el equipo real te espera 🤙');
+      addMsg('¡Hola! Soy el asistente de <strong>Nómada Extremo</strong>. Esta web es un proyecto académico ficticio: no hay reservas, cobros ni actividades reales.');
       setTimeout(() => addOptions([
         {label:'¿Necesito experiencia previa?', faq:'experiencia'},
         {label:'¿Qué material incluye?', faq:'material'},
@@ -160,7 +160,7 @@
     },
     'checkin': {
       q: '¿Cómo funciona el check-in digital?',
-      r: '48 horas antes de tu actividad te enviamos un enlace por WhatsApp y email. Confirmas asistencia, firmas digitalmente el documento de responsabilidad y recibes el punto de encuentro exacto y el teléfono de tu guía. Sin colas ni papeles al llegar.'
+      r: 'El check-in digital es una simulación: confirmación, firma, punto de encuentro y guía asignado se muestran como ejemplo de cómo funcionaría una empresa real.'
     }
   };
   
@@ -173,10 +173,10 @@
 
 
 const NOMADA_EXTRA_FAQS = {
-  'efoil': { q: '¿Qué es el e-foil?', r: 'El e-foil es una tabla eléctrica con un foil (ala submarina) que te permite deslizarte por encima del agua gracias a un motor eléctrico. No necesitas olas ni viento. Las sesiones van desde 90€ e incluyen instructor. 📍 Águilas y Calabardina.' },
-  'wingfoil': { q: '¿Cómo funciona el wingfoil?', r: 'El wingfoil combina un ala de mano (wing) con un foil y tabla para volar sobre el agua usando el viento. Es una disciplina exigente que requiere algo de base en kitesurf o windsurf. Desde 100€/sesión con instructor.' },
-  'jetsurf': { q: '¿Qué es el jetsurf?', r: 'El jetsurf es una tabla con motor a reacción. Alcanza hasta 55 km/h y es la experiencia más adrenalínica del catálogo acuático. Solo disponible con instructor. Desde 120€/sesión.' },
-  'weekend': { q: '¿Tenéis packs de fin de semana?', r: 'Sí. Tenemos Weekends Brutales desde 180€/p: Weekend Mar Total, Cielo Nómada (parapente+paramotor), Vertical y Agua, y packs Élite de hasta 3 días con múltiples disciplinas. Ver en la sección Packs.' },
+  'efoil': { q: '¿Qué es el e-foil?', r: 'El e-foil es una tabla eléctrica con un foil que permite deslizarse sobre el agua con motor eléctrico. No necesita olas ni viento. En esta web aparece como experiencia simulada, no como servicio real.' },
+  'wingfoil': { q: '¿Cómo funciona el wingfoil?', r: 'El wingfoil combina ala de mano, tabla y foil para usar el viento. A diferencia del e-foil, sí requiere viento y condiciones adecuadas.' },
+  'jetsurf': { q: '¿Qué es el jetsurf?', r: 'El jetsurf funciona con motor propio. En Nómada Extremo se presenta como disciplina demostrativa sujeta a instructor, permisos, zona y seguridad.' },
+  'weekend': { q: '¿Tenéis packs de fin de semana?', r: 'La web muestra packs de fin de semana como propuesta académica de catálogo. No se venden ni se reservan packs reales actualmente.' },
   'foil': { q: '¿Puedo alquilar material de foil?', r: 'El material de foil (e-foil, wingfoil, jetsurf) solo se usa en formato supervisado con instructor por seguridad. No está disponible para uso libre. Consulta las sesiones en nuestra sección de Alquiler o escríbenos.' },
   'naturismo': { q: '¿Qué son los packs naturistas?', r: 'Son experiencias de aventura suave en entornos seleccionados del litoral de Águilas, diseñadas para personas con filosofía naturista. Incluyen kayak, snorkel, SUP, yoga o senderismo. Solo para adultos y con el máximo respeto. Ver sección Naturismo.' },
 };
