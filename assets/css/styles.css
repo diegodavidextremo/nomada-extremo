@@ -1993,3 +1993,250 @@ section.bg-cielo  .texto { color: var(--gris-texto) !important; }
 .review-texto { color:var(--gris-texto) !important; }
 .review-autor { color:var(--gris-oscuro) !important; }
 .review-act   { color:var(--piedra) !important; }
+
+/* ═══════════════════════════════════════════════════════════════
+   NÓMADA EXTREMO v3.0 — MÓVIL, CONTRASTE, COMUNIDAD, SEGURIDAD
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ─── FUNDADOR dark boxes — text fix ─── */
+.bg-noche .stat-inner span,
+.bg-noche [style*="color:rgba(200,189,181,0.5)"] { color: rgba(200,189,181,0.75) !important; }
+/* Dark stat boxes in fundador */
+[style*="Años al empezar"], [style*="primer salto"], [style*="Funda Nómada"] {
+  color: rgba(200,189,181,0.75) !important;
+}
+
+/* ─── SEGURIDAD manifiesto block ─── */
+.seg-manifiesto-txt {
+  color: var(--blanco) !important;
+  font-family: var(--serif); font-style: italic;
+  font-size: clamp(0.95rem,1.5vw,1.2rem); line-height: 1.9;
+}
+.manifiesto-seg {
+  background: linear-gradient(135deg, var(--noche) 0%, var(--mar) 100%);
+  padding: 3rem 2rem; text-align: center;
+}
+.manifiesto-seg p { color: rgba(245,242,236,0.95) !important; }
+
+/* ─── NATURISMO — los valores text fix ─── */
+.nat-valor-titulo { color: var(--gris-oscuro) !important; font-weight: 600; }
+.nat-valor p      { color: var(--gris-calido) !important; }
+.nat-espacio-titulo { color: var(--gris-oscuro) !important; }
+
+/* ─── MOBILE GLOBAL IMPROVEMENTS ─── */
+@media(max-width:768px) {
+  /* Titles */
+  .titulo { font-size: clamp(2rem,10vw,3.5rem) !important; }
+  /* Hero eyebrow */
+  .hero-eyebrow { font-size: 0.55rem !important; margin-bottom: 1.5rem !important; }
+  /* Sections */
+  section .container { padding: 3rem 1.2rem !important; }
+  /* Grid 2 → 1 column */
+  .grid-2 { grid-template-columns: 1fr !important; gap:2rem !important; }
+  .grid-3 { grid-template-columns: 1fr !important; gap:1rem !important; }
+  /* fichas grid */
+  .fichas-grid { grid-template-columns: 1fr 1fr !important; gap:0.8rem !important; }
+  /* FAQ accordion */
+  .faq-q { padding: 0.9rem 1rem !important; }
+  .faq-q-text { font-size: 0.82rem !important; }
+  /* Blog featured */
+  .blog-card-featured { grid-template-columns: 1fr !important; }
+  /* Page hero */
+  .page-hero-inner { padding-top: 6rem !important; }
+  /* equipo card foto placeholder */
+  .equipo-card-foto-placeholder { height: 80px !important; font-size: 2.5rem !important; }
+  /* Comunidad */
+  .log-card { padding: 1.2rem !important; }
+  /* Sticky nav index strip */
+  div[style*="sticky"][style*="top:66px"] { overflow-x: auto !important; }
+  /* Stats strip */
+  .stats-strip .grid-4 { grid-template-columns: 1fr 1fr !important; }
+  /* Login wrap */
+  .login-wrap { grid-template-columns: 1fr !important; }
+  .login-left { min-height: 200px !important; }
+}
+@media(max-width:480px) {
+  .fichas-grid { grid-template-columns: 1fr !important; }
+  .ficha .ficha-cuerpo { padding: 0.9rem !important; }
+  .ficha-titulo { font-size: 0.9rem !important; }
+  .ficha-meta { flex-wrap: wrap !important; gap: 0.3rem !important; }
+  /* Nav */
+  .nav-logo-text .ln2 { display: none !important; }
+  /* Hero inner padding */
+  .hero-inner h1 { font-size: 3rem !important; }
+}
+
+/* ─── FLOTANTE WHATSAPP MÓVIL — more visible ─── */
+#waFloat {
+  font-size: 1.5rem; width: 52px; height: 52px;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 18px rgba(37,211,102,0.4);
+}
+
+/* ─── COMUNIDAD / LOGBOOK premium ─── */
+.logbook-entry {
+  display: flex; gap: 1rem; padding: 1rem 1.2rem;
+  background: var(--blanco); border: 1px solid var(--crema-media);
+  border-radius: var(--radio); margin-bottom: 0.6rem; transition: all 0.2s;
+}
+.logbook-entry:hover { border-color: var(--mar-claro); transform: translateX(4px); }
+.logbook-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
+.logbook-dot.mar { background: var(--mar-claro); }
+.logbook-dot.aire { background: var(--arena); }
+.logbook-dot.mont { background: var(--bosque-claro); }
+.logbook-dot.foil { background: #00b4c8; }
+.logbook-entry-titulo { font-size: 0.82rem; font-weight: 500; color: var(--gris-oscuro); }
+.logbook-entry-meta   { font-size: 0.66rem; color: var(--piedra); margin-top: 0.15rem; }
+.logbook-entry-badge  { margin-left: auto; font-size: 0.6rem; padding: 0.15rem 0.5rem; border-radius: 20px; background: var(--cielo); color: var(--mar); white-space: nowrap; }
+
+/* Badge nivel comunidad */
+.comunidad-level { font-family: var(--display); font-size: 2.5rem; color: var(--arena); }
+.comunidad-level-label { font-size: 0.62rem; letter-spacing: 2px; text-transform: uppercase; color: var(--piedra); }
+
+/* ─── ALQUILER CARDS ─── */
+.alquiler-cat-titulo { color: var(--gris-oscuro) !important; }
+.alquiler-item-nombre { color: var(--gris-oscuro) !important; }
+.alquiler-item-precio { color: var(--arena) !important; font-family: var(--display); }
+
+/* ─── REVIEW DISCLAIMER ─── */
+.review-disclaimer {
+  background: rgba(196,150,106,0.08);
+  border: 1px dashed rgba(196,150,106,0.35);
+  border-radius: var(--radio);
+  padding: 1rem 1.5rem; margin-bottom: 2rem;
+  font-size: 0.78rem; color: var(--gris-calido); line-height: 1.75;
+}
+.review-disclaimer strong { color: var(--tierra); }
+
+/* ─── LOCATION PILL ─── */
+.loc-pill {
+  display: inline-flex; align-items: center; gap: 0.25rem;
+  font-size: 0.58rem; letter-spacing: 1px; text-transform: uppercase;
+  background: rgba(30,74,107,0.08); color: var(--mar);
+  border: 1px solid rgba(30,74,107,0.15); border-radius: 20px;
+  padding: 0.15rem 0.55rem; font-weight: 500;
+}
+
+/* ─── PACKS NUEVO GRID ─── */
+.pack-v2 {
+  border: 1px solid var(--crema-media); border-radius: var(--radio);
+  overflow: hidden; background: var(--blanco); transition: all 0.3s;
+}
+.pack-v2:hover { box-shadow: var(--sombra-l); transform: translateY(-4px); border-color: var(--arena); }
+.pack-v2.elite { border-color: var(--arena); background: linear-gradient(160deg,var(--blanco) 60%,rgba(196,150,106,0.04) 100%); }
+.pack-v2-band { padding: 1rem 1.5rem; border-bottom: 1px solid var(--crema); }
+.pack-v2-titulo { font-family: var(--display); font-size: 1.1rem; letter-spacing: 2px; color: var(--gris-oscuro); }
+.pack-v2-sub { font-size: 0.72rem; color: var(--gris-calido); margin-top: 0.15rem; }
+.pack-v2-body { padding: 1rem 1.5rem; }
+.pack-v2-footer { padding: 0.8rem 1.5rem; background: var(--crema); border-top: 1px solid var(--crema-media); display: flex; justify-content: space-between; align-items: center; }
+.pack-v2-precio { font-family: var(--display); font-size: 1.8rem; color: var(--arena); }
+.pack-v2-includes { display: flex; flex-direction: column; gap: 0.25rem; }
+.pack-v2-includes li { font-size: 0.73rem; color: var(--gris-calido); display: flex; gap: 0.4rem; }
+.pack-v2-includes li::before { content: '✓'; color: var(--bosque-claro); font-weight: 700; flex-shrink: 0; }
+
+/* ═══════════════════════════════════════════════════════════════
+   NÓMADA EXTREMO v2.11 — RESPONSIVE, SEGURIDAD, COMUNIDAD
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ─── MOBILE RESPONSIVE GLOBAL ─── */
+@media(max-width:480px) {
+  /* Hero titles */
+  .hero h1, .page-hero h1, .titulo { font-size: clamp(2rem, 10vw, 3.5rem) !important; }
+  /* Grid collapse */
+  .grid-2, .grid-3 { grid-template-columns: 1fr !important; }
+  .fichas-grid { grid-template-columns: 1fr !important; }
+  /* Paddings */
+  section { padding: 2.5rem 0 !important; }
+  .container { padding: 0 1rem !important; }
+  /* Stats */
+  .stats-strip .stats-grid { grid-template-columns: 1fr 1fr !important; gap:1rem !important; }
+  /* Act cards */
+  .act-grid { grid-template-columns: 1fr 1fr !important; }
+  /* Fundador layout */
+  .fundador-layout { grid-template-columns: 1fr !important; }
+  /* Blog */
+  .blog-card-featured { grid-template-columns: 1fr !important; }
+  /* Nav logo */
+  .nav-logo-text .ln2 { display:none; }
+}
+@media(max-width:768px) {
+  /* Section headings */
+  h1.titulo, h2.titulo { font-size: clamp(2.2rem, 8vw, 4rem) !important; }
+  /* Packs grid */
+  .packs-grid { grid-template-columns: 1fr !important; }
+  /* Footer grid */
+  .footer-grid { grid-template-columns: 1fr 1fr !important; }
+  /* Hero inner padding */
+  .page-hero-inner { padding-top: 7rem !important; }
+  /* Ficha grid 2 cols on tablet */
+  .fichas-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+
+/* ─── SEGURIDAD MANIFIESTO FIX ─── */
+.seg-manifiesto {
+  background: linear-gradient(135deg, var(--gris-oscuro) 0%, var(--noche) 100%) !important;
+  color: var(--blanco) !important;
+  border-radius: var(--radio);
+  padding: 2.5rem !important;
+  box-shadow: var(--sombra-l);
+  border: 1px solid rgba(196,150,106,0.2);
+}
+.seg-manifiesto p, .seg-manifiesto blockquote {
+  color: rgba(245,242,236,0.92) !important;
+  font-family: var(--serif) !important;
+  font-style: italic;
+  font-size: 1.1rem !important;
+  line-height: 1.9 !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* ─── LOGBOOK / COMUNIDAD PREMIUM ─── */
+.logbook-feature {
+  background: var(--blanco);
+  border: 1px solid var(--crema-media);
+  border-radius: var(--radio);
+  padding: 1.2rem;
+  transition: all 0.3s;
+}
+.logbook-feature:hover { border-color: var(--mar-claro); box-shadow: var(--sombra-l); transform:translateY(-2px); }
+.logbook-feature-icon { font-size: 1.4rem; margin-bottom: 0.5rem; }
+.logbook-feature-titulo { font-family: var(--display); font-size: 0.85rem; letter-spacing: 2px; color: var(--gris-oscuro); margin-bottom: 0.3rem; }
+.logbook-feature-desc { font-size: 0.72rem; color: var(--gris-calido); line-height: 1.65; }
+
+/* ─── ALQUILER ITEMS ─── */
+.alq-item {
+  background: var(--blanco);
+  border: 1px solid var(--crema-media);
+  border-radius: var(--radio);
+  padding: 1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.2s;
+}
+.alq-item:hover { border-color: var(--arena); }
+.alq-icon { font-size: 1.5rem; flex-shrink: 0; }
+.alq-nombre { font-size: 0.82rem; font-weight: 500; color: var(--gris-oscuro); }
+.alq-precio { font-family: var(--display); font-size: 1rem; color: var(--arena); margin-left:auto; }
+.alq-badge { font-size: 0.58rem; letter-spacing: 1px; padding: 0.15rem 0.5rem; background: var(--cielo); color: var(--mar); border-radius: 20px; margin-top:0.2rem; }
+
+/* ─── NATURISTAS VALORES FIX ─── */
+.nat-valor strong, .nat-valor-titulo { color: var(--gris-oscuro) !important; }
+.nat-valor p { color: var(--gris-calido) !important; }
+/* Naturistas section labels */
+section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { color: var(--bosque) !important; }
+
+/* ─── PACK WEEKEND CARDS ─── */
+.weekend-card {
+  background: linear-gradient(135deg, var(--noche) 0%, var(--mar) 100%);
+  border-radius: var(--radio); overflow: hidden;
+  position: relative; color: var(--blanco);
+}
+.weekend-card::before { content:''; position:absolute; inset:0; background:rgba(0,0,0,0.15); }
+.weekend-card-body { position:relative; z-index:1; padding:2rem; }
+.weekend-card-titulo { font-family: var(--display); font-size: 1.5rem; letter-spacing: 3px; color: var(--arena-claro); margin-bottom: 0.3rem; }
+.weekend-card-sub { font-family: var(--serif); font-style: italic; font-size: 0.9rem; color: rgba(245,242,236,0.8); margin-bottom: 1rem; }
+.weekend-card-precio { font-family: var(--display); font-size: 2.5rem; color: var(--blanco); }
+
+/* ─── CHATBOT / ASISTENTE RÁPIDO ─── */
+#chatWrap .chat-opt { font-size: 0.72rem; padding: 0.4rem 0.8rem; }

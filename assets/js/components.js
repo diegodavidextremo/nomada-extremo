@@ -148,7 +148,7 @@
     </div>
     <div class="footer-bottom">
       <div>
-        <p class="footer-copy">© 2025 Nómada Extremo · Águilas, Murcia, España · Todos los derechos reservados</p>
+        <p class="footer-copy">© 2026 Nómada Extremo · Águilas, Murcia, España · Todos los derechos reservados</p>
         <p class="footer-copy" style="margin-top:0.2rem;opacity:0.6;">Proyecto ficticio — Diego David Gómez García · 1.º GMN · IES Europa de Águilas</p>
       </div>
       <div class="footer-legal">

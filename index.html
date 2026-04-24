@@ -59,6 +59,28 @@
     <div class="scroll-line"></div>
     <span>Descender</span>
   </div>
+
+    <!-- DEJAR UNA RESEÑA -->
+    <div style="margin-top:3rem;background:var(--cielo);border:1px solid var(--cielo-medio);border-radius:var(--radio);padding:2.5rem;" class="reveal">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;" class="grid-2">
+        <div>
+          <span class="label label-bosque">¿Ya viviste la aventura?</span>
+          <h3 class="titulo" style="font-size:2rem;margin-bottom:0.5rem;">CUÉNTANOS<br><span class="mar">CÓMO FUE</span></h3>
+          <p class="texto" style="font-size:0.8rem;margin-bottom:0;">Tu experiencia ayuda al equipo y a las próximas personas que lean esto. Las mejores valoraciones se publicarán aquí.</p>
+        </div>
+        <div>
+          <div class="form-grupo" style="margin-bottom:0.8rem;">
+            <label style="font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-calido);font-weight:600;display:block;margin-bottom:0.3rem;">Nombre</label>
+            <input type="text" placeholder="Tu nombre" style="width:100%;padding:0.6rem 0.9rem;background:var(--blanco);border:1.5px solid var(--crema-media);border-radius:var(--radio);font-size:0.85rem;color:var(--gris-oscuro);box-sizing:border-box;" readonly onclick="window.location='https://forms.gle/xYYVc6xYsJeRiPNy6'">
+          </div>
+          <div class="form-grupo" style="margin-bottom:0.8rem;">
+            <label style="font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-calido);font-weight:600;display:block;margin-bottom:0.3rem;">Actividad realizada</label>
+            <input type="text" placeholder="Ej: Paracaidismo tándem, Kayak de mar..." style="width:100%;padding:0.6rem 0.9rem;background:var(--blanco);border:1.5px solid var(--crema-media);border-radius:var(--radio);font-size:0.85rem;color:var(--gris-oscuro);box-sizing:border-box;" readonly onclick="window.location='https://forms.gle/xYYVc6xYsJeRiPNy6'">
+          </div>
+          <a href="https://forms.gle/xYYVc6xYsJeRiPNy6" target="_blank" rel="noopener" class="btn btn-bosque" style="display:block;text-align:center;font-size:0.68rem;">⭐ Dejar mi valoración →</a>
+        </div>
+      </div>
+    </div>
 </section>
 
 <!-- ═══ STATS ═══ -->
@@ -308,7 +330,7 @@
       </div>
 
       <div class="ficha reveal">
-        <div class="ficha-img" style="background-image:url('assets/images/actividades/familia-aire.jpg')">
+        <div class="ficha-img" style="background-image:url('assets/images/actividades/ficha-paracaidismo-tandem.webp');background-position:center 40%;">
           <span class="nivel-badge nivel-extremo">Extremo</span>
         </div>
         <div class="ficha-cuerpo">
@@ -379,6 +401,57 @@
       <div style="text-align:center;margin-top:1rem;"><a href="packs.html" class="btn btn-arena">Ver packs especiales →</a></div>
     </div>
   </div>
+
+  </div>
+</section>
+
+<!-- ═══ DEJA TU RESEÑA ═══ -->
+<section class="bg-cielo" id="dejar-resena">
+  <div class="container">
+    <div class="grid-2" style="gap:5rem;align-items:center;">
+      <div>
+        <span class="label label-bosque">Tu experiencia importa</span>
+        <h2 class="titulo">CUÉNTANOS<br><span class="bosque">CÓMO FUE</span></h2>
+        <div class="divisor divisor-mar"></div>
+        <p class="texto" style="margin-bottom:1.5rem;">Tu valoración ayuda al equipo a mejorar y a las próximas personas que estén considerando vivir una aventura con nosotros. Sé tan directo como quieras: valoramos la honestidad más que cualquier nota perfecta.</p>
+        <p class="texto">También puedes valorar directamente a través del <a href="https://forms.gle/xYYVc6xYsJeRiPNy6" target="_blank" style="color:var(--mar);">formulario oficial de valoración</a>.</p>
+      </div>
+      <div style="background:var(--blanco);border-radius:var(--radio);padding:2rem;border:1px solid var(--crema-media);box-shadow:var(--sombra-l);">
+        <div style="font-family:var(--display);font-size:1.1rem;letter-spacing:2px;color:var(--gris-oscuro);margin-bottom:1.5rem;">DEJA TU RESEÑA</div>
+        <form action="https://formsubmit.co/diegodavidexplorer@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nueva reseña — Nómada Extremo">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="form-grupo" style="margin-bottom:1rem;">
+            <label style="font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-calido);font-weight:600;display:block;margin-bottom:0.4rem;">Nombre</label>
+            <input type="text" name="nombre" placeholder="Tu nombre" style="width:100%;padding:0.65rem 1rem;background:var(--cielo);border:1.5px solid var(--cielo-medio);border-radius:var(--radio);font-size:0.88rem;color:var(--gris-oscuro);font-family:var(--sans);box-sizing:border-box;" required>
+          </div>
+          <div class="form-grupo" style="margin-bottom:1rem;">
+            <label style="font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-calido);font-weight:600;display:block;margin-bottom:0.4rem;">Actividad realizada</label>
+            <input type="text" name="actividad" placeholder="Ej: Paracaidismo tándem, Buceo nocturno..." style="width:100%;padding:0.65rem 1rem;background:var(--cielo);border:1.5px solid var(--cielo-medio);border-radius:var(--radio);font-size:0.88rem;color:var(--gris-oscuro);font-family:var(--sans);box-sizing:border-box;" required>
+          </div>
+          <div class="form-grupo" style="margin-bottom:1rem;">
+            <label style="font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-calido);font-weight:600;display:block;margin-bottom:0.4rem;">Valoración</label>
+            <select name="valoracion" style="width:100%;padding:0.65rem 1rem;background:var(--cielo);border:1.5px solid var(--cielo-medio);border-radius:var(--radio);font-size:0.88rem;color:var(--gris-oscuro);font-family:var(--sans);box-sizing:border-box;" required>
+              <option value="">Selecciona...</option>
+              <option>★★★★★ Excepcional</option>
+              <option>★★★★☆ Muy buena</option>
+              <option>★★★☆☆ Buena</option>
+              <option>★★☆☆☆ Mejorable</option>
+            </select>
+          </div>
+          <div class="form-grupo" style="margin-bottom:1.2rem;">
+            <label style="font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-calido);font-weight:600;display:block;margin-bottom:0.4rem;">Tu comentario</label>
+            <textarea name="comentario" rows="4" placeholder="Cuéntanos tu experiencia con el mayor detalle que quieras..." style="width:100%;padding:0.65rem 1rem;background:var(--cielo);border:1.5px solid var(--cielo-medio);border-radius:var(--radio);font-size:0.88rem;color:var(--gris-oscuro);font-family:var(--sans);resize:vertical;box-sizing:border-box;" required></textarea>
+          </div>
+          <div style="display:flex;gap:0.5rem;align-items:center;margin-bottom:1.2rem;">
+            <input type="checkbox" name="consentimiento" required style="width:16px;height:16px;accent-color:var(--mar);">
+            <label style="font-size:0.72rem;color:var(--gris-calido);">Autorizo el uso de esta reseña en la web de Nómada Extremo.</label>
+          </div>
+          <button type="submit" class="btn btn-bosque" style="width:100%;padding:0.85rem;font-size:0.72rem;letter-spacing:2px;">Enviar reseña →</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- ═══ MANIFIESTO ═══ -->
@@ -389,7 +462,11 @@
     <span class="label">Lo que dicen quienes ya lo vivieron</span>
     <h2 class="titulo">RESEÑAS<br><span class="mar">REALES</span></h2>
     <div class="divisor"></div>
-    <div style="display:flex;align-items:center;gap:3rem;margin-bottom:3rem;flex-wrap:wrap;">
+        <!-- Review disclaimer -->
+    <div class="review-disclaimer reveal">
+      <strong>Nota sobre estas reseñas:</strong> Las valoraciones que aparecen a continuación son actualmente simuladas para presentar el proyecto con el mayor realismo posible. En la versión operativa de Nómada Extremo se convertirán en reseñas reales de clientes y alumnos, integrando el mismo sistema de valoración que ya está disponible en el <a href="formularios.html" style="color:var(--tierra);">formulario de valoración</a>. Su función aquí es mostrar cómo se integrará la prueba social en la marca real.
+    </div>
+<div style="display:flex;align-items:center;gap:3rem;margin-bottom:3rem;flex-wrap:wrap;">
       <div style="text-align:center;">
         <div class="review-avg">4.9</div>
         <div style="color:#f5a623;font-size:1.1rem;margin:0.3rem 0;">★★★★★</div>
@@ -414,7 +491,8 @@
         </div>
       </div>
     </div>
-    <div class="grid-3" style="gap:1.2rem;">
+    
+        <div class="grid-3" style="gap:1.2rem;">
       <div class="review-card reveal">
         <div class="review-stars">★★★★★</div>
         <p class="review-texto">"El paracaidismo tándem fue la experiencia más brutal de mi vida. El equipo te prepara bien, el entorno de Águilas es espectacular y el vídeo que me dieron fue cinematográfico de verdad. Volveré."</p>

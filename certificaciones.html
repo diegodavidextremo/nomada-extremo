@@ -2,11 +2,33 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Certificaciones y credenciales Nómada Extremo — progresión de buceo PADI/SSI, paracaidismo AFF, parapente, paramotor, escalada, montaña y logbook digital.">
+<meta name="description" content="Certificaciones y credenciales Nómada Extremo — itinerarios formativos completos para buceo, aire, vertical, montaña, foil y BTT.">
 <title>Certificaciones y Credenciales | Nómada Extremo</title>
 <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
+<style>
+.itin-card { background:var(--blanco); border:1px solid var(--crema-media); border-radius:var(--radio); overflow:hidden; transition:all 0.3s; }
+.itin-card:hover { box-shadow:var(--sombra-l); transform:translateY(-3px); border-color:var(--arena); }
+.itin-header { padding:1.3rem 1.5rem; display:flex; align-items:center; gap:1rem; border-bottom:1px solid var(--crema); }
+.itin-icon { font-size:1.8rem; }
+.itin-titulo { font-family:var(--display); font-size:1.05rem; letter-spacing:2px; color:var(--gris-oscuro); }
+.itin-sub { font-size:0.65rem; letter-spacing:1px; color:var(--piedra); margin-top:0.15rem; }
+.itin-body { padding:0.8rem 1.5rem 0; }
+.itin-nivel { display:flex; align-items:center; gap:0.7rem; padding:0.55rem 0.3rem; border-bottom:1px solid var(--crema); transition:background 0.15s; border-radius:var(--radio); cursor:default; }
+.itin-nivel:hover { background:var(--cielo); padding-left:0.6rem; }
+.itin-nivel:last-child { border-bottom:none; }
+.itin-dot { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
+.dot-verde  { background:var(--bosque-claro); }
+.dot-azul   { background:var(--mar-claro); }
+.dot-arena  { background:var(--arena); }
+.dot-rojo   { background:#b83232; }
+.dot-gris   { background:var(--piedra-claro); }
+.itin-nombre { font-size:0.82rem; color:var(--gris-oscuro); font-weight:500; flex:1; line-height:1.3; }
+.itin-cert { font-size:0.6rem; color:var(--mar); letter-spacing:0.8px; white-space:nowrap; }
+.itin-footer { padding:0.8rem 1.5rem 1.2rem; }
+.itin-tag { display:inline-block; font-size:0.58rem; letter-spacing:1px; padding:0.15rem 0.55rem; background:var(--cielo); color:var(--mar); border-radius:20px; margin-right:0.3rem; margin-bottom:0.3rem; }
+</style>
 </head>
 <body>
 <div id="nav-placeholder"></div>
@@ -17,223 +39,300 @@
   <div class="container page-hero-inner">
     <nav class="breadcrumb"><ul><li><a href="index.html">Inicio</a></li><li><a href="escuela.html">Escuela</a></li><li>Certificaciones</li></ul></nav>
     <span class="label label-blanco" style="display:block;margin-top:1.5rem;">Tu progresión, documentada y trazable</span>
-    <h1 class="titulo" style="font-size:clamp(3rem,8vw,6rem);color:var(--blanco);">CERTIFICACIONES<br><span style="color:var(--arena-claro);">Y CREDENCIALES</span></h1>
-    <p style="font-family:var(--serif);font-style:italic;font-size:1.15rem;color:rgba(245,242,236,0.88);max-width:620px;margin-top:1rem;line-height:1.8;">Desde el primer bautismo hasta el Divemaster. Desde el tándem hasta el vuelo autónomo. Cada paso, documentado.</p>
+    <h1 class="titulo" style="font-size:clamp(2.8rem,7vw,5.5rem);color:var(--blanco);">CERTIFICACIONES<br><span style="color:var(--arena-claro);">E ITINERARIOS</span></h1>
+    <p style="font-family:var(--serif);font-style:italic;font-size:1.1rem;color:rgba(245,242,236,0.85);max-width:600px;margin-top:1rem;line-height:1.8;">Del primer bautismo al instructor. Del tándem a la Licencia D. Cada disciplina con su ruta de progresión propia.</p>
   </div>
 </section>
 
-<!-- ═══ INTRO ═══ -->
-<section class="bg-blanco">
+<!-- STATS -->
+<section class="bg-cielo">
   <div class="container">
-    <div class="grid-2" style="gap:5rem;align-items:center;">
-      <div>
-        <span class="label">Por qué importa la progresión</span>
-        <h2 class="titulo">AVANZAR<br><span class="mar">CON RESPALDO</span></h2>
-        <div class="divisor"></div>
-        <p class="texto" style="margin-bottom:1.5rem;">En Nómada Extremo la formación no termina con la experiencia. Se documenta. Cada módulo completado genera un registro en tu logbook digital y, cuando corresponde, una credencial oficial o de la Escuela Nómada.</p>
-        <p class="texto" style="margin-bottom:2rem;">Esto no es solo burocracia: es tu historial real como aventurero. La demostración de que no vas de turista, sino que progresas.</p>
-        <div class="sellos" style="flex-wrap:wrap;gap:0.8rem;">
-          <div class="sello"><div class="sello-icon">🏅</div><div><strong>Credenciales verificables</strong><span>QR único por módulo</span></div></div>
-          <div class="sello"><div class="sello-icon">📖</div><div><strong>Logbook digital</strong><span>Historial completo</span></div></div>
-          <div class="sello"><div class="sello-icon">📈</div><div><strong>Mapa de progresión</strong><span>Visual por disciplina</span></div></div>
-        </div>
-      </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
-        <div style="padding:1.5rem;background:var(--cielo);border-radius:var(--radio);text-align:center;">
-          <div style="font-family:var(--display);font-size:3rem;color:var(--mar);" data-count="25">25+</div>
-          <div style="font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-calido);">Módulos formativos</div>
-        </div>
-        <div style="padding:1.5rem;background:var(--cielo);border-radius:var(--radio);text-align:center;">
-          <div style="font-family:var(--display);font-size:3rem;color:var(--bosque);" data-count="5">5</div>
-          <div style="font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-calido);">Líneas de progresión</div>
-        </div>
-        <div style="padding:1.5rem;background:var(--cielo);border-radius:var(--radio);text-align:center;">
-          <div style="font-family:var(--display);font-size:3rem;color:var(--arena);" data-count="10">10+</div>
-          <div style="font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-calido);">Badges desbloqueables</div>
-        </div>
-        <div style="padding:1.5rem;background:var(--cielo);border-radius:var(--radio);text-align:center;">
-          <div style="font-family:var(--display);font-size:3rem;color:var(--roca);">QR</div>
-          <div style="font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-calido);">Credencial verificable</div>
-        </div>
-      </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;text-align:center;" class="grid-3">
+      <div style="padding:1.5rem;background:var(--blanco);border-radius:var(--radio);border:1px solid var(--crema-media);"><div style="font-family:var(--display);font-size:2.5rem;color:var(--mar);">8</div><div style="font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-calido);">Líneas formativas</div></div>
+      <div style="padding:1.5rem;background:var(--blanco);border-radius:var(--radio);border:1px solid var(--crema-media);"><div style="font-family:var(--display);font-size:2.5rem;color:var(--bosque);">50+</div><div style="font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-calido);">Niveles y módulos</div></div>
+      <div style="padding:1.5rem;background:var(--blanco);border-radius:var(--radio);border:1px solid var(--crema-media);"><div style="font-family:var(--display);font-size:2.5rem;color:var(--arena);">10+</div><div style="font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-calido);">Badges desbloqueables</div></div>
+      <div style="padding:1.5rem;background:var(--blanco);border-radius:var(--radio);border:1px solid var(--crema-media);"><div style="font-family:var(--display);font-size:2.5rem;color:var(--roca);">QR</div><div style="font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-calido);">Credencial verificable</div></div>
     </div>
   </div>
 </section>
 
-<!-- ═══ TRACKS POR DISCIPLINA ═══ -->
-<section class="bg-crema">
+<!-- ITINERARIOS -->
+<section class="bg-blanco">
   <div class="container">
     <span class="label">Todos los itinerarios</span>
     <h2 class="titulo">RUTAS DE<br><span class="mar">PROGRESIÓN</span></h2>
     <div class="divisor"></div>
-    <div class="grid-3" style="margin-top:3rem;gap:1.5rem;">
+    <div class="grid-3" style="gap:1.5rem;margin-top:3rem;">
 
-      <!-- BUCEO -->
-      <div class="cert-track reveal">
-        <div class="cert-track-header">
-          <div class="cert-track-icon">🤿</div>
-          <div>
-            <div class="cert-track-titulo">LÍNEA BUCEO</div>
-            <div class="cert-track-sub">PADI / SSI · Progresión completa</div>
-          </div>
-        </div>
-        <div class="cert-track-body">
-          <div class="cert-nivel"><div class="cert-nivel-dot verde"></div><div class="cert-nivel-nombre">Bautismo de Buceo</div><div class="cert-nivel-cert">Experiencia</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot azul"></div><div class="cert-nivel-nombre">Open Water PADI / SSI</div><div class="cert-nivel-cert">OWD cert. inter.</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot arena"></div><div class="cert-nivel-nombre">Advanced Open Water</div><div class="cert-nivel-cert">AOWD cert. inter.</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot arena"></div><div class="cert-nivel-nombre">Nitrox / Especialidades</div><div class="cert-nivel-cert">Especialidad cert.</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot arena"></div><div class="cert-nivel-nombre">Rescue Diver</div><div class="cert-nivel-cert">Rescue cert.</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot rojo"></div><div class="cert-nivel-nombre">Divemaster / Dive Guide</div><div class="cert-nivel-cert">Prof. PADI/SSI</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot rojo"></div><div class="cert-nivel-nombre">Instructor (OWSI/SI)</div><div class="cert-nivel-cert">Prof. avanzado</div></div>
-          <div style="margin-top:0.8rem;padding:0.6rem;background:var(--cielo);border-radius:var(--radio);font-size:0.7rem;color:var(--mar);">+ Buceo nocturno · Foto submarina · Orientación subacuática · Buceo técnico intro</div>
-        </div>
-      </div>
+<!-- ═══ BUCEO ═══ -->
+<div class="itin-card reveal">
+  <div class="itin-header"><div class="itin-icon">🤿</div><div><div class="itin-titulo">LÍNEA BUCEO</div><div class="itin-sub">PADI / SSI · Progresión completa</div></div></div>
+  <div class="itin-body">
+    <div class="itin-nivel"><div class="itin-dot dot-verde"></div><div class="itin-nombre">Bautismo de Buceo</div><div class="itin-cert">Experiencia</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Open Water Diver PADI / SSI</div><div class="itin-cert">OWD · Int. cert.</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Advanced Open Water</div><div class="itin-cert">AOWD · Int. cert.</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Nitrox / Especialidades</div><div class="itin-cert">Especialidad</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Rescue Diver</div><div class="itin-cert">Rescue cert.</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-rojo"></div><div class="itin-nombre">Divemaster / Dive Guide</div><div class="itin-cert">Prof. PADI/SSI</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-rojo"></div><div class="itin-nombre">Instructor (OWSI / SI)</div><div class="itin-cert">Prof. avanzado</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-gris"></div><div class="itin-nombre">Buceo nocturno · Foto submarina · Orientación</div><div class="itin-cert">Especialidades</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-gris"></div><div class="itin-nombre">Buceo técnico (intro)</div><div class="itin-cert">Técnico</div></div>
+  </div>
+  <div class="itin-footer">
+    <span class="itin-tag">📍 Águilas · Isla del Fraile</span>
+    <span class="itin-tag">📍 Mazarrón · Cabo de Palos</span>
+  </div>
+</div>
 
-      <!-- AIRE -->
-      <div class="cert-track reveal">
-        <div class="cert-track-header">
-          <div class="cert-track-icon">🪂</div>
-          <div>
-            <div class="cert-track-titulo">LÍNEA AIRE</div>
-            <div class="cert-track-sub">Paracaidismo · Parapente · Paramotor</div>
-          </div>
-        </div>
-        <div class="cert-track-body">
-          <div class="cert-nivel"><div class="cert-nivel-dot verde"></div><div class="cert-nivel-nombre">Paracaidismo Tándem</div><div class="cert-nivel-cert">Experiencia</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot azul"></div><div class="cert-nivel-nombre">AFF – Nivel 1 al 8</div><div class="cert-nivel-cert">AFF progresivo</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot arena"></div><div class="cert-nivel-nombre">Licencia de Paracaidista A</div><div class="cert-nivel-cert">RFAE Licencia A</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot verde"></div><div class="cert-nivel-nombre">Parapente Biplaza</div><div class="cert-nivel-cert">Experiencia</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot azul"></div><div class="cert-nivel-nombre">Parapente Iniciación</div><div class="cert-nivel-cert">RFAAE Piloto VL</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot arena"></div><div class="cert-nivel-nombre">Parapente Progresión</div><div class="cert-nivel-cert">Licencia completa</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot rojo"></div><div class="cert-nivel-nombre">Paramotor / Paratrike</div><div class="cert-nivel-cert">FLU motorizado</div></div>
-        </div>
-      </div>
+<!-- ═══ PARACAIDISMO ═══ -->
+<div class="itin-card reveal">
+  <div class="itin-header"><div class="itin-icon">🪂</div><div><div class="itin-titulo">LÍNEA PARACAIDISMO</div><div class="itin-sub">Tándem → AFF → Licencias A/B/C/D</div></div></div>
+  <div class="itin-body">
+    <div class="itin-nivel"><div class="itin-dot dot-verde"></div><div class="itin-nombre">Paracaidismo tándem</div><div class="itin-cert">Experiencia</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">AFF Nivel 1 — Introducción y caída libre inicial</div><div class="itin-cert">AFF N1</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">AFF Niveles 2–4 — Control de posición y apertura</div><div class="itin-cert">AFF N2–N4</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">AFF Niveles 5–8 — Giros, bucles y autonomía</div><div class="itin-cert">AFF N5–N8</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Licencia A — 25 saltos · vuelo básico · apertura autónoma</div><div class="itin-cert">Lic. A · RFAE</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Licencia B — 50 saltos · precisión y trabajo en nube</div><div class="itin-cert">Lic. B · RFAE</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-rojo"></div><div class="itin-nombre">Licencia C — 200 saltos · formaciones y freefly</div><div class="itin-cert">Lic. C · RFAE</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-rojo"></div><div class="itin-nombre">Licencia D — 500 saltos · monitor y experto</div><div class="itin-cert">Lic. D · RFAE</div></div>
+  </div>
+  <div class="itin-footer">
+    <span class="itin-tag">📍 Totana (AFF y progresión)</span>
+    <span class="itin-tag">Ref. operativa RFAE</span>
+  </div>
+</div>
 
-      <!-- VERTICAL -->
-      <div class="cert-track reveal">
-        <div class="cert-track-header">
-          <div class="cert-track-icon">🧗</div>
-          <div>
-            <div class="cert-track-titulo">LÍNEA VERTICAL</div>
-            <div class="cert-track-sub">Escalada · Ferrata · Rápel</div>
-          </div>
-        </div>
-        <div class="cert-track-body">
-          <div class="cert-nivel"><div class="cert-nivel-dot verde"></div><div class="cert-nivel-nombre">Escalada Iniciación</div><div class="cert-nivel-cert">Cred. Escuela Nómada</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot azul"></div><div class="cert-nivel-nombre">Escalada Progresión</div><div class="cert-nivel-cert">Cred. Escuela Nómada</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot azul"></div><div class="cert-nivel-nombre">Escalada Deportiva</div><div class="cert-nivel-cert">Cred. Escuela Nómada</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot arena"></div><div class="cert-nivel-nombre">Ferratas y Rápel</div><div class="cert-nivel-cert">Cred. Escuela Nómada</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot arena"></div><div class="cert-nivel-nombre">Escalada Clásica / Trad.</div><div class="cert-nivel-cert">Cred. Escuela Nómada</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot rojo"></div><div class="cert-nivel-nombre">Espeleología</div><div class="cert-nivel-cert">FEE / FERM ref.</div></div>
-        </div>
-      </div>
+<!-- ═══ PARAPENTE ═══ -->
+<div class="itin-card reveal">
+  <div class="itin-header"><div class="itin-icon">🦅</div><div><div class="itin-titulo">LÍNEA PARAPENTE</div><div class="itin-sub">Biplaza → Autonomía → Perfeccionamiento</div></div></div>
+  <div class="itin-body">
+    <div class="itin-nivel"><div class="itin-dot dot-verde"></div><div class="itin-nombre">Parapente biplaza — primera experiencia</div><div class="itin-cert">Experiencia</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Iniciación — control de campa en tierra</div><div class="itin-cert">Módulo 1</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Vuelo inicial — primeros vuelos guiados</div><div class="itin-cert">Módulo 2</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Progresión — lectura de condiciones meteorológicas</div><div class="itin-cert">Módulo 3</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Autonomía progresiva — vuelos independientes</div><div class="itin-cert">Piloto VL · FAMUR ref.</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Perfeccionamiento — seguridad activa y maniobras</div><div class="itin-cert">Avanzado</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-rojo"></div><div class="itin-nombre">Módulos avanzados — cross country y acro básico</div><div class="itin-cert">Especialidad</div></div>
+  </div>
+  <div class="itin-footer">
+    <span class="itin-tag">📍 Águilas y litoral</span>
+    <span class="itin-tag">Ref. FAMUR</span>
+  </div>
+</div>
 
-      <!-- MONTAÑA -->
-      <div class="cert-track reveal">
-        <div class="cert-track-header">
-          <div class="cert-track-icon">⛰️</div>
-          <div>
-            <div class="cert-track-titulo">LÍNEA MONTAÑA</div>
-            <div class="cert-track-sub">Técnicas · Orientación · Bushcraft</div>
-          </div>
-        </div>
-        <div class="cert-track-body">
-          <div class="cert-nivel"><div class="cert-nivel-dot verde"></div><div class="cert-nivel-nombre">Senderismo y Trekking</div><div class="cert-nivel-cert">Experiencia / Logbook</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot azul"></div><div class="cert-nivel-nombre">Trekking de Crestas</div><div class="cert-nivel-cert">Cred. Escuela Nómada</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot arena"></div><div class="cert-nivel-nombre">Técnicas Básicas Montaña</div><div class="cert-nivel-cert">Cred. Escuela Nómada</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot arena"></div><div class="cert-nivel-nombre">Orientación y GPS</div><div class="cert-nivel-cert">Cred. Escuela Nómada</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot arena"></div><div class="cert-nivel-nombre">Meteorología Aplicada</div><div class="cert-nivel-cert">Cred. Escuela Nómada</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot rojo"></div><div class="cert-nivel-nombre">Bushcraft y Supervivencia</div><div class="cert-nivel-cert">Cred. Escuela Nómada</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot rojo"></div><div class="cert-nivel-nombre">Vivac y Expedición</div><div class="cert-nivel-cert">Cred. Escuela Nómada</div></div>
-        </div>
-      </div>
+<!-- ═══ PARAMOTOR / PARATRIKE ═══ -->
+<div class="itin-card reveal">
+  <div class="itin-header"><div class="itin-icon">🛸</div><div><div class="itin-titulo">LÍNEA PARAMOTOR</div><div class="itin-sub">Paramotor · Paratrike · Vuelo motorizado</div></div></div>
+  <div class="itin-body">
+    <div class="itin-nivel"><div class="itin-dot dot-verde"></div><div class="itin-nombre">Paratrike biplaza — experiencia de vuelo</div><div class="itin-cert">Experiencia</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Iniciación al vuelo — teoría, motor y control</div><div class="itin-cert">Módulo 1</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Técnica y maniobra — despegue, vuelo y aterrizaje</div><div class="itin-cert">Módulo 2</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Navegación básica y lectura del viento</div><div class="itin-cert">Módulo 3</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Progresión — control autónomo del equipo</div><div class="itin-cert">Intermedio</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Perfeccionamiento — rutas y cross-country motor</div><div class="itin-cert">Avanzado</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-rojo"></div><div class="itin-nombre">Seguridad avanzada — meteorología y emergencias</div><div class="itin-cert">Módulo final</div></div>
+  </div>
+  <div class="itin-footer">
+    <span class="itin-tag">📍 Águilas · litoral sur Murcia</span>
+    <span class="itin-tag">Ref. FAMUR</span>
+  </div>
+</div>
 
-      <!-- MODULOS COMUNES -->
-      <div class="cert-track reveal">
-        <div class="cert-track-header">
-          <div class="cert-track-icon">📚</div>
-          <div>
-            <div class="cert-track-titulo">MÓDULOS COMUNES</div>
-            <div class="cert-track-sub">Para todas las disciplinas</div>
-          </div>
-        </div>
-        <div class="cert-track-body">
-          <div class="cert-nivel"><div class="cert-nivel-dot verde"></div><div class="cert-nivel-nombre">Primeros Auxilios en Exterior</div><div class="cert-nivel-cert">Por disciplina</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot verde"></div><div class="cert-nivel-nombre">Meteorología General</div><div class="cert-nivel-cert">Todas</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot azul"></div><div class="cert-nivel-nombre">Orientación y Cartografía</div><div class="cert-nivel-cert">Montaña / BTT</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot azul"></div><div class="cert-nivel-nombre">Gestión del Riesgo</div><div class="cert-nivel-cert">Avanzado</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot arena"></div><div class="cert-nivel-nombre">Comunicación en Grupo</div><div class="cert-nivel-cert">Equipos / Líderes</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot arena"></div><div class="cert-nivel-nombre">Medio Natural y Respeto</div><div class="cert-nivel-cert">Todas</div></div>
-        </div>
-      </div>
+<!-- ═══ ESCALADA ═══ -->
+<div class="itin-card reveal">
+  <div class="itin-header"><div class="itin-icon">🧗</div><div><div class="itin-titulo">LÍNEA ESCALADA</div><div class="itin-sub">Deportiva · Clásica · Varios largos</div></div></div>
+  <div class="itin-body">
+    <div class="itin-nivel"><div class="itin-dot dot-verde"></div><div class="itin-nombre">Iniciación — técnica básica y seguridad</div><div class="itin-cert">Módulo 1</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-verde"></div><div class="itin-nombre">Escalada deportiva — chapas, vías y progresión</div><div class="itin-cert">Módulo 2</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Lectura de vías y encadenamiento</div><div class="itin-cert">Módulo 3</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Técnica de cuerdas y maniobras</div><div class="itin-cert">Módulo 4</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Escalada clásica / tradicional</div><div class="itin-cert">Cred. Escuela NE</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Escalada de varios largos</div><div class="itin-cert">Cred. Escuela NE</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-rojo"></div><div class="itin-nombre">Progresión vertical + autorrescate</div><div class="itin-cert">Avanzado</div></div>
+  </div>
+  <div class="itin-footer">
+    <span class="itin-tag">📍 Sierra Espuña</span>
+    <span class="itin-tag">📍 Entorno Águilas y Lorca</span>
+  </div>
+</div>
 
-      <!-- LOGBOOK DIGITAL -->
-      <div class="cert-track reveal" style="border-color:var(--arena);">
-        <div class="cert-track-header" style="background:linear-gradient(135deg,var(--cielo),var(--blanco));">
-          <div class="cert-track-icon">📱</div>
-          <div>
-            <div class="cert-track-titulo">LOGBOOK DIGITAL</div>
-            <div class="cert-track-sub">Tu historial · Tus hitos · Tu progresión</div>
-          </div>
-        </div>
-        <div class="cert-track-body">
-          <div class="cert-nivel"><div class="cert-nivel-dot azul"></div><div class="cert-nivel-nombre">Historial de actividades</div><div class="cert-nivel-cert">Por fecha y tipo</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot arena"></div><div class="cert-nivel-nombre">Credenciales digitales QR</div><div class="cert-nivel-cert">Descargables PDF</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot verde"></div><div class="cert-nivel-nombre">Badges e insignias</div><div class="cert-nivel-cert">10+ desbloqueables</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot arena"></div><div class="cert-nivel-nombre">Mapa de progresión</div><div class="cert-nivel-cert">Visual por disciplina</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot azul"></div><div class="cert-nivel-nombre">Próximos objetivos</div><div class="cert-nivel-cert">Recomendados por nivel</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot verde"></div><div class="cert-nivel-nombre">Módulos completados</div><div class="cert-nivel-cert">Con fecha y guía</div></div>
-          <div class="cert-nivel"><div class="cert-nivel-dot gris"></div><div class="cert-nivel-nombre">App Nómada (próximamente)</div><div class="cert-nivel-cert">iOS y Android</div></div>
-        </div>
-      </div>
+<!-- ═══ FOIL / WATERMAN ═══ -->
+<div class="itin-card reveal">
+  <div class="itin-header"><div class="itin-icon">🏄</div><div><div class="itin-titulo">LÍNEA FOIL/WATERMAN</div><div class="itin-sub">E-foil · Wingfoil · Jetsurf · Waterman</div></div></div>
+  <div class="itin-body">
+    <div class="itin-nivel"><div class="itin-dot dot-verde"></div><div class="itin-nombre">E-foil — iniciación y primer vuelo</div><div class="itin-cert">Cred. Escuela NE</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-verde"></div><div class="itin-nombre">Wingfoil — introducción y control de ala</div><div class="itin-cert">Cred. Escuela NE</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Progresión foil — equilibrio, viraje y velocidad</div><div class="itin-cert">Módulo 2</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Wingfoil avanzado — lectura del viento y tacking</div><div class="itin-cert">Módulo 3</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Jetsurf — sesión técnica y control a velocidad</div><div class="itin-cert">Avanzado</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Clinic foil intensivo — fin de semana</div><div class="itin-cert">Clínica</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-rojo"></div><div class="itin-nombre">Waterman Course — E-foil + Wing + Kite 3 días</div><div class="itin-cert">Waterman cert.</div></div>
+  </div>
+  <div class="itin-footer">
+    <span class="itin-tag">📍 Águilas · Calabardina</span>
+    <span class="itin-tag">📍 Cuatro Calas</span>
+  </div>
+</div>
 
-    </div>
+<!-- ═══ MONTAÑA ═══ -->
+<div class="itin-card reveal">
+  <div class="itin-header"><div class="itin-icon">⛰️</div><div><div class="itin-titulo">LÍNEA MONTAÑA</div><div class="itin-sub">Senderismo · Trekking · Vivac · Bushcraft</div></div></div>
+  <div class="itin-body">
+    <div class="itin-nivel"><div class="itin-dot dot-verde"></div><div class="itin-nombre">Senderismo guiado e interpretativo</div><div class="itin-cert">Logbook</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-verde"></div><div class="itin-nombre">Trekking y marcha de montaña</div><div class="itin-cert">Logbook</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Trekking de crestas — técnicas básicas</div><div class="itin-cert">Cred. Escuela NE</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Orientación y cartografía digital</div><div class="itin-cert">Módulo</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Meteorología aplicada al medio natural</div><div class="itin-cert">Módulo</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Bushcraft y supervivencia outdoor</div><div class="itin-cert">Cred. Escuela NE</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-rojo"></div><div class="itin-nombre">Vivac y travesía técnica — 2 días</div><div class="itin-cert">Cred. Escuela NE</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-rojo"></div><div class="itin-nombre">Montañismo y ascensiones guiadas</div><div class="itin-cert">UIAGM ref.</div></div>
+  </div>
+  <div class="itin-footer">
+    <span class="itin-tag">📍 Sierra Almenara</span>
+    <span class="itin-tag">📍 Sierra Espuña</span>
+    <span class="itin-tag">📍 Cabo Cope</span>
+  </div>
+</div>
+
+<!-- ═══ MAR Y COSTA ═══ -->
+<div class="itin-card reveal">
+  <div class="itin-header"><div class="itin-icon">🌊</div><div><div class="itin-titulo">LÍNEA MAR Y COSTA</div><div class="itin-sub">Kayak · SUP · Snorkel · Coasteering</div></div></div>
+  <div class="itin-body">
+    <div class="itin-nivel"><div class="itin-dot dot-verde"></div><div class="itin-nombre">Kayak de iniciación — primeras paladas</div><div class="itin-cert">Logbook</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-verde"></div><div class="itin-nombre">SUP / Paddle Surf — equilibrio y técnica</div><div class="itin-cert">Logbook</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Kayak de mar — navegación costera</div><div class="itin-cert">Cred. Escuela NE</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Snorkel de aventura — fauna y técnica</div><div class="itin-cert">Módulo</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Coasteering — técnica litoral rocoso</div><div class="itin-cert">Cred. Escuela NE</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Travesías en kayak — rutas de un día</div><div class="itin-cert">Avanzado</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-rojo"></div><div class="itin-nombre">Socorrismo acuático básico</div><div class="itin-cert">Cred. Escuela NE</div></div>
+  </div>
+  <div class="itin-footer">
+    <span class="itin-tag">📍 Águilas · Cuatro Calas</span>
+    <span class="itin-tag">📍 Calabardina · Cabo Cope</span>
+  </div>
+</div>
+
+<!-- ═══ VERTICAL ═══ -->
+<div class="itin-card reveal">
+  <div class="itin-header"><div class="itin-icon">🪢</div><div><div class="itin-titulo">LÍNEA VERTICAL</div><div class="itin-sub">Ferrata · Rápel · Espeleología · Saltos</div></div></div>
+  <div class="itin-body">
+    <div class="itin-nivel"><div class="itin-dot dot-verde"></div><div class="itin-nombre">Vía ferrata — iniciación y equipo</div><div class="itin-cert">Módulo 1</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Rápel técnico — técnica y seguridad</div><div class="itin-cert">Módulo 2</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Espeleoaventura — técnica y cueva</div><div class="itin-cert">FERM ref.</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Rope jumping — validación y técnica</div><div class="itin-cert">Req. validación</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Puenting — maniobra y seguridad</div><div class="itin-cert">Req. validación</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-rojo"></div><div class="itin-nombre">Cliff diving — solo exp. validada</div><div class="itin-cert">Req. validación esp.</div></div>
+  </div>
+  <div class="itin-footer">
+    <span class="itin-tag">📍 Sierra Espuña</span>
+    <span class="itin-tag">📍 Castillo S. Juan · Roncaor</span>
+  </div>
+</div>
+
+<!-- ═══ BTT / CICLOTURISMO ═══ -->
+<div class="itin-card reveal">
+  <div class="itin-header"><div class="itin-icon">🚵</div><div><div class="itin-titulo">LÍNEA BTT</div><div class="itin-sub">BTT · Cicloturismo · Litoral y sierra</div></div></div>
+  <div class="itin-body">
+    <div class="itin-nivel"><div class="itin-dot dot-verde"></div><div class="itin-nombre">BTT costero — iniciación y ruta litoral</div><div class="itin-cert">Logbook</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">BTT técnico — sendero interior y desnivel</div><div class="itin-cert">Cred. Escuela NE</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Cicloturismo de aventura — rutas largas</div><div class="itin-cert">Cred. Escuela NE</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Técnica de mantenimiento básico</div><div class="itin-cert">Módulo</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-rojo"></div><div class="itin-nombre">Orientación GPS y planificación de rutas</div><div class="itin-cert">Módulo avanzado</div></div>
+  </div>
+  <div class="itin-footer">
+    <span class="itin-tag">📍 Águilas · Calabardina</span>
+    <span class="itin-tag">📍 Sierra Almenara</span>
+  </div>
+</div>
+
+<!-- ═══ BARRANCOS ═══ -->
+<div class="itin-card reveal">
+  <div class="itin-header"><div class="itin-icon">💧</div><div><div class="itin-titulo">LÍNEA BARRANCOS</div><div class="itin-sub">Barranquismo · Rafting · Descenso cañones</div></div></div>
+  <div class="itin-body">
+    <div class="itin-nivel"><div class="itin-dot dot-verde"></div><div class="itin-nombre">Rafting — iniciación en agua viva</div><div class="itin-cert">Logbook</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Barranquismo seco — técnica y progresión</div><div class="itin-cert">Cred. Escuela NE</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Barranquismo acuático — cañones con agua</div><div class="itin-cert">Cred. Escuela NE</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-rojo"></div><div class="itin-nombre">Descenso de cañones — técnica avanzada</div><div class="itin-cert">Avanzado</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-rojo"></div><div class="itin-nombre">Rescate básico en entornos acuáticos</div><div class="itin-cert">Seguridad</div></div>
+  </div>
+  <div class="itin-footer">
+    <span class="itin-tag">📍 Sierra Espuña</span>
+    <span class="itin-tag">📍 Cañón Almadenes · Calasparra</span>
+  </div>
+</div>
+
+<!-- ═══ MÓDULOS COMUNES ═══ -->
+<div class="itin-card reveal" style="border-color:var(--arena);">
+  <div class="itin-header" style="background:linear-gradient(135deg,var(--cielo),var(--blanco));"><div class="itin-icon">📚</div><div><div class="itin-titulo">MÓDULOS COMUNES</div><div class="itin-sub">Transversales a todas las disciplinas</div></div></div>
+  <div class="itin-body">
+    <div class="itin-nivel"><div class="itin-dot dot-verde"></div><div class="itin-nombre">Seguridad general y gestión del riesgo</div><div class="itin-cert">Todas</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-verde"></div><div class="itin-nombre">Lectura del medio y toma de decisiones</div><div class="itin-cert">Todas</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Meteorología aplicada (mar, montaña, aire)</div><div class="itin-cert">Por disciplina</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Orientación y navegación</div><div class="itin-cert">Montaña / BTT</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-azul"></div><div class="itin-nombre">Preparación física y autoevaluación del nivel</div><div class="itin-cert">Todas</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Material, revisión y mantenimiento del equipo</div><div class="itin-cert">Por disciplina</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Protocolos previos, check-in y firma digital</div><div class="itin-cert">Todas</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Medio natural, respeto y ética outdoor</div><div class="itin-cert">Todas</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-arena"></div><div class="itin-nombre">Comunicación y trabajo en equipo</div><div class="itin-cert">Equipos</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-rojo"></div><div class="itin-nombre">Primeros auxilios y rescate básico</div><div class="itin-cert">Por disciplina</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-rojo"></div><div class="itin-nombre">Hábitos de seguridad y responsabilidad</div><div class="itin-cert">Todas</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-gris"></div><div class="itin-nombre">Registro logbook, credenciales y tecnología</div><div class="itin-cert">Todas</div></div>
+    <div class="itin-nivel"><div class="itin-dot dot-gris"></div><div class="itin-nombre">Cultura del mar, montaña, aire y vertical</div><div class="itin-cert">Transversal</div></div>
+  </div>
+  <div class="itin-footer">
+    <span class="itin-tag">Integrado en todos los itinerarios</span>
+  </div>
+</div>
+
+    </div><!-- end grid -->
   </div>
 </section>
 
-<!-- ═══ CREDENCIALES DEMO ═══ -->
-<section class="bg-gris">
+<!-- CREDENCIALES -->
+<section class="bg-crema">
   <div class="container">
-    <span class="label">Así se ven en tu perfil</span>
-    <h2 class="titulo">TUIS<br><span class="mar">CREDENCIALES</span></h2>
+    <span class="label">Así se ve en tu perfil</span>
+    <h2 class="titulo">CREDENCIALES<br><span class="mar">DIGITALES</span></h2>
     <div class="divisor"></div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem;" class="grid-3">
+    <p class="texto" style="margin-bottom:3rem;">Cada módulo completado genera un registro en tu logbook y, cuando corresponde, una credencial digital con código QR verificable, historial de progresión y estado de nivel.</p>
+    <div class="grid-3" style="gap:1.5rem;">
       <div class="credencial">
         <div class="credencial-logo">NÓMADA EXTREMO</div>
         <div class="credencial-tipo">Escuela Nómada · Línea Buceo</div>
         <div class="credencial-nombre">Open Water Diver</div>
         <div style="font-size:0.68rem;color:rgba(200,220,235,0.65);margin:0.3rem 0 0.5rem;">PADI / SSI · Módulo 2 · Costa de Águilas</div>
-        <div class="credencial-id">NE-2025-001847-OWD · Issued 03/2025</div>
+        <div class="credencial-id">NE-2026-001847-OWD · Issued 03/2026</div>
         <div class="credencial-qr">▣</div>
       </div>
       <div class="credencial" style="background:linear-gradient(135deg,#b83232,#8a2020);">
         <div class="credencial-logo">NÓMADA EXTREMO</div>
-        <div class="credencial-tipo">Escuela Nómada · Línea Aire</div>
-        <div class="credencial-nombre">AFF – Nivel 8</div>
-        <div style="font-size:0.68rem;color:rgba(255,200,200,0.65);margin:0.3rem 0 0.5rem;">AFF Paracaidismo · RFAE referencia</div>
-        <div class="credencial-id">NE-2025-004521-AFF · Issued 06/2025</div>
+        <div class="credencial-tipo">Escuela Nómada · Paracaidismo</div>
+        <div class="credencial-nombre">AFF Nivel 8 Completado</div>
+        <div style="font-size:0.68rem;color:rgba(255,200,200,0.65);margin:0.3rem 0 0.5rem;">AFF Paracaidismo · Ref. RFAE · Totana</div>
+        <div class="credencial-id">NE-2026-004521-AFF · Issued 06/2026</div>
         <div class="credencial-qr">▣</div>
       </div>
       <div class="credencial" style="background:linear-gradient(135deg,var(--bosque),var(--bosque-claro));">
         <div class="credencial-logo">NÓMADA EXTREMO</div>
-        <div class="credencial-tipo">Escuela Nómada · Línea Montaña</div>
-        <div class="credencial-nombre">Técnicas de Montaña</div>
-        <div style="font-size:0.68rem;color:rgba(168,197,160,0.65);margin:0.3rem 0 0.5rem;">Módulo 4 · Sierra Almenara</div>
-        <div class="credencial-id">NE-2025-003201-MON · Issued 05/2025</div>
+        <div class="credencial-tipo">Escuela Nómada · Foil</div>
+        <div class="credencial-nombre">Waterman Course</div>
+        <div style="font-size:0.68rem;color:rgba(168,197,160,0.65);margin:0.3rem 0 0.5rem;">E-foil + Wingfoil + Kitesurf · 3 días</div>
+        <div class="credencial-id">NE-2026-008820-WAT · Issued 08/2026</div>
         <div class="credencial-qr">▣</div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="cta-band">
+<div class="cta-band" style="background:var(--mar);">
   <div class="container">
-    <h3 class="cta-band-titulo">¿POR QUÉ ITINERARIO<br>EMPIEZAS?</h3>
-    <p class="cta-band-sub">Cuéntanos qué disciplina te apasiona y te orientamos sin compromiso.</p>
+    <h3 class="cta-band-titulo" style="color:var(--blanco);">¿POR QUÉ ITINERARIO EMPIEZAS?</h3>
+    <p class="cta-band-sub" style="color:rgba(200,213,223,0.85);">Cuéntanos qué disciplina te apasiona y te orientamos sin compromiso.</p>
     <div class="cta-band-btns">
-      <a href="escuela.html" class="btn btn-arena">Ver la Escuela Nómada →</a>
-      <a href="reservas.html" class="btn btn-mar">Preinscribirse en curso</a>
-      <a href="comunidad.html" class="btn btn-outline">Ver mi Logbook →</a>
+      <a href="escuela.html" class="btn btn-arena">Ver la Escuela →</a>
+      <a href="reservas.html" class="btn btn-mar">Preinscribirse</a>
+      <a href="comunidad.html" class="btn" style="background:rgba(255,255,255,0.12);color:white;border:1.5px solid rgba(255,255,255,0.25);">Mi Logbook →</a>
     </div>
   </div>
 </div>

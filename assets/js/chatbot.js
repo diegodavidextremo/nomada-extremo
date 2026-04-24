@@ -169,3 +169,19 @@
     Object.assign(window._nomadaFAQS, origFAQS_EXT);
   }
 })();
+
+
+
+const NOMADA_EXTRA_FAQS = {
+  'efoil': { q: '¿Qué es el e-foil?', r: 'El e-foil es una tabla eléctrica con un foil (ala submarina) que te permite deslizarte por encima del agua gracias a un motor eléctrico. No necesitas olas ni viento. Las sesiones van desde 90€ e incluyen instructor. 📍 Águilas y Calabardina.' },
+  'wingfoil': { q: '¿Cómo funciona el wingfoil?', r: 'El wingfoil combina un ala de mano (wing) con un foil y tabla para volar sobre el agua usando el viento. Es una disciplina exigente que requiere algo de base en kitesurf o windsurf. Desde 100€/sesión con instructor.' },
+  'jetsurf': { q: '¿Qué es el jetsurf?', r: 'El jetsurf es una tabla con motor a reacción. Alcanza hasta 55 km/h y es la experiencia más adrenalínica del catálogo acuático. Solo disponible con instructor. Desde 120€/sesión.' },
+  'weekend': { q: '¿Tenéis packs de fin de semana?', r: 'Sí. Tenemos Weekends Brutales desde 180€/p: Weekend Mar Total, Cielo Nómada (parapente+paramotor), Vertical y Agua, y packs Élite de hasta 3 días con múltiples disciplinas. Ver en la sección Packs.' },
+  'foil': { q: '¿Puedo alquilar material de foil?', r: 'El material de foil (e-foil, wingfoil, jetsurf) solo se usa en formato supervisado con instructor por seguridad. No está disponible para uso libre. Consulta las sesiones en nuestra sección de Alquiler o escríbenos.' },
+  'naturismo': { q: '¿Qué son los packs naturistas?', r: 'Son experiencias de aventura suave en entornos seleccionados del litoral de Águilas, diseñadas para personas con filosofía naturista. Incluyen kayak, snorkel, SUP, yoga o senderismo. Solo para adultos y con el máximo respeto. Ver sección Naturismo.' },
+};
+
+// Merge with existing FAQs if possible
+if (typeof window !== 'undefined') {
+  window._nomadaExtraFAQS = NOMADA_EXTRA_FAQS;
+}
