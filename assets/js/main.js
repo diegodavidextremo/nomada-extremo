@@ -47,6 +47,22 @@ document.addEventListener('DOMContentLoaded', () => {
     ? `<div class="detail-row"><span>${label}</span><p>${items.join(', ')}</p></div>`
     : '';
 
+  const renderLocationGrid = (data) => {
+    const cells = [
+      ['Ubicación principal', data.base],
+      [data.zonaPrincipal ? 'Zona principal' : 'Zonas recomendadas', data.zonaPrincipal ? [data.zonaPrincipal] : data.zonas],
+      ['Disponibilidad', data.disponibilidad ? [data.disponibilidad] : data.salidas]
+    ].filter(([, value]) => value && value.length);
+
+    return `
+      <div class="activity-card-location-grid">
+        ${cells.map(([label, value]) => renderList(label, value)).join('')}
+      </div>
+      ${data.noValidas ? `<div class="detail-row detail-row-wide"><span>Zonas no válidas</span><p>${data.noValidas}</p></div>` : ''}
+      ${data.salidas && (data.zonaPrincipal || data.disponibilidad) ? `<div class="detail-row detail-row-wide"><span>Salidas especiales</span><p>${data.salidas.join(', ')}</p></div>` : ''}
+    `;
+  };
+
   const activityData = {
     'SENDERISMO GUIADO': {
       base: ['Águilas, Sierra de la Almenara y Cabo Cope'],
@@ -120,17 +136,22 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'ROPE JUMPING': {
       base: ['Salida especial desde Águilas'],
-      zonas: ['No se ofrece en puntos no autorizados ni improvisados'],
-      salidas: ['Puente de Lebor', 'Totana', 'Mula', 'Lorquí', 'otras zonas autorizadas previa validación'],
-      ideal: 'Salto con cuerda, péndulo controlado, adrenalina y vídeo multi-cámara.',
-      seguridad: 'Sistemas redundantes, material homologado, revisión de instalación, briefing, peso, salud y potestad de cancelación.'
+      zonaPrincipal: 'Montanejos',
+      zonas: ['Montanejos como zona principal para Rope Jumping'],
+      disponibilidad: '2 días al mes, según calendario, grupo mínimo, empresa colaboradora, permisos y condiciones',
+      salidas: ['Montanejos', 'otras zonas autorizadas previa validación técnica'],
+      noValidas: 'No se ofrece en puntos no autorizados, improvisados ni sin instalación revisada.',
+      ideal: 'Salto con cuerda en formato péndulo desde puente autorizado, con briefing técnico y grabación opcional.',
+      seguridad: 'Instalación revisada, sistemas redundantes, material homologado, control de peso y salud, briefing técnico y potestad de cancelación.'
     },
     'PUENTING': {
       base: ['Salida especial desde Águilas'],
-      zonas: ['No es actividad principal de Águilas'],
-      salidas: ['Puente de Lebor', 'Totana', 'Mula', 'Lorquí', 'Mascarat o Montanejos como salidas externas autorizadas'],
-      ideal: 'Alta adrenalina, salto pendular, grupo reducido y reportaje de acción.',
-      seguridad: 'Instalación revisada, doble sistema, material homologado, briefing técnico y validación física previa.'
+      zonaPrincipal: 'Mascarat, Calpe',
+      zonas: ['Mascarat como experiencia premium de puenting alto'],
+      disponibilidad: '2 días al mes, según calendario, permisos y disponibilidad',
+      salidas: ['Mascarat', 'Puente de Lebor', 'Totana', 'Mula', 'Lorquí', 'según tipo de salto y empresa autorizada'],
+      ideal: 'Puenting de gran altura en entorno autorizado, con briefing, control técnico y grabación opcional.',
+      seguridad: 'Material homologado, sistemas redundantes, instalación revisada, control técnico, briefing y potestad de cancelación.'
     },
     'ESCALADA VARIOS LARGOS': {
       base: ['Salida especial desde Águilas'],
@@ -390,19 +411,24 @@ document.addEventListener('DOMContentLoaded', () => {
     Object.entries(activityData).map(([key, value]) => [normalizeTitle(key), value])
   );
 
-  document.querySelectorAll('.ficha').forEach(card => {
+  document.querySelectorAll('.fichas-grid .ficha').forEach(card => {
     const titleEl = card.querySelector('.ficha-titulo');
     const body = card.querySelector('.ficha-cuerpo');
     if (!titleEl || !body || body.querySelector('.activity-detail-panel')) return;
     const data = activityLookup[normalizeTitle(titleEl.textContent)];
     if (!data) return;
+    card.classList.add('activity-card');
+    body.classList.add('activity-card-body');
+    card.querySelector('.ficha-familia')?.classList.add('activity-card-header');
+    card.querySelector('.ficha-badges')?.classList.add('activity-card-badges');
+    card.querySelector('.ficha-meta')?.classList.add('activity-card-quick-info');
+    card.querySelector('.ficha-btn')?.classList.add('activity-card-cta');
+    if (data.zonaPrincipal || data.disponibilidad) card.classList.add('activity-card-special');
     body.insertAdjacentHTML('beforeend', `
       <div class="activity-detail-panel">
-        ${renderList('Ubicación principal', data.base)}
-        ${renderList('Zonas recomendadas', data.zonas)}
-        ${renderList('Salidas especiales', data.salidas)}
-        <div class="detail-note">${data.ideal}</div>
-        <div class="detail-safety">${data.seguridad}</div>
+        ${renderLocationGrid(data)}
+        <div class="activity-card-note detail-note">${data.ideal}</div>
+        <div class="activity-card-safety detail-safety"><strong>Seguridad:</strong> ${data.seguridad}</div>
       </div>
     `);
   });
