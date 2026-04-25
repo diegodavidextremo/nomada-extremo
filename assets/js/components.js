@@ -7,7 +7,7 @@
 <div class="project-top-notice" role="note">${PROJECT_NOTICE}</div>
 <nav id="nav">
   <a href="index.html" class="nav-logo-wrap" aria-label="Nómada Extremo — Inicio">
-    <img src="assets/images/logo-oficial.png" alt="Logo Nómada Extremo" class="nav-logo-img">
+    <img src="assets/images/logo-photoroom.png" alt="Logo Nómada Extremo" class="nav-logo-img">
     <div class="nav-logo-text">
       <span class="ln1">NÓMADA EXTREMO</span>
       <span class="ln2">Aventura, técnica y naturaleza</span>
@@ -92,7 +92,7 @@
     <div class="footer-grid">
       <div>
         <div style="display:flex;align-items:center;gap:0.8rem;margin-bottom:0.5rem;">
-          <img src="assets/images/logo-oficial.png" alt="Logo Nómada Extremo" style="width:50px;height:50px;border-radius:50%;object-fit:cover;border:1px solid rgba(196,150,106,0.3);">
+          <img src="assets/images/logo-photoroom.png" alt="Logo Nómada Extremo" style="width:68px;height:68px;border-radius:18px;object-fit:contain;background:rgba(15,26,19,0.65);border:1px solid rgba(196,150,106,0.3);">
           <div>
             <div class="footer-marca-nombre">NÓMADA EXTREMO</div>
             <div class="footer-marca-lema">Proyecto académico premium de aventura</div>

@@ -4406,6 +4406,36 @@ section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { co
   box-shadow: inset 0 0 0 10px rgba(15,26,19,0.08);
 }
 
+/* --- Logo Photoroom: más presencia en navegación --- */
+.nav-logo-wrap {
+  min-height: 72px;
+  gap: 0.8rem;
+  padding: 0.35rem 0.9rem 0.35rem 0.38rem;
+}
+
+.nav-logo-img {
+  width: 64px !important;
+  height: 64px !important;
+  border-radius: 18px !important;
+  object-fit: contain !important;
+  background: radial-gradient(circle, rgba(15,26,19,0.7), rgba(15,26,19,0.18));
+  padding: 2px;
+  border: 1px solid rgba(196,150,106,0.42);
+}
+
+#nav.scrolled .nav-logo-img {
+  width: 58px !important;
+  height: 58px !important;
+}
+
+.nav-logo-text .ln1 {
+  font-size: 1.18rem;
+}
+
+.nav-logo-text .ln2 {
+  font-size: 0.62rem;
+}
+
 @media (max-width: 720px) {
   .hero-ecosystem-actions .btn {
     width: 100%;
@@ -4416,5 +4446,19 @@ section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { co
   }
   .medal-card {
     min-height: 165px;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-logo-wrap {
+    min-height: 60px;
+    gap: 0.55rem;
+  }
+
+  .nav-logo-img,
+  #nav.scrolled .nav-logo-img {
+    width: 54px !important;
+    height: 54px !important;
+    border-radius: 15px !important;
   }
 }
