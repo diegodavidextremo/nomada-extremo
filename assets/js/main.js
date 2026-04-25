@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cells = [
       ['Ubicación principal', data.base],
       [data.zonaPrincipal ? 'Zona principal' : 'Zonas recomendadas', data.zonaPrincipal ? [data.zonaPrincipal] : data.zonas],
-      ['Disponibilidad', data.disponibilidad ? [data.disponibilidad] : data.salidas]
+      [data.disponibilidad ? 'Disponibilidad' : 'Salidas especiales', data.disponibilidad ? [data.disponibilidad] : data.salidas]
     ].filter(([, value]) => value && value.length);
 
     return `
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'VIA FERRATA': {
       base: ['Salida especial desde Águilas'],
       zonas: ['No se vende como actividad principal de Águilas'],
-      salidas: ['Cañón de Almadenes', 'Vía Ferrata del Ciervo en Sierra Espuña', 'Sierra de Lugar / Fortuna', 'La Garapacha', 'Redován o Callosa como avanzadas'],
+      salidas: ['Cañón de Almadenes', 'Vía Ferrata del Ciervo en Sierra Espuña', 'Sierra de Lugar / Fortuna', 'La Garapacha', 'Redován y Callosa como salidas avanzadas'],
       ideal: 'Progresión por pared equipada, grapas, cable de vida, puentes, travesías y niveles K2 a K5.',
       seguridad: 'Validación de material, disipador, casco, arnés, meteorología, anclajes, vértigo y nivel del grupo.'
     },

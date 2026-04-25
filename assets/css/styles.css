@@ -2994,3 +2994,164 @@ section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { co
     line-height: 1.42 !important;
   }
 }
+
+/* --- AJUSTE VISUAL ACTIVIDADES: FOTOS VISIBLES Y TEXTO SIN DESBORDES --- */
+.actividades-page .container {
+  width: min(94vw, 1440px);
+  max-width: 1440px;
+  padding-left: clamp(1rem, 2vw, 2rem);
+  padding-right: clamp(1rem, 2vw, 2rem);
+}
+.actividades-page .fichas-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: clamp(1.2rem, 2vw, 1.8rem) !important;
+}
+.actividades-page .activity-card,
+.actividades-page .activity-card * {
+  min-width: 0;
+}
+.actividades-page .activity-card {
+  grid-template-columns: minmax(260px, 42%) minmax(0, 58%);
+  min-height: 430px;
+  overflow: hidden;
+  border-radius: calc(var(--radio) + 3px);
+}
+.actividades-page .activity-card .ficha-img {
+  height: 100%;
+  min-height: 430px;
+  background-size: cover;
+  background-position: center;
+}
+.actividades-page .activity-card .ficha-img::after {
+  height: 100%;
+  background:
+    linear-gradient(to right, rgba(15,26,19,0) 58%, rgba(250,250,248,0.28) 100%);
+}
+.actividades-page .activity-card-body {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: clamp(1rem, 1.45vw, 1.45rem) !important;
+}
+.actividades-page .activity-card .ficha-titulo,
+.actividades-page .activity-card .ficha-sub,
+.actividades-page .activity-card .ficha-familia,
+.actividades-page .activity-card .ficha-tag,
+.actividades-page .activity-card .badge-av,
+.actividades-page .activity-card .badge-privado,
+.actividades-page .activity-card .badge-premium,
+.actividades-page .activity-card .badge-validar,
+.actividades-page .detail-row p,
+.actividades-page .detail-row span,
+.actividades-page .detail-note,
+.actividades-page .detail-safety {
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+.actividades-page .activity-card .ficha-titulo {
+  font-size: clamp(1.35rem, 1.45vw, 1.85rem);
+  line-height: 0.98;
+}
+.actividades-page .activity-card .ficha-sub {
+  max-width: 58ch;
+}
+.actividades-page .activity-card .ficha-badges,
+.actividades-page .activity-card .ficha-meta {
+  align-items: flex-start;
+}
+.actividades-page .activity-card .ficha-tag,
+.actividades-page .activity-card .badge-av,
+.actividades-page .activity-card .badge-privado,
+.actividades-page .activity-card .badge-premium,
+.actividades-page .activity-card .badge-validar {
+  max-width: 100%;
+  white-space: normal;
+  text-align: left;
+}
+.actividades-page .activity-detail-panel {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.75rem;
+  padding: 0.9rem;
+}
+.actividades-page .activity-card-location-grid {
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.7rem;
+}
+.actividades-page .activity-card-location-grid .detail-row,
+.actividades-page .detail-row-wide {
+  min-width: 0;
+  padding: 0.72rem 0.78rem;
+}
+.actividades-page .activity-card-location-grid .detail-row p,
+.actividades-page .detail-row-wide p {
+  font-size: clamp(0.68rem, 0.58vw, 0.75rem);
+  line-height: 1.46;
+}
+.actividades-page .activity-card-note,
+.actividades-page .activity-card-safety {
+  min-width: min(100%, 230px);
+  padding: 0.78rem 0.88rem !important;
+  font-size: clamp(0.68rem, 0.58vw, 0.75rem) !important;
+}
+.actividades-page .activity-card-safety {
+  padding-left: 2.05rem !important;
+}
+.actividades-page .activity-card-cta {
+  margin-top: auto;
+}
+
+@media (min-width: 1500px) {
+  .actividades-page .activity-card {
+    grid-template-columns: minmax(300px, 44%) minmax(0, 56%);
+  }
+}
+@media (max-width: 1320px) {
+  .actividades-page .fichas-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .actividades-page .activity-card {
+    grid-template-columns: minmax(340px, 40%) minmax(0, 60%);
+    min-height: 390px;
+  }
+  .actividades-page .activity-card .ficha-img {
+    min-height: 390px;
+  }
+  .actividades-page .activity-detail-panel {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
+@media (max-width: 900px) {
+  .actividades-page .activity-card {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  .actividades-page .activity-card .ficha-img {
+    height: clamp(230px, 42vw, 340px);
+    min-height: 0;
+  }
+  .actividades-page .activity-card .ficha-img::after {
+    height: 70px;
+    background: linear-gradient(to top, var(--blanco), rgba(250,250,248,0));
+  }
+  .actividades-page .activity-card-cta {
+    grid-column: 1;
+    border-radius: 0 0 var(--radio) var(--radio) !important;
+  }
+}
+@media (max-width: 560px) {
+  .actividades-page .container {
+    width: min(100% - 1.2rem, 1440px);
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .actividades-page .activity-card .ficha-img {
+    height: 220px;
+  }
+  .actividades-page .activity-detail-panel,
+  .actividades-page .activity-card-location-grid {
+    grid-template-columns: 1fr;
+  }
+  .actividades-page .activity-card .ficha-titulo {
+    font-size: 1.35rem !important;
+  }
+}
