@@ -1,7 +1,7 @@
 /* NÓMADA EXTREMO v2.3 — componentes compartidos */
 
 (function () {
-  const PROJECT_NOTICE = 'Nómada Extremo es actualmente un proyecto académico ficticio creado por Diego David Gómez García, alumno de 1.º GMN del IES Europa de Águilas. No realiza reservas, cobros ni actividades reales en este momento.';
+  const PROJECT_NOTICE = 'Nómada Extremo es actualmente un proyecto académico ficticio creado por Diego David Gómez García, alumno de 1.º GMN del IES Europa de Águilas. No realiza reservas, cobros, ventas, sorteos ni actividades reales en este momento.';
 
   const NAV = `
 <div class="project-top-notice" role="note">${PROJECT_NOTICE}</div>
@@ -58,7 +58,7 @@
         <a href="faq.html">FAQ</a>
         <a href="alquiler.html">Alquiler material</a>
         <a href="seguridad.html">Seguridad</a>
-        <a href="comunidad.html">Comunidad y App</a>
+        <a href="comunidad.html">Logbook, Comunidad y App</a>
         <a href="formularios.html">Formularios</a>
       </div>
     </li>
@@ -79,6 +79,7 @@
   <a href="naturistas.html">Naturismo</a>
   <a href="reservas.html">Reserva demo</a>
   <a href="formularios.html">Formularios</a>
+  <a href="comunidad.html">Logbook, Comunidad y App</a>
   <a href="blog.html">Blog</a>
   <a href="faq.html">FAQ</a>
   <a href="contacto.html">Contacto</a>
@@ -100,10 +101,10 @@
         <p class="footer-marca-desc">Marca ficticia de deportes de aventura nacida en Águilas, Murcia. Creada por Diego David Gómez García / Diego David Extremo para 1.º GMN del IES Europa, curso 2025-2026.</p>
         <p class="footer-demo-note">${PROJECT_NOTICE}</p>
         <div class="footer-social" style="margin-top:1.5rem;">
-          <a href="https://www.youtube.com/@diegodavidextremo" target="_blank" rel="noopener" title="YouTube Diego David Extremo" aria-label="YouTube Diego David Extremo">▶</a>
-          <a href="#" title="Instagram simulado" aria-label="Instagram simulado">IG</a>
-          <a href="#" title="TikTok simulado" aria-label="TikTok simulado">TT</a>
-          <a href="#" title="Facebook simulado" aria-label="Facebook simulado">FB</a>
+          <a href="https://www.youtube.com/@diegodavidextremo" target="_blank" rel="noopener noreferrer" title="YouTube Diego David Extremo" aria-label="YouTube Diego David Extremo">▶</a>
+          <a href="https://www.instagram.com/diegodavidextremo/" target="_blank" rel="noopener noreferrer" title="Instagram Diego David Extremo" aria-label="Instagram Diego David Extremo">IG</a>
+          <a href="https://www.tiktok.com/@diegodavidextremo" target="_blank" rel="noopener noreferrer" title="TikTok Diego David Extremo" aria-label="TikTok Diego David Extremo">TT</a>
+          <a href="https://x.com/dd_gg98" target="_blank" rel="noopener noreferrer" title="X Diego David Extremo" aria-label="X Diego David Extremo">X</a>
         </div>
       </div>
       <div class="footer-col">
@@ -150,7 +151,7 @@
     </div>
     <div class="footer-bottom">
       <div>
-        <p class="footer-copy">© 2026 Nómada Extremo · Águilas, Murcia, España · No se realizan reservas ni cobros reales.</p>
+        <p class="footer-copy">© 2026 Nómada Extremo · Águilas, Murcia, España · No se realizan reservas, cobros, ventas ni sorteos reales.</p>
         <p class="footer-copy" style="margin-top:0.2rem;opacity:0.7;">Diego David Gómez García · 1.º GMN · IES Europa de Águilas · Curso 2025-2026.</p>
       </div>
       <div class="footer-legal">

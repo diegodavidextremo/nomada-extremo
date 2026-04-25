@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body><div id="nav-placeholder"></div>
+<body class="logbook-page"><div id="nav-placeholder"></div>
 <main style="padding-top:8rem;padding-bottom:5rem;">
   <div class="container">
     <nav class="breadcrumb"><ul><li><a href="index.html">Inicio</a></li><li>Logbook</li></ul></nav>
@@ -88,23 +88,33 @@
     </section>
 
     <section class="logbook-section">
-      <h2 class="section-mini-title">Insignias y cupones desbloqueados</h2>
+      <h2 class="section-mini-title">Insignias y recompensas desbloqueadas</h2>
+      <p class="texto" style="max-width:720px;margin-bottom:1rem;">Cada aventura suma XP, desbloquea medallas, activa cupones y deja huella en tu historial Nómada.</p>
       <div class="badge-coupon-layout">
         <div class="badge-vault">
-          <span>Explorador de Águilas</span><span>Alma de Agua</span><span>Costa Salvaje</span><span>Rider Mediterráneo</span><span>Vertical Starter</span><span>Sin Huella</span><span>Semana Santa Outdoor</span><span>Waterman</span><span>Primer Vuelo</span><span>Primera Inmersión</span><span>Finisher 10</span><span>Fotógrafo Outdoor</span>
+          <article class="medal-card unlocked"><i>◇</i><h3>Explorador de Águilas</h3><span>Desbloqueada</span><b>+150 XP</b><small>Rutas y costa local.</small></article>
+          <article class="medal-card unlocked"><i>≈</i><h3>Alma de Agua</h3><span>Desbloqueada</span><b>+100 XP</b><small>Kayak, snorkel o SUP.</small></article>
+          <article class="medal-card progress"><i>⌁</i><h3>Costa Salvaje</h3><span>En progreso · 2/3</span><b>+200 XP</b><small>Calas, roca y mar.</small></article>
+          <article class="medal-card locked"><i>△</i><h3>Rider Mediterráneo</h3><span>Bloqueada</span><b>+180 XP</b><small>BTT o gravel costero.</small></article>
+          <article class="medal-card unlocked"><i>⛰</i><h3>Vertical Starter</h3><span>Desbloqueada</span><b>+180 XP</b><small>Ferrata, escalada o rápel.</small></article>
+          <article class="medal-card locked"><i>♧</i><h3>Sin Huella</h3><span>Bloqueada</span><b>+150 XP</b><small>Acción ambiental.</small></article>
         </div>
         <div class="coupon-mini-stack">
-          <article><b>DIEGODAVIDEXTREMO</b><span>28% · comunidad · pendiente de capturas</span></article>
-          <article><b>NOMADA360</b><span>Extra audiovisual · requiere autorización de imagen</span></article>
-          <article><b>FAMILYDAY</b><span>Actividades suaves · uso familiar simulado</span></article>
+          <article class="wallet-coupon pending"><span>Pendiente de capturas</span><b>DIEGODAVIDEXTREMO</b><strong>28%</strong><p>Comunidad del creador. Seguir redes, enviar capturas, uso único y no acumulable.</p><small>Campaña: comunidad · demo</small></article>
+          <article class="wallet-coupon active"><span>Desbloqueado</span><b>NOMADA360</b><strong>Extra audiovisual</strong><p>Requiere autorización de imagen, actividad compatible y validación de seguridad.</p><small>Campaña: audiovisual · demo</small></article>
+          <article class="wallet-coupon active"><span>Disponible</span><b>FAMILYDAY</b><strong>Actividades suaves</strong><p>Uso familiar simulado, actividad adaptada y sujeta a disponibilidad.</p><small>Campaña: familia · demo</small></article>
         </div>
+      </div>
+      <div class="unlock-summary">
+        <span>12 insignias desbloqueadas</span><span>3 cupones activos</span><span>1 cupón pendiente</span><span>2 recompensas por reclamar</span><strong>Próxima recompensa: completa una actividad de costa para desbloquear COSTASALVAJE.</strong>
       </div>
     </section>
 
     <section class="logbook-section">
       <h2 class="section-mini-title">Carnet Nómada simulado</h2>
       <div class="nomada-id-card">
-        <div><span>NÓMADA EXTREMO</span><h3>Nómada Mediterráneo</h3><p>Nivel 4 Rider · Categoría agua / BTT / audiovisual · ID NE-2026-0148-DEMO · Fecha ficticia: junio 2026</p><small>Credencial simbólica de proyecto académico, sin validez oficial.</small></div>
+        <div class="id-lines" aria-hidden="true"></div>
+        <div><span>NÓMADA EXTREMO · CLUB PASS</span><h3>NÓMADA MEDITERRÁNEO</h3><p>Nivel 4 Rider · Categorías: Agua / BTT / Audiovisual · ID NE-2026-0148-DEMO · Fecha ficticia: junio 2026</p><div class="id-badges"><em>Proyecto académico</em><em>Sin validez oficial</em><em>Diego David Extremo</em></div><small>Credencial simbólica sin validez oficial. No acredita formación, permiso, reserva ni actividad real.</small></div>
         <div class="fake-qr">QR</div>
       </div>
     </section>
