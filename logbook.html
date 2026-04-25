@@ -9,14 +9,146 @@
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body><div id="nav-placeholder"></div>
-<main style="padding-top:8rem;padding-bottom:5rem;"><div class="container">
-<nav class="breadcrumb"><ul><li><a href="index.html">Inicio</a></li><li>Logbook</li></ul></nav>
-<span class="label">Sistema digital simulado</span><h1 class="titulo">LOGBOOK<br><span class="mar">NÓMADA</span></h1><div class="divisor"></div>
-<div class="notice-card" style="margin-bottom:2rem;">Logbook demostrativo para mostrar progresión, módulos, badges y credenciales simuladas. No acredita formación oficial ni actividad real.</div>
-<div class="grid-4">
-<div class="logbook-feature"><div class="logbook-feature-icon">📍</div><div class="logbook-feature-titulo">Actividades</div><div class="logbook-feature-desc">Historial de experiencias simuladas por fecha, familia y nivel.</div></div>
-<div class="logbook-feature"><div class="logbook-feature-icon">🏅</div><div class="logbook-feature-titulo">Badges</div><div class="logbook-feature-desc">Insignias por hitos de progresión y participación.</div></div>
-<div class="logbook-feature"><div class="logbook-feature-icon">📘</div><div class="logbook-feature-titulo">Módulos</div><div class="logbook-feature-desc">Rutas formativas por disciplina y nivel.</div></div>
-<div class="logbook-feature"><div class="logbook-feature-icon">🔏</div><div class="logbook-feature-titulo">Credenciales</div><div class="logbook-feature-desc">Credenciales QR simuladas, no oficiales.</div></div>
-</div></div></main>
+<main style="padding-top:8rem;padding-bottom:5rem;">
+  <div class="container">
+    <nav class="breadcrumb"><ul><li><a href="index.html">Inicio</a></li><li>Logbook</li></ul></nav>
+    <span class="label">Sistema digital simulado</span>
+    <h1 class="titulo">LOGBOOK<br><span class="mar">NÓMADA</span></h1>
+    <div class="divisor"></div>
+    <p class="texto" style="max-width:760px;margin-bottom:1rem;">El Logbook Digital Nómada es el diario de aventura del usuario. Registra experiencias, zonas, retos, insignias, progresión técnica, fotos, vídeos, credenciales, estadísticas y aprendizajes. Cada actividad suma historial, desbloquea niveles y conecta con la Escuela Nómada, el Club Nómada y los eventos especiales.</p>
+    <div class="notice-card" style="margin-bottom:2rem;">Logbook mostrado como simulación académica. En una versión real, el tratamiento de datos, imágenes, ubicaciones, progreso personal, cupones y credenciales requeriría consentimiento, política de privacidad y configuración de privacidad por usuario. No acredita formación oficial ni actividad real.</div>
+    <div class="logbook-actions">
+      <a href="#progreso-logbook" class="btn btn-mar">Ver progreso</a>
+      <a href="#registro-logbook" class="btn btn-arena">Registrar experiencia simulada</a>
+    </div>
+
+    <section class="logbook-dashboard">
+      <div class="logbook-profile-card">
+        <div class="logbook-avatar">NE</div>
+        <div>
+          <span>Perfil de aventurero</span>
+          <h2>Diego Example</h2>
+          <p>Alias: Nómada Mediterráneo · Club Nómada Extremo · Nivel 4 Rider · 1.480 XP</p>
+        </div>
+      </div>
+      <div class="logbook-mini-grid">
+        <div><strong>18</strong><span>Actividades completadas</span></div>
+        <div><strong>7</strong><span>Retos activos</span></div>
+        <div><strong>12</strong><span>Insignias desbloqueadas</span></div>
+        <div><strong>3</strong><span>Cupones simulados</span></div>
+      </div>
+    </section>
+
+    <section class="logbook-section" id="progreso-logbook">
+      <h2 class="section-mini-title">Dashboard de estadísticas</h2>
+      <div class="stat-dashboard">
+        <div><strong>18</strong><span>Actividades totales</span></div><div><strong>126 km</strong><span>Kilómetros recorridos</span></div><div><strong>3.420 m</strong><span>Metros de desnivel</span></div><div><strong>46 h</strong><span>Horas de aventura</span></div><div><strong>6</strong><span>Actividades de mar</span></div><div><strong>4</strong><span>Montaña</span></div><div><strong>3</strong><span>Verticales</span></div><div><strong>2</strong><span>Aire</span></div><div><strong>2</strong><span>Río</span></div><div><strong>3</strong><span>BTT</span></div><div><strong>9</strong><span>Con vídeo</span></div><div><strong>12</strong><span>Insignias ganadas</span></div><div><strong>7</strong><span>Retos completados</span></div><div><strong>1.480</strong><span>XP total</span></div>
+      </div>
+    </section>
+
+    <section class="logbook-section">
+      <h2 class="section-mini-title">Progreso por disciplina</h2>
+      <div class="discipline-grid">
+        <article><span>Agua</span><b>72%</b><div><i style="width:72%"></i></div></article>
+        <article><span>Montaña</span><b>58%</b><div><i style="width:58%"></i></div></article>
+        <article><span>Vertical</span><b>44%</b><div><i style="width:44%"></i></div></article>
+        <article><span>Aire</span><b>26%</b><div><i style="width:26%"></i></div></article>
+        <article><span>BTT</span><b>61%</b><div><i style="width:61%"></i></div></article>
+        <article><span>Audiovisual</span><b>68%</b><div><i style="width:68%"></i></div></article>
+        <article><span>Ambiental</span><b>35%</b><div><i style="width:35%"></i></div></article>
+        <article><span>Comunidad</span><b>52%</b><div><i style="width:52%"></i></div></article>
+        <article><span>Familiar</span><b>30%</b><div><i style="width:30%"></i></div></article>
+        <article><span>Creador outdoor</span><b>47%</b><div><i style="width:47%"></i></div></article>
+      </div>
+    </section>
+
+    <section class="logbook-section" id="registro-logbook">
+      <h2 class="section-mini-title">Historial visual</h2>
+      <div class="activity-table">
+        <div class="activity-row head"><span>Fecha</span><span>Actividad</span><span>Zona</span><span>Nivel</span><span>Estado</span><span>XP</span><span>Insignia</span></div>
+        <div class="activity-row"><span>Jun 2026</span><span>Kayak + snorkel</span><span>Águilas</span><span>Iniciación</span><span>Completada</span><span>100</span><span>Alma de Agua</span></div>
+        <div class="activity-row"><span>May 2026</span><span>Vía ferrata</span><span>Salida especial</span><span>Intermedio</span><span>Validada</span><span>180</span><span>Vertical Starter</span></div>
+        <div class="activity-row"><span>Abr 2026</span><span>BTT Costa Sur</span><span>Sierra Almenara</span><span>Medio</span><span>Completada</span><span>100</span><span>Rider Mediterráneo</span></div>
+        <div class="activity-row"><span>Mar 2026</span><span>Nómada 360</span><span>Costa</span><span>Audiovisual</span><span>Pendiente</span><span>100</span><span>Creador Outdoor</span></div>
+      </div>
+      <div class="record-detail-grid">
+        <article><b>Datos por registro</b><p>Fecha, actividad, zona, duración, nivel, guía, clima, material usado, fotos o vídeos, estado y observaciones.</p></article>
+        <article><b>Lectura técnica</b><p>Riesgos detectados, aprendizaje del día, emoción de la actividad, dificultad percibida y condiciones reales.</p></article>
+        <article><b>Siguiente paso</b><p>Próximo objetivo recomendado, reto asociado, cupón desbloqueado y experiencia sugerida.</p></article>
+      </div>
+    </section>
+
+    <section class="logbook-section">
+      <h2 class="section-mini-title">Retos activos</h2>
+      <div class="quest-grid">
+        <article><i>🌊</i><h3>Reto 3 Elementos</h3><p>Mar + montaña + aire.</p><b>300 XP</b><div class="quest-bar"><span style="width:66%"></span></div><small>2 de 3 elementos completados.</small></article>
+        <article><i>🌅</i><h3>Sunset Hunter</h3><p>Experiencia al atardecer con foto o vídeo.</p><b>150 XP</b><div class="quest-bar"><span style="width:35%"></span></div><small>Objetivo recomendado para verano.</small></article>
+        <article><i>🧭</i><h3>Calas Secretas</h3><p>Rutas suaves por costa validada.</p><b>180 XP</b><div class="quest-bar"><span style="width:50%"></span></div><small>Conecta con Costa Salvaje.</small></article>
+      </div>
+    </section>
+
+    <section class="logbook-section">
+      <h2 class="section-mini-title">Insignias y cupones desbloqueados</h2>
+      <div class="badge-coupon-layout">
+        <div class="badge-vault">
+          <span>Explorador de Águilas</span><span>Alma de Agua</span><span>Costa Salvaje</span><span>Rider Mediterráneo</span><span>Vertical Starter</span><span>Sin Huella</span><span>Semana Santa Outdoor</span><span>Waterman</span><span>Primer Vuelo</span><span>Primera Inmersión</span><span>Finisher 10</span><span>Fotógrafo Outdoor</span>
+        </div>
+        <div class="coupon-mini-stack">
+          <article><b>DIEGODAVIDEXTREMO</b><span>28% · comunidad · pendiente de capturas</span></article>
+          <article><b>NOMADA360</b><span>Extra audiovisual · requiere autorización de imagen</span></article>
+          <article><b>FAMILYDAY</b><span>Actividades suaves · uso familiar simulado</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="logbook-section">
+      <h2 class="section-mini-title">Carnet Nómada simulado</h2>
+      <div class="nomada-id-card">
+        <div><span>NÓMADA EXTREMO</span><h3>Nómada Mediterráneo</h3><p>Nivel 4 Rider · Categoría agua / BTT / audiovisual · ID NE-2026-0148-DEMO · Fecha ficticia: junio 2026</p><small>Credencial simbólica de proyecto académico, sin validez oficial.</small></div>
+        <div class="fake-qr">QR</div>
+      </div>
+    </section>
+
+    <section class="logbook-section">
+      <h2 class="section-mini-title">Registro de actividades</h2>
+      <div class="logbook-record-grid">
+        <article><b>Kayak + snorkel</b><span>Águilas · Laura García · Completada</span><p>Zona, duración, nivel, clima, material usado, fotos, aprendizaje del día y próxima recomendación.</p></article>
+        <article><b>Vía ferrata</b><span>Salida especial · Adrián Martínez · Validada</span><p>Riesgos detectados, nivel técnico, meteorología, observaciones y dificultad percibida.</p></article>
+        <article><b>Nómada 360</b><span>Audiovisual · Mario S. · Pendiente</span><p>Vídeo, fotos, autorización de imagen, Pack Nómada 360 y entrega de teaser vertical.</p></article>
+      </div>
+    </section>
+
+    <section class="logbook-section">
+      <h2 class="section-mini-title">Niveles y XP</h2>
+      <div class="xp-ladder">
+        <span>Nivel 1 Iniciado</span><span>Nivel 2 Explorador</span><span>Nivel 3 Aventurero</span><span>Nivel 4 Rider</span><span>Nivel 5 Vertical</span><span>Nivel 6 Waterman</span><span>Nivel 7 Adrenalina</span><span>Nivel 8 Nómada Extremo</span><span>Nivel 9 Leyenda Nómada</span><span>Nivel 10 Embajador Nómada</span>
+      </div>
+      <div class="xp-table">
+        <div><b>50 XP</b><span>Actividad suave</span></div><div><b>100 XP</b><span>Actividad media</span></div><div><b>180 XP</b><span>Actividad técnica</span></div><div><b>250 XP</b><span>Actividad extrema</span></div><div><b>300 XP</b><span>Reto completado</span></div><div><b>200 XP</b><span>Evento especial o formación</span></div><div><b>150 XP</b><span>Limpieza ambiental, Carnaval o Semana Santa</span></div><div><b>100 XP</b><span>Contenido audiovisual autorizado</span></div>
+      </div>
+    </section>
+
+    <section class="logbook-section">
+      <h2 class="section-mini-title">Retos, credenciales y estadísticas</h2>
+      <div class="grid-4">
+        <div class="logbook-feature"><div class="logbook-feature-icon">📍</div><div class="logbook-feature-titulo">Historial</div><div class="logbook-feature-desc">Fecha, actividad, zona, duración, guía, clima, estado y aprendizaje.</div></div>
+        <div class="logbook-feature"><div class="logbook-feature-icon">🏅</div><div class="logbook-feature-titulo">Insignias</div><div class="logbook-feature-desc">Agua, montaña, vertical, aire, BTT, audiovisual, comunidad, ambiente y familia.</div></div>
+        <div class="logbook-feature"><div class="logbook-feature-icon">🔏</div><div class="logbook-feature-titulo">Credenciales</div><div class="logbook-feature-desc">QR de participación, certificado simbólico, carnet Nómada y progreso exportable.</div></div>
+        <div class="logbook-feature"><div class="logbook-feature-icon">📊</div><div class="logbook-feature-titulo">Estadísticas</div><div class="logbook-feature-desc">Kilómetros, desnivel, horas de aventura, vídeos, XP total y retos completados.</div></div>
+      </div>
+      <div class="challenge-grid" style="margin-top:1.5rem;">
+        <span>Reto 3 Elementos</span><span>Águilas Salvaje</span><span>Costa Extrema</span><span>Nómada 360</span><span>Sin Huella</span><span>Semana Santa Nómada</span><span>Carnaval Nómada</span><span>Waterman</span><span>Subterráneo</span><span>Leyenda Nómada</span>
+      </div>
+    </section>
+
+    <section class="logbook-section">
+      <h2 class="section-mini-title">Conexiones del sistema</h2>
+      <div class="club-grid compact">
+        <article class="club-card light"><span>Escuela Nómada</span><p>Buceo, mar, montaña, barrancos, BTT, escalada, foil, paramotor, paratrike, paracaidismo AFF, kitesurf y windsurf suman progreso por disciplina.</p></article>
+        <article class="club-card light"><span>Club Nómada</span><p>Retos activos, retos completados, XP, cupones desbloqueados, premios pendientes, eventos, sorteos simulados, nivel de socio y packs audiovisuales.</p></article>
+        <article class="club-card light"><span>Próximos objetivos</span><p>Completa una actividad de aire, prueba vertical, desbloquea Reto 3 Elementos, participa en Semana Santa o Carnaval Nómada y consigue Costa Salvaje.</p></article>
+      </div>
+    </section>
+  </div>
+</main>
 <div id="footer-placeholder"></div><script src="assets/js/components.js"></script><script src="assets/js/main.js"></script><script src="assets/js/chatbot.js"></script></body></html>
