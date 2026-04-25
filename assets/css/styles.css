@@ -3020,12 +3020,49 @@ section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { co
   height: 100%;
   min-height: 430px;
   background-size: cover;
-  background-position: center;
+  background-position: var(--activity-img-position, center);
 }
 .actividades-page .activity-card .ficha-img::after {
   height: 100%;
   background:
-    linear-gradient(to right, rgba(15,26,19,0) 58%, rgba(250,250,248,0.28) 100%);
+    linear-gradient(to right, rgba(15,26,19,0) 72%, rgba(250,250,248,0.16) 100%);
+}
+.actividades-page .activity-image {
+  background-position: var(--activity-img-position, center) !important;
+}
+.actividades-page .activity-image.fit-contain {
+  isolation: isolate;
+  background-size: cover !important;
+  background-position: var(--activity-img-position, center) !important;
+  background-color: var(--noche);
+}
+.actividades-page .activity-image.fit-contain::before {
+  content: "";
+  position: absolute;
+  inset: -16px;
+  z-index: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: var(--activity-img-position, center);
+  filter: blur(18px) saturate(0.92) brightness(0.72);
+  transform: scale(1.08);
+  opacity: 0.82;
+}
+.actividades-page .activity-image.fit-contain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  height: auto;
+  background-image:
+    linear-gradient(to right, rgba(15,26,19,0.04), rgba(15,26,19,0) 28%, rgba(250,250,248,0.04) 100%),
+    inherit;
+  background-size: auto, contain;
+  background-repeat: no-repeat;
+  background-position: center, var(--activity-img-position, center);
+}
+.actividades-page .activity-image.fit-contain .nivel-badge {
+  z-index: 3;
 }
 .actividades-page .activity-card-body {
   display: flex;
@@ -3130,8 +3167,14 @@ section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { co
     min-height: 0;
   }
   .actividades-page .activity-card .ficha-img::after {
-    height: 70px;
-    background: linear-gradient(to top, var(--blanco), rgba(250,250,248,0));
+    height: 34px;
+    background: linear-gradient(to top, rgba(250,250,248,0.72), rgba(250,250,248,0));
+  }
+  .actividades-page .activity-image.fit-contain::after {
+    height: auto;
+    background-image: inherit;
+    background-size: contain;
+    background-position: var(--activity-img-position, center);
   }
   .actividades-page .activity-card-cta {
     grid-column: 1;

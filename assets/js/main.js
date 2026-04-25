@@ -411,6 +411,61 @@ document.addEventListener('DOMContentLoaded', () => {
     Object.entries(activityData).map(([key, value]) => [normalizeTitle(key), value])
   );
 
+  const imageFocusData = {
+    'SENDERISMO GUIADO': { pos: '50% 42%' },
+    'TREKKING DE CRESTAS': { pos: '52% 42%' },
+    'VIVAC Y TRAVESIA': { pos: '50% 48%', fit: 'contain' },
+    'MARCHA DE MONTAÑA': { pos: '50% 45%' },
+    'MONTAÑISMO': { pos: '50% 38%' },
+    'SCRAMBLING': { pos: '50% 50%', fit: 'contain' },
+    'BUSHCRAFT Y SUPERVIVENCIA': { pos: '50% 43%' },
+    'ESCALADA DEPORTIVA': { pos: '43% 50%' },
+    'VIA FERRATA': { pos: '63% 42%' },
+    'RAPEL TECNICO': { pos: '50% 46%', fit: 'contain' },
+    'ROPE JUMPING': { pos: '50% 45%', fit: 'contain' },
+    'PUENTING': { pos: '50% 48%', fit: 'contain' },
+    'ESCALADA VARIOS LARGOS': { pos: '28% 45%' },
+    'ESPELEOAVENTURA': { pos: '52% 58%', fit: 'contain' },
+    'KAYAK DE MAR': { pos: '48% 45%' },
+    'PADDLE SURF (SUP)': { pos: '50% 42%' },
+    'COASTEERING': { pos: '50% 50%', fit: 'contain' },
+    'CLIFF DIVING / JUMPING': { pos: '50% 32%' },
+    'SNORKEL DE AVENTURA': { pos: '50% 48%' },
+    'PARASAILING': { pos: '50% 42%' },
+    'TRAVESIAS EN KAYAK': { pos: '50% 45%' },
+    'KITESURF': { pos: '50% 48%', fit: 'contain' },
+    'WINDSURF': { pos: '50% 48%', fit: 'contain' },
+    'BAUTISMO DE BUCEO': { pos: '50% 45%' },
+    'OPEN WATER PADI / SSI': { pos: '50% 48%' },
+    'BUCEO NOCTURNO': { pos: '50% 50%' },
+    'BUCEO GUIADO': { pos: '50% 45%' },
+    'FOTOGRAFIA SUBMARINA': { pos: '50% 50%' },
+    'ADVANCED · RESCUE · NITROX': { pos: '50% 48%' },
+    'PARACAIDISMO TANDEM': { pos: '50% 42%', fit: 'contain' },
+    'PARAPENTE BIPLAZA': { pos: '50% 42%', fit: 'contain' },
+    'PARAMOTOR': { pos: '50% 46%', fit: 'contain' },
+    'PARATRIKE': { pos: '50% 46%', fit: 'contain' },
+    'AFF PARACAIDISMO': { pos: '50% 42%', fit: 'contain' },
+    'ESCALADA CLASICA, TRADICIONAL Y DE AVENTURA': { pos: '43% 50%' },
+    'BARRANQUISMO ACUATICO': { pos: '48% 45%' },
+    'RAFTING': { pos: '50% 48%', fit: 'contain' },
+    'BARRANQUISMO SECO': { pos: '50% 45%', fit: 'contain' },
+    'DESCENSO DE CAÑONES': { pos: '50% 45%', fit: 'contain' },
+    'BTT COSTERO': { pos: '50% 45%' },
+    'BTT TECNICO': { pos: '52% 45%' },
+    'CICLOTURISMO DE AVENTURA': { pos: '50% 48%', fit: 'contain' },
+    'E-FOIL': { pos: '50% 45%', fit: 'contain' },
+    'WINGFOIL': { pos: '50% 48%', fit: 'contain' },
+    'JETSURF': { pos: '50% 45%', fit: 'contain' },
+    'WATERMAN TRAINING': { pos: '50% 48%', fit: 'contain' },
+    'MAR + MONTAÑA': { pos: '50% 45%' },
+    'PARAMOTOR & PARATRIKE': { pos: '50% 46%', fit: 'contain' }
+  };
+
+  const imageFocusLookup = Object.fromEntries(
+    Object.entries(imageFocusData).map(([key, value]) => [normalizeTitle(key), value])
+  );
+
   document.querySelectorAll('.fichas-grid .ficha').forEach(card => {
     const titleEl = card.querySelector('.ficha-titulo');
     const body = card.querySelector('.ficha-cuerpo');
@@ -419,6 +474,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!data) return;
     card.classList.add('activity-card');
     body.classList.add('activity-card-body');
+    const image = card.querySelector('.ficha-img');
+    const imageFocus = imageFocusLookup[normalizeTitle(titleEl.textContent)];
+    if (image && imageFocus) {
+      image.classList.add('activity-image');
+      image.style.setProperty('--activity-img-position', imageFocus.pos);
+      image.style.backgroundPosition = imageFocus.pos;
+      if (imageFocus.fit === 'contain') image.classList.add('fit-contain');
+    }
     card.querySelector('.ficha-familia')?.classList.add('activity-card-header');
     card.querySelector('.ficha-badges')?.classList.add('activity-card-badges');
     card.querySelector('.ficha-meta')?.classList.add('activity-card-quick-info');
