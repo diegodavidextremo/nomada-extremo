@@ -4626,6 +4626,104 @@ section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { co
   font-size: 0.62rem;
 }
 
+/* --- Actividades: mostrar imagen completa --- */
+.act-card,
+.ficha,
+.activity-card,
+.super-pack {
+  background: var(--blanco);
+}
+
+.grid-act {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0.9rem;
+  background: transparent;
+}
+
+.act-card {
+  aspect-ratio: 16 / 12;
+  min-height: 360px;
+  border-radius: 18px;
+  border: 1px solid rgba(196,150,106,0.22);
+}
+
+.act-card-bg,
+.ficha-img,
+.super-pack-img,
+.blog-img {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-color: var(--noche) !important;
+}
+
+.act-card:hover .act-card-bg {
+  transform: none;
+  filter: brightness(0.72) saturate(1.08);
+}
+
+.act-card-overlay {
+  background:
+    linear-gradient(to top, rgba(15,26,19,0.88) 0%, rgba(15,26,19,0.28) 48%, rgba(15,26,19,0.04) 100%);
+}
+
+.ficha-img {
+  height: clamp(290px, 28vw, 420px);
+}
+
+.ficha-img::after {
+  height: 44px;
+  background: linear-gradient(to top, rgba(250,250,248,0.88), rgba(250,250,248,0));
+}
+
+.grid-fichas {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+  gap: 2rem;
+}
+
+.actividades-page .fichas-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr)) !important;
+}
+
+.actividades-page .activity-card {
+  display: grid;
+  grid-template-columns: 1fr !important;
+  min-height: 0 !important;
+}
+
+.actividades-page .activity-card .ficha-img {
+  grid-row: auto;
+  height: clamp(360px, 38vw, 560px) !important;
+  min-height: 360px !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-color: var(--noche) !important;
+}
+
+.actividades-page .activity-card .ficha-img::after {
+  height: 48px;
+  background: linear-gradient(to top, rgba(250,250,248,0.88), rgba(250,250,248,0));
+}
+
+.actividades-page .activity-image.fit-contain {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
+.actividades-page .activity-image.fit-contain::before,
+.actividades-page .activity-image.fit-contain::after {
+  display: none !important;
+}
+
+.super-pack-img {
+  height: clamp(280px, 25vw, 380px) !important;
+}
+
+.blog-img {
+  height: 260px !important;
+}
+
 @media (max-width: 720px) {
   .hero-ecosystem-actions .btn {
     width: 100%;
@@ -4636,6 +4734,29 @@ section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { co
   }
   .medal-card {
     min-height: 165px;
+  }
+}
+
+@media (max-width: 900px) {
+  .act-card {
+    min-height: 300px;
+  }
+  .actividades-page .activity-card .ficha-img {
+    height: clamp(300px, 72vw, 460px) !important;
+    min-height: 300px !important;
+  }
+  .ficha-img,
+  .super-pack-img {
+    height: clamp(260px, 65vw, 390px) !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .act-card {
+    min-height: 260px;
+  }
+  .actividades-page .activity-card .ficha-img {
+    height: 300px !important;
   }
 }
 
