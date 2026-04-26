@@ -4140,12 +4140,17 @@ section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { co
   border-color: rgba(255,255,255,0.16);
 }
 .noext-season-gallery,
-.noext-product-grid,
 .noext-pack-showcase {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   gap: 1rem;
   margin-top: 1.2rem;
+}
+.noext-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 1.35rem;
+  margin-top: 1.5rem;
 }
 .noext-product-card,
 .noext-pack-card {
@@ -4155,6 +4160,9 @@ section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { co
   background: var(--blanco);
   border: 1px solid var(--crema-media);
   box-shadow: var(--sombra);
+}
+.noext-product-card {
+  padding: 1rem;
 }
 .noext-product-card.dark,
 .noext-pack-card.dark {
@@ -4171,8 +4179,11 @@ section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { co
   background: var(--noche);
   margin-bottom: 0.75rem;
 }
+.noext-product-card img {
+  aspect-ratio: 16 / 11;
+}
 .noext-product-card.tall img {
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 4 / 5;
 }
 .noext-product-card strong,
 .noext-pack-card strong {
