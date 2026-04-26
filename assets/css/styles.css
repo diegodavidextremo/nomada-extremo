@@ -4070,6 +4070,185 @@ section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { co
   margin-top: 1.5rem;
 }
 
+/* --- Imagenes Nómada Extremo 2026 --- */
+.noext-visual {
+  display: block;
+  width: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: var(--sombra-l);
+  background: var(--noche);
+}
+.noext-visual.contain {
+  object-fit: contain;
+  background: linear-gradient(135deg, var(--noche), var(--mar));
+}
+.noext-home-photo {
+  aspect-ratio: 16 / 10;
+  min-height: 320px;
+  border: 1px solid rgba(196,150,106,0.22);
+}
+.noext-feature-panel {
+  padding: 0.65rem;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(15,26,19,0.96), rgba(30,74,107,0.84));
+  border: 1px solid rgba(196,150,106,0.26);
+  box-shadow: var(--sombra-xl);
+}
+.noext-feature-panel .noext-visual {
+  aspect-ratio: 16 / 9;
+}
+.noext-dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(260px, 0.75fr);
+  gap: 1.1rem;
+  align-items: stretch;
+  margin: 2rem 0;
+}
+.noext-dashboard-grid .noext-visual {
+  height: 100%;
+  min-height: 300px;
+}
+.noext-stack {
+  display: grid;
+  gap: 1rem;
+}
+.noext-stack .noext-visual {
+  aspect-ratio: 16 / 10;
+}
+.noext-coupon-visual {
+  margin-top: 1rem;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(255,255,255,0.14);
+}
+.campaign-card .noext-card-img,
+.summer-feature .noext-card-img,
+.summer-grid .noext-card-img,
+.merch-system-grid .noext-card-img,
+.reward-grid .noext-card-img,
+.promo-coupon .noext-card-img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 14px;
+  object-fit: cover;
+  margin: 0 0 1rem;
+  border: 1px solid rgba(196,150,106,0.18);
+  background: var(--noche);
+}
+.summer-grid .noext-card-img,
+.summer-feature .noext-card-img {
+  border-color: rgba(255,255,255,0.16);
+}
+.noext-season-gallery,
+.noext-product-grid,
+.noext-pack-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+.noext-product-card,
+.noext-pack-card {
+  min-width: 0;
+  padding: 0.75rem;
+  border-radius: 18px;
+  background: var(--blanco);
+  border: 1px solid var(--crema-media);
+  box-shadow: var(--sombra);
+}
+.noext-product-card.dark,
+.noext-pack-card.dark {
+  background: rgba(255,255,255,0.07);
+  color: var(--blanco);
+  border-color: rgba(255,255,255,0.14);
+}
+.noext-product-card img,
+.noext-pack-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 14px;
+  object-fit: cover;
+  background: var(--noche);
+  margin-bottom: 0.75rem;
+}
+.noext-product-card.tall img {
+  aspect-ratio: 3 / 4;
+}
+.noext-product-card strong,
+.noext-pack-card strong {
+  display: block;
+  font-family: var(--display);
+  letter-spacing: 1.5px;
+  color: var(--mar);
+}
+.noext-product-card.dark strong,
+.noext-pack-card.dark strong {
+  color: var(--arena-claro);
+}
+.noext-product-card span,
+.noext-pack-card span {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.7rem;
+  line-height: 1.45;
+  color: var(--gris-calido);
+}
+.noext-product-card.dark span,
+.noext-pack-card.dark span {
+  color: rgba(245,242,236,0.72);
+}
+.noext-category-block {
+  margin-top: 1.2rem;
+  padding: 1rem;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.64);
+  border: 1px solid var(--crema-media);
+}
+.noext-category-block h3 {
+  font-family: var(--display);
+  letter-spacing: 2px;
+  color: var(--mar);
+  margin-bottom: 0.8rem;
+}
+.logbook-visual-hero {
+  margin: 2rem 0;
+}
+.logbook-visual-hero img {
+  aspect-ratio: 16 / 9;
+}
+.nomada-id-card.visual-id {
+  grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+}
+.nomada-id-card.visual-id img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.av-pack-visual {
+  margin: 2rem 0 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.8fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+.av-pack-visual img {
+  min-height: 260px;
+  height: 100%;
+}
+@media (max-width: 860px) {
+  .noext-dashboard-grid,
+  .av-pack-visual,
+  .nomada-id-card.visual-id {
+    grid-template-columns: 1fr;
+  }
+  .noext-home-photo,
+  .noext-dashboard-grid .noext-visual {
+    min-height: 220px;
+  }
+}
+
 .coupon-star {
   border: 1px solid rgba(232,196,138,0.45);
   background:
