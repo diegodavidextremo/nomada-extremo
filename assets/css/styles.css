@@ -4878,17 +4878,23 @@ section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { co
 .actividades-page .ficha-img {
   flex: 0 0 auto !important;
   width: 100% !important;
-  height: clamp(185px, 16vw, 235px) !important;
+  height: auto !important;
+  aspect-ratio: 1 / 1 !important;
   min-height: 0 !important;
   grid-row: auto !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-color: var(--crema-media) !important;
+  filter: none !important;
 }
 
 .actividades-page .ficha-img::after {
-  height: 48px !important;
-  background: linear-gradient(to top, rgba(250,250,248,0.86), rgba(250,250,248,0)) !important;
+  display: none !important;
+  content: none !important;
+}
+
+.actividades-page .nivel-badge {
+  box-shadow: 0 8px 22px rgba(0,0,0,0.20) !important;
 }
 
 .actividades-page .ficha-cuerpo {
@@ -4928,7 +4934,8 @@ section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { co
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
   .actividades-page .ficha-img {
-    height: 180px !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1 !important;
   }
 }
 
@@ -4937,7 +4944,8 @@ section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { co
     grid-template-columns: 1fr !important;
   }
   .actividades-page .ficha-img {
-    height: 220px !important;
+    height: auto !important;
+    aspect-ratio: 16 / 11 !important;
   }
 }
 
