@@ -5451,3 +5451,431 @@ section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { co
     display: flex !important;
   }
 }
+
+/* Logbook premium */
+.logbook-premium-hero .page-hero-bg {
+  opacity: 0.42;
+  filter: saturate(1.05) contrast(1.05) brightness(0.78);
+}
+
+.logbook-hero-copy {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1.08rem, 2vw, 1.35rem);
+  color: rgba(245,242,236,0.88);
+  max-width: 780px;
+  margin-top: 1rem;
+  line-height: 1.8;
+}
+
+.logbook-command-section,
+.logbook-community-section {
+  background:
+    radial-gradient(circle at 20% 10%, rgba(196,150,106,0.18), transparent 32%),
+    radial-gradient(circle at 90% 20%, rgba(91,158,201,0.14), transparent 30%),
+    linear-gradient(135deg, #0f1a13, #132c2c 48%, #102235);
+  color: var(--crema);
+  padding: 6rem 0;
+}
+
+.demo-inline-note.dark {
+  background: rgba(250,250,248,0.08);
+  border-color: rgba(196,150,106,0.32);
+  color: rgba(245,242,236,0.82);
+}
+
+.logbook-command {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.35fr);
+  gap: clamp(1.2rem, 3vw, 2rem);
+  align-items: stretch;
+  margin-top: 2rem;
+}
+
+.nomada-device,
+.logbook-command-main,
+.qr-credential-card,
+.community-card {
+  border: 1px solid rgba(196,150,106,0.25);
+  background: rgba(250,250,248,0.08);
+  border-radius: 24px;
+  box-shadow: 0 24px 70px rgba(0,0,0,0.28);
+  backdrop-filter: blur(18px);
+}
+
+.nomada-device {
+  padding: 1rem;
+  min-height: 560px;
+}
+
+.device-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.35rem 0.55rem 1rem;
+  font-size: 0.62rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(245,242,236,0.58);
+}
+
+.device-topbar span,
+.device-topbar i {
+  width: 42px;
+  height: 5px;
+  border-radius: 99px;
+  background: rgba(245,242,236,0.16);
+}
+
+.device-profile {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(196,150,106,0.18), rgba(91,158,201,0.10));
+}
+
+.device-avatar {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  background: linear-gradient(135deg, var(--arena), var(--arena-claro));
+  color: var(--noche);
+  font-family: var(--display);
+  font-size: 1.65rem;
+  letter-spacing: 2px;
+}
+
+.device-profile span,
+.device-xp span,
+.device-next span,
+.logbook-kpi-grid span,
+.community-card span,
+.qr-credential-card .label {
+  display: block;
+  font-size: 0.62rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--arena-claro);
+  font-weight: 600;
+}
+
+.device-profile h2,
+.device-next h3,
+.logbook-panel-head h2,
+.community-card h3,
+.qr-credential-card h3 {
+  font-family: var(--display);
+  letter-spacing: 2px;
+  color: var(--blanco);
+  line-height: 1.02;
+}
+
+.device-profile p,
+.device-next p,
+.logbook-panel-head p,
+.community-card p,
+.qr-credential-card p,
+.community-card small {
+  color: rgba(245,242,236,0.72);
+  font-size: 0.82rem;
+  line-height: 1.75;
+}
+
+.device-xp,
+.device-next {
+  margin-top: 0.9rem;
+  padding: 1rem;
+  border-radius: 18px;
+  background: rgba(15,26,19,0.36);
+  border: 1px solid rgba(250,250,248,0.10);
+}
+
+.device-xp > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.device-xp b {
+  color: var(--blanco);
+  font-family: var(--display);
+  letter-spacing: 1px;
+}
+
+.device-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-top: 0.9rem;
+}
+
+.device-stats article,
+.logbook-kpi-grid article {
+  padding: 1rem;
+  border-radius: 16px;
+  background: rgba(250,250,248,0.08);
+  border: 1px solid rgba(250,250,248,0.10);
+}
+
+.device-stats strong,
+.logbook-kpi-grid strong {
+  display: block;
+  font-family: var(--display);
+  color: var(--arena-claro);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+.device-stats span,
+.logbook-kpi-grid small {
+  color: rgba(245,242,236,0.65);
+  font-size: 0.72rem;
+}
+
+.logbook-command-main {
+  padding: clamp(1.2rem, 3vw, 2rem);
+}
+
+.logbook-panel-head {
+  max-width: 760px;
+}
+
+.logbook-panel-head h2 {
+  font-size: clamp(2.2rem, 5vw, 4.4rem);
+  margin: 0.65rem 0;
+}
+
+.logbook-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 1.5rem 0;
+}
+
+.discipline-progress {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.discipline-progress article {
+  padding: 0.9rem 1rem;
+  border-radius: 16px;
+  background: rgba(15,26,19,0.28);
+  border: 1px solid rgba(250,250,248,0.10);
+}
+
+.discipline-progress article div {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(245,242,236,0.82);
+  font-size: 0.78rem;
+  margin-bottom: 0.45rem;
+}
+
+.discipline-progress i,
+.progress-line {
+  display: block;
+  height: 9px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(250,250,248,0.12);
+}
+
+.discipline-progress em,
+.progress-line span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--arena), var(--mar-claro));
+}
+
+.logbook-badge-wall {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.logbook-badge-wall article {
+  min-height: 180px;
+  padding: 1.2rem;
+  border-radius: 20px;
+  border: 1px solid var(--crema-media);
+  background: linear-gradient(135deg, var(--blanco), var(--crema));
+  box-shadow: 0 16px 44px rgba(15,26,19,0.08);
+}
+
+.logbook-badge-wall article.unlocked {
+  border-color: rgba(45,90,61,0.28);
+  background: linear-gradient(135deg, rgba(45,90,61,0.10), var(--blanco));
+}
+
+.logbook-badge-wall article.progress {
+  border-color: rgba(196,150,106,0.42);
+  background: linear-gradient(135deg, rgba(196,150,106,0.14), var(--blanco));
+}
+
+.logbook-badge-wall b {
+  display: inline-block;
+  font-size: 0.62rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--arena);
+  margin-bottom: 1.4rem;
+}
+
+.logbook-badge-wall span {
+  display: block;
+  font-family: var(--display);
+  font-size: 1.45rem;
+  letter-spacing: 2px;
+  color: var(--gris-oscuro);
+}
+
+.logbook-badge-wall small {
+  display: block;
+  margin-top: 0.55rem;
+  font-size: 0.78rem;
+  color: var(--gris-calido);
+  line-height: 1.65;
+}
+
+.logbook-timeline {
+  margin-top: 2rem;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.logbook-timeline article {
+  position: relative;
+  padding: 1.05rem 1.1rem 1.05rem 2.2rem;
+  border-radius: 16px;
+  background: var(--blanco);
+  border: 1px solid var(--crema-media);
+  box-shadow: 0 12px 32px rgba(15,26,19,0.06);
+}
+
+.logbook-timeline article::before {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: 1.35rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--arena);
+  box-shadow: 0 0 0 6px rgba(196,150,106,0.14);
+}
+
+.logbook-timeline span {
+  font-size: 0.62rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--arena);
+}
+
+.logbook-timeline h3 {
+  font-family: var(--display);
+  letter-spacing: 2px;
+  color: var(--gris-oscuro);
+  margin: 0.2rem 0;
+}
+
+.logbook-timeline p {
+  font-size: 0.82rem;
+  color: var(--gris-calido);
+  line-height: 1.7;
+}
+
+.qr-credential-card {
+  padding: clamp(1.3rem, 3vw, 2rem);
+  background: linear-gradient(135deg, #0f1a13, #1e4a6b);
+  color: var(--crema);
+  position: sticky;
+  top: 120px;
+}
+
+.qr-fake {
+  width: min(260px, 100%);
+  aspect-ratio: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.55rem;
+  margin: 1.4rem 0;
+  padding: 1rem;
+  border-radius: 22px;
+  background: var(--crema);
+}
+
+.qr-fake i {
+  border-radius: 8px;
+  background: var(--noche);
+}
+
+.qr-fake i:nth-child(2),
+.qr-fake i:nth-child(4),
+.qr-fake i:nth-child(9) {
+  background: var(--arena);
+}
+
+.logbook-community-grid {
+  display: grid;
+  grid-template-columns: 1.15fr repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.community-card {
+  padding: 1.2rem;
+}
+
+.community-card.featured {
+  background: linear-gradient(135deg, rgba(196,150,106,0.22), rgba(91,158,201,0.12));
+}
+
+.media-memory-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr 0.9fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.media-memory-grid img {
+  width: 100%;
+  height: clamp(220px, 24vw, 360px);
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 20px 52px rgba(0,0,0,0.28);
+  border: 1px solid rgba(250,250,248,0.12);
+}
+
+@media (max-width: 1050px) {
+  .logbook-command,
+  .logbook-community-grid,
+  .media-memory-grid {
+    grid-template-columns: 1fr;
+  }
+  .logbook-kpi-grid,
+  .logbook-badge-wall {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .qr-credential-card {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .logbook-kpi-grid,
+  .logbook-badge-wall,
+  .device-stats {
+    grid-template-columns: 1fr;
+  }
+  .nomada-device {
+    min-height: 0;
+  }
+}
