@@ -4888,6 +4888,34 @@ section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { co
   filter: none !important;
 }
 
+.actividades-page .ficha-img img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: var(--img-pos, 50% 50%) !important;
+  filter: none !important;
+  transform: none !important;
+}
+
+.actividades-page .ficha,
+.actividades-page .ficha *,
+.actividades-page .ficha::before,
+.actividades-page .ficha::after,
+.actividades-page .ficha-img::before,
+.actividades-page .ficha-img::after {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.actividades-page .ficha-img,
+.actividades-page .ficha-img img {
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+  image-rendering: auto !important;
+  backface-visibility: hidden;
+}
+
 .actividades-page .ficha-img::after {
   display: none !important;
   content: none !important;
