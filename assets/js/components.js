@@ -37,7 +37,7 @@
         <a href="packs.html">Packs especiales</a>
         <a href="grupos.html">Grupos y centros</a>
         <a href="audiovisual.html">Audiovisual</a>
-        <a href="reservas.html#bonos">Bonos demo</a>
+        <a href="reservas.html#bonos">Bonos</a>
       </div>
     </li>
     <li><a href="escuela.html">Escuela</a></li>
@@ -62,7 +62,7 @@
   <a href="audiovisual.html">Audiovisual</a>
   <a href="blog.html">Blog</a>
   <a href="contacto.html">Contacto</a>
-  <a href="reservas.html">Reserva demo</a>
+  <a href="reservas.html">Solicitar experiencia</a>
   <a href="como-funciona.html">Cómo funciona</a>
   <a href="formularios.html">Formularios</a>
   <a href="material.html">Material</a>
@@ -100,7 +100,7 @@
           <li><a href="actividades.html">Actividades</a></li>
           <li><a href="packs.html">Packs</a></li>
           <li><a href="grupos.html">Grupos, centros y empresas</a></li>
-          <li><a href="reservas.html">Reservas demo</a></li>
+          <li><a href="reservas.html">Reservas</a></li>
           <li><a href="como-funciona.html">Cómo funciona</a></li>
           <li><a href="zonas.html">Zonas de aventura</a></li>
           <li><a href="naturistas.html">Nómada Naturista</a></li>
@@ -151,7 +151,7 @@
 </footer>
 
 <a href="https://wa.me/34600000000?text=Hola%2C%20quiero%20informacion%20sobre%20la%20demo%20academica%20de%20Nomada%20Extremo"
-   id="waFloat" target="_blank" rel="noopener" title="WhatsApp demo Nómada Extremo" aria-label="WhatsApp demo Nómada Extremo">💬</a>`;
+   id="waFloat" target="_blank" rel="noopener" title="WhatsApp Nómada Extremo" aria-label="WhatsApp Nómada Extremo">💬</a>`;
 
   const np = document.getElementById('nav-placeholder');
   if (np) np.outerHTML = NAV;
