@@ -1,0 +1,34 @@
+CARPETA DE IMÁGENES — NÓMADA EXTREMO v2
+========================================
+Coloca aquí tus imágenes de sustitución.
+Ver README.md para nomenclatura completa.
+
+HERO (1920x1080 horizontal):
+  hero/hero-inicio-nomada-extremo.jpg
+  hero/hero-actividades.jpg
+  hero/poster-video-hero.jpg (portada del vídeo)
+
+ACTIVIDADES (800x600 horizontal):
+  actividades/familia-montana.jpg
+  actividades/familia-mar-costa.jpg
+  actividades/familia-buceo.jpg
+  actividades/familia-aire.jpg
+  actividades/ficha-senderismo.jpg
+  actividades/ficha-kayak.jpg
+  actividades/ficha-buceo-bautismo.jpg
+  actividades/ficha-paracaidismo.jpg
+
+EQUIPO (400x500 retrato/vertical):
+  equipo/fundador-diego-david-extremo.jpg
+  equipo/equipo-carlos.jpg
+  equipo/equipo-laura.jpg
+  equipo/equipo-pedro.jpg
+  equipo/equipo-sara.jpg
+
+BLOG (800x500 horizontal):
+  blog/blog-montana.jpg
+  blog/blog-buceo.jpg
+  blog/blog-paramotor.jpg
+
+VÍDEO HERO (máx 15MB, sin audio, MP4):
+  videos/hero/hero-nomada.mp4
