@@ -1,1139 +1,890 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NOMADX | Red social deportiva para aventura, spots, planes y logbook</title>
-  <meta name="description" content="NOMADX es un prototipo avanzado de plataforma social deportiva para conectar deportistas, descubrir spots, crear planes, registrar aventuras y construir reputación por ADN deportivo.">
-  <meta property="og:title" content="NOMADX | Red social deportiva para aventura, spots, planes y logbook">
-  <meta property="og:description" content="Conecta por afinidad deportiva, descubre spots, crea planes, registra aventuras y construye reputación por ADN deportivo.">
-  <meta property="og:image" content="assets/images/noext/hero-principal.png">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://nomadx.app">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nómada Extremo — Deportes de aventura, formación técnica y naturaleza en Águilas, Murcia. Para gente que quiere aventura de verdad.">
+<meta name="keywords" content="aventura,senderismo,kayak,buceo,paracaidismo,parapente,paramotor,Águilas,Murcia,naturaleza,deportes extremos">
+<meta name="author" content="Diego David Extremo">
+<meta property="og:title" content="Nómada Extremo | Fusionando Aventura y Tecnología">
+<meta property="og:description" content="Tierra, mar, aire y vertical. La aventura mediterránea más auténtica, desde Águilas, Murcia.">
+<meta property="og:type" content="website">
+<title>Nómada Extremo | Fusionando Aventura y Tecnología</title>
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
-<!-- ─── TOAST ─────────────────────────────────────────────────── -->
-<div id="toast" role="alert" aria-live="polite"></div>
+<div id="nav-placeholder"></div>
 
-<!-- ─── MODAL SPORT DETAIL ─────────────────────────────────────── -->
-<div class="sport-detail-modal" id="sport-modal" role="dialog" aria-modal="true" aria-label="Detalle del deporte">
-  <div class="sport-detail-card">
-    <button class="modal-close" onclick="closeSportModal()" aria-label="Cerrar">✕</button>
-    <div id="modal-content"></div>
+<!-- ═══ HERO PRINCIPAL ═══ -->
+<section class="hero">
+  <!-- Imagen de fondo principal -->
+  <div class="hero-bg" role="img" aria-label="Imagen hero de Nómada Extremo con mar, montaña y aventura" style="background-image:url('assets/images/noext/hero-principal.png')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-bottom-fade"></div>
+
+  <div class="hero-inner">
+    <p class="hero-eyebrow" style="margin-top:3rem;margin-bottom:2.5rem;">Águilas · Murcia · España — Mar · Montaña · Aire · Vertical</p>
+    <h1 class="hero-titulo">NÓMADA<br><span class="acento">EXTREMO</span></h1>
+    <p class="hero-lema">Fusionando Aventura y Tecnología</p>
+    <p class="hero-tagline">Para gente que quiere aventura de verdad</p>
+    <div class="hero-btns">
+      <a href="actividades.html" class="btn btn-arena">Ver actividades</a>
+      <a href="reservas.html" class="btn btn-outline-blanco">Solicitar experiencia</a>
+      <a href="escuela.html" class="btn btn-outline-blanco">Escuela Nómada</a>
+    </div>
+  </div>
+
+  <!-- AVISO FICTICIO -->
+  <div class="aviso-ficticio">
+    <p>
+      ✦ Nómada Extremo es actualmente un <strong>proyecto académico ficticio</strong> creado por
+      <strong>Diego David Gómez García</strong>, alumno de 1.º GMN del
+      <strong>IES Europa de Águilas, Murcia</strong>. No realiza reservas, cobros ni actividades reales en este momento. ✦
+    </p>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Descender</span>
+  </div>
+
+</section>
+
+<!-- ═══ STATS ═══ -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item"><div class="stat-num" data-count="10" data-suffix="+">10+</div><div class="stat-lbl">Familias de actividad</div></div>
+      <div class="stat-item"><div class="stat-num" data-count="60" data-suffix="+">60+</div><div class="stat-lbl">Disciplinas diferentes</div></div>
+      <div class="stat-item"><div class="stat-num" data-count="320" data-suffix="">320</div><div class="stat-lbl">Días de sol en Águilas</div></div>
+      <div class="stat-item"><div class="stat-num" data-count="15" data-suffix="+">15+</div><div class="stat-lbl">Fichas de experiencia</div></div>
+    </div>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════════════════════════════
-     HEADER
-     ═══════════════════════════════════════════════════════════════ -->
-<header id="header" role="banner">
+<!-- ═══ INTRODUCCIÓN MARCA ═══ -->
+<section class="bg-crema" id="sistema-nomada-home">
   <div class="container">
-    <nav class="nav-inner" aria-label="Navegación principal">
-      <a href="#hero" class="nav-logo" aria-label="NOMADX inicio">NOMAD<span>X</span></a>
-
-      <div class="nav-links" role="list">
-        <a href="#hero" role="listitem">Inicio</a>
-        <a href="#como-funciona" role="listitem">Cómo funciona</a>
-        <a href="#adn" role="listitem">ADN</a>
-        <a href="#catalogo" role="listitem">Deportes</a>
-        <a href="#match" role="listitem">Match</a>
-        <a href="#feed" role="listitem">Feed</a>
-        <a href="#tribus" role="listitem">Tribus</a>
-        <a href="#mapa" role="listitem">Mapa</a>
-        <a href="#insignias" role="listitem">Insignias</a>
-        <a href="#seguridad" role="listitem">Seguridad</a>
-        <a href="#pro" role="listitem">Pro</a>
-      </div>
-
-      <div class="nav-actions">
-        <a href="#adn" class="btn btn-secondary btn-sm">Crear ADN</a>
-        <a href="#match" class="btn btn-primary btn-sm">Entrar ▶</a>
-        <button class="nav-hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </nav>
+    <span class="label">Proyecto académico completo</span>
+    <h2 class="titulo">SISTEMA<br><span class="mar">NÓMADA EXTREMO</span></h2>
+    <div class="divisor"></div>
+    <p class="texto" style="max-width:860px;margin-bottom:2rem;">La web se organiza como una marca de aventura mediterránea ficticia: catálogo, seguridad, material, zonas, escuela, comunidad digital, audiovisual, sostenibilidad, grupos y reservas demostrativas sin pagos reales.</p>
+    <div class="process-grid">
+      <article class="process-card"><span class="step">Flujo</span><h3>Cómo funciona</h3><p>Eleccion, requisitos, solicitud, briefing, formularios, check-in, desarrollo y logbook.</p><a href="como-funciona.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver proceso</a></article>
+      <article class="process-card"><span class="step">Riesgo</span><h3>Seguridad Nómada</h3><p>Evaluación previa, material, meteo, ratios, validaciónes y criterios de cancelación.</p><a href="seguridad.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver seguridad</a></article>
+      <article class="process-card"><span class="step">Territorio</span><h3>Mapa de zonas</h3><p>Águilas como base y la Región de Murcia como escenario de costa, montaña, agua y aire.</p><a href="zonas.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver zonas</a></article>
+      <article class="process-card"><span class="step">Digital</span><h3>Logbook y App</h3><p>Perfil, XP, insignias, retos, álbum audiovisual, credenciales QR y comunidad no competitiva.</p><a href="logbook.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver logbook</a></article>
+      <article class="process-card"><span class="step">Equipo</span><h3>Material</h3><p>Qué aportaría la empresa, que trae el participante y que se revisa antes de salir.</p><a href="material.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver material</a></article>
+      <article class="process-card"><span class="step">Impacto</span><h3>Sostenibilidad</h3><p>No dejar rastro, posidonia, flora, fauna, residuos, grupos reducidos y educacion ambiental.</p><a href="sostenibilidad.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver impacto</a></article>
+      <article class="process-card"><span class="step">Colectivos</span><h3>Grupos y empresas</h3><p>Centros educativos, team building, familias y experiencias privadas en formato a medida.</p><a href="grupos.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver grupos</a></article>
+      <article class="process-card"><span class="step">Dudas</span><h3>FAQ rapida</h3><p>Reservas, pagos, seguros, formularios, menores, experiencia previa y linea naturista.</p><a href="faq.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver FAQ</a></article>
+      <article class="process-card"><span class="step">Top</span><h3>Fichas destacadas</h3><p>Doce actividades principales con detalles de nivel, material, riesgos y condiciones.</p><a href="actividades.html#top-fichas" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver fichas</a></article>
+    </div>
   </div>
+</section>
 
-  <nav id="mobile-menu" aria-label="Menú móvil">
-    <a href="#hero">Inicio</a>
-    <a href="#adn">ADN Deportivo</a>
-    <a href="#catalogo">Catálogo de Deportes</a>
-    <a href="#match">Matching Deportivo</a>
-    <a href="#feed">Feed</a>
-    <a href="#tribus">Tribus</a>
-    <a href="#mapa">Mapa de Spots</a>
-        <a href="#eventos">Planes y Eventos</a>
-    <a href="#logbook">Logbook</a>
-        <a href="#insignias">Insignias</a>
-    <a href="#seguridad">Seguridad</a>
-    <a href="#pro">NOMADX Pro</a>
-    <a href="#pricing">Premium</a>
-    <a class="btn btn-primary" href="#match">Entrar al prototipo</a>
-  </nav>
-</header>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     S1 — HERO
-     ═══════════════════════════════════════════════════════════════ -->
-<section id="hero" aria-label="Presentación NOMADX">
+<section class="bg-blanco">
   <div class="container">
-    <div class="hero-inner">
-      <div class="hero-content">
-        <div class="hero-tag">Beta conceptual · 2026</div>
-        <h1 class="hero-title">NOMAD<span class="x">X</span></h1>
-        <p class="hero-sub">La red social del deporte, la aventura y la adrenalina</p>
-        <p class="hero-desc">
-          Conecta con deportistas por lo que practican, descubre spots, crea planes,
-          registra aventuras y construye tu reputación deportiva.
+    <div class="grid-2" style="align-items:center;gap:5rem;">
+      <div>
+        <span class="label">El origen del proyecto</span>
+        <h2 class="titulo">AVENTURA<br>CON <span class="arena">ALMA</span></h2>
+        <div class="divisor"></div>
+        <p class="subtitulo-editorial" style="margin-bottom:1.5rem;">
+          "No somos una empresa de actividades. Somos una cultura de aventura con identidad propia."
         </p>
-        <div class="hero-actions">
-          <a href="#catalogo" class="btn btn-primary btn-lg">Explorar la red</a>
-          <a href="#adn" class="btn btn-secondary btn-lg">Crear ADN deportivo</a>
-          <a href="#match" class="btn btn-ghost btn-lg">Ver demo</a>
-        </div>
-        <div class="hero-stats">
-          <div>
-            <div class="hero-stat-num" data-total-disciplines>600+</div>
-            <div class="hero-stat-label">Disciplinas NOMADX</div>
-          </div>
-          <div>
-            <div class="hero-stat-num">25</div>
-            <div class="hero-stat-label">Categorías</div>
-          </div>
-          <div>
-            <div class="hero-stat-num">12</div>
-            <div class="hero-stat-label">Tribus</div>
-          </div>
-          <div>
-            <div class="hero-stat-num">∞</div>
-            <div class="hero-stat-label">Aventuras</div>
-          </div>
+        <p class="texto" style="margin-bottom:1.2rem;">
+          Nómada Extremo nace en Águilas, Murcia. Una tierra que tiene el mar delante, la montaña detrás y el cielo siempre abierto. Pocas ciudades en España ofrecen un entorno natural tan completo y tan genuino.
+        </p>
+        <p class="texto" style="margin-bottom:2.5rem;">
+          La marca nace desde la visión personal de Diego David Extremo: unir tierra, mar, aire y vertical con formación técnica demostrativa, digitalización inteligente y una comunidad que crece desde los valores compartidos.
+        </p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="quienes-somos.html" class="btn btn-mar">Conocer la marca</a>
+          <a href="fundador.html" class="btn btn-outline">El fundador →</a>
         </div>
       </div>
-
-      <!-- Mockup móvil -->
-      <div class="hero-mockup" aria-hidden="true">
-        <div class="phone-frame">
-          <div class="phone-notch"></div>
-          <div class="phone-screen">
-            <div class="phone-app-bar">
-              <div class="phone-app-logo">NOMADX</div>
-              <div class="phone-icons">
-                <span>🔔</span><span>⚙️</span>
-              </div>
-            </div>
-            <div class="match-phone-card">
-              <div class="match-phone-avatar">🌊</div>
-              <div class="match-phone-name">Marina Trail</div>
-              <div class="match-phone-role">Demo interactiva · Sea Tribe</div>
-              <div class="match-phone-tags">
-                <span>Apnea</span><span>Coasteering</span>
-                <span>Psicobloc</span><span>Cliff Jumping</span>
-              </div>
-              <div class="match-compatibility">
-                <div class="match-compat-num">94%</div>
-                <span class="match-compat-label">Compatibilidad deportiva</span>
-              </div>
-              <div class="match-phone-actions">
-                <button class="mpa-btn mpa-skip" onclick="showToast('Perfil descartado')">✕</button>
-                <button class="mpa-btn mpa-connect" onclick="showToast('¡Match deportivo guardado! 🔥')">Conectar</button>
-                <button class="mpa-btn mpa-save" onclick="showToast('Guardado en favoritos ⭐')">★</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     S2 — QUÉ ES NOMADX
-     ═══════════════════════════════════════════════════════════════ -->
-<section id="que-es" class="section section-alt" aria-labelledby="que-es-title">
-  <div class="container">
-    <div class="section-header center reveal">
-      <span class="section-label">¿Qué es?</span>
-      <h2 class="section-title" id="que-es-title">NOMADX no es<br><span>una app más</span></h2>
-      <p class="section-subtitle">
-        Es una red social deportiva construida por y para quienes viven el deporte como identidad.
-        No para los que lo miran desde fuera.
-      </p>
-    </div>
-    <div class="features-grid">
-      <div class="feature-card reveal">
-        <div class="feature-icon orange">🤝</div>
-        <div class="feature-name">Conecta</div>
-        <div class="feature-desc">Encuentra deportistas, guías, instructores y aventureros con tu mismo ADN deportivo. El matching no es por cara, es por lo que practicas.</div>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon cyan">📡</div>
-        <div class="feature-name">Comparte</div>
-        <div class="feature-desc">Publica aventuras reales, técnicas, spots, expediciones y logros. Un feed hecho para quienes viven el movimiento, no para los que posan.</div>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon green">✅</div>
-        <div class="feature-name">Verifica</div>
-        <div class="feature-desc">Sistema multicapa de verificaciones: identidad, documentación, experiencia, seguridad y reconocimiento comunitario. Reputación real.</div>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon purple">🗺️</div>
-        <div class="feature-name">Explora</div>
-        <div class="feature-desc">Mapa global de spots, cuevas, acantilados, zonas de escalada, playas de surf y entornos para cada disciplina. El mundo como tu patio.</div>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon orange">📅</div>
-        <div class="feature-name">Organiza</div>
-        <div class="feature-desc">Crea planes, quedadas, expediciones y eventos. Gestiona cupos, niveles y requisitos de seguridad. Del grupo improvisado a la expedición técnica.</div>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon cyan">🏔️</div>
-        <div class="feature-name">Vive</div>
-        <div class="feature-desc">Del mar al cielo, de la roca al hielo, del entrenamiento al vacío. NOMADX es tu pasaporte a una comunidad que entiende lo que es vivir el deporte.</div>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon green">🎖️</div>
-        <div class="feature-name">Construye reputación</div>
-        <div class="feature-desc">Insignias de experiencia, nivel, entorno, seguridad y progresión. Tu historial deportivo como tarjeta de presentación auténtica.</div>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon purple">💼</div>
-        <div class="feature-name">Profesionaliza</div>
-        <div class="feature-desc">Para instructores, guías, clubs, centros y marcas: perfil profesional verificado, calendario, reputación, documentación y marketplace futuro.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     S2B — CÓMO FUNCIONA
-     ═══════════════════════════════════════════════════════════════ -->
-<section id="como-funciona" class="section" aria-labelledby="como-title">
-  <div class="container">
-    <div class="section-header center reveal">
-      <span class="section-label">Flujo de producto</span>
-      <h2 class="section-title" id="como-title">Cómo funciona<br><span>NOMADX</span></h2>
-      <p class="section-subtitle">Cinco pasos simples para pasar de perfil deportivo a comunidad, planes y reputación dentro de una plataforma social.</p>
-    </div>
-    <div class="steps-grid">
-      <article class="step-card reveal">
-        <div class="step-num">01</div>
-        <div class="feature-icon orange">🧬</div>
-        <div class="feature-name">Crea tu ADN deportivo</div>
-        <div class="feature-desc">Define deportes, nivel, entornos, objetivos, certificaciones y estilo de aventura.</div>
-      </article>
-      <article class="step-card reveal">
-        <div class="step-num">02</div>
-        <div class="feature-icon cyan">🗺️</div>
-        <div class="feature-name">Descubre deportes y spots</div>
-        <div class="feature-desc">Explora disciplinas, zonas, tribus y lugares guardados por la comunidad.</div>
-      </article>
-      <article class="step-card reveal">
-        <div class="step-num">03</div>
-        <div class="feature-icon green">🤝</div>
-        <div class="feature-name">Encuentra personas compatibles</div>
-        <div class="feature-desc">Conecta por afinidad deportiva, nivel, entorno, disponibilidad y cultura de seguridad.</div>
-      </article>
-      <article class="step-card reveal">
-        <div class="step-num">04</div>
-        <div class="feature-icon purple">📅</div>
-        <div class="feature-name">Únete a planes</div>
-        <div class="feature-desc">Crea o entra en quedadas, entrenamientos, eventos y salidas con requisitos claros.</div>
-      </article>
-      <article class="step-card reveal">
-        <div class="step-num">05</div>
-        <div class="feature-icon orange">📓</div>
-        <div class="feature-name">Registra tu Logbook</div>
-        <div class="feature-desc">Cada aventura registrada construye tu historial deportivo y desbloquea reputación.</div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     S3 — ADN DEPORTIVO
-     ═══════════════════════════════════════════════════════════════ -->
-<section id="adn" class="section" aria-labelledby="adn-title">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Perfil deportivo</span>
-      <h2 class="section-title" id="adn-title">Tu <span>ADN</span> deportivo</h2>
-      <p class="section-subtitle">No eres solo tu nombre de usuario. Eres tus deportes, tu entorno, tu nivel real, tus certificaciones y la energía que traes al grupo.</p>
-    </div>
-    <div class="adn-layout">
-      <!-- Tarjeta de perfil ejemplo -->
-      <div class="profile-card reveal">
-        <div class="profile-banner">
-          <div class="profile-banner-text">NOMADX ADN</div>
-        </div>
-        <div class="profile-avatar-wrap">
-          <div class="profile-avatar">🧭</div>
-        </div>
-        <div class="profile-body">
-          <div class="profile-name">Diego David Extremo</div>
-          <div class="profile-role">Perfil demo del creador · Ejemplo de ADN deportivo</div>
-          <div class="profile-badges">
-            <span class="badge badge-orange">🏅 Fundador</span>
-            <span class="badge badge-cyan">✓ Verificado</span>
-            <span class="badge badge-purple">🌟 Creador</span>
-            <span class="badge badge-green">🌊 Marino</span>
-          </div>
-          <div class="profile-dna">
-            <div class="profile-dna-label">ADN deportivo</div>
-            <div class="profile-dna-text">Mar · Roca · Aire · Exploración · Comunidad · Seguridad · Contenido outdoor · Progresión deportiva</div>
-          </div>
-          <div class="profile-stats">
-            <div class="stat-row">
-              <span class="stat-label">Nivel técnico</span>
-              <div class="stat-bar"><div class="stat-fill" style="width:90%"></div></div>
-              <span class="stat-val">9/10</span>
-            </div>
-            <div class="stat-row">
-              <span class="stat-label">Experiencia</span>
-              <div class="stat-bar"><div class="stat-fill" style="width:95%"></div></div>
-              <span class="stat-val">9.5</span>
-            </div>
-            <div class="stat-row">
-              <span class="stat-label">Seguridad</span>
-              <div class="stat-bar"><div class="stat-fill" style="width:88%"></div></div>
-              <span class="stat-val">8.8</span>
-            </div>
-            <div class="stat-row">
-              <span class="stat-label">Compañerismo</span>
-              <div class="stat-bar"><div class="stat-fill" style="width:92%"></div></div>
-              <span class="stat-val">9.2</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bloques de ADN detallado -->
-      <div class="adn-detail">
-        <div class="adn-block reveal">
-          <div class="adn-block-title">Deportes principales</div>
-          <div class="adn-tags">
-            <span class="adn-tag active">🌊 Cliff Jumping</span>
-            <span class="adn-tag active">🤿 Apnea / Freediving</span>
-            <span class="adn-tag active">🧗 Escalada</span>
-            <span class="adn-tag active">🪂 Parapente</span>
-            <span class="adn-tag active">🕳️ Espeleología</span>
-            <span class="adn-tag active">🌊 Coasteering</span>
-            <span class="adn-tag active">🏃 Barranquismo</span>
-            <span class="adn-tag active">💪 Crossfit</span>
-            <span class="adn-tag">🏊 Buceo técnico</span>
-            <span class="adn-tag">🎿 Snowboard</span>
-            <span class="adn-tag">🚵 MTB Enduro</span>
-          </div>
-        </div>
-        <div class="adn-block reveal">
-          <div class="adn-block-title">Entornos favoritos</div>
-          <div class="adn-tags">
-            <span class="adn-tag cyan active">🌊 Mar</span>
-            <span class="adn-tag cyan active">⛰️ Acantilado</span>
-            <span class="adn-tag cyan active">🗻 Montaña</span>
-            <span class="adn-tag cyan active">🕳️ Cuevas</span>
-            <span class="adn-tag cyan active">🌬️ Aire</span>
-            <span class="adn-tag cyan active">🏖️ Costa rocosa</span>
-            <span class="adn-tag cyan">❄️ Nieve</span>
-            <span class="adn-tag cyan">🌿 Selva</span>
-          </div>
-        </div>
-        <div class="adn-block reveal">
-          <div class="adn-block-title">Tipo de práctica</div>
-          <div class="adn-tags">
-            <span class="adn-tag active">🎬 Visual/Contenido</span>
-            <span class="adn-tag active">⚡ Adrenalina responsable</span>
-            <span class="adn-tag active">🔧 Técnica</span>
-            <span class="adn-tag active">🧭 Exploratoria</span>
-            <span class="adn-tag active">🤝 Grupal</span>
-            <span class="adn-tag">🏆 Competitiva</span>
-            <span class="adn-tag">📚 Formativa</span>
-          </div>
-        </div>
-        <div class="adn-block reveal">
-          <div class="adn-block-title">Certificaciones y formación</div>
-          <div class="adn-tags">
-            <span class="adn-tag active">📋 Guía Naturaleza MTYFP</span>
-            <span class="adn-tag active">🚑 Primeros Auxilios</span>
-            <span class="adn-tag active">🧗 Instructor Escalada</span>
-            <span class="adn-tag active">🤿 Buceador técnico</span>
-            <span class="adn-tag active">🎓 Formación deportiva</span>
-            <span class="adn-tag">⛑️ Rescate Vertical</span>
-          </div>
-        </div>
-        <div class="adn-block reveal">
-          <div class="adn-block-title">Insignias ganadas</div>
-          <div class="adn-tags">
-            <span class="adn-tag active">🧭 Explorador Original</span>
-            <span class="adn-tag active">🌊 Explorador Marino</span>
-            <span class="adn-tag active">🎖️ Fundador NOMADX</span>
-            <span class="adn-tag active">🎬 Creador Extremo</span>
-            <span class="adn-tag active">🔀 Multiactividad</span>
-            <span class="adn-tag active">🏔️ Verticalista</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     S4 — CATÁLOGO MAESTRO DE DEPORTES
-     ═══════════════════════════════════════════════════════════════ -->
-<section id="catalogo" class="section section-alt" aria-labelledby="catalogo-title">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Catálogo maestro</span>
-      <h2 class="section-title" id="catalogo-title"><span data-total-disciplines>600+</span> disciplinas,<br><span>actividades y experiencias</span></h2>
-      <p class="section-subtitle">Catálogo real conectado al ADN deportivo, matching, feed, tribus, spots, planes, Logbook, reputación y Safety Radar. Busca por nombre o alias, filtra por entorno, riesgo y tipo, y guarda lo que forma parte de tu identidad deportiva.</p>
-    </div>
-
-    <div class="catalog-controls reveal">
-      <div class="catalog-search-wrap">
-        <span class="catalog-search-icon">🔍</span>
-        <input type="search" id="catalog-search" placeholder="Buscar deporte o actividad..." aria-label="Buscar deporte">
-      </div>
-      <div class="catalog-count" id="catalog-count">Catálogo NOMADX: disciplinas destacadas visibles</div>
-      <button class="btn btn-ghost" id="catalog-clear-btn" type="button">Limpiar filtros</button>
-    </div>
-
-    <div class="catalog-categories reveal" id="catalog-categories" role="list" aria-label="Filtrar por categoría">
-      <!-- Generado por JS -->
-    </div>
-    <div class="catalog-filter-panel reveal" aria-label="Filtros del catálogo">
-      <div class="filter-group">
-        <span>Rápidos</span>
-        <div id="catalog-quick-filters" class="filter-row"></div>
-      </div>
-      <div class="filter-group">
-        <span>Entorno</span>
-        <div id="catalog-env-filters" class="filter-row"></div>
-      </div>
-      <div class="filter-group">
-        <span>Riesgo</span>
-        <div id="catalog-risk-filters" class="filter-row"></div>
-      </div>
-      <div class="filter-group">
-        <span>Tipo</span>
-        <div id="catalog-type-filters" class="filter-row"></div>
-      </div>
-    </div>
-
-    <div id="catalog-container" aria-live="polite">
-      <div class="catalog-fallback">
-        <article class="sport-demo-card">
-          <span class="risk-dot risk-high"></span>
-          <strong>Cliff Jumping</strong>
-          <small>Agua · Costa · riesgo alto · matching · logbook · planes</small>
-        </article>
-        <article class="sport-demo-card">
-          <span class="risk-dot risk-medium"></span>
-          <strong>Trail running</strong>
-          <small>Montaña · resistencia · riesgo medio · matching · logbook</small>
-        </article>
-        <article class="sport-demo-card">
-          <span class="risk-dot risk-high"></span>
-          <strong>Escalada</strong>
-          <small>Roca · vertical · material técnico · planes · seguridad</small>
-        </article>
-      </div>
-    </div>
-    <div class="catalog-actions reveal">
-      <button class="btn btn-secondary" id="catalog-more-btn" type="button">Ver más</button>
-      <button class="btn btn-primary" id="catalog-all-btn" type="button">Ver catálogo completo</button>
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     S5 — MATCHING DEPORTIVO
-     ═══════════════════════════════════════════════════════════════ -->
-<section id="match" class="section" aria-labelledby="match-title">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Sistema de matching</span>
-      <h2 class="section-title" id="match-title">Encuentra<br><span>tu tribu</span></h2>
-      <p class="section-subtitle">No matcheas por aspecto. Matcheas por lo que practicas, por el entorno que te mueve y por el nivel que traes. Conecta con deportistas, guías, grupos y planes reales.</p>
-    </div>
-    <div class="match-layout">
-      <!-- Deck de tarjetas -->
-      <div class="match-deck reveal">
-        <div class="match-stack-bg"></div>
-        <div class="match-stack-bg2"></div>
-        <div class="match-card" id="match-card-display">
-          <!-- Generado por JS -->
-        </div>
-      </div>
-      <!-- Sidebar de estadísticas -->
-      <div class="match-sidebar reveal">
-        <div class="match-stat-card">
-          <div class="match-stat-title">Tus estadísticas de matching <span class="mini-note">Datos demo del prototipo</span></div>
-          <div class="match-counter-grid">
-            <div class="match-counter">
-              <div class="mc-num" id="counter-vistos">24</div>
-              <div class="mc-label">Vistos</div>
-            </div>
-            <div class="match-counter">
-              <div class="mc-num" id="counter-matches">8</div>
-              <div class="mc-label">Matches</div>
-            </div>
-            <div class="match-counter">
-              <div class="mc-num" id="counter-guardados">5</div>
-              <div class="mc-label">Guardados</div>
-            </div>
-            <div class="match-counter">
-              <div class="mc-num">94%</div>
-              <div class="mc-label">Compat. media</div>
-            </div>
-          </div>
-        </div>
-        <div class="match-stat-card">
-          <div class="match-stat-title">Matches guardados</div>
-          <div class="saved-matches" id="saved-matches-list">
-            <p style="font-size:.82rem;color:var(--text-muted);">Demo interactiva: conecta o guarda perfiles para actualizar esta lista.</p>
-          </div>
-        </div>
-        <div class="match-stat-card">
-          <div class="match-stat-title">Filtros activos</div>
-          <div style="display:flex;flex-wrap:wrap;gap:.5rem">
-            <span class="badge badge-orange">Mar y Costa</span>
-            <span class="badge badge-cyan">Nivel avanzado</span>
-            <span class="badge badge-green">Instructores</span>
-            <span class="badge badge-white">+3 más</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     S6 — FEED DE CONTENIDO
-     ═══════════════════════════════════════════════════════════════ -->
-<section id="feed" class="section section-alt" aria-labelledby="feed-title">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Contenido real</span>
-      <h2 class="section-title" id="feed-title">Feed de<br><span>aventuras</span></h2>
-      <p class="section-subtitle">Publicaciones de deportistas reales. Aventuras, técnicas, spots, logros, seguridad y comunidad. Sin filtros de postureo. Solo deporte de verdad.</p>
-    </div>
-    <div class="feed-tabs reveal" role="tablist" aria-label="Filtros del feed">
-      <button class="feed-tab active" data-filter="all" role="tab" aria-selected="true">Todo</button>
-      <button class="feed-tab" data-filter="aventura" role="tab">Aventuras</button>
-      <button class="feed-tab" data-filter="tecnica" role="tab">Técnica</button>
-      <button class="feed-tab" data-filter="spot" role="tab">Spots</button>
-      <button class="feed-tab" data-filter="reto" role="tab">Retos</button>
-      <button class="feed-tab" data-filter="seguridad" role="tab">Seguridad</button>
-      <button class="feed-tab" data-filter="evento" role="tab">Eventos</button>
-    </div>
-    <div class="feed-grid" id="feed-container">
-      <!-- Generado por JS -->
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     S7 — TRIBUS
-     ═══════════════════════════════════════════════════════════════ -->
-<section id="tribus" class="section" aria-labelledby="tribus-title">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Comunidades</span>
-      <h2 class="section-title" id="tribus-title">Las <span>tribus</span><br>NOMADX</h2>
-      <p class="section-subtitle">No hay usuarios genéricos. Hay tribus. Comunidades de deportistas agrupados por entorno, disciplina y forma de vivir el deporte.</p>
-    </div>
-    <div class="tribus-grid" id="tribus-container">
-      <!-- Generado por JS -->
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     S8 — MAPA DE SPOTS
-     ═══════════════════════════════════════════════════════════════ -->
-<section id="mapa" class="section section-alt" aria-labelledby="mapa-title">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Mapa mundial</span>
-      <h2 class="section-title" id="mapa-title">Mapa de<br><span>spots</span></h2>
-      <p class="section-subtitle">Encuentra, documenta y comparte los mejores spots del planeta. Costa mediterránea, alta montaña, cuevas marinas, zonas de escalada y mucho más.</p>
-    </div>
-    <div class="spots-layout">
       <div>
-        <div class="spots-list reveal" id="spots-list">
-          <!-- Generado por JS -->
+        <div class="noext-feature-panel reveal">
+          <img class="noext-visual noext-home-photo" src="assets/images/noext/fondo-index-noext.png" alt="Fondo visual de costa mediterránea para Nómada Extremo" loading="lazy">
         </div>
-      </div>
-      <div class="map-visual reveal">
-        <div class="map-bg"></div>
-        <div class="map-grid-lines"></div>
-        <div class="map-inner">
-          <div class="map-header">
-            <div class="map-title">🌍 NOMADX Spots — Vista Global</div>
-            <div class="map-compass">🧭</div>
-          </div>
-          <div class="map-spots-visual" id="map-pins">
-            <!-- Generado por JS -->
-          </div>
-          <div class="spot-detail-panel sdp-hidden" id="spot-detail">
-            <!-- Generado por JS -->
-          </div>
+        <div class="grid-3" style="gap:1.2rem;margin-top:1.2rem;">
+          <div class="card reveal reveal-delay-1"><div class="card-icon">🧭</div><div class="card-titulo">Aventura Real</div><p class="card-desc">Sin artificios. Experiencias genuinas diseñadas por quienes las viven en primera persona.</p></div>
+          <div class="card reveal reveal-delay-2"><div class="card-icon">🛡️</div><div class="card-titulo">Seguridad</div><p class="card-desc">La adrenalina no está reñida con el rigor técnico. Aquí la seguridad es innegociable.</p></div>
+          <div class="card reveal reveal-delay-3"><div class="card-icon">📡</div><div class="card-titulo">Tecnología</div><p class="card-desc">Digitalización real: logbook, credenciales y app para la aventura del siglo XXI.</p></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="section-divider"></div>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     S9 — PLANES Y EVENTOS
-     ═══════════════════════════════════════════════════════════════ -->
-<section id="eventos" class="section" aria-labelledby="eventos-title">
+<section class="bg-gris home-territorio">
   <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Planes, eventos y quedadas</span>
-      <h2 class="section-title" id="eventos-title">Organiza,<br><span>únete, vive</span></h2>
-      <p class="section-subtitle">Desde una quedada informal al amanecer hasta una expedición técnica con guía verificado. Todo en un sistema con niveles, cupos y semáforo de seguridad.</p>
-    </div>
-    <div class="events-grid" id="events-container">
-      <!-- Generado por JS -->
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     S10 — LOGBOOK
-     ═══════════════════════════════════════════════════════════════ -->
-<section id="logbook" class="section section-alt" aria-labelledby="logbook-title">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Diario deportivo</span>
-      <h2 class="section-title" id="logbook-title">Logbook de<br><span>aventuras</span></h2>
-      <p class="section-subtitle">Aventuras completadas, entrenamientos, rutas, inmersiones, escaladas, eventos, condiciones, compañeros, material y aprendizaje. Cada aventura registrada construye tu historial deportivo.</p>
-    </div>
-    <div class="logbook-grid">
-      <article class="log-entry-card reveal">
-        <div class="log-media">🏃</div>
-        <div class="log-type">Trail · completado</div>
-        <h3>Ruta trail costera</h3>
-        <p>18 km · viento suave · 3 compañeros · hidratación y frontal revisados.</p>
-        <div class="log-meta"><span>Riesgo amarillo</span><span>Insignia: constancia</span></div>
-      </article>
-      <article class="log-entry-card reveal">
-        <div class="log-media">🧗</div>
-        <div class="log-type">Roca · técnica</div>
-        <h3>Sesión de escalada</h3>
-        <p>Bloques y vías deportivas · casco, cuerda y revisión cruzada de material.</p>
-        <div class="log-meta"><span>Riesgo rojo</span><span>Aprendizaje: lectura de vía</span></div>
-      </article>
-      <article class="log-entry-card reveal">
-        <div class="log-media">🚵</div>
-        <div class="log-type">MTB · salida</div>
-        <h3>Salida MTB Flow</h3>
-        <p>Sendero mixto · 31 km · suspensión ajustada · grupo de nivel medio.</p>
-        <div class="log-meta"><span>Riesgo amarillo</span><span>Logbook completo</span></div>
-      </article>
-      <article class="log-entry-card reveal">
-        <div class="log-media">🤿</div>
-        <div class="log-type">Agua · recreativo</div>
-        <h3>Buceo recreativo</h3>
-        <p>Visibilidad media · compañero mínimo · boya, comunicación y plan de salida.</p>
-        <div class="log-meta"><span>Riesgo amarillo</span><span>Safety First</span></div>
-      </article>
-      <article class="log-entry-card reveal">
-        <div class="log-media">💪</div>
-        <div class="log-type">Fitness · entrenamiento</div>
-        <h3>Entrenamiento funcional</h3>
-        <p>Fuerza, movilidad y resistencia para preparar actividad outdoor de fin de semana.</p>
-        <div class="log-meta"><span>Riesgo verde</span><span>Progresión activa</span></div>
-      </article>
-      <article class="log-entry-card reveal">
-        <div class="log-media">🌊</div>
-        <div class="log-type">Multiaventura · plan</div>
-        <h3>Plan de coasteering</h3>
-        <p>Evaluación previa de mar, salidas, material térmico y nivel mínimo del grupo.</p>
-        <div class="log-meta"><span>Riesgo rojo</span><span>Requiere experiencia</span></div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     S11 — INSIGNIAS Y REPUTACIÓN
-     ═══════════════════════════════════════════════════════════════ -->
-<section id="insignias" class="section section-alt" aria-labelledby="insignias-title">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Sistema multicapa</span>
-      <h2 class="section-title" id="insignias-title">Insignias,<br><span>verificaciones</span><br>y reputación</h2>
-      <p class="section-subtitle">En NOMADX no hay una sola verificación genérica. Hay un ecosistema de reconocimiento real: identidad, experiencia, seguridad, profesión y comunidad.</p>
-    </div>
-
-    <div class="insignias-layout" id="insignias-container">
-      <!-- Generado por JS -->
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     S12 — SAFETY RADAR
-     ═══════════════════════════════════════════════════════════════ -->
-<section id="safety-radar" class="section" aria-labelledby="radar-title">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Safety Radar</span>
-      <h2 class="section-title" id="radar-title">Antes de salir,<br><span>evalúa el riesgo</span></h2>
-      <p class="section-subtitle">La adrenalina real empieza cuando entiendes el riesgo. Safety Radar convierte una salida en una lectura clara de nivel, exposición, material, comunicación y plan de emergencia.</p>
-    </div>
-    <div class="safety-radar-grid">
-      <div class="radar-panel reveal">
-        <div class="radar-title">Evaluación demo · Coasteering</div>
-        <div class="radar-row"><span>Nivel técnico</span><strong class="radar-yellow">Medio-alto</strong></div>
-        <div class="radar-row"><span>Exposición</span><strong class="radar-red">Alta</strong></div>
-        <div class="radar-row"><span>Meteorología</span><strong class="radar-green">Favorable</strong></div>
-        <div class="radar-row"><span>Material obligatorio</span><strong class="radar-yellow">Neopreno · casco · calzado</strong></div>
-        <div class="radar-row"><span>Compañero mínimo</span><strong class="radar-yellow">Grupo de 3+</strong></div>
-        <div class="radar-row"><span>Comunicación</span><strong class="radar-red">Plan externo requerido</strong></div>
-        <div class="radar-row"><span>Permisos y entorno</span><strong class="radar-green">Revisar normativa local</strong></div>
-      </div>
-      <div class="radar-panel radar-summary reveal">
-        <div class="radar-score">🟡</div>
-        <h3>Salida viable con preparación</h3>
-        <p>No sustituye a formación, guía o criterio técnico. Sirve para que la comunidad hable de seguridad con el mismo lenguaje antes de crear o unirse a un plan.</p>
-        <div class="adn-tags">
-          <span class="adn-tag active">Plan de emergencia</span>
-          <span class="adn-tag active">Seguro recomendado</span>
-          <span class="adn-tag active">Respeto ambiental</span>
-          <span class="adn-tag active">Condiciones favorables</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     S13 — SEGURIDAD Y RESPONSABILIDAD
-     ═══════════════════════════════════════════════════════════════ -->
-<section id="seguridad" class="section" aria-labelledby="seg-title">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Aventura con cabeza</span>
-      <h2 class="section-title" id="seg-title">Seguridad y<br><span>responsabilidad</span></h2>
-      <p class="section-subtitle">NOMADX no glorifica la inconsciencia. La adrenalina real viene con formación, planificación y respeto por el entorno y los límites propios.</p>
-    </div>
-    <div class="safety-layout">
+    <div class="grid-2" style="gap:4rem;align-items:center;">
       <div>
-        <div class="safety-semaforo reveal">
-          <div class="sem-item">
-            <div class="sem-color sem-green"></div>
-            <div>
-              <div class="sem-title">Verde — Actividad accesible</div>
-              <div class="sem-desc">Apta para todos los niveles con equipamiento básico. Sin requisitos técnicos especiales. Ejemplos: senderismo, snorkel, SUP recreativo, trail iniciación.</div>
-            </div>
-          </div>
-          <div class="sem-item">
-            <div class="sem-color sem-yellow"></div>
-            <div>
-              <div class="sem-title">Amarillo — Requiere preparación</div>
-              <div class="sem-desc">Necesita formación previa, material específico o acompañamiento recomendado. Ejemplos: coasteering, kayak de río, vía ferrata, barranquismo básico.</div>
-            </div>
-          </div>
-          <div class="sem-item">
-            <div class="sem-color sem-red"></div>
-            <div>
-              <div class="sem-title">Rojo — Actividad técnica</div>
-              <div class="sem-desc">Requiere formación técnica acreditada, material homologado y, preferiblemente, guía o instructor certificado. Ejemplos: escalada multipitch, espeleología, apnea profunda, barranquismo técnico.</div>
-            </div>
-          </div>
-          <div class="sem-item">
-            <div class="sem-color sem-black"></div>
-            <div>
-              <div class="sem-title">Negro — Extremo / Solo expertos</div>
-              <div class="sem-desc">Solo para deportistas con experiencia demostrada, certificaciones específicas y plena consciencia del riesgo objetivo. Ejemplos: BASE jump, free solo, cave diving, wingsuit proximity.</div>
-            </div>
-          </div>
-        </div>
-
-        <div style="margin-top:2rem">
-          <p class="section-subtitle" style="margin-bottom:1.5rem">Checklist de seguridad básica antes de cualquier salida</p>
-          <div class="safety-checklist reveal">
-            <div class="checklist-item">Conoce el nivel real de la actividad y tu propia capacidad</div>
-            <div class="checklist-item">Revisa el material y comprueba que está en buen estado</div>
-            <div class="checklist-item">Consulta las condiciones meteorológicas y el entorno</div>
-            <div class="checklist-item">Informa a alguien de tu salida: ruta, hora y regreso previsto</div>
-            <div class="checklist-item">Lleva comunicación de emergencia adecuada</div>
-            <div class="checklist-item">Conoce los números de emergencia y puntos de rescate</div>
-            <div class="checklist-item">Si hay dudas técnicas, cuenta con formación o un profesional</div>
-            <div class="checklist-item">Asegúrate de tener seguro deportivo adecuado</div>
-          </div>
+        <span class="label">Base Águilas, mapa Murcia</span>
+        <h2 class="titulo">ÁGUILAS COMO BASE.<br><span class="mar">TODA MURCIA COMO TERRITORIO DE AVENTURA.</span></h2>
+        <div class="divisor"></div>
+        <p class="texto">
+          Nómada Extremo nace en Águilas, donde el Mediterráneo se mezcla con calas, acantilados, senderos, ramblas, montaña y costa salvaje. Desde esta base diseñamos experiencias de buceo, snorkel, kayak, paddle surf, coasteering, cliff jumping controlado, senderismo, BTT, paramotor y paratrike.
+        </p>
+        <p class="texto" style="margin-top:1rem;">
+          Para las actividades más técnicas, ampliamos el mapa hacia Sierra Espuña, el Cañón de Almadenes, Calasparra, Cieza, Ricote, Mazarrón, Cabo de Palos, el Mar Menor, Totana y Mula.
+        </p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;">
+          <a href="actividades.html" class="btn btn-mar">Ver actividades</a>
+          <a href="actividades.html#territorio" class="btn btn-outline">Ver zonas</a>
+          <a href="reservas.html" class="btn btn-arena">Crear mi experiencia</a>
         </div>
       </div>
-
-      <div class="reveal">
-        <div class="safety-notice">
-          <div class="safety-notice-title">⚠️ Aviso de NOMADX</div>
-          <div class="safety-notice-text">
-            "NOMADX promueve la aventura, pero no la imprudencia. Las actividades técnicas o de riesgo requieren formación, experiencia, material adecuado, condiciones favorables y, cuando proceda, profesionales cualificados. Esta plataforma es un espacio de conexión y comunidad, no un manual de instrucciones técnicas para actividades peligrosas."
-          </div>
-        </div>
-
-        <div style="margin-top:1.5rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem">
-          <p style="font-family:var(--font-heading);font-size:.82rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:1rem">Moderación y comunidad</p>
-          <div style="display:flex;flex-direction:column;gap:.75rem;font-size:.88rem;color:var(--text-secondary)">
-            <div>🔍 Verificación documental para actividades técnicas</div>
-            <div>🚨 Sistema de reporte de spots con condiciones peligrosas</div>
-            <div>👥 Moderación comunitaria activa</div>
-            <div>📋 Diferenciación clara entre contenido inspiracional y organización real</div>
-            <div>🔒 Requisitos de nivel para eventos técnicos</div>
-            <div>📞 Protocolo de emergencias y contactos de rescate visibles</div>
-          </div>
-        </div>
+      <div class="territorio-mini-map">
+        <div><strong>Águilas</strong><span>Mar, costa, BTT, kayak, snorkel y vuelos panorámicos</span></div>
+        <div><strong>Cabo Cope + Almenara</strong><span>Montaña mediterránea, ramblas, costa salvaje</span></div>
+        <div><strong>Almadenes + Segura</strong><span>Rafting, kayak de río, ferratas y cuevas</span></div>
+        <div><strong>Sierra Espuña</strong><span>Vertical, barrancos secos, rápel y formación</span></div>
+        <div><strong>Mar Menor</strong><span>Wingfoil, windsurf, kitesurf y e-foil</span></div>
+        <div><strong>Totana + Mula</strong><span>Paracaidismo, puenting y cuerda extrema</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="section-divider"></div>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     S12 — NOMADX PRO
-     ═══════════════════════════════════════════════════════════════ -->
-<section id="pro" class="section section-dark" aria-labelledby="pro-title">
+<!-- ═══ CATÁLOGO FAMILIAS ═══ -->
+<section class="bg-crema" style="padding-bottom:0;">
   <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Perfil profesional</span>
-      <h2 class="section-title" id="pro-title">NOMADX<br><span>Pro</span></h2>
-      <p class="section-subtitle">Para instructores, guías, entrenadores, escuelas, centros deportivos y marcas. Tu negocio, tu experiencia y tu reputación en la plataforma que entiende tu mundo.</p>
+    <span class="label">El catálogo completo</span>
+    <h2 class="titulo">FAMILIAS DE<br><span class="mar">AVENTURA</span></h2>
+    <p class="texto" style="margin-top:1rem;">Diez grandes familias de experiencias organizadas por medio, nivel y espíritu. Todas con la Garantía Nómada Extremo.</p>
+  </div>
+  <div class="grid-act" style="margin-top:3rem;">
+    <div class="act-card">
+      <div class="act-card-bg" style="background-image:url('assets/images/actividades/familia-montana.jpg')"></div>
+      <div class="act-card-overlay"></div>
+      <div class="act-card-content">
+        <div class="act-card-num">01</div>
+        <div class="act-card-titulo">MONTAÑA</div>
+        <div class="act-card-sub">Senderismo · Trekking · Montañismo</div>
+      </div>
+      <div class="act-card-hover">
+        <div class="act-card-hover-icon">⛰️</div>
+        <p>Sierra Almenara, Cabo Cope, Sierra Espuña. El territorio como maestro.</p>
+        <a href="actividades.html#montana">Descubrir →</a>
+      </div>
     </div>
-    <div class="pro-grid" id="pro-container">
-      <!-- Generado por JS -->
+    <div class="act-card">
+      <div class="act-card-bg" style="background-image:url('assets/images/actividades/familia-vertical.jpg')"></div>
+      <div class="act-card-overlay"></div>
+      <div class="act-card-content">
+        <div class="act-card-num">02</div>
+        <div class="act-card-titulo">VERTICAL</div>
+        <div class="act-card-sub">Escalada · Rápel · Ferrata · Espeleología</div>
+      </div>
+      <div class="act-card-hover">
+        <div class="act-card-hover-icon">🧗</div>
+        <p>Roca, cuerda, altura y profundidad con técnica de primer nivel.</p>
+        <a href="actividades.html#vertical">Descubrir →</a>
+      </div>
     </div>
-    <div style="margin-top:3rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-xl);padding:2.5rem;text-align:center" class="reveal">
-      <span class="section-label">Funciones exclusivas Pro</span>
-      <div style="display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;margin-top:1.5rem">
-        <span class="badge badge-orange">✓ Perfil verificado</span>
-        <span class="badge badge-cyan">📅 Calendario de cursos</span>
-        <span class="badge badge-green">🎟️ Gestión de reservas</span>
-        <span class="badge badge-purple">📊 Analíticas</span>
-        <span class="badge badge-gold">🛒 Marketplace</span>
-        <span class="badge badge-orange">📝 Opiniones verificadas</span>
-        <span class="badge badge-cyan">📋 Certificados visibles</span>
-        <span class="badge badge-green">🎯 Publicidad segmentada</span>
-        <span class="badge badge-purple">🤝 Colaboraciones creators</span>
-        <span class="badge badge-orange">📍 Spots y rutas destacadas</span>
+    <div class="act-card">
+      <div class="act-card-bg" style="background-image:url('assets/images/actividades/familia-mar-costa.jpg')"></div>
+      <div class="act-card-overlay"></div>
+      <div class="act-card-content">
+        <div class="act-card-num">03</div>
+        <div class="act-card-titulo">MAR Y COSTA</div>
+        <div class="act-card-sub">Kayak · SUP · Surf · Coasteering</div>
+      </div>
+      <div class="act-card-hover">
+        <div class="act-card-hover-icon">🌊</div>
+        <p>El litoral de Águilas, uno de los más espectaculares del Mediterráneo.</p>
+        <a href="actividades.html#mar">Descubrir →</a>
+      </div>
+    </div>
+    <div class="act-card">
+      <div class="act-card-bg" style="background-image:url('assets/images/actividades/familia-buceo.jpg')"></div>
+      <div class="act-card-overlay"></div>
+      <div class="act-card-content">
+        <div class="act-card-num">04</div>
+        <div class="act-card-titulo">BUCEO</div>
+        <div class="act-card-sub">Bautismo · Open Water · Advanced · Divemaster</div>
+      </div>
+      <div class="act-card-hover">
+        <div class="act-card-hover-icon">🤿</div>
+        <p>El Mediterráneo visto desde dentro. Progresión PADI completa.</p>
+        <a href="actividades.html#buceo">Descubrir →</a>
+      </div>
+    </div>
+    <div class="act-card">
+      <div class="act-card-bg" style="background-image:url('assets/images/actividades/familia-aire.jpg')"></div>
+      <div class="act-card-overlay"></div>
+      <div class="act-card-content">
+        <div class="act-card-num">05</div>
+        <div class="act-card-titulo">AIRE</div>
+        <div class="act-card-sub">Paracaidismo · Parapente · Paramotor · Paratrike</div>
+      </div>
+      <div class="act-card-hover">
+        <div class="act-card-hover-icon">🪂</div>
+        <p>Del primer salto al vuelo autónomo. El cielo de Águilas, incomparable.</p>
+        <a href="actividades.html#aire">Descubrir →</a>
+      </div>
+    </div>
+    <div class="act-card">
+      <div class="act-card-bg" style="background-image:url('assets/images/actividades/familia-barrancos.jpg')"></div>
+      <div class="act-card-overlay"></div>
+      <div class="act-card-content">
+        <div class="act-card-num">06</div>
+        <div class="act-card-titulo">BARRANCOS</div>
+        <div class="act-card-sub">Barranquismo · Rafting · Cañones</div>
+      </div>
+      <div class="act-card-hover">
+        <div class="act-card-hover-icon">💧</div>
+        <p>Agua, roca, gravedad y adrenalina en estado puro.</p>
+        <a href="actividades.html#barrancos">Descubrir →</a>
+      </div>
+    </div>
+    <div class="act-card">
+      <div class="act-card-bg" style="background-image:url('assets/images/actividades/familia-btt-v2.jpg');background-position:center 40%;"></div>
+      <div class="act-card-overlay"></div>
+      <div class="act-card-content">
+        <div class="act-card-num">07</div>
+        <div class="act-card-titulo">BTT</div>
+        <div class="act-card-sub">Mountain Bike · Cicloturismo aventura</div>
+      </div>
+      <div class="act-card-hover">
+        <div class="act-card-hover-icon">🚵</div>
+        <p>Costa, montaña y sendero técnico. Ruedas sobre el mejor entorno.</p>
+        <a href="actividades.html#btt">Descubrir →</a>
+      </div>
+    </div>
+    <div class="act-card">
+      <div class="act-card-bg" style="background-image:url('assets/images/actividades/familia-multiaventura.jpg')"></div>
+      <div class="act-card-overlay"></div>
+      <div class="act-card-content">
+        <div class="act-card-num">08</div>
+        <div class="act-card-titulo">MULTIAVENTURA</div>
+        <div class="act-card-sub">Experiencias combinadas · Expediciones</div>
+      </div>
+      <div class="act-card-hover">
+        <div class="act-card-hover-icon">⚡</div>
+        <p>El verdadero ADN Nómada Extremo. Disciplinas que crean algo único juntas.</p>
+        <a href="actividades.html#multiaventura">Descubrir →</a>
+      </div>
+    </div>
+    <div class="act-card">
+      <div class="act-card-bg" style="background-image:url('assets/images/actividades/ficha-efoil.jpg');background-position:center 38%;"></div>
+      <div class="act-card-overlay"></div>
+      <div class="act-card-content">
+        <div class="act-card-num">09</div>
+        <div class="act-card-titulo">FOIL / WATERMAN</div>
+        <div class="act-card-sub">E-foil · Wingfoil · Jetsurf · Viento</div>
+      </div>
+      <div class="act-card-hover">
+        <div class="act-card-hover-icon">🏄</div>
+        <p>La línea más técnica del mar: motor eléctrico, viento, tabla y control real.</p>
+        <a href="actividades.html#foil">Descubrir →</a>
+      </div>
+    </div>
+    <div class="act-card">
+      <div class="act-card-bg" style="background-image:url('assets/images/actividades/familia-mar-costa.jpg');background-position:center 42%;"></div>
+      <div class="act-card-overlay"></div>
+      <div class="act-card-content">
+        <div class="act-card-num">10</div>
+        <div class="act-card-titulo">NÓMADA NATURISTA</div>
+        <div class="act-card-sub">Línea especial · Privacidad · Respeto</div>
+      </div>
+      <div class="act-card-hover">
+        <div class="act-card-hover-icon">🌿</div>
+        <p>Experiencias suaves y diferenciadas, con consentimiento, privacidad y normas claras.</p>
+        <a href="naturistas.html">Descubrir →</a>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center;padding:3rem 0;background:var(--crema);">
+    <a href="actividades.html" class="btn btn-mar">Explorar el catálogo completo →</a>
+  </div>
+</section>
+
+<!-- ═══ FICHAS DESTACADAS ═══ -->
+<section class="bg-blanco">
+  <div class="container">
+    <span class="label">Experiencias más solicitadas</span>
+    <h2 class="titulo">FICHAS<br><span class="arena">DESTACADAS</span></h2>
+    <div class="divisor"></div>
+    <div class="grid-fichas" style="margin-top:3rem;">
+
+      <div class="ficha reveal">
+        <div class="ficha-img" style="background-image:url('assets/images/actividades/familia-montana.jpg')">
+          <span class="nivel-badge nivel-inicio">Iniciación</span>
+        </div>
+        <div class="ficha-cuerpo">
+          <div class="ficha-familia">Montaña · Águilas</div>
+          <div class="ficha-titulo">SENDERISMO GUIADO</div>
+          <div class="ficha-sub">Las joyas escondidas del litoral aguileño</div>
+          <div class="intensidad">
+            <span class="intensidad-label">Intensidad</span>
+            <div class="intensidad-barra"><span class="on"></span><span class="on"></span><span></span><span></span><span></span></div>
+          </div>
+          <p class="ficha-desc">Rutas guíadas por Cabo Cope, Marina de Cope y Sierra de Almenara. Interpretación del paisaje y fauna local. Para todos los públicos, sin experiencia previa.</p>
+          <div class="ficha-meta">
+            <span class="ficha-tag">⏱ 3–6 h</span><span class="ficha-tag">👥 Hasta 15 p.</span>
+            <span class="ficha-tag">📍 Águilas</span><span class="ficha-tag">🗓 Todo el año</span>
+          </div>
+          <div class="ficha-precio">Desde 25€ <span>/ persona</span></div>
+        </div>
+        <a href="reservas.html" class="ficha-btn">Solicitar experiencia →</a>
+      </div>
+
+      <div class="ficha reveal">
+        <div class="ficha-img" style="background-image:url('assets/images/actividades/familia-mar-costa.jpg')">
+          <span class="nivel-badge nivel-inicio">Iniciación</span>
+        </div>
+        <div class="ficha-cuerpo">
+          <div class="ficha-familia">Mar y Costa · Águilas</div>
+          <div class="ficha-titulo">KAYAK DE MAR</div>
+          <div class="ficha-sub">El Mediterráneo cala a cala, desde dentro</div>
+          <div class="intensidad">
+            <span class="intensidad-label">Intensidad</span>
+            <div class="intensidad-barra"><span class="on"></span><span class="on"></span><span class="on"></span><span></span><span></span></div>
+          </div>
+          <p class="ficha-desc">Calas inaccesibles por tierra, solo desde el mar. Travesías de 2 a 4 horas con parada para snorkel. El litoral de Águilas en su máxima expresión.</p>
+          <div class="ficha-meta">
+            <span class="ficha-tag">⏱ 2–4 h</span><span class="ficha-tag">🛶 Kayak incluido</span>
+            <span class="ficha-tag">📍 Águilas</span><span class="ficha-tag">🌡 Primavera–Otoño</span>
+          </div>
+          <div class="ficha-precio">Desde 45€ <span>/ persona</span></div>
+        </div>
+        <a href="reservas.html" class="ficha-btn">Solicitar experiencia →</a>
+      </div>
+
+      <div class="ficha reveal">
+        <div class="ficha-img" style="background-image:url('assets/images/actividades/familia-buceo.jpg')">
+          <span class="nivel-badge nivel-inicio">Iniciación</span>
+        </div>
+        <div class="ficha-cuerpo">
+          <div class="ficha-familia">Buceo · Costa de Águilas</div>
+          <div class="ficha-titulo">BAUTISMO DE BUCEO</div>
+          <div class="ficha-sub">Tu primera vez bajo el mar no se olvida</div>
+          <div class="intensidad">
+            <span class="intensidad-label">Intensidad</span>
+            <div class="intensidad-barra"><span class="on"></span><span class="on"></span><span></span><span></span><span></span></div>
+          </div>
+          <p class="ficha-desc">Teoría, piscina e inmersión guíada a hasta 6 metros. Sin experiencia previa. Fauna mediterránea, posidonia y la sensación de un mundo nuevo.</p>
+          <div class="ficha-meta">
+            <span class="ficha-tag">⏱ 3 h</span><span class="ficha-tag">🤿 Material incluido</span>
+            <span class="ficha-tag">📷 Foto recuerdo</span><span class="ficha-tag">Desde 10 años</span>
+          </div>
+          <div class="ficha-precio">Desde 75€ <span>/ persona</span></div>
+        </div>
+        <a href="reservas.html" class="ficha-btn">Solicitar experiencia →</a>
+      </div>
+
+      <div class="ficha reveal">
+        <div class="ficha-img" style="background-image:url('assets/images/actividades/ficha-paracaidismo-tandem.webp');background-position:center 40%;">
+          <span class="nivel-badge nivel-extremo">Extremo</span>
+        </div>
+        <div class="ficha-cuerpo">
+          <div class="ficha-familia">Aire · Caída Libre</div>
+          <div class="ficha-titulo">PARACAIDISMO TÁNDEM</div>
+          <div class="ficha-sub">El salto que cambia cómo ves la vida</div>
+          <div class="intensidad">
+            <span class="intensidad-label">Intensidad</span>
+            <div class="intensidad-barra"><span class="on ext"></span><span class="on ext"></span><span class="on ext"></span><span class="on ext"></span><span class="on ext"></span></div>
+          </div>
+          <p class="ficha-desc">4.000 metros. 60 segúndos de caída libre a 200 km/h con instructor certificado. Planeo sobre el Mediterráneo. Sin experiencia previa.</p>
+          <div class="ficha-meta">
+            <span class="ficha-tag">⏱ Medio día</span><span class="ficha-tag">🎥 Vídeo disponible</span>
+            <span class="ficha-tag">✅ Seguro incluido</span><span class="ficha-tag">Desde 16 años</span>
+          </div>
+          <div class="ficha-precio">Desde 195€ <span>/ persona</span></div>
+        </div>
+        <a href="reservas.html" class="ficha-btn">Solicitar experiencia →</a>
+      </div>
+
+      <div class="ficha reveal">
+        <div class="ficha-img" style="background-image:url('assets/images/actividades/familia-multiaventura.jpg')">
+          <span class="nivel-badge nivel-medio">Intermedio</span>
+        </div>
+        <div class="ficha-cuerpo">
+          <div class="ficha-familia">Multiaventura · Jornada completa</div>
+          <div class="ficha-titulo">MAR + MONTAÑA</div>
+          <div class="ficha-sub">Un día, dos mundos, una experiencia única</div>
+          <div class="intensidad">
+            <span class="intensidad-label">Intensidad</span>
+            <div class="intensidad-barra"><span class="on alta"></span><span class="on alta"></span><span class="on alta"></span><span class="on alta"></span><span></span></div>
+          </div>
+          <p class="ficha-desc">Senderismo por crestas costeras, kayak de travesía y snorkel en calas vírgenes. Almuerzo mediterráneo incluido. El sello Nómada Extremo en estado puro.</p>
+          <div class="ficha-meta">
+            <span class="ficha-tag">⏱ Jornada completa</span><span class="ficha-tag">🥗 Almuerzo incl.</span>
+            <span class="ficha-tag">🛶 Kayak incl.</span><span class="ficha-tag">📍 Águilas</span>
+          </div>
+          <div class="ficha-precio">Desde 95€ <span>/ persona</span></div>
+        </div>
+        <a href="reservas.html" class="ficha-btn">Solicitar experiencia →</a>
+      </div>
+
+      <div class="ficha reveal">
+        <div class="ficha-img" style="background-image:url('assets/images/actividades/familia-aire.jpg')">
+          <span class="nivel-badge nivel-avanzado">Avanzado</span>
+        </div>
+        <div class="ficha-cuerpo">
+          <div class="ficha-familia">Aire · Motor · Águilas</div>
+          <div class="ficha-titulo">PARAMOTOR & PARATRIKE</div>
+          <div class="ficha-sub">Vuela sobre el Mediterráneo desde Águilas</div>
+          <div class="intensidad">
+            <span class="intensidad-label">Intensidad</span>
+            <div class="intensidad-barra"><span class="on alta"></span><span class="on alta"></span><span class="on alta"></span><span></span><span></span></div>
+          </div>
+          <p class="ficha-desc">Vuelo ultraligero motorizado sobre la costa murciana. Una de las líneas más especiales del catálogo, completamente viable en Águilas. Vistas que cambian perspectivas.</p>
+          <div class="ficha-meta">
+            <span class="ficha-tag">⏱ 1–2 h</span><span class="ficha-tag">✅ Seguro incl.</span>
+            <span class="ficha-tag">🎥 GoPro disponible</span><span class="ficha-tag">📍 Águilas</span>
+          </div>
+          <div class="ficha-precio">Desde 120€ <span>/ persona</span></div>
+        </div>
+        <a href="reservas.html" class="ficha-btn">Solicitar experiencia →</a>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:3rem;">
+      <a href="actividades.html" class="btn btn-outline">Ver las 60+ disciplinas del catálogo →</a>
+      <div style="text-align:center;margin-top:1rem;"><a href="packs.html" class="btn btn-arena">Ver packs especiales →</a></div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+<!-- ═══ MANIFIESTO ═══ -->
+
+<!-- ═══ RESEÑAS DE EJEMPLO ═══ -->
+<section class="bg-gris" id="resenas">
+  <div class="container">
+    <span class="label">Prueba social demostrativa</span>
+    <h2 class="titulo">RESEÑAS<br><span class="mar">DE EJEMPLO</span></h2>
+    <div class="divisor"></div>
+        <!-- Review disclaimer -->
+    <div class="review-disclaimer reveal">
+      <strong>Nota sobre estas reseñas:</strong> Estas reseñas son simuladas para mostrar cómo funcionaría la prueba social en una versión real del proyecto. Nómada Extremo no está operativo actualmente como empresa.
+    </div>
+    <div class="grid-2" style="gap:3rem;align-items:start;margin:2.5rem 0 3rem;">
+      <div style="background:var(--blanco);border:1px solid var(--crema-media);border-radius:var(--radio);padding:2rem;box-shadow:var(--sombra-l);">
+        <span class="label label-bosque">Tu experiencia importa</span>
+        <h3 class="titulo" style="font-size:2.4rem;margin:0.8rem 0 1rem;">CUÉNTANOS<br><span class="bosque">CÓMO FUE</span></h3>
+        <p class="texto" style="margin-bottom:1.5rem;">En una versión operativa, esta zona permitiría recoger valoraciones reales, revisarlas con consentimiento y convertirlas en prueba social clara. En esta web académica funciona como demostración.</p>
+        <div style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;">
+          <div style="text-align:center;">
+            <div class="review-avg">4.9</div>
+            <div style="color:#f5a623;font-size:1.1rem;margin:0.3rem 0;">★★★★★</div>
+            <div style="font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--piedra);">Media simulada</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:0.3rem;min-width:220px;flex:1;">
+            <div style="display:flex;gap:0.8rem;align-items:center;"><span style="font-size:0.72rem;color:var(--gris-calido);width:44px;">5 ★</span><div style="flex:1;height:8px;background:var(--crema-media);border-radius:4px;"><div style="width:90%;height:100%;background:var(--bosque-claro);border-radius:4px;"></div></div><span style="font-size:0.65rem;color:var(--piedra);">90%</span></div>
+            <div style="display:flex;gap:0.8rem;align-items:center;"><span style="font-size:0.72rem;color:var(--gris-calido);width:44px;">4 ★</span><div style="flex:1;height:8px;background:var(--crema-media);border-radius:4px;"><div style="width:8%;height:100%;background:var(--arena);border-radius:4px;"></div></div><span style="font-size:0.65rem;color:var(--piedra);">8%</span></div>
+            <div style="display:flex;gap:0.8rem;align-items:center;"><span style="font-size:0.72rem;color:var(--gris-calido);width:44px;">3 ★</span><div style="flex:1;height:8px;background:var(--crema-media);border-radius:4px;"><div style="width:2%;height:100%;background:var(--piedra-claro);border-radius:4px;"></div></div><span style="font-size:0.65rem;color:var(--piedra);">2%</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background:var(--blanco);border-radius:var(--radio);padding:2rem;border:1px solid var(--crema-media);box-shadow:var(--sombra-l);">
+        <div style="font-family:var(--display);font-size:1.1rem;letter-spacing:2px;color:var(--gris-oscuro);margin-bottom:1.5rem;">DEJA TU RESEÑA DEMO</div>
+        <form action="https://formsubmit.co/diegodavidexplorer@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nueva reseña demo — Nómada Extremo">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="form-grupo" style="margin-bottom:1rem;">
+            <label style="font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-calido);font-weight:600;display:block;margin-bottom:0.4rem;">Nombre</label>
+            <input type="text" name="nombre" placeholder="Tu nombre" style="width:100%;padding:0.65rem 1rem;background:var(--cielo);border:1.5px solid var(--cielo-medio);border-radius:var(--radio);font-size:0.88rem;color:var(--gris-oscuro);font-family:var(--sans);box-sizing:border-box;" required>
+          </div>
+          <div class="form-grupo" style="margin-bottom:1rem;">
+            <label style="font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-calido);font-weight:600;display:block;margin-bottom:0.4rem;">Actividad realizada</label>
+            <input type="text" name="actividad" placeholder="Ej: Kayak de mar, bautismo de buceo..." style="width:100%;padding:0.65rem 1rem;background:var(--cielo);border:1.5px solid var(--cielo-medio);border-radius:var(--radio);font-size:0.88rem;color:var(--gris-oscuro);font-family:var(--sans);box-sizing:border-box;" required>
+          </div>
+          <div class="form-grupo" style="margin-bottom:1rem;">
+            <label style="font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-calido);font-weight:600;display:block;margin-bottom:0.4rem;">Valoración</label>
+            <select name="valoracion" style="width:100%;padding:0.65rem 1rem;background:var(--cielo);border:1.5px solid var(--cielo-medio);border-radius:var(--radio);font-size:0.88rem;color:var(--gris-oscuro);font-family:var(--sans);box-sizing:border-box;" required>
+              <option value="">Selecciona...</option>
+              <option>★★★★★ Excepcional</option>
+              <option>★★★★☆ Muy buena</option>
+              <option>★★★☆☆ Buena</option>
+              <option>★★☆☆☆ Mejorable</option>
+            </select>
+          </div>
+          <div class="form-grupo" style="margin-bottom:1.2rem;">
+            <label style="font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--gris-calido);font-weight:600;display:block;margin-bottom:0.4rem;">Tu comentario</label>
+            <textarea name="comentario" rows="4" placeholder="Cuéntanos tu experiencia con el mayor detalle que quieras..." style="width:100%;padding:0.65rem 1rem;background:var(--cielo);border:1.5px solid var(--cielo-medio);border-radius:var(--radio);font-size:0.88rem;color:var(--gris-oscuro);font-family:var(--sans);resize:vertical;box-sizing:border-box;" required></textarea>
+          </div>
+          <div style="display:flex;gap:0.5rem;align-items:flex-start;margin-bottom:1.2rem;">
+            <input type="checkbox" name="consentimiento" required style="width:16px;height:16px;accent-color:var(--mar);margin-top:0.2rem;">
+            <label style="font-size:0.72rem;color:var(--gris-calido);line-height:1.6;">Entiendo que esta web es un proyecto académico ficticio y autorizo el uso demostrativo de esta reseña.</label>
+          </div>
+          <button type="submit" class="btn btn-bosque" style="width:100%;padding:0.85rem;font-size:0.72rem;letter-spacing:2px;">Enviar reseña demo →</button>
+        </form>
+      </div>
+    </div>
+    
+        <div class="grid-3" style="gap:1.2rem;">
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-texto">"El paracaidismo tándem fue la experiencia más brutal de mi vida. El equipo te prepara bien, el entorno de Águilas es espectacular y el vídeo que me dieron fue cinematográfico de verdad. Volveré."</p>
+        <div class="review-autor">Miguel A.</div>
+        <div class="review-act">Paracaidismo tándem · Madrid</div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-texto">"Hice el Open Water con Erika en tres días. Su paciencia, el fondo marino de Águilas y la forma en que organizan todo desde el formulario previo hasta el check-in lo hace muy serio. Recomendado 100%."</p>
+        <div class="review-autor">Sandra M.</div>
+        <div class="review-act">Open Water PADI/SSI · Valencia</div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-texto">"El pack de ferrata + kayak de regreso fue increíble. Salimos siendo cuatro amigos sin experiencia y llegamos como si lleváramos años haciendo esto. Adrián se nota que conoce cada centímetro de esas paredes."</p>
+        <div class="review-autor">Roberto y grupo</div>
+        <div class="review-act">Pack Costa Vertical · Murcia</div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★☆</div>
+        <p class="review-texto">"El e-foil fue una sesión épica. Jorge explica con mucha paciencia y las condiciones en Águilas ese día eran perfectas. Me esperaba que fuera mucho más difícil. Estoy enganchada."</p>
+        <div class="review-autor">Carla T.</div>
+        <div class="review-act">E-foil iniciación · Alicante</div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-texto">"Reservé una jornada de barranquismo acuático para mi cumpleaños y fue un éxito total. La organización fue perfecta: formulario previo, punto de encuentro claro y Raúl cuidando cada detalle de seguridad."</p>
+        <div class="review-autor">Daniela R.</div>
+        <div class="review-act">Barranquismo acuático · Almería</div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-texto">"La ruta de kayak al amanecer fue justo lo que esperaba: tranquila, bien explicada y con un ritmo cómodo. La parte audiovisual quedó como recuerdo perfecto para enseñar a la familia."</p>
+        <div class="review-autor">Lucía F.</div>
+        <div class="review-act">Kayak de mar · Caso simulado</div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="section-divider"></div>
+<div class="manifiesto">
+  <p class="manifiesto-texto">
+    "La aventura no es lo que haces. Es cómo decides estar en el mundo: atento, humilde, presente y completamente vivo."
+  </p>
+  <p class="manifiesto-autor">Diego David Extremo · Fundador de Nómada Extremo · Águilas, Murcia</p>
+  <div style="margin-top:2rem;">
+    <a href="fundador.html" class="btn btn-outline-blanco">Conocer la historia →</a>
+  </div>
+</div>
 
-<!-- ═══════════════════════════════════════════════════════════════
-     S13 — PREMIUM / PRICING
-     ═══════════════════════════════════════════════════════════════ -->
-<section id="pricing" class="section" aria-labelledby="pricing-title">
-  <div class="container">
-    <div class="section-header center reveal">
-      <span class="section-label">Planes</span>
-      <h2 class="section-title" id="pricing-title">Elige tu<br><span>nivel NOMADX</span></h2>
-      <p class="section-subtitle">Empieza gratis. Escala cuando la aventura te lo pida.</p>
+<!-- ═══ SELLOS CONFIANZA ═══ -->
+<section class="bg-crema">
+  <div class="container" style="text-align:center;">
+    <span class="label" style="justify-content:center;">Por qué elegir Nómada Extremo</span>
+    <h2 class="titulo" style="margin-bottom:3rem;">LA <span class="mar">GARANTÍA</span><br>NÓMADA</h2>
+    <div class="sellos" style="justify-content:center;">
+      <div class="sello"><div class="sello-icon">🛡️</div><div><strong>Seguridad real</strong><span>No aparente. Sistema integral.</span></div></div>
+      <div class="sello"><div class="sello-icon">🏅</div><div><strong>Guías titulados</strong><span>Especialistas por disciplina.</span></div></div>
+      <div class="sello"><div class="sello-icon">📱</div><div><strong>Solicitar experiencia digital</strong><span>Solicitud simulada, sin cobro real.</span></div></div>
+      <div class="sello"><div class="sello-icon">📋</div><div><strong>Material revisado</strong><span>Check técnico antes de cada salida.</span></div></div>
+      <div class="sello"><div class="sello-icon">🌿</div><div><strong>Respeto al entorno</strong><span>Aventura responsable siempre.</span></div></div>
+      <div class="sello"><div class="sello-icon">🎁</div><div><strong>Bonos regalo</strong><span>La aventura más memorable.</span></div></div>
     </div>
-    <div class="pricing-grid reveal">
-      <div class="pricing-card">
-        <div class="pricing-tier">Plan</div>
-        <div class="pricing-name">Free</div>
-        <div class="pricing-price">0<span>€</span></div>
-        <div class="pricing-period">Para siempre gratis</div>
-        <div class="pricing-features">
-          <div class="pricing-feature">Perfil deportivo completo</div>
-          <div class="pricing-feature">Acceso al feed y tribus</div>
-          <div class="pricing-feature">10 matches al mes</div>
-          <div class="pricing-feature">Guardar 5 deportes favoritos</div>
-          <div class="pricing-feature">Unirse a planes públicos</div>
-          <div class="pricing-feature">Badges básicos</div>
-        </div>
-        <button class="btn btn-secondary" style="width:100%" onclick="showToast('¡Registro próximamente disponible!')">Empezar gratis</button>
-      </div>
+  </div>
+</section>
 
-      <div class="pricing-card featured">
-        <div class="pricing-badge"><span class="badge badge-orange">⭐ Popular</span></div>
-        <div class="pricing-tier">Plan</div>
-        <div class="pricing-name">Plus</div>
-        <div class="pricing-price">9<span>€/mes</span></div>
-        <div class="pricing-period">O 79€/año · Ahorra 29€</div>
-        <div class="pricing-features">
-          <div class="pricing-feature">Matches ilimitados</div>
-          <div class="pricing-feature">Filtros avanzados de búsqueda</div>
-          <div class="pricing-feature">Estadísticas del ADN deportivo</div>
-          <div class="pricing-feature">Visibilidad extra en el feed</div>
-          <div class="pricing-feature">Spots guardados ilimitados</div>
-          <div class="pricing-feature">Crear hasta 10 planes/mes</div>
-          <div class="pricing-feature">Badges premium visuales</div>
-        </div>
-        <button class="btn btn-primary" style="width:100%" onclick="showToast('¡Próximamente disponible! 🔥')">Unirse al Plus</button>
+<!-- ═══ ESCUELA NÓMADA ═══ -->
+<section class="bg-blanco">
+  <div class="container">
+    <div class="grid-2" style="align-items:center;gap:5rem;">
+      <div>
+    <span class="label">Formación técnica demostrativa</span>
+        <h2 class="titulo">ESCUELA<br><span class="bosque">NÓMADA</span></h2>
+        <div class="divisor divisor-mar"></div>
+        <p class="texto" style="margin-bottom:1.5rem;">La Escuela Nómada es el corazón formativo del proyecto. Aquí la aventura se convierte en conocimiento, progresión técnica y credenciales simuladas para explicar una escuela seria.</p>
+        <p class="texto" style="margin-bottom:2rem;">Open Water, Advanced, AFF, Parapente, Paramotor, Ferratas, Rápel, Técnicas de montaña. Progresión trazable y documentada con logbook digital.</p>
+        <a href="escuela.html" class="btn btn-bosque">Ver la Escuela Nómada →</a>
       </div>
-
-      <div class="pricing-card">
-        <div class="pricing-tier">Plan</div>
-        <div class="pricing-name">Pro</div>
-        <div class="pricing-price">29<span>€/mes</span></div>
-        <div class="pricing-period">Para profesionales del deporte</div>
-        <div class="pricing-features">
-          <div class="pricing-feature">Todo lo del plan Plus</div>
-          <div class="pricing-feature">Perfil profesional verificado</div>
-          <div class="pricing-feature">Publicar cursos y eventos</div>
-          <div class="pricing-feature">Sistema de reservas</div>
-          <div class="pricing-feature">Analíticas detalladas</div>
-          <div class="pricing-feature">Acceso al marketplace</div>
-          <div class="pricing-feature">Mayor visibilidad según reputación, actividad y verificación</div>
-        </div>
-        <button class="btn btn-secondary" style="width:100%" onclick="showToast('¡Próximamente para profesionales!')">Activar Pro</button>
-      </div>
-
-      <div class="pricing-card">
-        <div class="pricing-badge"><span class="badge badge-gold">👑 Elite</span></div>
-        <div class="pricing-tier">Plan</div>
-        <div class="pricing-name">Elite</div>
-        <div class="pricing-price" style="font-size:1.8rem">A medida</div>
-        <div class="pricing-period">Para embajadores y partners</div>
-        <div class="pricing-features">
-          <div class="pricing-feature">Todo lo del plan Pro</div>
-          <div class="pricing-feature">Embajador regional NOMADX</div>
-          <div class="pricing-feature">Expediciones y eventos oficiales</div>
-          <div class="pricing-feature">Colaboraciones de marca</div>
-          <div class="pricing-feature">Acceso anticipado a funciones</div>
-          <div class="pricing-feature">Soporte directo del equipo</div>
-        </div>
-        <button class="btn btn-ghost" style="width:100%;justify-content:center" onclick="showToast('Contacta con nosotros para tu plan Elite')">Contactar</button>
+      <div class="grid-2" style="gap:1.2rem;">
+        <div class="curso-card reveal"><div class="curso-icono">🤿</div><div class="curso-titulo">Buceo PADI</div><p class="curso-desc">Open Water hasta Divemaster. Progresión certificada en el litoral murciano.</p></div>
+        <div class="curso-card reveal"><div class="curso-icono">🪂</div><div class="curso-titulo">AFF / Parapente</div><p class="curso-desc">Del salto tándem al vuelo autónomo. Progresión seria y real.</p></div>
+        <div class="curso-card reveal"><div class="curso-icono">🧗</div><div class="curso-titulo">Línea Vertical</div><p class="curso-desc">Escalada, ferratas, rápel. Técnica progresiva con guía titulado.</p></div>
+        <div class="curso-card reveal"><div class="curso-icono">🏔️</div><div class="curso-titulo">Montaña Técnica</div><p class="curso-desc">Orientación, meteorología, bushcraft, supervivencia. Saber estar.</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="section-divider"></div>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     S14 — ROADMAP
-     ═══════════════════════════════════════════════════════════════ -->
-<section id="roadmap" class="section section-alt" aria-labelledby="roadmap-title">
+<!-- ═══ CTA CENTRAL ═══ -->
+<div class="cta-band">
   <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Hoja de ruta</span>
-      <h2 class="section-title" id="roadmap-title">El camino<br><span>de NOMADX</span></h2>
-      <p class="section-subtitle">El camino de NOMADX como plataforma social deportiva independiente, desde prototipo visual avanzado hasta app móvil y expansión internacional.</p>
+    <h3 class="cta-band-titulo">¿LISTO PARA TU PRÓXIMA AVENTURA?</h3>
+    <p class="cta-band-sub">Simula una solicitud en minutos. Sin pagos reales, sin plazas reales y con confirmacion demostrativa.</p>
+    <div class="cta-band-btns">
+      <a href="reservas.html" class="btn btn-arena">Solicitar experiencia</a>
+      <a href="actividades.html" class="btn btn-mar">Ver actividades</a>
+      <a href="contacto.html" class="btn btn-outline">Pedir información</a>
     </div>
-    <div class="roadmap-timeline reveal">
-      <div class="roadmap-phase done">
-        <div class="roadmap-label">Fase 1 · 2026</div>
-        <div class="roadmap-phase-name">Prototipo visual avanzado</div>
-        <div class="roadmap-items">
-          <span class="roadmap-item">Web completa</span>
-          <span class="roadmap-item">Identidad de marca</span>
-          <span class="roadmap-item">Catálogo 600+ disciplinas</span>
-          <span class="roadmap-item">ADN deportivo</span>
-          <span class="roadmap-item">Feed simulado</span>
-          <span class="roadmap-item">Matching visual</span>
-          <span class="roadmap-item">Tribus y comunidades</span>
-          <span class="roadmap-item">Mapa de spots</span>
-          <span class="roadmap-item">Sistema de insignias</span>
-        </div>
+  </div>
+</div>
+
+<!-- ═══ PACKS DESTACADOS ═══ -->
+<section class="bg-blanco">
+  <div class="container">
+    <span class="label">Pack del mes</span>
+    <h2 class="titulo">PACKS<br><span class="mar">ESPECIALES</span></h2>
+    <div class="divisor"></div>
+    <div class="grid-3" style="margin-top:3rem;">
+      <div class="pack-card reveal">
+        <div class="pack-titulo">PACK MEDITERRÁNEO</div>
+        <p class="pack-incluye">✓ Kayak de mar 3 horas<br>✓ Snorkel de aventura<br>✓ Senderismo costero<br>✓ Almuerzo mediterráneo</p>
+        <div class="pack-precio-antes">Valor individual: 115€</div>
+        <div class="pack-precio">89€</div>
+        <div class="pack-ahorro">↓ Ahorro del 22%</div>
+        <a href="reservas.html" class="btn btn-mar" style="margin-top:1.5rem;display:inline-block;font-size:0.7rem;">Solicitar experiencia →</a>
       </div>
-      <div class="roadmap-phase">
-        <div class="roadmap-label">Fase 2</div>
-        <div class="roadmap-phase-name">Registro, login y perfiles reales</div>
-        <div class="roadmap-items">
-          <span class="roadmap-item">Registro y login</span>
-          <span class="roadmap-item">Base de datos real</span>
-          <span class="roadmap-item">Perfiles editables</span>
-          <span class="roadmap-item">Subida de contenido</span>
-          <span class="roadmap-item">Notificaciones</span>
-          <span class="roadmap-item">Backend Node.js / Supabase</span>
-        </div>
+      <div class="pack-card featured reveal">
+        <div class="pack-badge">⭐ Más vendido</div>
+        <div class="pack-titulo">PACK AVENTURA TOTAL</div>
+        <p class="pack-incluye">✓ Senderismo + Kayak + Snorkel<br>✓ Vía ferrata (medio día)<br>✓ Bautismo de buceo<br>✓ 2 noches alojamiento rural</p>
+        <div class="pack-precio-antes">Valor individual: 320€</div>
+        <div class="pack-precio">249€</div>
+        <div class="pack-ahorro">↓ Fin de semana completo</div>
+        <a href="reservas.html" class="btn btn-arena" style="margin-top:1.5rem;display:inline-block;font-size:0.7rem;">Solicitar experiencia →</a>
       </div>
-      <div class="roadmap-phase">
-        <div class="roadmap-label">Fase 3</div>
-        <div class="roadmap-phase-name">Matching, feed y tribus funcionales</div>
-        <div class="roadmap-items">
-          <span class="roadmap-item">Matching real con IA</span>
-          <span class="roadmap-item">Chat entre usuarios</span>
-          <span class="roadmap-item">Eventos y quedadas reales</span>
-          <span class="roadmap-item">Mapa con geolocalización</span>
-          <span class="roadmap-item">Tribus interactivas</span>
-          <span class="roadmap-item">Sistema de reputación</span>
-        </div>
-      </div>
-      <div class="roadmap-phase">
-        <div class="roadmap-label">Fase 4</div>
-        <div class="roadmap-phase-name">Logbook, spots y eventos</div>
-        <div class="roadmap-items">
-          <span class="roadmap-item">Logbook completo</span>
-          <span class="roadmap-item">Mapa de spots colaborativo</span>
-          <span class="roadmap-item">Eventos con cupos</span>
-          <span class="roadmap-item">Safety Radar</span>
-          <span class="roadmap-item">Condiciones y reportes</span>
-          <span class="roadmap-item">Moderación comunitaria</span>
-        </div>
-      </div>
-      <div class="roadmap-phase">
-        <div class="roadmap-label">Fase 5</div>
-        <div class="roadmap-phase-name">Verificaciones, reputación y NOMADX Pro</div>
-        <div class="roadmap-items">
-          <span class="roadmap-item">Verificaciones documentales</span>
-          <span class="roadmap-item">Perfiles Pro reales</span>
-          <span class="roadmap-item">Reputación profesional</span>
-          <span class="roadmap-item">Marketplace futuro</span>
-          <span class="roadmap-item">Reservas futuras</span>
-          <span class="roadmap-item">Analíticas Pro</span>
-        </div>
-      </div>
-      <div class="roadmap-phase">
-        <div class="roadmap-label">Fase 6</div>
-        <div class="roadmap-phase-name">App móvil, IA y expansión internacional</div>
-        <div class="roadmap-items">
-          <span class="roadmap-item">App iOS y Android</span>
-          <span class="roadmap-item">IA de recomendaciones</span>
-          <span class="roadmap-item">NOMADX Intelligence</span>
-          <span class="roadmap-item">Expansión internacional</span>
-          <span class="roadmap-item">Embajadores globales</span>
-          <span class="roadmap-item">Programa de partners</span>
-        </div>
+      <div class="pack-card reveal">
+        <div class="pack-titulo">PACK AIRE LIBRE</div>
+        <p class="pack-incluye">✓ Parapente biplaza<br>✓ Paramotor o Paratrike<br>✓ Recogida y transporte<br>✓ Vídeo GoPro incluido</p>
+        <div class="pack-precio-antes">Valor individual: 295€</div>
+        <div class="pack-precio">229€</div>
+        <div class="pack-ahorro">↓ Ahorro del 22%</div>
+        <a href="reservas.html" class="btn btn-mar" style="margin-top:1.5rem;display:inline-block;font-size:0.7rem;">Solicitar experiencia →</a>
       </div>
     </div>
   </div>
 </section>
 
-<div class="section-divider"></div>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     S15 — FAQ
-     ═══════════════════════════════════════════════════════════════ -->
-<section id="faq" class="section" aria-labelledby="faq-title">
+<!-- ═══ EQUIPO ═══ -->
+<section class="bg-gris">
   <div class="container">
-    <div class="section-header center reveal">
-      <span class="section-label">FAQ</span>
-      <h2 class="section-title" id="faq-title">Preguntas<br><span>clave</span></h2>
+    <span class="label">Equipo ficticio de referencia</span>
+    <h2 class="titulo">EL <span class="mar">EQUIPO</span></h2>
+    <div class="divisor"></div>
+    <p class="texto" style="margin-bottom:3rem;">En la estructura simulada de Nómada Extremo no existe el monitor todoterreno. Cada disciplina tiene su especialista de referencia. La seguridad depende de esa cultura.</p>
+    <div class="grid-4">
+      <div class="equipo-card reveal">
+        <div class="equipo-card-foto-placeholder">🧗</div>
+        <div class="equipo-card-body">
+          <div class="equipo-nombre">ADRIÁN MARTÍNEZ</div>
+          <div class="equipo-cargo">Guía de Montaña y Vertical</div>
+          <p class="equipo-desc">Responsable de montaña, ferratas, escalada y rápel dentro de la estructura ficticia de referencia.</p>
+          <div class="equipo-tags"><span class="equipo-tag">Montaña</span><span class="equipo-tag">Escalada</span><span class="equipo-tag">Ferrata</span></div>
+        </div>
+      </div>
+      <div class="equipo-card reveal">
+        <div class="equipo-card-foto-placeholder">🤿</div>
+        <div class="equipo-card-body">
+          <div class="equipo-nombre">ERIKA HERNÁNDEZ</div>
+          <div class="equipo-cargo">Instructora de Buceo PADI/SSI</div>
+          <p class="equipo-desc">Referencia de bautismos, cursos y experiencias subacuáticas simuladas. Briefing claro y cultura de seguridad.</p>
+          <div class="equipo-tags"><span class="equipo-tag">Buceo</span><span class="equipo-tag">PADI</span><span class="equipo-tag">Rescate</span></div>
+        </div>
+      </div>
+      <div class="equipo-card reveal">
+        <div class="equipo-card-foto-placeholder">🪂</div>
+        <div class="equipo-card-body">
+          <div class="equipo-nombre">ÁLVARO GONZÁLEZ</div>
+          <div class="equipo-cargo">Instructor Aire</div>
+          <p class="equipo-desc">Instructor de aire para parapente, paramotor, paratrike y paracaidismo dentro del modelo profesional simulado.</p>
+          <div class="equipo-tags"><span class="equipo-tag">Paracaidismo</span><span class="equipo-tag">Parapente</span><span class="equipo-tag">Paramotor</span></div>
+        </div>
+      </div>
+      <div class="equipo-card reveal">
+        <div class="equipo-card-foto-placeholder">🌊</div>
+        <div class="equipo-card-body">
+          <div class="equipo-nombre">LAURA GARCÍA</div>
+          <div class="equipo-cargo">Guía de Mar y Costa</div>
+          <p class="equipo-desc">Guía de mar y costa, kayak, SUP, coasteering y snorkel. Lectura del mar, accesos y salidas del agua.</p>
+          <div class="equipo-tags"><span class="equipo-tag">Kayak</span><span class="equipo-tag">SUP</span><span class="equipo-tag">Coasteering</span></div>
+        </div>
+      </div>
     </div>
-    <div class="faq-list reveal">
-      <details open>
-        <summary>¿Qué es NOMADX?</summary>
-        <p>Una plataforma social deportiva para conectar personas por deporte, nivel, entorno, planes, spots y reputación.</p>
-      </details>
-      <details>
-        <summary>¿NOMADX es Nómada Extremo?</summary>
-        <p>No exactamente. NOMADX es una plataforma digital independiente. Puede formar parte del ecosistema creativo de Diego David Extremo, pero no es la misma web ni cumple la misma función que Nómada Extremo.</p>
-      </details>
-      <details>
-        <summary>¿NOMADX organiza actividades directamente?</summary>
-        <p>No en esta fase. El prototipo está pensado como plataforma de conexión, comunidad, eventos, Logbook y reputación.</p>
-      </details>
-      <details>
-        <summary>¿Qué diferencia NOMADX de una red social normal?</summary>
-        <p>El ADN deportivo, el matching por actividad, los spots, las tribus, el Logbook y la reputación deportiva.</p>
-      </details>
-      <details>
-        <summary>¿Es una app real?</summary>
-        <p>Actualmente es un prototipo avanzado en fase conceptual, preparado como base para una futura plataforma funcional.</p>
-      </details>
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="equipo.html" class="btn btn-outline">Ver el equipo completo →</a>
     </div>
   </div>
 </section>
 
-<div class="section-divider"></div>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     S16 — CTA FINAL
-     ═══════════════════════════════════════════════════════════════ -->
-<section id="cta" aria-label="Llamada a la acción">
+<!-- ═══ TESTIMONIOS ═══ -->
+<section class="bg-blanco">
   <div class="container">
-    <div class="cta-inner reveal">
-      <h2 class="cta-title">NOMADX no es una red<br>para <span style="color:var(--orange)">mirar</span> aventuras.<br>Es una red para <span style="color:var(--cyan)">vivirlas</span>.</h2>
-      <p class="cta-subtitle">Encuentra tu tribu deportiva. Conecta por lo que practicas. Vive el deporte como identidad.</p>
-      <div class="cta-buttons">
-        <a href="#match" class="btn btn-primary btn-lg">Entrar al prototipo</a>
-        <a href="#catalogo" class="btn btn-secondary btn-lg">Explorar deportes</a>
-        <a href="#adn" class="btn btn-ghost btn-lg">Crear mi ADN deportivo</a>
-        <a href="#tribus" class="btn btn-ghost btn-lg">Unirme a la tribu</a>
+    <span class="label">Historias del cat?logo</span>
+    <h2 class="titulo">HISTORIAS<br><span class="arena">DE EJEMPLO</span></h2>
+    <div class="divisor"></div>
+    <div class="review-disclaimer reveal" style="margin-bottom:2rem;">
+      Estas historias son simuladas para enseñar cómo podría contarse la experiencia del cliente en una versión operativa. No corresponden a clientes reales.
+    </div>
+    <div class="grid-3" style="margin-top:3rem;">
+      <div class="testi-card reveal">
+        <div class="testi-estrellas">★★★★★</div>
+        <p class="testi-texto">Tres horas de kayak por las calas de Águilas sin ver a nadie más. Solo roca, mar y silencio. Una experiencia que no tiene precio y no se olvida.</p>
+        <div class="testi-nombre">MARCOS T.</div>
+        <div class="testi-act">Kayak de mar · Calas de Águilas</div>
       </div>
-      <div class="cta-brand">Concepto creado por <span>Diego David Extremo</span> · Plataforma independiente del ecosistema creativo NOMADX</div>
+      <div class="testi-card reveal">
+        <div class="testi-estrellas">★★★★★</div>
+        <p class="testi-texto">El bautismo de buceo fue una revelación. Empecé el Open Water a la semana siguiente. No esperaba que el fondo del mar fuera tan adictivo a 6 metros.</p>
+        <div class="testi-nombre">JORGE P.</div>
+        <div class="testi-act">Bautismo de buceo · Costa de Águilas</div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-estrellas">★★★★★</div>
+        <p class="testi-texto">El salto lo regaló mi novia por mi cumpleaños. Pensaba que me iba a morir. En realidad fue lo más vivo que me he sentido en toda mi vida hasta ahora.</p>
+        <div class="testi-nombre">ÁLVARO S.</div>
+        <div class="testi-act">Paracaidismo tándem</div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════════
-     FOOTER
-     ═══════════════════════════════════════════════════════════════ -->
-<footer>
+<!-- ═══ NATURISMO ═══ -->
+<section class="bg-cielo">
   <div class="container">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="footer-logo">NOMAD<span>X</span></div>
-        <div class="footer-tagline">La red social del deporte, la aventura y la adrenalina.</div>
-        <div class="footer-sig">Concepto creado por Diego David Extremo</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;" class="grid-2">
+      <div>
+        <span class="label label-bosque">Línea específica y diferenciada</span>
+        <h2 class="titulo">NÓMADA<br><span class="bosque">NATURISTA</span></h2>
+        <div class="divisor"></div>
+        <p class="texto" style="margin-bottom:1.5rem;">Una propuesta puntual, filosófica y completamente diferente. Un día al mes en entornos seleccionados, con claridad total, respeto absoluto y conexión genuina con la naturaleza.</p>
+        <a href="naturistas.html" class="btn btn-bosque">Conocer la línea naturista →</a>
       </div>
-      <div class="footer-col">
-        <div class="footer-col-title">Plataforma</div>
-        <div class="footer-links">
-          <a href="#adn">ADN Deportivo</a>
-          <a href="#catalogo">Catálogo de Deportes</a>
-          <a href="#match">Sistema de Matching</a>
-          <a href="#feed">Feed de Aventuras</a>
-          <a href="#tribus">Tribus NOMADX</a>
-          <a href="#mapa">Mapa de Spots</a>
-          <a href="#eventos">Planes y Eventos</a>
-          <a href="#logbook">Logbook</a>
-        </div>
+      <div class="grid-4" style="gap:0.8rem;">
+        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);">🛶<br>Kayak</div>
+        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);">🧘<br>Yoga</div>
+        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);">🏊<br>Natación</div>
+        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);">🤿<br>Snorkel</div>
+        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);">🏄<br>SUP</div>
+        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);">🥾<br>Senderismo</div>
+        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);">🏐<br>Voleibol</div>
+        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);">🎯<br>Meditación</div>
       </div>
-      <div class="footer-col">
-        <div class="footer-col-title">Comunidad</div>
-        <div class="footer-links">
-          <a href="#insignias">Insignias y Verificaciones</a>
-          <a href="#seguridad">Seguridad y Responsabilidad</a>
-          <a href="#pro">NOMADX Pro</a>
-          <a href="#pricing">Planes Premium</a>
-          <a href="#roadmap">Roadmap</a>
-          <a href="#faq">FAQ</a>
-          <a href="#" onclick="showToast('Contacto próximamente disponible')">Contacto</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 NOMADX. Plataforma social deportiva independiente en fase beta conceptual. Concepto creado por Diego David Extremo.</span>
-      <span>Prototipo avanzado 2026 · <a href="#roadmap">Ver roadmap</a></span>
     </div>
   </div>
-</footer>
+</section>
 
-<script src="data/sports-catalog.js"></script>
-<script src="app.js"></script>
+<!-- ═══ BONOS REGALO ═══ -->
+<section class="bg-blanco">
+  <div class="container" style="text-align:center;">
+    <span class="label">El regalo que no se olvida</span>
+    <h2 class="titulo">BONOS<br><span class="arena">REGALO</span></h2>
+    <div class="divisor" style="margin:1.5rem auto;"></div>
+    <p class="texto" style="margin:0 auto 3rem;">Regalar Nómada Extremo es regalar una historia. Un recuerdo que queda. 12 meses de validez, canje por cualquier actividad.</p>
+    <div class="grid-3" style="max-width:860px;margin:0 auto;">
+      <div class="bono-card reveal">
+        <div class="bono-precio">50€</div>
+        <div class="bono-nombre">Bono Iniciación</div>
+        <p class="bono-desc">Senderismo, kayak, snorkel o bautismo de buceo. La primera aventura de alguien especial.</p>
+        <a href="reservas.html#bonos" class="btn btn-outline" style="margin-top:1.5rem;display:inline-block;font-size:0.68rem;">Ver bono →</a>
+      </div>
+      <div class="bono-card popular reveal">
+        <div class="bono-badge">Más popular</div>
+        <div class="bono-precio">100€</div>
+        <div class="bono-nombre">Bono Aventurero</div>
+        <p class="bono-desc">Para jornadas completas y packs combinados. El favorito para regalar en cumpleaños y ocasiones especiales.</p>
+        <a href="reservas.html#bonos" class="btn btn-arena" style="margin-top:1.5rem;display:inline-block;font-size:0.68rem;">Ver bono →</a>
+      </div>
+      <div class="bono-card reveal">
+        <div class="bono-precio">200€</div>
+        <div class="bono-nombre">Bono Extremo</div>
+        <p class="bono-desc">Para paracaidismo, paramotor, packs premium o cursos de la Escuela Nómada.</p>
+        <a href="reservas.html#bonos" class="btn btn-outline" style="margin-top:1.5rem;display:inline-block;font-size:0.68rem;">Ver bono →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ AUDIOVISUAL PREVIEW ═══ -->
+<section class="bg-noche">
+  <div class="container">
+    <div class="grid-2" style="gap:4rem;align-items:center;">
+      <div>
+        <span class="label label-blanco">Captura · Edita · Revive</span>
+        <h2 class="titulo"><span class="blanco">GRABA TU</span><br><span class="arena">AVENTURA</span></h2>
+        <div class="divisor"></div>
+        <p style="font-family:var(--serif);font-style:italic;font-size:1.15rem;color:rgba(200,189,181,0.8);margin-bottom:1.5rem;line-height:1.8;">"La adrenalina dura segúndos. El vídeo dura para siempre."</p>
+        <p style="font-size:0.88rem;color:rgba(200,189,181,0.65);line-height:1.85;margin-bottom:2rem;">Insta360 X5, DJI Osmo Action 6, GoPro MISSION 1 PRO, Insta360 GO Ultra, dron 4K estabilizado y FPV sujeto a normativa AESA. Packs desde recuerdo familiar hasta producción tipo documental corto.</p>
+        <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+          <a href="audiovisual.html#packs-audiovisuales" class="btn btn-arena">Ver packs audiovisuales</a>
+          <a href="audiovisual.html#precios" class="btn btn-outline-blanco">Ver precios →</a>
+          <a href="reservas.html#audiovisual" class="btn btn-outline-blanco">Añadir a mi reserva</a>
+        </div>
+      </div>
+      <div class="noext-feature-panel reveal">
+        <img class="noext-visual" src="assets/images/noext/pack-audiovisual-noext.png" alt="Pack audiovisual de Nómada Extremo" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BLOG PREVIEW ═══ -->
+<section class="bg-crema">
+  <div class="container">
+    <span class="label">Ideas, técnica y aventura</span>
+    <h2 class="titulo">BLOG<br><span class="mar">NÓMADA</span></h2>
+    <div class="divisor"></div>
+    <div class="grid-3" style="margin-top:3rem;">
+      <div class="blog-card reveal">
+        <div class="blog-img" style="background-image:url('assets/images/actividades/familia-montana.jpg');height:195px;background-size:cover;background-position:center;"></div>
+        <div class="blog-cuerpo">
+          <div class="blog-cat">Montaña</div>
+          <div class="blog-titulo">Las 5 rutas ocultas de Águilas que nadie conoce</div>
+          <p class="blog-extracto">El litoral de Águilas esconde senderos que conectan calas vírgenes, puntos geológicos únicos y miradores que te dejan sin palabras.</p>
+          <div class="blog-fecha">Marzo 2025</div>
+        </div>
+      </div>
+      <div class="blog-card reveal">
+        <div class="blog-img" style="background-image:url('assets/images/actividades/ficha-open-water.jpg');height:195px;background-size:cover;background-position:center;"></div>
+        <div class="blog-cuerpo">
+          <div class="blog-cat">Buceo</div>
+          <div class="blog-titulo">Aprender a bucear en el Mediterráneo: por qué y cómo</div>
+          <p class="blog-extracto">El Mediterráneo no es el Mar Rojo, pero tiene su propia magia. Posidonias, pecios y fauna local te esperan a pocos metros.</p>
+          <div class="blog-fecha">Febrero 2025</div>
+        </div>
+      </div>
+      <div class="blog-card reveal">
+        <div class="blog-img" style="background-image:url('assets/images/actividades/ficha-parapente-biplaza.jpg');height:195px;background-size:cover;background-position:center;"></div>
+        <div class="blog-cuerpo">
+          <div class="blog-cat">Aire</div>
+          <div class="blog-titulo">Paramotor en Águilas: el litoral perfecto para volar</div>
+          <p class="blog-extracto">Orografía, clima y espacio abierto. Águilas tiene las condiciones ideales para el vuelo motorizado ultraligero.</p>
+          <div class="blog-fecha">Enero 2025</div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="blog.html" class="btn btn-outline">Ver todos los artículos →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACTO RÁPIDO ═══ -->
+<section class="bg-mar">
+  <div class="container" style="text-align:center;">
+    <span class="label label-blanco" style="justify-content:center;display:block;">¿Tienes dudas?</span>
+    <h2 class="titulo" style="margin-bottom:1rem;"><span class="blanco">HABLEMOS</span></h2>
+    <p class="subtitulo-editorial" style="color:rgba(200,213,223,0.8);max-width:500px;margin:0 auto 2.5rem;">Contactarstrativo para una marca académica. Sin reservas ni cobros reales.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="https://wa.me/34600000000" class="btn btn-arena" target="_blank">WA WhatsApp</a>
+      <a href="contacto.html" class="btn btn-outline-blanco">Formulario</a>
+      <a href="reservas.html" class="btn" style="background:rgba(255,255,255,0.12);color:white;border:1.5px solid rgba(255,255,255,0.25);">Simular reserva</a>
+    </div>
+    <p style="font-size:0.75rem;color:rgba(200,213,223,0.55);margin-top:2rem;letter-spacing:1px;">Lunes a domingo · 8:00–21:00 · Águilas, Murcia</p>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="assets/js/components.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/chatbot.js"></script>
 </body>
 </html>
