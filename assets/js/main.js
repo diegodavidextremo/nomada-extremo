@@ -632,29 +632,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ─── SMOOTH SCROLL ─── */
-  const scrollToAnchor = (hash, behavior = 'smooth') => {
-    if (!hash || hash === '#') return false;
-    const target = document.getElementById(hash.replace('#', ''));
-    if (!target) return false;
-    target.scrollIntoView({ behavior, block: 'start' });
-    return true;
-  };
-
-  document.querySelectorAll('a[href*="#"]').forEach(a => {
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
-      const href = a.getAttribute('href') || '';
-      const url = new URL(href, window.location.href);
-      const samePage = url.pathname === window.location.pathname || url.pathname.endsWith('/index.html') && window.location.pathname.endsWith('/index.html');
-      if (samePage && scrollToAnchor(url.hash)) {
-        e.preventDefault();
-        history.pushState(null, '', url.hash);
-      }
+      const t = document.querySelector(a.getAttribute('href'));
+      if (t) { e.preventDefault(); t.scrollIntoView({ behavior:'smooth', block:'start' }); }
     });
   });
-
-  if (window.location.hash) {
-    setTimeout(() => scrollToAnchor(window.location.hash, 'auto'), 120);
-  }
 
   /* ─── LAZY BG ─── */
   const bgObs = new IntersectionObserver(entries => {
@@ -670,56 +653,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const poster = v.getAttribute('poster');
       if (poster && v.parentElement) v.parentElement.style.backgroundImage = `url('${poster}')`;
       v.style.display = 'none';
-    });
-  });
-
-  /* ─── NOMADX PLATFORM INTERACTIONS ─── */
-  const sportGrid = document.getElementById('sportGrid');
-  const sportSearch = document.getElementById('sportSearch');
-  const sportFilterButtons = document.querySelectorAll('[data-filter]');
-
-  const filterSports = (category = 'all') => {
-    if (!sportGrid) return;
-    const query = (sportSearch?.value || '').trim().toLowerCase();
-    sportGrid.querySelectorAll('article').forEach(card => {
-      const matchesCategory = category === 'all' || card.dataset.category === category;
-      const searchable = `${card.textContent} ${card.dataset.search || ''}`.toLowerCase();
-      const matchesQuery = !query || searchable.includes(query);
-      card.classList.toggle('is-hidden', !(matchesCategory && matchesQuery));
-    });
-  };
-
-  let activeSportFilter = 'all';
-  sportFilterButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      activeSportFilter = btn.dataset.filter || 'all';
-      sportFilterButtons.forEach(b => b.classList.toggle('active', b === btn));
-      filterSports(activeSportFilter);
-    });
-  });
-
-  if (sportSearch) {
-    sportSearch.addEventListener('input', () => filterSports(activeSportFilter));
-  }
-
-  const nxRevealObs = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('nx-visible');
-        nxRevealObs.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.08 });
-
-  document.querySelectorAll('.nomadx-section article, .nomadx-dashboard, .nomadx-adn-panel, .nomadx-map-panel').forEach(el => {
-    el.classList.add('nx-reveal');
-    nxRevealObs.observe(el);
-  });
-
-  document.querySelectorAll('.nomadx-platform .btn, .nomadx-platform a').forEach(el => {
-    el.addEventListener('pointerdown', () => {
-      el.style.transform = 'translateY(1px) scale(0.99)';
-      setTimeout(() => { el.style.transform = ''; }, 160);
     });
   });
 
