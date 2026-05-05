@@ -59,7 +59,7 @@ git push -u origin main
 
 ⚠️ Si Git pide contraseña, GitHub ya no acepta la normal. Necesitas un **token de acceso personal**:
 1. GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic)
-2. Generate new token → selecciona `repo` → copia el token
+2. Generate new token → seleccióna `repo` → copia el token
 3. Úsalo como contraseña cuando Git te la pida
 
 **5. Activa GitHub Pages**

@@ -15,6 +15,7 @@
   </a>
   <ul class="nav-menu">
     <li><a href="index.html">Inicio</a></li>
+    <li><a href="index.html#metodo-nomada">Método Nómada</a></li>
     <li>
       <a href="actividades.html" class="has-drop">Actividades</a>
       <div class="nav-drop">
@@ -54,6 +55,7 @@
 <div class="nav-mobile-menu" id="mobileNav">
   <button class="nav-mobile-close" id="mobileClose" aria-label="Cerrar menú">×</button>
   <a href="index.html">Inicio</a>
+  <a href="index.html#metodo-nomada">Método Nómada</a>
   <a href="actividades.html">Actividades</a>
   <a href="packs.html">Packs</a>
   <a href="escuela.html">Escuela Nómada</a>
@@ -112,6 +114,7 @@
         <h5>Sistema Nómada</h5>
         <ul>
           <li><a href="seguridad.html">Seguridad</a></li>
+          <li><a href="index.html#metodo-nomada">Método Nómada</a></li>
           <li><a href="material.html">Material</a></li>
           <li><a href="logbook.html">Logbook</a></li>
           <li><a href="formularios.html">Formularios</a></li>
