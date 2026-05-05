@@ -37,6 +37,7 @@
         <a href="packs.html">Packs especiales</a>
         <a href="grupos.html">Grupos y centros</a>
         <a href="audiovisual.html">Audiovisual</a>
+        <a href="alquiler.html">Alquiler de material</a>
         <a href="reservas.html#bonos">Bonos</a>
       </div>
     </li>
@@ -66,6 +67,7 @@
   <a href="como-funciona.html">Cómo funciona</a>
   <a href="formularios.html">Formularios</a>
   <a href="material.html">Material</a>
+  <a href="alquiler.html">Alquiler de material</a>
   <a href="sostenibilidad.html">Sostenibilidad</a>
   <a href="grupos.html">Grupos</a>
   <a href="naturistas.html">Naturismo</a>
