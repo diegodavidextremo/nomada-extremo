@@ -1,80 +1,63 @@
-# Reparación y mejoras de NOMADX y Nómada Extremo
+# Reparacion y mejoras de NOMADX y Nomada Extremo
 
-Fecha: 2026-05-05
+Fecha: 2026-05-07
 
-## Repositorios y ramas
+## Repositorios revisados
 
 - NOMADX: `C:\Users\Diego\OneDrive\Dokumente\New project\NOMADX`, rama `main`, remote `https://github.com/diegodavidextremo/NOMADX.git`.
-- NÓMADA EXTREMO: `C:\Users\Diego\OneDrive\Dokumente\New project`, rama `main`, remote `https://github.com/diegodavidextremo/nomada-extremo.git`.
+- Nomada Extremo: `C:\Users\Diego\OneDrive\Dokumente\New project`, rama `main`, remote `https://github.com/diegodavidextremo/nomada-extremo.git`.
 - No se ha usado force push.
-- No se han añadido carpetas sin seguimiento del repo padre.
-
-## Commits realizados
-
-- NOMADX: `bccce7d` — `Amplía NOMADX con más matches, tribus, feed, catálogo, FAQ e Intelligence`.
-- NÓMADA EXTREMO: `47707e3` — `Corrige y amplía Nómada Extremo con método, fichas, audiovisual y avisos demo`.
-- Informe: este archivo documenta la reparación, validación y separación final.
+- En el repo padre se preparan solo archivos explicitos para no subir carpetas locales sin seguimiento.
 
 ## Cambios en NOMADX
 
-- Se mantiene la identidad de plataforma social deportiva independiente, sin convertirla en empresa de actividades.
-- Se conserva el claim comercial `600+` y el catálogo real con `654` entradas en `SPORTS_CATALOG`.
-- Catálogo reforzado con contador dinámico, filtros, modal, compatibilidad con Matching, Logbook y Planes.
-- Matching ampliado a 24 perfiles demo, con compatibilidad, tipo de perfil, disciplinas, tribus comunes, plan activo, riesgo, disponibilidad y acciones.
-- Feed ampliado a 20 publicaciones demo con actividad social, riesgo, tribu, likes, comentarios, guardados y acciones.
-- Tribus ampliadas a 30 comunidades demo con filtros visuales, actividad reciente, badges, planes y acciones.
-- Mapa de spots ampliado a 20 spots demo con permisos, acceso, condiciones, planes activos y aviso de seguridad.
-- Planes y eventos ampliados a 20 tarjetas comunitarias, sin precios ni reservas comerciales.
-- Logbook ampliado a 16 entradas demo y acciones de registro/compartir.
-- Insignias ampliadas a 30 badges con requisito, beneficio y categoría.
-- Nueva sección `NOMADX Intelligence` como inteligencia de plataforma, no IA mágica.
-- FAQ ampliada a 30 preguntas y respuestas.
-- Se mantiene la separación con Nómada Extremo: solo se menciona como relación conceptual en FAQ.
+- Matching reforzado con 40 perfiles base, generacion aleatoria, guardados en `localStorage`, estado conectado/guardado y modales reales para `Conectar` y `Ver ADN`.
+- El hero mantiene `NOMAD X`, `600+ disciplinas NOMADX` y suma rotacion visual de perfiles, plan activo y Safety Radar.
+- Catalogo preservado con contador exacto dentro de la seccion: `654` entradas reales, busqueda, filtros, `Ver mas`, `Ver catalogo completo` y modales con contenido.
+- Feed, tribus, spots, planes y Logbook quedan con acciones visuales: guardar, unirse, compartir, abrir detalle, ver requisitos y duplicar plantilla.
+- Tribus ampliadas a comunidad demo amplia, con modal de tribu, miembros, planes, posts y normas.
+- Spots y planes ampliados hasta 24 registros demo cada uno.
+- Logbook ampliado con filtros, estadisticas y acciones.
+- NOMADX Intelligence ampliado con panel de equilibrio deportivo y tarjetas practicas.
+- NOMADX Pro ampliado con gestion profesional, formularios, cupos, briefings, check-in, resenas, analiticas y ejemplos de uso.
+- FAQ ampliada sin mezclar servicios comerciales de Nomada Extremo.
+- Se evita volver a `+400` y se mantiene el claim `600+`.
 
-## Cambios en NÓMADA EXTREMO
+## Cambios en Nomada Extremo
 
-- Se mantiene como marca/proyecto académico conceptual de aventura, servicios simulados, formación, seguridad, packs y visión de Diego David Extremo.
-- SEO actualizado a `NÓMADA EXTREMO | Aventura, deportes extremos y naturaleza`.
-- Añadida sección `MÉTODO NÓMADA` con 7 pasos: análisis del grupo, lectura del entorno, briefing y material, desarrollo, registro audiovisual, cierre/logbook y mejora continua.
-- Navegación desktop, móvil y footer enlazan al Método Nómada.
-- Se han corregido tildes, errores ortotipográficos y frases rotas detectadas.
-- Se han reforzado avisos demo en packs, fichas, bonos, formularios y contacto.
-- Actividades añade nota técnica compacta sobre duración, edad mínima, nivel, ratio, material, meteorología, riesgos, cancelación y versiones.
-- Audiovisual amplía packs demo: Reel vertical, Mini documental, POV extremo, 360 inmersivo, Dron + acción, YouTube Adventure y Foto + vídeo premium.
-- Proyecto académico refuerza qué es real, qué es simulado, por qué hay precios/reservas/reseñas demo y qué podría existir en futuro.
-- Se conserva la página de alquiler y se mantienen correcciones relacionadas con equipo, alquiler y publicación.
-- No se han metido funciones centrales de NOMADX como matching global, feed social, tribus NOMADX o catálogo 600+.
+- Se mantiene como marca/proyecto de aventura extrema, servicios, formacion, seguridad, packs, escuela, audiovisual, linea naturista, bonos y vision de Diego David Extremo.
+- No se ha eliminado seguro incluido, Garantia Nomada, precios, packs, bonos, Escuela Nomada, resenas, equipo ni botones comerciales.
+- La linea Naturista se amplia con filosofia, principios, actividades compatibles, actividades no compatibles, normas, formato y cierre respetuoso.
+- La home suma experiencias por nivel, experiencias por medio, un dia con Nomada Extremo, material y preparacion, temporadas, aventura + contenido, para quien es y Garantia Nomada ampliada.
+- Audiovisual suma packs extra: pareja aventura, cumpleanos extremo, familia exploradora y creador outdoor.
+- Packs suma bonos ampliados: Familiar, Pareja Aventura, Creador Outdoor, Mediterraneo, Aire, Mar y Extremo Premium.
+- Escuela Nomada suma lineas formativas: buceo, aire, vertical, montana tecnica, mar y costa, orientacion, meteorologia, primeros auxilios, material, audiovisual outdoor, sostenibilidad, iniciacion familiar y progresion avanzada.
+- Interacciones premium con toast/modal para botones importantes y fichas tecnicas compactas.
+- Se corrigen textos, tildes y frases rotas sin llenar la web de avisos repetidos de demo/ficticio.
 
-## Errores corregidos
+## Errores e interacciones corregidas
 
-- `Eleccion` → `Elección`.
-- `validaciónes` → `validaciones`.
-- `educacion` → `educación`.
-- `FAQ rapida` → `FAQ rápida`.
-- `linea naturista` → `línea naturista`.
-- `Rutas guíadas` → `Rutas guiadas`.
-- `inmersión guíada` → `inmersión guiada`.
-- `segúndos` → `segundos`.
-- `Historias del cat?logo` → `Historias del catálogo`.
-- `Contactarstrativo...` → contacto demostrativo profesional.
-- `confirmacion` → `confirmación`.
-- Se revisaron referencias cruzadas para no mezclar identidades.
+- NOMADX: `Conectar` ya no abre un cuadro negro vacio; muestra modal con compatibilidad, deportes, tribus, plan sugerido y mensaje editable.
+- NOMADX: `Guardar`, `Ver ADN`, `Ver tribu`, `Ver spot`, `Ver requisitos`, `Ver registro`, `Compartir en feed` y acciones de planes tienen feedback visual.
+- NOMADX: no aparece `Cargando...` permanente ni `+400`.
+- Nomada Extremo: se revisan errores como `Eleccion`, `validaciones`, `educacion`, `FAQ rapida`, `linea naturista`, `Rutas guiadas`, `inmersion guiada`, `segundos`, `Historias del catalogo` y textos de contacto rotos.
+- Nomada Extremo: se mantiene el aviso academico general, pero se reducen avisos repetitivos que rompian el realismo.
 
 ## Validaciones realizadas
 
 - `git status`, `git remote -v` y rama actual comprobados en ambos repositorios.
 - NOMADX: `node --check app.js` correcto.
-- NÓMADA EXTREMO: `node --check assets/js/components.js` y `node --check assets/js/main.js` correctos.
-- Catálogo NOMADX validado con Node: `SPORTS_CATALOG=654`.
-- Validación en navegador local con in-app browser:
-  - NOMADX title: `NOMADX | Red social deportiva para aventura, spots, planes y logbook`.
-  - NÓMADA EXTREMO title: `NÓMADA EXTREMO | Aventura, deportes extremos y naturaleza`.
-  - Errores de consola en ambas páginas: `0`.
-  - NOMADX contiene `NOMADX Intelligence`, `600+`, no contiene `Cargando` ni `Reserva online`.
-  - NÓMADA EXTREMO contiene `MÉTODO NÓMADA`, no contiene `NOMADX Intelligence`, `600+`, `Cargando` ni `Reserva online`.
-- Se ha comprobado que las carpetas sin seguimiento del repo padre no se han añadido al commit.
+- Nomada Extremo: `node --check assets/js/main.js` correcto.
+- Navegador local NOMADX: titulo correcto, errores de consola `0`, `600+` presente, `+400` ausente, `Cargando` ausente, Intelligence presente, catalogo mostrando `36 de 654`, modal de conectar con contenido.
+- Validacion estatica Nomada Extremo: aparecen Metodo Nomada, Naturista ampliado, Bono Extremo Premium, packs audiovisuales extra, Escuela Nomada y Garantia Nomada ampliada.
+- Se han revisado rutas, textos y busquedas para evitar mezclar identidades.
+
+## Commits previstos
+
+- NOMADX: `Mejora NOMADX con matching dinamico, perfiles, tribus, spots, planes, Pro e interacciones`.
+- Nomada Extremo: `Amplia Nomada Extremo con linea naturista, audiovisual, escuela, bonos, fichas y realismo`.
 
 ## Estado pendiente
 
-- Quedan carpetas sin seguimiento en el repo padre (`NOMADX/`, apps Android y otras carpetas locales) de forma intencionada; no se han subido porque no pertenecen al commit de Nómada Extremo.
-- No queda pendiente funcional detectado en la validación local previa al push.
+- No hay pendientes funcionales detectados antes del push.
+- En el repo padre quedan carpetas locales sin seguimiento; no se suben porque no forman parte de la web de Nomada Extremo.
