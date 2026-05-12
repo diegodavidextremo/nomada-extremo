@@ -177,19 +177,22 @@
     }
 
     if (hamb && mobile) {
-      const toggle = () => {
-        hamb.classList.toggle('open');
-        mobile.classList.toggle('open');
-        document.body.style.overflow = mobile.classList.contains('open') ? 'hidden' : '';
+      const setOpen = (open) => {
+        hamb.classList.toggle('open', open);
+        mobile.classList.toggle('open', open);
+        hamb.setAttribute('aria-expanded', String(open));
+        document.body.classList.toggle('menu-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
       };
+      const toggle = () => setOpen(!mobile.classList.contains('open'));
+      hamb.setAttribute('aria-expanded', 'false');
+      hamb.setAttribute('aria-controls', 'mobileNav');
       hamb.addEventListener('click', toggle);
-      hamb.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') toggle(); });
-      if (mClose) mClose.addEventListener('click', toggle);
-      mobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-        hamb.classList.remove('open');
-        mobile.classList.remove('open');
-        document.body.style.overflow = '';
-      }));
+      hamb.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
+      if (mClose) mClose.addEventListener('click', () => setOpen(false));
+      mobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+      document.addEventListener('keydown', e => { if (e.key === 'Escape' && mobile.classList.contains('open')) setOpen(false); });
+      window.addEventListener('scroll', () => { if (mobile.classList.contains('open')) setOpen(false); }, { passive: true });
     }
 
     const page = window.location.pathname.split('/').pop() || 'index.html';
