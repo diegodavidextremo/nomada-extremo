@@ -1,12 +1,24 @@
 {
-  "name": "Nómada Extremo",
-  "short_name": "NómadaExtremo",
-  "description": "Deportes de aventura, naturaleza y formación técnica en Águilas, Murcia",
+  "name": "NÓMADA EXTREMO",
+  "short_name": "Nómada Extremo",
+  "description": "Proyecto de aventura, deportes extremos, naturaleza, experiencias outdoor, formación, seguridad y contenido audiovisual creado por Diego David Extremo.",
   "start_url": "/nomada-extremo/",
+  "scope": "/nomada-extremo/",
   "display": "standalone",
   "background_color": "#0a0a08",
-  "theme_color": "#2d6a4f",
+  "theme_color": "#0a0a08",
   "icons": [
-    { "src": "assets/icons/favicon.svg", "type": "image/svg+xml", "sizes": "any" }
+    {
+      "src": "assets/icons/android-chrome-192x192.png?v=2026-05-12",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/android-chrome-512x512.png?v=2026-05-12",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ]
 }
