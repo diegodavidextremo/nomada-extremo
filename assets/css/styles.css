@@ -5987,3 +5987,201 @@ section,[id]{scroll-margin-top:104px}
 
 /* Intermodular GMN */
 .section-block{padding:clamp(2.8rem,6vw,5rem) 0}.section-lead{font-family:var(--serif);font-size:clamp(1.05rem,2.4vw,1.35rem);line-height:1.8;color:var(--gris-calido);max-width:78ch}.mini-card{background:var(--blanco);border:1px solid var(--crema-media);border-radius:var(--radio);padding:clamp(1rem,3vw,1.4rem);box-shadow:var(--sombra-suave);min-width:0}.mini-card h3{font-family:var(--display);letter-spacing:1.8px;text-transform:uppercase;color:var(--mar);font-size:1.05rem;margin-bottom:.55rem}.mini-card p{font-size:.86rem;line-height:1.75;color:var(--gris-calido)}.clean-list{margin:0;padding-left:1.1rem;color:var(--gris-calido);font-size:.88rem;line-height:1.8}.clean-list li{margin:.25rem 0}.section-note{margin-top:1.4rem;color:var(--gris-calido);font-size:.9rem;line-height:1.8}.timeline-soft{display:grid;gap:1rem;margin-top:1.5rem}.timeline-soft article{background:linear-gradient(135deg,rgba(255,255,255,.95),rgba(244,239,232,.9));border:1px solid var(--crema-media);border-radius:var(--radio);padding:1.2rem 1.35rem;box-shadow:var(--sombra-suave)}.timeline-soft strong{display:block;font-family:var(--display);letter-spacing:1.4px;text-transform:uppercase;color:var(--mar);font-size:.95rem;margin-bottom:.35rem}.timeline-soft p{color:var(--gris-calido);font-size:.86rem;line-height:1.7}.cta-panel{background:linear-gradient(135deg,var(--mar),#10283b);border-radius:calc(var(--radio) + 10px);padding:clamp(1.6rem,5vw,3rem);color:var(--blanco);box-shadow:0 24px 80px rgba(12,35,54,.24);overflow:hidden}.cta-panel h2{font-family:var(--display);letter-spacing:2px;text-transform:uppercase;font-size:clamp(2rem,6vw,4rem);line-height:.95;margin:.8rem 0;color:var(--blanco)}.cta-panel p{max-width:68ch;color:rgba(245,242,236,.86);line-height:1.75}.btn-row{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:1.5rem}@media(max-width:640px){.btn-row .btn{width:100%;text-align:center}.section-block{padding:2.4rem 0}.cta-panel{border-radius:18px}}
+/* Segunda pasada premium: acciones, packs y fichas técnicas */
+.action-row,
+.card-actions,
+.system-actions,
+.top-actions,
+.pack-actions,
+.pack-card-footer,
+.modal-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: clamp(10px, 1.2vw, 16px);
+}
+.action-row .btn,
+.action-row .ficha-tech-btn,
+.card-actions .btn,
+.pack-actions .btn,
+.modal-actions .btn {
+  min-height: 44px;
+  margin: 0 !important;
+}
+.process-card .action-row {
+  margin-top: 1rem;
+}
+.process-card .action-row .btn,
+.process-card .action-row .ficha-tech-btn {
+  flex: 1 1 190px;
+  justify-content: center;
+  text-align: center;
+}
+.ficha .ficha-cuerpo {
+  display: flex;
+  flex-direction: column;
+}
+.ficha .ficha-tech-btn {
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+.ficha > .ficha-btn {
+  margin-top: .8rem;
+}
+.technical-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: .85rem;
+}
+.technical-item {
+  display: block;
+  min-width: 0;
+  background: linear-gradient(180deg, rgba(246,242,236,.95), rgba(255,255,255,.92));
+  border: 1px solid var(--crema-media);
+  border-radius: 16px;
+  padding: .95rem;
+  color: var(--gris-calido);
+  font-size: .84rem;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+.technical-item strong {
+  display: block;
+  font-family: var(--display);
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: var(--mar);
+  font-size: .7rem;
+  margin-bottom: .36rem;
+}
+.super-pack,
+.pack-card,
+.pack-v2 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.super-pack-body,
+.pack-v2-body,
+.pack-card {
+  flex: 1 1 auto;
+}
+.super-pack-footer,
+.pack-v2-footer {
+  margin-top: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .9rem;
+  align-items: stretch;
+  padding-top: 1.05rem;
+  border-top: 1px solid var(--crema-media);
+}
+.super-pack-footer > div:last-child,
+.pack-v2-footer > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: .65rem;
+}
+.super-pack-precio,
+.pack-v2-precio,
+.pack-precio {
+  line-height: 1;
+  letter-spacing: .5px;
+}
+.super-pack-precio::before,
+.pack-v2-precio::before,
+.pack-precio::before {
+  content: 'Desde ';
+  display: block;
+  font-family: var(--sans);
+  font-size: .62rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gris-calido);
+  margin-bottom: .25rem;
+}
+.super-pack-precio::after,
+.pack-v2-precio::after,
+.pack-precio::after {
+  content: ' / persona · orientativo';
+  display: block;
+  font-family: var(--sans);
+  font-size: .66rem;
+  letter-spacing: .3px;
+  color: var(--gris-calido);
+  margin-top: .28rem;
+}
+.super-pack-av {
+  align-self: flex-start;
+  gap: .35rem;
+  border: 1px solid rgba(45,90,61,.14);
+  background: rgba(45,90,61,.06);
+  border-radius: 999px;
+  padding: .32rem .62rem;
+  line-height: 1.2;
+}
+.super-pack-footer .btn,
+.pack-v2-footer .btn,
+.pack-card .btn {
+  width: 100%;
+  min-height: 44px;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0 !important;
+}
+.pack-card .pack-precio {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+.pack-detail-panel {
+  margin-top: 1rem;
+}
+@media (min-width: 820px) {
+  .super-pack-footer,
+  .pack-v2-footer {
+    grid-template-columns: minmax(0, 1fr) minmax(170px, auto);
+    align-items: end;
+  }
+  .pack-v2-footer .btn {
+    width: auto;
+    min-width: 180px;
+  }
+}
+@media (max-width: 640px) {
+  .action-row,
+  .card-actions,
+  .system-actions,
+  .top-actions,
+  .pack-actions,
+  .pack-card-footer,
+  .modal-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .action-row .btn,
+  .action-row .ficha-tech-btn,
+  .ficha .ficha-tech-btn,
+  .super-pack-footer .btn,
+  .pack-v2-footer .btn,
+  .pack-card .btn {
+    width: 100%;
+    align-self: stretch;
+  }
+  .super-pack-footer,
+  .pack-v2-footer {
+    gap: .75rem;
+  }
+}
+.pack-safety-note {
+  margin: .75rem 0 .9rem;
+  padding: .75rem .85rem;
+  border-left: 3px solid var(--arena);
+  background: rgba(196,150,106,.08);
+  color: var(--gris-calido);
+  font-size: .74rem;
+  line-height: 1.55;
+  border-radius: 10px;
+}
