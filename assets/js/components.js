@@ -1,7 +1,7 @@
 /* NÓMADA EXTREMO v2.5 — componentes compartidos */
 
 (function () {
-  const PROJECT_NOTICE = 'Nómada Extremo es actualmente un proyecto académico ficticio creado por Diego David Gómez García, alumno de 1.º GMN del IES Europa de Águilas. No realiza reservas, cobros, ventas, sorteos ni actividades reales en este momento.';
+  const PROJECT_NOTICE = 'Nómada Extremo es actualmente un proyecto académico no operativo creado por Diego David Gómez García, alumno de 1.º GMN del IES Europa de Águilas. No realiza reservas, cobros, ventas, sorteos ni actividades reales en este momento.';
 
   const NAV = `
 <div class="project-top-notice" role="note">${PROJECT_NOTICE}</div>
@@ -43,6 +43,7 @@
       </div>
     </li>
     <li><a href="escuela.html">Escuela</a></li>
+    <li><a href="proyecto-intermodular.html">Intermodular</a></li>
     <li><a href="seguridad.html">Seguridad</a></li>
     <li><a href="zonas.html">Zonas</a></li>
     <li><a href="logbook.html">Logbook</a></li>
@@ -75,6 +76,7 @@
   <a href="naturistas.html">Naturismo</a>
   <a href="faq.html">FAQ</a>
   <a href="proyecto-academico.html">Proyecto académico</a>
+  <a href="proyecto-intermodular.html">Proyecto intermodular</a>
 </div>`;
 
   const FOOTER = `
@@ -89,7 +91,7 @@
             <div class="footer-marca-lema">Proyecto académico premium de aventura</div>
           </div>
         </div>
-        <p class="footer-marca-desc">Marca ficticia de aventura mediterránea nacida en Águilas, Murcia. Creada por Diego David Gómez García / Diego David Extremo para 1.º GMN del IES Europa, curso 2025-2026.</p>
+        <p class="footer-marca-desc">Marca conceptual de aventura mediterránea nacida en Águilas, Murcia. Creada por Diego David Gómez García / Diego David Extremo para 1.º GMN del IES Europa, curso 2025-2026.</p>
         <p class="footer-demo-note">${PROJECT_NOTICE}</p>
         <div class="footer-social" style="margin-top:1.5rem;">
           <a href="https://www.youtube.com/@diegodavidextremo" target="_blank" rel="noopener noreferrer" title="YouTube Diego David Extremo" aria-label="YouTube Diego David Extremo">YT</a>
@@ -133,6 +135,7 @@
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contacto.html">Contacto</a></li>
           <li><a href="proyecto-academico.html">Proyecto académico</a></li>
+          <li><a href="proyecto-intermodular.html">Proyecto intermodular</a></li>
           <li><a href="condiciones.html">Condiciones</a></li>
           <li><a href="politica-privacidad.html">Privacidad</a></li>
           <li><a href="politica-cookies.html">Cookies</a></li>
@@ -155,8 +158,8 @@
   </div>
 </footer>
 
-<a href="https://wa.me/34600000000?text=Hola%2C%20quiero%20informacion%20sobre%20la%20demo%20academica%20de%20Nomada%20Extremo"
-   id="waFloat" target="_blank" rel="noopener" title="WhatsApp Nómada Extremo" aria-label="WhatsApp Nómada Extremo">💬</a>`;
+<a href="https://wa.me/34600000000?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20proyecto%20acad%C3%A9mico%20de%20N%C3%B3mada%20Extremo"
+   id="waFloat" target="_blank" rel="noopener" title="WhatsApp Nómada Extremo" aria-label="WhatsApp Nómada Extremo">WA</a>`;
 
   const np = document.getElementById('nav-placeholder');
   if (np) np.outerHTML = NAV;

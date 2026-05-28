@@ -24,15 +24,15 @@
     },
     'reservar': {
       q:'¿Cómo puedo reservar?',
-      r:'Ahora mismo no se pueden hacer reservas reales. La página de Reservas muestra una solicitud simulada para el proyecto académico, sin cobros ni confirmación operativa.'
+      r:'Ahora mismo no se pueden hacer reservas reales. La página de Reservas muestra una solicitud orientativa para el proyecto académico, sin cobros ni confirmación operativa.'
     },
     'bono': {
       q:'¿Cómo funciona un bono regalo?',
-      r:'Los bonos son una propuesta comercial simulada. No se venden bonos reales ni se cobra ningún importe en esta versión académica.'
+      r:'Los bonos son una propuesta comercial de referencia. No se venden bonos reales ni se cobra ningún importe en esta versión académica.'
     },
     'audiovisual': {
       q:'¿Puedo grabar mi experiencia?',
-      r:'El servicio audiovisual es demostrativo: Insta360 X5, DJI Osmo Action 6, GoPro MISSION 1 PRO, Insta360 GO Ultra, dron 4K y FPV sujeto a normativa AESA. No se graban actividades reales desde esta web.'
+      r:'El servicio audiovisual es una línea de referencia: cámaras de acción, 360, dron o FPV quedarían sujetos a seguridad, proveedor, normativa AESA y disponibilidad. No se graban actividades reales desde esta web.'
     },
     'privado': {
       q:'¿Hay experiencias privadas?',
@@ -40,11 +40,11 @@
     },
     'escuela': {
       q:'¿Cómo funcionan los cursos de la Escuela?',
-      r:'La Escuela Nómada es una propuesta formativa demostrativa con rutas por disciplina, niveles, logbook y credenciales simuladas. No sustituye titulaciones oficiales salvo colaboración real con entidad certificadora.'
+      r:'La Escuela Nómada es una propuesta formativa de referencia con rutas por disciplina, niveles, logbook y credenciales de referencia. No sustituye titulaciones oficiales salvo colaboración real con entidad certificadora.'
     },
     'cancelar': {
       q:'¿Puedo cancelar mi reserva?',
-      r:'Las cancelaciones son simuladas porque no hay reservas ni pagos reales. En una empresa operativa se definirían condiciones, meteorología, reprogramaciones y responsabilidades.'
+      r:'Las cancelaciones son orientativas porque no hay reservas ni pagos reales. En una empresa operativa se definirían condiciones, meteorología, reprogramaciones y responsabilidades.'
     }
   };
 
@@ -55,7 +55,7 @@
     <div class="chat-avatar">🧭</div>
     <div>
       <div class="chat-nombre">ASISTENTE NÓMADA</div>
-      <div class="chat-estado"><div class="chat-dot"></div> Modo demo académico</div>
+      <div class="chat-estado"><div class="chat-dot"></div> Asistente académico</div>
     </div>
     <button class="chat-close" id="chatClose">✕</button>
   </div>
@@ -70,7 +70,7 @@
     </div>
     <div class="chat-ctas">
       <a href="https://wa.me/34600000000" class="chat-cta-wa" target="_blank">💬 WhatsApp</a>
-      <a href="reservas.html" class="chat-cta-custom">Reserva demo</a>
+      <a href="reservas.html" class="chat-cta-custom">Solicitud orientativa</a>
     </div>
   </div>
 </div>`;
@@ -130,7 +130,7 @@
 
   function initChat() {
     setTimeout(() => {
-      addMsg('¡Hola! Soy el asistente de <strong>Nómada Extremo</strong>. Esta web es un proyecto académico ficticio: no hay reservas, cobros ni actividades reales.');
+      addMsg('¡Hola! Soy el asistente de <strong>Nómada Extremo</strong>. Esta web es un proyecto académico no operativo: no hay reservas, cobros ni actividades reales.');
       setTimeout(() => addOptions([
         {label:'¿Necesito experiencia previa?', faq:'experiencia'},
         {label:'¿Qué material incluye?', faq:'material'},
@@ -173,9 +173,9 @@
 
 
 const NOMADA_EXTRA_FAQS = {
-  'efoil': { q: '¿Qué es el e-foil?', r: 'El e-foil es una tabla eléctrica con un foil que permite deslizarse sobre el agua con motor eléctrico. No necesita olas ni viento. En esta web aparece como experiencia simulada, no como servicio real.' },
+  'efoil': { q: '¿Qué es el e-foil?', r: 'El e-foil es una tabla eléctrica con un foil que permite deslizarse sobre el agua con motor eléctrico. No necesita olas ni viento. En esta web aparece como experiencia de referencia, no como servicio real.' },
   'wingfoil': { q: '¿Cómo funciona el wingfoil?', r: 'El wingfoil combina ala de mano, tabla y foil para usar el viento. A diferencia del e-foil, sí requiere viento y condiciones adecuadas.' },
-  'jetsurf': { q: '¿Qué es el jetsurf?', r: 'El jetsurf funciona con motor propio. En Nómada Extremo se presenta como disciplina demostrativa sujeta a instructor, permisos, zona y seguridad.' },
+  'jetsurf': { q: '¿Qué es el jetsurf?', r: 'El jetsurf funciona con motor propio. En Nómada Extremo se presenta como disciplina de referencia sujeta a instructor, permisos, zona y seguridad.' },
   'weekend': { q: '¿Tenéis packs de fin de semana?', r: 'La web muestra packs de fin de semana como propuesta académica de catálogo. No se venden ni se reservan packs reales actualmente.' },
   'foil': { q: '¿Puedo alquilar material de foil?', r: 'El material de foil (e-foil, wingfoil, jetsurf) solo se usa en formato supervisado con instructor por seguridad. No está disponible para uso libre. Consulta las sesiones en nuestra sección de Alquiler o escríbenos.' },
   'naturismo': { q: '¿Qué son los packs naturistas?', r: 'Son experiencias de aventura suave en entornos seleccionados del litoral de Águilas, diseñadas para personas con filosofía naturista. Incluyen kayak, snorkel, SUP, yoga o senderismo. Solo para adultos y con el máximo respeto. Ver sección Naturismo.' },

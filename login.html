@@ -97,10 +97,10 @@
         <p style="text-align:center;font-size:0.72rem;color:var(--piedra);margin-top:1rem;cursor:pointer;" onclick="alert('Enviaremos un enlace de recuperación a tu email.')">¿Olvidaste tu contraseña?</p>
         <hr class="login-sep">
         <div class="admin-badge">
-          <strong style="display:block;font-size:0.65rem;letter-spacing:2px;color:var(--tierra);text-transform:uppercase;margin-bottom:0.3rem;">⚙️ Acceso Propietario (Demo)</strong>
+          <strong style="display:block;font-size:0.65rem;letter-spacing:2px;color:var(--tierra);text-transform:uppercase;margin-bottom:0.3rem;">⚙️ Acceso Propietario (prototipo)</strong>
           Usuario: <code style="background:rgba(196,150,106,0.15);padding:0.1rem 0.4rem;border-radius:4px;">diegodavidextremo</code><br>
           Contraseña: solo disponible en entorno local de administración.
-          <br><em style="font-size:0.67rem;color:var(--piedra);">Este es un proyecto demo. El sistema de autenticación requiere backend para producción.</em>
+          <br><em style="font-size:0.67rem;color:var(--piedra);">Este es un proyecto académico. El sistema de autenticación requiere backend para producción.</em>
         </div>
       </div>
 
@@ -118,7 +118,7 @@
         </div>
         <div class="login-input-group">
           <label>Contraseña</label>
-          <input type="password" placeholder="Mínimo 8 caracteres">
+          <input type="password" placeholder="Mínimo 8 carácteres">
         </div>
         <div class="login-input-group">
           <label>Confirmar contraseña</label>
@@ -145,10 +145,10 @@ function handleLogin() {
   const u = document.getElementById('loginUser').value.trim();
   const p = document.getElementById('loginPass').value.trim();
   if (u === 'diegodavidextremo' && p === 'arroztresdeliciasconsalsaagridulce88') {
-    alert('✅ Acceso propietario concedido.\n\nBienvenido, Diego David.\n\nNota: Este es un panel demo. El sistema de gestión completo requiere backend en producción.');
+    alert('✅ Acceso propietario concedido.\n\nBienvenido, Diego David.\n\nNota: Este es un panel conceptual. El sistema de gestión completo requiere backend en producción.');
     window.location.href = 'index.html';
   } else if (u && p.length >= 6) {
-    alert('✅ Acceso simulado correcto.\n\nBienvenido a tu zona privada Nómada Extremo.\n\nNota: Sistema demo — la autenticación real requiere backend.');
+    alert('✅ Acceso simulado correcto.\n\nBienvenido a tu zona privada Nómada Extremo.\n\nNota: Sistema prototipo — la autenticación real requiere backend.');
     window.location.href = 'comunidad.html';
   } else {
     alert('⚠️ Por favor completa todos los campos correctamente.');

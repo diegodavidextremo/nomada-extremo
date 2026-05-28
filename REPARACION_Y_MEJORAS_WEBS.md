@@ -33,7 +33,7 @@ Fecha: 2026-05-11
 - La home incluye experiencias por nivel, experiencias por medio, un dia con Nomada Extremo, material y preparacion, temporadas, aventura + contenido, para quien es y Garantia Nomada ampliada.
 - Audiovisual incluye packs extra: pareja aventura, cumpleanos extremo, familia exploradora y creador outdoor.
 - Packs incluye bonos ampliados: Familiar, Pareja Aventura, Creador Outdoor, Mediterraneo, Aire, Mar y Extremo Premium.
-- Escuela Nomada incluye lineas formativas: buceo, aire, vertical, montana tecnica, mar y costa, orientacion, meteorologia, primeros auxilios, material, audiovisual outdoor, sostenibilidad, iniciacion familiar y progresion avanzada.
+- Escuela Nomada incluye lineas formativas: buceo, aire, vertical, montana tecnica, mar y costa, orientación, meteorologia, primeros auxilios, material, audiovisual outdoor, sostenibilidad, iniciacion familiar y progresion avanzada.
 - Interacciones premium con toast/modal para botones importantes y fichas tecnicas compactas.
 - Se mantiene el aviso academico general sin llenar la web de etiquetas repetidas de demo/ficticio.
 

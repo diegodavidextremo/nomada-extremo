@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /assets/docs/
 
-Sitemap: https://TUUSUARIO.github.io/nomada-extremo/sitemap.xml
+Sitemap: https://diegodavidextremo.github.io/nomada-extremo/sitemap.xml

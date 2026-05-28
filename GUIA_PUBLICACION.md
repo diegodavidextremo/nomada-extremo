@@ -278,7 +278,7 @@ Abre `index.html` y busca `<!-- VIDEO FONDO -->`.
 ```
 
 ### Resultado
-Si el vídeo carga, lo verás de fondo animado. Si no carga (sin internet, móvil sin soporte), mostrará automáticamente la imagen póster. Sistema con fallback garantizado.
+Si el vídeo carga, lo verás de fondo animado. Si no carga (sin internet, móvil sin soporte), mostrará automáticamente la imagen póster. Sistema con fallback previsto.
 
 ---
 

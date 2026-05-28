@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ideal: 'Escalada de iniciación, técnica de cuerda, nudos, aseguramiento, gestualidad y progresión deportiva.',
       seguridad: 'Revisión de vías, anclajes, casco, arnés, asegurador, pie de vía, temperatura y nivel técnico.'
     },
-    'VIA FERRATA': {
+    'VÍA FERRATA': {
       base: ['Salida especial desde Águilas'],
       zonas: ['No se vende como actividad principal de Águilas'],
       salidas: ['Cañón de Almadenes', 'Vía Ferrata del Ciervo en Sierra Espuña', 'Sierra de Lugar / Fortuna', 'La Garapacha', 'Redován y Callosa como salidas avanzadas'],
@@ -248,8 +248,8 @@ document.addEventListener('DOMContentLoaded', () => {
       base: ['Águilas y litoral cercano'],
       zonas: ['Calabardina', 'Isla del Fraile', 'Cabo Cope', 'fondos rocosos del litoral'],
       salidas: ['Cabo de Palos', 'La Azohía', 'Mazarrón'],
-      ideal: 'Formación progresiva con teoría, aguas confinadas, inmersiones y logbook.',
-      seguridad: 'Curso demostrativo en la web. No sustituye certificación oficial sin entidad certificadora real.'
+      ideal: 'Formación progresiva con teoría, aguas confinadas, inmersiónes y logbook.',
+      seguridad: 'Curso de referencia en la web. No sustituye certificación oficial sin entidad certificadora real.'
     },
     'BUCEO NOCTURNO': {
       base: ['Águilas y costa cercana'],
@@ -262,7 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
       base: ['Águilas, Isla del Fraile, Cabo Cope y Calabardina'],
       zonas: ['Isla del Fraile', 'Cabo Cope', 'Calabardina', 'Cueva de la Virgen'],
       salidas: ['Cabo de Palos', 'Islas Hormigas', 'Mazarrón', 'La Azohía'],
-      ideal: 'Buceo local premium, inmersiones adaptadas al nivel, fauna, roca y fotografía submarina.',
+      ideal: 'Buceo local premium, inmersiónes adaptadas al nivel, fauna, roca y fotografía submarina.',
       seguridad: 'Plan de inmersión, titulación, consumo, profundidad, visibilidad, viento y estado del mar.'
     },
     'FOTOGRAFIA SUBMARINA': {
@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
       zonas: ['Calabardina', 'Isla del Fraile', 'Cabo Cope'],
       salidas: ['Cabo de Palos', 'Mazarrón', 'La Azohía'],
       ideal: 'Progresión de buceo, especialidades, rescate, nitrox, navegación y profundidad controlada.',
-      seguridad: 'Marco formativo demostrativo. Solo válido oficialmente con centro y certificadora reales.'
+      seguridad: 'Marco formativo de referencia. Solo válido oficialmente con centro y certificadora reales.'
     },
     'PARACAIDISMO TANDEM': {
       base: ['Salida especial desde Águilas'],
@@ -420,7 +420,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'SCRAMBLING': { pos: '50% 50%', fit: 'contain' },
     'BUSHCRAFT Y SUPERVIVENCIA': { pos: '50% 43%' },
     'ESCALADA DEPORTIVA': { pos: '43% 50%' },
-    'VIA FERRATA': { pos: '63% 42%' },
+    'VÍA FERRATA': { pos: '63% 42%' },
     'RAPEL TECNICO': { pos: '50% 46%', fit: 'contain' },
     'ROPE JUMPING': { pos: '50% 45%', fit: 'contain' },
     'PUENTING': { pos: '50% 48%', fit: 'contain' },
@@ -539,7 +539,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'INMERSIÓN NÓMADA': {
       zona: 'Águilas, Calabardina, Isla del Fraile y Cabo Cope.',
-      enfoque: 'Formación de buceo demostrativa más multiaventura suave de cierre.',
+      enfoque: 'Formación de buceo planteada más multiaventura suave de cierre.',
       nivel: 'Sin experiencia previa, no sustituye certificación oficial sin entidad real.'
     },
     'PACK ÉLITE NÓMADA': {
@@ -669,7 +669,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.noextToast=function(msg){const toast=document.getElementById('noext-toast');toast.textContent=msg;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),2600)};
   window.noextOpenModal=function(title,html){const modal=document.getElementById('noext-modal');document.getElementById('noext-modal-content').innerHTML=`<h3>${title}</h3>${html}`;modal.classList.add('open');document.body.classList.add('modal-open');modal.querySelector('.noext-modal-close').focus()};
   document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.getElementById('noext-modal')?.classList.remove('open');document.body.classList.remove('modal-open')}});
-  const fichaDefaults={duracion:'2-4 h según actividad',edad:'Desde 8-16 años según disciplina',fisico:'Adaptado al grupo',tecnico:'Iniciación a avanzado',ratio:'1 guía / 6-10 participantes',incluido:'Material técnico principal y briefing',trae:'Ropa adecuada, agua, calzado, protección solar y documentación',epoca:'Según temporada y meteo',meteo:'Sin viento, oleaje, tormenta o calor extremo fuera de límites',cancelacion:'Meteo adversa, permisos, caudal, viento, seguridad o nivel no adecuado',grupo:'Familias, parejas, amigos, centros o privado',opciones:'Familiar · Premium · Audiovisual',intensidad:'Emoción alta con control',fuerte:'Experiencia preparada, memorable y con criterio'};
-  document.querySelectorAll('.ficha, .process-card').forEach(card=>{const title=card.querySelector('.ficha-titulo, h3')?.textContent?.trim();if(!title||card.querySelector('.ficha-tech-btn'))return;const btn=document.createElement('button');btn.type='button';btn.className='ficha-tech-btn';btn.textContent='Ver ficha técnica';btn.addEventListener('click',()=>{const body=`<div class="noext-modal-grid"><span><strong>Duración</strong>${fichaDefaults.duracion}</span><span><strong>Edad recomendada</strong>${fichaDefaults.edad}</span><span><strong>Nivel físico</strong>${fichaDefaults.fisico}</span><span><strong>Nivel técnico</strong>${fichaDefaults.tecnico}</span><span><strong>Ratio</strong>${fichaDefaults.ratio}</span><span><strong>Material incluido</strong>${fichaDefaults.incluido}</span><span><strong>Qué traer</strong>${fichaDefaults.trae}</span><span><strong>Mejor época</strong>${fichaDefaults.epoca}</span><span><strong>Meteorología ideal</strong>${fichaDefaults.meteo}</span><span><strong>Cambio o cancelación</strong>${fichaDefaults.cancelacion}</span><span><strong>Grupo recomendado</strong>${fichaDefaults.grupo}</span><span><strong>Opciones</strong>${fichaDefaults.opciones}</span><span><strong>Intensidad emocional</strong>${fichaDefaults.intensidad}</span><span><strong>Punto fuerte</strong>${fichaDefaults.fuerte}</span></div>`;window.noextOpenModal(`Ficha técnica · ${title}`,body)});(card.querySelector('.ficha-cuerpo')||card).appendChild(btn)});
+  const fichaDefaults={duracion:'2-4 h según actividad',edad:'Desde 8-16 años según disciplina',fisico:'Adaptado al grupo',tecnico:'Iniciación a avanzado',ratio:'1 guía / 6-10 participantes',incluido:'Material técnico principal y briefing',trae:'Ropa adecuada, agua, calzado, protección solar y documentación',época:'Según temporada y meteo',meteo:'Sin viento, oleaje, tormenta o calor extremo fuera de límites',cancelación:'Meteo adversa, permisos, caudal, viento, seguridad o nivel no adecuado',grupo:'Familias, parejas, amigos, centros o privado',opciones:'Familiar · Premium · Audiovisual',intensidad:'Emoción alta con control',fuerte:'Experiencia preparada, memorable y con criterio'};
+  document.querySelectorAll('.ficha, .process-card').forEach(card=>{const title=card.querySelector('.ficha-titulo, h3')?.textContent?.trim();if(!title||card.querySelector('.ficha-tech-btn'))return;const btn=document.createElement('button');btn.type='button';btn.className='ficha-tech-btn';btn.textContent='Ver ficha técnica';btn.addEventListener('click',()=>{const body=`<div class="noext-modal-grid"><span><strong>Duración</strong>${fichaDefaults.duracion}</span><span><strong>Edad recomendada</strong>${fichaDefaults.edad}</span><span><strong>Nivel físico</strong>${fichaDefaults.fisico}</span><span><strong>Nivel técnico</strong>${fichaDefaults.tecnico}</span><span><strong>Ratio</strong>${fichaDefaults.ratio}</span><span><strong>Material incluido</strong>${fichaDefaults.incluido}</span><span><strong>Qué traer</strong>${fichaDefaults.trae}</span><span><strong>Mejor época</strong>${fichaDefaults.época}</span><span><strong>Meteorología ideal</strong>${fichaDefaults.meteo}</span><span><strong>Cambio o cancelación</strong>${fichaDefaults.cancelación}</span><span><strong>Grupo recomendado</strong>${fichaDefaults.grupo}</span><span><strong>Opciones</strong>${fichaDefaults.opciones}</span><span><strong>Intensidad emocional</strong>${fichaDefaults.intensidad}</span><span><strong>Punto fuerte</strong>${fichaDefaults.fuerte}</span></div>`;window.noextOpenModal(`Ficha técnica · ${title}`,body)});(card.querySelector('.ficha-cuerpo')||card).appendChild(btn)});
   document.querySelectorAll('a.btn, button.btn, .ficha-btn').forEach(el=>{if(el.dataset.noextBound)return;el.dataset.noextBound='1';el.addEventListener('click',()=>{const text=el.textContent.trim();if(/Solicitar|Regalar|Consultar|Reservar|Contactar|Unirme/i.test(text))window.noextToast(`${text.replace('→','').trim()} · solicitud preparada`)})});
 });
