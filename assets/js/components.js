@@ -77,6 +77,7 @@
   <a href="faq.html">FAQ</a>
   <a href="proyecto-academico.html">Proyecto académico</a>
   <a href="proyecto-intermodular.html">Proyecto intermodular</a>
+  <a href="agradecimiento-1-gmn.html">Gracias 1º GMN</a>
 </div>`;
 
   const FOOTER = `
@@ -136,6 +137,7 @@
           <li><a href="contacto.html">Contacto</a></li>
           <li><a href="proyecto-academico.html">Proyecto académico</a></li>
           <li><a href="proyecto-intermodular.html">Proyecto intermodular</a></li>
+          <li><a href="agradecimiento-1-gmn.html">Gracias 1º GMN</a></li>
           <li><a href="condiciones.html">Condiciones</a></li>
           <li><a href="politica-privacidad.html">Privacidad</a></li>
           <li><a href="politica-cookies.html">Cookies</a></li>

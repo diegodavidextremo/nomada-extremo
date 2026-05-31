@@ -6185,3 +6185,328 @@ section,[id]{scroll-margin-top:104px}
   line-height: 1.55;
   border-radius: 10px;
 }
+
+/* Página especial: Gracias 1º GMN */
+.page-thanks-gmn {
+  background: linear-gradient(180deg, var(--crema) 0%, var(--blanco) 36%, var(--cielo) 100%);
+  color: var(--gris-texto);
+  overflow-x: hidden;
+}
+.thanks-hero {
+  min-height: 94dvh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 9.5rem 0 5rem;
+  background:
+    linear-gradient(135deg, rgba(15,26,19,.9), rgba(30,74,107,.76)),
+    url('../images/actividades/familia-montana.jpg') center/cover;
+  color: var(--blanco);
+}
+.thanks-hero__texture {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(221,185,138,.2), transparent 28%),
+    linear-gradient(120deg, transparent 0 48%, rgba(255,255,255,.08) 49%, transparent 50% 100%);
+  opacity: .9;
+}
+.thanks-hero__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1120px;
+}
+.thanks-hero .breadcrumb li,
+.thanks-hero .breadcrumb a {
+  color: rgba(250,250,248,.82);
+}
+.thanks-hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  color: var(--arena-claro);
+  font-family: var(--display);
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  font-size: .86rem;
+  margin-bottom: 1.2rem;
+}
+.thanks-hero__title {
+  max-width: 980px;
+  font-family: var(--display);
+  font-size: clamp(3rem, 9vw, 7.2rem);
+  letter-spacing: 0;
+  line-height: .94;
+  text-transform: uppercase;
+}
+.thanks-hero__lead {
+  max-width: 780px;
+  margin-top: 1.35rem;
+  color: rgba(250,250,248,.86);
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1.12rem, 2.2vw, 1.55rem);
+  line-height: 1.7;
+}
+.thanks-hero__actions,
+.closing-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(.75rem, 1.4vw, 1.1rem);
+  margin-top: 2rem;
+}
+.thanks-hero__actions .btn {
+  min-height: 46px;
+}
+.thanks-hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+  margin-top: 2rem;
+}
+.thanks-hero__meta span {
+  border: 1px solid rgba(255,255,255,.2);
+  background: rgba(255,255,255,.08);
+  color: rgba(250,250,248,.88);
+  border-radius: 999px;
+  padding: .42rem .74rem;
+  font-size: .75rem;
+  letter-spacing: .5px;
+}
+.thanks-two-col {
+  display: grid;
+  grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
+.thanks-two-col h2,
+.guide-shift-panel h2,
+.closing-panel h2 {
+  font-family: var(--display);
+  font-size: clamp(2.4rem, 5vw, 4.6rem);
+  line-height: .95;
+  color: var(--mar);
+  text-transform: uppercase;
+}
+.thanks-prose {
+  display: grid;
+  gap: 1rem;
+  font-size: 1.02rem;
+  line-height: 1.9;
+}
+.learning-grid,
+.teacher-grid,
+.connection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 1rem;
+}
+.learning-card,
+.teacher-card,
+.connection-grid p,
+.modules-timeline article {
+  min-width: 0;
+  background: rgba(250,250,248,.9);
+  border: 1px solid var(--crema-media);
+  border-radius: 18px;
+  padding: clamp(1.1rem, 2.5vw, 1.55rem);
+  box-shadow: 0 18px 48px rgba(30,74,107,.08);
+}
+.learning-card h3,
+.teacher-card h3,
+.modules-timeline strong {
+  font-family: var(--display);
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--mar);
+  line-height: 1.05;
+}
+.learning-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: .65rem;
+}
+.learning-card p,
+.teacher-card p,
+.connection-grid p,
+.modules-timeline span {
+  color: var(--gris-calido);
+  font-size: .95rem;
+  line-height: 1.75;
+}
+.guide-shift-panel,
+.connection-panel,
+.closing-panel {
+  border: 1px solid rgba(196,150,106,.25);
+  background: linear-gradient(135deg, rgba(250,250,248,.94), rgba(245,242,236,.8));
+  border-radius: 24px;
+  box-shadow: 0 24px 70px rgba(30,74,107,.12);
+  padding: clamp(1.5rem, 5vw, 3.2rem);
+}
+.guide-shift-panel p,
+.closing-panel p {
+  max-width: 850px;
+  margin-top: 1rem;
+  color: var(--gris-calido);
+  font-size: 1.03rem;
+  line-height: 1.88;
+}
+.teacher-thanks-section {
+  background: linear-gradient(180deg, var(--blanco), var(--crema));
+}
+.teacher-card {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  border-top: 4px solid rgba(196,150,106,.55);
+}
+.teacher-card__tag {
+  align-self: flex-start;
+  color: var(--bosque);
+  background: rgba(45,90,61,.08);
+  border: 1px solid rgba(45,90,61,.16);
+  border-radius: 999px;
+  padding: .32rem .62rem;
+  font-size: .68rem;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.teacher-card h3 {
+  font-size: clamp(1.55rem, 3vw, 2.05rem);
+}
+.teacher-card h3 small {
+  display: block;
+  color: var(--arena);
+  font-size: .72em;
+  margin-top: .15rem;
+}
+.teacher-card__key {
+  margin-top: auto;
+  padding-top: .85rem;
+  border-top: 1px solid var(--crema-media);
+}
+.modules-timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: .9rem;
+}
+.modules-timeline article {
+  box-shadow: none;
+  background: rgba(255,255,255,.72);
+}
+.modules-timeline strong {
+  display: block;
+  margin-bottom: .45rem;
+  font-size: 1.08rem;
+}
+.nomada-connection {
+  background: var(--mar);
+  color: var(--blanco);
+}
+.connection-panel {
+  background: linear-gradient(135deg, rgba(15,26,19,.36), rgba(255,255,255,.08));
+  border-color: rgba(255,255,255,.14);
+}
+.connection-core {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin-bottom: 1.4rem;
+  color: var(--blanco);
+}
+.connection-core span {
+  font-family: var(--display);
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: .9;
+  color: var(--arena-claro);
+}
+.connection-core strong {
+  margin-top: .6rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: .78rem;
+}
+.connection-grid p {
+  background: rgba(255,255,255,.08);
+  border-color: rgba(255,255,255,.14);
+  color: rgba(250,250,248,.85);
+  box-shadow: none;
+}
+.connection-grid strong {
+  display: block;
+  color: var(--arena-claro);
+  margin-bottom: .35rem;
+}
+.future-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr));
+  gap: .55rem;
+  margin-top: 1.2rem;
+}
+.future-list li {
+  min-width: 0;
+  border: 1px solid var(--crema-media);
+  border-radius: 999px;
+  background: rgba(250,250,248,.85);
+  padding: .55rem .8rem;
+  color: var(--gris-calido);
+  font-size: .84rem;
+  line-height: 1.35;
+}
+.closing-thanks {
+  background: linear-gradient(180deg, var(--cielo), var(--crema));
+}
+.signature-block {
+  display: grid;
+  gap: .2rem;
+  margin-top: 1.6rem;
+  padding: 1.1rem;
+  border-left: 4px solid var(--arena);
+  background: rgba(255,255,255,.62);
+  border-radius: 16px;
+  max-width: 540px;
+}
+.signature-block strong {
+  font-family: var(--display);
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--mar);
+  font-size: 1.5rem;
+}
+.signature-block span {
+  color: var(--gris-calido);
+  font-size: .9rem;
+}
+@media (max-width: 900px) {
+  .thanks-two-col {
+    grid-template-columns: 1fr;
+  }
+  .thanks-hero {
+    min-height: auto;
+    padding-top: 8rem;
+  }
+}
+@media (max-width: 640px) {
+  .thanks-hero__actions,
+  .closing-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .thanks-hero__actions .btn,
+  .closing-actions .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .teacher-card,
+  .learning-card,
+  .modules-timeline article,
+  .connection-grid p {
+    border-radius: 14px;
+  }
+  .thanks-hero__meta span,
+  .future-list li {
+    width: 100%;
+  }
+}
