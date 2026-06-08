@@ -5087,6 +5087,11 @@ section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { co
   color: var(--gris-calido);
 }
 
+
+.material-card--wide {
+  grid-column: 1 / -1;
+}
+
 .tag-row {
   display: flex;
   flex-wrap: wrap;
