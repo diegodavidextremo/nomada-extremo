@@ -6510,3 +6510,190 @@ section,[id]{scroll-margin-top:104px}
     width: 100%;
   }
 }
+
+/* Arquitectura de información y mapa del proyecto */
+.nav-menu--clean {
+  gap: clamp(0.55rem, 1vw, 1.15rem);
+}
+
+.home-entry-section .texto,
+.project-map-intro .texto,
+.project-map-section .texto {
+  line-height: 1.75;
+}
+
+.home-entry-grid,
+.project-map-grid,
+.project-index-grid,
+.project-route-grid,
+.orientation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: clamp(0.85rem, 1.6vw, 1.25rem);
+}
+
+.home-entry-grid article,
+.project-map-card,
+.project-route-grid article,
+.orientation-grid article {
+  background: rgba(255,255,255,0.76);
+  border: 1px solid var(--crema-media);
+  border-radius: 18px;
+  padding: clamp(1.1rem, 2vw, 1.65rem);
+  box-shadow: 0 18px 46px rgba(20,39,56,0.08);
+}
+
+.home-entry-grid article span,
+.project-index-grid a {
+  font-family: var(--display);
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--arena);
+  font-size: 0.75rem;
+}
+
+.home-entry-grid h3,
+.project-map-card h3,
+.project-route-grid strong,
+.orientation-grid strong {
+  display: block;
+  font-family: var(--display);
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--mar);
+  font-size: clamp(1.2rem, 2.4vw, 1.65rem);
+  margin: 0.35rem 0 0.55rem;
+}
+
+.home-entry-grid p,
+.project-map-card p,
+.project-route-grid span,
+.orientation-grid span {
+  display: block;
+  color: var(--gris-calido);
+  line-height: 1.65;
+  font-size: 0.92rem;
+}
+
+.home-entry-grid a,
+.project-map-card a,
+.project-route-grid a,
+.orientation-grid a,
+.project-index-grid a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  margin-top: 0.9rem;
+  color: var(--mar);
+  font-family: var(--display);
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  text-decoration: none;
+}
+
+.home-entry-grid a::after,
+.project-map-card a::after,
+.project-route-grid a::after,
+.orientation-grid a::after {
+  content: ' →';
+  margin-left: 0.25rem;
+}
+
+.home-orientation-section {
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
+}
+
+.project-map-hero .hero-text {
+  max-width: 980px;
+}
+
+.project-map-intro {
+  padding-top: clamp(3rem, 6vw, 5rem);
+  padding-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.project-index-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr));
+}
+
+.project-index-grid a {
+  justify-content: center;
+  background: var(--crema);
+  border: 1px solid var(--crema-media);
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  margin-top: 0;
+  text-align: center;
+}
+
+.project-map-section {
+  padding-top: clamp(4rem, 7vw, 6rem);
+  padding-bottom: clamp(4rem, 7vw, 6rem);
+}
+
+.project-map-grid.compact {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+}
+
+.project-map-grid.dark .project-map-card {
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(196,150,106,0.28);
+  box-shadow: none;
+}
+
+.project-map-grid.dark .project-map-card h3,
+.project-map-grid.dark .project-map-card a {
+  color: var(--arena-claro);
+}
+
+.project-map-grid.dark .project-map-card p {
+  color: rgba(245,242,236,0.74);
+}
+
+.quick-summary-section {
+  padding: 1.4rem 0;
+}
+
+.quick-summary-card {
+  background: var(--crema);
+  border: 1px solid var(--crema-media);
+  border-left: 5px solid var(--arena);
+  border-radius: 18px;
+  padding: clamp(1rem, 2vw, 1.45rem);
+  box-shadow: 0 14px 36px rgba(20,39,56,0.07);
+}
+
+.quick-summary-card p {
+  margin: 0.45rem 0 0;
+  color: var(--gris-calido);
+  line-height: 1.75;
+}
+
+.quick-summary-card a {
+  color: var(--mar);
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .home-entry-grid,
+  .project-map-grid,
+  .project-index-grid,
+  .project-route-grid,
+  .orientation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-entry-grid article,
+  .project-map-card,
+  .project-route-grid article,
+  .orientation-grid article,
+  .quick-summary-card {
+    border-radius: 15px;
+  }
+
+  .project-index-grid a {
+    justify-content: flex-start;
+  }
+}

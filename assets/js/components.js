@@ -13,9 +13,8 @@
       <span class="ln2">Aventura, técnica y naturaleza</span>
     </div>
   </a>
-  <ul class="nav-menu">
+  <ul class="nav-menu nav-menu--clean">
     <li><a href="index.html">Inicio</a></li>
-    <li><a href="index.html#metodo-nomada">Método Nómada</a></li>
     <li>
       <a href="actividades.html" class="has-drop">Actividades</a>
       <div class="nav-drop">
@@ -28,27 +27,30 @@
         <a href="actividades.html#barrancos">Barrancos, Río y Agua Interior</a>
         <a href="actividades.html#btt">BTT y Cicloturismo</a>
         <a href="actividades.html#foil">Foil y Waterman</a>
-        <a href="actividades.html#multiaventura">Multiaventura y Packs</a>
-        <a href="naturistas.html">Nómada Naturista</a>
-      </div>
-    </li>
-    <li>
-      <a href="packs.html" class="has-drop">Packs</a>
-      <div class="nav-drop">
-        <a href="packs.html">Packs especiales</a>
-        <a href="grupos.html">Grupos y centros</a>
-        <a href="audiovisual.html">Audiovisual</a>
-        <a href="alquiler.html">Alquiler de material</a>
-        <a href="reservas.html#bonos">Bonos</a>
+        <a href="packs.html">Packs y bonos</a>
       </div>
     </li>
     <li><a href="escuela.html">Escuela</a></li>
-    <li><a href="proyecto-intermodular.html">Intermodular</a></li>
-    <li><a href="seguridad.html">Seguridad</a></li>
-    <li><a href="zonas.html">Zonas</a></li>
-    <li><a href="logbook.html">Logbook</a></li>
+    <li><a href="naturistas.html">Naturismo</a></li>
     <li><a href="audiovisual.html">Audiovisual</a></li>
-    <li><a href="blog.html">Blog</a></li>
+    <li>
+      <a href="proyecto-completo.html" class="has-drop">Proyecto</a>
+      <div class="nav-drop">
+        <a href="proyecto-completo.html">Proyecto completo</a>
+        <a href="proyecto-academico.html">Marco académico</a>
+        <a href="proyecto-intermodular.html">Intermodular GMN</a>
+        <a href="como-funciona.html">Cómo funciona</a>
+        <a href="seguridad.html">Seguridad</a>
+        <a href="material.html">Material</a>
+        <a href="alquiler.html">Alquiler de material</a>
+        <a href="logbook.html">Logbook y app</a>
+        <a href="formularios.html">Formularios</a>
+        <a href="equipo.html">Equipo</a>
+        <a href="zonas.html">Zonas</a>
+        <a href="faq.html">FAQ</a>
+        <a href="blog.html">Blog</a>
+      </div>
+    </li>
     <li><a href="contacto.html">Contacto</a></li>
   </ul>
   <div class="nav-hamburger" id="navHamb" aria-label="Abrir menú" role="button" tabindex="0"><span></span><span></span><span></span></div>
@@ -56,24 +58,24 @@
 <div class="nav-mobile-menu" id="mobileNav">
   <button class="nav-mobile-close" id="mobileClose" aria-label="Cerrar menú">×</button>
   <a href="index.html">Inicio</a>
-  <a href="index.html#metodo-nomada">Método Nómada</a>
   <a href="actividades.html">Actividades</a>
-  <a href="packs.html">Packs</a>
   <a href="escuela.html">Escuela Nómada</a>
-  <a href="seguridad.html">Seguridad</a>
-  <a href="zonas.html">Zonas</a>
-  <a href="logbook.html">Logbook</a>
+  <a href="naturistas.html">Naturismo</a>
   <a href="audiovisual.html">Audiovisual</a>
-  <a href="blog.html">Blog</a>
+  <a href="proyecto-completo.html">Proyecto completo</a>
   <a href="contacto.html">Contacto</a>
+  <a href="packs.html">Packs y bonos</a>
   <a href="reservas.html">Solicitar experiencia</a>
   <a href="como-funciona.html">Cómo funciona</a>
-  <a href="formularios.html">Formularios</a>
+  <a href="seguridad.html">Seguridad</a>
   <a href="material.html">Material</a>
   <a href="alquiler.html">Alquiler de material</a>
-  <a href="sostenibilidad.html">Sostenibilidad</a>
+  <a href="logbook.html">Logbook y app</a>
+  <a href="formularios.html">Formularios</a>
+  <a href="zonas.html">Zonas</a>
   <a href="grupos.html">Grupos</a>
-  <a href="naturistas.html">Naturismo</a>
+  <a href="equipo.html">Equipo</a>
+  <a href="blog.html">Blog</a>
   <a href="faq.html">FAQ</a>
   <a href="proyecto-academico.html">Proyecto académico</a>
   <a href="proyecto-intermodular.html">Proyecto intermodular</a>
@@ -106,6 +108,7 @@
         <ul>
           <li><a href="actividades.html">Actividades</a></li>
           <li><a href="packs.html">Packs</a></li>
+          <li><a href="alquiler.html">Alquiler de material</a></li>
           <li><a href="grupos.html">Grupos, centros y empresas</a></li>
           <li><a href="reservas.html">Reservas</a></li>
           <li><a href="como-funciona.html">Cómo funciona</a></li>
@@ -135,6 +138,7 @@
           <li><a href="sostenibilidad.html">Sostenibilidad</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="proyecto-completo.html">Proyecto completo</a></li>
           <li><a href="proyecto-academico.html">Proyecto académico</a></li>
           <li><a href="proyecto-intermodular.html">Proyecto intermodular</a></li>
           <li><a href="agradecimiento-1-gmn.html">Gracias 1º GMN</a></li>
