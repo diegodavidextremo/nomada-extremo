@@ -1,94 +1,100 @@
-/* NÓMADA EXTREMO v2.5 — componentes compartidos */
+/* NÓMADA EXTREMO v2.6 — componentes compartidos accesibles */
 
 (function () {
   const PROJECT_NOTICE = 'Nómada Extremo es actualmente un proyecto académico no operativo creado por Diego David Gómez García, alumno de 1.º GMN del IES Europa de Águilas. No realiza reservas, cobros, ventas, sorteos ni actividades reales en este momento.';
 
   const NAV = `
-<div class="project-top-notice" role="note">${PROJECT_NOTICE}</div>
-<nav id="nav">
-  <a href="index.html" class="nav-logo-wrap" aria-label="Nómada Extremo — Inicio">
-    <img src="assets/images/logo-photoroom.png" alt="Logo Nómada Extremo" class="nav-logo-img">
-    <div class="nav-logo-text">
-      <span class="ln1">NÓMADA EXTREMO</span>
-      <span class="ln2">Aventura, técnica y naturaleza</span>
-    </div>
-  </a>
-  <ul class="nav-menu nav-menu--clean">
-    <li><a href="index.html">Inicio</a></li>
-    <li>
-      <a href="actividades.html" class="has-drop">Actividades</a>
-      <div class="nav-drop">
-        <a href="actividades.html#top-fichas">Fichas top</a>
-        <a href="actividades.html#montana">Montaña</a>
-        <a href="actividades.html#vertical">Vertical</a>
-        <a href="actividades.html#mar">Mar y Costa</a>
-        <a href="actividades.html#buceo">Buceo y Subacuático</a>
-        <a href="actividades.html#aire">Aire</a>
-        <a href="actividades.html#barrancos">Barrancos, Río y Agua Interior</a>
-        <a href="actividades.html#btt">BTT y Cicloturismo</a>
-        <a href="actividades.html#foil">Foil y Waterman</a>
-        <a href="packs.html">Packs y bonos</a>
+<a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+<header class="site-header" id="site-header">
+  <div class="project-top-notice" role="note">${PROJECT_NOTICE}</div>
+  <nav id="nav" aria-label="Navegación principal">
+    <a href="index.html" class="nav-logo-wrap" aria-label="Nómada Extremo — Inicio">
+      <img src="assets/images/logo-photoroom.png" alt="Logo Nómada Extremo" class="nav-logo-img" decoding="async">
+      <div class="nav-logo-text" aria-hidden="true">
+        <span class="ln1">NÓMADA EXTREMO</span>
+        <span class="ln2">Aventura, técnica y naturaleza</span>
       </div>
-    </li>
-    <li><a href="escuela.html">Escuela</a></li>
-    <li><a href="naturistas.html">Naturismo</a></li>
-    <li><a href="audiovisual.html">Audiovisual</a></li>
-    <li>
-      <a href="proyecto-completo.html" class="has-drop">Proyecto</a>
-      <div class="nav-drop">
-        <a href="proyecto-completo.html">Proyecto completo</a>
-        <a href="proyecto-academico.html">Marco académico</a>
-        <a href="proyecto-intermodular.html">Intermodular GMN</a>
-        <a href="como-funciona.html">Cómo funciona</a>
-        <a href="seguridad.html">Seguridad</a>
-        <a href="material.html">Material</a>
-        <a href="alquiler.html">Alquiler de material</a>
-        <a href="logbook.html">Logbook y app</a>
-        <a href="formularios.html">Formularios</a>
-        <a href="equipo.html">Equipo</a>
-        <a href="zonas.html">Zonas</a>
-        <a href="faq.html">FAQ</a>
-        <a href="blog.html">Blog</a>
-      </div>
-    </li>
-    <li><a href="contacto.html">Contacto</a></li>
-  </ul>
-  <div class="nav-hamburger" id="navHamb" aria-label="Abrir menú" role="button" tabindex="0"><span></span><span></span><span></span></div>
-</nav>
-<div class="nav-mobile-menu" id="mobileNav">
-  <button class="nav-mobile-close" id="mobileClose" aria-label="Cerrar menú">×</button>
-  <a href="index.html">Inicio</a>
-  <a href="actividades.html">Actividades</a>
-  <a href="escuela.html">Escuela Nómada</a>
-  <a href="naturistas.html">Naturismo</a>
-  <a href="audiovisual.html">Audiovisual</a>
-  <a href="proyecto-completo.html">Proyecto completo</a>
-  <a href="contacto.html">Contacto</a>
-  <a href="packs.html">Packs y bonos</a>
-  <a href="reservas.html">Solicitar experiencia</a>
-  <a href="como-funciona.html">Cómo funciona</a>
-  <a href="seguridad.html">Seguridad</a>
-  <a href="material.html">Material</a>
-  <a href="alquiler.html">Alquiler de material</a>
-  <a href="logbook.html">Logbook y app</a>
-  <a href="formularios.html">Formularios</a>
-  <a href="zonas.html">Zonas</a>
-  <a href="grupos.html">Grupos</a>
-  <a href="equipo.html">Equipo</a>
-  <a href="blog.html">Blog</a>
-  <a href="faq.html">FAQ</a>
-  <a href="proyecto-academico.html">Proyecto académico</a>
-  <a href="proyecto-intermodular.html">Proyecto intermodular</a>
-  <a href="agradecimiento-1-gmn.html">Gracias 1º GMN</a>
-</div>`;
+    </a>
+    <ul class="nav-menu nav-menu--clean">
+      <li><a href="index.html">Inicio</a></li>
+      <li>
+        <a href="actividades.html" class="has-drop" aria-haspopup="true">Actividades</a>
+        <div class="nav-drop" aria-label="Submenú de actividades">
+          <a href="actividades.html#top-fichas">Fichas top</a>
+          <a href="actividades.html#montana">Montaña</a>
+          <a href="actividades.html#vertical">Vertical</a>
+          <a href="actividades.html#mar">Mar y Costa</a>
+          <a href="actividades.html#buceo">Buceo y Subacuático</a>
+          <a href="actividades.html#aire">Aire</a>
+          <a href="actividades.html#barrancos">Barrancos, Río y Agua Interior</a>
+          <a href="actividades.html#btt">BTT y Cicloturismo</a>
+          <a href="actividades.html#foil">Foil y Waterman</a>
+          <a href="packs.html">Packs y bonos</a>
+        </div>
+      </li>
+      <li><a href="escuela.html">Escuela</a></li>
+      <li><a href="naturistas.html">Naturismo</a></li>
+      <li><a href="audiovisual.html">Audiovisual</a></li>
+      <li>
+        <a href="proyecto-completo.html" class="has-drop" aria-haspopup="true">Proyecto</a>
+        <div class="nav-drop" aria-label="Submenú de proyecto">
+          <a href="proyecto-completo.html">Proyecto completo</a>
+          <a href="proyecto-academico.html">Marco académico</a>
+          <a href="proyecto-intermodular.html">Intermodular GMN</a>
+          <a href="como-funciona.html">Cómo funciona</a>
+          <a href="seguridad.html">Seguridad</a>
+          <a href="material.html">Material</a>
+          <a href="alquiler.html">Alquiler de material</a>
+          <a href="logbook.html">Logbook y app</a>
+          <a href="formularios.html">Formularios</a>
+          <a href="equipo.html">Equipo</a>
+          <a href="zonas.html">Zonas</a>
+          <a href="faq.html">FAQ</a>
+          <a href="blog.html">Blog</a>
+        </div>
+      </li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <button class="nav-hamburger" id="navHamb" type="button" aria-label="Abrir menú" aria-controls="mobileNav" aria-expanded="false">
+      <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+    </button>
+  </nav>
+  <div class="nav-mobile-backdrop" data-mobile-close aria-hidden="true"></div>
+  <nav class="nav-mobile-menu" id="mobileNav" aria-label="Menú móvil" aria-hidden="true">
+    <button class="nav-mobile-close" id="mobileClose" type="button" aria-label="Cerrar menú">×</button>
+    <a href="index.html">Inicio</a>
+    <a href="actividades.html">Actividades</a>
+    <a href="escuela.html">Escuela Nómada</a>
+    <a href="naturistas.html">Naturismo</a>
+    <a href="audiovisual.html">Audiovisual</a>
+    <a href="proyecto-completo.html">Proyecto completo</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="packs.html">Packs y bonos</a>
+    <a href="reservas.html">Solicitar experiencia</a>
+    <a href="como-funciona.html">Cómo funciona</a>
+    <a href="seguridad.html">Seguridad</a>
+    <a href="material.html">Material</a>
+    <a href="alquiler.html">Alquiler de material</a>
+    <a href="logbook.html">Logbook y app</a>
+    <a href="formularios.html">Formularios</a>
+    <a href="zonas.html">Zonas</a>
+    <a href="grupos.html">Grupos</a>
+    <a href="equipo.html">Equipo</a>
+    <a href="blog.html">Blog</a>
+    <a href="faq.html">FAQ</a>
+    <a href="proyecto-academico.html">Proyecto académico</a>
+    <a href="proyecto-intermodular.html">Proyecto intermodular</a>
+    <a href="agradecimiento-1-gmn.html">Gracias 1.º GMN</a>
+  </nav>
+</header>`;
 
   const FOOTER = `
 <footer id="footer">
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div style="display:flex;align-items:center;gap:0.8rem;margin-bottom:0.5rem;">
-          <img src="assets/images/logo-photoroom.png" alt="Logo Nómada Extremo" style="width:68px;height:68px;border-radius:18px;object-fit:contain;background:rgba(15,26,19,0.65);border:1px solid rgba(196,150,106,0.3);">
+        <div class="footer-brand-head">
+          <img src="assets/images/logo-photoroom.png" alt="Logo Nómada Extremo" width="68" height="68" loading="lazy" decoding="async">
           <div>
             <div class="footer-marca-nombre">NÓMADA EXTREMO</div>
             <div class="footer-marca-lema">Proyecto académico premium de aventura</div>
@@ -96,11 +102,11 @@
         </div>
         <p class="footer-marca-desc">Marca conceptual de aventura mediterránea nacida en Águilas, Murcia. Creada por Diego David Gómez García / Diego David Extremo para 1.º GMN del IES Europa, curso 2025-2026.</p>
         <p class="footer-demo-note">${PROJECT_NOTICE}</p>
-        <div class="footer-social" style="margin-top:1.5rem;">
-          <a href="https://www.youtube.com/@diegodavidextremo" target="_blank" rel="noopener noreferrer" title="YouTube Diego David Extremo" aria-label="YouTube Diego David Extremo">YT</a>
-          <a href="https://www.instagram.com/diegodavidextremo/" target="_blank" rel="noopener noreferrer" title="Instagram Diego David Extremo" aria-label="Instagram Diego David Extremo">IG</a>
-          <a href="https://www.tiktok.com/@diegodavidextremo" target="_blank" rel="noopener noreferrer" title="TikTok Diego David Extremo" aria-label="TikTok Diego David Extremo">TT</a>
-          <a href="https://x.com/dd_gg98" target="_blank" rel="noopener noreferrer" title="X Diego David Extremo" aria-label="X Diego David Extremo">X</a>
+        <div class="footer-social">
+          <a href="https://www.youtube.com/@diegodavidextremo" target="_blank" rel="noopener noreferrer" aria-label="YouTube Diego David Extremo">YT</a>
+          <a href="https://www.instagram.com/diegodavidextremo/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Diego David Extremo">IG</a>
+          <a href="https://www.tiktok.com/@diegodavidextremo" target="_blank" rel="noopener noreferrer" aria-label="TikTok Diego David Extremo">TT</a>
+          <a href="https://x.com/dd_gg98" target="_blank" rel="noopener noreferrer" aria-label="X Diego David Extremo">X</a>
         </div>
       </div>
       <div class="footer-col">
@@ -141,7 +147,7 @@
           <li><a href="proyecto-completo.html">Proyecto completo</a></li>
           <li><a href="proyecto-academico.html">Proyecto académico</a></li>
           <li><a href="proyecto-intermodular.html">Proyecto intermodular</a></li>
-          <li><a href="agradecimiento-1-gmn.html">Gracias 1º GMN</a></li>
+          <li><a href="agradecimiento-1-gmn.html">Gracias 1.º GMN</a></li>
           <li><a href="condiciones.html">Condiciones</a></li>
           <li><a href="politica-privacidad.html">Privacidad</a></li>
           <li><a href="politica-cookies.html">Cookies</a></li>
@@ -152,7 +158,7 @@
     <div class="footer-bottom">
       <div>
         <p class="footer-copy">© 2026 Nómada Extremo · Águilas, Murcia, España · No se realizan reservas, cobros, ventas ni actividades reales.</p>
-        <p class="footer-copy" style="margin-top:0.2rem;opacity:0.7;">Diego David Gómez García · 1.º GMN · IES Europa de Águilas · Curso 2025-2026.</p>
+        <p class="footer-copy footer-copy--muted">Diego David Gómez García · 1.º GMN · IES Europa de Águilas · Curso 2025-2026.</p>
       </div>
       <div class="footer-legal">
         <a href="aviso-legal.html">Aviso legal</a>
@@ -165,43 +171,122 @@
 </footer>
 
 <a href="https://wa.me/34600000000?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20proyecto%20acad%C3%A9mico%20de%20N%C3%B3mada%20Extremo"
-   id="waFloat" target="_blank" rel="noopener" title="WhatsApp Nómada Extremo" aria-label="WhatsApp Nómada Extremo">WA</a>`;
+   id="waFloat" target="_blank" rel="noopener" aria-label="Abrir WhatsApp de Nómada Extremo">WA</a>`;
 
   const np = document.getElementById('nav-placeholder');
   if (np) np.outerHTML = NAV;
   const fp = document.getElementById('footer-placeholder');
   if (fp) fp.outerHTML = FOOTER;
 
+  const ensureMainLandmark = () => {
+    const existingMain = document.querySelector('main');
+    if (existingMain) {
+      if (!existingMain.id) existingMain.id = 'main-content';
+      if (!existingMain.hasAttribute('tabindex')) existingMain.setAttribute('tabindex', '-1');
+      return;
+    }
+    const header = document.getElementById('site-header');
+    const footer = document.getElementById('footer');
+    if (!header || !footer || !footer.parentNode) return;
+    const main = document.createElement('main');
+    main.id = 'main-content';
+    main.className = 'site-main';
+    main.tabIndex = -1;
+    let node = header.nextSibling;
+    while (node && node !== footer) {
+      const next = node.nextSibling;
+      main.appendChild(node);
+      node = next;
+    }
+    footer.parentNode.insertBefore(main, footer);
+  };
+
+  const enhanceMedia = () => {
+    document.querySelectorAll('img').forEach((img, index) => {
+      if (!img.hasAttribute('alt')) img.setAttribute('alt', '');
+      if (index > 1 && !img.hasAttribute('loading')) img.setAttribute('loading', 'lazy');
+      if (!img.hasAttribute('decoding')) img.setAttribute('decoding', 'async');
+    });
+    document.querySelectorAll('video, iframe').forEach(el => {
+      if (!el.hasAttribute('loading') && el.tagName === 'IFRAME') el.setAttribute('loading', 'lazy');
+      el.setAttribute('playsinline', '');
+    });
+  };
+
+  const enhanceForms = () => {
+    document.querySelectorAll('input, select, textarea').forEach((field, index) => {
+      if (!field.id) field.id = `noext-field-${index + 1}`;
+      const type = (field.getAttribute('type') || '').toLowerCase();
+      const name = `${field.getAttribute('name') || ''} ${field.id}`.toLowerCase();
+      if (!field.getAttribute('autocomplete')) {
+        if (type === 'email' || name.includes('email') || name.includes('correo')) field.setAttribute('autocomplete', 'email');
+        else if (type === 'tel' || name.includes('telefono') || name.includes('teléfono') || name.includes('phone')) field.setAttribute('autocomplete', 'tel');
+        else if (name.includes('nombre')) field.setAttribute('autocomplete', 'name');
+      }
+      if ((type === 'tel' || name.includes('telefono') || name.includes('teléfono')) && !field.getAttribute('inputmode')) field.setAttribute('inputmode', 'tel');
+      if ((type === 'email' || name.includes('email') || name.includes('correo')) && !field.getAttribute('inputmode')) field.setAttribute('inputmode', 'email');
+    });
+  };
+
+  ensureMainLandmark();
+  enhanceMedia();
+  enhanceForms();
+
   setTimeout(() => {
     const nav = document.getElementById('nav');
     const hamb = document.getElementById('navHamb');
     const mobile = document.getElementById('mobileNav');
     const mClose = document.getElementById('mobileClose');
+    const backdrop = document.querySelector('[data-mobile-close]');
     const wa = document.getElementById('waFloat');
+    let lastFocus = null;
+    let lastScrollY = 0;
 
     if (nav) {
       const check = () => nav.classList.toggle('scrolled', window.scrollY > 70);
-      window.addEventListener('scroll', check);
+      window.addEventListener('scroll', check, { passive: true });
       check();
     }
+
+    const focusableSelector = 'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+    const trapFocus = (event) => {
+      if (!mobile || !mobile.classList.contains('open') || event.key !== 'Tab') return;
+      const items = [...mobile.querySelectorAll(focusableSelector)].filter(el => el.offsetParent !== null);
+      if (!items.length) return;
+      const first = items[0];
+      const last = items[items.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    };
 
     if (hamb && mobile) {
       const setOpen = (open) => {
         hamb.classList.toggle('open', open);
         mobile.classList.toggle('open', open);
+        backdrop?.classList.toggle('open', open);
         hamb.setAttribute('aria-expanded', String(open));
+        mobile.setAttribute('aria-hidden', String(!open));
         document.body.classList.toggle('menu-open', open);
-        document.body.style.overflow = open ? 'hidden' : '';
+        if (open) {
+          lastFocus = document.activeElement;
+          lastScrollY = window.scrollY;
+          document.body.style.top = `-${lastScrollY}px`;
+          mClose?.focus({ preventScroll: true });
+        } else {
+          document.body.style.top = '';
+          if (lastScrollY) window.scrollTo(0, lastScrollY);
+          if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus({ preventScroll: true });
+        }
       };
       const toggle = () => setOpen(!mobile.classList.contains('open'));
-      hamb.setAttribute('aria-expanded', 'false');
-      hamb.setAttribute('aria-controls', 'mobileNav');
       hamb.addEventListener('click', toggle);
-      hamb.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
       if (mClose) mClose.addEventListener('click', () => setOpen(false));
+      if (backdrop) backdrop.addEventListener('click', () => setOpen(false));
       mobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
-      document.addEventListener('keydown', e => { if (e.key === 'Escape' && mobile.classList.contains('open')) setOpen(false); });
-      window.addEventListener('scroll', () => { if (mobile.classList.contains('open')) setOpen(false); }, { passive: true });
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && mobile.classList.contains('open')) setOpen(false);
+        trapFocus(e);
+      });
     }
 
     const page = window.location.pathname.split('/').pop() || 'index.html';
@@ -210,8 +295,10 @@
       if (h && (h === page || (page === '' && h === 'index.html'))) a.classList.add('activo');
     });
 
-    if (wa) window.addEventListener('scroll', () => {
-      wa.style.opacity = window.scrollY > 300 ? '1' : '0';
-    });
+    if (wa) {
+      const toggleWa = () => { wa.style.opacity = window.scrollY > 300 ? '1' : '0'; };
+      window.addEventListener('scroll', toggleWa, { passive: true });
+      toggleWa();
+    }
   }, 0);
 })();

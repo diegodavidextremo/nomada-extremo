@@ -46,7 +46,8 @@
 .admin-badge { background: rgba(196,150,106,0.1); border: 1px dashed var(--arena); border-radius: var(--radio); padding: 0.8rem 1rem; font-size: 0.73rem; color: var(--tierra); line-height: 1.65; margin-top: 1rem; }
 </style>
 </head>
-<body>
+<body class="login-page">
+<div id="nav-placeholder"></div>
 <div class="login-bg">
   <div class="login-wrap">
 
@@ -81,15 +82,15 @@
 
       <!-- LOGIN FORM -->
       <div id="panelLogin">
-        <div class="login-title">BIENVENIDO</div>
+        <h1 class="login-title">BIENVENIDO</h1>
         <p class="login-subtitle">Accede con tu email y contraseña</p>
         <div class="login-input-group">
-          <label>Email o usuario</label>
-          <input type="text" id="loginUser" placeholder="hola@nomadaextremo.com">
+          <label for="loginUser">Email o usuario</label>
+          <input type="text" id="loginUser" placeholder="hola@nomadaextremo.com" autocomplete="username">
         </div>
         <div class="login-input-group">
-          <label>Contraseña</label>
-          <input type="password" id="loginPass" placeholder="••••••••">
+          <label for="loginPass">Contraseña</label>
+          <input type="password" id="loginPass" placeholder="••••••••" autocomplete="current-password">
         </div>
         <button onclick="handleLogin()" class="btn btn-mar" style="width:100%;margin-top:0.5rem;padding:0.85rem;font-size:0.75rem;letter-spacing:2px;">
           ACCEDER →
@@ -106,23 +107,23 @@
 
       <!-- REGISTRO FORM -->
       <div id="panelReg" style="display:none;">
-        <div class="login-title">ÚNETE</div>
+        <h2 class="login-title">ÚNETE</h2>
         <p class="login-subtitle">Crea tu perfil de aventurero Nómada</p>
         <div class="login-input-group">
-          <label>Nombre completo</label>
-          <input type="text" placeholder="Tu nombre">
+          <label for="regName">Nombre completo</label>
+          <input type="text" id="regName" autocomplete="name" placeholder="Tu nombre">
         </div>
         <div class="login-input-group">
-          <label>Email</label>
-          <input type="email" placeholder="hola@email.com">
+          <label for="regEmail">Email</label>
+          <input type="email" id="regEmail" autocomplete="email" placeholder="hola@email.com">
         </div>
         <div class="login-input-group">
-          <label>Contraseña</label>
-          <input type="password" placeholder="Mínimo 8 carácteres">
+          <label for="regPass">Contraseña</label>
+          <input type="password" id="regPass" autocomplete="new-password" placeholder="Mínimo 8 caracteres">
         </div>
         <div class="login-input-group">
-          <label>Confirmar contraseña</label>
-          <input type="password" placeholder="Repite tu contraseña">
+          <label for="regPass2">Confirmar contraseña</label>
+          <input type="password" id="regPass2" autocomplete="new-password" placeholder="Repite tu contraseña">
         </div>
         <button onclick="alert('Registro recibido. Recibirás un email de confirmación en breve.')" class="btn btn-bosque" style="width:100%;margin-top:0.5rem;padding:0.85rem;font-size:0.75rem;letter-spacing:2px;">
           CREAR PERFIL →
@@ -133,6 +134,8 @@
   </div>
 </div>
 
+<div id="footer-placeholder"></div>
+<script src="assets/js/components.js"></script>
 <script>
 function showTab(tab) {
   document.getElementById('panelLogin').style.display = tab === 'login' ? 'block' : 'none';

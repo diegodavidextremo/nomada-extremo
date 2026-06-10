@@ -2,7 +2,18 @@
    NÓMADA EXTREMO v2 — JAVASCRIPT GLOBAL
    ═══════════════════════════════════════ */
 
+/* noext IntersectionObserver fallback */
+(function () {
+  if ('IntersectionObserver' in window) return;
+  window.IntersectionObserver = class {
+    constructor(callback) { this.callback = callback; }
+    observe(target) { this.callback([{ target, isIntersecting: true }], this); }
+    unobserve() {}
+    disconnect() {}
+  };
+})();
 document.addEventListener('DOMContentLoaded', () => {
+  const noextReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ─── REVEAL ON SCROLL ─── */
   const revObs = new IntersectionObserver((entries) => {
@@ -635,7 +646,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
       const t = document.querySelector(a.getAttribute('href'));
-      if (t) { e.preventDefault(); t.scrollIntoView({ behavior:'smooth', block:'start' }); }
+      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: noextReducedMotion ? 'auto' : 'smooth', block:'start' }); }
     });
   });
 
@@ -657,18 +668,35 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* --- Interacciones premium Nómada Extremo --- */
+  let noextLastModalTrigger = null;
   function ensureNoextUI(){
-    if(!document.getElementById('noext-toast'))document.body.insertAdjacentHTML('beforeend','<div id="noext-toast" class="noext-toast" role="status" aria-live="polite"></div>');
-    if(!document.getElementById('noext-modal'))document.body.insertAdjacentHTML('beforeend','<div id="noext-modal" class="noext-modal" role="dialog" aria-modal="true"><div class="noext-modal-card"><button class="noext-modal-close" aria-label="Cerrar">×</button><div id="noext-modal-content"></div></div></div>');
+    if(!document.getElementById('noext-toast')) document.body.insertAdjacentHTML('beforeend','<div id="noext-toast" class="noext-toast" role="status" aria-live="polite" aria-atomic="true"></div>');
+    if(!document.getElementById('noext-modal')) document.body.insertAdjacentHTML('beforeend','<div id="noext-modal" class="noext-modal" role="dialog" aria-modal="true" aria-labelledby="noext-modal-title" aria-hidden="true"><div class="noext-modal-card" role="document"><button class="noext-modal-close" type="button" aria-label="Cerrar ventana">×</button><div id="noext-modal-content" class="noext-modal-content"></div></div></div>');
     const modal=document.getElementById('noext-modal');
-    const closeNoextModal=()=>{modal.classList.remove('open');document.body.classList.remove('modal-open')};
+    if(modal.dataset.noextReady) return;
+    modal.dataset.noextReady='1';
+    const closeNoextModal=()=>{
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden','true');
+      document.body.classList.remove('modal-open');
+      if(noextLastModalTrigger && typeof noextLastModalTrigger.focus==='function') noextLastModalTrigger.focus({preventScroll:true});
+    };
     modal.querySelector('.noext-modal-close').addEventListener('click',closeNoextModal);
     modal.addEventListener('click',e=>{if(e.target===modal)closeNoextModal()});
+    modal.addEventListener('keydown',e=>{
+      if(e.key==='Escape'){e.preventDefault();closeNoextModal();return;}
+      if(e.key!=='Tab') return;
+      const focusables=[...modal.querySelectorAll('a[href],button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled]),[tabindex]:not([tabindex="-1"])')].filter(el=>el.offsetParent!==null);
+      if(!focusables.length) return;
+      const first=focusables[0], last=focusables[focusables.length-1];
+      if(e.shiftKey && document.activeElement===first){e.preventDefault();last.focus();}
+      else if(!e.shiftKey && document.activeElement===last){e.preventDefault();first.focus();}
+    });
   }
   ensureNoextUI();
-  window.noextToast=function(msg){const toast=document.getElementById('noext-toast');toast.textContent=msg;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),2600)};
-  window.noextOpenModal=function(title,html){const modal=document.getElementById('noext-modal');document.getElementById('noext-modal-content').innerHTML=`<h3>${title}</h3>${html}`;modal.classList.add('open');document.body.classList.add('modal-open');modal.querySelector('.noext-modal-close').focus()};
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.getElementById('noext-modal')?.classList.remove('open');document.body.classList.remove('modal-open')}});
+  window.noextToast=function(msg){const toast=document.getElementById('noext-toast');if(!toast)return;toast.textContent=msg;toast.classList.add('show');clearTimeout(toast._noextTimer);toast._noextTimer=setTimeout(()=>toast.classList.remove('show'),2600)};
+  window.noextOpenModal=function(title,html){ensureNoextUI();noextLastModalTrigger=document.activeElement;const modal=document.getElementById('noext-modal');document.getElementById('noext-modal-content').innerHTML=`<h3 id="noext-modal-title">${title}</h3>${html}`;modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');modal.querySelector('.noext-modal-close').focus({preventScroll:true})};
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&document.getElementById('noext-modal')?.classList.contains('open')){document.querySelector('#noext-modal .noext-modal-close')?.click();}});
   const academicNote = 'Ficha orientativa del proyecto académico/intermodular. En versión operativa exigiría validación legal, técnica, seguros, permisos y profesionales cualificados.';
   const spec = (d) => ({
     familia:d.f||'Actividad de aventura', duracion:d.d, edad:d.e, fisico:d.fi, tecnico:d.t, experiencia:d.x, ratio:d.r,
