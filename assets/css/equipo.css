@@ -413,3 +413,78 @@ body.team-profile-open { overflow: hidden; }
     grid-column: auto;
   }
 }
+/* Colaboradores técnicos especializados */
+.collaborator-section {
+  margin-top: clamp(3.5rem, 8vw, 6.5rem);
+  padding-top: clamp(2.5rem, 5vw, 4.2rem);
+  border-top: 1px solid rgba(30, 74, 107, 0.16);
+}
+
+.collaborator-section__intro {
+  max-width: 940px;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.collaborator-section__intro h2 {
+  margin: 0.55rem 0 1rem;
+  color: var(--gris-oscuro);
+  font-family: var(--display);
+  font-size: clamp(2.5rem, 6vw, 5.25rem);
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  line-height: 0.92;
+}
+
+.collaborator-section__intro h2 span { color: #41675a; }
+
+.collaborator-section__intro p {
+  max-width: 880px;
+  margin: 0;
+  color: var(--gris-calido);
+  font-size: 0.96rem;
+  line-height: 1.85;
+}
+
+.collaborator-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1rem, 2vw, 1.5rem);
+  align-items: stretch;
+}
+
+.specialist-card--collaborator {
+  border-color: rgba(65, 103, 90, 0.2);
+}
+
+.specialist-card--collaborator .specialist-card__header {
+  background:
+    linear-gradient(145deg, rgba(35, 65, 56, 0.98), rgba(65, 103, 90, 0.94)),
+    radial-gradient(circle at 100% 0%, rgba(211, 172, 118, 0.45), transparent 42%);
+}
+
+.specialist-card--collaborator .specialist-card__header::before {
+  background: linear-gradient(90deg, var(--arena-claro), #9fb9a8);
+}
+
+.specialist-card--collaborator .specialist-activity {
+  background: rgba(65, 103, 90, 0.07);
+  border-color: rgba(65, 103, 90, 0.14);
+}
+
+.specialist-card--collaborator .specialist-facts span {
+  border-left-color: #678b7d;
+}
+
+.specialist-card--collaborator .specialist-tags span {
+  color: #31594c;
+  background: rgba(65, 103, 90, 0.08);
+  border-color: rgba(65, 103, 90, 0.15);
+}
+
+@media (min-width: 700px) {
+  .collaborator-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1200px) {
+  .collaborator-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}

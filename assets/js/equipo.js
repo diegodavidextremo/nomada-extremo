@@ -17,6 +17,7 @@
     </div>`;
   document.body.append(dialog);
 
+  const kicker = dialog.querySelector('.team-profile-dialog__kicker');
   const title = dialog.querySelector('#team-profile-title');
   const role = dialog.querySelector('.team-profile-dialog__role');
   const body = dialog.querySelector('.team-profile-dialog__body');
@@ -29,6 +30,7 @@
     const tags = card?.querySelector('.specialist-tags');
     if (!card || !content) return;
 
+    kicker.textContent = card.classList.contains('specialist-card--collaborator') ? 'Colaborador técnico especializado' : 'Perfil profesional';
     title.textContent = card.querySelector('h3')?.textContent?.trim() || 'Perfil profesional';
     role.textContent = card.querySelector('.specialist-card__role')?.textContent?.trim() || '';
     body.replaceChildren(content.cloneNode(true));
