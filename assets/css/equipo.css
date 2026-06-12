@@ -1,0 +1,256 @@
+/* Equipo técnico multidisciplinar 2026 */
+.team-specialists-section {
+  position: relative;
+  overflow: clip;
+}
+
+.team-specialists-intro {
+  max-width: 920px;
+  margin-bottom: clamp(2rem, 4vw, 3.25rem);
+}
+
+.team-specialists-intro .texto {
+  max-width: 900px;
+  line-height: 1.85;
+}
+
+.specialist-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1rem, 2vw, 1.5rem);
+  align-items: stretch;
+}
+
+.specialist-card {
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--blanco);
+  border: 1px solid rgba(30, 74, 107, 0.13);
+  border-radius: 18px;
+  box-shadow: 0 18px 46px rgba(30, 46, 55, 0.08);
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.specialist-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(196, 150, 106, 0.48);
+  box-shadow: 0 24px 58px rgba(30, 46, 55, 0.13);
+}
+
+.specialist-card__header {
+  position: relative;
+  min-height: 176px;
+  padding: clamp(1.25rem, 2vw, 1.65rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.55rem;
+  color: var(--blanco);
+  background:
+    linear-gradient(145deg, rgba(20, 51, 72, 0.98), rgba(30, 74, 107, 0.9)),
+    radial-gradient(circle at 100% 0%, rgba(196, 150, 106, 0.42), transparent 42%);
+}
+
+.specialist-card__header::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: linear-gradient(90deg, var(--arena), var(--arena-claro));
+}
+
+.specialist-card__index {
+  color: var(--arena-claro);
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.team-specialists-section .specialist-card__header h3 {
+  margin: 0;
+  color: var(--blanco);
+  font-family: var(--display);
+  font-size: clamp(1.9rem, 2.6vw, 2.55rem);
+  line-height: 0.95;
+  letter-spacing: 1.2px;
+  overflow-wrap: anywhere;
+}
+
+.specialist-card__role {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.specialist-card__body {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: clamp(1.1rem, 2vw, 1.45rem);
+}
+
+.specialist-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.specialist-facts span {
+  min-width: 0;
+  padding: 0.72rem 0.78rem;
+  background: var(--crema);
+  border-left: 3px solid var(--arena);
+  color: var(--gris-calido);
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.specialist-facts strong,
+.specialist-activity strong {
+  display: block;
+  margin-bottom: 0.18rem;
+  color: var(--mar);
+  font-size: 0.65rem;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+
+.specialist-block h4,
+.specialist-meaning h4 {
+  margin: 0 0 0.38rem;
+  color: var(--gris-oscuro);
+  font-family: var(--display);
+  font-size: 1.12rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.specialist-block p,
+.specialist-activity p,
+.specialist-meaning p {
+  margin: 0;
+  color: var(--gris-calido);
+  font-size: 0.84rem;
+  line-height: 1.68;
+  overflow-wrap: anywhere;
+}
+
+.specialist-activity {
+  padding: 0.9rem;
+  background: rgba(30, 74, 107, 0.055);
+  border: 1px solid rgba(30, 74, 107, 0.1);
+  border-radius: 12px;
+}
+
+.specialist-details {
+  margin-top: auto;
+  border: 1px solid var(--crema-media);
+  border-radius: 12px;
+  background: #fbfaf7;
+  overflow: hidden;
+}
+
+.specialist-details summary {
+  min-height: 46px;
+  padding: 0.8rem 2.6rem 0.8rem 0.9rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+  color: var(--mar);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.65px;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.specialist-details summary::-webkit-details-marker { display: none; }
+
+.specialist-details summary::after {
+  content: '+';
+  position: absolute;
+  right: 0.9rem;
+  top: 50%;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(30, 74, 107, 0.2);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+}
+
+.specialist-details[open] summary::after { content: '−'; }
+.specialist-details[open] summary { border-bottom: 1px solid var(--crema-media); }
+
+.specialist-details__content {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.specialist-block--safety {
+  padding-left: 0.8rem;
+  border-left: 3px solid var(--mar);
+}
+
+.specialist-meaning {
+  padding: 0.9rem;
+  background: rgba(196, 150, 106, 0.1);
+  border: 1px solid rgba(196, 150, 106, 0.24);
+  border-radius: 10px;
+}
+
+.specialist-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.specialist-tags span {
+  max-width: 100%;
+  padding: 0.34rem 0.58rem;
+  color: var(--mar);
+  background: rgba(30, 74, 107, 0.07);
+  border: 1px solid rgba(30, 74, 107, 0.12);
+  border-radius: 999px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.35px;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.specialist-details summary:focus-visible {
+  outline: 3px solid rgba(196, 150, 106, 0.55);
+  outline-offset: -3px;
+}
+
+@media (min-width: 700px) {
+  .specialist-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1200px) {
+  .specialist-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+@media (max-width: 479px) {
+  .specialist-card__header { min-height: 152px; }
+  .specialist-facts { grid-template-columns: 1fr; }
+  .specialist-card:hover { transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .specialist-card { transition: none; }
+}
