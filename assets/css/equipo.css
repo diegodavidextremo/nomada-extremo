@@ -254,3 +254,162 @@
 @media (prefers-reduced-motion: reduce) {
   .specialist-card { transition: none; }
 }
+
+/* Modal de perfil profesional */
+body.team-profile-open { overflow: hidden; }
+
+.team-profile-dialog {
+  width: min(920px, calc(100% - 2rem));
+  max-width: 920px;
+  max-height: min(88dvh, 900px);
+  margin: auto;
+  padding: 0;
+  overflow: visible;
+  color: var(--gris-oscuro);
+  background: transparent;
+  border: 0;
+}
+
+.team-profile-dialog::backdrop {
+  background: rgba(8, 18, 25, 0.72);
+  backdrop-filter: blur(8px);
+}
+
+.team-profile-dialog__panel {
+  position: relative;
+  max-height: min(88dvh, 900px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--blanco);
+  border: 1px solid rgba(196, 150, 106, 0.34);
+  border-radius: 20px;
+  box-shadow: 0 30px 90px rgba(5, 17, 25, 0.38);
+}
+
+.team-profile-dialog__header {
+  padding: clamp(1.5rem, 4vw, 2.4rem) clamp(1.25rem, 4vw, 2.5rem);
+  color: var(--blanco);
+  background: linear-gradient(145deg, #143348, #1e4a6b);
+  border-top: 4px solid var(--arena);
+}
+
+.team-profile-dialog__kicker {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--arena-claro);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.team-profile-dialog__header h2 {
+  margin: 0;
+  padding-right: 3rem;
+  color: var(--blanco);
+  font-family: var(--display);
+  font-size: clamp(2.2rem, 6vw, 4.25rem);
+  line-height: 0.95;
+  letter-spacing: 1.4px;
+}
+
+.team-profile-dialog__role {
+  max-width: 68ch;
+  margin: 0.7rem 0 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.team-profile-dialog__close {
+  position: absolute;
+  z-index: 2;
+  top: 1rem;
+  right: 1rem;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  color: var(--blanco);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  font-size: 1.55rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.team-profile-dialog__close:hover,
+.team-profile-dialog__close:focus-visible {
+  background: var(--arena);
+  transform: scale(1.04);
+  outline: 3px solid rgba(255, 255, 255, 0.48);
+  outline-offset: 2px;
+}
+
+.team-profile-dialog__body {
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.team-profile-dialog__body .specialist-details__content {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.15rem;
+  padding: 0;
+}
+
+.team-profile-dialog__body .specialist-block,
+.team-profile-dialog__body .specialist-meaning {
+  padding: 1rem;
+  background: #fbfaf7;
+  border: 1px solid var(--crema-media);
+  border-radius: 12px;
+}
+
+.team-profile-dialog__body .specialist-block--safety {
+  border-left: 4px solid var(--mar);
+}
+
+.team-profile-dialog__body .specialist-meaning {
+  grid-column: 1 / -1;
+  background: rgba(196, 150, 106, 0.1);
+  border-color: rgba(196, 150, 106, 0.28);
+}
+
+.team-profile-dialog__body .specialist-tags {
+  margin-top: 1.2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--crema-media);
+}
+
+@media (max-width: 699px) {
+  .team-profile-dialog {
+    width: 100%;
+    max-width: none;
+    max-height: 92dvh;
+    margin: auto 0 0;
+  }
+
+  .team-profile-dialog__panel {
+    max-height: 92dvh;
+    border-radius: 20px 20px 0 0;
+    border-bottom: 0;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  .team-profile-dialog__header {
+    padding-top: 1.7rem;
+  }
+
+  .team-profile-dialog__header h2 {
+    padding-right: 2.8rem;
+  }
+
+  .team-profile-dialog__body .specialist-details__content {
+    grid-template-columns: 1fr;
+  }
+
+  .team-profile-dialog__body .specialist-meaning {
+    grid-column: auto;
+  }
+}
