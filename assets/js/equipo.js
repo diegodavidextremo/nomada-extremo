@@ -1,6 +1,7 @@
 (() => {
   const profiles = [...document.querySelectorAll('.specialist-details')];
-  if (!profiles.length || typeof HTMLDialogElement === 'undefined') return;
+  const leadershipButtons = [...document.querySelectorAll('.leadership-profile-button')];
+  if ((!profiles.length && !leadershipButtons.length) || typeof HTMLDialogElement === 'undefined') return;
 
   const dialog = document.createElement('dialog');
   dialog.className = 'team-profile-dialog';
@@ -24,23 +25,35 @@
   const closeButton = dialog.querySelector('.team-profile-dialog__close');
   let lastTrigger = null;
 
+  function showProfile({ profileKicker, profileTitle, profileRole, profileContent, profileTags, trigger }) {
+    kicker.textContent = profileKicker;
+    title.textContent = profileTitle;
+    role.textContent = profileRole;
+    body.replaceChildren(profileContent);
+    if (profileTags) body.append(profileTags);
+
+    lastTrigger = trigger;
+    document.body.classList.add('team-profile-open');
+    dialog.showModal();
+    closeButton.focus();
+  }
+
   function openProfile(details) {
     const card = details.closest('.specialist-card');
     const content = details.querySelector('.specialist-details__content');
     const tags = card?.querySelector('.specialist-tags');
     if (!card || !content) return;
 
-    kicker.textContent = card.classList.contains('specialist-card--collaborator') ? 'Colaborador técnico especializado' : 'Perfil profesional';
-    title.textContent = card.querySelector('h3')?.textContent?.trim() || 'Perfil profesional';
-    role.textContent = card.querySelector('.specialist-card__role')?.textContent?.trim() || '';
-    body.replaceChildren(content.cloneNode(true));
-    if (tags) body.append(tags.cloneNode(true));
-
-    lastTrigger = details.querySelector('summary');
+    const summary = details.querySelector('summary');
     details.open = false;
-    document.body.classList.add('team-profile-open');
-    dialog.showModal();
-    closeButton.focus();
+    showProfile({
+      profileKicker: card.classList.contains('specialist-card--collaborator') ? 'Colaborador técnico especializado' : 'Perfil profesional',
+      profileTitle: card.querySelector('h3')?.textContent?.trim() || 'Perfil profesional',
+      profileRole: card.querySelector('.specialist-card__role')?.textContent?.trim() || '',
+      profileContent: content.cloneNode(true),
+      profileTags: tags?.cloneNode(true) || null,
+      trigger: summary
+    });
   }
 
   profiles.forEach((details) => {
@@ -50,6 +63,23 @@
     summary.addEventListener('click', (event) => {
       event.preventDefault();
       openProfile(details);
+    });
+  });
+
+  leadershipButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const card = button.closest('.leadership-card');
+      const template = card?.querySelector('.leadership-profile-template');
+      if (!card || !template) return;
+
+      showProfile({
+        profileKicker: 'Dirección financiera y operativa',
+        profileTitle: card.querySelector('h3')?.textContent?.trim() || 'Perfil directivo',
+        profileRole: card.querySelector('.leadership-role')?.textContent?.trim() || '',
+        profileContent: template.content.cloneNode(true),
+        profileTags: null,
+        trigger: button
+      });
     });
   });
 

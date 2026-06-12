@@ -481,6 +481,63 @@ body.team-profile-open { overflow: hidden; }
   border-color: rgba(65, 103, 90, 0.15);
 }
 
+.leadership-profile-button {
+  min-height: 46px;
+  align-self: flex-start;
+  padding: 0.75rem 1.05rem;
+  color: var(--blanco);
+  background: var(--mar);
+  border: 1px solid var(--mar);
+  border-radius: 8px;
+  font: inherit;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.leadership-profile-button:hover,
+.leadership-profile-button:focus-visible {
+  background: var(--arena);
+  border-color: var(--arena);
+  transform: translateY(-2px);
+}
+
+.leadership-profile-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.leadership-profile-content .specialist-block,
+.leadership-profile-content .specialist-meaning {
+  min-width: 0;
+}
+
+.leadership-profile-content .specialist-block p + p {
+  margin-top: 0.75rem;
+}
+
+.leadership-profile-content .specialist-tags {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 680px) {
+  .leadership-profile-button {
+    width: 100%;
+  }
+
+  .leadership-profile-content {
+    grid-template-columns: 1fr;
+  }
+
+  .leadership-profile-content .specialist-tags {
+    grid-column: auto;
+  }
+}
+
 @media (min-width: 700px) {
   .collaborator-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
