@@ -271,6 +271,149 @@
     }
   ];
 
+  const overviewRoutes = [
+    {
+      number: '01', title: 'Buceo', subtitle: 'SSI preferente · PADI compatible', icon: 'BU', target: 'buceo', responsible: 'Erika Hernández',
+      items: [
+        ['Bautismo de buceo', 'Primera experiencia subacuática, equipo básico, respiración y señales.', 'Experiencia'],
+        ['Open Water / OWD', 'Curso base para iniciarse como buceador certificado.', 'Certificación inicial'],
+        ['Advanced Open Water', 'Progresión con inmersiones de aventura y especialidades elegidas con el centro.', 'Progresión recreativa'],
+        ['Rescue Diver', 'Prevención, asistencia, estrés, emergencias y seguridad de grupo.', 'Seguridad avanzada'],
+        ['Divemaster / Dive Guide', 'Primer nivel profesional, guía de buceadores y apoyo a instructores.', 'Profesional'],
+        ['Instructor', 'Formación para enseñar y certificar según la organización autorizada.', 'Profesional avanzado'],
+        ['Buceo técnico', 'Planificación avanzada, gases, redundancia, procedimientos y equipo específico.', 'Especialización']
+      ],
+      note: 'Especialidades posibles: Nitrox, Nocturno, Profunda, Navegación, Flotabilidad, Pecios, Search & Recovery y Fotografía subacuática.'
+    },
+    {
+      number: '02', title: 'Aire', subtitle: 'Paracaidismo · Parapente · Paramotor', icon: 'AI', target: 'aff', responsible: 'Álvaro González y centros autorizados',
+      items: [
+        ['Paracaidismo tándem', 'Salto desde avión con instructor y experiencia directa de caída libre.', 'Experiencia'],
+        ['Paracaidismo AFF', 'Ocho niveles con teoría, emergencias, caída libre, campana y consolidación.', 'Formación'],
+        ['Licencia A', 'Primera autonomía deportiva con 25 saltos orientativos y evaluación completa.', 'Licencia inicial'],
+        ['Licencias B / C / D', 'Más experiencia, precisión, control de campana y acceso a formación avanzada.', 'Progresión deportiva'],
+        ['Programa avanzado', 'Campana, freefly, tracking, wingsuit, cámara, nocturnos y otras especialidades.', 'Especialización'],
+        ['Parapente biplaza', 'Primer contacto con el viento, la térmica y el vuelo libre.', 'Experiencia'],
+        ['Parapente iniciación', 'Control de campa, meteorología, seguridad, despegue y aterrizaje.', 'Formación'],
+        ['Paramotor / Paratrike', 'Vuelo motorizado, navegación, revisión de equipo y emergencias.', 'Formación / experiencia']
+      ],
+      note: 'Progresión vinculada a centros autorizados, instructores habilitados, meteorología, normativa aérea y requisitos propios de cada modalidad.'
+    },
+    {
+      number: '03', title: 'Montaña y vertical', subtitle: 'Escalada · Ferratas · Rápel · Cuerda', icon: 'MV', target: 'escalada', responsible: 'Adrián Martínez y Daniel Ortega según actividad',
+      items: [
+        ['Escalada iniciación', 'Técnica básica, pies, agarres, nudos, aseguramiento y comunicación.', 'Formación inicial'],
+        ['Escalada deportiva', 'Chapaje, caída controlada, descuelgue, limpieza de vía y progresión.', 'Formación técnica'],
+        ['Varios largos', 'Reuniones, gestión de cuerda, comunicación y progresión en pared.', 'Formación avanzada'],
+        ['Ferratas y rápel', 'Disipador, línea de vida, descenso por cuerda y seguridad vertical.', 'Experiencia / formación'],
+        ['Autorrescate', 'Bloqueos, descensos asistidos, incidencias en pared y criterio de retirada.', 'Seguridad avanzada'],
+        ['Rope jumping / puenting', 'Saltos pendulares, doble chequeo y sistemas coordinados por especialistas.', 'Experiencia técnica']
+      ],
+      note: 'La dificultad, el ratio y el material se adaptan al terreno, la exposición y la experiencia real del grupo.'
+    },
+    {
+      number: '04', title: 'Mar y waterman', subtitle: 'Kayak · SUP · Snorkel · Coasteering · Foil', icon: 'MW', target: 'litoral', responsible: 'Laura García y Héctor Navarro según modalidad',
+      items: [
+        ['Kayak / SUP litoral', 'Remada, equilibrio, ruta costera, embarque y seguridad.', 'Experiencia / formación'],
+        ['Snorkel seguro', 'Equipo, respiración, flotabilidad, observación marina y respeto ambiental.', 'Experiencia'],
+        ['Coasteering', 'Progresión costera, trepadas, entradas al agua y retirada segura.', 'Experiencia técnica'],
+        ['Kitesurf iniciación', 'Ventana de viento, cometa, tracción, bodydrag y control básico.', 'Formación'],
+        ['Windsurf iniciación', 'Vela, tabla, equilibrio, dirección y navegación básica.', 'Formación'],
+        ['E-foil', 'Tabla eléctrica, batería, mando, velocidad y progresión segura.', 'Experiencia premium'],
+        ['Wingfoil / SUP foil', 'Wing, viento, equilibrio, foil, virajes y lectura de mar.', 'Formación avanzada'],
+        ['Waterman 3 días', 'Programa intensivo de SUP, foil, viento, rescate y autonomía progresiva.', 'Programa intensivo']
+      ],
+      note: 'La selección de modalidad depende del viento, el estado del mar, la zona de práctica y la disponibilidad del equipo técnico.'
+    },
+    {
+      number: '05', title: 'Barrancos, río y BTT', subtitle: 'Barranquismo · Rafting · Aguas bravas · Bicicleta', icon: 'RB', target: 'tierra', responsible: 'Raúl Giménez',
+      items: [
+        ['Barranco seco', 'Rápeles, destrepes, cuerda, escapes y progresión sin caudal.', 'Experiencia / formación'],
+        ['Barranco acuático', 'Neopreno, caudal, saltos, toboganes, rápeles y comunicación.', 'Experiencia técnica'],
+        ['Rafting / aguas bravas', 'Remada, lectura de corriente, embarcación, equipo y rescate básico.', 'Experiencia / formación'],
+        ['Hidrología aplicada', 'Corrientes, rebufos, caudal, obstáculos, escapes y decisiones.', 'Seguridad técnica'],
+        ['BTT técnico', 'Frenada, curvas, pendientes, trazada, mecánica y conducción natural.', 'Formación'],
+        ['Ruta BTT aventura', 'Planificación, orientación, desnivel, autonomía y seguridad en ruta.', 'Experiencia']
+      ],
+      note: 'Caudal, meteorología, terreno, escapes y nivel técnico determinan la viabilidad y el formato final de cada sesión.'
+    },
+    {
+      number: '06', title: 'Bushcraft, naturaleza y audiovisual', subtitle: 'Orientación · Vivac · Dron · FPV · 360', icon: 'NA', target: 'tierra', responsible: 'Iván Torres y Marcos López según área',
+      items: [
+        ['Técnicas de montaña', 'Orientación, meteorología, material, primeros auxilios y ruta.', 'Formación base'],
+        ['Bushcraft y supervivencia', 'Refugio, agua, fuego permitido, nudos, vivac y autonomía.', 'Formación outdoor'],
+        ['Orientación mapa / brújula / GPS', 'Rumbo, referencias, track, navegación y rutas seguras.', 'Formación técnica'],
+        ['Vivac y pernocta', 'Material, abrigo, normativa, impacto mínimo y gestión nocturna.', 'Experiencia formativa'],
+        ['Dron outdoor', 'Planificación, normativa, zonas restringidas y grabación segura.', 'Formación audiovisual'],
+        ['FPV / cámara 360', 'Grabación inmersiva, seguimiento, seguridad, edición y contenido vertical.', 'Producción audiovisual']
+      ],
+      note: 'Las prácticas audiovisuales se subordinan siempre a la seguridad, los permisos, la privacidad y la protección del medio natural.'
+    }
+  ];
+
+  const commonModules = [
+    {
+      icon: 'MC', title: 'Meteorología y condiciones', type: 'Seguridad',
+      description: 'Lectura de partes, viento, nubes, oleaje, térmicas, temperatura, tormentas y fenómenos locales de costa, montaña y aire.',
+      application: 'Ayuda a decidir si una actividad puede hacerse, debe adaptarse o debe aplazarse. Es clave en vuelo, costa, barrancos, montaña, buceo y operaciones con dron.',
+      detail: 'Se trabaja la interpretación de previsiones, dirección e intensidad del viento, rachas, cambios de presión, brisas térmicas, oleaje, visibilidad, tormentas, temperatura del agua, sensación térmica y señales naturales del entorno.'
+    },
+    {
+      icon: 'ON', title: 'Orientación y navegación', type: 'Técnica',
+      description: 'Mapa, brújula, GPS, altímetro, referencias del terreno, tracks, puntos de escape y lectura de ruta.',
+      application: 'Permite moverse con más criterio en montaña, costa, BTT, barrancos, bushcraft, vivac, rutas largas y zonas con poca cobertura.',
+      detail: 'Se trabaja lectura de mapa, curvas de nivel, rumbo, coordenadas, referencias visuales, navegación con GPS, planificación de track, regreso seguro, puntos de agua, accesos, salidas alternativas y gestión de pérdida de orientación.'
+    },
+    {
+      icon: 'PA', title: 'Primeros auxilios y respuesta inicial', type: 'Emergencia',
+      description: 'RCP básica, valoración inicial, hemorragias, golpes, hipotermia, calor, esguinces, heridas, mareos y activación de emergencias.',
+      application: 'Base imprescindible para cualquier actividad outdoor, especialmente cuando la ayuda puede tardar en llegar.',
+      detail: 'Se trabaja prevención, evaluación de escena, protección del grupo, aviso a emergencias, botiquín, control de sangrados, inmovilización básica y gestión inicial de caídas, cortes, agotamiento, hipotermia, calor, mareo o ansiedad.'
+    },
+    {
+      icon: 'GR', title: 'Gestión del riesgo', type: 'Seguridad',
+      description: 'Identificar peligros, valorar consecuencias y decidir cuándo avanzar, adaptar la actividad o retirarse.',
+      application: 'Es la base del criterio profesional: no todo lo que se puede hacer debe hacerse. La seguridad depende de leer el margen real de cada situación.',
+      detail: 'Se trabaja evaluación de riesgo, margen de seguridad, factores humanos, presión del grupo, exceso de confianza, fatiga, meteorología cambiante, material, terreno, agua, altura, visibilidad y toma de decisiones conservadora.'
+    },
+    {
+      icon: 'CP', title: 'Comunicación y protocolos', type: 'Base',
+      description: 'Briefing, señales visuales, radios, intercomunicadores, comunicación en emergencia y coordinación del grupo.',
+      application: 'La comunicación clara reduce errores antes, durante y después de la experiencia y confirma que el grupo comprende las instrucciones.',
+      detail: 'Se trabajan señales de buceo y pared, órdenes en rafting, comunicación en vuelo, radios, códigos simples, briefing previo, confirmación de instrucciones, comunicación guía-participante y protocolo ante separación o incidente.'
+    },
+    {
+      icon: 'MI', title: 'Medio natural y mínimo impacto', type: 'Medio natural',
+      description: 'Respeto a fauna, flora, fondos marinos, cuevas, acantilados, ríos, senderos y espacios protegidos.',
+      application: 'Nómada Extremo busca aventura sin destruir el entorno. La actividad debe adaptarse al medio, no al revés.',
+      detail: 'Se trabaja no dejar residuos, no molestar fauna, no dañar flora, no tocar formaciones en cuevas, no pisar fondos sensibles, respetar nidificación, reducir ruidos, cumplir normativa local y utilizar accesos adecuados.'
+    },
+    {
+      icon: 'MM', title: 'Material, checklists y mantenimiento', type: 'Técnica',
+      description: 'Revisión de equipo, vida útil, homologaciones, limpieza, almacenamiento y checklist antes de actividad.',
+      application: 'El material técnico no solo se compra: se revisa, se mantiene, se registra y se retira cuando corresponde.',
+      detail: 'Se trabaja revisión de arneses, cascos, cuerdas, mosquetones, neoprenos, chalecos, botellas, reguladores, velas, radios, baterías, drones, tablas, bicicletas, botiquines y material de emergencia, junto con checklists e inventario.'
+    },
+    {
+      icon: 'LP', title: 'Planificación, logística y permisos', type: 'Logística',
+      description: 'Reservas, horarios, accesos, transporte, permisos, seguros, documentación, ratios y coordinación técnica.',
+      application: 'Una actividad profesional empieza mucho antes de llegar al lugar. La logística evita improvisaciones y mejora la experiencia del grupo.',
+      detail: 'Se trabaja punto de encuentro, material, transporte, permisos de acceso, seguros en una versión operativa, centros autorizados, documentación del participante, ratios, condiciones de cancelación y planes alternativos.'
+    },
+    {
+      icon: 'FP', title: 'Condición física, hidratación y prevención', type: 'Base',
+      description: 'Preparación básica, fatiga, hidratación, alimentación, sueño, movilidad, calor, frío y prevención de lesiones.',
+      application: 'El nivel físico condiciona la seguridad. Cada ruta exige honestidad sobre el estado real de la persona y adaptación del ritmo.',
+      detail: 'Se trabaja esfuerzo percibido, calentamiento, movilidad, gestión de fatiga, hidratación, alimentación previa, ropa adecuada, protección solar, frío, calor, calambres, mareos, lesiones previas y progresión responsable.'
+    },
+    {
+      icon: 'LG', title: 'Briefing, liderazgo y gestión de grupo', type: 'Base',
+      description: 'Normas claras, roles, ritmo, control del grupo, toma de decisiones y comportamiento responsable.',
+      application: 'En aventura también importa cómo se comporta el grupo. El orden, el apoyo mutuo y el respeto protegen a todas las personas.',
+      detail: 'Se trabaja briefing inicial, expectativas, normas, roles, puntualidad, ritmo, señales de cansancio, gestión del miedo, convivencia, conducta en espacios naturales, apoyo entre participantes y respuesta ante comportamientos inseguros.'
+    }
+  ];
+
   const escapeHTML = (value) => String(value)
     .replaceAll('&', '&amp;')
     .replaceAll('<', '&lt;')
@@ -280,8 +423,56 @@
 
   const renderTags = (tags, className) => `<div class="${className}">${tags.map((tag) => `<span>${escapeHTML(tag)}</span>`).join('')}</div>`;
 
+  const overviewContainer = document.querySelector('#schoolOverviewGrid');
+  if (overviewContainer) {
+    overviewContainer.innerHTML = overviewRoutes.map((group) => `
+      <article class="school-overview-card reveal">
+        <header class="school-overview-card__head">
+          <span class="school-overview-card__number">${group.number}</span>
+          <span class="school-overview-card__icon" aria-hidden="true">${group.icon}</span>
+          <div>
+            <h3>${escapeHTML(group.title)}</h3>
+            <p>${escapeHTML(group.subtitle)}</p>
+          </div>
+        </header>
+        <div class="school-overview-card__routes">${group.items.map((item) => `
+          <div class="school-overview-route">
+            <div><h4>${escapeHTML(item[0])}</h4><span>${escapeHTML(item[2])}</span></div>
+            <p>${escapeHTML(item[1])}</p>
+          </div>`).join('')}</div>
+        <footer class="school-overview-card__footer">
+          <p>${escapeHTML(group.note)}</p>
+          <span><strong>Responsable técnico:</strong> ${escapeHTML(group.responsible)}</span>
+          <a href="#route-${group.target}" class="school-overview-card__link">Ver ruta completa</a>
+        </footer>
+      </article>`).join('');
+  }
+
+  const commonTrainingContainer = document.querySelector('#commonTrainingGrid');
+  if (commonTrainingContainer) {
+    commonTrainingContainer.innerHTML = commonModules.map((module, index) => `
+      <article class="common-training-card reveal">
+        <header class="common-training-card__head">
+          <span class="common-training-card__icon" aria-hidden="true">${module.icon}</span>
+          <span class="common-training-card__number">${String(index + 1).padStart(2, '0')}</span>
+          <div>
+            <span class="common-training-card__badge" data-type="${escapeHTML(module.type.toLowerCase())}">${escapeHTML(module.type)}</span>
+            <h3>${escapeHTML(module.title)}</h3>
+          </div>
+        </header>
+        <div class="common-training-card__body">
+          <p>${escapeHTML(module.description)}</p>
+          <div class="common-training-card__application"><strong>Aplicación real</strong><span>${escapeHTML(module.application)}</span></div>
+          <details class="common-training-card__detail">
+            <summary>Ver detalle</summary>
+            <p>${escapeHTML(module.detail)}</p>
+          </details>
+        </div>
+      </article>`).join('');
+  }
+
   container.innerHTML = routes.map((route) => `
-    <article class="route-card" style="--route-accent:${route.tone};--route-soft:#efd5b2;">
+    <article class="route-card" id="route-${route.id}" style="--route-accent:${route.tone};--route-soft:#efd5b2;">
       <header class="route-card__head">
         <span class="route-card__category">${escapeHTML(route.category)}</span>
         <h3>${escapeHTML(route.title)}</h3>

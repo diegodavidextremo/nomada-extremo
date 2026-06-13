@@ -632,23 +632,555 @@
   color: var(--blanco) !important;
 }
 
+/* Mapa rápido de itinerarios formativos */
+.school-overview__lead,
+.school-overview__intro {
+  max-width: 880px;
+  color: var(--gris-calido);
+  line-height: 1.75;
+}
+
+.school-overview__lead {
+  margin: 1.35rem 0 0;
+  color: var(--gris-oscuro);
+  font-size: clamp(1rem, 1.6vw, 1.16rem);
+  font-weight: 600;
+}
+
+.school-overview__intro {
+  margin: 0.7rem 0 0;
+  font-size: 0.92rem;
+}
+
+.school-overview__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(1rem, 2vw, 1.35rem);
+  margin-top: clamp(2rem, 4vw, 3rem);
+  align-items: stretch;
+}
+
+.school-overview-card {
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(196, 150, 106, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 18px 44px rgba(20, 39, 56, 0.09);
+}
+
+.school-overview-card__head {
+  position: relative;
+  min-height: 128px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.65rem 0.85rem;
+  align-items: start;
+  padding: 1.15rem;
+  color: var(--blanco);
+  background: linear-gradient(145deg, #102c40, #1e4a6b 64%, #315b52);
+}
+
+.school-overview-card__head::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: linear-gradient(90deg, var(--arena), var(--arena-claro));
+}
+
+.school-overview-card__number,
+.school-overview-card__icon {
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.school-overview-card__number {
+  width: 2.2rem;
+  height: 2.2rem;
+  color: var(--arena-claro);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 50%;
+}
+
+.school-overview-card__icon {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 2rem;
+  height: 2rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  border-radius: 7px;
+}
+
+.school-overview-card__head > div {
+  min-width: 0;
+  padding-right: 2.3rem;
+}
+
+.school-overview-card__head h3 {
+  margin: 0;
+  color: var(--blanco) !important;
+  font-family: var(--display);
+  font-size: clamp(1.45rem, 2.4vw, 1.9rem);
+  line-height: 0.98;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.school-overview-card__head p {
+  margin: 0.42rem 0 0;
+  color: rgba(245, 242, 236, 0.78);
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+.school-overview-card__routes {
+  display: grid;
+  gap: 0;
+  padding: 0.4rem 1.1rem 0;
+}
+
+.school-overview-route {
+  min-width: 0;
+  padding: 0.78rem 0;
+  border-bottom: 1px solid var(--crema-media);
+}
+
+.school-overview-route > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+
+.school-overview-route h4 {
+  margin: 0;
+  color: var(--gris-oscuro);
+  font-size: 0.83rem;
+  line-height: 1.3;
+}
+
+.school-overview-route span {
+  flex: 0 0 auto;
+  max-width: 46%;
+  padding: 0.23rem 0.45rem;
+  color: var(--mar);
+  background: var(--cielo);
+  border: 1px solid var(--cielo-medio);
+  border-radius: 999px;
+  font-size: 0.56rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.school-overview-route p {
+  margin: 0.28rem 0 0;
+  color: var(--gris-calido);
+  font-size: 0.73rem;
+  line-height: 1.55;
+}
+
+.school-overview-card__footer {
+  display: grid;
+  gap: 0.72rem;
+  margin-top: auto;
+  padding: 1rem 1.1rem 1.1rem;
+  background: rgba(239, 228, 211, 0.42);
+}
+
+.school-overview-card__footer p,
+.school-overview-card__footer span {
+  margin: 0;
+  color: var(--gris-calido);
+  font-size: 0.69rem;
+  line-height: 1.55;
+}
+
+.school-overview-card__footer span {
+  color: var(--gris-oscuro);
+}
+
+.school-overview-card__link {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.65rem 0.9rem;
+  color: var(--blanco);
+  background: var(--mar);
+  border-radius: 8px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.school-overview-card__link:hover,
+.school-overview-card__link:focus-visible {
+  color: var(--blanco);
+  background: var(--mar-claro);
+  transform: translateY(-1px);
+}
+
+.school-overview__closing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+  padding: clamp(1rem, 2.5vw, 1.4rem);
+  background: var(--blanco);
+  border: 1px solid rgba(196, 150, 106, 0.28);
+  border-left: 4px solid var(--arena);
+  border-radius: 12px;
+}
+
+.school-overview__closing p {
+  max-width: 850px;
+  margin: 0;
+  color: var(--gris-calido);
+  font-size: 0.82rem;
+  line-height: 1.7;
+}
+
+.school-overview__closing .btn {
+  flex: 0 0 auto;
+}
+
+.route-card[id] {
+  scroll-margin-top: 150px;
+}
+
+/* Formación transversal común */
+.common-training__lead,
+.common-training__intro {
+  max-width: 900px;
+  line-height: 1.75;
+}
+
+.common-training__lead {
+  margin: 1.35rem 0 0;
+  color: var(--gris-oscuro);
+  font-size: clamp(1rem, 1.6vw, 1.16rem);
+  font-weight: 600;
+}
+
+.common-training__intro {
+  margin: 0.7rem 0 0;
+  color: var(--gris-calido);
+  font-size: 0.92rem;
+}
+
+.common-training__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(1rem, 2vw, 1.35rem);
+  margin-top: clamp(2rem, 4vw, 3rem);
+  align-items: stretch;
+}
+
+.common-training-card {
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--blanco);
+  border: 1px solid rgba(74, 115, 80, 0.2);
+  border-radius: 14px;
+  box-shadow: 0 16px 38px rgba(20, 39, 56, 0.08);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.common-training-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(196, 150, 106, 0.48);
+  box-shadow: 0 22px 48px rgba(20, 39, 56, 0.12);
+}
+
+.common-training-card__head {
+  position: relative;
+  min-height: 142px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.8rem;
+  align-items: start;
+  padding: 1.1rem;
+  color: var(--blanco);
+  background: linear-gradient(145deg, #17362b, #285846 62%, #1d4658);
+}
+
+.common-training-card__head::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: linear-gradient(90deg, var(--salvia), var(--arena));
+}
+
+.common-training-card__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-grid;
+  place-items: center;
+  color: var(--arena-claro);
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9px;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+.common-training-card__number {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  color: rgba(255, 255, 255, 0.44);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.common-training-card__head > div {
+  min-width: 0;
+  padding-right: 1.7rem;
+}
+
+.common-training-card__badge {
+  display: inline-flex;
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.22rem 0.48rem;
+  color: var(--blanco);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  font-size: 0.56rem;
+  font-weight: 800;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.common-training-card__head h3 {
+  margin: 0;
+  color: var(--blanco) !important;
+  font-family: var(--display);
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.common-training-card__body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding: 1.05rem;
+}
+
+.common-training-card__body > p {
+  margin: 0;
+  color: var(--gris-calido);
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+
+.common-training-card__application {
+  display: grid;
+  gap: 0.3rem;
+  padding: 0.8rem;
+  background: rgba(222, 235, 225, 0.52);
+  border-left: 3px solid var(--bosque-claro);
+  border-radius: 8px;
+}
+
+.common-training-card__application strong {
+  color: var(--bosque);
+  font-size: 0.63rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.common-training-card__application span {
+  color: var(--gris-oscuro);
+  font-size: 0.73rem;
+  line-height: 1.55;
+}
+
+.common-training-card__detail {
+  margin-top: auto;
+  border: 1px solid var(--crema-media);
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.common-training-card__detail summary {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+  padding: 0.65rem 0.8rem;
+  color: var(--mar);
+  background: var(--crema);
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-weight: 800;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.common-training-card__detail summary::-webkit-details-marker {
+  display: none;
+}
+
+.common-training-card__detail summary::after {
+  content: '+';
+  width: 1.45rem;
+  height: 1.45rem;
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 auto;
+  color: var(--mar);
+  border: 1px solid var(--cielo-medio);
+  border-radius: 50%;
+}
+
+.common-training-card__detail[open] summary::after {
+  content: '−';
+}
+
+.common-training-card__detail p {
+  margin: 0;
+  padding: 0.85rem;
+  color: var(--gris-calido);
+  font-size: 0.74rem;
+  line-height: 1.65;
+  border-top: 1px solid var(--crema-media);
+}
+
+.common-training__closing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+  padding: clamp(1.1rem, 2.5vw, 1.5rem);
+  color: var(--blanco);
+  background: linear-gradient(145deg, #17362b, #285846 65%, #1d4658);
+  border: 1px solid rgba(196, 150, 106, 0.36);
+  border-radius: 12px;
+}
+
+.common-training__closing > div {
+  min-width: 0;
+}
+
+.common-training__closing h3 {
+  margin: 0 0 0.35rem;
+  color: var(--blanco) !important;
+  font-family: var(--display);
+  font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.common-training__closing p {
+  max-width: 830px;
+  margin: 0;
+  color: rgba(245, 242, 236, 0.8);
+  font-size: 0.8rem;
+  line-height: 1.65;
+}
+
+.common-training__closing .btn {
+  flex: 0 0 auto;
+  background: var(--arena);
+  border-color: var(--arena);
+  color: var(--gris-oscuro);
+}
+
 body.route-dialog-open {
   overflow: hidden;
 }
 
 @media (min-width: 700px) {
+  .school-overview__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .common-training__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .learning-route-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 1200px) {
+  .school-overview__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .learning-route-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .common-training__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .common-training-card:nth-child(9) {
+    grid-column: 2;
   }
 }
 
 @media (max-width: 699px) {
+  .school-overview-route > div,
+  .school-overview__closing {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .school-overview-route span {
+    align-self: flex-start;
+    max-width: 100%;
+  }
+
+  .school-overview__closing .btn {
+    width: 100%;
+  }
+
+  .common-training__closing {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .common-training__closing .btn {
+    width: 100%;
+  }
+
   .route-card__head {
     min-height: 138px;
   }
@@ -695,7 +1227,9 @@ body.route-dialog-open {
 
 @media (prefers-reduced-motion: reduce) {
   .route-card,
-  .route-card__button {
+  .route-card__button,
+  .school-overview-card__link,
+  .common-training-card {
     transition: none;
   }
 }
