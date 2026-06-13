@@ -65,6 +65,7 @@
   letter-spacing: 1px;
   line-height: 0.95;
   overflow-wrap: anywhere;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.24);
 }
 
 .route-card__count {
@@ -386,6 +387,251 @@
   border-top: 1px solid var(--crema-media);
 }
 
+.route-dialog__licenses,
+.route-pro-program {
+  margin-top: 1.4rem;
+}
+
+.route-dialog__section-heading {
+  margin-bottom: 0.85rem;
+  padding: 1rem;
+  background: linear-gradient(145deg, rgba(30, 74, 107, 0.08), rgba(196, 150, 106, 0.1));
+  border: 1px solid rgba(30, 74, 107, 0.13);
+  border-radius: 12px;
+}
+
+.route-dialog__section-heading > span,
+.route-pro-program__head > span {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--arena);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.route-dialog__section-heading h3,
+.route-pro-program__head h3 {
+  margin: 0 0 0.45rem;
+  color: var(--gris-oscuro);
+  font-family: var(--display);
+  font-size: clamp(1.45rem, 3vw, 2.1rem);
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  line-height: 1;
+}
+
+.route-dialog__section-heading p,
+.route-pro-program__head p,
+.route-special-requirements p {
+  margin: 0;
+  color: var(--gris-calido);
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+
+.route-license-grid,
+.route-pro-grid,
+.route-dialog__accordion-stack {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.route-accordion {
+  min-width: 0;
+  overflow: hidden;
+  background: #fbfaf7;
+  border: 1px solid var(--crema-media);
+  border-radius: 11px;
+}
+
+.route-accordion summary {
+  position: relative;
+  min-height: 54px;
+  padding: 0.78rem 2.7rem 0.78rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.16rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.route-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.route-accordion summary::after {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 0.82rem;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  color: var(--mar);
+  border: 1px solid rgba(30, 74, 107, 0.22);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.route-accordion[open] summary::after {
+  content: '−';
+}
+
+.route-accordion summary strong {
+  color: var(--gris-oscuro);
+  font-size: 0.78rem;
+  line-height: 1.3;
+}
+
+.route-accordion summary span {
+  color: var(--gris-calido);
+  font-size: 0.68rem;
+  line-height: 1.35;
+}
+
+.route-accordion__content {
+  padding: 0.95rem;
+  border-top: 1px solid var(--crema-media);
+}
+
+.route-accordion__content > div + div {
+  margin-top: 0.8rem;
+}
+
+.route-accordion__content h4,
+.route-special-requirements h4 {
+  margin: 0 0 0.25rem;
+  color: var(--mar);
+  font-size: 0.68rem;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.route-accordion__content p {
+  margin: 0;
+  color: var(--gris-calido);
+  font-size: 0.76rem;
+  line-height: 1.6;
+}
+
+.route-pro-program {
+  padding: clamp(1rem, 3vw, 1.5rem);
+  color: var(--blanco);
+  background: linear-gradient(145deg, #101f2b, #173f58 58%, #294f45);
+  border: 1px solid rgba(196, 150, 106, 0.32);
+  border-radius: 14px;
+}
+
+.route-pro-program__head {
+  margin-bottom: 1rem;
+}
+
+.route-pro-program__head h3 {
+  color: var(--blanco);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+.route-pro-program__head p {
+  color: rgba(245, 242, 236, 0.82);
+}
+
+.route-pro-module {
+  background: rgba(255, 255, 255, 0.075);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.route-pro-module summary strong {
+  color: var(--blanco);
+}
+
+.route-pro-module summary span {
+  color: rgba(245, 242, 236, 0.72);
+}
+
+.route-pro-module summary::after {
+  color: var(--arena-claro);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.route-pro-module .route-accordion__content {
+  background: rgba(255, 255, 255, 0.04);
+  border-top-color: rgba(255, 255, 255, 0.14);
+}
+
+.route-pro-module .route-accordion__content h4 {
+  color: var(--arena-claro);
+}
+
+.route-pro-module .route-accordion__content p {
+  color: rgba(245, 242, 236, 0.8);
+}
+
+.route-dialog__tags--pro {
+  border-top-color: rgba(255, 255, 255, 0.16);
+}
+
+.route-dialog__tags--pro span {
+  color: var(--blanco);
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.17);
+}
+
+.route-special-requirements {
+  margin-top: 1rem;
+  padding: 0.95rem;
+  background: rgba(196, 150, 106, 0.12);
+  border-left: 4px solid var(--arena);
+  border-radius: 10px;
+}
+
+.route-special-requirements h4 {
+  color: var(--arena-claro);
+}
+
+.route-special-requirements p {
+  color: rgba(245, 242, 236, 0.82);
+}
+
+.route-dialog__accordion-stack {
+  margin-top: 0.9rem;
+}
+
+.route-info-accordion--safety {
+  border-left: 4px solid var(--mar);
+}
+
+.route-info-accordion--result {
+  border-left: 4px solid var(--arena);
+}
+
+/* Contraste defensivo para cabeceras oscuras de Escuela */
+.escuela-page .route-card__head,
+.escuela-page .route-dialog__header,
+.escuela-page .route-pro-program,
+.escuela-page .learning-head,
+.escuela-page .credencial {
+  color: var(--blanco);
+}
+
+.escuela-page .route-card__head h3,
+.escuela-page .route-card__category,
+.escuela-page .route-card__count,
+.escuela-page .route-dialog__header h2,
+.escuela-page .route-dialog__kicker,
+.escuela-page .route-pro-program h3,
+.escuela-page .learning-head h3,
+.escuela-page .learning-kicker,
+.escuela-page .learning-count,
+.escuela-page .credencial-nombre,
+.escuela-page .credencial-logo {
+  color: var(--blanco) !important;
+}
+
 body.route-dialog-open {
   overflow: hidden;
 }
@@ -424,7 +670,10 @@ body.route-dialog-open {
   .route-dialog__facts,
   .route-dialog__sections,
   .route-dialog__module-grid,
-  .route-dialog__extra-grid {
+  .route-dialog__extra-grid,
+  .route-license-grid,
+  .route-pro-grid,
+  .route-dialog__accordion-stack {
     grid-template-columns: 1fr;
   }
 }

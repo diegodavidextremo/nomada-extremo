@@ -80,13 +80,53 @@
       safety: 'Progresión en instalaciones autorizadas con profesionales habilitados. Se revisan equipo, meteorología, viento, avión, altura, altímetro, AAD, principal, reserva, zona de salto, aterrizaje y emergencias.',
       achievement: 'Una ruta clara desde el primer salto AFF hasta la progresión hacia autonomía, licencias, seguridad, control corporal y manejo de campana.',
       after: 'Acumular saltos, obtener licencias, participar en saltos con otros paracaidistas y progresar en formación, freefly, campana, precisión o funciones técnicas con requisitos adicionales.',
-      extrasTitle: 'Progresión de licencias',
-      extras: [
-        ['Licencia A', 'Primera licencia importante. Suele exigir programa de progresión, evaluaciones, seguridad básica, aterrizajes controlados y un mínimo de saltos.'],
-        ['Licencia B', 'Añade experiencia, tiempo de caída libre, control de campana, precisión y formación complementaria según el sistema.'],
-        ['Licencia C', 'Nivel avanzado con más saltos, precisión y experiencia en formación; puede abrir progresiones adicionales según organización.'],
-        ['Licencia D', 'Nivel superior en sistemas como USPA, con gran experiencia acumulada y requisitos avanzados adicionales.']
+      licenseIntro: 'Tras completar el curso AFF y los saltos de consolidación, el paracaidista puede avanzar hacia las licencias deportivas. Cada licencia representa más experiencia, autonomía, control en caída libre, manejo de campana y acceso a formaciones avanzadas. Los requisitos exactos dependen del centro, federación y sistema de referencia.',
+      licenses: [
+        {
+          name: 'Licencia A',
+          jumps: '25 saltos orientativos',
+          evaluation: 'AFF completado, consolidación, tarjeta de progresión, examen práctico, escrito y evaluación oral.',
+          permits: 'Primera autonomía deportiva: permite comenzar a saltar sin supervisión directa como alumno, acumular experiencia, participar en formaciones básicas con paracaidistas con licencia y avanzar hacia la licencia B.',
+          focus: 'Seguridad básica, estabilidad, conciencia de altura, apertura, manejo de campana, patrón de aterrizaje y criterio responsable.'
+        },
+        {
+          name: 'Licencia B',
+          jumps: '50 saltos · 30 minutos de caída libre orientativos',
+          evaluation: 'Licencia A o equivalente, experiencia adicional, formación de campana, entrenamiento de agua, aterrizajes, formación y examen escrito.',
+          permits: 'Abre más eventos y saltos organizados, progresiones técnicas y saltos nocturnos cuando se cumplan briefing, requisitos y condiciones del centro.',
+          focus: 'Precisión, control bajo campana, experiencia con otros paracaidistas, planificación, meteorología y seguridad.'
+        },
+        {
+          name: 'Licencia C',
+          jumps: '200 saltos · 60 minutos de caída libre orientativos',
+          evaluation: 'Licencia B o equivalente, precisión de aterrizaje, saltos de formación, control avanzado y examen escrito.',
+          permits: 'Acceso a formaciones exigentes, eventos de mayor nivel y progresiones de freefly, tracking, ángulo, campana avanzada, cámara aérea y wingsuit con su formación específica.',
+          focus: 'Conciencia espacial, separación, control corporal, aterrizajes y apertura hacia especialidades avanzadas.'
+        },
+        {
+          name: 'Licencia D',
+          jumps: '500 saltos · 180 minutos de caída libre orientativos',
+          evaluation: 'Licencia C o equivalente, experiencia elevada, examen escrito, precisión, formaciones avanzadas y requisitos adicionales del sistema.',
+          permits: 'Acceso a progresiones profesionales, ratings, demostraciones con requisitos específicos, grandes formaciones, programas avanzados y proyectos técnicos de alto nivel.',
+          focus: 'Experiencia sólida, criterio avanzado, dominio general y acceso a rutas profesionales y especialidades complejas.'
+        }
       ],
+      advancedIntro: 'Después de completar AFF, obtener licencia y acumular experiencia, Nómada Extremo puede coordinar formaciones especiales junto a instructores, centros autorizados y colaboradores técnicos. La Ruta Pro permite seguir creciendo más allá de la licencia básica con una progresión segura y estructurada.',
+      advancedModules: [
+        ['Campana avanzada', 'Licencia B o progresión equivalente', '50+ saltos orientativos', 'Patrón, tráfico, flare, precisión, viento, velocidad, giros y decisiones bajo campana.', 'Coach de campana / centro autorizado'],
+        ['Formación en caída libre', 'Licencia A', '25+ saltos orientativos', 'Posiciones, aproximaciones, separación, docks, salidas, coordinación y seguridad en grupo.', 'Coach de formación'],
+        ['Freefly', 'Licencia B recomendada', 'Experiencia estable en formación', 'Sit-fly, head-up, head-down, transiciones, control corporal, altitud y separación.', 'Coach de freefly'],
+        ['Tracking y angle flying', 'Licencia B/C según programa', 'Experiencia previa en grupo', 'Dirección, velocidad, navegación, líder, break-off, apertura y control del espacio aéreo.', 'Coach especializado'],
+        ['Wingsuit First Flight Course', 'Licencia vigente y control consolidado', '200 saltos como referencia habitual', 'Ruta, salida, separación, navegación, apertura, campana y aterrizaje con wingsuit.', 'Instructor wingsuit autorizado'],
+        ['Cámara aérea', 'Licencia C recomendada', '200 saltos como referencia habitual', 'Montaje, enganches, prioridades, separación, seguimiento, consentimiento y aterrizaje.', 'Cámara flyer / coach especializado'],
+        ['Saltos nocturnos', 'Licencia B o superior', 'Experiencia y briefing específico', 'Referencias, iluminación, altímetro visible, comunicación, patrón y equipo nocturno.', 'Centro e instructor autorizado'],
+        ['Saltos desde globo', 'Licencia y autonomía consolidada', 'Según centro y operador', 'Salida sin viento relativo inicial, altura, posición, apertura, separación y aterrizaje.', 'Operador de globo + centro de salto'],
+        ['Saltos desde helicóptero', 'Licencia y autonomía consolidada', 'Según centro y aeronave', 'Briefing con piloto, embarque, salida, altura, viento, separación y coordinación.', 'Centro de salto + operador aéreo'],
+        ['Demostración y precisión', 'Licencia avanzada', 'Experiencia y precisión verificadas', 'Zona, obstáculos, público, viento, permisos, coordinación y aterrizajes precisos.', 'Coach de precisión / organizador autorizado'],
+        ['High Altitude / HALO introductorio', 'Licencia avanzada', 'Experiencia definida por el programa', 'Oxígeno, hipoxia, temperatura, aeronave, planificación, altura, apertura y equipo.', 'Centro especializado en gran altitud'],
+        ['Introducción formativa al BASE', 'Trayectoria avanzada en paracaidismo', 'Alta experiencia y valoración del mentor', 'Diferencias con avión, material, riesgos, requisitos, preparación y derivación a especialistas.', 'Mentor o instructor BASE especializado']
+      ],
+      specialRequirements: 'Las especializaciones avanzadas se organizan según experiencia, licencia, requisitos del centro, meteorología, permisos, disponibilidad de instructores y criterio técnico. Cada disciplina tiene una progresión propia, por eso se plantean como rutas avanzadas coordinadas con profesionales y centros autorizados.',
       tags: ['AFF', 'Caída libre', 'Campana', 'Licencia A', 'Licencia B', 'Licencia C', 'Licencia D', 'Autonomía']
     },
     {
@@ -287,6 +327,56 @@
   const closeButton = dialog.querySelector('.route-dialog__close');
   let lastTrigger = null;
 
+  function renderLicenseProgram(route) {
+    if (!route.licenses?.length) return '';
+
+    return `
+      <section class="route-dialog__licenses">
+        <div class="route-dialog__section-heading">
+          <span>Progresión deportiva</span>
+          <h3>Licencias de paracaidismo y progresión deportiva</h3>
+          <p>${escapeHTML(route.licenseIntro)}</p>
+        </div>
+        <div class="route-license-grid">${route.licenses.map((license) => `
+          <details class="route-accordion route-license">
+            <summary><strong>${escapeHTML(license.name)}</strong><span>${escapeHTML(license.jumps)}</span></summary>
+            <div class="route-accordion__content">
+              <div><h4>Evaluación habitual</h4><p>${escapeHTML(license.evaluation)}</p></div>
+              <div><h4>Qué permite</h4><p>${escapeHTML(license.permits)}</p></div>
+              <div><h4>Enfoque de la etapa</h4><p>${escapeHTML(license.focus)}</p></div>
+            </div>
+          </details>`).join('')}</div>
+      </section>`;
+  }
+
+  function renderAdvancedProgram(route) {
+    if (!route.advancedModules?.length) return '';
+
+    return `
+      <section class="route-pro-program">
+        <div class="route-pro-program__head">
+          <span>Ruta Pro</span>
+          <h3>Programa Avanzado de Especializaciones en Paracaidismo</h3>
+          <p>${escapeHTML(route.advancedIntro)}</p>
+        </div>
+        <div class="route-pro-grid">${route.advancedModules.map((module) => `
+          <details class="route-accordion route-pro-module">
+            <summary><strong>${escapeHTML(module[0])}</strong><span>${escapeHTML(module[1])}</span></summary>
+            <div class="route-accordion__content">
+              <div><h4>Experiencia orientativa</h4><p>${escapeHTML(module[2])}</p></div>
+              <div><h4>Qué se trabaja</h4><p>${escapeHTML(module[3])}</p></div>
+              <div><h4>Responsable</h4><p>${escapeHTML(module[4])}</p></div>
+            </div>
+          </details>`).join('')}</div>
+        ${renderTags(['Campana avanzada', 'Formación', 'Freefly', 'Tracking', 'Angle', 'Wingsuit', 'Cámara', 'Nocturno', 'Globo', 'Helicóptero', 'Precisión', 'HALO', 'BASE intro'], 'route-dialog__tags route-dialog__tags--pro')}
+        <div class="route-special-requirements"><h4>Formaciones especiales con requisitos propios</h4><p>${escapeHTML(route.specialRequirements)}</p></div>
+      </section>`;
+  }
+
+  function renderAccordion(title, content, className = '') {
+    return `<details class="route-accordion route-info-accordion ${className}"><summary><strong>${escapeHTML(title)}</strong></summary><div class="route-accordion__content"><p>${escapeHTML(content)}</p></div></details>`;
+  }
+
   function renderRouteDetail(route) {
     const extras = route.extras?.length ? `
       <section class="route-dialog__extra">
@@ -306,12 +396,16 @@
         <div class="route-dialog__module-grid">${route.modules.map((module, index) => `<div class="route-dialog__module"><h4><span>${String(index + 1).padStart(2, '0')}</span>${escapeHTML(module[0])}</h4><p>${escapeHTML(module[1])}</p></div>`).join('')}</div>
       </section>
       ${extras}
+      ${renderLicenseProgram(route)}
+      ${renderAdvancedProgram(route)}
       <div class="route-dialog__sections">
         <section class="route-dialog__section"><h3>Formación asociada</h3><p>${escapeHTML(route.training)}</p></section>
-        <section class="route-dialog__section"><h3>Requisitos</h3><p>${escapeHTML(route.requirements)}</p></section>
-        <section class="route-dialog__section route-dialog__section--safety"><h3>Seguridad</h3><p>${escapeHTML(route.safety)}</p></section>
         <section class="route-dialog__section route-dialog__section--result"><h3>Qué se consigue</h3><p>${escapeHTML(route.achievement)}</p></section>
-        <section class="route-dialog__section route-dialog__section--result"><h3>Qué puedes hacer después</h3><p>${escapeHTML(route.after)}</p></section>
+      </div>
+      <div class="route-dialog__accordion-stack">
+        ${renderAccordion('Requisitos', route.requirements)}
+        ${renderAccordion('Seguridad', route.safety, 'route-info-accordion--safety')}
+        ${renderAccordion('Qué puedes hacer después', route.after, 'route-info-accordion--result')}
       </div>
       ${renderTags(route.tags, 'route-dialog__tags')}`;
   }
