@@ -1,0 +1,355 @@
+(() => {
+  const container = document.querySelector('#learningRoutes');
+  if (!container) return;
+
+  const routes = [
+    {
+      id: 'parapente',
+      tone: '#d2a064',
+      title: 'Parapente',
+      category: 'Ruta aire libre',
+      count: '7 módulos',
+      start: 'Biplaza de iniciación',
+      goal: 'Autonomía supervisada',
+      reference: 'Federación autonómica, escuela autorizada y progresión técnica en vuelo libre.',
+      responsible: 'Álvaro González',
+      modules: [
+        ['Biplaza de iniciación', 'Primer contacto con despegue, vuelo, aterrizaje, posición corporal y sensaciones reales acompañado por un piloto biplaza.'],
+        ['Control de campa', 'Inflado, estabilización y control de la vela en tierra para comprender viento, frenos, bandas y respuesta del ala.'],
+        ['Técnicas básicas', 'Nociones de despegue, carrera, dirección, velocidad, aproximación y aterrizaje.'],
+        ['Meteorología', 'Lectura de viento, brisas, térmicas, rachas, nubes, turbulencia y condiciones no aptas para volar.'],
+        ['Seguridad activa', 'Revisión de equipo, casco, arnés, radio, emergencia, separación y criterio conservador.'],
+        ['Autonomía progresiva', 'Vuelos supervisados, control de altura, circuito de aproximación, aterrizaje y toma de decisiones.'],
+        ['Cross country', 'Introducción al vuelo de distancia, planificación, gestión de altura y aterrizajes alternativos.']
+      ],
+      training: 'Curso de iniciación al parapente, control de campa, progresión supervisada, meteorología básica, seguridad en vuelo libre y prácticas de autonomía con instructor.',
+      requirements: 'Condición física básica, capacidad para correr en despegue y aterrizaje, ausencia de lesiones incompatibles, comprensión de instrucciones y respeto al criterio técnico.',
+      safety: 'Actividad condicionada por meteorología. Se revisan vela, líneas, arnés, casco, mosquetones, radio, emergencia, despegue, aterrizaje y margen de viento. Si las condiciones no son claras, se aplaza.',
+      achievement: 'Comprender el parapente desde la base: sensaciones, control de vela, meteorología, seguridad, despegue, aterrizaje y progresión hacia vuelos supervisados.',
+      after: 'Continuar hacia una formación completa de piloto, mejorar el control de campa, realizar vuelos supervisados y avanzar, con experiencia suficiente, hacia el vuelo de distancia.',
+      tags: ['Biplaza', 'Campa', 'Meteorología', 'Seguridad', 'Vuelo libre', 'Autonomía', 'Cross country']
+    },
+    {
+      id: 'paramotor',
+      tone: '#b47855',
+      title: 'Paramotor / Paratrike',
+      category: 'Ruta vuelo motor',
+      count: '7 módulos',
+      start: 'Biplaza paratrike',
+      goal: 'Seguridad avanzada',
+      reference: 'Federación autonómica, escuela autorizada, normativa aérea y progresión en vuelo motorizado.',
+      responsible: 'Álvaro González',
+      modules: [
+        ['Biplaza paratrike', 'Primera experiencia para conocer despegue, navegación, motor, vibraciones, aterrizaje y sensaciones del vuelo motorizado.'],
+        ['Teoría del motor', 'Motor, chasis, hélice, combustible, empuje, mantenimiento básico, revisiones y funcionamiento general.'],
+        ['Control de vela', 'Inflado, orientación al viento, campa, asistencia al despegue y control del ala antes de añadir potencia.'],
+        ['Técnica de vuelo', 'Despegue, altura, virajes, potencia, aproximación, aterrizaje y coordinación entre vela y motor.'],
+        ['Navegación', 'Viento, ruta, referencias, consumo, autonomía, regreso, zonas seguras y toma de decisiones.'],
+        ['Revisión de equipo', 'Checklist de motor, vela, arnés, emergencia, hélice, tornillería, combustible, líneas y radio.'],
+        ['Emergencias', 'Parada de motor, aterrizaje preventivo, pérdida de altura, incidencias y decisiones conservadoras.']
+      ],
+      training: 'Iniciación al paramotor o paratrike, teoría de motor, control de vela, navegación básica, seguridad aérea, mantenimiento preventivo y gestión de emergencias.',
+      requirements: 'Condición física básica, peso dentro del margen operativo, capacidad para seguir instrucciones, comprensión del briefing y respeto al criterio del instructor.',
+      safety: 'Revisión de motor, vela, arnés, casco, radio, combustible, hélice, líneas, zonas de despegue y aterrizaje, viento, rachas, turbulencia y margen operativo. No se vuela con condiciones dudosas.',
+      achievement: 'Entender la diferencia entre vuelo libre y motorizado, conocer el equipo, interpretar el viento, comprender la navegación y adquirir una base real de seguridad.',
+      after: 'Continuar hacia formación completa de piloto, acumular horas supervisadas, mejorar el control de vela y progresar en navegación segura.',
+      tags: ['Paratrike', 'Paramotor', 'Motor', 'Navegación', 'Seguridad', 'Emergencias', 'Vuelo motorizado']
+    },
+    {
+      id: 'aff',
+      tone: '#b95555',
+      title: 'Paracaidismo AFF',
+      category: 'Ruta caída libre',
+      count: '8 niveles + licencias',
+      start: 'AFF Nivel 1',
+      goal: 'Licencias A / B / C / D',
+      reference: 'RFAE, centro autorizado y progresión oficial del centro; referencia internacional tipo USPA.',
+      responsible: 'Álvaro González + centro autorizado colaborador',
+      modules: [
+        ['AFF Nivel 1', 'Primer salto acompañado: posición corporal, altura, apertura, comunicación y aterrizaje asistido.'],
+        ['AFF Niveles 2 a 4', 'Estabilidad, señales, orientación, relajación y primeros movimientos controlados.'],
+        ['AFF Niveles 5 a 8', 'Giros, recuperación, salida autónoma, control avanzado y mayor independencia.'],
+        ['Campana y aterrizaje', 'Patrón de vuelo, tráfico, viento, flare, zona de aterrizaje y toma de decisiones.'],
+        ['Equipo y emergencia', 'Arnés, contenedor, principal, reserva, AAD, altímetro y procedimientos de emergencia.'],
+        ['Saltos de consolidación', 'Estabilidad, precisión, confianza, lectura de altura, control corporal y aterrizajes consistentes.'],
+        ['Licencia A', 'Primer objetivo de autonomía básica dentro del sistema y centro correspondientes.'],
+        ['Licencias B / C / D', 'Progresión avanzada por experiencia, saltos, caída libre, precisión y habilidades adicionales.']
+      ],
+      training: 'Curso AFF, teoría de primer salto, emergencias, control corporal, manejo de campana, aterrizaje, saltos supervisados, evaluaciones y progresión hacia licencias según centro o federación.',
+      requirements: 'Edad mínima y documentación según centro, condición física adecuada, briefing, posible cuestionario o certificado médico, seguro y cumplimiento de las normas del aeródromo.',
+      safety: 'Progresión en instalaciones autorizadas con profesionales habilitados. Se revisan equipo, meteorología, viento, avión, altura, altímetro, AAD, principal, reserva, zona de salto, aterrizaje y emergencias.',
+      achievement: 'Una ruta clara desde el primer salto AFF hasta la progresión hacia autonomía, licencias, seguridad, control corporal y manejo de campana.',
+      after: 'Acumular saltos, obtener licencias, participar en saltos con otros paracaidistas y progresar en formación, freefly, campana, precisión o funciones técnicas con requisitos adicionales.',
+      extrasTitle: 'Progresión de licencias',
+      extras: [
+        ['Licencia A', 'Primera licencia importante. Suele exigir programa de progresión, evaluaciones, seguridad básica, aterrizajes controlados y un mínimo de saltos.'],
+        ['Licencia B', 'Añade experiencia, tiempo de caída libre, control de campana, precisión y formación complementaria según el sistema.'],
+        ['Licencia C', 'Nivel avanzado con más saltos, precisión y experiencia en formación; puede abrir progresiones adicionales según organización.'],
+        ['Licencia D', 'Nivel superior en sistemas como USPA, con gran experiencia acumulada y requisitos avanzados adicionales.']
+      ],
+      tags: ['AFF', 'Caída libre', 'Campana', 'Licencia A', 'Licencia B', 'Licencia C', 'Licencia D', 'Autonomía']
+    },
+    {
+      id: 'escalada',
+      tone: '#8b674d',
+      title: 'Escalada',
+      category: 'Ruta roca',
+      count: '7 módulos',
+      start: 'Iniciación en roca',
+      goal: 'Autonomía técnica progresiva',
+      reference: 'Técnico Deportivo en Escalada, escuela de escalada y protocolos de seguridad en cuerda.',
+      responsible: 'Adrián Martínez',
+      modules: [
+        ['Iniciación', 'Material, comunicación, colocación corporal, técnica de pies, agarres y confianza inicial.'],
+        ['Nudos y equipo', 'Arnés, casco, cuerda, asegurador, mosquetones, cintas, ocho, anclaje, reuniones y chequeo cruzado.'],
+        ['Aseguramiento', 'Dar y recoger cuerda, bloquear, descender, comunicar y actuar con calma.'],
+        ['Técnica de escalada', 'Equilibrio, pies, adherencia, oposición, lectura, economía de fuerza y gestión del miedo.'],
+        ['Escalada deportiva', 'Vías equipadas, chapaje, primero, caídas controladas, descuelgue y limpieza.'],
+        ['Clásica y varios largos', 'Reuniones, largos, material flotante, comunicación, cuerda y lectura de vía.'],
+        ['Autorrescate', 'Bloqueo, descenso asistido, incidencias, comunicación, evacuación y criterio de retirada.']
+      ],
+      training: 'Iniciación a la escalada, seguridad en roca, nudos, aseguramiento, técnica gestual, deportiva, introducción a clásica o varios largos y autorrescate básico.',
+      requirements: 'Condición física básica, tolerancia a la altura, ausencia de lesiones incompatibles, capacidad para seguir instrucciones, casco obligatorio y respeto al guía.',
+      safety: 'Chequeo cruzado y revisión de arnés, casco, cuerda, nudos, asegurador, mosquetones, reunión, estado de la vía, meteorología, roca y caída potencial.',
+      achievement: 'Progresar desde la primera experiencia en roca hasta una base de seguridad, movimiento, aseguramiento y autonomía supervisada.',
+      after: 'Practicar deportiva con más criterio, mejorar técnica y avanzar hacia varios largos, ferratas, rápel o autorrescate más completo.',
+      tags: ['Iniciación', 'Deportiva', 'Cuerdas', 'Clásica', 'Varios largos', 'Autorrescate', 'Técnica']
+    },
+    {
+      id: 'waterman',
+      tone: '#287b86',
+      title: 'Foil / Waterman',
+      category: 'Ruta waterman',
+      count: '7 módulos',
+      start: 'SUP base y control corporal',
+      goal: 'Autonomía en foil y lectura del mar',
+      reference: 'Escuela náutica, instructor especializado y protocolos de seguridad por modalidad.',
+      responsible: 'Héctor Navarro',
+      modules: [
+        ['SUP base', 'Equilibrio, remada, posición, caídas, giros, control de tabla y lectura del agua.'],
+        ['Seguridad en el agua', 'Leash, chaleco, casco, zonas, tráfico, viento, corriente, rescate y comunicación.'],
+        ['E-foil', 'Batería, mando, velocidad, despegue del foil, caídas seguras y distancia.'],
+        ['Wingfoil', 'Wing, viento, equilibrio, potencia, primeros vuelos y virajes básicos.'],
+        ['Kitesurf / Windsurf base', 'Ventana de viento, tracción, potencia, dirección, equilibrio y control progresivo.'],
+        ['Virajes y control avanzado', 'Dirección, estabilidad, postura, velocidad, ola, choppy y recuperación.'],
+        ['Waterman 3 días', 'Programa combinado de SUP, foil, viento, rescate, lectura del mar y autonomía.']
+      ],
+      training: 'Iniciación a SUP, seguridad acuática, e-foil, wingfoil, kitesurf o windsurf base, lectura del viento, rescate básico y progresión waterman.',
+      requirements: 'Saber nadar, buena movilidad, condición física adecuada, respeto al mar, capacidad para seguir instrucciones y comodidad con caídas repetidas.',
+      safety: 'Casco, chaleco, leash, zona controlada, profundidad, distancia, batería, viento, oleaje, tráfico, comunicación y apoyo desde costa o embarcación cuando proceda.',
+      achievement: 'Una base de waterman: equilibrio, control de tabla, lectura del mar, seguridad acuática, viento y progresión hacia foil.',
+      after: 'Practicar SUP con más autonomía y avanzar hacia e-foil, wingfoil, kitesurf, windsurf, SUP foil o programas intensivos.',
+      tags: ['E-foil', 'Wingfoil', 'SUP', 'Kitesurf', 'Windsurf', 'Waterman', 'Seguridad acuática']
+    },
+    {
+      id: 'litoral',
+      tone: '#3a83a3',
+      title: 'Mar, Kitesurf y Windsurf',
+      category: 'Ruta litoral',
+      count: '7 módulos',
+      start: 'Kayak / SUP litoral',
+      goal: 'Autonomía básica costera',
+      reference: 'Escuela náutica, guía de mar, instructor de viento y protocolos de rescate acuático.',
+      responsible: 'Laura García + Héctor Navarro según actividad',
+      modules: [
+        ['Kayak / SUP litoral', 'Remada, postura, equilibrio, embarque, desembarque, ruta costera y seguridad.'],
+        ['Lectura de costa', 'Viento, oleaje, corrientes, rocas, accesos, escapes y cambios de condiciones.'],
+        ['Snorkel seguro', 'Equipo, respiración, flotabilidad, entrada, salida, observación y respeto marino.'],
+        ['Coasteering', 'Progresión costera, trepadas, entradas al agua, saltos controlados y retirada segura.'],
+        ['Kitesurf iniciación', 'Ventana de viento, seguridad de cometa, tracción, bodydrag y progresión inicial.'],
+        ['Windsurf iniciación', 'Vela, tabla, dirección, equilibrio, virajes básicos y control.'],
+        ['Clinic privado', 'Sesión personalizada de técnica, seguridad, autonomía y corrección según nivel.']
+      ],
+      training: 'Iniciación a kayak o SUP, seguridad litoral, snorkel, coasteering, kitesurf, windsurf, lectura de costa y rescate básico acuático.',
+      requirements: 'Saber nadar, condición física básica, comodidad en el agua, respeto al mar, adaptación al grupo y aceptación del briefing.',
+      safety: 'Análisis de viento, mar, corrientes, oleaje, accesos, temperatura, visibilidad, tráfico, flotación, comunicación, ruta alternativa y salida.',
+      achievement: 'Una progresión litoral completa para moverse en el mar, interpretar la costa y ganar seguridad en entornos cambiantes.',
+      after: 'Realizar rutas con más confianza y avanzar hacia kayak de mar, SUP, snorkel, coasteering, kitesurf, windsurf o perfeccionamiento privado.',
+      tags: ['Kayak', 'SUP', 'Kitesurf', 'Windsurf', 'Snorkel', 'Coasteering', 'Clinic privado']
+    },
+    {
+      id: 'buceo',
+      tone: '#24628a',
+      title: 'Buceo',
+      category: 'Ruta subacuática',
+      count: '7 niveles principales',
+      start: 'Bautismo',
+      goal: 'Progresión recreativa, profesional o técnica',
+      reference: 'PADI / SSI / centro de buceo autorizado.',
+      responsible: 'Erika Hernández',
+      modules: [
+        ['Bautismo', 'Primera experiencia: equipo, respiración, señales, flotabilidad inicial y seguridad.'],
+        ['Open Water', 'Base de autonomía recreativa con teoría, habilidades confinadas e inmersiones en mar.'],
+        ['Advanced Open Water', 'Mejora mediante inmersiones de aventura, profunda, navegación y especialidades.'],
+        ['Rescue Diver', 'Prevención, detección de estrés, asistencia y respuesta ante problemas.'],
+        ['Divemaster', 'Primer nivel profesional para asistir, organizar, controlar grupos y guiar certificados.'],
+        ['Instructor', 'Nivel profesional para enseñar, evaluar y certificar según estándares.'],
+        ['Técnico', 'Especialización avanzada con planificación, gases, redundancia y centros especializados.']
+      ],
+      training: 'Bautismo, Open Water, Advanced, especialidades recreativas, Rescue, Divemaster, Instructor y formación técnica según certificadora y centro.',
+      requirements: 'Saber nadar, salud compatible, cuestionario médico, comodidad en el agua, edad mínima según curso y cumplimiento de estándares.',
+      safety: 'Briefing y revisión de botella, regulador, jacket, lastre, máscara, aletas, ordenador, presión, consumo, pareja, profundidad, corrientes, temperatura, oxígeno y emergencia.',
+      achievement: 'Una ruta desde la primera experiencia hasta niveles recreativos avanzados, prevención de emergencias, liderazgo profesional o especialización técnica.',
+      after: 'Pasar de Bautismo a Open Water, avanzar a Advanced y especialidades, mejorar seguridad con Rescue y acceder a vía profesional o técnica con requisitos específicos.',
+      extrasTitle: 'Advanced y especialidades asociadas',
+      extras: [
+        ['Deep / Profunda', 'Planificación y control de inmersiones a mayor profundidad recreativa.'],
+        ['Navegación', 'Brújula, referencias naturales y control de rumbo bajo el agua.'],
+        ['Nocturna', 'Poca luz, linterna, comunicación y control del grupo.'],
+        ['Nitrox', 'Mezclas enriquecidas, planificación y límites de exposición.'],
+        ['Flotabilidad', 'Control, consumo, posición y respeto del fondo.'],
+        ['Búsqueda y recuperación', 'Patrones, cabos, boyas y recuperación de objetos.'],
+        ['Pecios', 'Introducción recreativa y segura a estructuras hundidas.']
+      ],
+      tags: ['Bautismo', 'Open Water', 'Advanced', 'Deep', 'Navegación', 'Nitrox', 'Rescue', 'Divemaster', 'Instructor', 'Técnico']
+    },
+    {
+      id: 'tierra',
+      tone: '#57754d',
+      title: 'Montaña, Barrancos y BTT',
+      category: 'Ruta tierra',
+      count: '7 módulos',
+      start: 'Senderismo técnico',
+      goal: 'Autonomía outdoor y progresión multiaventura',
+      reference: 'Técnicos deportivos, guías especializados y protocolos de montaña, barrancos, BTT y orientación.',
+      responsible: 'Adrián Martínez, Raúl Giménez e Iván Torres según actividad',
+      modules: [
+        ['Senderismo técnico', 'Ruta, ritmo, desnivel, material, hidratación, orientación y seguridad.'],
+        ['Crestas y terreno expuesto', 'Aristas, pasos aéreos, equilibrio, cuerda de apoyo, vértigo y comunicación.'],
+        ['Bushcraft y orientación', 'Mapa, brújula, GPS, refugio, agua, meteorología, vivac y autonomía.'],
+        ['Barrancos', 'Caudal, rápeles, saltos, toboganes, escapes, neopreno, cuerda y progresión.'],
+        ['Rafting / aguas bravas', 'Hidrología, corriente, embarcación, remada, equipo y rescate.'],
+        ['BTT técnico', 'Posición, frenada, curvas, pendientes, trazada, mecánica y conducción.'],
+        ['Supervivencia y emergencia', 'Botiquín, comunicación, hipotermia, calor, escapes y protocolo de rescate.']
+      ],
+      training: 'Senderismo técnico, orientación, bushcraft, supervivencia, barrancos, rafting, aguas bravas, BTT técnico, primeros auxilios y emergencias outdoor.',
+      requirements: 'Condición física acorde, ropa y calzado adecuados, capacidad para seguir instrucciones, tolerancia a terreno irregular y respeto ambiental.',
+      safety: 'Plan de ruta, meteorología, escapes, material obligatorio, revisión de cuerda o bicicleta, botiquín, comunicación, ratios, caudal y cancelación si las condiciones no son seguras.',
+      achievement: 'Una base completa para moverse con más seguridad en montaña, barrancos, rutas BTT, ríos y actividades de autonomía.',
+      after: 'Realizar rutas más técnicas, progresar en barrancos o BTT, aprender orientación, participar en vivacs controlados y ganar autonomía en el medio natural.',
+      tags: ['Senderismo técnico', 'Crestas', 'Bushcraft', 'Barrancos', 'Rafting', 'BTT técnico', 'Supervivencia']
+    }
+  ];
+
+  const escapeHTML = (value) => String(value)
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#039;');
+
+  const renderTags = (tags, className) => `<div class="${className}">${tags.map((tag) => `<span>${escapeHTML(tag)}</span>`).join('')}</div>`;
+
+  container.innerHTML = routes.map((route) => `
+    <article class="route-card" style="--route-accent:${route.tone};--route-soft:#efd5b2;">
+      <header class="route-card__head">
+        <span class="route-card__category">${escapeHTML(route.category)}</span>
+        <h3>${escapeHTML(route.title)}</h3>
+        <span class="route-card__count">${escapeHTML(route.count)}</span>
+      </header>
+      <div class="route-card__body">
+        <div class="route-card__meta">
+          <div><strong>Inicio</strong><span>${escapeHTML(route.start)}</span></div>
+          <div><strong>Meta</strong><span>${escapeHTML(route.goal)}</span></div>
+        </div>
+        <div class="route-card__reference"><strong>Referencia técnica</strong><span>${escapeHTML(route.reference)}</span></div>
+        <div class="route-card__responsible"><strong>Responsable técnico</strong><span>${escapeHTML(route.responsible)}</span></div>
+        <div>
+          <span class="route-card__modules-title">Módulos principales</span>
+          <ol class="route-card__modules">${route.modules.map((module, index) => `<li><b>${String(index + 1).padStart(2, '0')}</b>${escapeHTML(module[0])}</li>`).join('')}</ol>
+        </div>
+        ${renderTags(route.tags.slice(0, 5), 'route-card__tags')}
+        <button class="route-card__button" type="button" data-route-id="${route.id}" aria-haspopup="dialog">Ver ruta completa</button>
+      </div>
+    </article>`).join('');
+
+  if (typeof HTMLDialogElement === 'undefined') return;
+
+  const dialog = document.createElement('dialog');
+  dialog.className = 'route-dialog';
+  dialog.setAttribute('aria-labelledby', 'route-dialog-title');
+  dialog.innerHTML = `
+    <div class="route-dialog__panel">
+      <button class="route-dialog__close" type="button" aria-label="Cerrar ruta formativa">×</button>
+      <header class="route-dialog__header">
+        <span class="route-dialog__kicker"></span>
+        <h2 id="route-dialog-title"></h2>
+        <p class="route-dialog__summary"></p>
+      </header>
+      <div class="route-dialog__body"></div>
+    </div>`;
+  document.body.append(dialog);
+
+  const dialogKicker = dialog.querySelector('.route-dialog__kicker');
+  const dialogTitle = dialog.querySelector('#route-dialog-title');
+  const dialogSummary = dialog.querySelector('.route-dialog__summary');
+  const dialogBody = dialog.querySelector('.route-dialog__body');
+  const closeButton = dialog.querySelector('.route-dialog__close');
+  let lastTrigger = null;
+
+  function renderRouteDetail(route) {
+    const extras = route.extras?.length ? `
+      <section class="route-dialog__extra">
+        <h3>${escapeHTML(route.extrasTitle)}</h3>
+        <div class="route-dialog__extra-grid">${route.extras.map((item) => `<div class="route-dialog__extra-item"><h4>${escapeHTML(item[0])}</h4><p>${escapeHTML(item[1])}</p></div>`).join('')}</div>
+      </section>` : '';
+
+    return `
+      <div class="route-dialog__facts">
+        <div class="route-dialog__fact"><strong>Inicio</strong><span>${escapeHTML(route.start)}</span></div>
+        <div class="route-dialog__fact"><strong>Meta</strong><span>${escapeHTML(route.goal)}</span></div>
+        <div class="route-dialog__fact"><strong>Referencia técnica</strong><span>${escapeHTML(route.reference)}</span></div>
+        <div class="route-dialog__fact"><strong>Responsable técnico</strong><span>${escapeHTML(route.responsible)}</span></div>
+      </div>
+      <section class="route-dialog__modules">
+        <h3>Módulos principales</h3>
+        <div class="route-dialog__module-grid">${route.modules.map((module, index) => `<div class="route-dialog__module"><h4><span>${String(index + 1).padStart(2, '0')}</span>${escapeHTML(module[0])}</h4><p>${escapeHTML(module[1])}</p></div>`).join('')}</div>
+      </section>
+      ${extras}
+      <div class="route-dialog__sections">
+        <section class="route-dialog__section"><h3>Formación asociada</h3><p>${escapeHTML(route.training)}</p></section>
+        <section class="route-dialog__section"><h3>Requisitos</h3><p>${escapeHTML(route.requirements)}</p></section>
+        <section class="route-dialog__section route-dialog__section--safety"><h3>Seguridad</h3><p>${escapeHTML(route.safety)}</p></section>
+        <section class="route-dialog__section route-dialog__section--result"><h3>Qué se consigue</h3><p>${escapeHTML(route.achievement)}</p></section>
+        <section class="route-dialog__section route-dialog__section--result"><h3>Qué puedes hacer después</h3><p>${escapeHTML(route.after)}</p></section>
+      </div>
+      ${renderTags(route.tags, 'route-dialog__tags')}`;
+  }
+
+  function openRoute(route, trigger) {
+    dialog.style.setProperty('--route-dialog-accent', route.tone);
+    dialogKicker.textContent = `${route.category} · ${route.count}`;
+    dialogTitle.textContent = route.title;
+    dialogSummary.textContent = `${route.start} → ${route.goal}`;
+    dialogBody.innerHTML = renderRouteDetail(route);
+    lastTrigger = trigger;
+    document.body.classList.add('route-dialog-open');
+    dialog.showModal();
+    closeButton.focus();
+  }
+
+  container.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-route-id]');
+    if (!button) return;
+    const route = routes.find((item) => item.id === button.dataset.routeId);
+    if (route) openRoute(route, button);
+  });
+
+  function closeRoute() {
+    document.body.classList.remove('route-dialog-open');
+    if (dialog.open) dialog.close();
+    lastTrigger?.focus();
+  }
+
+  closeButton.addEventListener('click', closeRoute);
+  dialog.addEventListener('click', (event) => {
+    if (event.target === dialog) closeRoute();
+  });
+  dialog.addEventListener('cancel', (event) => {
+    event.preventDefault();
+    closeRoute();
+  });
+  dialog.addEventListener('close', () => {
+    document.body.classList.remove('route-dialog-open');
+  });
+})();
