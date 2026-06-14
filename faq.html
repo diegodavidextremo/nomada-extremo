@@ -15,6 +15,7 @@
 <link rel="manifest" href="site.webmanifest?v=2026-05-12">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/faq-contact-premium.css?v=20260614-1">
 </head>
 <body>
 <div id="nav-placeholder"></div>
@@ -27,34 +28,26 @@
     <h1 class="titulo" style="font-size:clamp(3rem,8vw,6rem);color:var(--blanco);">FAQ<br><span style="color:var(--arena-claro);">NÓMADA</span></h1>
   </div>
 </section>
-<section class="bg-blanco">
-  <div class="container" style="max-width:980px;">
-    <div class="demo-inline-note" style="margin-bottom:2rem;">Nómada Extremo es un proyecto académico no operativo de Diego David Gómez García, alumno de 1.º GMN del IES Europa de Águilas. No realiza reservas, cobros ni actividades reales desde esta web.</div>
-    <div class="quick-faq-grid">
-      <details open><summary>¿La web permite reservar actividades reales?</summary><p>No. La página de reservas es una simulación académica. No genera plaza, pago, confirmación operativa ni contrato real.</p></details>
-      <details><summary>¿Nómada Extremo es una empresa real?</summary><p>No opera como empresa de turismo activo. Es una marca conceptual desarrollada como proyecto académico, con una presentación profesional y defendible.</p></details>
-      <details><summary>¿Puedo hacer una actividad sin experiencia?</summary><p>En una empresa real dependería de la actividad. Senderismo, kayak suave o snorkel pueden plantearse como iniciación; ferratas, buceo, vuelos o vertical necesitan requisitos y briefing.</p></details>
-      <details><summary>¿Qué pasa si hace mal tiempo?</summary><p>La meteorología puede modificar o cancelar una actividad. Viento, oleaje, calor, tormentas, visibilidad o caudal mandan mas que el calendario.</p></details>
-      <details><summary>¿Hay seguro incluido?</summary><p>En esta web no hay actividad real ni seguro contratado desde el formulario. Una empresa real debería contar con seguros, titulaciones y protocolos aplicables.</p></details>
-      <details><summary>¿Qué significa actividad con validación especial?</summary><p>Que antes de participar se revisarían experiencia, salud, edad, nivel, material y condiciones. Ejemplos: cliff jumping, buceo nocturno, rope jumping, puenting o vuelos.</p></details>
-      <details><summary>¿Puedo llevar cámara propia?</summary><p>Podria permitirse si no compromete seguridad, privacidad ni ritmo del grupo. En agua, vertical o aire debe ir sujeta y autorizada por el responsable.</p></details>
-      <details><summary>¿Hay actividades para familias?</summary><p>El catálogo plantea opciones familiares como senderismo interpretativo, kayak suave, SUP tranquilo, snorkel de iniciación y multiaventura adaptada.</p></details>
-      <details><summary>¿Qué actividad es mejor para empezar?</summary><p>Senderismo guiado, snorkel de aventura, kayak suave o una ruta interpretativa son buenas puertas de entrada por nivel y control del entorno.</p></details>
-      <details><summary>¿Qué actividad es mas extrema?</summary><p>Las mas exigentes serían las que combinan altura, agua, velocidad o validación técnica: rope jumping, puenting, cliff jumping, ferratas avanzadas, buceo nocturno o vuelo.</p></details>
-      <details><summary>¿Qué diferencia hay entre bautismo de buceo y Open Water?</summary><p>El bautismo es una primera experiencia supervisada y limitada. Open Water sería un curso de certificación oficial si lo impartiera un centro autorizado real.</p></details>
-      <details><summary>¿Qué ropa debo llevar?</summary><p>Depende del entorno. Cómo base: calzado adecuado, agua, protección solar, ropa por capas y lo indicado en la ficha de material de cada actividad.</p></details>
-      <details><summary>¿Puedo ir con niños?</summary><p>Algunas actividades podrían adaptarse a menores con autorización y edad recomendada. Otras no son adecuadas para niños por exposición, técnica o normativa.</p></details>
-      <details><summary>¿Puedo reservar para un grupo?</summary><p>La web permite simular propuestas para centros educativos, empresas, familias y grupos privados, pero no crea reservas reales.</p></details>
-      <details><summary>¿Qué pasa si tengo vértigo?</summary><p>No conviene ocultarlo. Se puede elegir una actividad alternativa o reducir exposición. En vertical o aire podría ser motivo para no participar.</p></details>
-      <details><summary>¿Qué ocurre si no cumplo los requisitos?</summary><p>En un caso real el guía podría adaptar, cambiar o cancelar la actividad. La seguridad y el encaje del grupo tienen prioridad.</p></details>
-      <details><summary>¿La línea naturista es obligatoria?</summary><p>No. Es una línea separada, voluntaria, con privacidad reforzada, consentimiento y actividades específicas para adultos cuando proceda.</p></details>
-      <details><summary>¿Los pagos son reales?</summary><p>No. No se procesan tarjetas, Bizum, transferencias ni bonos reales. Cualquier precio es orientativo y sirve para explicar el modelo de negocio futuro.</p></details>
-      <details><summary>¿Los formularios guardan datos reales?</summary><p>No deberían introducirse datos sensibles reales. Los formularios son maquetas para explicar fichas, anexos, autorizaciones y check-in.</p></details>
+<section class="faq-premium-section">
+  <div class="container">
+    <div class="faq-premium__intro">
+      <span class="label">Preguntas frecuentes</span>
+      <h2 class="titulo">TODO CLARO<br><span class="mar">ANTES DE EMPEZAR</span></h2>
+      <p>Aquí resolvemos las dudas principales antes de elegir una experiencia. La seguridad, la claridad y la preparación también forman parte de la aventura.</p>
     </div>
-    <div class="nomada-actions"><a href="como-funciona.html" class="btn btn-mar">Cómo funciona</a><a href="seguridad.html" class="btn btn-outline">Seguridad</a><a href="contacto.html" class="btn btn-outline">Contactar</a></div>
+    <div class="faq-tools">
+      <label class="faq-search" for="faqSearch"><span>Buscar una duda</span><input id="faqSearch" type="search" placeholder="Ej.: seguro, bono, menores, meteorología..." autocomplete="off"></label>
+      <div class="faq-category-chips" id="faqCategoryChips" aria-label="Categorías de preguntas"></div>
+    </div>
+    <div class="faq-results" id="faqResults" aria-live="polite"></div>
+    <p class="faq-empty" id="faqEmpty" hidden>No encontramos una pregunta con esos criterios. Prueba otra palabra o consulta directamente con el equipo.</p>
+    <aside class="faq-help">
+      <div><span class="label">Atención directa</span><h2>¿No encuentras tu respuesta?</h2><p>Cuéntanos la experiencia, nivel, fecha aproximada, número de personas y cualquier detalle importante. Te orientaremos hacia la opción más adecuada.</p></div>
+      <div class="faq-help__actions"><a href="contacto.html" class="btn btn-arena">Contactar</a><a href="seguridad.html#seguros-documentacion" class="btn btn-outline-blanco">Ver seguros</a><a href="packs.html" class="btn btn-outline-blanco">Ver packs</a><a href="escuela.html" class="btn btn-outline-blanco">Ver escuela</a></div>
+    </aside>
   </div>
 </section>
 <div id="footer-placeholder"></div>
-<script src="assets/js/components.js"></script><script src="assets/js/main.js"></script><script src="assets/js/chatbot.js"></script>
+<script src="assets/js/components.js"></script><script src="assets/js/main.js"></script><script src="assets/js/faq-premium.js?v=20260614-1"></script><script src="assets/js/chatbot.js"></script>
 </body>
 </html>

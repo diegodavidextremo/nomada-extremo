@@ -1,0 +1,14 @@
+{
+  "nav": {"home":"Inicio","activities":"Actividades","school":"Escuela","naturism":"Naturismo","audiovisual":"Audiovisual","project":"Proyecto","contact":"Contacto","packs":"Packs y bonos","request":"Solicitar experiencia","safety":"Seguridad","team":"Equipo","faq":"FAQ"},
+  "actions": {"request":"Solicitar experiencia","explore":"Explorar actividades","route":"Ver ruta completa","gift":"Regalar bono","contact":"Contactar","details":"Ver detalle","close":"Cerrar","packs":"Ver packs","school":"Ver escuela","how":"Cómo funciona","safety":"Seguridad"},
+  "meta": {
+    "index":{"title":"NÓMADA EXTREMO | Aventura, deportes extremos y naturaleza","description":"Proyecto de aventura, deportes extremos, naturaleza, experiencias outdoor, formación, seguridad y contenido audiovisual."},
+    "actividades":{"title":"Actividades de aventura | NÓMADA EXTREMO","description":"Catálogo conceptual de experiencias de mar, aire, montaña, buceo, vertical y multiaventura."},
+    "escuela":{"title":"Escuela Nómada | Formación outdoor","description":"Itinerarios de formación, progresión técnica y seguridad outdoor de Nómada Extremo."},
+    "packs":{"title":"Packs y bonos regalo | NÓMADA EXTREMO","description":"Packs combinados, experiencias premium y bonos regalo de aventura."},
+    "naturistas":{"title":"Nómada Naturista | NÓMADA EXTREMO","description":"Línea naturista basada en privacidad, consentimiento, calma y conexión respetuosa con la naturaleza."},
+    "contacto":{"title":"Contacto | NÓMADA EXTREMO","description":"Canales oficiales, formulario y orientación sobre actividades, packs, seguridad y documentación."},
+    "faq":{"title":"FAQ | NÓMADA EXTREMO","description":"Preguntas frecuentes sobre actividades, seguridad, seguros, reservas, escuela, bonos y requisitos."},
+    "seguridad":{"title":"Seguridad y gestión del riesgo | NÓMADA EXTREMO","description":"Criterios de seguridad, seguros, documentación, permisos y gestión del riesgo."}
+  }
+}

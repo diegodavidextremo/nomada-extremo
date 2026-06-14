@@ -55,6 +55,12 @@
       </li>
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
+    <div class="language-switcher language-switcher--desktop" data-language-switcher aria-label="Selector de idioma">
+      <button type="button" data-lang="es" aria-label="Español">ES</button>
+      <button type="button" data-lang="en" aria-label="English">EN</button>
+      <button type="button" data-lang="fr" aria-label="Français">FR</button>
+      <button type="button" data-lang="de" aria-label="Deutsch">DE</button>
+    </div>
     <button class="nav-hamburger" id="navHamb" type="button" aria-label="Abrir menú" aria-controls="mobileNav" aria-expanded="false">
       <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
     </button>
@@ -62,6 +68,12 @@
   <div class="nav-mobile-backdrop" data-mobile-close aria-hidden="true"></div>
   <nav class="nav-mobile-menu" id="mobileNav" aria-label="Menú móvil" aria-hidden="true">
     <button class="nav-mobile-close" id="mobileClose" type="button" aria-label="Cerrar menú">×</button>
+    <div class="language-switcher language-switcher--mobile" data-language-switcher aria-label="Selector de idioma">
+      <button type="button" data-lang="es" aria-label="Español">ES</button>
+      <button type="button" data-lang="en" aria-label="English">EN</button>
+      <button type="button" data-lang="fr" aria-label="Français">FR</button>
+      <button type="button" data-lang="de" aria-label="Deutsch">DE</button>
+    </div>
     <a href="index.html">Inicio</a>
     <a href="actividades.html">Actividades</a>
     <a href="escuela.html">Escuela Nómada</a>
@@ -104,9 +116,9 @@
         <p class="footer-demo-note">${PROJECT_NOTICE}</p>
         <div class="footer-social">
           <a href="https://www.youtube.com/@diegodavidextremo" target="_blank" rel="noopener noreferrer" aria-label="YouTube Diego David Extremo">YT</a>
-          <a href="https://www.instagram.com/diegodavidextremo/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Diego David Extremo">IG</a>
+          <a href="https://www.instagram.com/nomadaextremoes/" target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial de Nómada Extremo">IG</a>
           <a href="https://www.tiktok.com/@diegodavidextremo" target="_blank" rel="noopener noreferrer" aria-label="TikTok Diego David Extremo">TT</a>
-          <a href="https://x.com/dd_gg98" target="_blank" rel="noopener noreferrer" aria-label="X Diego David Extremo">X</a>
+          <a href="https://x.com/nomadaextremoES" target="_blank" rel="noopener noreferrer" aria-label="X oficial de Nómada Extremo">X</a>
         </div>
       </div>
       <div class="footer-col">
@@ -177,6 +189,21 @@
   if (np) np.outerHTML = NAV;
   const fp = document.getElementById('footer-placeholder');
   if (fp) fp.outerHTML = FOOTER;
+
+  if (!document.querySelector('link[data-noext-i18n]')) {
+    const languageStyles = document.createElement('link');
+    languageStyles.rel = 'stylesheet';
+    languageStyles.href = 'assets/css/i18n.css?v=20260614-1';
+    languageStyles.dataset.noextI18n = 'styles';
+    document.head.appendChild(languageStyles);
+  }
+
+  if (!document.querySelector('script[data-noext-i18n]')) {
+    const languageScript = document.createElement('script');
+    languageScript.src = 'assets/js/i18n.js?v=20260614-1';
+    languageScript.dataset.noextI18n = 'runtime';
+    document.head.appendChild(languageScript);
+  }
 
   const ensureMainLandmark = () => {
     const existingMain = document.querySelector('main');

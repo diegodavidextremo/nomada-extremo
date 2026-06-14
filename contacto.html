@@ -11,6 +11,7 @@
 <link rel="manifest" href="site.webmanifest?v=2026-05-12">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/faq-contact-premium.css?v=20260614-1">
 </head>
 <body>
 <div id="nav-placeholder"></div>
@@ -28,8 +29,8 @@
 <!-- CANALES -->
 <section class="bg-blanco">
   <div class="container">
-    <span class="label">Contacto directo</span>
-    <h2 class="titulo">ELIGE TU<br><span class="mar">CANAL</span></h2>
+    <span class="label">Contacto directo y redes</span>
+    <h2 class="titulo">CANALES<br><span class="mar">OFICIALES</span></h2>
     <div class="divisor"></div>
     <div class="grid-4" style="margin-top:2.5rem;">
       <a href="https://wa.me/34600000000" target="_blank" class="contact-card reveal" style="text-decoration:none;border-color:rgba(37,211,102,0.25);">
@@ -45,6 +46,20 @@
         <div class="contact-card-valor">hola@nómadaextremo.com</div>
         <div class="contact-card-info">Respuesta en 24h laborables</div>
         <div class="contact-card-cta">Enviar email →</div>
+      </a>
+      <a href="https://www.instagram.com/nomadaextremoes/" target="_blank" rel="noopener noreferrer" class="contact-card contact-card--social reveal">
+        <div class="contact-card-icon">IG</div>
+        <div class="contact-card-tipo">Instagram</div>
+        <div class="contact-card-valor">@nomadaextremoes</div>
+        <div class="contact-card-info">Fotos, reels, naturaleza, packs y evolución del proyecto.</div>
+        <div class="contact-card-cta">Ver Instagram →</div>
+      </a>
+      <a href="https://x.com/nomadaextremoES" target="_blank" rel="noopener noreferrer" class="contact-card contact-card--social reveal">
+        <div class="contact-card-icon">X</div>
+        <div class="contact-card-tipo">X / Twitter</div>
+        <div class="contact-card-valor">@nomadaextremoES</div>
+        <div class="contact-card-info">Avisos, novedades y publicaciones breves del proyecto.</div>
+        <div class="contact-card-cta">Seguir en X →</div>
       </a>
       <div class="contact-card reveal">
         <div class="contact-card-icon">📍</div>
@@ -83,28 +98,43 @@
         </div>
       </div>
       <div>
+        <aside class="contact-before">
+          <span class="label">Antes de escribirnos</span>
+          <p>Cuéntanos qué experiencia te interesa, número de personas, fecha aproximada, nivel físico, experiencia previa y cualquier dato importante sobre salud, agua, altura, vértigo o movilidad.</p>
+          <div><span>Nivel</span><span>Fecha</span><span>Personas</span><span>Actividad</span><span>Seguridad</span><span>Audiovisual</span></div>
+        </aside>
         <form action="https://formsubmit.co/diegodavidexplorer@gmail.com" method="POST" id="formContacto" style="background:var(--blanco);border:1px solid var(--crema-media);padding:2.5rem;border-radius:var(--radio);">
           <h3 style="font-family:var(--display);font-size:1.3rem;letter-spacing:2px;color:var(--gris-oscuro);margin-bottom:1.5rem;">FORMULARIO DE CONTACTO</h3>
           <div class="form-fila">
-            <div class="form-grupo"><label>Nombre *</label><input type="text" placeholder="Tu nombre" required></div>
-            <div class="form-grupo"><label>Teléfono</label><input type="tel" placeholder="+34 600 000 000"></div>
+            <div class="form-grupo"><label for="contactName">Nombre *</label><input id="contactName" name="nombre" type="text" placeholder="Tu nombre" required></div>
+            <div class="form-grupo"><label for="contactPhone">Teléfono</label><input id="contactPhone" name="telefono" type="tel" placeholder="+34 600 000 000"></div>
           </div>
-          <div class="form-grupo"><label>Email *</label><input type="email" placeholder="tu@email.com" required></div>
+          <div class="form-grupo"><label for="contactEmail">Email *</label><input id="contactEmail" name="email" type="email" placeholder="tu@email.com" required></div>
           <div class="form-grupo">
-            <label>Tipo de consulta</label>
-            <select>
+            <label for="contactType">Tipo de consulta</label>
+            <select id="contactType" name="tipo-consulta">
               <option>Información sobre actividades</option>
               <option>Escuela Nómada y certificaciones</option>
               <option>Experiencia privada o personalizada</option>
               <option>Team building empresarial</option>
               <option>Servicio audiovisual</option>
               <option>Bonos regalo</option>
+              <option>Línea naturista</option>
+              <option>Seguros, requisitos y documentación</option>
               <option>Incidencia o postventa</option>
               <option>Colaboración o propuesta</option>
               <option>Otra consulta</option>
             </select>
           </div>
-          <div class="form-grupo"><label>Mensaje *</label><textarea placeholder="Cuéntanos lo que necesitas con detalle..." required style="height:120px;"></textarea></div>
+          <div class="form-fila">
+            <div class="form-grupo"><label for="contactDate">Fecha aproximada</label><input id="contactDate" type="date" name="fecha-aproximada"></div>
+            <div class="form-grupo"><label for="contactPeople">Número de personas</label><input id="contactPeople" type="number" name="personas" min="1" max="60" placeholder="Ej.: 4"></div>
+          </div>
+          <div class="form-fila">
+            <div class="form-grupo"><label for="contactLevel">Nivel de experiencia</label><select id="contactLevel" name="nivel"><option value="">Seleccionar</option><option>Primera vez</option><option>Iniciación</option><option>Intermedio</option><option>Avanzado</option></select></div>
+            <div class="form-grupo"><label for="contactEnvironment">Medio preferido</label><select id="contactEnvironment" name="medio"><option value="">Seleccionar</option><option>Mar</option><option>Aire</option><option>Montaña</option><option>Buceo</option><option>Vertical</option><option>Audiovisual</option><option>Naturismo</option></select></div>
+          </div>
+          <div class="form-grupo"><label for="contactMessage">Mensaje *</label><textarea id="contactMessage" name="mensaje" placeholder="Cuéntanos lo que necesitas con detalle..." required style="height:120px;"></textarea></div>
           <div class="form-grupo" style="display:flex;align-items:start;gap:0.7rem;">
             <input type="checkbox" id="rgpdC" required style="width:auto;margin-top:3px;">
             <label for="rgpdC" style="text-transform:none;letter-spacing:0;font-size:0.72rem;color:var(--gris-calido);">Acepto la <a href="politica-privacidad.html" style="color:var(--mar);">política de privacidad</a>.</label>
@@ -115,6 +145,17 @@
       </div>
     </div>
   </div>
+</section>
+
+<section class="contact-safety-link">
+  <div class="container contact-safety-link__inner">
+    <div><span class="label">Información importante</span><h2>Seguros, requisitos y documentación</h2><p>Consulta qué coberturas, permisos, consentimientos y protocolos requeriría cada propuesta en una versión operativa.</p></div>
+    <a class="btn btn-mar" href="seguridad.html#seguros-documentacion">Consultar requisitos y seguros</a>
+  </div>
+</section>
+
+<section class="contact-social-close">
+  <div class="container"><span class="label">Comunidad y novedades</span><h2 class="titulo">SÍGUENOS Y<br><span class="arena">HABLA CON NOSOTROS</span></h2><p>Instagram y X recogen la evolución visual del proyecto, futuras experiencias, contenido outdoor y avisos breves.</p><div class="contact-social-close__actions"><a class="btn btn-arena" href="https://www.instagram.com/nomadaextremoes/" target="_blank" rel="noopener noreferrer">Instagram</a><a class="btn btn-outline-blanco" href="https://x.com/nomadaextremoES" target="_blank" rel="noopener noreferrer">X / Twitter</a><a class="btn btn-outline-blanco" href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer">WhatsApp</a><a class="btn btn-outline-blanco" href="mailto:hola@nomadaextremo.com">Email</a></div></div>
 </section>
 
 <!-- MAPA Y HORARIOS -->

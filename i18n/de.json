@@ -1,0 +1,14 @@
+{
+  "nav": {"home":"Start","activities":"Aktivitäten","school":"Schule","naturism":"Naturismus","audiovisual":"Audiovisuell","project":"Projekt","contact":"Kontakt","packs":"Pakete & Gutscheine","request":"Erlebnis anfragen","safety":"Sicherheit","team":"Team","faq":"FAQ"},
+  "actions": {"request":"Erlebnis anfragen","explore":"Aktivitäten entdecken","route":"Route ansehen","gift":"Gutschein schenken","contact":"Kontakt aufnehmen","details":"Details anzeigen","close":"Schließen","packs":"Pakete ansehen","school":"Schule ansehen","how":"So funktioniert es","safety":"Sicherheit"},
+  "meta": {
+    "index":{"title":"NÓMADA EXTREMO | Abenteuer, Extremsport und Natur","description":"Projekt für Abenteuer, Outdoor-Erlebnisse, Ausbildung, Sicherheit und audiovisuelle Inhalte."},
+    "actividades":{"title":"Abenteueraktivitäten | NÓMADA EXTREMO","description":"Konzeptkatalog für Meer, Luft, Berge, Tauchen, Vertikalsport und Multi-Abenteuer."},
+    "escuela":{"title":"Nómada Schule | Outdoor-Ausbildung","description":"Lernwege, technische Entwicklung und Outdoor-Sicherheit."},
+    "packs":{"title":"Abenteuerpakete und Gutscheine | NÓMADA EXTREMO","description":"Kombinierte Erlebnisse, Premium-Pakete und flexible Gutscheine."},
+    "naturistas":{"title":"Nómada Naturismus | NÓMADA EXTREMO","description":"Naturistische Linie mit Privatsphäre, Einwilligung, Ruhe und Naturverbundenheit."},
+    "contacto":{"title":"Kontakt | NÓMADA EXTREMO","description":"Offizielle Kanäle und Informationen zu Aktivitäten, Paketen, Sicherheit und Dokumenten."},
+    "faq":{"title":"FAQ | NÓMADA EXTREMO","description":"Fragen zu Aktivitäten, Sicherheit, Versicherungen, Schule, Gutscheinen und Anforderungen."},
+    "seguridad":{"title":"Sicherheit und Risikomanagement | NÓMADA EXTREMO","description":"Sicherheitskriterien, Versicherungen, Dokumentation, Genehmigungen und Risikomanagement."}
+  }
+}

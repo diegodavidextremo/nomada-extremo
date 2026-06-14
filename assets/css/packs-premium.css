@@ -1,0 +1,191 @@
+.packs-page .grid-3,
+.packs-brutal-grid,
+.gift-premium-grid {
+  align-items: start;
+}
+
+.packs-page .super-pack,
+.packs-page .pack-card,
+.packs-page .pack-v2,
+.brutal-pack-card,
+.gift-premium-card {
+  height: auto;
+  align-self: start;
+}
+
+.packs-page .super-pack-footer,
+.packs-page .pack-v2-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid rgba(196, 150, 106, 0.34);
+}
+
+.packs-page .super-pack-footer > div:last-child,
+.packs-page .pack-v2-footer > div:last-child {
+  display: contents;
+}
+
+.packs-page .super-pack-precio,
+.packs-page .pack-v2-precio {
+  font-size: clamp(2.25rem, 4vw, 3.15rem);
+  color: var(--arena);
+}
+
+.packs-page .super-pack-av {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0;
+  white-space: normal;
+}
+
+.packs-page .super-pack-footer .btn,
+.packs-page .pack-v2-footer .btn {
+  width: 100%;
+  min-height: 48px;
+  margin: 0 !important;
+  white-space: normal;
+}
+
+.packs-brutal-section,
+.gift-premium-section,
+.pack-insurance-link { padding: clamp(4rem, 8vw, 7rem) 0; }
+
+.packs-brutal-section { background: linear-gradient(145deg, #111d21, #17384c 60%, #244c40); }
+.packs-brutal-section .titulo,
+.packs-brutal-section__lead { color: var(--blanco); }
+.packs-brutal-section__lead,
+.gift-premium-section__lead { max-width: 860px; margin: 0 0 2.5rem; font-size: 1rem; line-height: 1.8; }
+
+.packs-brutal-grid,
+.gift-premium-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+.brutal-pack-card {
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(255,255,255,.13);
+  border-radius: 10px;
+  box-shadow: 0 22px 54px rgba(0,0,0,.2);
+}
+
+.brutal-pack-card__image {
+  min-height: 210px;
+  padding: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  isolation: isolate;
+}
+
+.brutal-pack-card__image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(8,16,20,.14), rgba(8,16,20,.9));
+}
+
+.brutal-pack-card__index,
+.brutal-pack-card__validation {
+  width: fit-content;
+  padding: .35rem .58rem;
+  color: #fff;
+  background: rgba(12,35,54,.78);
+  border: 1px solid rgba(255,255,255,.24);
+  border-radius: 999px;
+  font-size: .65rem;
+  font-weight: 800;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.brutal-pack-card__image h3 {
+  margin: 1rem 0 0;
+  color: #fff;
+  font-family: var(--display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: .92;
+  letter-spacing: .02em;
+}
+
+.brutal-pack-card__body { padding: clamp(1.1rem, 2.4vw, 1.5rem); }
+.brutal-pack-card__subtitle { margin: 0 0 .85rem; color: var(--mar); font-weight: 700; line-height: 1.5; }
+.brutal-pack-card__chips { display: flex; flex-wrap: wrap; gap: .45rem; margin-bottom: 1rem; }
+.brutal-pack-card__chips span { padding: .35rem .55rem; color: var(--mar); background: var(--cielo); border-radius: 999px; font-size: .7rem; font-weight: 700; }
+.brutal-pack-card__description { margin: 0; color: var(--gris-calido); font-size: .88rem; line-height: 1.72; }
+
+.brutal-pack-card__price-area {
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  margin-top: 1.15rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--crema-media);
+}
+
+.brutal-pack-card__price-label { color: var(--piedra); font-size: .66rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.brutal-pack-card__price { color: var(--arena); font-family: var(--display); font-size: clamp(2.2rem, 4vw, 3rem); line-height: 1; }
+.brutal-pack-card__price-note { color: var(--piedra); font-size: .78rem; }
+.brutal-pack-card__availability { width: fit-content; padding: .35rem .6rem; color: var(--bosque); background: rgba(222,235,225,.72); border: 1px solid rgba(45,90,61,.16); border-radius: 999px; font-size: .72rem; font-weight: 700; }
+.brutal-pack-card__cta { width: 100%; min-height: 48px; justify-content: center; white-space: normal; }
+
+.brutal-pack-card details { margin-top: 1rem; border: 1px solid var(--crema-media); border-radius: 8px; overflow: hidden; }
+.brutal-pack-card summary { min-height: 44px; padding: .75rem; cursor: pointer; color: var(--mar); font-size: .75rem; font-weight: 800; list-style: none; text-transform: uppercase; }
+.brutal-pack-card summary::-webkit-details-marker { display:none; }
+.brutal-pack-card details[open] summary { border-bottom: 1px solid var(--crema-media); }
+.brutal-pack-card__technical { display:grid; gap:.75rem; padding:.9rem; }
+.brutal-pack-card__technical p { margin:0; color:var(--gris-calido); font-size:.8rem; line-height:1.62; }
+.brutal-pack-card__technical strong { color:var(--gris-oscuro); }
+.brutal-pack-card__safety { padding:.7rem; background:#fff8ec; border-left:3px solid #b87832; }
+
+.gift-premium-section { background: linear-gradient(180deg, #f6f1e9, #fff); }
+.gift-premium-grid { margin-top: 2rem; }
+.gift-premium-card { min-width:0; padding:1.35rem; background:#fff; border:1px solid var(--crema-media); border-top:4px solid var(--arena); border-radius:10px; box-shadow:0 16px 38px rgba(30,46,55,.08); }
+.gift-premium-card__seal { color:var(--arena); font-size:.67rem; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
+.gift-premium-card h3 { margin:.55rem 0 .7rem; color:var(--gris-oscuro); font-family:var(--display); font-size:1.8rem; line-height:1; }
+.gift-premium-card p { margin:0; color:var(--gris-calido); font-size:.86rem; line-height:1.68; }
+.gift-premium-card__facts { display:grid; gap:.5rem; margin:1rem 0; padding:.85rem; background:var(--crema); border-radius:8px; }
+.gift-premium-card__facts span { color:var(--gris-calido); font-size:.78rem; line-height:1.5; }
+.gift-premium-card__facts strong { color:var(--mar); }
+.gift-premium-card__price { color:var(--arena); font-family:var(--display); font-size:2rem; }
+.gift-premium-card .btn { width:100%; min-height:46px; margin-top:.8rem; justify-content:center; }
+.gift-premium-note { display:grid; gap:.35rem; margin-top:1.5rem; padding:1.2rem; background:var(--mar); color:#fff; border-left:4px solid var(--arena-claro); border-radius:8px; }
+.gift-premium-note span { color:rgba(255,255,255,.8); line-height:1.65; }
+
+.pack-insurance-link { background:#fff; }
+.pack-insurance-link__inner { display:grid; gap:1.25rem; align-items:center; }
+.pack-insurance-link h2 { margin:.4rem 0; color:var(--gris-oscuro); font-family:var(--display); font-size:clamp(2rem,4vw,3.5rem); line-height:1; text-transform:uppercase; }
+.pack-insurance-link p { max-width:760px; margin:0; color:var(--gris-calido); line-height:1.7; }
+
+@media (min-width:700px) {
+  .packs-brutal-grid,
+  .gift-premium-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+
+@media (min-width:1180px) {
+  .packs-brutal-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .gift-premium-grid { grid-template-columns:repeat(4,minmax(0,1fr)); }
+  .pack-insurance-link__inner { grid-template-columns:minmax(0,1fr) auto; }
+}
+
+@media (max-width:479px) {
+  .brutal-pack-card__image { min-height:185px; }
+  .brutal-pack-card__cta,
+  .gift-premium-card .btn { width:100%; }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .brutal-pack-card,
+  .gift-premium-card { transition:none; }
+}

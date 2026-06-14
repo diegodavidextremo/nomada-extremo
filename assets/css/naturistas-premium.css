@@ -1,0 +1,156 @@
+.naturist-code {
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  background:
+    linear-gradient(180deg, rgba(244, 241, 234, 0.96), rgba(255, 255, 255, 0.98)),
+    radial-gradient(circle at 88% 12%, rgba(74, 115, 80, 0.12), transparent 34%);
+}
+
+.naturist-code__lead {
+  max-width: 820px;
+  margin: 0 0 0.75rem;
+  color: var(--bosque);
+  font-family: var(--fuente-serif);
+  font-size: clamp(1.15rem, 2.2vw, 1.55rem);
+  font-style: italic;
+  line-height: 1.55;
+}
+
+.naturist-code__intro {
+  max-width: 920px;
+  margin: 0 0 clamp(2rem, 5vw, 3.5rem);
+  color: var(--gris-calido);
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.naturist-code__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1rem, 2vw, 1.4rem);
+  align-items: start;
+}
+
+.naturist-code-card {
+  min-width: 0;
+  align-self: start;
+  padding: clamp(1.25rem, 2.4vw, 1.75rem);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(36, 65, 56, 0.14);
+  border-top: 4px solid var(--bosque-claro);
+  border-radius: 10px;
+  box-shadow: 0 16px 38px rgba(23, 54, 43, 0.08);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.naturist-code-card--calm { border-top-color: var(--mar-claro); }
+.naturist-code-card--neutral { border-top-color: var(--arena); }
+.naturist-code-card--limit { border-top-color: #c98b43; background: #fffaf2; }
+.naturist-code-card--horizon { border-top-color: var(--mar); background: #f5f9fa; }
+
+.naturist-code-card__top {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.9rem;
+}
+
+.naturist-code-card__icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  color: var(--blanco);
+  background: var(--bosque);
+  border-radius: 50%;
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.naturist-code-card--calm .naturist-code-card__icon,
+.naturist-code-card--horizon .naturist-code-card__icon { background: var(--mar); }
+.naturist-code-card--neutral .naturist-code-card__icon { background: var(--arena); color: var(--noche); }
+.naturist-code-card--limit .naturist-code-card__icon { background: #a96322; }
+
+.naturist-code-card__eyebrow {
+  color: var(--piedra);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.naturist-code-card h3 {
+  margin: 0 0 0.75rem;
+  color: var(--gris-oscuro);
+  font-family: var(--fuente-display);
+  font-size: clamp(1.45rem, 2.3vw, 1.9rem);
+  letter-spacing: 0.02em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.naturist-code-card p,
+.naturist-code-card li {
+  color: var(--gris-calido);
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
+.naturist-code-card p { margin: 0; }
+.naturist-code-card ul { margin: 0.9rem 0 0; padding-left: 1.1rem; }
+.naturist-code-card li + li { margin-top: 0.28rem; }
+.naturist-code-card__closing { margin-top: 0.9rem !important; color: var(--bosque) !important; font-weight: 600; }
+
+.naturist-code__privacy {
+  margin-top: clamp(1.5rem, 4vw, 2.5rem);
+  padding: clamp(1.4rem, 3vw, 2.25rem);
+  color: var(--blanco);
+  background: linear-gradient(135deg, #17362b, #1e4a6b);
+  border-left: 5px solid var(--arena-claro);
+  border-radius: 10px;
+  box-shadow: 0 22px 48px rgba(20, 39, 56, 0.18);
+}
+
+.naturist-code__privacy span {
+  color: var(--arena-claro);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.naturist-code__privacy h3 {
+  margin: 0.55rem 0 0.65rem;
+  color: var(--blanco);
+  font-family: var(--fuente-display);
+  font-size: clamp(1.75rem, 3vw, 2.6rem);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.naturist-code__privacy p { max-width: 900px; margin: 0; color: rgba(255,255,255,.82); line-height: 1.75; }
+
+@media (hover:hover) {
+  .naturist-code-card:hover { transform: translateY(-3px); box-shadow: 0 22px 48px rgba(23, 54, 43, 0.12); }
+}
+
+@media (min-width: 700px) {
+  .naturist-code__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1180px) {
+  .naturist-code__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .naturist-code-card--horizon { grid-column: span 2; }
+}
+
+@media (max-width: 479px) {
+  .naturist-code-card p,
+  .naturist-code-card li { font-size: 1rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .naturist-code-card { transition: none; }
+}

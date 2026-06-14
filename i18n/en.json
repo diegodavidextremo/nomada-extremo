@@ -1,0 +1,14 @@
+{
+  "nav": {"home":"Home","activities":"Activities","school":"School","naturism":"Naturism","audiovisual":"Audiovisual","project":"Project","contact":"Contact","packs":"Packs & vouchers","request":"Request experience","safety":"Safety","team":"Team","faq":"FAQ"},
+  "actions": {"request":"Request experience","explore":"Explore activities","route":"View full route","gift":"Gift voucher","contact":"Contact us","details":"View details","close":"Close","packs":"View packs","school":"View school","how":"How it works","safety":"Safety"},
+  "meta": {
+    "index":{"title":"NÓMADA EXTREMO | Adventure, extreme sports and nature","description":"Adventure, outdoor experiences, training, safety and audiovisual content project."},
+    "actividades":{"title":"Adventure activities | NÓMADA EXTREMO","description":"Concept catalogue covering sea, air, mountain, diving, vertical and multi-adventure experiences."},
+    "escuela":{"title":"Nomad School | Outdoor training","description":"Outdoor learning routes, technical progression and safety."},
+    "packs":{"title":"Adventure packs and gift vouchers | NÓMADA EXTREMO","description":"Combined experiences, premium adventure packs and flexible gift vouchers."},
+    "naturistas":{"title":"Nomad Naturism | NÓMADA EXTREMO","description":"A naturist line focused on privacy, consent, calm and respectful connection with nature."},
+    "contacto":{"title":"Contact | NÓMADA EXTREMO","description":"Official channels and guidance about activities, packs, safety and documentation."},
+    "faq":{"title":"FAQ | NÓMADA EXTREMO","description":"Questions about activities, safety, insurance, bookings, school, vouchers and requirements."},
+    "seguridad":{"title":"Safety and risk management | NÓMADA EXTREMO","description":"Safety criteria, insurance, documentation, permits and risk management."}
+  }
+}

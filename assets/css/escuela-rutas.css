@@ -437,10 +437,12 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.75rem;
+  align-items: start;
 }
 
 .route-accordion {
   min-width: 0;
+  align-self: start;
   overflow: hidden;
   background: #fbfaf7;
   border: 1px solid var(--crema-media);
@@ -892,12 +894,13 @@
   grid-template-columns: minmax(0, 1fr);
   gap: clamp(1rem, 2vw, 1.35rem);
   margin-top: clamp(2rem, 4vw, 3rem);
-  align-items: stretch;
+  align-items: start;
 }
 
 .common-training-card {
   min-width: 0;
-  height: 100%;
+  height: auto;
+  align-self: start;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -990,7 +993,7 @@
 }
 
 .common-training-card__body {
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
@@ -1027,7 +1030,7 @@
 }
 
 .common-training-card__detail {
-  margin-top: auto;
+  margin-top: 0;
   border: 1px solid var(--crema-media);
   border-radius: 9px;
   overflow: hidden;
