@@ -31,6 +31,32 @@
 .language-switcher button.is-active { color: #fff; background: var(--mar); }
 .language-switcher--mobile { display: none; }
 
+[data-i18n],
+.btn,
+.ficha-btn,
+.nav-drop a,
+.nav-mobile-menu a,
+.faq-item summary,
+.filter-chip,
+.chip,
+.ficha-tag {
+  overflow-wrap: anywhere;
+}
+
+.btn,
+.ficha-btn,
+.language-switcher button {
+  white-space: normal;
+}
+
+.nav-drop {
+  width: min(340px, calc(100vw - 2rem));
+}
+
+.nav-drop a {
+  line-height: 1.35;
+}
+
 @media (max-width: 1180px) {
   .language-switcher--desktop { display: none; }
   .language-switcher--mobile { display: flex; margin: 0.35rem 0 1rem; }

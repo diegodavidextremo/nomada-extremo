@@ -1,88 +1,247 @@
 (function () {
   'use strict';
+
   const supported = ['es', 'en', 'fr', 'de'];
   const storageKey = 'noext-language';
+  const catalogVersion = '20260615-1';
   const page = (location.pathname.split('/').pop() || 'index.html').replace('.html', '') || 'index';
-  let current = supported.includes(localStorage.getItem(storageKey)) ? localStorage.getItem(storageKey) : 'es';
-  let fallback = {};
+  const ignoredTags = new Set(['SCRIPT', 'STYLE', 'NOSCRIPT', 'TEMPLATE', 'CODE', 'PRE']);
+  const originalText = new WeakMap();
+  const originalAttributes = new WeakMap();
+  const missingWarnings = new Set();
+  const dictionaries = new Map();
+  const originalTitle = document.title;
+  const originalDescription = document.querySelector('meta[name="description"]')?.getAttribute('content') || '';
+  let current = readStoredLanguage();
+  let applying = false;
+  let observer;
 
-  const pathKeys = [
-    ['.nav-menu > li > a[href="index.html"], .nav-mobile-menu > a[href="index.html"]','nav.home'],
-    ['.nav-menu > li > a[href="actividades.html"], .nav-mobile-menu > a[href="actividades.html"]','nav.activities'],
-    ['.nav-menu > li > a[href="escuela.html"], .nav-mobile-menu > a[href="escuela.html"]','nav.school'],
-    ['.nav-menu > li > a[href="naturistas.html"], .nav-mobile-menu > a[href="naturistas.html"]','nav.naturism'],
-    ['.nav-menu > li > a[href="audiovisual.html"], .nav-mobile-menu > a[href="audiovisual.html"]','nav.audiovisual'],
-    ['.nav-menu > li > a[href="proyecto-completo.html"], .nav-mobile-menu > a[href="proyecto-completo.html"]','nav.project'],
-    ['.nav-menu > li > a[href="contacto.html"], .nav-mobile-menu > a[href="contacto.html"]','nav.contact'],
-    ['.nav-mobile-menu > a[href="packs.html"]','nav.packs'],
-    ['.nav-mobile-menu > a[href="reservas.html"]','nav.request'],
-    ['.nav-mobile-menu > a[href="seguridad.html"]','nav.safety'],
-    ['.nav-mobile-menu > a[href="equipo.html"]','nav.team'],
-    ['.nav-mobile-menu > a[href="faq.html"]','nav.faq']
-  ];
+  function readStoredLanguage() {
+    try {
+      const stored = localStorage.getItem(storageKey);
+      return supported.includes(stored) ? stored : 'es';
+    } catch (_) {
+      return 'es';
+    }
+  }
 
-  const exactKeys = new Map([
-    ['Solicitar experiencia','actions.request'],['Explorar actividades','actions.explore'],['Ver ruta completa','actions.route'],
-    ['Regalar bono','actions.gift'],['Contactar','actions.contact'],['Ver detalle','actions.details'],['Cerrar','actions.close'],
-    ['Ver packs','actions.packs'],['Ver escuela','actions.school'],['Cómo funciona','actions.how'],['Seguridad','actions.safety']
-  ]);
+  function storeLanguage(language) {
+    try { localStorage.setItem(storageKey, language); } catch (_) { /* file:// or privacy mode */ }
+  }
 
-  const markCommonContent = () => {
-    pathKeys.forEach(([selector,key]) => document.querySelectorAll(selector).forEach(element => { if (!element.dataset.i18n) element.dataset.i18n = key; }));
-    document.querySelectorAll('a, button, summary').forEach(element => {
-      const key = exactKeys.get(element.textContent.trim());
-      if (key && !element.dataset.i18n) element.dataset.i18n = key;
-    });
-  };
+  function normalize(value) {
+    return String(value || '').replace(/\s+/g, ' ').trim();
+  }
 
-  const load = async language => {
-    const response = await fetch(`i18n/${language}.json`, { cache: 'no-cache' });
+  function valueFor(dictionary, key) {
+    return key.split('.').reduce((value, part) => value && value[part], dictionary);
+  }
+
+  function warnMissing(key, language) {
+    const warning = `${language}:${key}`;
+    if (missingWarnings.has(warning)) return;
+    missingWarnings.add(warning);
+    console.warn(`Missing i18n key: ${key} (${language})`);
+  }
+
+  async function load(language) {
+    if (dictionaries.has(language)) return dictionaries.get(language);
+    const response = await fetch(`i18n/${language}.json?v=${catalogVersion}`, { cache: 'default' });
     if (!response.ok) throw new Error(`No se pudo cargar i18n/${language}.json`);
-    return response.json();
-  };
+    const dictionary = await response.json();
+    dictionaries.set(language, dictionary);
+    return dictionary;
+  }
 
-  const valueFor = (dictionary, key) => key.split('.').reduce((value, part) => value && value[part], dictionary);
+  function translatedValue(source, language, dictionary, fallback, explicitKey) {
+    if (!source) return source;
+    const key = explicitKey || `strings.${source}`;
+    const target = explicitKey ? valueFor(dictionary, explicitKey) : dictionary.strings?.[source];
+    if (typeof target === 'string') return target;
+    const fallbackValue = explicitKey ? valueFor(fallback, explicitKey) : fallback.strings?.[source];
+    if (language !== 'es') warnMissing(key, language);
+    return typeof fallbackValue === 'string' ? fallbackValue : source;
+  }
 
-  const apply = (dictionary, language) => {
-    markCommonContent();
-    document.documentElement.lang = language;
-    document.querySelectorAll('[data-i18n]').forEach(element => {
+  function preserveSpacing(raw, translated) {
+    const leading = raw.match(/^\s*/)?.[0] || '';
+    const trailing = raw.match(/\s*$/)?.[0] || '';
+    return `${leading}${translated}${trailing}`;
+  }
+
+  function rememberAttribute(element, attribute) {
+    let values = originalAttributes.get(element);
+    if (!values) {
+      values = {};
+      originalAttributes.set(element, values);
+    }
+    if (!(attribute in values)) values[attribute] = element.getAttribute(attribute) || '';
+    return values[attribute];
+  }
+
+  function applyExplicit(root, language, dictionary, fallback) {
+    const scope = root.nodeType === Node.ELEMENT_NODE ? root : document;
+    const candidates = [];
+    if (scope.matches?.('[data-i18n]')) candidates.push(scope);
+    scope.querySelectorAll?.('[data-i18n]').forEach(element => candidates.push(element));
+    candidates.forEach(element => {
       const key = element.dataset.i18n;
-      const value = valueFor(dictionary, key) ?? valueFor(fallback, key);
-      if (typeof value === 'string') element.textContent = value;
+      const source = valueFor(fallback, key) || normalize(element.textContent);
+      const translated = translatedValue(source, language, dictionary, fallback, key);
+      if (element.textContent !== translated) element.textContent = translated;
     });
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
-      const value = valueFor(dictionary, element.dataset.i18nPlaceholder) ?? valueFor(fallback, element.dataset.i18nPlaceholder);
-      if (typeof value === 'string') element.placeholder = value;
+
+    const attributeBindings = [
+      ['data-i18n-placeholder', 'placeholder'],
+      ['data-i18n-aria', 'aria-label'],
+      ['data-i18n-title', 'title'],
+      ['data-i18n-alt', 'alt']
+    ];
+    attributeBindings.forEach(([dataAttribute, attribute]) => {
+      const selector = `[${dataAttribute}]`;
+      const elements = [];
+      if (scope.matches?.(selector)) elements.push(scope);
+      scope.querySelectorAll?.(selector).forEach(element => elements.push(element));
+      elements.forEach(element => {
+        const key = element.getAttribute(dataAttribute);
+        const source = valueFor(fallback, key) || rememberAttribute(element, attribute);
+        const translated = translatedValue(source, language, dictionary, fallback, key);
+        if (element.getAttribute(attribute) !== translated) element.setAttribute(attribute, translated);
+      });
     });
-    document.querySelectorAll('[data-i18n-aria]').forEach(element => {
-      const value = valueFor(dictionary, element.dataset.i18nAria) ?? valueFor(fallback, element.dataset.i18nAria);
-      if (typeof value === 'string') element.setAttribute('aria-label', value);
+  }
+
+  function applyCatalog(root, language, dictionary, fallback) {
+    const base = root.nodeType === Node.TEXT_NODE ? root.parentElement : root;
+    if (!base || ignoredTags.has(base.tagName) || base.closest('[translate="no"],[data-no-translate]')) return;
+
+    const textNodes = [];
+    if (root.nodeType === Node.TEXT_NODE) textNodes.push(root);
+    else {
+      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+      let node;
+      while ((node = walker.nextNode())) textNodes.push(node);
+    }
+
+    textNodes.forEach(node => {
+      if (!node.parentElement || ignoredTags.has(node.parentElement.tagName) || node.parentElement.closest('[data-i18n],[translate="no"],[data-no-translate]')) return;
+      if (!originalText.has(node)) originalText.set(node, node.nodeValue);
+      const raw = originalText.get(node);
+      const source = normalize(raw);
+      if (!source) return;
+      const translated = translatedValue(source, language, dictionary, fallback);
+      const nextValue = preserveSpacing(raw, translated);
+      if (node.nodeValue !== nextValue) node.nodeValue = nextValue;
     });
+
+    const elements = [];
+    if (root.nodeType === Node.ELEMENT_NODE) elements.push(root);
+    root.querySelectorAll?.('[placeholder],[title],[aria-label],[alt]').forEach(element => elements.push(element));
+    elements.forEach(element => {
+      ['placeholder', 'title', 'aria-label', 'alt'].forEach(attribute => {
+        if (!element.hasAttribute(attribute) || element.hasAttribute(`data-i18n-${attribute === 'aria-label' ? 'aria' : attribute}`)) return;
+        const source = normalize(rememberAttribute(element, attribute));
+        if (!source) return;
+        const translated = translatedValue(source, language, dictionary, fallback);
+        if (element.getAttribute(attribute) !== translated) element.setAttribute(attribute, translated);
+      });
+    });
+  }
+
+  function updateMetadata(language, dictionary, fallback) {
+    const title = valueFor(dictionary, `meta.${page}.title`) ?? dictionary.strings?.[originalTitle] ?? valueFor(fallback, `meta.${page}.title`) ?? originalTitle;
+    const description = valueFor(dictionary, `meta.${page}.description`) ?? dictionary.strings?.[originalDescription] ?? valueFor(fallback, `meta.${page}.description`) ?? originalDescription;
+    if (title) document.title = title;
+    if (description) document.querySelector('meta[name="description"]')?.setAttribute('content', description);
+    document.querySelector('meta[property="og:title"]')?.setAttribute('content', title || document.title);
+    if (description) document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
+    document.documentElement.lang = language;
+  }
+
+  function updateSwitcher(language) {
     document.querySelectorAll('[data-language-switcher] button').forEach(button => {
       const active = button.dataset.lang === language;
       button.classList.toggle('is-active', active);
       button.setAttribute('aria-pressed', String(active));
     });
-    const title = valueFor(dictionary, `meta.${page}.title`) ?? valueFor(fallback, `meta.${page}.title`);
-    const description = valueFor(dictionary, `meta.${page}.description`) ?? valueFor(fallback, `meta.${page}.description`);
-    if (title) document.title = title;
-    if (description) document.querySelector('meta[name="description"]')?.setAttribute('content', description);
-    window.dispatchEvent(new CustomEvent('noext:languagechange', { detail: { language, dictionary } }));
-  };
+  }
 
-  const setLanguage = async language => {
+  function applyDocument(language, dictionary, fallback, root = document.body) {
+    if (!root) return;
+    applying = true;
+    applyExplicit(root, language, dictionary, fallback);
+    applyCatalog(root, language, dictionary, fallback);
+    applying = false;
+    updateMetadata(language, dictionary, fallback);
+    updateSwitcher(language);
+  }
+
+  async function setLanguage(language, announce = true) {
     const next = supported.includes(language) ? language : 'es';
     try {
-      if (!Object.keys(fallback).length) fallback = await load('es');
+      const fallback = await load('es');
       const dictionary = next === 'es' ? fallback : await load(next);
       current = next;
-      localStorage.setItem(storageKey, current);
-      apply(dictionary, current);
+      storeLanguage(current);
+      applyDocument(current, dictionary, fallback);
+      if (announce) window.dispatchEvent(new CustomEvent('noext:languagechange', { detail: { language: current, dictionary, fallback } }));
     } catch (error) {
       console.warn('[Nómada Extremo i18n]', error.message);
-      if (Object.keys(fallback).length) apply(fallback, 'es');
+      const fallback = dictionaries.get('es');
+      if (fallback) {
+        current = 'es';
+        applyDocument('es', fallback, fallback);
+      }
     }
+  }
+
+  function observeDynamicContent() {
+    observer?.disconnect();
+    observer = new MutationObserver(mutations => {
+      if (applying) return;
+      const dictionary = dictionaries.get(current);
+      const fallback = dictionaries.get('es');
+      if (!dictionary || !fallback) return;
+      const roots = new Set();
+      mutations.forEach(mutation => {
+        if (mutation.type === 'characterData') roots.add(mutation.target);
+        mutation.addedNodes?.forEach(node => roots.add(node));
+      });
+      roots.forEach(root => {
+        if (root.nodeType !== Node.TEXT_NODE && root.nodeType !== Node.ELEMENT_NODE) return;
+        applying = true;
+        applyExplicit(root, current, dictionary, fallback);
+        applyCatalog(root, current, dictionary, fallback);
+        applying = false;
+      });
+    });
+    observer.observe(document.body, { childList: true, characterData: true, subtree: true });
+  }
+
+  window.noextTranslate = source => {
+    const fallback = dictionaries.get('es') || {};
+    const dictionary = dictionaries.get(current) || fallback;
+    return translatedValue(normalize(source), current, dictionary, fallback);
+  };
+
+  window.auditI18n = () => {
+    const fallback = dictionaries.get('es') || {};
+    const dictionary = dictionaries.get(current) || fallback;
+    const missing = [];
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    let node;
+    while ((node = walker.nextNode())) {
+      if (!node.parentElement || ignoredTags.has(node.parentElement.tagName) || node.parentElement.closest('[data-i18n],[translate="no"],[data-no-translate]')) continue;
+      const style = getComputedStyle(node.parentElement);
+      if (style.display === 'none' || style.visibility === 'hidden') continue;
+      const source = normalize(originalText.get(node) ?? node.nodeValue);
+      if (!source) continue;
+      if (fallback.strings?.[source] === undefined || (current !== 'es' && dictionary.strings?.[source] === undefined)) {
+        missing.push({ text: source, element: node.parentElement.tagName.toLowerCase(), page: location.pathname.split('/').pop() || 'index.html' });
+      }
+    }
+    console.table(missing);
+    return missing;
   };
 
   document.addEventListener('click', event => {
@@ -90,5 +249,5 @@
     if (button) setLanguage(button.dataset.lang);
   });
 
-  setLanguage(current);
+  setLanguage(current, false).then(observeDynamicContent);
 })();

@@ -59,18 +59,23 @@
   const empty = document.getElementById('faqEmpty');
   if (!results || !chips || !search || !empty) return;
   let active = 'all';
+  const t = value => typeof window.noextTranslate === 'function' ? window.noextTranslate(value) : value;
 
   const render = () => {
-    const term = search.value.trim().toLocaleLowerCase('es');
-    const visible = categories.map(category => ({...category, questions:category.questions.filter(([q,a]) => `${q} ${a}`.toLocaleLowerCase('es').includes(term))})).filter(category => (active === 'all' || category.id === active) && category.questions.length);
+    const term = search.value.trim().toLocaleLowerCase(document.documentElement.lang || 'es');
+    const visible = categories.map(category => ({...category, questions:category.questions.filter(([q,a]) => `${t(q)} ${t(a)}`.toLocaleLowerCase(document.documentElement.lang || 'es').includes(term))})).filter(category => (active === 'all' || category.id === active) && category.questions.length);
     results.innerHTML = visible.map((category, index) => `<section class="faq-category${category.featured ? ' faq-category--featured' : ''}"><header class="faq-category__head"><span>${String(index + 1).padStart(2,'0')} · Categoría</span><h2>${category.label}</h2></header>${category.questions.map(([question,answer]) => `<details class="faq-item"><summary>${question}</summary><p>${answer}</p></details>`).join('')}</section>`).join('');
     empty.hidden = visible.length > 0;
     results.querySelectorAll('.faq-item').forEach(item => item.addEventListener('toggle', () => { if (!item.open) return; results.querySelectorAll('.faq-item[open]').forEach(other => { if (other !== item) other.open = false; }); }));
   };
 
-  const chipData = [['all','Todas'], ...categories.map(category => [category.id, category.label])];
-  chips.innerHTML = chipData.map(([id,label]) => `<button type="button" data-faq-category="${id}" class="${id === 'all' ? 'is-active' : ''}">${label}</button>`).join('');
+  const renderChips = () => {
+    const chipData = [['all','Todas'], ...categories.map(category => [category.id, category.label])];
+    chips.innerHTML = chipData.map(([id,label]) => `<button type="button" data-faq-category="${id}" class="${id === active ? 'is-active' : ''}">${label}</button>`).join('');
+  };
+  renderChips();
   chips.addEventListener('click', event => { const button = event.target.closest('[data-faq-category]'); if (!button) return; active = button.dataset.faqCategory; chips.querySelectorAll('button').forEach(item => item.classList.toggle('is-active', item === button)); render(); });
   search.addEventListener('input', render);
+  window.addEventListener('noext:languagechange', () => { renderChips(); render(); });
   render();
 })();

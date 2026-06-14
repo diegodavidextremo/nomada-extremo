@@ -193,14 +193,14 @@
   if (!document.querySelector('link[data-noext-i18n]')) {
     const languageStyles = document.createElement('link');
     languageStyles.rel = 'stylesheet';
-    languageStyles.href = 'assets/css/i18n.css?v=20260614-1';
+    languageStyles.href = 'assets/css/i18n.css?v=20260614-2';
     languageStyles.dataset.noextI18n = 'styles';
     document.head.appendChild(languageStyles);
   }
 
   if (!document.querySelector('script[data-noext-i18n]')) {
     const languageScript = document.createElement('script');
-    languageScript.src = 'assets/js/i18n.js?v=20260614-1';
+    languageScript.src = 'assets/js/i18n.js?v=20260615-1';
     languageScript.dataset.noextI18n = 'runtime';
     document.head.appendChild(languageScript);
   }
