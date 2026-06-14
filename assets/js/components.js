@@ -60,6 +60,8 @@
       <button type="button" data-lang="en" aria-label="English">EN</button>
       <button type="button" data-lang="fr" aria-label="Français">FR</button>
       <button type="button" data-lang="de" aria-label="Deutsch">DE</button>
+      <button type="button" data-lang="it" aria-label="Italiano">IT</button>
+      <button type="button" data-lang="pt" aria-label="Português">PT</button>
     </div>
     <button class="nav-hamburger" id="navHamb" type="button" aria-label="Abrir menú" aria-controls="mobileNav" aria-expanded="false">
       <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
@@ -73,6 +75,8 @@
       <button type="button" data-lang="en" aria-label="English">EN</button>
       <button type="button" data-lang="fr" aria-label="Français">FR</button>
       <button type="button" data-lang="de" aria-label="Deutsch">DE</button>
+      <button type="button" data-lang="it" aria-label="Italiano">IT</button>
+      <button type="button" data-lang="pt" aria-label="Português">PT</button>
     </div>
     <a href="index.html">Inicio</a>
     <a href="actividades.html">Actividades</a>
@@ -193,14 +197,14 @@
   if (!document.querySelector('link[data-noext-i18n]')) {
     const languageStyles = document.createElement('link');
     languageStyles.rel = 'stylesheet';
-    languageStyles.href = 'assets/css/i18n.css?v=20260614-2';
+    languageStyles.href = 'assets/css/i18n.css?v=20260615-2';
     languageStyles.dataset.noextI18n = 'styles';
     document.head.appendChild(languageStyles);
   }
 
   if (!document.querySelector('script[data-noext-i18n]')) {
     const languageScript = document.createElement('script');
-    languageScript.src = 'assets/js/i18n.js?v=20260615-1';
+    languageScript.src = 'assets/js/i18n.js?v=20260615-2';
     languageScript.dataset.noextI18n = 'runtime';
     document.head.appendChild(languageScript);
   }

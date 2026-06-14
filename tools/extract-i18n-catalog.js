@@ -22,19 +22,14 @@ const normalize = value => value.replace(/\s+/g, ' ').trim();
   for (const pageName of htmlPages) {
     await page.goto(new URL(pageName, baseUrl).href, { waitUntil: 'domcontentloaded' });
     await page.waitForTimeout(180);
-    const result = await page.evaluate(() => {
+    const collectPageStrings = () => page.evaluate(() => {
       const skip = new Set(['SCRIPT', 'STYLE', 'NOSCRIPT', 'TEMPLATE']);
-      const visible = element => {
-        if (!element || skip.has(element.tagName)) return false;
-        const style = getComputedStyle(element);
-        return style.display !== 'none' && style.visibility !== 'hidden';
-      };
       const texts = [];
       const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
       let node;
       while ((node = walker.nextNode())) {
         const value = node.nodeValue.replace(/\s+/g, ' ').trim();
-        if (value && visible(node.parentElement)) texts.push(value);
+        if (value && node.parentElement && !skip.has(node.parentElement.tagName)) texts.push(value);
       }
       const attributes = [];
       document.querySelectorAll('[placeholder],[title],[aria-label],[alt]').forEach(element => {
@@ -45,6 +40,18 @@ const normalize = value => value.replace(/\s+/g, ' ').trim();
       });
       return { texts, attributes, title: document.title };
     });
+    const result = await collectPageStrings();
+    if (pageName === 'actividades.html') {
+      const buttons = page.locator('.ficha-tech-btn');
+      const total = await buttons.count();
+      for (let index = 0; index < total; index += 1) {
+        await buttons.nth(index).click();
+        const modal = await collectPageStrings();
+        result.texts.push(...modal.texts);
+        result.attributes.push(...modal.attributes);
+        await page.locator('#noext-modal .noext-modal-close').click();
+      }
+    }
     const pageStrings = [...new Set([...result.texts, ...result.attributes, result.title].map(normalize).filter(Boolean))];
     pageStrings.forEach(value => strings.add(value));
     pages[pageName] = pageStrings;

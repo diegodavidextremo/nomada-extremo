@@ -11,12 +11,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 I18N = ROOT / "i18n"
 SOURCE = I18N / "source-catalog.json"
-LANGUAGES = ("en", "fr", "de")
+LANGUAGES = ("en", "fr", "de", "it", "pt")
 SEPARATOR = "\nNOEXT_TRANSLATION_SEPARATOR_9F7C\n"
 BRANDS = (
     "NÓMADA EXTREMO", "Nómada Extremo", "Diego David Extremo", "Diego David Gómez García",
     "Nuria Pons", "PADI", "SSI", "USPA", "RFAE", "FAMUR", "DAN", "EASA", "AESA",
-    "Logbook", "FPV", "GMN", "IES Europa"
+    "Logbook", "FPV", "GMN", "IES Europa", "AFF", "Open Water", "Advanced Open Water",
+    "Rescue Diver", "Divemaster", "GoPro", "Drone", "Wingsuit", "BASE"
 )
 
 
