@@ -61,6 +61,7 @@
       title: 'Paracaidismo AFF',
       category: 'Ruta caída libre',
       count: '8 niveles + licencias',
+      price: 'Curso AFF base: desde 1.500–2.300 € aprox. · Programa completo AFF + consolidación + licencia: desde 2.900–3.600 € aprox. · consultar centro autorizado (por ejemplo, Skydive Totana)',
       start: 'AFF Nivel 1',
       goal: 'Licencias A / B / C / D',
       reference: 'RFAE, centro autorizado y progresión oficial del centro; referencia internacional tipo USPA.',
@@ -485,6 +486,7 @@
         </div>
         <div class="route-card__reference"><strong>Referencia técnica</strong><span>${escapeHTML(route.reference)}</span></div>
         <div class="route-card__responsible"><strong>Responsable técnico</strong><span>${escapeHTML(route.responsible)}</span></div>
+        ${route.price ? `<div class="route-card__price"><strong>Inversión orientativa</strong><span>${escapeHTML(route.price)}</span></div>` : ''}
         <div>
           <span class="route-card__modules-title">Módulos principales</span>
           <ol class="route-card__modules">${route.modules.map((module, index) => `<li><b>${String(index + 1).padStart(2, '0')}</b>${escapeHTML(module[0])}</li>`).join('')}</ol>
@@ -519,7 +521,7 @@
   let lastTrigger = null;
 
   function renderLicenseProgram(route) {
-    if (!route.licenses?.length) return '';
+    if (!route.licensesí.length) return '';
 
     return `
       <section class="route-dialog__licenses">
@@ -541,7 +543,7 @@
   }
 
   function renderAdvancedProgram(route) {
-    if (!route.advancedModules?.length) return '';
+    if (!route.advancedModulesí.length) return '';
 
     return `
       <section class="route-pro-program">
@@ -569,7 +571,7 @@
   }
 
   function renderRouteDetail(route) {
-    const extras = route.extras?.length ? `
+    const extras = route.extrasí.length ? `
       <section class="route-dialog__extra">
         <h3>${escapeHTML(route.extrasTitle)}</h3>
         <div class="route-dialog__extra-grid">${route.extras.map((item) => `<div class="route-dialog__extra-item"><h4>${escapeHTML(item[0])}</h4><p>${escapeHTML(item[1])}</p></div>`).join('')}</div>
@@ -581,6 +583,7 @@
         <div class="route-dialog__fact"><strong>Meta</strong><span>${escapeHTML(route.goal)}</span></div>
         <div class="route-dialog__fact"><strong>Referencia técnica</strong><span>${escapeHTML(route.reference)}</span></div>
         <div class="route-dialog__fact"><strong>Responsable técnico</strong><span>${escapeHTML(route.responsible)}</span></div>
+        ${route.price ? `<div class="route-dialog__fact"><strong>Inversión orientativa</strong><span>${escapeHTML(route.price)}</span></div>` : ''}
       </div>
       <section class="route-dialog__modules">
         <h3>Módulos principales</h3>

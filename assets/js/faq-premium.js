@@ -24,12 +24,16 @@
     { id:'actividades', label:'Actividades, packs y meteorología', questions:[
       ['¿Qué ocurre si hace mal tiempo?','Viento, oleaje, calor, tormentas, caudal o visibilidad pueden aplazar, acortar o sustituir la actividad.'],
       ['¿Puedo combinar buceo con vuelo?','Sí, con planificación específica. Se prioriza volar antes de bucear; si se invierte el orden, se respetan los intervalos indicados por el centro y el ordenador de buceo.'],
-      ['¿Puedo pedir un pack personalizado?','Sí. Puede combinarse medio, nivel, duración y audiovisual siempre que las disciplinas sean compatibles y técnicamente viables.']
+      ['¿Puedo pedir un pack personalizado?','Sí. Puede combinarse medio, nivel, duración y audiovisual siempre que las disciplinas sean compatibles y técnicamente viables.'],
+      ['¿Qué diferencia hay entre puenting y Rope Jumping?','El puenting es un salto pendular desde puente y puede funcionar como primera experiencia con operador autorizado. El Rope Jumping de Montanejos se plantea como salida avanzada desde pared, con caída libre, carga dinámica y sistema específico de cuerdas.'],
+      ['¿Por qué algunas actividades aparecen como salida especial?','Porque requieren una geografía, instalación, permiso, convocatoria o proveedor que no existe en la base de Águilas. La marca coordinaría el desplazamiento y la validación, no improvisaría el lugar.']
     ]},
     { id:'escuela', label:'Escuela y certificaciones', questions:[
       ['¿Qué diferencia hay entre experiencia, formación y certificación?','La experiencia es puntual; la formación desarrolla habilidades; la certificación solo puede emitirla una organización o centro autorizado.'],
       ['¿Nómada Extremo certifica cursos?','No actualmente. Los itinerarios muestran rutas de referencia y, en una versión operativa, se coordinarían con centros autorizados.'],
-      ['¿Puedo continuar progresando después de una iniciación?','Sí. Escuela Nómada plantea progresiones por niveles y deriva hacia proveedores o entidades reconocidas cuando corresponde.']
+      ['¿Puedo continuar progresando después de una iniciación?','Sí. Escuela Nómada plantea progresiones por niveles y deriva hacia proveedores o entidades reconocidas cuando corresponde.'],
+      ['¿Cuánto cuesta aproximadamente un curso AFF?','La referencia del proyecto se sitúa entre 1.500 y 2.300 € aproximadamente. El importe, niveles incluidos, repeticiones, seguro y requisitos deben confirmarse con el centro autorizado.'],
+      ['¿Las credenciales QR son oficiales?','No. Son registros internos demostrativos del prototipo. No sustituyen una licencia, titulación o certificado emitido por una entidad autorizada.']
     ]},
     { id:'audiovisual', label:'Audiovisual, cámaras y privacidad', questions:[
       ['¿Puedo llevar cámara propia?','Solo si puede sujetarse correctamente y no compromete seguridad, privacidad ni ritmo del grupo.'],
@@ -44,10 +48,23 @@
     { id:'grupos', label:'Grupos, familias y empresas', questions:[
       ['¿Hay actividades para familias?','Sí: senderismo, kayak tranquilo, snorkel de iniciación, orientación y propuestas adaptadas a edad y nivel.'],
       ['¿Pueden participar menores?','Depende de disciplina, edad, autorización, proveedor, seguro y criterio técnico. Algunas actividades no son adecuadas para menores.'],
-      ['¿Se pueden preparar jornadas para empresas o centros?','Sí, con objetivos de equipo, educación ambiental, aventura adaptada, formación outdoor o contenido audiovisual.']
+      ['¿Se pueden preparar jornadas para empresas o centros?','Sí, con objetivos de equipo, educación ambiental, aventura adaptada, formación outdoor o contenido audiovisual.'],
+      ['¿Pueden participar clubes, creadores o centros de formación?','Sí. El programa de grupos contempla clubes, asociaciones, productoras, creadores y centros formativos con objetivos, requisitos y documentación propios.']
+    ]},
+    { id:'digital', label:'Logbook, app y comunidad', questions:[
+      ['¿Qué es el Logbook?','Es el historial conceptual de actividad: zona, condiciones, aprendizajes, material, XP, progreso por disciplinas, insignias y recuerdos autorizados.'],
+      ['¿Existe una cuenta real o se guardan mis datos?','No. La interfaz actual es una maqueta funcional sin registro de cuentas ni almacenamiento real de datos personales.'],
+      ['¿Cómo funciona el ranking sano?','No premia asumir más riesgo ni competir de forma agresiva. Da valor a constancia, aprendizaje, variedad, seguridad, colaboración y respeto ambiental.'],
+      ['¿Qué son Explorador, Aventurero, Nómada, Extremo y Leyenda Nómada?','Son niveles internos de progresión visual que resumen trayectoria y variedad. No acreditan competencia profesional.']
+    ]},
+    { id:'territorio', label:'Territorio y naturaleza', questions:[
+      ['¿Qué zonas forman la base de Águilas?','Cabo Cope, Calabardina, Isla del Fraile, Cuatro Calas, Cocedores, Playa Carolina, Matalentisco, Playa Amarilla, Sierra de la Almenara y otros puntos próximos sujetos a revisión.'],
+      ['¿Qué es Naturaleza Nómada?','La línea de educación ambiental, mínimo impacto, fauna, posidonia, plogging responsable, ciencia ciudadana y comunicación de ubicaciones con criterio.'],
+      ['¿Por qué no se publican todos los spots exactos?','Porque una ubicación sensible puede deteriorarse por masificación. La seguridad y la conservación pesan más que la viralidad.']
     ]},
     { id:'contacto', label:'Contacto y soporte', questions:[
-      ['¿Cuál es el mejor canal?','WhatsApp para consultas rápidas; email o formulario para propuestas detalladas; Instagram para contenido visual y X para avisos breves.'],
+      ['¿Cuál es el mejor canal?','Email o formulario para propuestas detalladas y Telegram para consultas breves. También puedes seguir la evolución visual del proyecto en Instagram y X.'],
+      ['¿Cuál es el correo del proyecto?','nomadaextremoaguilas@gmail.com. En Telegram: @DiegoDavidExtremo.'],
       ['¿Dónde puedo seguir el proyecto?','Instagram: @nomadaextremoes. X: @nomadaextremoES. Ambos enlaces están disponibles en Contacto y en el pie de página.'],
       ['¿Qué información debo enviar?','Actividad, fecha, personas, nivel, experiencia, audiovisual y cualquier dato relevante sobre salud, agua, altura, vértigo o movilidad.']
     ]}

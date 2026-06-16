@@ -4,6 +4,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 I18N = ROOT / "i18n"
+SOURCE_CATALOG = I18N / "source-catalog.json"
 
 FAQ = {
     "es": {
@@ -245,6 +246,18 @@ def restore_brand_tokens(value: str) -> str:
     return value
 
 
+def replace_preserving_case(value: str, source: str, target: str) -> str:
+    def replacement(match: re.Match) -> str:
+        original = match.group(0)
+        if original.isupper():
+            return target.upper()
+        if original[:1].isupper():
+            return target[:1].upper() + target[1:]
+        return target
+
+    return re.sub(rf"\b{re.escape(source)}\b", replacement, value, flags=re.I)
+
+
 def polish_terms(source: str, value: str, language: str) -> str:
     if language == "en":
         value = re.sub(r"\bnaturopathic\b", "naturist", value, flags=re.I)
@@ -264,7 +277,27 @@ def polish_terms(source: str, value: str, language: str) -> str:
         value = re.sub(r"\bnaturopatic", "naturist", value, flags=re.I)
     elif language == "pt":
         value = re.sub(r"\bnaturopátic", "naturist", value, flags=re.I)
+        european_portuguese = (
+            ("acadêmico", "académico"), ("acadêmica", "académica"),
+            ("acadêmicos", "académicos"), ("acadêmicas", "académicas"),
+            ("contato", "contacto"), ("contatos", "contactos"),
+            ("equipe", "equipa"), ("equipes", "equipas"),
+            ("usuário", "utilizador"), ("usuária", "utilizadora"),
+            ("usuários", "utilizadores"), ("usuárias", "utilizadoras"),
+            ("celular", "telemóvel"), ("celulares", "telemóveis"),
+            ("cadastro", "registo"), ("cadastros", "registos"),
+            ("planejamento", "planeamento"), ("gerenciamento", "gestão"),
+            ("compartilhar", "partilhar"), ("compartilhado", "partilhado"),
+            ("salvar", "guardar"), ("decolagem", "descolagem"),
+            ("aterrissagem", "aterragem"), ("ônibus", "autocarro"),
+            ("arquivo", "ficheiro"), ("arquivos", "ficheiros"),
+            ("treinamento", "treino"), ("treinamentos", "treinos"),
+        )
+        for brazilian, european in european_portuguese:
+            value = replace_preserving_case(value, brazilian, european)
     return value
+
+source_strings = json.loads(SOURCE_CATALOG.read_text(encoding="utf-8")).get("strings", []) if SOURCE_CATALOG.exists() else []
 
 for language, faq in FAQ.items():
     path = I18N / f"{language}.json"
@@ -276,6 +309,8 @@ for language, faq in FAQ.items():
             strings[source] = source
         else:
             strings[source] = polish_terms(source, restore_brand_tokens(value), language)
+    for source_text in source_strings:
+        strings.setdefault(source_text, source_text)
     strings.update(FIXED_LABELS)
     strings.update(LANGUAGE_OVERRIDES.get(language, {}))
     for name in PACK_NAMES:
