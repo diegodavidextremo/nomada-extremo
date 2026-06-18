@@ -200,3 +200,17 @@
   .nat-activity-card { padding: 0.8rem !important; }
   .nat-activity-media { aspect-ratio: 4 / 3; }
 }
+
+
+/* Ajuste final de encuadres visuales en actividades naturistas */
+.nat-activity-media { aspect-ratio: 16 / 10; min-height: 190px; }
+.nat-activity-card--kayak .nat-activity-media img { object-position: center 50%; }
+.nat-activity-card--yoga .nat-activity-media img { object-position: center 48%; }
+.nat-activity-card--swimming .nat-activity-media img { object-position: center 55%; }
+.nat-activity-card--snorkel .nat-activity-media img { object-position: center 50%; }
+.nat-activity-card--paddle .nat-activity-media img { object-position: 48% 68%; }
+.nat-activity-card--hiking .nat-activity-media img { object-position: center 55%; }
+.nat-activity-card--volleyball .nat-activity-media img { object-position: center 42%; }
+.nat-activity-card--petanque .nat-activity-media img { object-position: center 55%; }
+@media (min-width: 900px) { .nat-activity-media { min-height: 210px; } }
+@media (max-width: 520px) { .nat-activity-media { aspect-ratio: 4 / 3; min-height: 0; } }

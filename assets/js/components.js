@@ -1,6 +1,7 @@
 /* NÓMADA EXTREMO v2.6 — componentes compartidos accesibles */
 
 (function () {
+  const TELEGRAM_URL = 'https://t.me/DiegoDavidExtremo';
   const PROJECT_NOTICE = 'Nómada Extremo es actualmente un proyecto académico no operativo creado por Diego David Gómez García, alumno de 1.º GMN del IES Europa de Águilas (Murcia). Nació el 8 de abril de 2025 y evoluciona semanalmente con nuevas funciones, mejoras e información. No realiza reservas, cobros, ventas, sorteos ni actividades reales en este momento.';
 
   const NAV = `
@@ -104,8 +105,8 @@
       <div class="footer-col"><h5>Experiencias</h5><ul><li><a href="actividades.html">Actividades</a></li><li><a href="packs.html">Packs</a></li><li><a href="packs.html#bonos">Bonos regalo</a></li><li><a href="grupos.html">Grupos, centros y empresas</a></li><li><a href="zonas.html">Zonas de aventura</a></li><li><a href="naturistas.html">Nómada Naturista</a></li></ul></div>
       <div class="footer-col"><h5>Sistema Nómada</h5><ul><li><a href="como-funciona.html">Cómo funciona</a></li><li><a href="index.html#metodo-nomada">Método Nómada</a></li><li><a href="seguridad.html">Seguridad</a></li><li><a href="seguridad.html#seguros-documentacion">Seguros y documentación</a></li><li><a href="material.html">Material y marcas</a></li><li><a href="alquiler.html">Alquiler orientativo</a></li><li><a href="logbook.html">Logbook y app</a></li><li><a href="certificaciones.html">Credenciales digitales</a></li><li><a href="formularios.html">Formularios</a></li><li><a href="escuela.html">Escuela Nómada</a></li><li><a href="audiovisual.html">Audiovisual</a></li></ul></div>
       <div class="footer-col"><h5>Marca</h5><ul><li><a href="quienes-somos.html">Quiénes somos</a></li><li><a href="fundador.html">Fundador</a></li><li><a href="equipo.html">Equipo</a></li><li><a href="equipo.html#nucleo-directivo">Nuria Pons</a></li><li><a href="sostenibilidad.html">Sostenibilidad</a></li><li><a href="naturaleza.html">Naturaleza Nómada</a></li><li><a href="blog.html">Blog</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="mailto:nomadaextremoaguilas@gmail.com">Email</a></li><li><a href="https://t.me/DiegoDavidExtremo" target="_blank" rel="noopener noreferrer">Telegram</a></li></ul></div>
-      <div class="footer-col"><h5>Proyecto académico</h5><ul><li><a href="proyecto-completo.html">Proyecto completo</a></li><li><a href="proyecto-academico.html">Marco académico</a></li><li><a href="proyecto-intermodular.html">Intermodular GMN</a></li><li><a href="agradecimiento-1-gmn.html">Gracias 1.º GMN</a></li><li><a href="blog.html#lecturas-destacadas">Lecturas destacadas</a></li><li><a href="guia-actividades.html">Guía de actividades</a></li><li><a href="transparencia-financiacion.html">Transparencia y financiación</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
-      <div class="footer-col"><h5>Legal</h5><ul><li><a href="aviso-legal.html">Aviso legal</a></li><li><a href="condiciones.html">Condiciones</a></li><li><a href="politica-devoluciones.html">Política de devoluciones</a></li><li><a href="politica-privacidad.html">Privacidad</a></li><li><a href="politica-cookies.html">Cookies</a></li></ul></div>
+      <div class="footer-col"><h5>Proyecto académico</h5><ul><li><a href="proyecto-completo.html">Proyecto completo</a></li><li><a href="proyecto-academico.html">Marco académico</a></li><li><a href="proyecto-intermodular.html">Intermodular GMN</a></li><li><a href="agradecimiento-1-gmn.html">Gracias 1.º GMN</a></li><li><a href="blog.html#articulos-destacados">Art&iacute;culos destacados</a></li><li><a href="guia-actividades.html">Guía de actividades</a></li><li><a href="transparencia-financiacion.html">Transparencia y financiación</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div class="footer-col"><h5>Legal</h5><ul><li><a href="aviso-legal.html">Aviso legal</a></li><li><a href="aviso-legal.html#condiciones-generales">Condiciones</a></li><li><a href="aviso-legal.html#devoluciones">Política de devoluciones</a></li><li><a href="aviso-legal.html#privacidad">Privacidad</a></li><li><a href="aviso-legal.html#cookies">Cookies</a></li></ul></div>
     </div>
     <div class="footer-bottom">
       <div>
@@ -113,18 +114,17 @@
         <p class="footer-copy footer-copy--muted">Diego David Gómez García · 1.º GMN · IES Europa de Águilas · Curso 2025-2026.</p>
       </div>
       <div class="footer-legal">
-        <a href="aviso-legal.html">Aviso legal</a>
-        <a href="politica-privacidad.html">Privacidad</a>
-        <a href="politica-cookies.html">Cookies</a>
-        <a href="condiciones.html">Condiciones</a>
-        <a href="politica-devoluciones.html">Devoluciones y cambios</a>
+        <a href="aviso-legal.html">Aviso Legal, Condiciones y Pol&iacute;ticas</a>
+        <a href="aviso-legal.html#privacidad">Privacidad</a>
+        <a href="aviso-legal.html#cookies">Cookies</a>
+        <a href="aviso-legal.html#condiciones-generales">Condiciones</a>
+        <a href="aviso-legal.html#devoluciones">Devoluciones y cambios</a>
       </div>
     </div>
   </div>
 </footer>
 
-<a href="https://wa.me/34600000000?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20proyecto%20acad%C3%A9mico%20de%20N%C3%B3mada%20Extremo"
-   id="waFloat" target="_blank" rel="noopener" aria-label="Abrir WhatsApp de Nómada Extremo">WA</a>`;
+<a href="${TELEGRAM_URL}" id="telegramFloat" target="_blank" rel="noopener noreferrer" aria-label="Abrir Telegram de N&oacute;mada Extremo">TG</a>`;
 
   const np = document.getElementById('nav-placeholder');
   if (np) np.outerHTML = NAV;
@@ -134,14 +134,14 @@
   if (!document.querySelector('link[data-noext-i18n]')) {
     const languageStyles = document.createElement('link');
     languageStyles.rel = 'stylesheet';
-    languageStyles.href = 'assets/css/i18n.css?v=20260618-1';
+    languageStyles.href = 'assets/css/i18n.css?v=20260619-1';
     languageStyles.dataset.noextI18n = 'styles';
     document.head.appendChild(languageStyles);
   }
 
   if (!document.querySelector('script[data-noext-i18n]')) {
     const languageScript = document.createElement('script');
-    languageScript.src = 'assets/js/i18n.js?v=20260618-1';
+    languageScript.src = 'assets/js/i18n.js?v=20260619-1';
     languageScript.dataset.noextI18n = 'runtime';
     document.head.appendChild(languageScript);
   }
@@ -206,7 +206,7 @@
     const mobile = document.getElementById('mobileNav');
     const mClose = document.getElementById('mobileClose');
     const backdrop = document.querySelector('[data-mobile-close]');
-    const wa = document.getElementById('waFloat');
+    const wa = document.getElementById('telegramFloat') || document.getElementById('waFloat');
     let lastFocus = null;
     let lastScrollY = 0;
 

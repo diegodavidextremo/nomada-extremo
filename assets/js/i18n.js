@@ -3,7 +3,7 @@
 
   const supported = ['es', 'en', 'fr', 'de', 'it', 'pt'];
   const storageKey = 'noext-language';
-  const catalogVersion = '20260618-1';
+  const catalogVersion = '20260619-1';
   const page = (location.pathname.split('/').pop() || 'index.html').replace('.html', '') || 'index';
   const ignoredTags = new Set(['SCRIPT', 'STYLE', 'NOSCRIPT', 'TEMPLATE', 'CODE', 'PRE']);
   const originalText = new WeakMap();
