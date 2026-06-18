@@ -154,3 +154,49 @@
 @media (prefers-reduced-motion: reduce) {
   .naturist-code-card { transition: none; }
 }
+
+
+/* Cards visuales de actividades naturistas */
+.nat-activity-card {
+  min-width: 0;
+  padding: clamp(0.85rem, 1.6vw, 1.05rem) !important;
+  display: flex;
+  flex-direction: column;
+  gap: 0.82rem;
+  text-align: left !important;
+  overflow: hidden;
+}
+
+.nat-activity-media {
+  width: 100%;
+  margin: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--crema);
+  border: 1px solid rgba(196, 150, 106, 0.22);
+  border-radius: 8px;
+}
+
+.nat-activity-media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(0.96) contrast(1.02);
+}
+
+.nat-activity-card .card-titulo {
+  margin-top: 0.1rem;
+  text-align: left;
+}
+
+.nat-activity-card .card-desc {
+  margin: 0;
+  text-align: left;
+}
+
+@media (max-width: 520px) {
+  .nat-activity-card { padding: 0.8rem !important; }
+  .nat-activity-media { aspect-ratio: 4 / 3; }
+}

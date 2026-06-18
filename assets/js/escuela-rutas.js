@@ -58,7 +58,7 @@
     {
       id: 'aff',
       tone: '#b95555',
-      title: 'AFF Paracaidismo',
+      title: 'Curso AFF',
       category: 'Ruta caída libre',
       count: '8 niveles + licencias',
       price: 'Curso AFF base: desde 1.500–2.300 € aprox. · Programa completo AFF + consolidación + licencia: desde 2.900–3.600 € aprox. · consultar centro autorizado (por ejemplo, Skydive Totana)',
@@ -290,7 +290,7 @@
       number: '02', title: 'Aire', subtitle: 'Paracaidismo · Parapente · Paramotor', icon: 'AI', target: 'aff', responsible: 'Álvaro González y centros autorizados',
       items: [
         ['Paracaidismo tándem', 'Salto desde avión con instructor y experiencia directa de caída libre.', 'Experiencia'],
-        ['AFF Paracaidismo', 'Ocho niveles con teoría, emergencias, caída libre, campana y consolidación.', 'Formación'],
+        ['Curso AFF', 'Ocho niveles con teoría, emergencias, caída libre, campana y consolidación.', 'Formación'],
         ['Licencia A', 'Primera autonomía deportiva con 25 saltos orientativos y evaluación completa.', 'Licencia inicial'],
         ['Licencias B / C / D', 'Más experiencia, precisión, control de campana y acceso a formación avanzada.', 'Progresión deportiva'],
         ['Programa avanzado', 'Campana, freefly, tracking, wingsuit, cámara, nocturnos y otras especialidades.', 'Especialización'],
