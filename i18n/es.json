@@ -7933,5 +7933,11 @@
     "rentNoFreeText": "Paracaidismo, paramotor, paratrike, rope jumping, puenting, buceo con botella, rescate, comunicaciones críticas y equipos que dependan de proveedor autorizado.",
     "purchaseTitle": "Responsable de compras",
     "purchaseText": "Nuria Pons coordinaría comparativas, costes, garantías, reposición, mantenimiento, proveedores y viabilidad de cada familia de material."
+  },
+  "blog": {
+    "criteria": {
+      "line1": "CRITERIO",
+      "line2": "N?MADA"
+    }
   }
 }
