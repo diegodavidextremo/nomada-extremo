@@ -8135,5 +8135,38 @@
       "line1": "CRITERE",
       "line2": "NOMADE"
     }
+  },
+  "translations": {
+    "Comparativas útiles": "Comparaisons utiles",
+    "NO ES": "CE N EST PAS",
+    "LO MISMO": "LA MEME CHOSE",
+    "Puenting vs rope jumping": "Puenting vs rope jumping",
+    "Puenting es pendular y más accesible; rope jumping es dinámico, más vertical y más intenso.": "Le puenting est pendulaire et plus accessible; le rope jumping est dynamique, plus vertical et plus intense.",
+    "Snorkel vs buceo": "Snorkel vs plongee",
+    "Snorkel se realiza en superficie; buceo implica equipo autónomo, profundidad y centro autorizado.": "Le snorkel se pratique en surface; la plongee implique un equipement autonome, de la profondeur et un centre autorise.",
+    "Parapente vs paramotor vs paratrike": "Parapente vs paramoteur vs paratrike",
+    "Parapente vuela sin motor; paramotor añade propulsión; paratrike usa carro.": "Le parapente vole sans moteur; le paramoteur ajoute une propulsion; le paratrike utilise un chariot.",
+    "Parasailing vs parapente": "Parasailing vs parapente",
+    "Parasailing va remolcado por embarcación; parapente despega desde ladera o zona habilitada.": "Le parasailing est tracte par un bateau; le parapente decolle depuis une pente ou une zone habilitee.",
+    "Senderismo vs trekking": "Randonnee vs trekking",
+    "Senderismo es más corto y accesible; trekking implica más duración, desnivel o compromiso.": "La randonnee est plus courte et accessible; le trekking implique plus de duree, de denivele ou d engagement.",
+    "Wingfoil vs windsurf vs kitesurf": "Wingfoil vs windsurf vs kitesurf",
+    "Wingfoil usa ala de mano y foil; windsurf vela fija a tabla; kitesurf cometa y líneas.": "Le wingfoil utilise une aile a main et un foil; le windsurf une voile fixee a la planche; le kitesurf une aile et des lignes.",
+    "Kayak de mar vs SUP": "Kayak de mer vs SUP",
+    "Kayak ofrece más estabilidad y travesía; SUP es más expuesto al equilibrio, viento y deriva.": "Le kayak offre plus de stabilite et de traversee; le SUP expose davantage a l equilibre, au vent et a la derive.",
+    "Coasteering vs barranquismo": "Coasteering vs canyoning",
+    "Coasteering trabaja la costa y el oleaje; barranquismo progresa por cauces, rápeles, caudal y escapes.": "Le coasteering travaille la cote et la houle; le canyoning progresse par lits, rappels, debit et echappatoires.",
+    "E-foil vs SUP foil": "E-foil vs SUP foil",
+    "E-foil usa motor eléctrico; SUP foil depende de remada, equilibrio, ola o inercia.": "L e-foil utilise un moteur electrique; le SUP foil depend de la rame, de l equilibre, de la vague ou de l inertie.",
+    "Paracaidismo tándem vs AFF": "Parachutisme tandem vs AFF",
+    "El tándem es una experiencia acompañada; AFF es formación progresiva hacia autonomía.": "Le tandem est une experience accompagnee; l AFF est une formation progressive vers l autonomie.",
+    "BTT costera vs BTT técnica": "VTT cotier vs VTT technique",
+    "La costera prioriza ruta y paisaje; la técnica exige manejo, frenada, trazada y terreno irregular.": "Le VTT cotier privilegie itineraire et paysage; le technique exige pilotage, freinage, trajectoire et terrain irregulier.",
+    "Rápel vs vía ferrata": "Rappel vs via ferrata",
+    "El rápel desciende con cuerda; la ferrata progresa por cable, grapas y pasos verticales.": "Le rappel descend sur corde; la ferrata progresse sur cable, barreaux et passages verticaux.",
+    "Bautismo de buceo vs Open Water": "Bapteme de plongee vs Open Water",
+    "El bautismo es una primera experiencia supervisada; Open Water es una ruta formativa con centro autorizado.": "Le bapteme est une premiere experience supervisee; Open Water est un parcours de formation avec centre autorise.",
+    "Drone vs FPV": "Drone vs FPV",
+    "El drone estabilizado documenta; FPV exige pilotaje avanzado, observador y mayor planificación.": "Le drone stabilise documente; le FPV exige pilotage avance, observateur et plus de planification."
   }
 }
