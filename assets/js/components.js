@@ -48,6 +48,7 @@
           <a href="naturaleza.html">Naturaleza N&oacute;mada</a>
           <a href="transparencia-financiacion.html">Transparencia y financiaci&oacute;n</a>
           <a href="blog.html">Blog y lecturas</a>
+          <a href="guia-actividades.html">Gu&iacute;a de actividades</a>
           <a href="faq.html">FAQ</a>
         </div>
       </li>
@@ -88,6 +89,7 @@
     <a href="proyecto-completo.html">Proyecto completo</a>
     <a href="transparencia-financiacion.html">Transparencia y financiaci&oacute;n</a>
     <a href="blog.html">Blog y lecturas</a>
+    <a href="guia-actividades.html">Gu&iacute;a de actividades</a>
     <a href="faq.html">FAQ</a>
     <a href="contacto.html">Contacto</a>
   </nav>
@@ -134,14 +136,14 @@
   if (!document.querySelector('link[data-noext-i18n]')) {
     const languageStyles = document.createElement('link');
     languageStyles.rel = 'stylesheet';
-    languageStyles.href = 'assets/css/i18n.css?v=20260619-2';
+    languageStyles.href = 'assets/css/i18n.css?v=20260619-4';
     languageStyles.dataset.noextI18n = 'styles';
     document.head.appendChild(languageStyles);
   }
 
   if (!document.querySelector('script[data-noext-i18n]')) {
     const languageScript = document.createElement('script');
-    languageScript.src = 'assets/js/i18n.js?v=20260619-2';
+    languageScript.src = 'assets/js/i18n.js?v=20260619-4';
     languageScript.dataset.noextI18n = 'runtime';
     document.head.appendChild(languageScript);
   }
