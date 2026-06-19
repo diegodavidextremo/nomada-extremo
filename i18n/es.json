@@ -7890,7 +7890,23 @@
     "¿Qué es Nómada Extremo?": "¿Qué es Nómada Extremo?",
     "¿La web permite reservar actividades reales?": "¿La web permite reservar actividades reales?",
     "¿Los precios son finales?": "¿Los precios son finales?",
-    "¿Puedo regalar una experiencia?": "¿Puedo regalar una experiencia?"
+    "¿Puedo regalar una experiencia?": "¿Puedo regalar una experiencia?",
+    "Kayak de mar vs SUP": "Kayak de mar vs SUP",
+    "Kayak ofrece más estabilidad y travesía; SUP es más expuesto al equilibrio, viento y deriva.": "Kayak ofrece más estabilidad y travesía; SUP es más expuesto al equilibrio, viento y deriva.",
+    "Coasteering vs barranquismo": "Coasteering vs barranquismo",
+    "Coasteering trabaja la costa y el oleaje; barranquismo progresa por cauces, rápeles, caudal y escapes.": "Coasteering trabaja la costa y el oleaje; barranquismo progresa por cauces, rápeles, caudal y escapes.",
+    "E-foil vs SUP foil": "E-foil vs SUP foil",
+    "E-foil usa motor eléctrico; SUP foil depende de remada, equilibrio, ola o inercia.": "E-foil usa motor eléctrico; SUP foil depende de remada, equilibrio, ola o inercia.",
+    "Paracaidismo tándem vs AFF": "Paracaidismo tándem vs AFF",
+    "El tándem es una experiencia acompañada; AFF es formación progresiva hacia autonomía.": "El tándem es una experiencia acompañada; AFF es formación progresiva hacia autonomía.",
+    "BTT costera vs BTT técnica": "BTT costera vs BTT técnica",
+    "La costera prioriza ruta y paisaje; la técnica exige manejo, frenada, trazada y terreno irregular.": "La costera prioriza ruta y paisaje; la técnica exige manejo, frenada, trazada y terreno irregular.",
+    "Rápel vs vía ferrata": "Rápel vs vía ferrata",
+    "El rápel desciende con cuerda; la ferrata progresa por cable, grapas y pasos verticales.": "El rápel desciende con cuerda; la ferrata progresa por cable, grapas y pasos verticales.",
+    "Bautismo de buceo vs Open Water": "Bautismo de buceo vs Open Water",
+    "El bautismo es una primera experiencia supervisada; Open Water es una ruta formativa con centro autorizado.": "El bautismo es una primera experiencia supervisada; Open Water es una ruta formativa con centro autorizado.",
+    "Drone vs FPV": "Drone vs FPV",
+    "El drone estabilizado documenta; FPV exige pilotaje avanzado, observador y mayor planificación.": "El drone estabilizado documenta; FPV exige pilotaje avanzado, observador y mayor planificación."
   },
   "pages": {
     "faq": {
@@ -7939,38 +7955,5 @@
       "line1": "CRITERIO",
       "line2": "N?MADA"
     }
-  },
-  "translations": {
-    "Comparativas útiles": "Comparativas útiles",
-    "NO ES": "NO ES",
-    "LO MISMO": "LO MISMO",
-    "Puenting vs rope jumping": "Puenting vs rope jumping",
-    "Puenting es pendular y más accesible; rope jumping es dinámico, más vertical y más intenso.": "Puenting es pendular y más accesible; rope jumping es dinámico, más vertical y más intenso.",
-    "Snorkel vs buceo": "Snorkel vs buceo",
-    "Snorkel se realiza en superficie; buceo implica equipo autónomo, profundidad y centro autorizado.": "Snorkel se realiza en superficie; buceo implica equipo autónomo, profundidad y centro autorizado.",
-    "Parapente vs paramotor vs paratrike": "Parapente vs paramotor vs paratrike",
-    "Parapente vuela sin motor; paramotor añade propulsión; paratrike usa carro.": "Parapente vuela sin motor; paramotor añade propulsión; paratrike usa carro.",
-    "Parasailing vs parapente": "Parasailing vs parapente",
-    "Parasailing va remolcado por embarcación; parapente despega desde ladera o zona habilitada.": "Parasailing va remolcado por embarcación; parapente despega desde ladera o zona habilitada.",
-    "Senderismo vs trekking": "Senderismo vs trekking",
-    "Senderismo es más corto y accesible; trekking implica más duración, desnivel o compromiso.": "Senderismo es más corto y accesible; trekking implica más duración, desnivel o compromiso.",
-    "Wingfoil vs windsurf vs kitesurf": "Wingfoil vs windsurf vs kitesurf",
-    "Wingfoil usa ala de mano y foil; windsurf vela fija a tabla; kitesurf cometa y líneas.": "Wingfoil usa ala de mano y foil; windsurf vela fija a tabla; kitesurf cometa y líneas.",
-    "Kayak de mar vs SUP": "Kayak de mar vs SUP",
-    "Kayak ofrece más estabilidad y travesía; SUP es más expuesto al equilibrio, viento y deriva.": "Kayak ofrece más estabilidad y travesía; SUP es más expuesto al equilibrio, viento y deriva.",
-    "Coasteering vs barranquismo": "Coasteering vs barranquismo",
-    "Coasteering trabaja la costa y el oleaje; barranquismo progresa por cauces, rápeles, caudal y escapes.": "Coasteering trabaja la costa y el oleaje; barranquismo progresa por cauces, rápeles, caudal y escapes.",
-    "E-foil vs SUP foil": "E-foil vs SUP foil",
-    "E-foil usa motor eléctrico; SUP foil depende de remada, equilibrio, ola o inercia.": "E-foil usa motor eléctrico; SUP foil depende de remada, equilibrio, ola o inercia.",
-    "Paracaidismo tándem vs AFF": "Paracaidismo tándem vs AFF",
-    "El tándem es una experiencia acompañada; AFF es formación progresiva hacia autonomía.": "El tándem es una experiencia acompañada; AFF es formación progresiva hacia autonomía.",
-    "BTT costera vs BTT técnica": "BTT costera vs BTT técnica",
-    "La costera prioriza ruta y paisaje; la técnica exige manejo, frenada, trazada y terreno irregular.": "La costera prioriza ruta y paisaje; la técnica exige manejo, frenada, trazada y terreno irregular.",
-    "Rápel vs vía ferrata": "Rápel vs vía ferrata",
-    "El rápel desciende con cuerda; la ferrata progresa por cable, grapas y pasos verticales.": "El rápel desciende con cuerda; la ferrata progresa por cable, grapas y pasos verticales.",
-    "Bautismo de buceo vs Open Water": "Bautismo de buceo vs Open Water",
-    "El bautismo es una primera experiencia supervisada; Open Water es una ruta formativa con centro autorizado.": "El bautismo es una primera experiencia supervisada; Open Water es una ruta formativa con centro autorizado.",
-    "Drone vs FPV": "Drone vs FPV",
-    "El drone estabilizado documenta; FPV exige pilotaje avanzado, observador y mayor planificación.": "El drone estabilizado documenta; FPV exige pilotaje avanzado, observador y mayor planificación."
   }
 }
