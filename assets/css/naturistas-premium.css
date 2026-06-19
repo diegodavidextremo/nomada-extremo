@@ -205,7 +205,7 @@
 /* Ajuste final de encuadres visuales en actividades naturistas */
 .nat-activity-media { aspect-ratio: 16 / 10; min-height: 190px; }
 .nat-activity-card--kayak .nat-activity-media img { object-position: center 50%; }
-.nat-activity-card--yoga .nat-activity-media img { object-position: center 58%; }
+.nat-activity-card--yoga .nat-activity-media img { object-position: center 76%; }
 .nat-activity-card--swimming .nat-activity-media img { object-position: center 55%; }
 .nat-activity-card--snorkel .nat-activity-media img { object-position: center 50%; }
 .nat-activity-card--paddle .nat-activity-media img { object-position: 48% 68%; }
