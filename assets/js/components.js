@@ -49,6 +49,7 @@
           <a href="transparencia-financiacion.html">Transparencia y financiaci&oacute;n</a>
           <a href="blog.html">Blog y lecturas</a>
           <a href="guia-actividades.html">Gu&iacute;a de actividades</a>
+          <a href="segundo-gmn.html">Lo que me espera en 2.&ordm; GMN</a>
           <a href="faq.html">FAQ</a>
         </div>
       </li>
@@ -90,6 +91,7 @@
     <a href="transparencia-financiacion.html">Transparencia y financiaci&oacute;n</a>
     <a href="blog.html">Blog y lecturas</a>
     <a href="guia-actividades.html">Gu&iacute;a de actividades</a>
+    <a href="segundo-gmn.html">Lo que me espera en 2.&ordm; GMN</a>
     <a href="faq.html">FAQ</a>
     <a href="contacto.html">Contacto</a>
   </nav>
@@ -107,7 +109,7 @@
       <div class="footer-col"><h5>Experiencias</h5><ul><li><a href="actividades.html">Actividades</a></li><li><a href="packs.html">Packs</a></li><li><a href="packs.html#bonos">Bonos regalo</a></li><li><a href="grupos.html">Grupos, centros y empresas</a></li><li><a href="zonas.html">Zonas de aventura</a></li><li><a href="naturistas.html">Nómada Naturista</a></li></ul></div>
       <div class="footer-col"><h5>Sistema Nómada</h5><ul><li><a href="como-funciona.html">Cómo funciona</a></li><li><a href="index.html#metodo-nomada">Método Nómada</a></li><li><a href="seguridad.html">Seguridad</a></li><li><a href="seguridad.html#seguros-documentacion">Seguros y documentación</a></li><li><a href="material.html">Material y marcas</a></li><li><a href="alquiler.html">Alquiler orientativo</a></li><li><a href="logbook.html">Logbook y app</a></li><li><a href="certificaciones.html">Credenciales digitales</a></li><li><a href="formularios.html">Formularios</a></li><li><a href="escuela.html">Escuela Nómada</a></li><li><a href="audiovisual.html">Audiovisual</a></li></ul></div>
       <div class="footer-col"><h5>Marca</h5><ul><li><a href="quienes-somos.html">Quiénes somos</a></li><li><a href="fundador.html">Fundador</a></li><li><a href="equipo.html">Equipo</a></li><li><a href="equipo.html#nucleo-directivo">Nuria Pons</a></li><li><a href="sostenibilidad.html">Sostenibilidad</a></li><li><a href="naturaleza.html">Naturaleza Nómada</a></li><li><a href="blog.html">Blog</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="mailto:nomadaextremoaguilas@gmail.com">Email</a></li><li><a href="https://t.me/DiegoDavidExtremo" target="_blank" rel="noopener noreferrer">Telegram</a></li></ul></div>
-      <div class="footer-col"><h5>Proyecto académico</h5><ul><li><a href="proyecto-completo.html">Proyecto completo</a></li><li><a href="proyecto-academico.html">Marco académico</a></li><li><a href="proyecto-intermodular.html">Intermodular GMN</a></li><li><a href="agradecimiento-1-gmn.html">Gracias 1.º GMN</a></li><li><a href="blog.html#articulos-destacados">Art&iacute;culos destacados</a></li><li><a href="guia-actividades.html">Guía de actividades</a></li><li><a href="transparencia-financiacion.html">Transparencia y financiación</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div class="footer-col"><h5>Proyecto académico</h5><ul><li><a href="proyecto-completo.html">Proyecto completo</a></li><li><a href="proyecto-academico.html">Marco académico</a></li><li><a href="proyecto-intermodular.html">Intermodular GMN</a></li><li><a href="segundo-gmn.html">Lo que me espera en 2.º GMN</a></li><li><a href="agradecimiento-1-gmn.html">Gracias 1.º GMN</a></li><li><a href="blog.html#articulos-destacados">Art&iacute;culos destacados</a></li><li><a href="guia-actividades.html">Guía de actividades</a></li><li><a href="transparencia-financiacion.html">Transparencia y financiación</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
       <div class="footer-col"><h5>Legal</h5><ul><li><a href="aviso-legal.html">Aviso legal</a></li><li><a href="aviso-legal.html#condiciones-generales">Condiciones</a></li><li><a href="aviso-legal.html#devoluciones">Política de devoluciones</a></li><li><a href="aviso-legal.html#privacidad">Privacidad</a></li><li><a href="aviso-legal.html#cookies">Cookies</a></li></ul></div>
     </div>
     <div class="footer-bottom">
@@ -136,14 +138,14 @@
   if (!document.querySelector('link[data-noext-i18n]')) {
     const languageStyles = document.createElement('link');
     languageStyles.rel = 'stylesheet';
-    languageStyles.href = 'assets/css/i18n.css?v=20260619-6';
+    languageStyles.href = 'assets/css/i18n.css?v=20260620-2';
     languageStyles.dataset.noextI18n = 'styles';
     document.head.appendChild(languageStyles);
   }
 
   if (!document.querySelector('script[data-noext-i18n]')) {
     const languageScript = document.createElement('script');
-    languageScript.src = 'assets/js/i18n.js?v=20260619-6';
+    languageScript.src = 'assets/js/i18n.js?v=20260620-2';
     languageScript.dataset.noextI18n = 'runtime';
     document.head.appendChild(languageScript);
   }
