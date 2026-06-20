@@ -8255,3 +8255,9 @@ label { line-height: 1.35; }
   .activity-jump-nav__row .btn { flex: 0 0 auto; min-height: 38px; }
 }
 @media print { #telegramFloat { display: none !important; } }
+
+
+/* Agradecimientos 1 GMN: lectura editorial y marca sin recorte */
+.teacher-card__message { white-space: pre-line; }
+.teacher-card__message + .teacher-card__key { margin-top: auto; }
+.nav-logo-text .ln1 { line-height: 1.2 !important; padding-top: .08em; }
