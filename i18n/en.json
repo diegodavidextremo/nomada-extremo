@@ -8178,7 +8178,23 @@
     "Espero que te vaya todo genial en los proyectos y etapas que tengas por delante. Gracias por tu trabajo, tu trato y por hacer que una asignatura que ya me gustaba se convirtiera en una experiencia todavía más especial.": "I hope everything goes wonderfully for you in all the projects and stages ahead. Thank you for your work, your kindness and for turning a subject I already loved into an even more special experience.",
     "Nos vemos el año que viene en equitación, ¡Alberto! Me hace mucha ilusión poder coincidir más contigo y seguir aprendiendo en una disciplina nueva.": "See you next year in horse riding, Alberto! I am really looking forward to spending more time with you and continuing to learn in a new discipline.",
     "El año que viene nos vemos en cuerdas, si el camino sigue por ahí, y la verdad es que lo estoy deseando.": "Next year we will meet again in rope work, if that remains the path ahead, and I am genuinely looking forward to it.",
-    "Tutor y profesor · Primera parte del curso": "Tutor and teacher · First part of the year"
+    "Tutor y profesor · Primera parte del curso": "Tutor and teacher · First part of the year",
+    "Formación GMN": "GMN Training",
+    "Trayectoria académica · GMN": "Academic journey · GMN",
+    "Una historia académica completa: aprendizaje, esfuerzo y agradecimientos de 1.º GMN; transición hacia 2.º; nuevas competencias y conexión profesional con NÓMADA EXTREMO.": "A complete academic story: learning, effort and gratitude from the first GMN year; transition to the second; new skills and a professional connection with NÓMADA EXTREMO.",
+    "Aprendizaje y agradecimientos": "Learning and acknowledgements",
+    "Del aprendizaje a la profesión": "From learning to the profession",
+    "Módulos y futuro profesional": "Modules and professional future",
+    "Formación aplicada al proyecto": "Training applied to the project",
+    "1.º GMN · APRENDIZAJE, ESFUERZO Y AGRADECIMIENTOS": "1st GMN · LEARNING, EFFORT AND ACKNOWLEDGEMENTS",
+    "Transición hacia 2.º GMN": "Transition to 2nd GMN",
+    "DE LA BASE APRENDIDA A UNA PREPARACIÓN MÁS PROFESIONAL": "FROM A SOLID FOUNDATION TO MORE PROFESSIONAL TRAINING",
+    "El primer curso construye criterio, confianza y una nueva forma de entender la aventura. El segundo amplía esa base con seguridad, cuerdas, socorrismo, equitación, tiempo libre, sostenibilidad, empleabilidad y proyecto intermodular.": "The first year builds judgement, confidence and a new way of understanding adventure. The second expands that foundation through safety, ropes, lifesaving, horse riding, leisure, sustainability, employability and the interdisciplinary project.",
+    "Explorar 2.º GMN": "Explore 2nd GMN",
+    "2.º GMN · MÓDULOS, COMPETENCIAS Y FUTURO PROFESIONAL": "2nd GMN · MODULES, SKILLS AND PROFESSIONAL FUTURE",
+    "Formación aplicada": "Applied training",
+    "APRENDER PARA CONSTRUIR NÓMADA EXTREMO": "LEARNING TO BUILD NÓMADA EXTREMO",
+    "Cada módulo, práctica, corrección y experiencia se convierte en criterio para diseñar una marca de aventura más técnica, responsable, humana y conectada con el medio natural.": "Every module, practice, correction and experience becomes sound judgement for designing a more technical, responsible and human adventure brand connected with the natural environment."
   },
   "pages": {
     "faq": {
@@ -8190,6 +8206,10 @@
       "description": "Frequently asked questions about activities, safety, bookings, school, insurance, gift vouchers, requirements and how the project works.",
       "searchLabel": "Search for a question",
       "searchPlaceholder": "E.g. insurance, voucher, minors, weather..."
+    },
+    "formacion-gmn": {
+      "title": "GMN Training | NÓMADA EXTREMO",
+      "description": "A complete academic story: learning, effort and gratitude from the first GMN year; transition to the second; new skills and a professional connection with NÓMADA EXTREMO."
     }
   },
   "materialPage": {

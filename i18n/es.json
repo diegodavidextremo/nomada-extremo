@@ -7980,7 +7980,23 @@
     "Espero que te vaya todo genial en los proyectos y etapas que tengas por delante. Gracias por tu trabajo, tu trato y por hacer que una asignatura que ya me gustaba se convirtiera en una experiencia todavía más especial.": "Espero que te vaya todo genial en los proyectos y etapas que tengas por delante. Gracias por tu trabajo, tu trato y por hacer que una asignatura que ya me gustaba se convirtiera en una experiencia todavía más especial.",
     "Nos vemos el año que viene en equitación, ¡Alberto! Me hace mucha ilusión poder coincidir más contigo y seguir aprendiendo en una disciplina nueva.": "Nos vemos el año que viene en equitación, ¡Alberto! Me hace mucha ilusión poder coincidir más contigo y seguir aprendiendo en una disciplina nueva.",
     "El año que viene nos vemos en cuerdas, si el camino sigue por ahí, y la verdad es que lo estoy deseando.": "El año que viene nos vemos en cuerdas, si el camino sigue por ahí, y la verdad es que lo estoy deseando.",
-    "Tutor y profesor · Primera parte del curso": "Tutor y profesor · Primera parte del curso"
+    "Tutor y profesor · Primera parte del curso": "Tutor y profesor · Primera parte del curso",
+    "Formación GMN": "Formación GMN",
+    "Trayectoria académica · GMN": "Trayectoria académica · GMN",
+    "Una historia académica completa: aprendizaje, esfuerzo y agradecimientos de 1.º GMN; transición hacia 2.º; nuevas competencias y conexión profesional con NÓMADA EXTREMO.": "Una historia académica completa: aprendizaje, esfuerzo y agradecimientos de 1.º GMN; transición hacia 2.º; nuevas competencias y conexión profesional con NÓMADA EXTREMO.",
+    "Aprendizaje y agradecimientos": "Aprendizaje y agradecimientos",
+    "Del aprendizaje a la profesión": "Del aprendizaje a la profesión",
+    "Módulos y futuro profesional": "Módulos y futuro profesional",
+    "Formación aplicada al proyecto": "Formación aplicada al proyecto",
+    "1.º GMN · APRENDIZAJE, ESFUERZO Y AGRADECIMIENTOS": "1.º GMN · APRENDIZAJE, ESFUERZO Y AGRADECIMIENTOS",
+    "Transición hacia 2.º GMN": "Transición hacia 2.º GMN",
+    "DE LA BASE APRENDIDA A UNA PREPARACIÓN MÁS PROFESIONAL": "DE LA BASE APRENDIDA A UNA PREPARACIÓN MÁS PROFESIONAL",
+    "El primer curso construye criterio, confianza y una nueva forma de entender la aventura. El segundo amplía esa base con seguridad, cuerdas, socorrismo, equitación, tiempo libre, sostenibilidad, empleabilidad y proyecto intermodular.": "El primer curso construye criterio, confianza y una nueva forma de entender la aventura. El segundo amplía esa base con seguridad, cuerdas, socorrismo, equitación, tiempo libre, sostenibilidad, empleabilidad y proyecto intermodular.",
+    "Explorar 2.º GMN": "Explorar 2.º GMN",
+    "2.º GMN · MÓDULOS, COMPETENCIAS Y FUTURO PROFESIONAL": "2.º GMN · MÓDULOS, COMPETENCIAS Y FUTURO PROFESIONAL",
+    "Formación aplicada": "Formación aplicada",
+    "APRENDER PARA CONSTRUIR NÓMADA EXTREMO": "APRENDER PARA CONSTRUIR NÓMADA EXTREMO",
+    "Cada módulo, práctica, corrección y experiencia se convierte en criterio para diseñar una marca de aventura más técnica, responsable, humana y conectada con el medio natural.": "Cada módulo, práctica, corrección y experiencia se convierte en criterio para diseñar una marca de aventura más técnica, responsable, humana y conectada con el medio natural."
   },
   "pages": {
     "faq": {
@@ -7992,6 +8008,10 @@
       "description": "Preguntas frecuentes sobre actividades, seguridad, reservas, escuela, seguros, bonos regalo, requisitos y funcionamiento del proyecto.",
       "searchLabel": "Buscar una duda",
       "searchPlaceholder": "Ej.: seguro, bono, menores, meteorología..."
+    },
+    "formacion-gmn": {
+      "title": "Formación GMN | NÓMADA EXTREMO",
+      "description": "Una historia académica completa: aprendizaje, esfuerzo y agradecimientos de 1.º GMN; transición hacia 2.º; nuevas competencias y conexión profesional con NÓMADA EXTREMO."
     }
   },
   "materialPage": {
