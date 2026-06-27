@@ -24,7 +24,7 @@
     nadar: ['¿Qué actividad es mejor si no sé nadar?', 'Evitaría snorkel, kayak abierto, SUP y buceo hasta trabajar seguridad acuática. Puedes empezar por senderismo, naturaleza, orientación, audiovisual, BTT suave o actividades de montaña adaptadas.'],
     naturaleza: ['¿Qué opciones hay para naturaleza y bajo impacto?', 'Ruta Sin Huella, plogging mediterráneo, snorkel naturalista, ciencia ciudadana, fotografía sin invadir, posidonia, educación ambiental y retos verdes del Logbook.'],
     precios: ['¿Cómo funcionan los precios de inauguración?', 'Se muestran como precios orientativos de lanzamiento o referencia. No se tachan precios falsos ni se promete descuento real si no ha existido venta previa. Todo depende de proveedor, grupo, fecha, seguros y permisos.'],
-    contacto: ['¿Cómo contacto?', 'Puedes escribir a <a href="mailto:nomadaextremoaguilas@gmail.com">nomadaextremoaguilas@gmail.com</a>, usar Telegram <a href="https://t.me/DiegoDavidExtremo" target="_blank" rel="noopener noreferrer">@DiegoDavidExtremo</a>, abrir FAQ o enviar el formulario de contacto.']
+    contacto: ['¿Cómo contacto?', 'Puedes escribir a <a href="mailto:nomadaextremoaguilas@gmail.com">nomadaextremoaguilas@gmail.com</a>, usar WhatsApp <a href="https://wa.me/34623179618" target="_blank" rel="noopener noreferrer">+34 623 17 96 18</a>, Telegram <a href="https://t.me/DiegoDavidExtremo" target="_blank" rel="noopener noreferrer">@DiegoDavidExtremo</a>, abrir FAQ o enviar el formulario de contacto.']
   };
 
   const quickOrder = ['empezar','regalo','material','familia','meteorologia','vertigo','extremas','buceovuelo','seguro','audiovisual','rope','pareja','centros','empresas','logbook','bono','puenting','nadar','naturaleza','precios'];
@@ -36,13 +36,14 @@
     '<section id="chatPanel" role="dialog" aria-modal="false" aria-labelledby="chatTitle" aria-hidden="true">' +
       '<header class="chat-header"><div class="chat-avatar" aria-hidden="true">N</div><div><div class="chat-nombre" id="chatTitle">ASISTENTE NÓMADA</div><div class="chat-estado"><span class="chat-dot"></span> Asistente orientativo</div></div><button class="chat-close" id="chatClose" type="button" aria-label="Cerrar asistente">×</button></header>' +
       '<div class="chat-body" id="chatBody" aria-live="polite"></div>' +
-      '<footer class="chat-footer"><div class="chat-quick-btns" aria-label="Preguntas rápidas">' + quickButtons + '</div><form class="chat-input-row" id="chatForm"><label class="sr-only" for="chatInput">Escribe una pregunta</label><input id="chatInput" type="text" autocomplete="off" placeholder="Pregunta por actividad, seguridad, packs..." maxlength="180"><button type="submit" aria-label="Enviar pregunta">Enviar</button></form><div class="chat-ctas"><a href="contacto.html" class="chat-cta-custom">Formulario</a><a href="faq.html" class="chat-cta-custom">FAQ</a><a href="packs.html" class="chat-cta-custom">Packs</a><a href="https://t.me/DiegoDavidExtremo" target="_blank" rel="noopener noreferrer" class="chat-cta-custom">Telegram</a></div></footer>' +
+      '<footer class="chat-footer"><div class="chat-quick-btns" aria-label="Preguntas rápidas">' + quickButtons + '</div><form class="chat-input-row" id="chatForm"><label class="sr-only" for="chatInput">Escribe una pregunta</label><input id="chatInput" type="text" autocomplete="off" placeholder="Pregunta por actividad, seguridad, packs..." maxlength="180"><button type="submit" aria-label="Enviar pregunta">Enviar</button></form><div class="chat-ctas"><a href="contacto.html" class="chat-cta-custom">Formulario</a><a href="faq.html" class="chat-cta-custom">FAQ</a><a href="packs.html" class="chat-cta-custom">Packs</a><a href="https://wa.me/34623179618" target="_blank" rel="noopener noreferrer" class="chat-cta-custom">WhatsApp</a><button type="button" class="chat-cta-custom" id="chatClear">Limpiar conversación</button></div></footer>' +
     '</section>';
 
   document.body.insertAdjacentHTML('beforeend', markup);
   const button = document.getElementById('chatBtn');
   const panel = document.getElementById('chatPanel');
   const close = document.getElementById('chatClose');
+  const clear = document.getElementById('chatClear');
   const body = document.getElementById('chatBody');
   let started = false;
 
@@ -98,6 +99,7 @@
 
   button.addEventListener('click', function () { setOpen(!panel.classList.contains('open')); });
   close.addEventListener('click', function () { setOpen(false); });
+  clear?.addEventListener('click', function () { body.replaceChildren(); started = false; start(); });
   document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape' && panel.classList.contains('open')) setOpen(false);
   });

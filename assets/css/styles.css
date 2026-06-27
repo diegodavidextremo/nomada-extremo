@@ -8261,3 +8261,16 @@ label { line-height: 1.35; }
 .teacher-card__message { white-space: pre-line; }
 .teacher-card__message + .teacher-card__key { margin-top: auto; }
 .nav-logo-text .ln1 { line-height: 1.2 !important; padding-top: .08em; }
+
+
+/* Professional interaction and accessibility layer 2026-06-21 */
+:root{--color-ocean:#1e4a6b;--color-deep-sea:#102f43;--color-sky:#d9e9f2;--color-forest:#2d5a3d;--color-earth:#79583f;--color-sand:#c4966a;--color-white:#fff;--color-text:#262321;--color-muted:#756e68;--color-accent:#c4966a;--header-offset:clamp(76px,8vw,108px)}
+html{scroll-behavior:smooth}section[id],article[id],div[id]{scroll-margin-top:calc(var(--header-offset) + 18px)}
+.activities-filter-section{position:sticky;top:var(--header-offset);z-index:42;padding:1rem 0!important;box-shadow:0 12px 30px rgba(16,47,67,.09)}
+.activities-filter-section .titulo{font-size:clamp(1.8rem,4vw,2.6rem)!important}.activity-filter-tools{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:1rem}.activity-filter-count{font-weight:700;color:var(--mar)}.activity-filter-empty{max-width:1180px;margin:1rem auto;padding:1rem 1.25rem;border:1px solid var(--crema-media);border-radius:10px;background:var(--crema);color:var(--gris-calido)}.filter-chip.is-active{color:#fff!important;background:var(--mar)!important;border-color:var(--mar)!important;box-shadow:0 6px 16px rgba(30,74,107,.2)}.ficha[hidden]{display:none!important}
+#backToTop{position:fixed;right:1.25rem;bottom:7.25rem;z-index:185;width:46px;height:46px;display:grid;place-items:center;border-radius:50%;color:#fff;background:var(--mar);border:1px solid rgba(255,255,255,.25);box-shadow:0 12px 30px rgba(0,0,0,.22);opacity:0;visibility:hidden;transform:translateY(10px);transition:.2s ease}#backToTop.visible{opacity:1;visibility:visible;transform:none}#waFloat{position:fixed;right:1.25rem;bottom:4rem;z-index:184;display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:#1f8f55;color:#fff;font-weight:800;box-shadow:0 12px 30px rgba(0,0,0,.22)}
+.hero::before,.page-hero::before{background:linear-gradient(90deg,rgba(5,18,27,.72),rgba(5,18,27,.38) 55%,rgba(5,18,27,.56))!important}.hero h1,.page-hero h1,.hero p,.page-hero p{text-shadow:0 2px 14px rgba(0,0,0,.42)}
+.card,.ficha,.process-card,.blog-card{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}.card:hover,.ficha:hover,.process-card:hover,.blog-card:hover{transform:translateY(-4px);box-shadow:0 22px 50px rgba(30,74,107,.13)}
+.blog-category-nav{display:flex;flex-wrap:wrap;gap:.55rem;margin:0 0 1.75rem}.blog-category-nav span{display:inline-flex;align-items:center;min-height:38px;padding:.45rem .8rem;border:1px solid rgba(30,74,107,.16);border-radius:999px;background:rgba(255,255,255,.72);color:var(--mar);font-size:.66rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+@media(max-width:768px){:root{--header-offset:82px}.activities-filter-section{position:relative;top:auto}.activity-filter-tools{align-items:stretch;flex-direction:column}.activity-filter-clear{width:100%}#backToTop{right:.75rem;bottom:7rem}#waFloat{right:.75rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.ficha,.process-card,.blog-card,#backToTop{transition:none!important}}

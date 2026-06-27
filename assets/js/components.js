@@ -2,6 +2,7 @@
 
 (function () {
   const TELEGRAM_URL = 'https://t.me/DiegoDavidExtremo';
+  const WHATSAPP_URL = 'https://wa.me/34623179618';
   const PROJECT_NOTICE = 'Nómada Extremo es actualmente un proyecto académico no operativo creado por Diego David Gómez García, alumno de 1.º GMN del IES Europa de Águilas (Murcia). Nació el 8 de abril de 2025 y evoluciona semanalmente con nuevas funciones, mejoras e información. No realiza reservas, cobros, ventas, sorteos ni actividades reales en este momento.';
 
   const NAV = `
@@ -108,7 +109,7 @@
       </div>
       <div class="footer-col"><h5>Experiencias</h5><ul><li><a href="actividades.html">Actividades</a></li><li><a href="packs.html">Packs</a></li><li><a href="packs.html#bonos">Bonos regalo</a></li><li><a href="grupos.html">Grupos, centros y empresas</a></li><li><a href="zonas.html">Zonas de aventura</a></li><li><a href="naturistas.html">Nómada Naturista</a></li></ul></div>
       <div class="footer-col"><h5>Sistema Nómada</h5><ul><li><a href="como-funciona.html">Cómo funciona</a></li><li><a href="index.html#metodo-nomada">Método Nómada</a></li><li><a href="seguridad.html">Seguridad</a></li><li><a href="seguridad.html#seguros-documentacion">Seguros y documentación</a></li><li><a href="material.html">Material y marcas</a></li><li><a href="alquiler.html">Alquiler orientativo</a></li><li><a href="logbook.html">Logbook y app</a></li><li><a href="certificaciones.html">Credenciales digitales</a></li><li><a href="formularios.html">Formularios</a></li><li><a href="escuela.html">Escuela Nómada</a></li><li><a href="audiovisual.html">Audiovisual</a></li></ul></div>
-      <div class="footer-col"><h5>Marca</h5><ul><li><a href="quienes-somos.html">Quiénes somos</a></li><li><a href="fundador.html">Fundador</a></li><li><a href="equipo.html">Equipo</a></li><li><a href="equipo.html#nucleo-directivo">Nuria Pons</a></li><li><a href="sostenibilidad.html">Sostenibilidad</a></li><li><a href="naturaleza.html">Naturaleza Nómada</a></li><li><a href="blog.html">Blog</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="mailto:nomadaextremoaguilas@gmail.com">Email</a></li><li><a href="https://t.me/DiegoDavidExtremo" target="_blank" rel="noopener noreferrer">Telegram</a></li></ul></div>
+      <div class="footer-col"><h5>Marca</h5><ul><li><a href="quienes-somos.html">Quiénes somos</a></li><li><a href="fundador.html">Fundador</a></li><li><a href="equipo.html">Equipo</a></li><li><a href="equipo.html#nucleo-directivo">Nuria Pons</a></li><li><a href="sostenibilidad.html">Sostenibilidad</a></li><li><a href="naturaleza.html">Naturaleza Nómada</a></li><li><a href="blog.html">Blog</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="mailto:nomadaextremoaguilas@gmail.com">Email</a></li><li><a href="https://wa.me/34623179618" target="_blank" rel="noopener noreferrer">WhatsApp: +34 623 17 96 18</a></li><li><span>Horario orientativo: 09:00–20:00</span></li><li><span>Base: Águilas, Murcia</span></li><li><a href="https://t.me/DiegoDavidExtremo" target="_blank" rel="noopener noreferrer">Telegram</a></li></ul></div>
       <div class="footer-col"><h5>Proyecto académico</h5><ul><li><a href="proyecto-completo.html">Proyecto completo</a></li><li><a href="proyecto-academico.html">Marco académico</a></li><li><a href="proyecto-intermodular.html">Intermodular GMN</a></li><li><a href="formacion-gmn.html">Formación GMN</a></li><li><a href="blog.html#articulos-destacados">Art&iacute;culos destacados</a></li><li><a href="guia-actividades.html">Guía de actividades</a></li><li><a href="transparencia-financiacion.html">Transparencia y financiación</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
       <div class="footer-col"><h5>Legal</h5><ul><li><a href="aviso-legal.html">Aviso legal</a></li><li><a href="aviso-legal.html#condiciones-generales">Condiciones</a></li><li><a href="aviso-legal.html#devoluciones">Política de devoluciones</a></li><li><a href="aviso-legal.html#privacidad">Privacidad</a></li><li><a href="aviso-legal.html#cookies">Cookies</a></li></ul></div>
     </div>
@@ -128,7 +129,7 @@
   </div>
 </footer>
 
-<a href="${TELEGRAM_URL}" id="telegramFloat" target="_blank" rel="noopener noreferrer" aria-label="Abrir Telegram de N&oacute;mada Extremo">TG</a>`;
+<a href="${WHATSAPP_URL}" id="waFloat" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">WA</a><a href="#main-content" id="backToTop" aria-label="Volver arriba" title="Volver arriba">↑</a>`;
 
   const np = document.getElementById('nav-placeholder');
   if (np) np.outerHTML = NAV;
@@ -138,14 +139,14 @@
   if (!document.querySelector('link[data-noext-i18n]')) {
     const languageStyles = document.createElement('link');
     languageStyles.rel = 'stylesheet';
-    languageStyles.href = 'assets/css/i18n.css?v=20260621-4';
+    languageStyles.href = 'assets/css/i18n.css?v=20260621-6';
     languageStyles.dataset.noextI18n = 'styles';
     document.head.appendChild(languageStyles);
   }
 
   if (!document.querySelector('script[data-noext-i18n]')) {
     const languageScript = document.createElement('script');
-    languageScript.src = 'assets/js/i18n.js?v=20260621-4';
+    languageScript.src = 'assets/js/i18n.js?v=20260621-6';
     languageScript.dataset.noextI18n = 'runtime';
     document.head.appendChild(languageScript);
   }
@@ -210,7 +211,8 @@
     const mobile = document.getElementById('mobileNav');
     const mClose = document.getElementById('mobileClose');
     const backdrop = document.querySelector('[data-mobile-close]');
-    const wa = document.getElementById('telegramFloat') || document.getElementById('waFloat');
+    const wa = document.getElementById('waFloat');
+    const backToTop = document.getElementById('backToTop');
     let lastFocus = null;
     let lastScrollY = 0;
 
@@ -272,5 +274,6 @@
       window.addEventListener('scroll', toggleWa, { passive: true });
       toggleWa();
     }
+    if (backToTop) { const toggleTop = () => backToTop.classList.toggle('visible', window.scrollY > 600); window.addEventListener('scroll', toggleTop, { passive: true }); toggleTop(); }
   }, 0);
 })();
