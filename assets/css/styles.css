@@ -8274,3 +8274,119 @@ html{scroll-behavior:smooth}section[id],article[id],div[id]{scroll-margin-top:ca
 .blog-category-nav{display:flex;flex-wrap:wrap;gap:.55rem;margin:0 0 1.75rem}.blog-category-nav span{display:inline-flex;align-items:center;min-height:38px;padding:.45rem .8rem;border:1px solid rgba(30,74,107,.16);border-radius:999px;background:rgba(255,255,255,.72);color:var(--mar);font-size:.66rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
 @media(max-width:768px){:root{--header-offset:82px}.activities-filter-section{position:relative;top:auto}.activity-filter-tools{align-items:stretch;flex-direction:column}.activity-filter-clear{width:100%}#backToTop{right:.75rem;bottom:7rem}#waFloat{right:.75rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.ficha,.process-card,.blog-card,#backToTop{transition:none!important}}
+
+
+/* Motion Nomada Extremo 2026-06-27 */
+:root {
+  --motion-distance: 22px;
+  --motion-time: 720ms;
+  --motion-ease: cubic-bezier(.2,.75,.22,1);
+}
+
+.motion-ready .motion-reveal {
+  opacity: 0;
+  transform: translate3d(0, var(--motion-distance), 0) scale(.985);
+  filter: saturate(.92) blur(3px);
+  transition:
+    opacity var(--motion-time) var(--motion-ease),
+    transform var(--motion-time) var(--motion-ease),
+    filter var(--motion-time) ease,
+    box-shadow .28s ease,
+    border-color .28s ease;
+  transition-delay: var(--motion-delay, 0ms);
+  will-change: opacity, transform, filter;
+}
+
+.motion-ready .motion-reveal.is-inview {
+  opacity: 1;
+  transform: translate3d(0,0,0) scale(1);
+  filter: saturate(1) blur(0);
+}
+
+.motion-ready .motion-reveal[data-motion="left"] { transform: translate3d(-18px, 10px, 0) scale(.985); }
+.motion-ready .motion-reveal[data-motion="right"] { transform: translate3d(18px, 10px, 0) scale(.985); }
+.motion-ready .motion-reveal[data-motion="rise"] { transform: translate3d(0, 32px, 0) scale(.98); }
+.motion-ready .motion-reveal[data-motion="left"].is-inview,
+.motion-ready .motion-reveal[data-motion="right"].is-inview,
+.motion-ready .motion-reveal[data-motion="rise"].is-inview { transform: translate3d(0,0,0) scale(1); }
+
+.motion-ready .hero .hero-bg,
+.motion-ready .page-hero .hero-bg {
+  transform: scale(1.04);
+  transition: transform 8s ease-out, filter 1s ease;
+}
+.motion-ready .hero.is-inview .hero-bg,
+.motion-ready .page-hero.is-inview .hero-bg { transform: scale(1); }
+
+.motion-ready .hero::after,
+.motion-ready .page-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 34%;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent, rgba(244,239,232,.18));
+  opacity: .72;
+}
+
+.stat-num.is-counting,
+.lb-stat-num.is-counting,
+.logbook-pro-kpis strong.is-counting {
+  text-shadow: 0 0 20px rgba(210,160,100,.25);
+}
+
+.motion-ready .card:hover,
+.motion-ready .ficha:hover,
+.motion-ready .process-card:hover,
+.motion-ready .pack-card:hover,
+.motion-ready .blog-card:hover,
+.motion-ready .equipo-card:hover,
+.motion-ready .reading-card:hover,
+.motion-ready .final-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(210,160,100,.46);
+  box-shadow: 0 24px 60px rgba(30,74,107,.15);
+}
+
+.motion-ready .btn,
+.motion-ready button {
+  transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease, border-color .18s ease, color .18s ease;
+}
+.motion-ready .btn:active,
+.motion-ready button:active { transform: translateY(1px) scale(.99); }
+
+.motion-ready .activity-jump-nav,
+.motion-ready .activities-filter-section {
+  animation: motion-soft-drop .55s var(--motion-ease) both;
+}
+
+@keyframes motion-soft-drop {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (hover: none) {
+  .motion-ready .card:hover,
+  .motion-ready .ficha:hover,
+  .motion-ready .process-card:hover,
+  .motion-ready .pack-card:hover,
+  .motion-ready .blog-card:hover,
+  .motion-ready .equipo-card:hover,
+  .motion-ready .reading-card:hover,
+  .motion-ready .final-card:hover { transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-ready .motion-reveal,
+  .motion-ready .motion-reveal.is-inview,
+  .motion-ready .hero .hero-bg,
+  .motion-ready .page-hero .hero-bg,
+  .motion-ready .activity-jump-nav,
+  .motion-ready .activities-filter-section {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}
