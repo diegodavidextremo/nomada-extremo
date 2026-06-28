@@ -401,10 +401,11 @@
           cursor.style.transform = 'translate3d(' + event.clientX + 'px,' + event.clientY + 'px,0) translate(-50%,-50%)';
           cursor.classList.add('is-visible');
           const target = event.target;
-          cursor.classList.toggle('is-cta', !!target.closest('a, button, .btn, .ficha-btn'));
+          cursor.classList.toggle('is-cta', !!target.closest('a, button, .btn, .ficha-btn, .nav-menu a, .nav-drop a, .language-switcher button'));
+          cursor.classList.toggle('is-nav', !!target.closest('#site-header, #nav, .nav-drop, .language-switcher'));
           cursor.classList.toggle('is-image', !!target.closest('img, .ficha-img, .act-card-bg, .blog-img'));
         };
-        document.addEventListener('pointermove', placeCursor, { passive: true });
+        document.addEventListener('pointermove', placeCursor, { passive: true, capture: true });
         document.addEventListener('pointerleave', () => cursor.classList.remove('is-visible'));
         window.addEventListener('blur', () => cursor.classList.remove('is-visible'));
       };
