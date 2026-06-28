@@ -1,0 +1,190 @@
+:root {
+  --skeleton-base: rgba(30, 74, 107, 0.08);
+  --skeleton-highlight: rgba(255, 255, 255, 0.72);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 520ms ease-out, transform 520ms ease-out;
+  will-change: opacity, transform;
+}
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+.counter { font-variant-numeric: tabular-nums; }
+
+.tw-cursor {
+  display: inline-block;
+  min-height: 1em;
+  margin-left: .08em;
+  border-right: 2px solid currentColor;
+  animation: twBlink .7s steps(1, end) infinite;
+}
+@keyframes twBlink { 50% { opacity: 0; } }
+
+#nav {
+  transition: background-color 300ms ease, box-shadow 300ms ease, backdrop-filter 300ms ease, transform 300ms ease;
+}
+#nav.scrolled {
+  background: rgba(14, 28, 34, 0.74) !important;
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 18px 50px rgba(9, 24, 32, .18);
+}
+#nav.scrolled .nav-logo-img { transform: scale(.88); }
+.nav-menu > li > a { position: relative; }
+.nav-menu > li > a::before {
+  content: '';
+  position: absolute;
+  left: .72rem;
+  right: .72rem;
+  bottom: .18rem;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--arena, #c4966a);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 260ms ease;
+}
+.nav-menu > li > a:hover::before,
+.nav-menu > li > a.activo::before,
+.nav-menu > li > a.section-active::before { transform: scaleX(1); }
+
+.activity-card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 400ms ease-out, box-shadow 300ms ease;
+  overflow: hidden;
+}
+.activity-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(circle at var(--tilt-x, 50%) var(--tilt-y, 50%), rgba(255,255,255,.32), transparent 34%);
+  transition: opacity 220ms ease;
+  z-index: 2;
+}
+.activity-card:hover::after { opacity: 1; }
+.activity-card .ficha-img img,
+.activity-card .act-card-bg,
+.activity-card img { transition: transform 500ms ease; }
+.activity-card:hover .ficha-img img,
+.activity-card:hover .act-card-bg { transform: scale(1.05); }
+.activity-card .nivel-badge,
+.activity-card .level-badge { transition: transform 300ms ease, opacity 300ms ease; }
+.activity-card:hover .nivel-badge,
+.activity-card:hover .level-badge { transform: translateY(-6px); }
+
+.season-tab-system { transition: background 320ms ease; }
+.season-tab-system[data-active-season='winter'] { background: linear-gradient(135deg, #dcecf7, #f4efe8) !important; }
+.season-tab-system[data-active-season='spring'] { background: linear-gradient(135deg, #dfeedd, #f4efe8) !important; }
+.season-tab-system[data-active-season='summer'] { background: linear-gradient(135deg, #f7dfb8, #f4efe8) !important; }
+.season-tab-system[data-active-season='autumn'] { background: linear-gradient(135deg, #f0c0a7, #f4efe8) !important; }
+.season-tabs-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+  margin: 1.4rem 0 1.2rem;
+}
+.season-tab {
+  min-height: 44px;
+  border: 1px solid rgba(30,74,107,.16);
+  border-radius: 999px;
+  background: rgba(255,255,255,.72);
+  color: var(--mar, #1e4a6b);
+  padding: .62rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.season-tab.is-active { border-color: var(--arena, #c4966a); box-shadow: inset 0 -3px 0 var(--arena, #c4966a); }
+.season-panel { opacity: 0; transform: translateY(8px); transition: opacity 300ms ease, transform 300ms ease; }
+.season-panel.is-active { opacity: 1; transform: translateY(0); }
+
+.intensity-bar {
+  position: relative;
+  display: block;
+  min-height: 8px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(30,74,107,.12);
+}
+.intensity-bar .intensity-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0;
+  border-radius: inherit;
+  background: #45a66a;
+  transition: width 700ms cubic-bezier(.4,0,.2,1);
+}
+.intensity-bar[data-level='1'] .intensity-fill { background: #4caf72; }
+.intensity-bar[data-level='2'] .intensity-fill { background: #8fbd4f; }
+.intensity-bar[data-level='3'] .intensity-fill { background: #d8b13f; }
+.intensity-bar[data-level='4'] .intensity-fill { background: #d47a32; }
+.intensity-bar[data-level='5'] .intensity-fill { background: #b94335; }
+.intensity-bar[data-level='1'].is-filled .intensity-fill { width: 20%; }
+.intensity-bar[data-level='2'].is-filled .intensity-fill { width: 40%; }
+.intensity-bar[data-level='3'].is-filled .intensity-fill { width: 60%; }
+.intensity-bar[data-level='4'].is-filled .intensity-fill { width: 80%; }
+.intensity-bar[data-level='5'].is-filled .intensity-fill { width: 100%; }
+
+.skeleton {
+  background: linear-gradient(90deg, var(--skeleton-base) 25%, var(--skeleton-highlight) 50%, var(--skeleton-base) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s linear infinite;
+  border-radius: 12px;
+}
+@keyframes shimmer { to { background-position: -200% 0; } }
+.skeleton-card {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  gap: .8rem;
+  align-content: start;
+  padding: 1rem;
+  background: rgba(250,250,248,.96);
+  transition: opacity 260ms ease, visibility 260ms ease;
+}
+.skeleton-hero { height: 150px; }
+.skeleton-line { height: 18px; }
+.skeleton-line.short { width: 68%; }
+.skeleton-button { width: 54%; height: 42px; border-radius: 999px; }
+.ficha.is-skeleton-loading > :not(.skeleton-card) { opacity: 0; }
+.ficha:not(.is-skeleton-loading) .skeleton-card { opacity: 0; visibility: hidden; pointer-events: none; }
+
+.badge, .level-badge, .nivel-badge { transform-origin: center; }
+.badge-visible { animation: badgePop 400ms cubic-bezier(.34,1.56,.64,1) both; }
+@keyframes badgePop { from { opacity: 0; transform: scale(.5); } to { opacity: 1; transform: scale(1); } }
+
+#reading-progress {
+  position: fixed;
+  inset: 0 auto auto 0;
+  width: 0;
+  height: 3px;
+  z-index: 9999;
+  background: var(--arena, #c4966a);
+  box-shadow: 0 0 16px rgba(196,150,106,.45);
+}
+
+@media (max-width: 640px) {
+  .season-tabs-nav { overflow-x: auto; flex-wrap: nowrap; padding-bottom: .35rem; -webkit-overflow-scrolling: touch; }
+  .season-tab { flex: 0 0 auto; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .season-panel, .activity-card, .activity-card img, .intensity-bar .intensity-fill, #nav, .nav-logo-img {
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+  .tw-cursor { animation: none; }
+  .skeleton { animation: none; }
+}
