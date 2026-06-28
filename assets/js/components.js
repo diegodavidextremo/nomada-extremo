@@ -397,22 +397,16 @@
         cursor.innerHTML = '<svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="15" fill="rgba(10,24,30,.82)" stroke="#c4966a"/><path d="M20 6l4 14-4 14-4-14z" fill="#f4efe8" stroke="#c4966a"/><circle cx="20" cy="20" r="3" fill="#c4966a"/></svg>';
         document.body.appendChild(cursor);
         document.body.classList.add('has-noext-cursor');
-        let x = window.innerWidth / 2, y = window.innerHeight / 2, tx = x, ty = y;
-        document.addEventListener('mousemove', event => {
-          tx = event.clientX; ty = event.clientY;
+        const placeCursor = event => {
+          cursor.style.transform = 'translate3d(' + event.clientX + 'px,' + event.clientY + 'px,0) translate(-50%,-50%)';
           cursor.classList.add('is-visible');
           const target = event.target;
           cursor.classList.toggle('is-cta', !!target.closest('a, button, .btn, .ficha-btn'));
           cursor.classList.toggle('is-image', !!target.closest('img, .ficha-img, .act-card-bg, .blog-img'));
-        }, { passive: true });
-        document.addEventListener('mouseleave', () => cursor.classList.remove('is-visible'));
-        const follow = () => {
-          x += (tx - x) * .18;
-          y += (ty - y) * .18;
-          cursor.style.transform = 'translate3d(' + x + 'px,' + y + 'px,0) translate(-50%,-50%)';
-          requestAnimationFrame(follow);
         };
-        follow();
+        document.addEventListener('pointermove', placeCursor, { passive: true });
+        document.addEventListener('pointerleave', () => cursor.classList.remove('is-visible'));
+        window.addEventListener('blur', () => cursor.classList.remove('is-visible'));
       };
 
       const initTypewriter = () => {
