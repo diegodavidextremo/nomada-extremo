@@ -217,7 +217,7 @@
     let lastScrollY = 0;
 
     if (nav) {
-      const check = () => nav.classList.toggle('scrolled', window.scrollY > 70);
+      const check = () => nav.classList.toggle('scrolled', window.scrollY > 80);
       window.addEventListener('scroll', check, { passive: true });
       check();
     }
@@ -323,13 +323,13 @@
         const target = Number(el.dataset.count || el.dataset.countup || String(el.textContent).replace(/[^0-9.]/g, ''));
         if (!Number.isFinite(target)) return;
         const suffix = el.dataset.suffix || (el.textContent.includes('+') ? '+' : '');
-        const duration = 900;
+        const duration = 1500;
         const start = performance.now();
         el.classList.add('is-counting');
         const tick = (now) => {
           const progress = Math.min((now - start) / duration, 1);
           const eased = 1 - Math.pow(1 - progress, 3);
-          el.textContent = Math.round(target * eased) + suffix;
+          el.textContent = Math.round(target * eased) + (progress >= 1 ? suffix : '');
           if (progress < 1) requestAnimationFrame(tick);
           else el.classList.remove('is-counting');
         };
@@ -347,5 +347,209 @@
     };
 
     initNoextMotion();
+
+
+    const initAdvancedThemeInteractions = () => {
+      if (window.__noextAdvancedThemeReady) return;
+      window.__noextAdvancedThemeReady = true;
+      const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const finePointer = window.matchMedia && window.matchMedia('(pointer: fine)').matches;
+
+      const markActiveSection = () => {
+        const links = [...document.querySelectorAll('#nav a[href*="#"]')];
+        const sections = links.map(link => {
+          const id = (link.getAttribute('href') || '').split('#')[1];
+          return id ? [link, document.getElementById(id)] : null;
+        }).filter((pair) => pair && pair[1]);
+        if (!sections.length || !('IntersectionObserver' in window)) return;
+        const sectionObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            links.forEach(link => link.classList.remove('section-active'));
+            sections.filter(([, section]) => section === entry.target).forEach(([link]) => link.classList.add('section-active'));
+          });
+        }, { rootMargin: '-30% 0px -55% 0px', threshold: 0.01 });
+        sections.forEach(([, section]) => sectionObserver.observe(section));
+      };
+
+      const initTiltCards = () => {
+        if (reduceMotion || !finePointer) return;
+        document.querySelectorAll('.ficha').forEach(card => {
+          card.addEventListener('mousemove', event => {
+            const rect = card.getBoundingClientRect();
+            const x = (event.clientX - rect.left) / rect.width - .5;
+            const y = (event.clientY - rect.top) / rect.height - .5;
+            card.classList.add('is-tilting');
+            card.style.transform = 'perspective(900px) rotateX(' + (-y * 8).toFixed(2) + 'deg) rotateY(' + (x * 8).toFixed(2) + 'deg) translateY(-4px)';
+          });
+          card.addEventListener('mouseleave', () => {
+            card.classList.remove('is-tilting');
+            card.style.transform = '';
+          });
+        });
+      };
+
+      const initCursor = () => {
+        if (reduceMotion || !finePointer || document.querySelector('.noext-cursor')) return;
+        const cursor = document.createElement('div');
+        cursor.className = 'noext-cursor';
+        cursor.setAttribute('aria-hidden', 'true');
+        cursor.innerHTML = '<svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="15" fill="rgba(10,24,30,.82)" stroke="#c4966a"/><path d="M20 6l4 14-4 14-4-14z" fill="#f4efe8" stroke="#c4966a"/><circle cx="20" cy="20" r="3" fill="#c4966a"/></svg>';
+        document.body.appendChild(cursor);
+        document.body.classList.add('has-noext-cursor');
+        let x = window.innerWidth / 2, y = window.innerHeight / 2, tx = x, ty = y;
+        document.addEventListener('mousemove', event => {
+          tx = event.clientX; ty = event.clientY;
+          cursor.classList.add('is-visible');
+          const target = event.target;
+          cursor.classList.toggle('is-cta', !!target.closest('a, button, .btn, .ficha-btn'));
+          cursor.classList.toggle('is-image', !!target.closest('img, .ficha-img, .act-card-bg, .blog-img'));
+        }, { passive: true });
+        document.addEventListener('mouseleave', () => cursor.classList.remove('is-visible'));
+        const follow = () => {
+          x += (tx - x) * .18;
+          y += (ty - y) * .18;
+          cursor.style.transform = 'translate3d(' + x + 'px,' + y + 'px,0) translate(-50%,-50%)';
+          requestAnimationFrame(follow);
+        };
+        follow();
+      };
+
+      const initTypewriter = () => {
+        const quote = document.querySelector('.manifiesto-texto');
+        if (!quote || quote.dataset.typewriterReady === 'true') return;
+        const fullText = quote.textContent.replace(/\s+/g, ' ').trim();
+        quote.dataset.typewriterReady = 'true';
+        if (reduceMotion) return;
+        quote.textContent = '';
+        quote.classList.add('typewriter-ready');
+        const start = () => {
+          let index = 0;
+          const write = () => {
+            quote.textContent = fullText.slice(0, index++);
+            if (index <= fullText.length) setTimeout(write, 24 + Math.random() * 42);
+          };
+          write();
+        };
+        if ('IntersectionObserver' in window) {
+          const observer = new IntersectionObserver(entries => {
+            if (!entries.some(entry => entry.isIntersecting)) return;
+            observer.disconnect();
+            start();
+          }, { threshold: .45 });
+          observer.observe(quote);
+        } else start();
+      };
+
+      const initSeasonTabs = () => {
+        const section = document.getElementById('temporadas-home');
+        const grid = section?.querySelector('.grid-4');
+        const cards = grid ? [...grid.querySelectorAll('.card')] : [];
+        if (!section || !grid || cards.length < 2 || section.querySelector('.season-tab-list')) return;
+        const normalizeSeasonKey = value => String(value || '')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
+        .replace(/[^a-z]/g, '');
+      const icons = {
+        invierno: '<svg viewBox="0 0 24 24"><path d="M12 2v20M4 6l16 12M20 6L4 18"/></svg>',
+        primavera: '<svg viewBox="0 0 24 24"><path d="M12 12c4-7 9-3 5 2-4 5-5 6-5 6s-1-1-5-6c-4-5 1-9 5-2z"/></svg>',
+        verano: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 1v4M12 19v4M1 12h4M19 12h4M4 4l3 3M17 17l3 3M20 4l-3 3M7 17l-3 3"/></svg>',
+        otono: '<svg viewBox="0 0 24 24"><path d="M20 4C11 4 5 9 5 18c7 0 13-5 15-14z"/><path d="M5 18c4-4 8-7 15-14"/></svg>'
+      };
+        section.classList.add('season-tabs');
+        const tabList = document.createElement('div');
+        tabList.className = 'season-tab-list';
+        tabList.setAttribute('role', 'tablist');
+        cards.forEach((card, index) => {
+          const title = card.querySelector('.card-titulo')?.textContent.trim() || 'Temporada ' + (index + 1);
+          card.classList.add('season-panel');
+          card.id = 'season-panel-' + index;
+          card.setAttribute('role', 'tabpanel');
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.className = 'season-tab';
+          button.setAttribute('role', 'tab');
+          button.setAttribute('aria-controls', card.id);
+          button.innerHTML = '<span class="season-icon">' + (icons[title] || icons.Verano) + '</span><span>' + title + '</span>';
+          const setActive = () => {
+            cards.forEach(panel => panel.classList.remove('is-active'));
+            tabList.querySelectorAll('.season-tab').forEach(tab => tab.setAttribute('aria-selected', 'false'));
+            card.classList.add('is-active');
+            button.setAttribute('aria-selected', 'true');
+            section.dataset.season = title;
+          };
+          button.addEventListener('click', setActive);
+          tabList.appendChild(button);
+          if (index === 0) setTimeout(setActive, 0);
+        });
+        grid.before(tabList);
+      };
+
+      const initIntensityBars = () => {
+        document.documentElement.classList.add('intensity-ready');
+        const bars = [...document.querySelectorAll('.intensidad-barra')];
+        const fill = bar => [...bar.querySelectorAll('span.on')].forEach((span, index) => {
+          span.style.transitionDelay = (index * 90) + 'ms';
+          span.classList.add('is-filled');
+        });
+        if (reduceMotion || !('IntersectionObserver' in window)) bars.forEach(fill);
+        else {
+          const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            fill(entry.target);
+            observer.unobserve(entry.target);
+          }), { threshold: .5 });
+          bars.forEach(bar => observer.observe(bar));
+        }
+      };
+
+      const initLogbookSkeletons = () => {
+        if (!document.body.classList.contains('logbook-page') || reduceMotion) {
+          document.body.classList.add('logbook-loaded');
+          return;
+        }
+        const targets = [...document.querySelectorAll('.logbook-command, .logbook-pro-shell, .logbook-kpi-grid, .discipline-progress, .logbook-badge-wall')];
+        if (!targets.length) return;
+        targets.forEach(target => target.classList.add('logbook-loading-target'));
+        const wrap = document.createElement('div');
+        wrap.className = 'logbook-skeleton-wrap';
+        wrap.setAttribute('aria-hidden', 'true');
+        wrap.innerHTML = '<div class="logbook-skeleton-card"></div><div class="logbook-skeleton-card"></div><div class="logbook-skeleton-card"></div>';
+        targets[0].before(wrap);
+        window.setTimeout(() => {
+          wrap.remove();
+          document.body.classList.add('logbook-loaded');
+        }, 1200);
+      };
+
+      const initBadgePop = () => {
+        const badges = [...document.querySelectorAll('.badge-item, .badge-circle, .logbook-badge-wall article')];
+        badges.forEach((badge, index) => {
+          badge.classList.add('badge-pop-target');
+          badge.style.setProperty('--badge-delay', (index * 80) + 'ms');
+        });
+        if (reduceMotion || !('IntersectionObserver' in window)) badges.forEach(badge => badge.classList.add('badge-pop-in'));
+        else {
+          const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('badge-pop-in');
+            observer.unobserve(entry.target);
+          }), { threshold: .18 });
+          badges.forEach(badge => observer.observe(badge));
+        }
+      };
+
+      markActiveSection();
+      initTiltCards();
+      initCursor();
+      initTypewriter();
+      initSeasonTabs();
+      initIntensityBars();
+      initLogbookSkeletons();
+      initBadgePop();
+    };
+
+    initAdvancedThemeInteractions();
   }, 0);
 })();

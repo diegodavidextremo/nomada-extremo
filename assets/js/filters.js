@@ -38,7 +38,7 @@
   const translate=source=>window.noextTranslate?.(source)||source;
   function updateLabels(){tools.querySelector('.activity-filter-clear').textContent=translate('Limpiar filtros');tools.querySelector('.activity-filter-count').textContent=visibleCount+' '+translate('actividades encontradas');empty.textContent=translate('No hay actividades que coincidan con esta combinación. Prueba a limpiar algún filtro.');}
   let visibleCount=cards.length;
-  function apply(){visibleCount=0;cards.forEach(card=>{const show=[...selected].every(([k,v])=>matches(card,k,v));card.hidden=!show;if(show)visibleCount++;});empty.hidden=visibleCount!==0;updateLabels();}
+  function apply(){visibleCount=0;cards.forEach(card=>{const show=[...selected].every(([k,v])=>matches(card,k,v));if(show){card.hidden=false;card.classList.remove('filtering-out');card.classList.add('filtering-in');window.setTimeout(()=>card.classList.remove('filtering-in'),260);visibleCount++;}else{card.classList.remove('filtering-in');card.classList.add('filtering-out');window.setTimeout(()=>{if(card.classList.contains('filtering-out'))card.hidden=true;},190);}});empty.hidden=visibleCount!==0;updateLabels();}
   tools.querySelector('button').addEventListener('click',()=>{selected.forEach(s=>s.clear());panel.querySelectorAll('.filter-chip').forEach(c=>{c.classList.remove('is-active');c.setAttribute('aria-pressed','false');});apply();});
   window.addEventListener('noext:languagechange',updateLabels);
   apply();
