@@ -74,6 +74,10 @@
     "segundo-gmn": {
       "title": "Qu'est-ce qui m'attend en 2.? GMN | EXTRÊME NOMADE",
       "description": "Modules de 2.? GMN dans le IES Europa de ?guilas et sa connexion avec le projet intermodulaire N?MADA EXTREMO."
+    },
+    "viajes": {
+      "title": "Voyages d?aventure et calendrier extr?me | N?MADA EXTREMO",
+      "description": "Calendrier de voyages, escapades et exp?riences d?aventure en Espagne, en Europe et dans le monde : plong?e, kayak, escalade, canyoning, parapente, parachutisme, randonn?e, VTT et plus."
     }
   },
   "strings": {
@@ -8205,7 +8209,8 @@
     "Senderismo, montaña, orientación, formación técnica, seguridad y propuestas de baja exposición acuática, siempre según meteorología.": "Randonnée, montagne, orientation, formation technique, sécurité et activités peu exposées à l’eau, toujours selon la météo.",
     "Kayak, snorkel inicial, rutas costeras y barrancos acuáticos con caudal, accesos y permisos adecuados.": "Kayak, snorkeling d’initiation, itinéraires côtiers et canyoning aquatique avec débit, accès et autorisations adaptés.",
     "Mar, SUP, buceo, e-foil, coasteering y barrancos acuáticos aptos, especialmente al inicio del verano y según condiciones.": "Mer, SUP, plongée, e-foil, coasteering et canyoning aquatique adapté, surtout au début de l’été et selon les conditions.",
-    "Rutas, escalada, montaña, vías ferratas y barrancos seleccionados tras revisar caudal, lluvia y meteorología.": "Itinéraires, escalade, montagne, via ferrata et canyons sélectionnés après contrôle du débit, des pluies et de la météo."
+    "Rutas, escalada, montaña, vías ferratas y barrancos seleccionados tras revisar caudal, lluvia y meteorología.": "Itinéraires, escalade, montagne, via ferrata et canyons sélectionnés après contrôle du débit, des pluies et de la météo.",
+    "Viajes": "Voyages"
   },
   "pages": {
     "faq": {

@@ -74,6 +74,10 @@
     "segundo-gmn": {
       "title": "What awaits me in 2.? GMN | EXTREME NOMAD",
       "description": "Modules of 2.? GMN in the IES Europa of ?guilas and its connection with the N?MADA EXTREMO intermodular project."
+    },
+    "viajes": {
+      "title": "Adventure trips and extreme calendar | N?MADA EXTREMO",
+      "description": "Calendar of adventure trips, escapes and experiences across Spain, Europe and the world: diving, kayak, climbing, canyoning, paragliding, skydiving, hiking, MTB and more."
     }
   },
   "strings": {
@@ -8206,7 +8210,8 @@
     "Senderismo, montaña, orientación, formación técnica, seguridad y propuestas de baja exposición acuática, siempre según meteorología.": "Hiking, mountains, navigation, technical training, safety and low-aquatic-exposure activities, always depending on the weather.",
     "Kayak, snorkel inicial, rutas costeras y barrancos acuáticos con caudal, accesos y permisos adecuados.": "Kayaking, introductory snorkelling, coastal routes and aquatic canyoning with suitable flow, access and permits.",
     "Mar, SUP, buceo, e-foil, coasteering y barrancos acuáticos aptos, especialmente al inicio del verano y según condiciones.": "Sea activities, SUP, diving, e-foil, coasteering and suitable aquatic canyoning, especially in early summer and when conditions allow.",
-    "Rutas, escalada, montaña, vías ferratas y barrancos seleccionados tras revisar caudal, lluvia y meteorología.": "Routes, climbing, mountains, via ferratas and selected canyons after checking flow, rainfall and weather."
+    "Rutas, escalada, montaña, vías ferratas y barrancos seleccionados tras revisar caudal, lluvia y meteorología.": "Routes, climbing, mountains, via ferratas and selected canyons after checking flow, rainfall and weather.",
+    "Viajes": "Trips"
   },
   "pages": {
     "faq": {

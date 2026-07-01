@@ -66,6 +66,10 @@
     "segundo-gmn": {
       "title": "Lo que me espera en 2.? GMN | N?MADA EXTREMO",
       "description": "M?dulos de 2.? GMN en el IES Europa de ?guilas y su conexi?n con el proyecto intermodular N?MADA EXTREMO."
+    },
+    "viajes": {
+      "title": "Viajes de aventura y calendario extremo | N?MADA EXTREMO",
+      "description": "Calendario de viajes, escapadas y experiencias de aventura por Espa?a, Europa y el mundo: buceo, kayak, escalada, barranquismo, parapente, paracaidismo, senderismo, MTB y m?s."
     }
   },
   "strings": {
@@ -8008,7 +8012,8 @@
     "Senderismo, montaña, orientación, formación técnica, seguridad y propuestas de baja exposición acuática, siempre según meteorología.": "Senderismo, montaña, orientación, formación técnica, seguridad y propuestas de baja exposición acuática, siempre según meteorología.",
     "Kayak, snorkel inicial, rutas costeras y barrancos acuáticos con caudal, accesos y permisos adecuados.": "Kayak, snorkel inicial, rutas costeras y barrancos acuáticos con caudal, accesos y permisos adecuados.",
     "Mar, SUP, buceo, e-foil, coasteering y barrancos acuáticos aptos, especialmente al inicio del verano y según condiciones.": "Mar, SUP, buceo, e-foil, coasteering y barrancos acuáticos aptos, especialmente al inicio del verano y según condiciones.",
-    "Rutas, escalada, montaña, vías ferratas y barrancos seleccionados tras revisar caudal, lluvia y meteorología.": "Rutas, escalada, montaña, vías ferratas y barrancos seleccionados tras revisar caudal, lluvia y meteorología."
+    "Rutas, escalada, montaña, vías ferratas y barrancos seleccionados tras revisar caudal, lluvia y meteorología.": "Rutas, escalada, montaña, vías ferratas y barrancos seleccionados tras revisar caudal, lluvia y meteorología.",
+    "Viajes": "Viajes"
   },
   "pages": {
     "faq": {

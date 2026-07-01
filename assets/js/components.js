@@ -37,6 +37,7 @@
       <li><a href="escuela.html">Escuela</a></li>
       <li><a href="naturistas.html">Naturismo</a></li>
       <li><a href="audiovisual.html">Audiovisual</a></li>
+      <li><a href="viajes.html">Viajes</a></li>
       <li>
         <a href="proyecto-completo.html" class="has-drop" aria-haspopup="true">Proyecto</a>
         <div class="nav-drop" aria-label="Submen&uacute; de proyecto">
@@ -48,6 +49,7 @@
           <a href="grupos.html">Grupos y empresas</a>
           <a href="naturaleza.html">Naturaleza N&oacute;mada</a>
           <a href="transparencia-financiacion.html">Transparencia y financiaci&oacute;n</a>
+          <a href="viajes.html">Viajes</a>
           <a href="blog.html">Blog y lecturas</a>
           <a href="guia-actividades.html">Gu&iacute;a de actividades</a>
           <a href="formacion-gmn.html">Formación GMN</a>
@@ -88,6 +90,7 @@
     <a href="grupos.html">Grupos y empresas</a>
     <a href="naturistas.html">Naturismo</a>
     <a href="audiovisual.html">Audiovisual</a>
+    <a href="viajes.html">Viajes</a>
     <a href="proyecto-completo.html">Proyecto completo</a>
     <a href="transparencia-financiacion.html">Transparencia y financiaci&oacute;n</a>
     <a href="blog.html">Blog y lecturas</a>
@@ -107,10 +110,10 @@
         <p class="footer-marca-desc">Marca conceptual de aventura mediterránea nacida en Águilas, Murcia. Creada por Diego David Gómez García / Diego David Extremo para 1.º GMN del IES Europa, curso 2025-2026.</p><p class="footer-demo-note">${PROJECT_NOTICE}</p>
         <div class="footer-social"><a href="https://www.youtube.com/@diegodavidextremo" target="_blank" rel="noopener noreferrer" aria-label="YouTube Diego David Extremo">YT</a><a href="https://www.instagram.com/nomadaextremoes/" target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial de Nómada Extremo">IG</a><a href="https://www.tiktok.com/@diegodavidextremo" target="_blank" rel="noopener noreferrer" aria-label="TikTok Diego David Extremo">TT</a><a href="https://x.com/nomadaextremoES" target="_blank" rel="noopener noreferrer" aria-label="X oficial de Nómada Extremo">X</a></div>
       </div>
-      <div class="footer-col"><h5>Experiencias</h5><ul><li><a href="actividades.html">Actividades</a></li><li><a href="packs.html">Packs</a></li><li><a href="packs.html#bonos">Bonos regalo</a></li><li><a href="grupos.html">Grupos, centros y empresas</a></li><li><a href="zonas.html">Zonas de aventura</a></li><li><a href="naturistas.html">Nómada Naturista</a></li></ul></div>
+      <div class="footer-col"><h5>Experiencias</h5><ul><li><a href="actividades.html">Actividades</a></li><li><a href="viajes.html">Viajes</a></li><li><a href="packs.html">Packs</a></li><li><a href="packs.html#bonos">Bonos regalo</a></li><li><a href="grupos.html">Grupos, centros y empresas</a></li><li><a href="zonas.html">Zonas de aventura</a></li><li><a href="naturistas.html">Nómada Naturista</a></li></ul></div>
       <div class="footer-col"><h5>Sistema Nómada</h5><ul><li><a href="como-funciona.html">Cómo funciona</a></li><li><a href="index.html#metodo-nomada">Método Nómada</a></li><li><a href="seguridad.html">Seguridad</a></li><li><a href="seguridad.html#seguros-documentacion">Seguros y documentación</a></li><li><a href="material.html">Material y marcas</a></li><li><a href="alquiler.html">Alquiler orientativo</a></li><li><a href="logbook.html">Logbook y app</a></li><li><a href="certificaciones.html">Credenciales digitales</a></li><li><a href="formularios.html">Formularios</a></li><li><a href="escuela.html">Escuela Nómada</a></li><li><a href="audiovisual.html">Audiovisual</a></li></ul></div>
       <div class="footer-col"><h5>Marca</h5><ul><li><a href="quienes-somos.html">Quiénes somos</a></li><li><a href="fundador.html">Fundador</a></li><li><a href="equipo.html">Equipo</a></li><li><a href="equipo.html#nucleo-directivo">Nuria Pons</a></li><li><a href="sostenibilidad.html">Sostenibilidad</a></li><li><a href="naturaleza.html">Naturaleza Nómada</a></li><li><a href="blog.html">Blog</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="mailto:nomadaextremoaguilas@gmail.com">Email</a></li><li><a href="https://wa.me/34623179618" target="_blank" rel="noopener noreferrer">WhatsApp: +34 623 17 96 18</a></li><li><span>Horario orientativo: 09:00–20:00</span></li><li><span>Base: Águilas, Murcia</span></li><li><a href="https://t.me/DiegoDavidExtremo" target="_blank" rel="noopener noreferrer">Telegram</a></li></ul></div>
-      <div class="footer-col"><h5>Proyecto académico</h5><ul><li><a href="proyecto-completo.html">Proyecto completo</a></li><li><a href="proyecto-academico.html">Marco académico</a></li><li><a href="proyecto-intermodular.html">Intermodular GMN</a></li><li><a href="formacion-gmn.html">Formación GMN</a></li><li><a href="blog.html#articulos-destacados">Art&iacute;culos destacados</a></li><li><a href="guia-actividades.html">Guía de actividades</a></li><li><a href="transparencia-financiacion.html">Transparencia y financiación</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div class="footer-col"><h5>Proyecto académico</h5><ul><li><a href="proyecto-completo.html">Proyecto completo</a></li><li><a href="proyecto-academico.html">Marco académico</a></li><li><a href="proyecto-intermodular.html">Intermodular GMN</a></li><li><a href="formacion-gmn.html">Formación GMN</a></li><li><a href="viajes.html">Viajes</a></li><li><a href="blog.html#articulos-destacados">Art&iacute;culos destacados</a></li><li><a href="guia-actividades.html">Guía de actividades</a></li><li><a href="transparencia-financiacion.html">Transparencia y financiación</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
       <div class="footer-col"><h5>Legal</h5><ul><li><a href="aviso-legal.html">Aviso legal</a></li><li><a href="aviso-legal.html#condiciones-generales">Condiciones</a></li><li><a href="aviso-legal.html#devoluciones">Política de devoluciones</a></li><li><a href="aviso-legal.html#privacidad">Privacidad</a></li><li><a href="aviso-legal.html#cookies">Cookies</a></li></ul></div>
     </div>
     <div class="footer-bottom">

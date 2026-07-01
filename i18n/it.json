@@ -8160,7 +8160,8 @@
     "Senderismo, montaña, orientación, formación técnica, seguridad y propuestas de baja exposición acuática, siempre según meteorología.": "Escursionismo, montagna, orientamento, formazione tecnica, sicurezza e attività con bassa esposizione all’acqua, sempre secondo il meteo.",
     "Kayak, snorkel inicial, rutas costeras y barrancos acuáticos con caudal, accesos y permisos adecuados.": "Kayak, snorkeling introduttivo, itinerari costieri e canyoning acquatico con portata, accessi e permessi adeguati.",
     "Mar, SUP, buceo, e-foil, coasteering y barrancos acuáticos aptos, especialmente al inicio del verano y según condiciones.": "Mare, SUP, immersioni, e-foil, coasteering e canyoning acquatico adatto, soprattutto a inizio estate e secondo le condizioni.",
-    "Rutas, escalada, montaña, vías ferratas y barrancos seleccionados tras revisar caudal, lluvia y meteorología.": "Itinerari, arrampicata, montagna, vie ferrate e canyon selezionati dopo aver verificato portata, pioggia e meteo."
+    "Rutas, escalada, montaña, vías ferratas y barrancos seleccionados tras revisar caudal, lluvia y meteorología.": "Itinerari, arrampicata, montagna, vie ferrate e canyon selezionati dopo aver verificato portata, pioggia e meteo.",
+    "Viajes": "Viaggi"
   },
   "pages": {
     "faq": {
@@ -8194,6 +8195,10 @@
     "segundo-gmn": {
       "title": "Cosa mi aspetta nella 2.? GMN | NOMADE ESTREMO",
       "description": "Moduli da 2.? GMN nel IES Europa di ?guilas e la sua connessione con il progetto intermodulare N?MADA EXTREMO."
+    },
+    "viajes": {
+      "title": "Viaggi d?avventura e calendario estremo | N?MADA EXTREMO",
+      "description": "Calendario di viaggi, fughe ed esperienze d?avventura in Spagna, Europa e nel mondo: immersioni, kayak, arrampicata, canyoning, parapendio, paracadutismo, trekking, MTB e altro."
     }
   },
   "materialPage": {
