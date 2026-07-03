@@ -554,7 +554,7 @@
 
 // Carga la capa modular de animaciones sin obligar a duplicar imports en cada HTML.
 (function loadNoextEnhancementLayer(){
-  var version = '20260628-1';
+  var version = '20260703-1';
   var cssHref = 'assets/css/skeleton.css?v=' + version;
   if (!document.querySelector('link[href^="assets/css/skeleton.css"]')) {
     var link = document.createElement('link');
