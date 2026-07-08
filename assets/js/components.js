@@ -151,7 +151,7 @@
 
   if (!document.querySelector('script[data-noext-i18n]')) {
     const languageScript = document.createElement('script');
-    languageScript.src = 'assets/js/i18n.js?v=20260621-6';
+    languageScript.src = 'assets/js/i18n.js?v=20260708-1';
     languageScript.dataset.noextI18n = 'runtime';
     document.head.appendChild(languageScript);
   }
