@@ -8,3 +8,4 @@
 .gmn-stage--second .gmn2-hero{margin-top:1rem}.gmn-formation-close{scroll-margin-top:100px;padding:clamp(4rem,8vw,7rem) 0;background:#0d2018;color:var(--blanco)}
 @media(max-width:900px){.gmn-stage-nav{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:540px){.gmn-formation-hero{padding-top:7rem}.gmn-stage-nav{grid-template-columns:1fr}.gmn-stage-banner h2{font-size:2.45rem}.gmn-transition h2,.gmn-formation-close h2{font-size:2.75rem}}
+.formacion-gmn-page .gmn2-hero h2{max-width:900px;margin:1rem 0 1.25rem;font:400 clamp(3.8rem,10vw,8.8rem)/.82 var(--display);letter-spacing:0;text-wrap:balance}.formacion-gmn-page .gmn2-hero h2 span{color:var(--arena-claro)}
