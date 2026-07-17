@@ -158,6 +158,22 @@
     document.head.appendChild(languageScript);
   }
 
+  if (!document.querySelector('link[data-noext-global-search]')) {
+    const searchStyles = document.createElement('link');
+    searchStyles.rel = 'stylesheet';
+    searchStyles.href = 'assets/css/global-search.css?v=20260717-1';
+    searchStyles.dataset.noextGlobalSearch = 'styles';
+    document.head.appendChild(searchStyles);
+  }
+
+  if (!document.querySelector('script[data-noext-global-search]')) {
+    const searchScript = document.createElement('script');
+    searchScript.src = 'assets/js/global-search.js?v=20260717-1';
+    searchScript.defer = true;
+    searchScript.dataset.noextGlobalSearch = 'runtime';
+    document.body.appendChild(searchScript);
+  }
+
   const ensureMainLandmark = () => {
     const existingMain = document.querySelector('main');
     if (existingMain) {
