@@ -1,0 +1,323 @@
+/* Generado desde assets/data/horizonte-nomada.json. */
+window.NOMADA_HORIZON_DATA = [
+  {
+    "id": "movilidad-electrica-apoyo",
+    "category": "movilidad",
+    "brand": "",
+    "model": "",
+    "state": "estudio",
+    "horizon": "medio",
+    "featured": true,
+    "title": {
+      "es": "Movilidad eléctrica de apoyo",
+      "en": "Electric support mobility",
+      "fr": "Mobilité électrique d'appui",
+      "de": "Elektrische Begleitmobilität",
+      "it": "Mobilità elettrica di supporto",
+      "pt": "Mobilidade elétrica de apoio"
+    },
+    "description": {
+      "es": "Vehículos de apoyo para mover personas, bicicletas, kayaks, material técnico y producción audiovisual con una logística más eficiente.",
+      "en": "Support vehicles for moving people, bicycles, kayaks, technical equipment and audiovisual production with more efficient logistics.",
+      "fr": "Des véhicules d'appui pour transporter personnes, vélos, kayaks, matériel technique et production audiovisuelle avec une logistique plus efficace.",
+      "de": "Begleitfahrzeuge für Personen, Fahrräder, Kajaks, technische Ausrüstung und audiovisuelle Produktion mit effizienterer Logistik.",
+      "it": "Veicoli di supporto per persone, biciclette, kayak, materiale tecnico e produzione audiovisiva con una logistica più efficiente.",
+      "pt": "Veículos de apoio para transportar pessoas, bicicletas, caiaques, material técnico e produção audiovisual com logística mais eficiente."
+    },
+    "motive": {
+      "es": "Los modelos concretos se decidirían por autonomía, capacidad, seguridad, coste total y red de carga; no existe una compra ni colaboración confirmada.",
+      "en": "Specific models would be chosen by range, capacity, safety, total cost and charging network; no purchase or partnership is confirmed.",
+      "fr": "Les modèles précis seraient choisis selon l'autonomie, la capacité, la sécurité, le coût total et le réseau de recharge ; aucun achat ni partenariat n'est confirmé.",
+      "de": "Konkrete Modelle würden nach Reichweite, Kapazität, Sicherheit, Gesamtkosten und Ladenetz gewählt; Kauf oder Partnerschaft sind nicht bestätigt.",
+      "it": "I modelli concreti verrebbero scelti in base ad autonomia, capacità, sicurezza, costo totale e rete di ricarica; nessun acquisto o accordo è confermato.",
+      "pt": "Os modelos concretos seriam escolhidos por autonomia, capacidade, segurança, custo total e rede de carregamento; não há compra nem parceria confirmada."
+    },
+    "applications": [
+      "logistica",
+      "viajes",
+      "material"
+    ],
+    "link": "base-campamento.html#flota",
+    "image": ""
+  },
+  {
+    "id": "tecnologia-personal-resiliente",
+    "category": "tecnologia",
+    "brand": "",
+    "model": "",
+    "state": "idea",
+    "horizon": "proximo",
+    "featured": true,
+    "title": {
+      "es": "Tecnología personal resistente",
+      "en": "Rugged personal technology",
+      "fr": "Technologie personnelle résistante",
+      "de": "Robuste persönliche Technologie",
+      "it": "Tecnologia personale resistente",
+      "pt": "Tecnologia pessoal resistente"
+    },
+    "description": {
+      "es": "Un ecosistema de teléfono, reloj deportivo, cartografía y comunicación para navegación, seguimiento, coordinación y emergencias.",
+      "en": "An ecosystem of phone, sports watch, mapping and communication for navigation, tracking, coordination and emergencies.",
+      "fr": "Un écosystème de téléphone, montre sportive, cartographie et communication pour la navigation, le suivi, la coordination et les urgences.",
+      "de": "Ein System aus Smartphone, Sportuhr, Kartografie und Kommunikation für Navigation, Tracking, Koordination und Notfälle.",
+      "it": "Un ecosistema di telefono, orologio sportivo, cartografia e comunicazione per navigazione, monitoraggio, coordinamento ed emergenze.",
+      "pt": "Um ecossistema de telemóvel, relógio desportivo, cartografia e comunicação para navegação, acompanhamento, coordenação e emergências."
+    },
+    "motive": {
+      "es": "Samsung, Garmin y otras marcas son referencias a comparar; los modelos exactos quedan pendientes de necesidades verificadas y evolución tecnológica.",
+      "en": "Samsung, Garmin and other brands are references to compare; exact models remain pending verified needs and technological development.",
+      "fr": "Samsung, Garmin et d'autres marques sont des références à comparer ; les modèles exacts dépendront des besoins vérifiés et de l'évolution technologique.",
+      "de": "Samsung, Garmin und andere Marken dienen als Vergleich; genaue Modelle hängen von geprüften Anforderungen und der technischen Entwicklung ab.",
+      "it": "Samsung, Garmin e altri marchi sono riferimenti da confrontare; i modelli esatti dipenderanno da esigenze verificate ed evoluzione tecnologica.",
+      "pt": "Samsung, Garmin e outras marcas são referências a comparar; os modelos exatos ficam dependentes de necessidades verificadas e evolução tecnológica."
+    },
+    "applications": [
+      "seguridad",
+      "navegacion",
+      "logbook"
+    ],
+    "link": "tecnologia.html",
+    "image": ""
+  },
+  {
+    "id": "captura-modular-aventura",
+    "category": "audiovisual",
+    "brand": "",
+    "model": "",
+    "state": "disenado",
+    "horizon": "proximo",
+    "featured": true,
+    "title": {
+      "es": "Sistema modular de captura",
+      "en": "Modular capture system",
+      "fr": "Système de capture modulaire",
+      "de": "Modulares Aufnahmesystem",
+      "it": "Sistema di ripresa modulare",
+      "pt": "Sistema modular de captação"
+    },
+    "description": {
+      "es": "Cámaras de acción, 360, audio, dron sujeto a normativa y almacenamiento organizados según actividad, seguridad y formato de entrega.",
+      "en": "Action cameras, 360 capture, audio, regulation-compliant drones and storage organised by activity, safety and delivery format.",
+      "fr": "Caméras d'action, capture 360, audio, drones soumis à la réglementation et stockage organisés selon l'activité, la sécurité et le format de livraison.",
+      "de": "Actionkameras, 360-Aufnahmen, Audio, regelkonforme Drohnen und Speicher, geordnet nach Aktivität, Sicherheit und Ausgabeformat.",
+      "it": "Action cam, riprese 360, audio, droni soggetti a normativa e archiviazione organizzati per attività, sicurezza e formato di consegna.",
+      "pt": "Câmaras de ação, 360, áudio, drones sujeitos a regulamentação e armazenamento organizados por atividade, segurança e formato de entrega."
+    },
+    "motive": {
+      "es": "La prioridad es documentar sin interferir en la actividad. GoPro, Insta360, DJI y otras soluciones se compararían sin asumir acuerdos oficiales.",
+      "en": "The priority is documenting without interfering with the activity. GoPro, Insta360, DJI and other solutions would be compared without implying official agreements.",
+      "fr": "La priorité est de documenter sans gêner l'activité. GoPro, Insta360, DJI et d'autres solutions seraient comparées sans supposer d'accord officiel.",
+      "de": "Priorität hat die Dokumentation ohne Beeinträchtigung der Aktivität. GoPro, Insta360, DJI und andere Lösungen würden ohne behauptete Partnerschaft verglichen.",
+      "it": "La priorità è documentare senza interferire con l'attività. GoPro, Insta360, DJI e altre soluzioni sarebbero confrontate senza presumere accordi ufficiali.",
+      "pt": "A prioridade é documentar sem interferir na atividade. GoPro, Insta360, DJI e outras soluções seriam comparadas sem assumir acordos oficiais."
+    },
+    "applications": [
+      "audiovisual",
+      "formacion",
+      "comunidad"
+    ],
+    "link": "audiovisual.html",
+    "image": ""
+  },
+  {
+    "id": "alianzas-con-proposito",
+    "category": "alianzas",
+    "brand": "",
+    "model": "",
+    "state": "idea",
+    "horizon": "medio",
+    "featured": false,
+    "title": {
+      "es": "Alianzas con propósito",
+      "en": "Purpose-led partnerships",
+      "fr": "Partenariats porteurs de sens",
+      "de": "Partnerschaften mit Sinn",
+      "it": "Alleanze con uno scopo",
+      "pt": "Parcerias com propósito"
+    },
+    "description": {
+      "es": "Conceptos de colaboración con tecnología, automoción, material, formación, turismo y protección ambiental que aporten valor compartido.",
+      "en": "Partnership concepts with technology, mobility, equipment, training, tourism and environmental protection that create shared value.",
+      "fr": "Des concepts de collaboration avec la technologie, la mobilité, le matériel, la formation, le tourisme et la protection de l'environnement créant une valeur partagée.",
+      "de": "Kooperationskonzepte mit Technologie, Mobilität, Ausrüstung, Ausbildung, Tourismus und Umweltschutz, die gemeinsamen Mehrwert schaffen.",
+      "it": "Concept di collaborazione con tecnologia, mobilità, attrezzatura, formazione, turismo e tutela ambientale che creino valore condiviso.",
+      "pt": "Conceitos de colaboração com tecnologia, mobilidade, equipamento, formação, turismo e proteção ambiental que criem valor partilhado."
+    },
+    "motive": {
+      "es": "Cada propuesta debe explicar encaje, aplicación, beneficio comunitario y límites. Ninguna ficha representa patrocinio o acuerdo existente.",
+      "en": "Every proposal must explain fit, application, community benefit and limits. No card represents an existing sponsorship or agreement.",
+      "fr": "Chaque proposition doit expliquer sa pertinence, son application, son bénéfice collectif et ses limites. Aucune fiche ne représente un sponsoring ou accord existant.",
+      "de": "Jeder Vorschlag muss Passung, Anwendung, Nutzen für die Gemeinschaft und Grenzen erklären. Keine Karte steht für bestehendes Sponsoring oder Abkommen.",
+      "it": "Ogni proposta deve spiegare coerenza, applicazione, beneficio per la comunità e limiti. Nessuna scheda rappresenta una sponsorizzazione o un accordo esistente.",
+      "pt": "Cada proposta deve explicar adequação, aplicação, benefício comunitário e limites. Nenhuma ficha representa patrocínio ou acordo existente."
+    },
+    "applications": [
+      "comunidad",
+      "formacion",
+      "sostenibilidad"
+    ],
+    "link": "proyecto-completo.html",
+    "image": ""
+  },
+  {
+    "id": "base-nomada-conectada",
+    "category": "bases",
+    "brand": "",
+    "model": "",
+    "state": "estudio",
+    "horizon": "largo",
+    "featured": true,
+    "title": {
+      "es": "Base Nómada conectada",
+      "en": "Connected Nomad Base",
+      "fr": "Base Nomade connectée",
+      "de": "Vernetzte Nomadenbasis",
+      "it": "Base Nomade connessa",
+      "pt": "Base Nómada conectada"
+    },
+    "description": {
+      "es": "Un centro futuro para material, mantenimiento, formación, planificación, edición, vehículos y encuentro de la comunidad.",
+      "en": "A future hub for equipment, maintenance, training, planning, editing, vehicles and community gatherings.",
+      "fr": "Un futur centre pour le matériel, la maintenance, la formation, la planification, le montage, les véhicules et les rencontres de la communauté.",
+      "de": "Ein künftiges Zentrum für Ausrüstung, Wartung, Ausbildung, Planung, Schnitt, Fahrzeuge und Begegnungen der Gemeinschaft.",
+      "it": "Un futuro centro per attrezzatura, manutenzione, formazione, pianificazione, montaggio, veicoli e incontri della comunità.",
+      "pt": "Um futuro centro para material, manutenção, formação, planeamento, edição, veículos e encontro da comunidade."
+    },
+    "motive": {
+      "es": "Se presenta como diseño de futuro sujeto a suelo, normativa, financiación, accesos y viabilidad; no como instalación actualmente disponible.",
+      "en": "It is presented as a future design subject to land, regulations, funding, access and feasibility, not as a currently available facility.",
+      "fr": "Elle est présentée comme un projet futur soumis au terrain, à la réglementation, au financement, aux accès et à la faisabilité, non comme une installation disponible.",
+      "de": "Sie wird als Zukunftsentwurf unter Vorbehalt von Fläche, Vorschriften, Finanzierung, Zugang und Machbarkeit dargestellt, nicht als bestehende Anlage.",
+      "it": "È presentata come progetto futuro soggetto a terreno, normativa, finanziamento, accessi e fattibilità, non come struttura già disponibile.",
+      "pt": "É apresentada como projeto futuro sujeito a terreno, regulamentação, financiamento, acessos e viabilidade, não como instalação disponível."
+    },
+    "applications": [
+      "material",
+      "escuela",
+      "comunidad"
+    ],
+    "link": "base-campamento.html",
+    "image": ""
+  },
+  {
+    "id": "expediciones-documentales",
+    "category": "expediciones",
+    "brand": "",
+    "model": "",
+    "state": "sueno",
+    "horizon": "decadas",
+    "featured": true,
+    "title": {
+      "es": "Expediciones documentales",
+      "en": "Documentary expeditions",
+      "fr": "Expéditions documentaires",
+      "de": "Dokumentarische Expeditionen",
+      "it": "Spedizioni documentarie",
+      "pt": "Expedições documentais"
+    },
+    "description": {
+      "es": "Viajes de varios días que conecten territorio, aventura, aprendizaje, comunidad y relato audiovisual sin improvisar logística ni seguridad.",
+      "en": "Multi-day journeys connecting territory, adventure, learning, community and audiovisual storytelling without improvising logistics or safety.",
+      "fr": "Des voyages de plusieurs jours reliant territoire, aventure, apprentissage, communauté et récit audiovisuel sans improviser la logistique ni la sécurité.",
+      "de": "Mehrtagestouren, die Gebiet, Abenteuer, Lernen, Gemeinschaft und audiovisuelle Erzählung verbinden, ohne Logistik oder Sicherheit zu improvisieren.",
+      "it": "Viaggi di più giorni che uniscono territorio, avventura, apprendimento, comunità e racconto audiovisivo senza improvvisare logistica o sicurezza.",
+      "pt": "Viagens de vários dias que ligam território, aventura, aprendizagem, comunidade e narrativa audiovisual sem improvisar logística ou segurança."
+    },
+    "motive": {
+      "es": "Los destinos concretos solo se añadirán con datos contrastados, temporada, permisos, dificultad, objetivos y planificación técnica documentada.",
+      "en": "Specific destinations will only be added with verified data, season, permits, difficulty, objectives and documented technical planning.",
+      "fr": "Les destinations précises ne seront ajoutées qu'avec des données vérifiées, saison, autorisations, difficulté, objectifs et planification technique documentée.",
+      "de": "Konkrete Ziele werden nur mit geprüften Daten, Saison, Genehmigungen, Schwierigkeit, Zielen und dokumentierter technischer Planung ergänzt.",
+      "it": "Le destinazioni precise saranno aggiunte solo con dati verificati, stagione, permessi, difficoltà, obiettivi e pianificazione tecnica documentata.",
+      "pt": "Os destinos concretos só serão adicionados com dados verificados, época, autorizações, dificuldade, objetivos e planeamento técnico documentado."
+    },
+    "applications": [
+      "viajes",
+      "audiovisual",
+      "logbook"
+    ],
+    "link": "viajes.html",
+    "image": ""
+  },
+  {
+    "id": "aventura-accesible",
+    "category": "impacto",
+    "brand": "",
+    "model": "",
+    "state": "prioridad",
+    "horizon": "medio",
+    "featured": false,
+    "title": {
+      "es": "Aventura más accesible",
+      "en": "More accessible adventure",
+      "fr": "Aventure plus accessible",
+      "de": "Zugänglicheres Abenteuer",
+      "it": "Avventura più accessibile",
+      "pt": "Aventura mais acessível"
+    },
+    "description": {
+      "es": "Diseño de experiencias, información y apoyos que permitan participar a más personas sin rebajar los criterios de seguridad.",
+      "en": "Designing experiences, information and support so more people can participate without lowering safety standards.",
+      "fr": "Concevoir des expériences, des informations et des aides permettant à davantage de personnes de participer sans réduire les exigences de sécurité.",
+      "de": "Erlebnisse, Informationen und Unterstützung so gestalten, dass mehr Menschen teilnehmen können, ohne Sicherheitsstandards zu senken.",
+      "it": "Progettare esperienze, informazioni e supporti per permettere a più persone di partecipare senza ridurre gli standard di sicurezza.",
+      "pt": "Desenhar experiências, informação e apoios para permitir a participação de mais pessoas sem reduzir os critérios de segurança."
+    },
+    "motive": {
+      "es": "La adaptación debe partir de evaluación individual, profesionales adecuados, accesos reales, material compatible y comunicación previa.",
+      "en": "Adaptation must start from individual assessment, suitable professionals, real access, compatible equipment and prior communication.",
+      "fr": "L'adaptation doit partir d'une évaluation individuelle, de professionnels adaptés, d'accès réels, de matériel compatible et d'une communication préalable.",
+      "de": "Anpassung muss auf individueller Bewertung, geeigneten Fachkräften, realem Zugang, kompatibler Ausrüstung und vorheriger Kommunikation beruhen.",
+      "it": "L'adattamento deve partire da valutazione individuale, professionisti adeguati, accessi reali, materiale compatibile e comunicazione preventiva.",
+      "pt": "A adaptação deve partir de avaliação individual, profissionais adequados, acessos reais, material compatível e comunicação prévia."
+    },
+    "applications": [
+      "inclusion",
+      "formacion",
+      "seguridad"
+    ],
+    "link": "grupos.html",
+    "image": ""
+  },
+  {
+    "id": "educacion-ambiental-joven",
+    "category": "impacto",
+    "brand": "",
+    "model": "",
+    "state": "idea",
+    "horizon": "proximo",
+    "featured": false,
+    "title": {
+      "es": "Educación ambiental joven",
+      "en": "Youth environmental education",
+      "fr": "Éducation environnementale des jeunes",
+      "de": "Umweltbildung für junge Menschen",
+      "it": "Educazione ambientale giovanile",
+      "pt": "Educação ambiental jovem"
+    },
+    "description": {
+      "es": "Programas con centros educativos para unir orientación, lectura del paisaje, mínimo impacto, seguridad y participación local.",
+      "en": "Programmes with schools combining navigation, landscape reading, minimum impact, safety and local participation.",
+      "fr": "Des programmes avec les établissements scolaires associant orientation, lecture du paysage, impact minimal, sécurité et participation locale.",
+      "de": "Programme mit Bildungseinrichtungen, die Orientierung, Landschaftslesen, minimale Auswirkungen, Sicherheit und lokale Beteiligung verbinden.",
+      "it": "Programmi con centri educativi che uniscono orientamento, lettura del paesaggio, minimo impatto, sicurezza e partecipazione locale.",
+      "pt": "Programas com centros educativos que unem orientação, leitura da paisagem, impacto mínimo, segurança e participação local."
+    },
+    "motive": {
+      "es": "El formato se desarrollaría con objetivos didácticos, ratios, autorizaciones, accesibilidad, evaluación y coordinación con cada centro.",
+      "en": "The format would be developed with learning goals, ratios, permissions, accessibility, assessment and coordination with each school.",
+      "fr": "Le format serait développé avec des objectifs pédagogiques, des ratios, des autorisations, l'accessibilité, l'évaluation et la coordination avec chaque établissement.",
+      "de": "Das Format würde mit Lernzielen, Betreuungsschlüsseln, Genehmigungen, Barrierefreiheit, Evaluation und Abstimmung mit jeder Einrichtung entwickelt.",
+      "it": "Il formato sarebbe sviluppato con obiettivi didattici, rapporti, autorizzazioni, accessibilità, valutazione e coordinamento con ogni centro.",
+      "pt": "O formato seria desenvolvido com objetivos didáticos, rácios, autorizações, acessibilidade, avaliação e coordenação com cada centro."
+    },
+    "applications": [
+      "sostenibilidad",
+      "escuela",
+      "comunidad"
+    ],
+    "link": "sostenibilidad.html",
+    "image": ""
+  }
+];

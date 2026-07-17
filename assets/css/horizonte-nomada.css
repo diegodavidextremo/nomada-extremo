@@ -1,0 +1,745 @@
+:root {
+  --hz-ink: #071b22;
+  --hz-deep: #0c2d3a;
+  --hz-sea: #15566a;
+  --hz-forest: #244f3d;
+  --hz-sand: #d2a36e;
+  --hz-cream: #f4f0e9;
+  --hz-line: rgba(211, 166, 111, .32);
+}
+
+.horizon-page {
+  background: var(--hz-cream);
+  color: var(--gris-oscuro);
+}
+
+.horizon-page section {
+  scroll-margin-top: 104px;
+}
+
+.horizon-hero {
+  position: relative;
+  min-height: 760px;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  padding: 10rem 0 6rem;
+  color: #fff;
+  background: var(--hz-ink);
+}
+
+.horizon-hero__image,
+.horizon-hero__grid {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.horizon-hero__image {
+  background-image:
+    linear-gradient(90deg, rgba(5, 22, 28, .96) 0%, rgba(5, 22, 28, .78) 48%, rgba(5, 22, 28, .42) 100%),
+    linear-gradient(0deg, rgba(5, 22, 28, .98) 0%, transparent 58%),
+    url('../images/noext/hero-principal.png');
+  background-position: center;
+  background-size: cover;
+  transform: scale(1.015);
+}
+
+.horizon-hero__grid {
+  opacity: .2;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, .08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .08) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, transparent, #000 28%, #000);
+}
+
+.horizon-hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+}
+
+.horizon-hero h1 {
+  max-width: 920px;
+  margin: 1rem 0 1.25rem;
+  font: 400 7.5rem/.82 var(--display);
+  letter-spacing: 0;
+}
+
+.horizon-hero h1 span:last-child {
+  color: var(--hz-sand);
+}
+
+.horizon-hero__lead {
+  max-width: 760px;
+  margin: 0 0 1rem;
+  font-family: var(--serif);
+  font-size: 1.45rem;
+  font-style: italic;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, .9);
+}
+
+.horizon-hero__note {
+  max-width: 760px;
+  margin: 0 0 2rem;
+  color: rgba(255, 255, 255, .7);
+  line-height: 1.7;
+}
+
+.breadcrumb--light a,
+.breadcrumb--light li {
+  color: rgba(255, 255, 255, .72);
+}
+
+.horizon-intro,
+.horizon-categories,
+.horizon-timeline,
+.horizon-related {
+  padding: 6rem 0;
+}
+
+.horizon-intro {
+  background: #fff;
+}
+
+.horizon-intro__grid,
+.horizon-principles__grid,
+.horizon-section-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, .85fr);
+  gap: 4rem;
+  align-items: start;
+}
+
+.horizon-intro__copy,
+.horizon-section-head > p {
+  max-width: 66ch;
+  line-height: 1.85;
+  color: var(--gris-calido);
+}
+
+.horizon-intro__copy p + p {
+  margin-top: 1rem;
+}
+
+.horizon-categories {
+  background: var(--hz-cream);
+}
+
+.horizon-category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.horizon-category-grid button,
+.horizon-category-grid a {
+  min-width: 0;
+  min-height: 138px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.35rem;
+  border: 1px solid rgba(24, 76, 94, .15);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, .84);
+  color: var(--hz-ink);
+  text-align: left;
+  cursor: pointer;
+  transition: transform .2s ease, border-color .2s ease, background .2s ease;
+}
+
+.horizon-category-grid button:hover,
+.horizon-category-grid button:focus-visible,
+.horizon-category-grid a:hover,
+.horizon-category-grid a:focus-visible {
+  transform: translateY(-3px);
+  border-color: var(--hz-sand);
+  background: #fff;
+}
+
+.horizon-category-grid span {
+  color: var(--hz-sand);
+  font: 400 1.4rem/1 var(--display);
+}
+
+.horizon-category-grid strong {
+  max-width: 18ch;
+  font: 400 1.55rem/1 var(--display);
+  letter-spacing: 0;
+}
+
+.horizon-explorer {
+  padding: 6rem 0 7rem;
+  color: #fff;
+  background:
+    linear-gradient(120deg, var(--hz-ink), var(--hz-deep) 58%, var(--hz-forest));
+}
+
+.horizon-section-head {
+  align-items: end;
+  margin-bottom: 2.5rem;
+}
+
+.horizon-section-head > p {
+  color: rgba(255, 255, 255, .72);
+}
+
+.horizon-filter {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) auto auto;
+  gap: .8rem;
+  align-items: end;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, .06);
+}
+
+.horizon-filter label {
+  min-width: 0;
+  display: grid;
+  gap: .45rem;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, .7);
+}
+
+.horizon-filter select,
+.horizon-view-toggle button,
+.horizon-reset {
+  min-height: 46px;
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 6px;
+  font: inherit;
+}
+
+.horizon-filter select {
+  width: 100%;
+  padding: 0 .8rem;
+  background: #fff;
+  color: var(--hz-ink);
+}
+
+.horizon-view-toggle {
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.horizon-view-toggle button,
+.horizon-reset {
+  padding: 0 .9rem;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.horizon-view-toggle button {
+  border-radius: 0;
+}
+
+.horizon-view-toggle button.is-active {
+  background: var(--hz-sand);
+  color: var(--hz-ink);
+}
+
+.horizon-reset:hover,
+.horizon-reset:focus-visible {
+  border-color: var(--hz-sand);
+  color: var(--hz-sand);
+}
+
+.horizon-result-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1.25rem 0;
+  color: rgba(255, 255, 255, .64);
+  font-size: .82rem;
+}
+
+.horizon-result-meta [data-horizon-count] {
+  color: #fff;
+  font-weight: 700;
+}
+
+.horizon-concept-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.15rem;
+  align-items: start;
+}
+
+.horizon-card {
+  --hz-card-accent: #78b7c6;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, .13);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, .07);
+  box-shadow: 0 20px 54px rgba(0, 0, 0, .16);
+  transition: transform .22s ease, border-color .22s ease, background .22s ease;
+}
+
+.horizon-card:hover,
+.horizon-card:focus-within {
+  transform: translateY(-4px);
+  border-color: var(--hz-card-accent);
+  background: rgba(255, 255, 255, .1);
+}
+
+.horizon-card[data-category="movilidad"] { --hz-card-accent: #8fc7cd; }
+.horizon-card[data-category="tecnologia"] { --hz-card-accent: #77a7df; }
+.horizon-card[data-category="audiovisual"] { --hz-card-accent: #d1a06c; }
+.horizon-card[data-category="alianzas"] { --hz-card-accent: #c18b91; }
+.horizon-card[data-category="bases"] { --hz-card-accent: #87aa78; }
+.horizon-card[data-category="expediciones"] { --hz-card-accent: #d3b66c; }
+.horizon-card[data-category="impacto"] { --hz-card-accent: #72b18f; }
+
+.horizon-card__visual {
+  min-height: 126px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--hz-card-accent) 28%, transparent), transparent),
+    repeating-linear-gradient(135deg, transparent 0 18px, rgba(255, 255, 255, .035) 18px 19px);
+}
+
+.horizon-card__visual svg {
+  width: 54px;
+  height: 54px;
+  stroke: var(--hz-card-accent);
+  stroke-width: 1.4;
+  fill: none;
+}
+
+.horizon-card__visual::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 45%;
+  height: 3px;
+  background: var(--hz-card-accent);
+}
+
+.horizon-card__body {
+  padding: 1.35rem;
+}
+
+.horizon-card__meta,
+.horizon-card__apps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+}
+
+.horizon-card__meta span,
+.horizon-card__apps span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: .3rem .55rem;
+  border-radius: 999px;
+  font-size: .64rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.horizon-card__meta span {
+  background: rgba(255, 255, 255, .1);
+  color: rgba(255, 255, 255, .78);
+}
+
+.horizon-card__body h3 {
+  margin: 1rem 0 .7rem;
+  font: 400 2rem/.95 var(--display);
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+}
+
+.horizon-card__description,
+.horizon-card__motive {
+  line-height: 1.68;
+  color: rgba(255, 255, 255, .72);
+}
+
+.horizon-card__motive {
+  margin-top: .85rem;
+  padding-top: .85rem;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  font-size: .86rem;
+}
+
+.horizon-card__apps {
+  margin-top: 1rem;
+}
+
+.horizon-card__apps span {
+  background: color-mix(in srgb, var(--hz-card-accent) 15%, transparent);
+  color: var(--hz-card-accent);
+}
+
+.horizon-card__link {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1.15rem;
+  color: #fff;
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.horizon-card__link::after {
+  content: "→";
+  margin-left: .55rem;
+  color: var(--hz-card-accent);
+  transition: transform .2s ease;
+}
+
+.horizon-card__link:hover::after,
+.horizon-card__link:focus-visible::after {
+  transform: translateX(4px);
+}
+
+.horizon-card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .8rem;
+  margin-top: .45rem;
+}
+
+.horizon-card__favorite {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 50%;
+  background: transparent;
+  color: #fff;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.horizon-card__favorite:hover,
+.horizon-card__favorite:focus-visible,
+.horizon-card__favorite.is-favorite {
+  border-color: var(--hz-sand);
+  color: var(--hz-sand);
+  background: rgba(210, 163, 110, .1);
+}
+
+.horizon-concept-grid[data-view="timeline"] {
+  grid-template-columns: minmax(0, 860px);
+  justify-content: center;
+}
+
+.horizon-concept-grid[data-view="timeline"] .horizon-card {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+}
+
+.horizon-concept-grid[data-view="timeline"] .horizon-card__visual {
+  min-height: 100%;
+  border-right: 1px solid rgba(255, 255, 255, .1);
+  border-bottom: 0;
+}
+
+.horizon-empty,
+.horizon-noscript {
+  margin-top: 1rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, .15);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, .06);
+  color: rgba(255, 255, 255, .78);
+}
+
+.horizon-timeline {
+  background: #fff;
+}
+
+.horizon-roadmap {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.horizon-roadmap::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 8%;
+  right: 8%;
+  height: 1px;
+  background: linear-gradient(90deg, var(--hz-sea), var(--hz-sand), var(--hz-forest));
+}
+
+.horizon-roadmap article {
+  position: relative;
+  padding: 4.25rem 1.25rem 1.35rem;
+  border: 1px solid rgba(12, 45, 58, .12);
+  border-radius: 8px;
+  background: var(--hz-cream);
+}
+
+.horizon-roadmap article > span {
+  position: absolute;
+  top: 15px;
+  left: 1.25rem;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--hz-sand);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--hz-sea);
+  font-size: .7rem;
+  font-weight: 800;
+}
+
+.horizon-roadmap h3 {
+  margin: 0 0 .65rem;
+  font: 400 1.75rem/1 var(--display);
+  color: var(--hz-deep);
+}
+
+.horizon-roadmap p {
+  margin: 0;
+  line-height: 1.7;
+  color: var(--gris-calido);
+}
+
+.horizon-principles {
+  padding: 6rem 0;
+  color: #fff;
+  background: var(--hz-ink);
+}
+
+.horizon-principles__list {
+  display: grid;
+  gap: .85rem;
+}
+
+.horizon-principles__list p {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  border-left: 3px solid var(--hz-sand);
+  background: rgba(255, 255, 255, .06);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, .72);
+}
+
+.horizon-principles__list strong {
+  color: #fff;
+}
+
+.horizon-related {
+  background: var(--hz-cream);
+}
+
+.horizon-related__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.horizon-related__grid a {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: .45rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(12, 45, 58, .14);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--hz-ink);
+  transition: transform .2s ease, border-color .2s ease;
+}
+
+.horizon-related__grid a:hover,
+.horizon-related__grid a:focus-visible {
+  transform: translateY(-3px);
+  border-color: var(--hz-sand);
+}
+
+.horizon-related__grid strong {
+  font: 400 1.7rem/1 var(--display);
+}
+
+.horizon-related__grid span {
+  color: var(--gris-calido);
+  line-height: 1.5;
+}
+
+.horizon-card.is-entering {
+  animation: horizon-card-in .28s ease both;
+}
+
+@keyframes horizon-card-in {
+  from { opacity: 0; transform: translateY(8px) scale(.985); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (max-width: 1100px) {
+  .horizon-filter { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .horizon-view-toggle,
+  .horizon-reset { width: 100%; }
+  .horizon-concept-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .horizon-category-grid,
+  .horizon-related__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .horizon-roadmap { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .horizon-roadmap::before { display: none; }
+}
+
+@media (max-width: 760px) {
+  .horizon-hero { min-height: auto; padding: 8rem 0 4rem; }
+  .horizon-hero h1 { font-size: 4.2rem; }
+  .horizon-hero__lead { font-size: 1.2rem; }
+  .horizon-intro,
+  .horizon-categories,
+  .horizon-timeline,
+  .horizon-related,
+  .horizon-explorer,
+  .horizon-principles { padding: 4rem 0; }
+  .horizon-intro__grid,
+  .horizon-principles__grid,
+  .horizon-section-head { grid-template-columns: 1fr; gap: 1.5rem; }
+  .horizon-filter { grid-template-columns: 1fr 1fr; }
+  .horizon-filter label:first-child { grid-column: 1 / -1; }
+  .horizon-result-meta { align-items: flex-start; flex-direction: column; }
+  .horizon-concept-grid[data-view="timeline"] .horizon-card { grid-template-columns: 1fr; }
+  .horizon-concept-grid[data-view="timeline"] .horizon-card__visual { min-height: 110px; border-right: 0; border-bottom: 1px solid rgba(255, 255, 255, .1); }
+}
+
+@media (max-width: 560px) {
+  .horizon-hero h1 { font-size: 3.4rem; }
+  .horizon-hero .action-row { align-items: stretch; flex-direction: column; }
+  .horizon-hero .btn { width: 100%; justify-content: center; }
+  .horizon-category-grid,
+  .horizon-concept-grid,
+  .horizon-roadmap,
+  .horizon-related__grid,
+  .horizon-filter { grid-template-columns: 1fr; }
+  .horizon-filter label:first-child { grid-column: auto; }
+  .horizon-category-grid button,
+  .horizon-category-grid a { min-height: 112px; }
+  .horizon-view-toggle { display: grid; grid-template-columns: 1fr 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .horizon-page *,
+  .horizon-page *::before,
+  .horizon-page *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+/* Vista resumida en portada */
+.horizon-preview {
+  padding: 6rem 0;
+  color: #fff;
+  background:
+    linear-gradient(120deg, rgba(7, 27, 34, .98), rgba(12, 45, 58, .94) 62%, rgba(36, 79, 61, .9)),
+    url("../images/noext/fondo-index-noext.png") center / cover;
+}
+
+.horizon-preview__grid {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(420px, 1.1fr);
+  gap: 4rem;
+  align-items: center;
+}
+
+.horizon-preview__grid > div:first-child p {
+  max-width: 62ch;
+  margin-bottom: 1.75rem;
+  color: rgba(255, 255, 255, .72);
+  line-height: 1.8;
+}
+
+.horizon-preview__signals {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: rgba(255, 255, 255, .16);
+  border: 1px solid rgba(255, 255, 255, .16);
+}
+
+.horizon-preview__signals a {
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: .4rem;
+  padding: 1.25rem;
+  background: rgba(7, 27, 34, .9);
+  color: #fff;
+  transition: background .2s ease;
+}
+
+.horizon-preview__signals a:hover,
+.horizon-preview__signals a:focus-visible {
+  background: rgba(21, 86, 106, .88);
+}
+
+.horizon-preview__signals span {
+  color: var(--hz-sand);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+.horizon-preview__signals strong {
+  font: 400 1.65rem/1 var(--display);
+}
+
+.horizon-preview__signals small {
+  color: rgba(255, 255, 255, .64);
+  line-height: 1.5;
+}
+
+@media (max-width: 1100px) {
+  .horizon-preview__grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .horizon-preview {
+    padding: 4rem 0;
+  }
+
+  .horizon-preview__signals {
+    grid-template-columns: 1fr;
+  }
+
+  .horizon-preview__signals a {
+    min-height: 132px;
+  }
+}
