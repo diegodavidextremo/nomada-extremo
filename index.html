@@ -19,6 +19,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css?v=20260612-4">
 <link rel="stylesheet" href="assets/css/horizonte-nomada.css?v=20260717-1">
+<link rel="stylesheet" href="assets/css/adventure-selector.css?v=20260717-1">
 </head>
 <body class="home-page">
 
@@ -85,6 +86,96 @@
       <article><span>04</span><h3>Audiovisual</h3><p>Reels, POV, 360, mini documental, foto y recuerdo con criterio.</p><a href="audiovisual.html">Ver audiovisual</a></article>
       <article><span>05</span><h3>Logbook / Comunidad</h3><p>App conceptual, historial, XP, insignias, retos y álbum de aventura.</p><a href="logbook.html">Ver logbook</a></article>
       <article><span>06</span><h3>Proyecto completo</h3><p>Mapa maestro para entender toda la estructura académica y de marca.</p><a href="proyecto-completo.html">Explorar mapa</a></article>
+    </div>
+  </div>
+</section>
+<section class="adventure-selector" id="selector-aventura" data-no-translate>
+  <div class="container">
+    <div class="adventure-selector__intro">
+      <span class="label" data-selector-copy="eyebrow">Orientación personalizada</span>
+      <h2 class="titulo"><span data-selector-copy="titleA">ENCUENTRA TU</span><br><span class="mar" data-selector-copy="titleB">PRÓXIMA AVENTURA</span></h2>
+      <div class="divisor"></div>
+      <p class="texto" data-selector-copy="intro">Elige lo que buscas y te mostraremos experiencias reales del catálogo que encajan contigo.</p>
+    </div>
+
+    <div class="adventure-selector__layout">
+      <form class="adventure-selector__form" aria-label="Selector de aventuras">
+        <div class="adventure-selector__progress" aria-hidden="true">
+          <span data-selector-progress></span>
+        </div>
+
+        <fieldset class="selector-group" data-selector-group="medium">
+          <legend><span>01</span><b data-selector-copy="medium">Medio</b></legend>
+          <div class="selector-options">
+            <button type="button" data-value="sea">Mar</button>
+            <button type="button" data-value="coast">Costa</button>
+            <button type="button" data-value="mountain">Montaña</button>
+            <button type="button" data-value="air">Aire</button>
+            <button type="button" data-value="inland">Interior</button>
+            <button type="button" data-value="mixed">Mixto</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="selector-group" data-selector-group="intensity">
+          <legend><span>02</span><b data-selector-copy="intensity">Intensidad</b></legend>
+          <div class="selector-options">
+            <button type="button" data-value="calm">Tranquila</button>
+            <button type="button" data-value="active">Activa</button>
+            <button type="button" data-value="intense">Intensa</button>
+            <button type="button" data-value="extreme">Extrema</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="selector-group" data-selector-group="duration">
+          <legend><span>03</span><b data-selector-copy="duration">Duración</b></legend>
+          <div class="selector-options">
+            <button type="button" data-value="short">Hasta 2 h</button>
+            <button type="button" data-value="half">Medio día</button>
+            <button type="button" data-value="full">Día completo</button>
+            <button type="button" data-value="weekend">Fin de semana</button>
+            <button type="button" data-value="multi">Varios días</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="selector-group" data-selector-group="company">
+          <legend><span>04</span><b data-selector-copy="company">Compañía</b></legend>
+          <div class="selector-options">
+            <button type="button" data-value="solo">Solo</button>
+            <button type="button" data-value="couple">Pareja</button>
+            <button type="button" data-value="friends">Amigos</button>
+            <button type="button" data-value="family">Familia</button>
+            <button type="button" data-value="group">Grupo</button>
+            <button type="button" data-value="school">Centro educativo</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="selector-group" data-selector-group="objective">
+          <legend><span>05</span><b data-selector-copy="objective">Objetivo</b></legend>
+          <div class="selector-options">
+            <button type="button" data-value="learn">Aprender</button>
+            <button type="button" data-value="explore">Explorar</button>
+            <button type="button" data-value="challenge">Superarme</button>
+            <button type="button" data-value="relax">Relajarme</button>
+            <button type="button" data-value="create">Grabar contenido</button>
+            <button type="button" data-value="nature">Conectar con la naturaleza</button>
+            <button type="button" data-value="adrenaline">Vivir adrenalina</button>
+          </div>
+        </fieldset>
+
+        <button class="selector-reset" type="reset" data-selector-copy="reset">Limpiar selección</button>
+      </form>
+
+      <div class="adventure-selector__recommendations">
+        <div class="selector-results__header">
+          <div>
+            <span class="selector-results__eyebrow" data-selector-copy="resultsEyebrow">Selección Nómada</span>
+            <h3 data-selector-copy="resultsTitle">Experiencias recomendadas</h3>
+          </div>
+          <span class="selector-results__count" data-selector-count aria-live="polite">4 opciones</span>
+        </div>
+        <div class="selector-results" data-selector-results></div>
+        <p class="selector-results__note" data-selector-copy="note">La recomendación es orientativa. La viabilidad final depende del nivel, la meteorología y la validación técnica de cada actividad.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -1002,6 +1093,7 @@
 <div id="footer-placeholder"></div>
 <script src="assets/js/components.js?v=20260717-2"></script>
 <script src="assets/js/horizonte-nomada-copy.js?v=20260717-1"></script>
+<script src="assets/js/adventure-selector.js?v=20260717-1"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/chatbot.js?v=20260621-6"></script>
 </body>

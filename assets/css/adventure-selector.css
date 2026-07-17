@@ -1,0 +1,298 @@
+.adventure-selector {
+  --selector-ink: #24211f;
+  --selector-blue: #174e70;
+  --selector-sand: #d3a16d;
+  --selector-line: rgba(23, 78, 112, 0.16);
+  background: #f4f1eb;
+  padding: clamp(4.5rem, 8vw, 8rem) 0;
+}
+
+.adventure-selector__intro {
+  max-width: 850px;
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+}
+
+.adventure-selector__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(1.25rem, 3vw, 3rem);
+  align-items: start;
+}
+
+.adventure-selector__form,
+.adventure-selector__recommendations {
+  min-width: 0;
+  border: 1px solid rgba(211, 161, 109, 0.34);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 22px 60px rgba(31, 44, 46, 0.08);
+}
+
+.adventure-selector__form {
+  padding: clamp(1.1rem, 2.5vw, 2rem);
+}
+
+.adventure-selector__progress {
+  height: 3px;
+  margin-bottom: 1.4rem;
+  overflow: hidden;
+  background: rgba(23, 78, 112, 0.1);
+}
+
+.adventure-selector__progress span {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: var(--selector-sand);
+  transition: width 240ms ease;
+}
+
+.selector-group {
+  min-width: 0;
+  margin: 0;
+  padding: 1.05rem 0 1.15rem;
+  border: 0;
+  border-bottom: 1px solid var(--selector-line);
+}
+
+.selector-group:first-of-type {
+  padding-top: 0;
+}
+
+.selector-group legend {
+  display: flex;
+  gap: 0.65rem;
+  align-items: baseline;
+  margin-bottom: 0.75rem;
+  color: var(--selector-ink);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 0;
+}
+
+.selector-group legend span {
+  color: var(--selector-sand);
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.selector-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.selector-options button,
+.selector-reset {
+  min-height: 44px;
+  border: 1px solid rgba(23, 78, 112, 0.18);
+  color: #514d48;
+  background: #f8f6f1;
+  font: 600 0.72rem/1.2 "DM Sans", sans-serif;
+  letter-spacing: 0;
+  cursor: pointer;
+  transition: color 160ms ease, background 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.selector-options button {
+  border-radius: 999px;
+  padding: 0.65rem 0.9rem;
+}
+
+.selector-options button:hover,
+.selector-options button:focus-visible {
+  border-color: var(--selector-blue);
+  color: var(--selector-blue);
+  transform: translateY(-1px);
+}
+
+.selector-options button[aria-pressed="true"] {
+  border-color: var(--selector-blue);
+  color: #fff;
+  background: var(--selector-blue);
+}
+
+.selector-options button:focus-visible,
+.selector-reset:focus-visible,
+.selector-result a:focus-visible {
+  outline: 3px solid rgba(211, 161, 109, 0.55);
+  outline-offset: 3px;
+}
+
+.selector-reset {
+  width: 100%;
+  margin-top: 1.2rem;
+  border-radius: 2px;
+  color: var(--selector-blue);
+  background: transparent;
+  text-transform: uppercase;
+}
+
+.adventure-selector__recommendations {
+  position: sticky;
+  top: 108px;
+  padding: clamp(1.25rem, 2.7vw, 2.25rem);
+}
+
+.selector-results__header {
+  display: flex;
+  gap: 1rem;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 1.35rem;
+}
+
+.selector-results__eyebrow {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--selector-sand);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.selector-results__header h3 {
+  margin: 0;
+  color: var(--selector-ink);
+  font: 400 clamp(1.75rem, 3vw, 2.45rem)/0.95 "Bebas Neue", sans-serif;
+  letter-spacing: 0;
+}
+
+.selector-results__count {
+  flex: 0 0 auto;
+  border-radius: 999px;
+  padding: 0.5rem 0.7rem;
+  color: var(--selector-blue);
+  background: rgba(23, 78, 112, 0.09);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.selector-results {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.selector-result {
+  display: flex;
+  min-width: 0;
+  min-height: 210px;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid var(--selector-line);
+  background: #fff;
+  animation: selectorResultIn 280ms ease both;
+}
+
+.selector-result__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.7rem;
+}
+
+.selector-result__meta span {
+  border-radius: 999px;
+  padding: 0.28rem 0.48rem;
+  color: var(--selector-blue);
+  background: rgba(23, 78, 112, 0.08);
+  font-size: 0.58rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.selector-result h4 {
+  margin: 0 0 0.55rem;
+  overflow-wrap: anywhere;
+  color: var(--selector-ink);
+  font: 400 1.35rem/1 "Bebas Neue", sans-serif;
+  letter-spacing: 0;
+}
+
+.selector-result p {
+  margin: 0 0 1rem;
+  color: #716b65;
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.selector-result a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: auto;
+  border-top: 1px solid var(--selector-line);
+  padding-top: 0.75rem;
+  color: var(--selector-blue);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.selector-result a::after {
+  content: "\2192";
+  font-size: 1rem;
+  transition: transform 160ms ease;
+}
+
+.selector-result a:hover::after {
+  transform: translateX(4px);
+}
+
+.selector-results__note {
+  margin: 1.2rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--selector-line);
+  color: #7a746d;
+  font-size: 0.7rem;
+  line-height: 1.55;
+}
+
+@keyframes selectorResultIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 900px) {
+  .adventure-selector__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .adventure-selector__recommendations {
+    position: static;
+  }
+}
+
+@media (max-width: 580px) {
+  .adventure-selector {
+    padding: 4rem 0;
+  }
+
+  .selector-results__header {
+    align-items: start;
+  }
+
+  .selector-results {
+    grid-template-columns: 1fr;
+  }
+
+  .selector-result {
+    min-height: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .selector-options button,
+  .adventure-selector__progress span,
+  .selector-result,
+  .selector-result a::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
