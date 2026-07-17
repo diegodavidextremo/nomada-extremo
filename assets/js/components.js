@@ -174,6 +174,22 @@
     document.body.appendChild(searchScript);
   }
 
+  if (!document.querySelector('link[data-noext-ecosystem-pathways]')) {
+    const pathwayStyles = document.createElement('link');
+    pathwayStyles.rel = 'stylesheet';
+    pathwayStyles.href = 'assets/css/ecosystem-pathways.css?v=20260717-1';
+    pathwayStyles.dataset.noextEcosystemPathways = 'styles';
+    document.head.appendChild(pathwayStyles);
+  }
+
+  if (!document.querySelector('script[data-noext-ecosystem-pathways]')) {
+    const pathwayScript = document.createElement('script');
+    pathwayScript.src = 'assets/js/ecosystem-pathways.js?v=20260717-1';
+    pathwayScript.defer = true;
+    pathwayScript.dataset.noextEcosystemPathways = 'runtime';
+    document.body.appendChild(pathwayScript);
+  }
+
   const ensureMainLandmark = () => {
     const existingMain = document.querySelector('main');
     if (existingMain) {

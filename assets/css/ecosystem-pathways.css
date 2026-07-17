@@ -1,0 +1,219 @@
+.ecosystem-pathway {
+  --pathway-sand: #ddb37f;
+  --pathway-line: rgba(255, 255, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+  padding: clamp(4rem, 7vw, 7rem) 0;
+  color: #fff;
+  background: #102d31;
+}
+
+.ecosystem-pathway::before {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(12, 37, 33, 0.96), rgba(26, 76, 99, 0.9));
+  content: "";
+}
+
+.ecosystem-pathway .container {
+  position: relative;
+  z-index: 1;
+}
+
+.ecosystem-pathway__head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.65fr);
+  gap: clamp(1.25rem, 4vw, 4rem);
+  align-items: end;
+  margin-bottom: clamp(1.8rem, 4vw, 3rem);
+}
+
+.ecosystem-pathway__eyebrow {
+  display: block;
+  margin-bottom: 0.65rem;
+  color: var(--pathway-sand);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.ecosystem-pathway h2 {
+  max-width: 760px;
+  margin: 0;
+  color: #fff;
+  font: 400 clamp(2.65rem, 6vw, 5.6rem)/0.9 "Bebas Neue", sans-serif;
+  letter-spacing: 0;
+}
+
+.ecosystem-pathway__intro {
+  max-width: 620px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: clamp(0.9rem, 1.4vw, 1.05rem);
+  line-height: 1.7;
+}
+
+.ecosystem-pathway__flow {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-bottom: 1.25rem;
+  border-top: 1px solid var(--pathway-line);
+  border-bottom: 1px solid var(--pathway-line);
+}
+
+.ecosystem-pathway__flow span {
+  position: relative;
+  min-width: 0;
+  padding: 0.85rem 0.5rem;
+  color: rgba(255, 255, 255, 0.52);
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ecosystem-pathway__flow span + span {
+  border-left: 1px solid var(--pathway-line);
+}
+
+.ecosystem-pathway__flow span.is-current {
+  color: #fff;
+  background: rgba(221, 179, 127, 0.12);
+}
+
+.ecosystem-pathway__flow span.is-current::after {
+  position: absolute;
+  right: 0.5rem;
+  bottom: -1px;
+  left: 0.5rem;
+  height: 3px;
+  background: var(--pathway-sand);
+  content: "";
+}
+
+.ecosystem-pathway__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.ecosystem-pathway__card {
+  display: flex;
+  min-width: 0;
+  min-height: 215px;
+  flex-direction: column;
+  border: 1px solid var(--pathway-line);
+  padding: clamp(1rem, 2vw, 1.35rem);
+  color: inherit;
+  background: rgba(255, 255, 255, 0.055);
+  text-decoration: none;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.ecosystem-pathway__card:hover,
+.ecosystem-pathway__card:focus-visible {
+  border-color: rgba(221, 179, 127, 0.65);
+  background: rgba(255, 255, 255, 0.09);
+  transform: translateY(-4px);
+}
+
+.ecosystem-pathway__card:focus-visible {
+  outline: 3px solid var(--pathway-sand);
+  outline-offset: 3px;
+}
+
+.ecosystem-pathway__number {
+  color: var(--pathway-sand);
+  font-size: 0.62rem;
+  font-weight: 700;
+}
+
+.ecosystem-pathway__card h3 {
+  margin: 1.25rem 0 0.55rem;
+  overflow-wrap: anywhere;
+  color: #fff;
+  font: 400 clamp(1.35rem, 2.2vw, 1.75rem)/1 "Bebas Neue", sans-serif;
+  letter-spacing: 0;
+}
+
+.ecosystem-pathway__card p {
+  margin: 0 0 1rem;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.76rem;
+  line-height: 1.55;
+}
+
+.ecosystem-pathway__action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: auto;
+  border-top: 1px solid var(--pathway-line);
+  padding-top: 0.75rem;
+  color: var(--pathway-sand);
+  font-size: 0.64rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.ecosystem-pathway__action::after {
+  content: "\2192";
+  font-size: 1rem;
+  transition: transform 180ms ease;
+}
+
+.ecosystem-pathway__card:hover .ecosystem-pathway__action::after {
+  transform: translateX(4px);
+}
+
+@media (max-width: 900px) {
+  .ecosystem-pathway__head {
+    grid-template-columns: 1fr;
+  }
+
+  .ecosystem-pathway__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .ecosystem-pathway__flow {
+    grid-template-columns: 1fr;
+  }
+
+  .ecosystem-pathway__flow span {
+    min-height: 44px;
+    text-align: left;
+  }
+
+  .ecosystem-pathway__flow span + span {
+    border-top: 1px solid var(--pathway-line);
+    border-left: 0;
+  }
+
+  .ecosystem-pathway__flow span.is-current::after {
+    top: 0.5rem;
+    right: auto;
+    bottom: 0.5rem;
+    left: -1px;
+    width: 3px;
+    height: auto;
+  }
+
+  .ecosystem-pathway__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ecosystem-pathway__card {
+    min-height: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ecosystem-pathway__card,
+  .ecosystem-pathway__action::after {
+    transition: none !important;
+  }
+}
