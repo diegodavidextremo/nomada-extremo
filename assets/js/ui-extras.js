@@ -5,7 +5,7 @@
   // Convierte la secci?n de temporadas en tabs con estaci?n activa por mes.
   function initSeasonTabs() {
     const section = document.getElementById('temporadas-home');
-    if (!section || section.dataset.tabsReady === 'true') return;
+    if (!section || section.dataset.tabsReady === 'true' || section.querySelector('.season-tab-list, .season-tabs-nav')) return;
     const grid = section.querySelector('.grid-4');
     const cards = grid ? [...grid.children] : [];
     if (cards.length < 4) return;
@@ -26,7 +26,7 @@
       button.type = 'button';
       button.className = 'season-tab';
       button.setAttribute('role', 'tab');
-      button.innerHTML = '<span class="season-tab-icon" aria-hidden="true">' + ['?', '?', '?', '??'][index] + '</span><span>' + title + '</span>';
+      button.innerHTML = '<span class="season-tab-icon" aria-hidden="true">' + ['&#10052;', '&#10047;', '&#9788;', '&#10087;'][index] + '</span><span>' + title + '</span>';
       button.addEventListener('click', () => activate(index));
       tabs.appendChild(button);
     });

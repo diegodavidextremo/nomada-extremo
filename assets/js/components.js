@@ -505,13 +505,14 @@
           button.className = 'season-tab';
           button.setAttribute('role', 'tab');
           button.setAttribute('aria-controls', card.id);
-          button.innerHTML = '<span class="season-icon">' + (icons[title] || icons.Verano) + '</span><span>' + title + '</span>';
+          const seasonKey = normalizeSeasonKey(title);
+          button.innerHTML = '<span class="season-icon" aria-hidden="true">' + (icons[seasonKey] || icons.verano) + '</span><span>' + title + '</span>';
           const setActive = () => {
             cards.forEach(panel => panel.classList.remove('is-active'));
             tabList.querySelectorAll('.season-tab').forEach(tab => tab.setAttribute('aria-selected', 'false'));
             card.classList.add('is-active');
             button.setAttribute('aria-selected', 'true');
-            section.dataset.season = title;
+            section.dataset.season = seasonKey;
           };
           button.addEventListener('click', setActive);
           tabList.appendChild(button);
@@ -590,7 +591,7 @@
 
 // Carga la capa modular de animaciones sin obligar a duplicar imports en cada HTML.
 (function loadNoextEnhancementLayer(){
-  var version = '20260703-1';
+  var version = '20260722-1';
   var cssHref = 'assets/css/skeleton.css?v=' + version;
   if (!document.querySelector('link[href^="assets/css/skeleton.css"]')) {
     var link = document.createElement('link');
