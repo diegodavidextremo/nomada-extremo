@@ -3,12 +3,12 @@
 (function () {
   const TELEGRAM_URL = 'https://t.me/DiegoDavidExtremo';
   const WHATSAPP_URL = 'https://wa.me/34623179618';
-  const PROJECT_NOTICE = 'Nómada Extremo es actualmente un proyecto académico no operativo creado por Diego David Gómez García, alumno de 1.º GMN del IES Europa de Águilas (Murcia). Nació el 8 de abril de 2025 y evoluciona semanalmente con nuevas funciones, mejoras e información. No realiza reservas, cobros, ventas, sorteos ni actividades reales en este momento.';
+  const PROJECT_NOTICE = "Nómada Extremo es un proyecto académico no operativo creado por Diego David Gómez García / Diego David Extremo. Nació durante 1.º GMN, curso 2025-2026, y continúa en 2.º GMN, curso 2026-2027, en el IES Europa de Águilas (Murcia), con especial integración en el Proyecto Intermodular. No se realizan reservas, cobros, ventas ni actividades comerciales reales.";
 
   const NAV = `
 <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
 <header class="site-header" id="site-header">
-  <div class="project-top-notice" role="note">${PROJECT_NOTICE}</div>
+  <div class="project-top-notice" role="note">Proyecto académico no operativo · 2.º GMN 2026-2027 · Sin reservas, cobros ni ventas</div>
   <nav id="nav" aria-label="Navegación principal">
     <a href="index.html" class="nav-logo-wrap" aria-label="Nómada Extremo — Inicio">
       <img src="assets/images/logo-photoroom.png" alt="Logo Nómada Extremo" class="nav-logo-img" decoding="async">
@@ -111,19 +111,19 @@
     <div class="footer-grid footer-grid--expanded">
       <div class="footer-brand-col">
         <div class="footer-brand-head"><img src="assets/images/logo-photoroom.png" alt="Logo Nómada Extremo" width="68" height="68" loading="lazy" decoding="async"><div><div class="footer-marca-nombre">NÓMADA EXTREMO</div><div class="footer-marca-lema">Proyecto académico premium de aventura</div></div></div>
-        <p class="footer-marca-desc">Marca conceptual de aventura mediterránea nacida en Águilas, Murcia. Creada por Diego David Gómez García / Diego David Extremo para 1.º GMN del IES Europa, curso 2025-2026.</p><p class="footer-demo-note">${PROJECT_NOTICE}</p>
+        <p class="footer-marca-desc">Marca conceptual de aventura mediterránea nacida en Águilas, Murcia. Creada por Diego David Gómez García / Diego David Extremo durante 1.º GMN, curso 2025-2026. Actualmente en 2.º GMN, curso 2026-2027.</p><p class="footer-demo-note">${PROJECT_NOTICE}</p>
         <div class="footer-social"><a href="https://www.youtube.com/@diegodavidextremo" target="_blank" rel="noopener noreferrer" aria-label="YouTube Diego David Extremo">YT</a><a href="https://www.instagram.com/nomadaextremoes/" target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial de Nómada Extremo">IG</a><a href="https://www.tiktok.com/@diegodavidextremo" target="_blank" rel="noopener noreferrer" aria-label="TikTok Diego David Extremo">TT</a><a href="https://x.com/nomadaextremoES" target="_blank" rel="noopener noreferrer" aria-label="X oficial de Nómada Extremo">X</a></div>
       </div>
       <div class="footer-col"><h5>Experiencias</h5><ul><li><a href="actividades.html">Actividades</a></li><li><a href="viajes.html">Viajes</a></li><li><a href="packs.html">Packs</a></li><li><a href="packs.html#bonos">Bonos regalo</a></li><li><a href="grupos.html">Grupos, centros y empresas</a></li><li><a href="zonas.html">Zonas de aventura</a></li><li><a href="naturistas.html">Nómada Naturista</a></li></ul></div>
       <div class="footer-col"><h5>Sistema Nómada</h5><ul><li><a href="como-funciona.html">Cómo funciona</a></li><li><a href="index.html#metodo-nomada">Método Nómada</a></li><li><a href="seguridad.html">Seguridad</a></li><li><a href="seguridad.html#seguros-documentacion">Seguros y documentación</a></li><li><a href="material.html">Material y marcas</a></li><li><a href="alquiler.html">Alquiler orientativo</a></li><li><a href="logbook.html">Logbook y app</a></li><li><a href="certificaciones.html">Credenciales digitales</a></li><li><a href="formularios.html">Formularios</a></li><li><a href="escuela.html">Escuela Nómada</a></li><li><a href="audiovisual.html">Audiovisual</a></li></ul></div>
-      <div class="footer-col"><h5>Marca</h5><ul><li><a href="quienes-somos.html">Quiénes somos</a></li><li><a href="fundador.html">Fundador</a></li><li><a href="equipo.html">Equipo</a></li><li><a href="equipo.html#nucleo-directivo">Nuria Pons</a></li><li><a href="sostenibilidad.html">Sostenibilidad</a></li><li><a href="naturaleza.html">Naturaleza Nómada</a></li><li><a href="horizonte-nomada.html" translate="no">Horizonte Nómada</a></li><li><a href="blog.html">Blog</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="mailto:nomadaextremoaguilas@gmail.com">Email</a></li><li><a href="https://wa.me/34623179618" target="_blank" rel="noopener noreferrer">WhatsApp: +34 623 17 96 18</a></li><li><span>Horario orientativo: 09:00–20:00</span></li><li><span>Base: Águilas, Murcia</span></li><li><a href="https://t.me/DiegoDavidExtremo" target="_blank" rel="noopener noreferrer">Telegram</a></li></ul></div>
-      <div class="footer-col"><h5>Proyecto académico</h5><ul><li><a href="proyecto-completo.html">Proyecto completo</a></li><li><a href="proyecto-academico.html">Marco académico</a></li><li><a href="proyecto-intermodular.html">Intermodular GMN</a></li><li><a href="formacion-gmn.html">Formación GMN</a></li><li><a href="base-campamento.html">Base y campamento</a></li><li><a href="viajes.html">Viajes</a></li><li><a href="blog.html#articulos-destacados">Art&iacute;culos destacados</a></li><li><a href="guia-actividades.html">Guía de actividades</a></li><li><a href="transparencia-financiacion.html">Transparencia y financiación</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div class="footer-col"><h5>Marca</h5><ul><li><a href="quienes-somos.html">Quiénes somos</a></li><li><a href="fundador.html">Fundador</a></li><li><a href="equipo.html">Equipo</a></li><li><a href="equipo.html#nucleo-directivo">Nuria Pons</a></li><li><a href="sostenibilidad.html">Sostenibilidad</a></li><li><a href="naturaleza.html">Naturaleza Nómada</a></li><li><a href="horizonte-nomada.html" translate="no">Horizonte Nómada</a></li><li><a href="blog.html">Blog</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="mailto:nomadaextremoaguilas@gmail.com">Email</a></li><li><a href="https://wa.me/34623179618" target="_blank" rel="noopener noreferrer">WhatsApp: +34 623 17 96 18</a></li><li><span>Horario simulado: 09:00–20:00</span></li><li><span>Origen del proyecto: Águilas, Murcia</span></li><li><a href="https://t.me/DiegoDavidExtremo" target="_blank" rel="noopener noreferrer">Telegram</a></li></ul></div>
+      <div class="footer-col"><h5>Proyecto académico</h5><ul><li><a href="proyecto-completo.html">Proyecto completo</a></li><li><a href="proyecto-academico.html">Marco académico</a></li><li><a href="proyecto-intermodular.html">Proyecto Intermodular 2026-2027</a></li><li><a href="segundo-gmn.html">2.º GMN · curso activo</a></li><li><a href="formacion-gmn.html">Formación GMN</a></li><li><a href="base-campamento.html">Base y campamento</a></li><li><a href="viajes.html">Viajes</a></li><li><a href="blog.html#articulos-destacados">Art&iacute;culos destacados</a></li><li><a href="guia-actividades.html">Guía de actividades</a></li><li><a href="transparencia-financiacion.html">Transparencia y financiación</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
       <div class="footer-col"><h5>Legal</h5><ul><li><a href="aviso-legal.html">Aviso legal</a></li><li><a href="aviso-legal.html#condiciones-generales">Condiciones</a></li><li><a href="aviso-legal.html#devoluciones">Política de devoluciones</a></li><li><a href="aviso-legal.html#privacidad">Privacidad</a></li><li><a href="aviso-legal.html#cookies">Cookies</a></li></ul></div>
     </div>
     <div class="footer-bottom">
       <div>
         <p class="footer-copy">© 2026 Nómada Extremo · Águilas, Murcia, España · No se realizan reservas, cobros, ventas ni actividades reales.</p>
-        <p class="footer-copy footer-copy--muted">Diego David Gómez García · 1.º GMN · IES Europa de Águilas · Curso 2025-2026.</p>
+        <p class="footer-copy footer-copy--muted">Diego David Gómez García · 2.º GMN · IES Europa de Águilas · Curso 2026-2027.</p>
       </div>
       <div class="footer-legal">
         <a href="aviso-legal.html">Aviso Legal, Condiciones y Pol&iacute;ticas</a>
@@ -153,7 +153,7 @@
 
   if (!document.querySelector('script[data-noext-i18n]')) {
     const languageScript = document.createElement('script');
-    languageScript.src = 'assets/js/i18n.js?v=20260708-1';
+    languageScript.src = 'assets/js/i18n.js?v=20260914-3';
     languageScript.dataset.noextI18n = 'runtime';
     document.head.appendChild(languageScript);
   }
@@ -168,7 +168,7 @@
 
   if (!document.querySelector('script[data-noext-global-search]')) {
     const searchScript = document.createElement('script');
-    searchScript.src = 'assets/js/global-search.js?v=20260717-1';
+    searchScript.src = 'assets/js/global-search.js?v=20260914-3';
     searchScript.defer = true;
     searchScript.dataset.noextGlobalSearch = 'runtime';
     document.body.appendChild(searchScript);
@@ -189,6 +189,22 @@
     pathwayScript.dataset.noextEcosystemPathways = 'runtime';
     document.body.appendChild(pathwayScript);
   }
+
+
+  const updateHeaderOffset = () => {
+    const notice=document.querySelector('.project-top-notice');
+    const nav=document.getElementById('nav');
+    const noticeHeight=notice?.getBoundingClientRect().height || 0;
+    const navHeight=nav?.getBoundingClientRect().height || 68;
+    document.documentElement.style.setProperty('--n3-notice-height', `${noticeHeight}px`);
+    document.documentElement.style.setProperty('--header-offset', `${noticeHeight+navHeight+8}px`);
+  };
+  if ('ResizeObserver' in window) {
+    const headerObserver=new ResizeObserver(updateHeaderOffset);
+    ['.project-top-notice','#nav'].forEach(selector=>{const el=document.querySelector(selector);if(el)headerObserver.observe(el);});
+  }
+  window.addEventListener('resize',updateHeaderOffset,{passive:true});
+  updateHeaderOffset();
 
   const ensureMainLandmark = () => {
     const existingMain = document.querySelector('main');
@@ -261,7 +277,7 @@
       check();
     }
 
-    const focusableSelector = 'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+    const focusableSelector = 'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), summary, [tabindex]:not([tabindex="-1"])';
     const trapFocus = (event) => {
       if (!mobile || !mobile.classList.contains('open') || event.key !== 'Tab') return;
       const items = [...mobile.querySelectorAll(focusableSelector)].filter(el => el.offsetParent !== null);
@@ -295,7 +311,7 @@
       hamb.addEventListener('click', toggle);
       if (mClose) mClose.addEventListener('click', () => setOpen(false));
       if (backdrop) backdrop.addEventListener('click', () => setOpen(false));
-      mobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+      mobile.addEventListener('click', event => { if (event.target.closest('a')) setOpen(false); });
       document.addEventListener('keydown', e => {
         if (e.key === 'Escape' && mobile.classList.contains('open')) setOpen(false);
         trapFocus(e);

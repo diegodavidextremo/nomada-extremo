@@ -1,0 +1,3358 @@
+{
+  "generatedAt": "2026-09-16T20:55:36.318Z",
+  "viewportChecks": [
+    {
+      "file": "404.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "404.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "404.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "actividad-detalle.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "actividad-detalle.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "actividad-detalle.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "actividades.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "actividades.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "actividades.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "agradecimiento-1-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "agradecimiento-1-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "agradecimiento-1-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "alquiler.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "alquiler.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "alquiler.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "articulo-bautismo-buceo.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "articulo-bautismo-buceo.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "articulo-bautismo-buceo.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "articulo-kayak-aguilas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "articulo-kayak-aguilas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "articulo-kayak-aguilas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "articulo-primer-vuelo.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "articulo-primer-vuelo.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "articulo-primer-vuelo.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "audiovisual.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "audiovisual.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "audiovisual.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "aviso-legal.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "aviso-legal.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "aviso-legal.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "base-campamento.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320,
+      "width": 320,
+      "clippedAcademic": []
+    },
+    {
+      "file": "base-campamento.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 360,
+      "width": 360,
+      "clippedAcademic": []
+    },
+    {
+      "file": "base-campamento.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "base-campamento.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 412,
+      "width": 412,
+      "clippedAcademic": []
+    },
+    {
+      "file": "base-campamento.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 430,
+      "width": 430,
+      "clippedAcademic": []
+    },
+    {
+      "file": "base-campamento.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 480,
+      "width": 480,
+      "clippedAcademic": []
+    },
+    {
+      "file": "base-campamento.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 600,
+      "width": 600,
+      "clippedAcademic": []
+    },
+    {
+      "file": "base-campamento.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 640,
+      "width": 640,
+      "clippedAcademic": []
+    },
+    {
+      "file": "base-campamento.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "base-campamento.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 820,
+      "width": 820,
+      "clippedAcademic": []
+    },
+    {
+      "file": "base-campamento.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 900,
+      "width": 900,
+      "clippedAcademic": []
+    },
+    {
+      "file": "base-campamento.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1024,
+      "width": 1024,
+      "clippedAcademic": []
+    },
+    {
+      "file": "base-campamento.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1200,
+      "width": 1200,
+      "clippedAcademic": []
+    },
+    {
+      "file": "base-campamento.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "width": 1366,
+      "clippedAcademic": []
+    },
+    {
+      "file": "base-campamento.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "base-campamento.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1920,
+      "width": 1920,
+      "clippedAcademic": []
+    },
+    {
+      "file": "bautismo-buceo.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "bautismo-buceo.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "bautismo-buceo.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "blog.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "blog.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "blog.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "btt-costera.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "btt-costera.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "btt-costera.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "certificaciones.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "certificaciones.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "certificaciones.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "coasteering.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "coasteering.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "coasteering.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "como-funciona.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "como-funciona.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "como-funciona.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "comunidad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "comunidad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "comunidad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "contacto.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "contacto.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "contacto.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "equipo.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "equipo.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "equipo.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "escuela.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320,
+      "width": 320,
+      "clippedAcademic": []
+    },
+    {
+      "file": "escuela.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 360,
+      "width": 360,
+      "clippedAcademic": []
+    },
+    {
+      "file": "escuela.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "escuela.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 412,
+      "width": 412,
+      "clippedAcademic": []
+    },
+    {
+      "file": "escuela.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 430,
+      "width": 430,
+      "clippedAcademic": []
+    },
+    {
+      "file": "escuela.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 480,
+      "width": 480,
+      "clippedAcademic": []
+    },
+    {
+      "file": "escuela.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 600,
+      "width": 600,
+      "clippedAcademic": []
+    },
+    {
+      "file": "escuela.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 640,
+      "width": 640,
+      "clippedAcademic": []
+    },
+    {
+      "file": "escuela.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "escuela.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 820,
+      "width": 820,
+      "clippedAcademic": []
+    },
+    {
+      "file": "escuela.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 900,
+      "width": 900,
+      "clippedAcademic": []
+    },
+    {
+      "file": "escuela.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1024,
+      "width": 1024,
+      "clippedAcademic": []
+    },
+    {
+      "file": "escuela.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1200,
+      "width": 1200,
+      "clippedAcademic": []
+    },
+    {
+      "file": "escuela.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "width": 1366,
+      "clippedAcademic": []
+    },
+    {
+      "file": "escuela.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "escuela.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1920,
+      "width": 1920,
+      "clippedAcademic": []
+    },
+    {
+      "file": "faq.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "faq.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "faq.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "formacion-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320,
+      "width": 320,
+      "clippedAcademic": []
+    },
+    {
+      "file": "formacion-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 360,
+      "width": 360,
+      "clippedAcademic": []
+    },
+    {
+      "file": "formacion-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "formacion-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 412,
+      "width": 412,
+      "clippedAcademic": []
+    },
+    {
+      "file": "formacion-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 430,
+      "width": 430,
+      "clippedAcademic": []
+    },
+    {
+      "file": "formacion-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 480,
+      "width": 480,
+      "clippedAcademic": []
+    },
+    {
+      "file": "formacion-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 600,
+      "width": 600,
+      "clippedAcademic": []
+    },
+    {
+      "file": "formacion-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 640,
+      "width": 640,
+      "clippedAcademic": []
+    },
+    {
+      "file": "formacion-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "formacion-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 820,
+      "width": 820,
+      "clippedAcademic": []
+    },
+    {
+      "file": "formacion-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 900,
+      "width": 900,
+      "clippedAcademic": []
+    },
+    {
+      "file": "formacion-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1024,
+      "width": 1024,
+      "clippedAcademic": []
+    },
+    {
+      "file": "formacion-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1200,
+      "width": 1200,
+      "clippedAcademic": []
+    },
+    {
+      "file": "formacion-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "width": 1366,
+      "clippedAcademic": []
+    },
+    {
+      "file": "formacion-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "formacion-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1920,
+      "width": 1920,
+      "clippedAcademic": []
+    },
+    {
+      "file": "formularios.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "formularios.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "formularios.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "fundador.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "fundador.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "fundador.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "gracias.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "gracias.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "gracias.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "grupos.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "grupos.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "grupos.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "guia-actividades.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "guia-actividades.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "guia-actividades.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320,
+      "width": 320,
+      "clippedAcademic": []
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 360,
+      "width": 360,
+      "clippedAcademic": []
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 412,
+      "width": 412,
+      "clippedAcademic": []
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 430,
+      "width": 430,
+      "clippedAcademic": []
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 480,
+      "width": 480,
+      "clippedAcademic": []
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 600,
+      "width": 600,
+      "clippedAcademic": []
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 640,
+      "width": 640,
+      "clippedAcademic": []
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 820,
+      "width": 820,
+      "clippedAcademic": []
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 900,
+      "width": 900,
+      "clippedAcademic": []
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1024,
+      "width": 1024,
+      "clippedAcademic": []
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1200,
+      "width": 1200,
+      "clippedAcademic": []
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "width": 1366,
+      "clippedAcademic": []
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1920,
+      "width": 1920,
+      "clippedAcademic": []
+    },
+    {
+      "file": "index.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320,
+      "width": 320,
+      "clippedAcademic": []
+    },
+    {
+      "file": "index.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 360,
+      "width": 360,
+      "clippedAcademic": []
+    },
+    {
+      "file": "index.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "index.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 412,
+      "width": 412,
+      "clippedAcademic": []
+    },
+    {
+      "file": "index.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 430,
+      "width": 430,
+      "clippedAcademic": []
+    },
+    {
+      "file": "index.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 480,
+      "width": 480,
+      "clippedAcademic": []
+    },
+    {
+      "file": "index.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 600,
+      "width": 600,
+      "clippedAcademic": []
+    },
+    {
+      "file": "index.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 640,
+      "width": 640,
+      "clippedAcademic": []
+    },
+    {
+      "file": "index.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "index.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 820,
+      "width": 820,
+      "clippedAcademic": []
+    },
+    {
+      "file": "index.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 900,
+      "width": 900,
+      "clippedAcademic": []
+    },
+    {
+      "file": "index.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1024,
+      "width": 1024,
+      "clippedAcademic": []
+    },
+    {
+      "file": "index.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1200,
+      "width": 1200,
+      "clippedAcademic": []
+    },
+    {
+      "file": "index.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "width": 1366,
+      "clippedAcademic": []
+    },
+    {
+      "file": "index.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "index.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1920,
+      "width": 1920,
+      "clippedAcademic": []
+    },
+    {
+      "file": "kayak-mar.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "kayak-mar.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "kayak-mar.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "logbook.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320,
+      "width": 320,
+      "clippedAcademic": []
+    },
+    {
+      "file": "logbook.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 360,
+      "width": 360,
+      "clippedAcademic": []
+    },
+    {
+      "file": "logbook.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "logbook.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 412,
+      "width": 412,
+      "clippedAcademic": []
+    },
+    {
+      "file": "logbook.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 430,
+      "width": 430,
+      "clippedAcademic": []
+    },
+    {
+      "file": "logbook.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 480,
+      "width": 480,
+      "clippedAcademic": []
+    },
+    {
+      "file": "logbook.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 600,
+      "width": 600,
+      "clippedAcademic": []
+    },
+    {
+      "file": "logbook.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 640,
+      "width": 640,
+      "clippedAcademic": []
+    },
+    {
+      "file": "logbook.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "logbook.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 820,
+      "width": 820,
+      "clippedAcademic": []
+    },
+    {
+      "file": "logbook.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 900,
+      "width": 900,
+      "clippedAcademic": []
+    },
+    {
+      "file": "logbook.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1024,
+      "width": 1024,
+      "clippedAcademic": []
+    },
+    {
+      "file": "logbook.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1200,
+      "width": 1200,
+      "clippedAcademic": []
+    },
+    {
+      "file": "logbook.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "width": 1366,
+      "clippedAcademic": []
+    },
+    {
+      "file": "logbook.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "logbook.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1920,
+      "width": 1920,
+      "clippedAcademic": []
+    },
+    {
+      "file": "login.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "login.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "login.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "material.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320,
+      "width": 320,
+      "clippedAcademic": []
+    },
+    {
+      "file": "material.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 360,
+      "width": 360,
+      "clippedAcademic": []
+    },
+    {
+      "file": "material.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "material.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 412,
+      "width": 412,
+      "clippedAcademic": []
+    },
+    {
+      "file": "material.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 430,
+      "width": 430,
+      "clippedAcademic": []
+    },
+    {
+      "file": "material.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 480,
+      "width": 480,
+      "clippedAcademic": []
+    },
+    {
+      "file": "material.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 600,
+      "width": 600,
+      "clippedAcademic": []
+    },
+    {
+      "file": "material.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 640,
+      "width": 640,
+      "clippedAcademic": []
+    },
+    {
+      "file": "material.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "material.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 820,
+      "width": 820,
+      "clippedAcademic": []
+    },
+    {
+      "file": "material.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 900,
+      "width": 900,
+      "clippedAcademic": []
+    },
+    {
+      "file": "material.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1024,
+      "width": 1024,
+      "clippedAcademic": []
+    },
+    {
+      "file": "material.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1200,
+      "width": 1200,
+      "clippedAcademic": []
+    },
+    {
+      "file": "material.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "width": 1366,
+      "clippedAcademic": []
+    },
+    {
+      "file": "material.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "material.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1920,
+      "width": 1920,
+      "clippedAcademic": []
+    },
+    {
+      "file": "multiaventura.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "multiaventura.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "multiaventura.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "naturaleza.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "naturaleza.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "naturaleza.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "naturistas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320,
+      "width": 320,
+      "clippedAcademic": []
+    },
+    {
+      "file": "naturistas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 360,
+      "width": 360,
+      "clippedAcademic": []
+    },
+    {
+      "file": "naturistas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "naturistas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 412,
+      "width": 412,
+      "clippedAcademic": []
+    },
+    {
+      "file": "naturistas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 430,
+      "width": 430,
+      "clippedAcademic": []
+    },
+    {
+      "file": "naturistas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 480,
+      "width": 480,
+      "clippedAcademic": []
+    },
+    {
+      "file": "naturistas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 600,
+      "width": 600,
+      "clippedAcademic": []
+    },
+    {
+      "file": "naturistas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 640,
+      "width": 640,
+      "clippedAcademic": []
+    },
+    {
+      "file": "naturistas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "naturistas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 820,
+      "width": 820,
+      "clippedAcademic": []
+    },
+    {
+      "file": "naturistas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 900,
+      "width": 900,
+      "clippedAcademic": []
+    },
+    {
+      "file": "naturistas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1024,
+      "width": 1024,
+      "clippedAcademic": []
+    },
+    {
+      "file": "naturistas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1200,
+      "width": 1200,
+      "clippedAcademic": []
+    },
+    {
+      "file": "naturistas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "width": 1366,
+      "clippedAcademic": []
+    },
+    {
+      "file": "naturistas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "naturistas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1920,
+      "width": 1920,
+      "clippedAcademic": []
+    },
+    {
+      "file": "open-water.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "open-water.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "open-water.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "packs.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "packs.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "packs.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "paramotor.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "paramotor.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "paramotor.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "parapente.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "parapente.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "parapente.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-academico.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-academico.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-academico.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-completo.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-completo.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-completo.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320,
+      "width": 320,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 360,
+      "width": 360,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 412,
+      "width": 412,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 430,
+      "width": 430,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 480,
+      "width": 480,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 600,
+      "width": 600,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 640,
+      "width": 640,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 820,
+      "width": 820,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 900,
+      "width": 900,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1024,
+      "width": 1024,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1200,
+      "width": 1200,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "width": 1366,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1920,
+      "width": 1920,
+      "clippedAcademic": []
+    },
+    {
+      "file": "quienes-somos.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "quienes-somos.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "quienes-somos.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "rapel.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "rapel.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "rapel.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "reservas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "reservas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "reservas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "segundo-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320,
+      "width": 320,
+      "clippedAcademic": []
+    },
+    {
+      "file": "segundo-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 360,
+      "width": 360,
+      "clippedAcademic": []
+    },
+    {
+      "file": "segundo-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "segundo-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 412,
+      "width": 412,
+      "clippedAcademic": []
+    },
+    {
+      "file": "segundo-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 430,
+      "width": 430,
+      "clippedAcademic": []
+    },
+    {
+      "file": "segundo-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 480,
+      "width": 480,
+      "clippedAcademic": []
+    },
+    {
+      "file": "segundo-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 600,
+      "width": 600,
+      "clippedAcademic": []
+    },
+    {
+      "file": "segundo-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 640,
+      "width": 640,
+      "clippedAcademic": []
+    },
+    {
+      "file": "segundo-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "segundo-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 820,
+      "width": 820,
+      "clippedAcademic": []
+    },
+    {
+      "file": "segundo-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 900,
+      "width": 900,
+      "clippedAcademic": []
+    },
+    {
+      "file": "segundo-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1024,
+      "width": 1024,
+      "clippedAcademic": []
+    },
+    {
+      "file": "segundo-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1200,
+      "width": 1200,
+      "clippedAcademic": []
+    },
+    {
+      "file": "segundo-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "width": 1366,
+      "clippedAcademic": []
+    },
+    {
+      "file": "segundo-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "segundo-gmn.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1920,
+      "width": 1920,
+      "clippedAcademic": []
+    },
+    {
+      "file": "seguridad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320,
+      "width": 320,
+      "clippedAcademic": []
+    },
+    {
+      "file": "seguridad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 360,
+      "width": 360,
+      "clippedAcademic": []
+    },
+    {
+      "file": "seguridad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "seguridad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 412,
+      "width": 412,
+      "clippedAcademic": []
+    },
+    {
+      "file": "seguridad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 430,
+      "width": 430,
+      "clippedAcademic": []
+    },
+    {
+      "file": "seguridad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 480,
+      "width": 480,
+      "clippedAcademic": []
+    },
+    {
+      "file": "seguridad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 600,
+      "width": 600,
+      "clippedAcademic": []
+    },
+    {
+      "file": "seguridad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 640,
+      "width": 640,
+      "clippedAcademic": []
+    },
+    {
+      "file": "seguridad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "seguridad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 820,
+      "width": 820,
+      "clippedAcademic": []
+    },
+    {
+      "file": "seguridad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 900,
+      "width": 900,
+      "clippedAcademic": []
+    },
+    {
+      "file": "seguridad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1024,
+      "width": 1024,
+      "clippedAcademic": []
+    },
+    {
+      "file": "seguridad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1200,
+      "width": 1200,
+      "clippedAcademic": []
+    },
+    {
+      "file": "seguridad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "width": 1366,
+      "clippedAcademic": []
+    },
+    {
+      "file": "seguridad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "seguridad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1920,
+      "width": 1920,
+      "clippedAcademic": []
+    },
+    {
+      "file": "senderismo-guiado.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "senderismo-guiado.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "senderismo-guiado.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "snorkel-aventura.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "snorkel-aventura.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "snorkel-aventura.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "sostenibilidad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "sostenibilidad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "sostenibilidad.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "tecnologia.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "tecnologia.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "tecnologia.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "transparencia-financiacion.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "transparencia-financiacion.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "transparencia-financiacion.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "via-ferrata.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "via-ferrata.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "via-ferrata.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "viajes.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 320,
+      "width": 320,
+      "clippedAcademic": []
+    },
+    {
+      "file": "viajes.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 360,
+      "width": 360,
+      "clippedAcademic": []
+    },
+    {
+      "file": "viajes.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "viajes.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 412,
+      "width": 412,
+      "clippedAcademic": []
+    },
+    {
+      "file": "viajes.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 430,
+      "width": 430,
+      "clippedAcademic": []
+    },
+    {
+      "file": "viajes.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 480,
+      "width": 480,
+      "clippedAcademic": []
+    },
+    {
+      "file": "viajes.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 600,
+      "width": 600,
+      "clippedAcademic": []
+    },
+    {
+      "file": "viajes.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 640,
+      "width": 640,
+      "clippedAcademic": []
+    },
+    {
+      "file": "viajes.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "viajes.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 820,
+      "width": 820,
+      "clippedAcademic": []
+    },
+    {
+      "file": "viajes.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 900,
+      "width": 900,
+      "clippedAcademic": []
+    },
+    {
+      "file": "viajes.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1024,
+      "width": 1024,
+      "clippedAcademic": []
+    },
+    {
+      "file": "viajes.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1200,
+      "width": 1200,
+      "clippedAcademic": []
+    },
+    {
+      "file": "viajes.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "width": 1366,
+      "clippedAcademic": []
+    },
+    {
+      "file": "viajes.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    },
+    {
+      "file": "viajes.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1920,
+      "width": 1920,
+      "clippedAcademic": []
+    },
+    {
+      "file": "zonas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390,
+      "clippedAcademic": []
+    },
+    {
+      "file": "zonas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 768,
+      "width": 768,
+      "clippedAcademic": []
+    },
+    {
+      "file": "zonas.html",
+      "h1": 1,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440,
+      "clippedAcademic": []
+    }
+  ],
+  "languageChecks": [
+    {
+      "file": "index.html",
+      "requested": "es",
+      "language": "es",
+      "overflow": false,
+      "title": "NÓMADA EXTREMO | Aventura, deportes extremos y naturaleza",
+      "notice": "Proyecto académico no operativo · 2.º GMN 2026-2027 · Sin reservas, cobros ni ventas",
+      "stageLabel": "es",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "requested": "es",
+      "language": "es",
+      "overflow": false,
+      "title": "Proyecto Intermodular 2026-2027 · NÓMADA EXTREMO 3.0",
+      "notice": "Proyecto académico no operativo · 2.º GMN 2026-2027 · Sin reservas, cobros ni ventas",
+      "stageLabel": "es",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "segundo-gmn.html",
+      "requested": "es",
+      "language": "es",
+      "overflow": false,
+      "title": "2.º GMN · Curso 2026-2027 | NÓMADA EXTREMO",
+      "notice": "Proyecto académico no operativo · 2.º GMN 2026-2027 · Sin reservas, cobros ni ventas",
+      "stageLabel": "es",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "formacion-gmn.html",
+      "requested": "es",
+      "language": "es",
+      "overflow": false,
+      "title": "Formación GMN · 2.º en curso 2026-2027 | NÓMADA EXTREMO",
+      "notice": "Proyecto académico no operativo · 2.º GMN 2026-2027 · Sin reservas, cobros ni ventas",
+      "stageLabel": "es",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "escuela.html",
+      "requested": "es",
+      "language": "es",
+      "overflow": false,
+      "title": "Escuela Nómada | Formación outdoor",
+      "notice": "Proyecto académico no operativo · 2.º GMN 2026-2027 · Sin reservas, cobros ni ventas",
+      "stageLabel": "es",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "seguridad.html",
+      "requested": "es",
+      "language": "es",
+      "overflow": false,
+      "title": "Seguridad y gestión del riesgo | NÓMADA EXTREMO",
+      "notice": "Proyecto académico no operativo · 2.º GMN 2026-2027 · Sin reservas, cobros ni ventas",
+      "stageLabel": "es",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "material.html",
+      "requested": "es",
+      "language": "es",
+      "overflow": false,
+      "title": "Material y equipamiento | Nómada Extremo",
+      "notice": "Proyecto académico no operativo · 2.º GMN 2026-2027 · Sin reservas, cobros ni ventas",
+      "stageLabel": "es",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "logbook.html",
+      "requested": "es",
+      "language": "es",
+      "overflow": false,
+      "title": "Logbook, Comunidad y App | Nómada Extremo",
+      "notice": "Proyecto académico no operativo · 2.º GMN 2026-2027 · Sin reservas, cobros ni ventas",
+      "stageLabel": "es",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "naturistas.html",
+      "requested": "es",
+      "language": "es",
+      "overflow": false,
+      "title": "Nómada Naturista | NÓMADA EXTREMO",
+      "notice": "Proyecto académico no operativo · 2.º GMN 2026-2027 · Sin reservas, cobros ni ventas",
+      "stageLabel": "es",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "base-campamento.html",
+      "requested": "es",
+      "language": "es",
+      "overflow": false,
+      "title": "Base y Campamento NÓMADA EXTREMO | Sede, escuela, flota y campamento de aventura",
+      "notice": "Proyecto académico no operativo · 2.º GMN 2026-2027 · Sin reservas, cobros ni ventas",
+      "stageLabel": "es",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "requested": "es",
+      "language": "es",
+      "overflow": false,
+      "title": "Horizonte Nómada | Visión de futuro de NÓMADA EXTREMO",
+      "notice": "Proyecto académico no operativo · 2.º GMN 2026-2027 · Sin reservas, cobros ni ventas",
+      "stageLabel": "es",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "viajes.html",
+      "requested": "es",
+      "language": "es",
+      "overflow": false,
+      "title": "Viajes de aventura y calendario extremo | NÓMADA EXTREMO",
+      "notice": "Proyecto académico no operativo · 2.º GMN 2026-2027 · Sin reservas, cobros ni ventas",
+      "stageLabel": "es",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "index.html",
+      "requested": "en",
+      "language": "en",
+      "overflow": false,
+      "title": "NÓMADA EXTREMO | Adventure, extreme sports and nature",
+      "notice": "Non-operational academic project · GMN Year 2 2026-2027 · No bookings, payments or sales",
+      "stageLabel": "en",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "requested": "en",
+      "language": "en",
+      "overflow": false,
+      "title": "Interdisciplinary Project 2026-2027 · NÓMADA EXTREMO 3.0",
+      "notice": "Non-operational academic project · GMN Year 2 2026-2027 · No bookings, payments or sales",
+      "stageLabel": "en",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "segundo-gmn.html",
+      "requested": "en",
+      "language": "en",
+      "overflow": false,
+      "title": "GMN Year 2 · 2026-2027 | NÓMADA EXTREMO",
+      "notice": "Non-operational academic project · GMN Year 2 2026-2027 · No bookings, payments or sales",
+      "stageLabel": "en",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "formacion-gmn.html",
+      "requested": "en",
+      "language": "en",
+      "overflow": false,
+      "title": "GMN Training · Year 2 in progress 2026-2027 | NÓMADA EXTREMO",
+      "notice": "Non-operational academic project · GMN Year 2 2026-2027 · No bookings, payments or sales",
+      "stageLabel": "en",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "escuela.html",
+      "requested": "en",
+      "language": "en",
+      "overflow": false,
+      "title": "Nomad School | Outdoor training",
+      "notice": "Non-operational academic project · GMN Year 2 2026-2027 · No bookings, payments or sales",
+      "stageLabel": "en",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "seguridad.html",
+      "requested": "en",
+      "language": "en",
+      "overflow": false,
+      "title": "Safety and risk management | NÓMADA EXTREMO",
+      "notice": "Non-operational academic project · GMN Year 2 2026-2027 · No bookings, payments or sales",
+      "stageLabel": "en",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "material.html",
+      "requested": "en",
+      "language": "en",
+      "overflow": false,
+      "title": "Material and equipment | Nómada Extremo",
+      "notice": "Non-operational academic project · GMN Year 2 2026-2027 · No bookings, payments or sales",
+      "stageLabel": "en",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "logbook.html",
+      "requested": "en",
+      "language": "en",
+      "overflow": false,
+      "title": "Logbook, Community and App | Nómada Extremo",
+      "notice": "Non-operational academic project · GMN Year 2 2026-2027 · No bookings, payments or sales",
+      "stageLabel": "en",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "naturistas.html",
+      "requested": "en",
+      "language": "en",
+      "overflow": false,
+      "title": "Nomad Naturism | NÓMADA EXTREMO",
+      "notice": "Non-operational academic project · GMN Year 2 2026-2027 · No bookings, payments or sales",
+      "stageLabel": "en",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "base-campamento.html",
+      "requested": "en",
+      "language": "en",
+      "overflow": false,
+      "title": "NÓMADA EXTREMO Base and Camp | Hub, school, fleet and adventure camp",
+      "notice": "Non-operational academic project · GMN Year 2 2026-2027 · No bookings, payments or sales",
+      "stageLabel": "en",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "requested": "en",
+      "language": "en",
+      "overflow": false,
+      "title": "Nomad Horizon | The future vision of NÓMADA EXTREMO",
+      "notice": "Non-operational academic project · GMN Year 2 2026-2027 · No bookings, payments or sales",
+      "stageLabel": "en",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "viajes.html",
+      "requested": "en",
+      "language": "en",
+      "overflow": false,
+      "title": "Travel | NÓMADA EXTREMO",
+      "notice": "Non-operational academic project · GMN Year 2 2026-2027 · No bookings, payments or sales",
+      "stageLabel": "en",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "index.html",
+      "requested": "fr",
+      "language": "fr",
+      "overflow": false,
+      "title": "NÓMADA EXTREMO | Aventure, sports extrêmes et nature",
+      "notice": "Projet académique non opérationnel · GMN 2e année 2026-2027 · Sans réservations, paiements ni ventes",
+      "stageLabel": "fr",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "requested": "fr",
+      "language": "fr",
+      "overflow": false,
+      "title": "Projet interdisciplinaire 2026-2027 · NÓMADA EXTREMO 3.0",
+      "notice": "Projet académique non opérationnel · GMN 2e année 2026-2027 · Sans réservations, paiements ni ventes",
+      "stageLabel": "fr",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "segundo-gmn.html",
+      "requested": "fr",
+      "language": "fr",
+      "overflow": false,
+      "title": "GMN · 2e année 2026-2027 | NÓMADA EXTREMO",
+      "notice": "Projet académique non opérationnel · GMN 2e année 2026-2027 · Sans réservations, paiements ni ventes",
+      "stageLabel": "fr",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "formacion-gmn.html",
+      "requested": "fr",
+      "language": "fr",
+      "overflow": false,
+      "title": "Formation GMN · 2e année en cours 2026-2027 | NÓMADA EXTREMO",
+      "notice": "Projet académique non opérationnel · GMN 2e année 2026-2027 · Sans réservations, paiements ni ventes",
+      "stageLabel": "fr",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "escuela.html",
+      "requested": "fr",
+      "language": "fr",
+      "overflow": false,
+      "title": "École Nómada | Formation outdoor",
+      "notice": "Projet académique non opérationnel · GMN 2e année 2026-2027 · Sans réservations, paiements ni ventes",
+      "stageLabel": "fr",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "seguridad.html",
+      "requested": "fr",
+      "language": "fr",
+      "overflow": false,
+      "title": "Sécurité et gestion des risques | NÓMADA EXTREMO",
+      "notice": "Projet académique non opérationnel · GMN 2e année 2026-2027 · Sans réservations, paiements ni ventes",
+      "stageLabel": "fr",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "material.html",
+      "requested": "fr",
+      "language": "fr",
+      "overflow": false,
+      "title": "Matériel et équipements | Nómada Extremo",
+      "notice": "Projet académique non opérationnel · GMN 2e année 2026-2027 · Sans réservations, paiements ni ventes",
+      "stageLabel": "fr",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "logbook.html",
+      "requested": "fr",
+      "language": "fr",
+      "overflow": false,
+      "title": "Logbook, Communauté et application | Nómada Extremo",
+      "notice": "Projet académique non opérationnel · GMN 2e année 2026-2027 · Sans réservations, paiements ni ventes",
+      "stageLabel": "fr",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "naturistas.html",
+      "requested": "fr",
+      "language": "fr",
+      "overflow": false,
+      "title": "Naturisme Nómada | NÓMADA EXTREMO",
+      "notice": "Projet académique non opérationnel · GMN 2e année 2026-2027 · Sans réservations, paiements ni ventes",
+      "stageLabel": "fr",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "base-campamento.html",
+      "requested": "fr",
+      "language": "fr",
+      "overflow": false,
+      "title": "Base et Camp NÓMADA EXTREMO | Centre, école, flotte et camp aventure",
+      "notice": "Projet académique non opérationnel · GMN 2e année 2026-2027 · Sans réservations, paiements ni ventes",
+      "stageLabel": "fr",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "requested": "fr",
+      "language": "fr",
+      "overflow": false,
+      "title": "Horizon Nomade | Vision future de NÓMADA EXTREMO",
+      "notice": "Projet académique non opérationnel · GMN 2e année 2026-2027 · Sans réservations, paiements ni ventes",
+      "stageLabel": "fr",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "viajes.html",
+      "requested": "fr",
+      "language": "fr",
+      "overflow": false,
+      "title": "Voyages | NÓMADA EXTREMO",
+      "notice": "Projet académique non opérationnel · GMN 2e année 2026-2027 · Sans réservations, paiements ni ventes",
+      "stageLabel": "fr",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "index.html",
+      "requested": "de",
+      "language": "de",
+      "overflow": false,
+      "title": "NÓMADA EXTREMO | Abenteuer, Extremsport und Natur",
+      "notice": "Nicht operatives Ausbildungsprojekt · GMN 2. Jahr 2026-2027 · Keine Buchungen, Zahlungen oder Verkäufe",
+      "stageLabel": "de",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "requested": "de",
+      "language": "de",
+      "overflow": false,
+      "title": "Fächerübergreifendes Projekt 2026-2027 · NÓMADA EXTREMO 3.0",
+      "notice": "Nicht operatives Ausbildungsprojekt · GMN 2. Jahr 2026-2027 · Keine Buchungen, Zahlungen oder Verkäufe",
+      "stageLabel": "de",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "segundo-gmn.html",
+      "requested": "de",
+      "language": "de",
+      "overflow": false,
+      "title": "GMN · 2. Jahr 2026-2027 | NÓMADA EXTREMO",
+      "notice": "Nicht operatives Ausbildungsprojekt · GMN 2. Jahr 2026-2027 · Keine Buchungen, Zahlungen oder Verkäufe",
+      "stageLabel": "de",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "formacion-gmn.html",
+      "requested": "de",
+      "language": "de",
+      "overflow": false,
+      "title": "GMN-Ausbildung · 2. Jahr läuft 2026-2027 | NÓMADA EXTREMO",
+      "notice": "Nicht operatives Ausbildungsprojekt · GMN 2. Jahr 2026-2027 · Keine Buchungen, Zahlungen oder Verkäufe",
+      "stageLabel": "de",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "escuela.html",
+      "requested": "de",
+      "language": "de",
+      "overflow": false,
+      "title": "Nómada Schule | Outdoor-Ausbildung",
+      "notice": "Nicht operatives Ausbildungsprojekt · GMN 2. Jahr 2026-2027 · Keine Buchungen, Zahlungen oder Verkäufe",
+      "stageLabel": "de",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "seguridad.html",
+      "requested": "de",
+      "language": "de",
+      "overflow": false,
+      "title": "Sicherheit und Risikomanagement | NÓMADA EXTREMO",
+      "notice": "Nicht operatives Ausbildungsprojekt · GMN 2. Jahr 2026-2027 · Keine Buchungen, Zahlungen oder Verkäufe",
+      "stageLabel": "de",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "material.html",
+      "requested": "de",
+      "language": "de",
+      "overflow": false,
+      "title": "Material und Ausrüstung | Nómada Extremo",
+      "notice": "Nicht operatives Ausbildungsprojekt · GMN 2. Jahr 2026-2027 · Keine Buchungen, Zahlungen oder Verkäufe",
+      "stageLabel": "de",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "logbook.html",
+      "requested": "de",
+      "language": "de",
+      "overflow": false,
+      "title": "Logbook, Community und App | Nómada Extremo",
+      "notice": "Nicht operatives Ausbildungsprojekt · GMN 2. Jahr 2026-2027 · Keine Buchungen, Zahlungen oder Verkäufe",
+      "stageLabel": "de",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "naturistas.html",
+      "requested": "de",
+      "language": "de",
+      "overflow": false,
+      "title": "Nómada Naturismus | NÓMADA EXTREMO",
+      "notice": "Nicht operatives Ausbildungsprojekt · GMN 2. Jahr 2026-2027 · Keine Buchungen, Zahlungen oder Verkäufe",
+      "stageLabel": "de",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "base-campamento.html",
+      "requested": "de",
+      "language": "de",
+      "overflow": false,
+      "title": "NÓMADA EXTREMO Basis und Camp | Standort, Schule, Flotte und Abenteuer-Camp",
+      "notice": "Nicht operatives Ausbildungsprojekt · GMN 2. Jahr 2026-2027 · Keine Buchungen, Zahlungen oder Verkäufe",
+      "stageLabel": "de",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "requested": "de",
+      "language": "de",
+      "overflow": false,
+      "title": "Nomadenhorizont | Zukunftsvision von NÓMADA EXTREMO",
+      "notice": "Nicht operatives Ausbildungsprojekt · GMN 2. Jahr 2026-2027 · Keine Buchungen, Zahlungen oder Verkäufe",
+      "stageLabel": "de",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "viajes.html",
+      "requested": "de",
+      "language": "de",
+      "overflow": false,
+      "title": "Reisen | NÓMADA EXTREMO",
+      "notice": "Nicht operatives Ausbildungsprojekt · GMN 2. Jahr 2026-2027 · Keine Buchungen, Zahlungen oder Verkäufe",
+      "stageLabel": "de",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "index.html",
+      "requested": "it",
+      "language": "it",
+      "overflow": false,
+      "title": "NÓMADA EXTREMO | Avventura, sport estremi e natura",
+      "notice": "Progetto accademico non operativo · GMN 2º anno 2026-2027 · Nessuna prenotazione, pagamento o vendita",
+      "stageLabel": "it",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "requested": "it",
+      "language": "it",
+      "overflow": false,
+      "title": "Progetto interdisciplinare 2026-2027 · NÓMADA EXTREMO 3.0",
+      "notice": "Progetto accademico non operativo · GMN 2º anno 2026-2027 · Nessuna prenotazione, pagamento o vendita",
+      "stageLabel": "it",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "segundo-gmn.html",
+      "requested": "it",
+      "language": "it",
+      "overflow": false,
+      "title": "GMN · 2º anno 2026-2027 | NÓMADA EXTREMO",
+      "notice": "Progetto accademico non operativo · GMN 2º anno 2026-2027 · Nessuna prenotazione, pagamento o vendita",
+      "stageLabel": "it",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "formacion-gmn.html",
+      "requested": "it",
+      "language": "it",
+      "overflow": false,
+      "title": "Formazione GMN · 2º anno in corso 2026-2027 | NÓMADA EXTREMO",
+      "notice": "Progetto accademico non operativo · GMN 2º anno 2026-2027 · Nessuna prenotazione, pagamento o vendita",
+      "stageLabel": "it",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "escuela.html",
+      "requested": "it",
+      "language": "it",
+      "overflow": false,
+      "title": "Escuela Nómada | Nómada Extremo",
+      "notice": "Progetto accademico non operativo · GMN 2º anno 2026-2027 · Nessuna prenotazione, pagamento o vendita",
+      "stageLabel": "it",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "seguridad.html",
+      "requested": "it",
+      "language": "it",
+      "overflow": false,
+      "title": "Seguridad y gestión del riesgo | Nómada Extremo",
+      "notice": "Progetto accademico non operativo · GMN 2º anno 2026-2027 · Nessuna prenotazione, pagamento o vendita",
+      "stageLabel": "it",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "material.html",
+      "requested": "it",
+      "language": "it",
+      "overflow": false,
+      "title": "Materiale e attrezzature | Nómada Extremo",
+      "notice": "Progetto accademico non operativo · GMN 2º anno 2026-2027 · Nessuna prenotazione, pagamento o vendita",
+      "stageLabel": "it",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "logbook.html",
+      "requested": "it",
+      "language": "it",
+      "overflow": false,
+      "title": "Logbook, Comunità e App | Nómada Extremo",
+      "notice": "Progetto accademico non operativo · GMN 2º anno 2026-2027 · Nessuna prenotazione, pagamento o vendita",
+      "stageLabel": "it",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "naturistas.html",
+      "requested": "it",
+      "language": "it",
+      "overflow": false,
+      "title": "Nómada Naturista | Nómada Extremo",
+      "notice": "Progetto accademico non operativo · GMN 2º anno 2026-2027 · Nessuna prenotazione, pagamento o vendita",
+      "stageLabel": "it",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "base-campamento.html",
+      "requested": "it",
+      "language": "it",
+      "overflow": false,
+      "title": "Base e Campo NÓMADA EXTREMO | Sede, scuola, flotta e campo avventura",
+      "notice": "Progetto accademico non operativo · GMN 2º anno 2026-2027 · Nessuna prenotazione, pagamento o vendita",
+      "stageLabel": "it",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "requested": "it",
+      "language": "it",
+      "overflow": false,
+      "title": "Orizzonte Nomade | Visione futura di NÓMADA EXTREMO",
+      "notice": "Progetto accademico non operativo · GMN 2º anno 2026-2027 · Nessuna prenotazione, pagamento o vendita",
+      "stageLabel": "it",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "viajes.html",
+      "requested": "it",
+      "language": "it",
+      "overflow": false,
+      "title": "Viaggi | NÓMADA EXTREMO",
+      "notice": "Progetto accademico non operativo · GMN 2º anno 2026-2027 · Nessuna prenotazione, pagamento o vendita",
+      "stageLabel": "it",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "index.html",
+      "requested": "pt",
+      "language": "pt",
+      "overflow": false,
+      "title": "NÓMADA EXTREMO | Aventura, esportes radicais e natureza",
+      "notice": "Projeto académico não operacional · GMN 2.º ano 2026-2027 · Sem reservas, cobranças ou vendas",
+      "stageLabel": "pt",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "requested": "pt",
+      "language": "pt",
+      "overflow": false,
+      "title": "Projeto interdisciplinar 2026-2027 · NÓMADA EXTREMO 3.0",
+      "notice": "Projeto académico não operacional · GMN 2.º ano 2026-2027 · Sem reservas, cobranças ou vendas",
+      "stageLabel": "pt",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "segundo-gmn.html",
+      "requested": "pt",
+      "language": "pt",
+      "overflow": false,
+      "title": "GMN · 2.º ano 2026-2027 | NÓMADA EXTREMO",
+      "notice": "Projeto académico não operacional · GMN 2.º ano 2026-2027 · Sem reservas, cobranças ou vendas",
+      "stageLabel": "pt",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "formacion-gmn.html",
+      "requested": "pt",
+      "language": "pt",
+      "overflow": false,
+      "title": "Formação GMN · 2.º ano em curso 2026-2027 | NÓMADA EXTREMO",
+      "notice": "Projeto académico não operacional · GMN 2.º ano 2026-2027 · Sem reservas, cobranças ou vendas",
+      "stageLabel": "pt",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "escuela.html",
+      "requested": "pt",
+      "language": "pt",
+      "overflow": false,
+      "title": "Escuela Nómada | Nómada Extremo",
+      "notice": "Projeto académico não operacional · GMN 2.º ano 2026-2027 · Sem reservas, cobranças ou vendas",
+      "stageLabel": "pt",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "seguridad.html",
+      "requested": "pt",
+      "language": "pt",
+      "overflow": false,
+      "title": "Seguridad y gestión del riesgo | Nómada Extremo",
+      "notice": "Projeto académico não operacional · GMN 2.º ano 2026-2027 · Sem reservas, cobranças ou vendas",
+      "stageLabel": "pt",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "material.html",
+      "requested": "pt",
+      "language": "pt",
+      "overflow": false,
+      "title": "Materiais e equipamentos | Nómada Extremo",
+      "notice": "Projeto académico não operacional · GMN 2.º ano 2026-2027 · Sem reservas, cobranças ou vendas",
+      "stageLabel": "pt",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "logbook.html",
+      "requested": "pt",
+      "language": "pt",
+      "overflow": false,
+      "title": "Logbook, comunidade e aplicativo | Nómada Extremo",
+      "notice": "Projeto académico não operacional · GMN 2.º ano 2026-2027 · Sem reservas, cobranças ou vendas",
+      "stageLabel": "pt",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "naturistas.html",
+      "requested": "pt",
+      "language": "pt",
+      "overflow": false,
+      "title": "Nómada Naturista | Nómada Extremo",
+      "notice": "Projeto académico não operacional · GMN 2.º ano 2026-2027 · Sem reservas, cobranças ou vendas",
+      "stageLabel": "pt",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "base-campamento.html",
+      "requested": "pt",
+      "language": "pt",
+      "overflow": false,
+      "title": "Base e Acampamento NÓMADA EXTREMO | Sede, escola, frota e campo de aventura",
+      "notice": "Projeto académico não operacional · GMN 2.º ano 2026-2027 · Sem reservas, cobranças ou vendas",
+      "stageLabel": "pt",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "requested": "pt",
+      "language": "pt",
+      "overflow": false,
+      "title": "Horizonte Nómada | Visão futura da NÓMADA EXTREMO",
+      "notice": "Projeto académico não operacional · GMN 2.º ano 2026-2027 · Sem reservas, cobranças ou vendas",
+      "stageLabel": "pt",
+      "oldCurrentStatus": false
+    },
+    {
+      "file": "viajes.html",
+      "requested": "pt",
+      "language": "pt",
+      "overflow": false,
+      "title": "Viagens | NÓMADA EXTREMO",
+      "notice": "Projeto académico não operacional · GMN 2.º ano 2026-2027 · Sem reservas, cobranças ou vendas",
+      "stageLabel": "pt",
+      "oldCurrentStatus": false
+    }
+  ],
+  "interactions": [
+    "Matrix: search, empty state, reset and area filter",
+    "Economy: valid calculation and zero-margin handling",
+    "Defense: activation, arrows, index, Escape, explicit exit and focus restoration",
+    "Mobile landscape and unobscured hamburger",
+    "Mobile menu: accordion structure and academic shortcut",
+    "Global search: Ctrl+K, results and Escape",
+    "Desktop navigation: ArrowDown opens, Escape closes and restores focus",
+    "Home: header, eyebrow, notice and hero buttons do not overlap",
+    "Review demo: local feedback, zero POST requests",
+    "Four legacy policy redirects resolve to the legal page",
+    "Without JavaScript: full memory, ten modules and ten matrix rows"
+  ],
+  "errors": [],
+  "externalFailures": []
+}

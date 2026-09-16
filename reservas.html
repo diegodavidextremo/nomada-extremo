@@ -15,6 +15,7 @@
 <link rel="manifest" href="site.webmanifest?v=2026-05-12">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/design-system.css?v=20260914-3">
 </head>
 <body>
 <div id="nav-placeholder"></div>
@@ -28,12 +29,12 @@
     <h1 class="titulo" style="font-size:clamp(3rem,9vw,7rem);color:var(--blanco);">SOLICITUD<br><span style="color:var(--arena-claro);">ORIENTATIVA</span></h1>
     <p style="font-family:var(--serif);font-style:italic;font-size:1.2rem;color:rgba(245,242,236,0.85);max-width:680px;margin-top:1rem;line-height:1.8;">Formulario orientativo para proyecto académico. No se realizan reservas, cobros, señales, pagos ni confirmaciones operativas reales.</p>
   </div>
-</section>
+</section><aside class="n3-state-strip" data-n3-state="prototype"><span class="n3-badge n3-badge--prototype" data-n3-copy="prototype">◐ Prototipo académico</span><p data-n3-copy="prototypeText">Catálogo, precios, reseñas, roles y procesos de demostración. No se realizan reservas, cobros ni servicios comerciales reales.</p><a href="proyecto-intermodular.html#tres-capas" data-n3-copy="understand">Entender los tres estados</a></aside>
 
 <section class="bg-blanco">
   <div class="container">
     <div class="notice-card">
-      <strong>Aviso importante:</strong> Nómada Extremo es actualmente un proyecto académico no operativo creado por Diego David Gómez García, alumno de 1.º GMN del IES Europa de Águilas. No realiza reservas, cobros ni actividades reales en este momento. Este formulario solo muestra cómo funcionaría una reserva en una versión real.
+      <strong>Aviso importante:</strong> Nómada Extremo es actualmente un proyecto académico no operativo creado por Diego David Gómez García, alumno de 2.º GMN, curso 2026-2027 del IES Europa de Águilas. No realiza reservas, cobros ni actividades reales en este momento. Este formulario solo muestra cómo funcionaría una reserva en una versión real.
     </div>
   </div>
 </section>
@@ -58,8 +59,7 @@
       <div class="reserve-step">
         <h3>Paso 1: tipo de experiencia</h3>
         <div class="form-grupo">
-          <label>Tipo de experiencia *</label>
-          <select id="resTipo" required>
+          <label for="resTipo">Tipo de experiencia *</label><select id="resTipo" required>
             <option>Actividad estándar</option>
             <option>Experiencia privada</option>
             <option>Pack especial</option>
@@ -74,8 +74,7 @@
       <div class="reserve-step">
         <h3>Paso 2: familia</h3>
         <div class="form-grupo">
-          <label>Familia de actividad *</label>
-          <select id="resFamilia" required>
+          <label for="resFamilia">Familia de actividad *</label><select id="resFamilia" required>
             <option>Montaña</option>
             <option>Vertical</option>
             <option>Mar y Costa</option>
@@ -93,8 +92,7 @@
       <div class="reserve-step">
         <h3>Paso 3: actividad concreta</h3>
         <div class="form-grupo">
-          <label>Actividad según familia seleccionada *</label>
-          <select id="resActividad" required></select>
+          <label for="resActividad">Actividad según familia seleccionada *</label><select id="resActividad" required></select>
         </div>
         <p id="familyHint" style="font-size:0.76rem;color:var(--piedra);line-height:1.7;margin-top:0.6rem;"></p>
       </div>
@@ -102,20 +100,19 @@
       <div class="reserve-step">
         <h3>Paso 4: fecha, personas y nivel</h3>
         <div class="form-fila">
-          <div class="form-grupo"><label>Fecha</label><input id="resFecha" type="text" value="Próxima disponibilidad orientativa"></div>
-          <div class="form-grupo"><label>Personas *</label><select id="resPersonas" required><option>1 persona</option><option>2 personas</option><option>3-4 personas</option><option>5-8 personas</option><option>9-12 personas</option><option>Grupo a consultar</option></select></div>
+          <div class="form-grupo"><label for="resFecha">Fecha</label><input id="resFecha" type="text" value="Próxima disponibilidad orientativa"></div>
+          <div class="form-grupo"><label for="resPersonas">Personas *</label><select id="resPersonas" required><option>1 persona</option><option>2 personas</option><option>3-4 personas</option><option>5-8 personas</option><option>9-12 personas</option><option>Grupo a consultar</option></select></div>
         </div>
         <div class="form-fila">
-          <div class="form-grupo"><label>Nivel *</label><select id="resNivel" required><option>Iniciación</option><option>Intermedio</option><option>Avanzado</option><option>Extremo con validación</option></select></div>
-          <div class="form-grupo"><label>Modalidad</label><select id="resModalidad"><option>Grupo abierto orientativo</option><option>Privada orientativa</option><option>Curso / escuela</option><option>Pack a medida</option></select></div>
+          <div class="form-grupo"><label for="resNivel">Nivel *</label><select id="resNivel" required><option>Iniciación</option><option>Intermedio</option><option>Avanzado</option><option>Extremo con validación</option></select></div>
+          <div class="form-grupo"><label for="resModalidad">Modalidad</label><select id="resModalidad"><option>Grupo abierto orientativo</option><option>Privada orientativa</option><option>Curso / escuela</option><option>Pack a medida</option></select></div>
         </div>
       </div>
 
       <div class="reserve-step" id="audiovisual">
         <h3>Paso 5: extras audiovisuales</h3>
         <div class="form-grupo">
-          <label>Pack audiovisual</label>
-          <select id="resAudiovisual">
+          <label for="resAudiovisual">Pack audiovisual</label><select id="resAudiovisual">
             <option>Sin audiovisual</option>
             <option>Pack Recuerdo</option>
             <option>Pack Pro</option>
@@ -134,8 +131,7 @@
           <strong>Transparencia:</strong> no se solicitan datos bancarios, no se procesa tarjeta, no se usa Bizum y no se realiza ningún cobro real. Cualquier precio mostrado es orientativo para explicar el modelo de negocio del proyecto académico.
         </div>
         <div class="form-grupo" style="margin-top:1rem;">
-          <label>Preferencia orientativa</label>
-          <select id="resPago">
+          <label for="resPago">Preferencia orientativa</label><select id="resPago">
             <option>Sin pago, solo solicitud orientativa</option>
             <option>Simulación de tarjeta, sin datos reales</option>
             <option>Simulación de bono regalo</option>
@@ -161,8 +157,8 @@
       <div class="reserve-step">
         <h3>Paso 7: enviar solicitud orientativa</h3>
         <div class="form-fila">
-          <div class="form-grupo"><label>Nombre de ejemplo *</label><input type="text" placeholder="Nombre de ejemplo" required></div>
-          <div class="form-grupo"><label>Email de ejemplo *</label><input type="email" placeholder="correo@ejemplo.com" required></div>
+          <div class="form-grupo"><label for="n3-field-10">Nombre de ejemplo *</label><input id="n3-field-10" type="text" placeholder="Nombre de ejemplo" required></div>
+          <div class="form-grupo"><label for="n3-field-11">Email de ejemplo *</label><input id="n3-field-11" type="email" placeholder="correo@ejemplo.com" required></div>
         </div>
         <div style="display:flex;align-items:start;gap:0.7rem;margin:1rem 0;">
           <input type="checkbox" id="demoCheck" required style="width:auto;margin-top:5px;">
@@ -193,7 +189,7 @@
 </section>
 
 <div id="footer-placeholder"></div>
-<script src="assets/js/components.js?v=20260717-2"></script>
+<script src="assets/js/components.js?v=20260914-3"></script>
 <script src="assets/js/main.js"></script>
 <script>
 const actividadesPorFamilia = {
@@ -243,5 +239,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 <script src="assets/js/chatbot.js?v=20260621-6"></script>
+<script src="assets/js/stage3.js?v=20260914-3"></script>
 </body>
 </html>

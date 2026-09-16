@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const root = path.resolve(__dirname, '..');
-const excludedDirs = new Set(['.git', 'NOMADX', 'DiegoDavidExtremoAndroid', 'NomadaExtremoAndroid', 'SalidaDiscreta', 'MemoriaTotal', 'webs-diego', 'node_modules']);
+const excludedDirs = new Set(['.git', 'NOMADX', 'DiegoDavidExtremoAndroid', 'NomadaExtremoAndroid', 'SalidaDiscreta', 'MemoriaTotal', 'webs-diego', 'node_modules', 'tools']);
 const breakpoints = [320, 360, 390, 412, 430, 480, 600, 640, 768, 820, 900, 1024, 1200, 1366, 1440, 1920];
 
 function walk(dir, out = []) {

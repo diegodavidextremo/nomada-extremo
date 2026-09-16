@@ -3,7 +3,7 @@
 
   const supported = ['es', 'en', 'fr', 'de', 'it', 'pt'];
   const storageKey = 'noext-language';
-  const catalogVersion = '20260708-1';
+  const catalogVersion = '20260914-3';
   const page = (location.pathname.split('/').pop() || 'index.html').replace('.html', '') || 'index';
   const ignoredTags = new Set(['SCRIPT', 'STYLE', 'NOSCRIPT', 'TEMPLATE', 'CODE', 'PRE']);
   const originalText = new WeakMap();
@@ -138,6 +138,7 @@
     if (root.nodeType === Node.ELEMENT_NODE) elements.push(root);
     root.querySelectorAll?.('[placeholder],[title],[aria-label],[alt]').forEach(element => elements.push(element));
     elements.forEach(element => {
+      if (element.closest('[translate="no"],[data-no-translate]')) return;
       ['placeholder', 'title', 'aria-label', 'alt'].forEach(attribute => {
         if (!element.hasAttribute(attribute) || element.hasAttribute(`data-i18n-${attribute === 'aria-label' ? 'aria' : attribute}`)) return;
         const source = normalize(rememberAttribute(element, attribute));
@@ -249,5 +250,5 @@
     if (button) setLanguage(button.dataset.lang);
   });
 
-  setLanguage(current, false).then(observeDynamicContent);
+  setLanguage(current).then(observeDynamicContent);
 })();

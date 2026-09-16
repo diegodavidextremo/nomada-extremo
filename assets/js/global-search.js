@@ -5,45 +5,198 @@
   window.__noextGlobalSearchReady = true;
 
   const navGroups = [
-    {
-      label: 'Experiencias', href: 'actividades.html',
-      columns: [
-        ['Descubrir', ['Catálogo de actividades', 'actividades.html', 'Mar, montaña, aire, vertical y mucho más.'], ['Guía y comparativas', 'guia-actividades.html'], ['Zonas de aventura', 'zonas.html']],
-        ['Combinar', ['Packs y bonos', 'packs.html', 'Experiencias conectadas por nivel y territorio.'], ['Viajes', 'viajes.html'], ['Grupos, centros y empresas', 'grupos.html']],
-        ['Preparar', ['Material y marcas', 'material.html', 'Equipamiento y criterios de elección.'], ['Alquiler orientativo', 'alquiler.html'], ['Solicitar experiencia', 'reservas.html']]
+  {
+    "label": "Experiencias",
+    "href": "actividades.html",
+    "columns": [
+      [
+        "Descubrir",
+        [
+          "Actividades",
+          "actividades.html"
+        ],
+        [
+          "Packs y bonos",
+          "packs.html"
+        ],
+        [
+          "Viajes",
+          "viajes.html"
+        ]
+      ],
+      [
+        "Explorar",
+        [
+          "Nómada Naturista",
+          "naturistas.html"
+        ],
+        [
+          "Guía de actividades",
+          "guia-actividades.html"
+        ],
+        [
+          "Grupos, centros y empresas",
+          "grupos.html"
+        ]
       ]
-    },
-    {
-      label: 'Escuela', href: 'escuela.html',
-      columns: [
-        ['Aprender', ['Escuela Nómada', 'escuela.html', 'Itinerarios y progresión por disciplinas.'], ['Formación GMN', 'formacion-gmn.html'], ['Credenciales', 'certificaciones.html']],
-        ['Criterio', ['Seguridad y gestión del riesgo', 'seguridad.html', 'Protocolos, seguros y documentación.'], ['Método Nómada', 'como-funciona.html'], ['Formularios', 'formularios.html']]
+    ]
+  },
+  {
+    "label": "Aprender",
+    "href": "formacion-gmn.html",
+    "columns": [
+      [
+        "Curso activo",
+        [
+          "2.º GMN",
+          "segundo-gmn.html"
+        ],
+        [
+          "Formación GMN",
+          "formacion-gmn.html"
+        ],
+        [
+          "Proyecto intermodular",
+          "proyecto-intermodular.html"
+        ]
+      ],
+      [
+        "Progresar",
+        [
+          "Escuela Nómada",
+          "escuela.html"
+        ],
+        [
+          "Logbook",
+          "logbook.html"
+        ],
+        [
+          "Credenciales",
+          "certificaciones.html"
+        ]
       ]
-    },
-    {
-      label: 'Comunidad', href: 'comunidad.html',
-      columns: [
-        ['Registrar', ['Comunidad Nómada', 'comunidad.html', 'Historias, participación y vínculos outdoor.'], ['Logbook', 'logbook.html'], ['Blog y lecturas', 'blog.html']],
-        ['Cuidar', ['Naturaleza Nómada', 'naturaleza.html', 'Mínimo impacto y educación ambiental.'], ['Sostenibilidad', 'sostenibilidad.html'], ['Nómada Naturista', 'naturistas.html']]
+    ]
+  },
+  {
+    "label": "Preparar",
+    "href": "seguridad.html",
+    "columns": [
+      [
+        "Criterio",
+        [
+          "Seguridad",
+          "seguridad.html"
+        ],
+        [
+          "Material y marcas",
+          "material.html"
+        ],
+        [
+          "Zonas de aventura",
+          "zonas.html"
+        ]
+      ],
+      [
+        "Método",
+        [
+          "Cómo funciona",
+          "como-funciona.html"
+        ],
+        [
+          "Formularios",
+          "formularios.html"
+        ],
+        [
+          "Alquiler orientativo",
+          "alquiler.html"
+        ]
       ]
-    },
-    {
-      label: 'Universo', href: 'quienes-somos.html',
-      columns: [
-        ['Marca', ['Quiénes somos', 'quienes-somos.html', 'Identidad, visión y territorio mediterráneo.'], ['Fundador', 'fundador.html'], ['Equipo', 'equipo.html']],
-        ['Crear', ['Audiovisual outdoor', 'audiovisual.html', 'Foto, vídeo, POV, 360 y narrativa.'], ['Base y campamento', 'base-campamento.html'], ['Horizonte Nómada', 'horizonte-nomada.html']]
+    ]
+  },
+  {
+    "label": "Proyecto",
+    "href": "proyecto-intermodular.html",
+    "columns": [
+      [
+        "Memoria central",
+        [
+          "Proyecto intermodular",
+          "proyecto-intermodular.html"
+        ],
+        [
+          "Marco académico",
+          "proyecto-academico.html"
+        ],
+        [
+          "Proyecto completo",
+          "proyecto-completo.html"
+        ]
+      ],
+      [
+        "Visión y estudio",
+        [
+          "Base y campamento",
+          "base-campamento.html"
+        ],
+        [
+          "Horizonte Nómada",
+          "horizonte-nomada.html"
+        ],
+        [
+          "Sostenibilidad",
+          "sostenibilidad.html"
+        ],
+        [
+          "Transparencia y financiación",
+          "transparencia-financiacion.html"
+        ]
       ]
-    },
-    {
-      label: 'Proyecto', href: 'proyecto-completo.html',
-      columns: [
-        ['Documentar', ['Proyecto completo', 'proyecto-completo.html', 'La arquitectura integral de Nómada Extremo.'], ['Proyecto intermodular', 'proyecto-intermodular.html'], ['Marco académico', 'proyecto-academico.html']],
-        ['Validar', ['Transparencia y financiación', 'transparencia-financiacion.html', 'Escenarios, fases y viabilidad futura.'], ['Tecnología', 'tecnologia.html'], ['Preguntas frecuentes', 'faq.html']]
+    ]
+  },
+  {
+    "label": "Marca",
+    "href": "quienes-somos.html",
+    "columns": [
+      [
+        "Identidad",
+        [
+          "Fundador",
+          "fundador.html"
+        ],
+        [
+          "Equipo",
+          "equipo.html"
+        ],
+        [
+          "Quiénes somos",
+          "quienes-somos.html"
+        ]
+      ],
+      [
+        "Compartir",
+        [
+          "Audiovisual outdoor",
+          "audiovisual.html"
+        ],
+        [
+          "Blog y lecturas",
+          "blog.html"
+        ],
+        [
+          "Comunidad Nómada",
+          "comunidad.html"
+        ],
+        [
+          "Naturaleza Nómada",
+          "naturaleza.html"
+        ]
       ]
-    }
-  ];
+    ]
+  }
+];
 
   const searchItems = [
+    ['2.º GMN','Aprender','Curso activo 2026-2027, matrícula, profesorado y bitácora.','segundo-gmn.html','GM2','segundo 2026 2027 profesores matrícula'],
     ['Inicio','Marca','Portada y visión general del proyecto.','index.html','IN','portada home aventura'],
     ['Actividades','Experiencias','Catálogo por medio, nivel, territorio y formato.','actividades.html','EX','deportes catálogo mar montaña aire vertical'],
     ['Guía de actividades','Experiencias','Comparativas y criterios para elegir cada experiencia.','guia-actividades.html','GU','comparar puenting snorkel trekking'],
@@ -154,6 +307,7 @@
       search.dataset.globalSearchOpen = '';
       search.innerHTML = '<svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg><span>Buscar en Nómada Extremo</span><kbd>Ctrl K</kbd>';
       switcher.after(search);
+      search.insertAdjacentHTML('afterend','<div class="nav-academic-shortcuts"><a href="proyecto-intermodular.html" data-nav-source="Proyecto intermodular">Proyecto intermodular</a><a href="segundo-gmn.html" data-nav-source="2.º GMN">2.º GMN</a></div>');
       navGroups.forEach(group => {
         const details = document.createElement('details');
         details.className = 'nav-mobile-group';
@@ -171,15 +325,24 @@
       parent.querySelector(':scope > a')?.setAttribute('aria-expanded','false');
     });
     parents.forEach(parent => parent.querySelector(':scope > a')?.addEventListener('click', event => {
-      if (window.matchMedia('(hover:hover)').matches) return;
+
       event.preventDefault();
       const open=!parent.classList.contains('is-open');
+      parent.classList.remove('is-dismissed');
       closeMegas(parent);
       parent.classList.toggle('is-open',open);
       event.currentTarget.setAttribute('aria-expanded',String(open));
     }));
+    parents.forEach(parent => {
+      const anchor=parent.querySelector(':scope > a');
+      parent.addEventListener('mouseenter',()=>{parent.classList.remove('is-dismissed');anchor.setAttribute('aria-expanded','true');});
+      parent.addEventListener('focusin',()=>{if(!parent.classList.contains('is-dismissed'))anchor.setAttribute('aria-expanded','true');});
+      parent.addEventListener('focusout',event=>{if(!parent.contains(event.relatedTarget)){parent.classList.remove('is-open');anchor.setAttribute('aria-expanded','false');}});
+      parent.addEventListener('mouseleave',()=>{if(!parent.contains(document.activeElement))anchor.setAttribute('aria-expanded','false');});
+      anchor.addEventListener('keydown',event=>{if(event.key==='ArrowDown'){event.preventDefault();closeMegas(parent);parent.classList.remove('is-dismissed');parent.classList.add('is-open');anchor.setAttribute('aria-expanded','true');parent.querySelector('.nav-mega a')?.focus();}});
+    });
     document.addEventListener('click', event => { if(!event.target.closest('.nav-mega-parent')) closeMegas(); });
-    document.addEventListener('keydown', event => { if(event.key==='Escape') closeMegas(); });
+    document.addEventListener('keydown', event => { if(event.key==='Escape'){ const parent=document.activeElement.closest('.nav-mega-parent');closeMegas();parents.forEach(p=>p.classList.add('is-dismissed'));parent?.querySelector(':scope > a')?.focus();} });
   }
 
   buildNavigation();
@@ -217,7 +380,7 @@
   };
   const renderQuick=()=>{
     quick.innerHTML='';
-    ['Actividades','Seguridad','Escuela','Material','Logbook','Horizonte Nómada'].forEach(term=>{
+    ['Proyecto intermodular','2.º GMN','Actividades','Seguridad','Logbook','Horizonte Nómada'].forEach(term=>{
       const button=document.createElement('button');
       button.type='button';
       button.textContent=tr(term);

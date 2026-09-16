@@ -1,0 +1,117 @@
+{
+  "estado": "Pendiente de estudio",
+  "partidas": [
+    {
+      "categoria": "Inversión inicial",
+      "importe": null,
+      "periodo": null,
+      "fuente": null,
+      "estado": "Pendiente de estudio"
+    },
+    {
+      "categoria": "Costes fijos",
+      "importe": null,
+      "periodo": null,
+      "fuente": null,
+      "estado": "Pendiente de estudio"
+    },
+    {
+      "categoria": "Costes variables",
+      "importe": null,
+      "periodo": null,
+      "fuente": null,
+      "estado": "Pendiente de estudio"
+    },
+    {
+      "categoria": "Recursos humanos",
+      "importe": null,
+      "periodo": null,
+      "fuente": null,
+      "estado": "Pendiente de estudio"
+    },
+    {
+      "categoria": "Material",
+      "importe": null,
+      "periodo": null,
+      "fuente": null,
+      "estado": "Pendiente de estudio"
+    },
+    {
+      "categoria": "Seguros",
+      "importe": null,
+      "periodo": null,
+      "fuente": null,
+      "estado": "Pendiente de estudio"
+    },
+    {
+      "categoria": "Vehículos",
+      "importe": null,
+      "periodo": null,
+      "fuente": null,
+      "estado": "Pendiente de estudio"
+    },
+    {
+      "categoria": "Instalaciones",
+      "importe": null,
+      "periodo": null,
+      "fuente": null,
+      "estado": "Pendiente de estudio"
+    },
+    {
+      "categoria": "Marketing",
+      "importe": null,
+      "periodo": null,
+      "fuente": null,
+      "estado": "Pendiente de estudio"
+    },
+    {
+      "categoria": "Tecnología",
+      "importe": null,
+      "periodo": null,
+      "fuente": null,
+      "estado": "Pendiente de estudio"
+    },
+    {
+      "categoria": "Mantenimiento",
+      "importe": null,
+      "periodo": null,
+      "fuente": null,
+      "estado": "Pendiente de estudio"
+    },
+    {
+      "categoria": "Amortización",
+      "importe": null,
+      "periodo": null,
+      "fuente": null,
+      "estado": "Pendiente de estudio"
+    },
+    {
+      "categoria": "Precio",
+      "importe": null,
+      "periodo": null,
+      "fuente": null,
+      "estado": "Pendiente de estudio"
+    },
+    {
+      "categoria": "Margen",
+      "importe": null,
+      "periodo": null,
+      "fuente": null,
+      "estado": "Pendiente de estudio"
+    },
+    {
+      "categoria": "Punto de equilibrio",
+      "importe": null,
+      "periodo": null,
+      "fuente": null,
+      "estado": "Pendiente de estudio"
+    },
+    {
+      "categoria": "Escenarios",
+      "importe": null,
+      "periodo": null,
+      "fuente": null,
+      "estado": "Pendiente de estudio"
+    }
+  ]
+}

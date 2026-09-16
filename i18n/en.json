@@ -72,8 +72,8 @@
       "description": "Legal notice, terms, privacy, cookies and returns for Nomada Extremo, an adventure project in development and validation."
     },
     "segundo-gmn": {
-      "title": "What awaits me in 2.? GMN | EXTREME NOMAD",
-      "description": "Modules of 2.? GMN in the IES Europa of ?guilas and its connection with the N?MADA EXTREMO intermodular project."
+      "title": "GMN Year 2 · 2026-2027 | NÓMADA EXTREMO",
+      "description": "Non-operational academic project in GMN Year 2, 2026-2027. Project report, modules, teachers and journal; detailed academic content in Spanish."
     },
     "viajes": {
       "title": "Adventure trips and extreme calendar | N?MADA EXTREMO",
@@ -82,6 +82,14 @@
     "base-campamento": {
       "title": "NÓMADA EXTREMO Base and Camp | Hub, school, fleet and adventure camp",
       "description": "Future vision for the NÓMADA EXTREMO Base and Camp: operations hub, logistics, school, fleet, camp, safety and business development from Águilas, Murcia."
+    },
+    "proyecto-intermodular": {
+      "title": "Interdisciplinary Project 2026-2027 · NÓMADA EXTREMO 3.0",
+      "description": "Non-operational academic project in GMN Year 2, 2026-2027. Project report, modules, teachers and journal; detailed academic content in Spanish."
+    },
+    "formacion-gmn": {
+      "title": "GMN Training · Year 2 in progress 2026-2027 | NÓMADA EXTREMO",
+      "description": "Non-operational academic project in GMN Year 2, 2026-2027. Project report, modules, teachers and journal; detailed academic content in Spanish."
     }
   },
   "strings": {
@@ -107,7 +115,7 @@
     "— esa forma de vivir el entorno natural se fue convirtiendo en algo completamente espontáneo: en cualquier playa, en cualquier época del año, siempre con el máximo respeto a quienes estuvieran alrededor.": "— that way of experiencing the natural environment became something completely spontaneous: on any beach, at any time of the year, always with the utmost respect for those around.",
     ", aceptar las normas de convivencia y confirmar el consentimiento informado. No se permiten fotografías sin autorización expresa, comportamientos sexualizados, exhibicionismo ni presión sobre otras personas. El equipo puede expulsar a quien incumpla las normas. Línea diferenciada dentro del marco académico general del proyecto.": ", accept the rules of coexistence and confirm informed consent. Photography without express authorization, sexualized behavior, exhibitionism or pressure on other people are not allowed. The team can expel anyone who breaks the rules. Differentiated line within the general academic framework of the project.",
     ", alumno de": ", student of",
-    ", alumno de 1.º GMN del": ", 1st year student GMN of",
+    ", alumno de 1.º GMN del": "Nómada Extremo is a non-operational academic project by Diego David Gómez García / Diego David Extremo. It began in GMN Year 1, 2025-2026, and continues in Year 2, 2026-2027, at IES Europa in Águilas (Murcia), through the interdisciplinary project. No real bookings, payments, sales or commercial activities take place.",
     ", conocida en el barrio como la": ", known in the neighborhood as the",
     ", Diego encontró la roca. El": ", Diego found the rock. The",
     ", donde pasó incontables horas de infancia sumergido, nadando, explorando el fondo y sintiendo esa quietud que solo el agua da.": ", where he spent countless hours of childhood submerged, swimming, exploring the bottom and feeling that stillness that only water gives.",
@@ -3961,10 +3969,10 @@
     "NÓMADA EXTREMO | Aventura, deportes extremos y naturaleza": "NÓMADA EXTREMO | Adventure, extreme sports and nature",
     "Nómada Extremo busca aventura sin destruir el entorno. La actividad debe adaptarse al medio, no al revés.": "Nómada Extremo seeks adventure without destroying the environment. The activity must adapt to the environment, not the other way around.",
     "Nómada Extremo cuenta con un equipo especializado en montaña, mar, aire, cuevas, agua interior y producción audiovisual. Cada experiencia se diseña con formación demostrable, experiencia real, seguros de responsabilidad civil y accidentes, permisos cuando la actividad lo requiere, protocolos de emergencia, revisión de material y criterios conservadores de seguridad. La aventura es el centro, pero la seguridad marca el límite.": "Nómada Extremo has a team specialized in mountains, sea, air, caves, inland water and audiovisual production. Each experience is designed with demonstrable training, real experience, civil liability and accident insurance, permits when the activity requires it, emergency protocols, material review and conservative safety criteria. Adventure is the center, but safety marks the limit.",
-    "Nómada Extremo es actualmente un proyecto académico no operativo creado por Diego David Gómez García, alumno de 1.º GMN del IES Europa de Águilas. No realiza reservas, cobros ni actividades reales en este momento. Este formulario solo muestra cómo funcionaría una reserva en una versión real.": "Nómada Extremo is currently a non-operational academic project created by Diego David Gómez García, a 1st year GMN student at IES Europa in Águilas. It does not make reservations, payments or actual activities at this time. This form only shows how a reservation would work in a real version.",
-    "Nómada Extremo es actualmente un proyecto académico no operativo creado por Diego David Gómez García, alumno de 1.º GMN del IES Europa de Águilas. No realiza reservas, cobros ni actividades reales.": "Nómada Extremo is currently a non-operational academic project created by Diego David Gómez García, a 1st year GMN student at IES Europa in Águilas. It does not make reservations, payments or real activities.",
-    "Nómada Extremo es actualmente un proyecto académico no operativo creado por Diego David Gómez García, alumno de 1.º GMN del IES Europa de Águilas. No realiza reservas, cobros ni actividades reales. No introduzcas datos médicos reales ni información personal sensible en formularios demostrativos.": "Nómada Extremo is currently a non-operational academic project created by Diego David Gómez García, a 1st year GMN student at IES Europa in Águilas. It does not make reservations, payments or real activities. Do not enter actual medical data or sensitive personal information on demo forms.",
-    "Nómada Extremo es actualmente un proyecto académico no operativo creado por Diego David Gómez García, alumno de 1.º GMN del IES Europa de Águilas. No realiza reservas, cobros, ventas, sorteos ni actividades reales en este momento.": "Nómada Extremo is currently a non-operational academic project created by Diego David Gómez García, a first-year GMN student at IES Europa in Águilas. It does not currently process bookings, payments or sales, run prize draws, or operate real activities.",
+    "Nómada Extremo es actualmente un proyecto académico no operativo creado por Diego David Gómez García, alumno de 1.º GMN del IES Europa de Águilas. No realiza reservas, cobros ni actividades reales en este momento. Este formulario solo muestra cómo funcionaría una reserva en una versión real.": "Nómada Extremo is a non-operational academic project by Diego David Gómez García / Diego David Extremo. It began in GMN Year 1, 2025-2026, and continues in Year 2, 2026-2027, at IES Europa in Águilas (Murcia), through the interdisciplinary project. No real bookings, payments, sales or commercial activities take place.",
+    "Nómada Extremo es actualmente un proyecto académico no operativo creado por Diego David Gómez García, alumno de 1.º GMN del IES Europa de Águilas. No realiza reservas, cobros ni actividades reales.": "Nómada Extremo is a non-operational academic project by Diego David Gómez García / Diego David Extremo. It began in GMN Year 1, 2025-2026, and continues in Year 2, 2026-2027, at IES Europa in Águilas (Murcia), through the interdisciplinary project. No real bookings, payments, sales or commercial activities take place.",
+    "Nómada Extremo es actualmente un proyecto académico no operativo creado por Diego David Gómez García, alumno de 1.º GMN del IES Europa de Águilas. No realiza reservas, cobros ni actividades reales. No introduzcas datos médicos reales ni información personal sensible en formularios demostrativos.": "Nómada Extremo is a non-operational academic project by Diego David Gómez García / Diego David Extremo. It began in GMN Year 1, 2025-2026, and continues in Year 2, 2026-2027, at IES Europa in Águilas (Murcia), through the interdisciplinary project. No real bookings, payments, sales or commercial activities take place.",
+    "Nómada Extremo es actualmente un proyecto académico no operativo creado por Diego David Gómez García, alumno de 1.º GMN del IES Europa de Águilas. No realiza reservas, cobros, ventas, sorteos ni actividades reales en este momento.": "Nómada Extremo is a non-operational academic project by Diego David Gómez García / Diego David Extremo. It began in GMN Year 1, 2025-2026, and continues in Year 2, 2026-2027, at IES Europa in Águilas (Murcia), through the interdisciplinary project. No real bookings, payments, sales or commercial activities take place.",
     "Nómada Extremo es grande porque está diseñado como un ecosistema: experiencias, escuela, seguridad, audiovisual, comunidad, logbook, formularios y proyecto académico. La portada te orienta; las páginas profundas demuestran.": "Nómada Extremo is great because it is designed as an ecosystem: experiences, school, security, audiovisual, community, logbook, forms and academic project. The cover guides you; The deep pages demonstrate.",
     "Nómada Extremo es una empresa de aventura con identidad propia, nacida en Águilas, Murcia. Una tierra que tiene el mar a un lado, la montaña al otro y el cielo abierto encima. Pocas ciudades en España ofrecen ese entorno natural tan completo y tan cercano.": "Nómada Extremo is an adventure company with its own identity, born in Águilas, Murcia. A land that has the sea on one side, the mountains on the other and the open sky above. Few cities in Spain offer such a complete and close natural environment.",
     "Nómada Extremo nace desde la visión fundadora de": "Nómada Extremo was born from the founding vision of",
@@ -5197,7 +5205,7 @@
     "Simulación de tarjeta, sin datos reales": "Card simulation, no real data",
     "Simulación.": "Simulation.",
     "Simular experiencia": "Simulate experience",
-    "Simular reserva": "Simulate reservation",
+    "Simular reserva": "Simulate booking",
     "Simular una solicitud de actividad desde la app, sin reserva, pago ni plaza real.": "Simulate an activity request from the app, without reservation, payment or real place.",
     "Sin acreditación": "Without accreditation",
     "Sin artificios. Experiencias genuinas diseñadas por personas que las viven en primera persona.": "Without artifice. Genuine experiences designed by people who live them firsthand.",
@@ -6942,7 +6950,7 @@
     "No. Son registros internos demostrativos del prototipo. No sustituyen una licencia, titulación o certificado emitido por una entidad autorizada.": "No. They are internal records demonstrating the prototype. They do not replace a license, degree or certificate issued by an authorized entity.",
     "Nómada": "nomad",
     "Nómada Animal": "Animal Nomad",
-    "Nómada Extremo es actualmente un proyecto académico no operativo creado por Diego David Gómez García, alumno de 1.º GMN del IES Europa de Águilas (Murcia). Nació el 8 de abril de 2025 y evoluciona semanalmente con nuevas funciones, mejoras e información. No realiza reservas, cobros, ventas, sorteos ni actividades reales en este momento.": "Nómada Extremo is currently a non-operational academic project created by Diego David Gómez García, a 1st year GMN student at IES Europa in Águilas (Murcia). It was born on April 8, 2025 and evolves weekly with new features, improvements and information. It does not make reservations, collections, sales, raffles or real activities at this time.",
+    "Nómada Extremo es actualmente un proyecto académico no operativo creado por Diego David Gómez García, alumno de 1.º GMN del IES Europa de Águilas (Murcia). Nació el 8 de abril de 2025 y evoluciona semanalmente con nuevas funciones, mejoras e información. No realiza reservas, cobros, ventas, sorteos ni actividades reales en este momento.": "Nómada Extremo is a non-operational academic project by Diego David Gómez García / Diego David Extremo. It began in GMN Year 1, 2025-2026, and continues in Year 2, 2026-2027, at IES Europa in Águilas (Murcia), through the interdisciplinary project. No real bookings, payments, sales or commercial activities take place.",
     "Nómada Extremo nace mirando al litoral de Águilas, Cabo Cope, Cuatro Calas, Sierra de la Almenara y el Mediterráneo murciano. La aventura solo tiene sentido si el territorio conserva su valor después de nuestro paso.": "Nómada Extremo was born looking at the coast of Águilas, Cabo Cope, Cuatro Calas, Sierra de la Almenara and the Murcian Mediterranean. The adventure only makes sense if the territory retains its value after our passage.",
     "Nómada Familia": "Nomad Family",
     "nomadaextremoaguilas@gmail.com": "nomadaextremoaguilas@gmail.com",
@@ -8134,7 +8142,7 @@
     "Un segundo curso para profesionalizar la aventura": "A second year to professionalise adventure",
     "?reas conectadas": "Connected areas",
     "Lo que me espera en 2.º GMN | NÓMADA EXTREMO": "What awaits me in 2nd GMN | NÓMADA EXTREMO",
-    "2.º GMN": "2nd GMN",
+    "2.º GMN": "GMN Year 2",
     "Proyecto intermodular · Próxima etapa": "Intermodular project · Next stage",
     "EN 2.º GMN": "IN 2nd GMN",
     "Segundo curso del Grado Medio de Guía en el Medio Natural y de Tiempo Libre: un año clave para convertir la aventura en una profesión real.": "Second course of the Intermediate Degree in Guide in the Natural Environment and Free Time: a key year to turn adventure into a real profession.",
@@ -8215,7 +8223,21 @@
     "Kayak, snorkel inicial, rutas costeras y barrancos acuáticos con caudal, accesos y permisos adecuados.": "Kayaking, introductory snorkelling, coastal routes and aquatic canyoning with suitable flow, access and permits.",
     "Mar, SUP, buceo, e-foil, coasteering y barrancos acuáticos aptos, especialmente al inicio del verano y según condiciones.": "Sea activities, SUP, diving, e-foil, coasteering and suitable aquatic canyoning, especially in early summer and when conditions allow.",
     "Rutas, escalada, montaña, vías ferratas y barrancos seleccionados tras revisar caudal, lluvia y meteorología.": "Routes, climbing, mountains, via ferratas and selected canyons after checking flow, rainfall and weather.",
-    "Viajes": "Trips"
+    "Viajes": "Trips",
+    "Nómada Extremo es un proyecto académico no operativo creado por Diego David Gómez García / Diego David Extremo. Nació durante 1.º GMN, curso 2025-2026, y continúa en 2.º GMN, curso 2026-2027, en el IES Europa de Águilas (Murcia), con especial integración en el Proyecto Intermodular. No se realizan reservas, cobros, ventas ni actividades comerciales reales.": "Nómada Extremo is a non-operational academic project by Diego David Gómez García / Diego David Extremo. It began in GMN Year 1, 2025-2026, and continues in Year 2, 2026-2027, at IES Europa in Águilas (Murcia), through the interdisciplinary project. No real bookings, payments, sales or commercial activities take place.",
+    "Aprender": "Learn",
+    "Preparar": "Prepare",
+    "Curso activo": "Current year",
+    "Memoria central": "Project report",
+    "Visión y estudio": "Vision and research",
+    "Progresar": "Progress",
+    "Explorar prototipo": "Explore prototype",
+    "Pack destacado · demostración": "Featured pack · demo",
+    "Reservar": "Simulate booking",
+    "Comprar": "Explore prototype",
+    "Más vendido": "Featured pack · demo",
+    "Proyecto académico no operativo · 2.º GMN 2026-2027 · Sin reservas, cobros ni ventas": "Non-operational academic project · GMN Year 2 2026-2027 · No bookings, payments or sales",
+    "Simular reseña →": "Simulate review →"
   },
   "pages": {
     "faq": {

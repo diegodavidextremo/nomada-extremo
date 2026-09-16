@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "course": "2026-2027",
+  "year": "2.º GMN",
+  "stage": "Etapa Intermodular",
+  "startDate": "2026-09-14",
+  "updatedAt": "2026-09-16",
+  "center": "IES Europa",
+  "locality": "Águilas (Murcia)",
+  "author": "Diego David Gómez García",
+  "status": "En desarrollo",
+  "source": "Matrícula y contexto proporcionados por Diego David Gómez García el 14/09/2026. Las aplicaciones al proyecto son propuestas académicas, no competencias ni resultados ya acreditados.",
+  "modules": [
+    {
+      "code": "OAF03",
+      "name": "FUNDAMENTOS BIOLÓGICOS PARA LAS ACTIVIDADES EN EL MEDIO NATURAL",
+      "teacher": "ROMERO PEREZ, MARIANO",
+      "optional": true,
+      "area": "Cuerpo y entorno",
+      "chapter": "biologia",
+      "status": "En desarrollo",
+      "updatedAt": "2026-09-14",
+      "knowledge": "Esfuerzo, fatiga, recuperación, hidratación, termorregulación, intensidad y adaptación de la actividad.",
+      "decision": "Diseñar la exigencia y los descansos según el grupo y el entorno; revisar una propuesta si las condiciones cambian.",
+      "application": "Perfil físico de actividad: duración prevista, intensidad, clima, pausas, agua y adaptaciones. Sin diagnósticos ni prescripciones médicas.",
+      "evidencePlan": "Ficha de perfil físico revisada en clase y reflexión sobre los criterios utilizados.",
+      "result": "Resultado esperado: justificar la exigencia de cada propuesta. Todavía no evaluado.",
+      "links": [
+        [
+          "Actividades",
+          "actividades.html"
+        ],
+        [
+          "Seguridad",
+          "seguridad.html"
+        ]
+      ]
+    },
+    {
+      "code": "01325",
+      "name": "TÉCNICAS DE EQUITACIÓN",
+      "teacher": "MARTINEZ PULIDO, FRANCISCO JOSE",
+      "area": "Bienestar animal",
+      "chapter": "equitacion",
+      "status": "En desarrollo",
+      "updatedAt": "2026-09-14",
+      "knowledge": "Comportamiento, cuidados, preparación, higiene, alimentación, hidratación, postura y adaptación caballo-jinete.",
+      "decision": "Anteponer el bienestar del caballo a la actividad; detener la propuesta ante dolor, fatiga, miedo o estrés y remitir la valoración a profesionales competentes.",
+      "application": "Ficha académica de observación previa y posterior, adecuación del material, límites de esfuerzo y registro de descanso. El caballo es un ser vivo, nunca un recurso de explotación.",
+      "evidencePlan": "Observación supervisada y ficha de bienestar, únicamente cuando exista una práctica real documentada.",
+      "result": "Resultado esperado: argumentar decisiones respetuosas con el animal. Sin prácticas acreditadas en esta memoria todavía.",
+      "links": [
+        [
+          "Política de bienestar",
+          "proyecto-intermodular.html#bienestar-animal"
+        ]
+      ]
+    },
+    {
+      "code": "01327",
+      "name": "GUÍA ECUESTRE",
+      "teacher": "MARTINEZ PULIDO, FRANCISCO JOSE",
+      "area": "Bienestar animal",
+      "chapter": "guia-ecuestre",
+      "status": "En desarrollo",
+      "updatedAt": "2026-09-14",
+      "knowledge": "Planificación de itinerarios, conducción de grupos, terreno, clima, pausas, adaptación de jinetes y atención al animal.",
+      "decision": "Descartar itinerarios o condiciones incompatibles con el bienestar y la seguridad; estudiar centros por la calidad de sus cuidados.",
+      "application": "Nómada Ecuestre: línea académica en desarrollo. Plan de ruta con alternativas, cuidados, descansos, comunicaciones y criterios de cancelación.",
+      "evidencePlan": "Itinerario justificado y revisión docente de la política de bienestar. No hay centros colaboradores confirmados.",
+      "result": "Resultado esperado: demostrar cuándo una ruta debe modificarse o cancelarse. Pendiente de contraste.",
+      "links": [
+        [
+          "Bienestar animal",
+          "proyecto-intermodular.html#bienestar-animal"
+        ],
+        [
+          "Zonas",
+          "zonas.html"
+        ]
+      ]
+    },
+    {
+      "code": "01335",
+      "name": "TÉCNICAS DE TIEMPO LIBRE",
+      "teacher": "GALLARDO GARCIA, ANTONIO",
+      "area": "Grupos y educación",
+      "chapter": "tiempo-libre",
+      "status": "En desarrollo",
+      "updatedAt": "2026-09-14",
+      "knowledge": "Dinamización, juegos, comunicación, cohesión, inclusión, educación ambiental, planificación y evaluación por edades.",
+      "decision": "Definir objetivos educativos y adaptaciones antes de elegir una dinámica; evaluar la participación y no solo la ejecución.",
+      "application": "Sesión tipo para Escuela, grupos y campamentos: objetivo, edades, accesibilidad, recursos, tiempos, alternativa y evaluación.",
+      "evidencePlan": "Guion de sesión, observaciones y reflexión posterior cuando se realice la actividad.",
+      "result": "Resultado esperado: propuestas inclusivas y evaluables. Sin participantes ni resultados inventados.",
+      "links": [
+        [
+          "Escuela",
+          "escuela.html"
+        ],
+        [
+          "Grupos",
+          "grupos.html"
+        ],
+        [
+          "Campamento futuro",
+          "base-campamento.html"
+        ]
+      ]
+    },
+    {
+      "code": "01337",
+      "name": "SOCORRISMO EN EL MEDIO NATURAL",
+      "teacher": "ALBARRACIN PEREZ, APOLONIA",
+      "area": "Seguridad",
+      "chapter": "socorrismo",
+      "status": "En desarrollo",
+      "updatedAt": "2026-09-14",
+      "knowledge": "Prevención, valoración primaria, primeros auxilios, rescate, evacuación, comunicaciones, botiquines y recursos de emergencia.",
+      "decision": "Prever riesgos, acceso de ayuda, comunicaciones y responsables antes de aprobar una propuesta; validar los procedimientos con la docente.",
+      "application": "Estructura del plan de emergencia y parte de incidentes: ubicación, contactos, acceso, recursos, registro y revisión. Hipotermia, hipertermia y DEA se estudian en el marco formativo.",
+      "evidencePlan": "Plan revisado, inventario de botiquín y registro de simulacro supervisado, cuando se haya realizado.",
+      "result": "Resultado esperado: trazabilidad del plan de emergencia. No equivale a una certificación ni a un manual de actuación.",
+      "links": [
+        [
+          "Seguridad",
+          "seguridad.html"
+        ],
+        [
+          "Documentación",
+          "formularios.html"
+        ]
+      ]
+    },
+    {
+      "code": "01339",
+      "name": "MANIOBRAS CON CUERDAS",
+      "teacher": "CARRASCO WAIT, MARINA",
+      "area": "Seguridad",
+      "chapter": "cuerdas",
+      "status": "En desarrollo",
+      "updatedAt": "2026-09-14",
+      "knowledge": "Identificación y revisión de EPIs, trazabilidad, almacenamiento, vida útil, retirada y fundamentos de progresión y seguridad.",
+      "decision": "Exigir identificación e historial del material; mantener fuera de uso los equipos pendientes de revisión o retirados.",
+      "application": "Prototipo de ficha de EPI e inventario: fabricante, modelo, serie, fechas, revisiones, incidencias y retirada. Las técnicas, anclajes y rescates se trabajan con supervisión.",
+      "evidencePlan": "Ficha técnica contrastada con documentación del fabricante y revisión docente de los criterios.",
+      "result": "Resultado esperado: justificar la gestión del material, sin inventar equipos adquiridos ni publicar instrucciones de maniobras.",
+      "links": [
+        [
+          "Material",
+          "material.html"
+        ],
+        [
+          "Ficha de EPI",
+          "proyecto-intermodular.html#inventario"
+        ]
+      ]
+    },
+    {
+      "code": "01710",
+      "name": "ITINERARIO PERSONAL PARA LA EMPLEABILIDAD II",
+      "teacher": "MARIN GARCIA, ALFREDO",
+      "area": "Empresa",
+      "chapter": "empleabilidad",
+      "status": "En desarrollo",
+      "updatedAt": "2026-09-14",
+      "knowledge": "Empleabilidad, emprendimiento, organización, contratación, derechos, comunicación profesional, búsqueda de empleo y marca personal.",
+      "decision": "Separar roles necesarios de personas contratadas; estudiar costes y responsabilidades antes de plantear una implantación.",
+      "application": "Mapa de puestos, competencias, necesidades formativas, propuesta de valor, DAFO y estructura de viabilidad. No hay plantilla contratada ni ingresos acreditados.",
+      "evidencePlan": "Mapa de competencias, currículum y supuestos empresariales revisados, publicando solo lo adecuado para una memoria abierta.",
+      "result": "Resultado esperado: una propuesta empresarial coherente y un itinerario profesional defendible. Pendiente de evaluación.",
+      "links": [
+        [
+          "Viabilidad",
+          "proyecto-intermodular.html#viabilidad"
+        ],
+        [
+          "Equipo conceptual",
+          "equipo.html"
+        ]
+      ]
+    },
+    {
+      "code": "01708",
+      "name": "SOSTENIBILIDAD APLICADA AL SISTEMA PRODUCTIVO",
+      "teacher": "SANCHEZ SANCHEZ, JUANA MARIA",
+      "area": "Sostenibilidad",
+      "chapter": "sostenibilidad-modulo",
+      "status": "En desarrollo",
+      "updatedAt": "2026-09-14",
+      "knowledge": "Uso de recursos, impactos, movilidad, residuos, agua, energía, conservación y evaluación ambiental.",
+      "decision": "Definir qué medir, con qué unidad y con qué evidencia antes de hacer afirmaciones sobre el impacto.",
+      "application": "Registro de indicadores ambientales con fuente, periodo, valor, limitaciones y medidas correctoras. Capacidad de carga y espacios sensibles se estudian por entorno.",
+      "evidencePlan": "Registro de mediciones reales y método de cálculo revisado. No hay valores ambientales publicados todavía.",
+      "result": "Resultado esperado: sustituir promesas genéricas por indicadores verificables. Línea base pendiente.",
+      "links": [
+        [
+          "Indicadores",
+          "proyecto-intermodular.html#sostenibilidad-medible"
+        ],
+        [
+          "Sostenibilidad",
+          "sostenibilidad.html"
+        ]
+      ]
+    },
+    {
+      "code": "01713",
+      "name": "PROYECTO INTERMODULAR",
+      "teacher": "CARRASCO WAIT, MARINA",
+      "area": "Integración",
+      "chapter": "integracion",
+      "status": "En desarrollo",
+      "updatedAt": "2026-09-14",
+      "knowledge": "Relación entre conocimientos, decisiones, aplicaciones, evidencias y evaluación del proyecto.",
+      "decision": "Mantener una memoria central con fuentes y estados explícitos; incorporar las correcciones del curso sin convertir propuestas en hechos.",
+      "application": "Esta página une diez áreas académicas mediante la matriz, capítulos, documentación, bitácora y modo defensa.",
+      "evidencePlan": "Versiones de la memoria, correcciones docentes y anexos aportados durante el curso. La web creada no se cuenta por sí sola como práctica acreditada.",
+      "result": "Resultado esperado: explicar y defender un mismo proyecto de principio a fin. Evaluación académica pendiente.",
+      "links": [
+        [
+          "Matriz",
+          "proyecto-intermodular.html#matriz"
+        ],
+        [
+          "Evidencias",
+          "proyecto-intermodular.html#evidencias"
+        ]
+      ]
+    },
+    {
+      "code": "1342B",
+      "name": "FASE DE EMPRESA II (GM)",
+      "teacher": null,
+      "area": "Empresa",
+      "chapter": "fase-empresa",
+      "status": "Por definir",
+      "updatedAt": "2026-09-14",
+      "knowledge": "Competencias y aprendizajes en un entorno de empresa, según la asignación y programación que se confirme.",
+      "decision": "Esperar los datos reales de empresa, periodo, tutoría y actividades antes de incorporarlos a la memoria.",
+      "application": "Registro preparado para empresa, periodo, actividades, competencias, aprendizajes, observaciones y relación con Nómada Extremo.",
+      "evidencePlan": "Documentación autorizada de la estancia, cuando exista. Empresa, periodo y profesor actualmente no indicados.",
+      "result": "Sin resultados registrados. Se actualizará durante el curso.",
+      "links": [
+        [
+          "Plantilla de empresa",
+          "assets/data/templates/fase-empresa.json"
+        ]
+      ]
+    }
+  ],
+  "evidence": [],
+  "journal": [
+    {
+      "id": "inicio-2026",
+      "date": "2026-09-14",
+      "title": "Inicio de 2.º GMN",
+      "moduleCodes": [],
+      "teacher": null,
+      "place": "IES Europa · Águilas",
+      "activity": "Inicio del curso 2026-2027 comunicado por el autor.",
+      "objective": "Abrir la Etapa Intermodular y preparar el registro del curso.",
+      "materials": [],
+      "knowledge": [],
+      "photos": [],
+      "video": null,
+      "learning": null,
+      "difficulty": null,
+      "incidents": null,
+      "reflection": "La memoria se completará con aprendizajes y evidencias reales a lo largo del curso.",
+      "projectApplication": "Organización de las diez áreas académicas y apertura de la bitácora.",
+      "changedElements": [
+        "Proyecto Intermodular",
+        "2.º GMN"
+      ],
+      "evidenceIds": [],
+      "tags": [
+        "inicio",
+        "2026-2027"
+      ]
+    }
+  ],
+  "milestones": [
+    {
+      "title": "Nacimiento y primer curso",
+      "period": "2025-2026",
+      "status": "Etapa completada",
+      "description": "Origen académico, identidad, catálogo conceptual y aprendizaje de 1.º GMN. Se conserva la memoria histórica."
+    },
+    {
+      "title": "Inicio de segundo",
+      "period": "14 septiembre 2026",
+      "status": "Iniciado",
+      "description": "Inicio de 2.º GMN confirmado por el autor. Matrícula incorporada a la memoria."
+    },
+    {
+      "title": "Desarrollo intermodular",
+      "period": "Curso 2026-2027",
+      "status": "En desarrollo",
+      "description": "Documentar aprendizajes, contrastar decisiones e incorporar evidencias y correcciones durante el curso."
+    },
+    {
+      "title": "Revisión y defensa",
+      "period": "Fecha por definir",
+      "status": "Pendiente",
+      "description": "Revisión con el profesorado, evaluación de viabilidad y preparación de la defensa."
+    },
+    {
+      "title": "Posible implantación",
+      "period": "Sin fecha comprometida",
+      "status": "Visión futura",
+      "description": "Solo tras validar requisitos, recursos, seguros, permisos y viabilidad. No hay apertura anunciada."
+    }
+  ]
+}

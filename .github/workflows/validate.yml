@@ -1,0 +1,37 @@
+name: Validar Nómada Extremo
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node tools/audit-stage3.js
+      - run: node tools/responsive-accessibility-audit.js --summary
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Instalar herramientas de prueba aisladas
+        run: |
+          npm install --prefix "$RUNNER_TEMP/nomada-qa" --no-package-lock playwright@1.62.1
+          echo "NODE_PATH=$RUNNER_TEMP/nomada-qa/node_modules" >> "$GITHUB_ENV"
+          "$RUNNER_TEMP/nomada-qa/node_modules/.bin/playwright" install --with-deps chromium
+      - run: node tools/browser-stage3.js
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: validacion-web
+          path: tools/reports/
+          retention-days: 14

@@ -626,9 +626,9 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     const btn = fContact.querySelector('[type="submit"]');
     const orig = btn.textContent;
-    btn.textContent = 'Enviando...'; btn.disabled = true;
+    btn.textContent = 'Preparando simulación…'; btn.disabled = true;
     setTimeout(() => {
-      btn.textContent = '✓ Enviado';
+      btn.textContent = '✓ Simulación completada';
       btn.style.background = 'var(--bosque)';
       setTimeout(() => { btn.textContent = orig; btn.style.background = ''; btn.disabled = false; fContact.reset(); }, 4000);
     }, 1100);
@@ -645,7 +645,10 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ─── SMOOTH SCROLL ─── */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
-      const t = document.querySelector(a.getAttribute('href'));
+      const href = a.getAttribute('href');
+      if (!href || href === '#') return;
+      let t;
+      try { t = document.getElementById(decodeURIComponent(href.slice(1))); } catch (_) { return; }
       if (t) { e.preventDefault(); t.scrollIntoView({ behavior: noextReducedMotion ? 'auto' : 'smooth', block:'start' }); }
     });
   });
