@@ -622,9 +622,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ─── FORMULARIO CONTACTO ─── */
   const fContact = document.getElementById('formContacto');
+  const contactDemoButton = fContact?.querySelector('[data-contact-demo]');
+  if (contactDemoButton) contactDemoButton.addEventListener('click', () => { if (fContact.reportValidity()) fContact.dispatchEvent(new Event('submit', {cancelable:true})); });
   if (fContact) fContact.addEventListener('submit', e => {
     e.preventDefault();
-    const btn = fContact.querySelector('[type="submit"]');
+    const btn = fContact.querySelector('[data-contact-demo], [type="submit"]');
     const orig = btn.textContent;
     btn.textContent = 'Preparando simulación…'; btn.disabled = true;
     setTimeout(() => {

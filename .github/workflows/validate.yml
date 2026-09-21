@@ -14,6 +14,7 @@ jobs:
         with:
           node-version: '22'
       - run: node tools/audit-stage3.js
+      - run: node tools/build-assistant-index.js --check
       - run: node tools/responsive-accessibility-audit.js --summary
   browser:
     runs-on: ubuntu-latest
@@ -29,6 +30,7 @@ jobs:
           echo "NODE_PATH=$RUNNER_TEMP/nomada-qa/node_modules" >> "$GITHUB_ENV"
           "$RUNNER_TEMP/nomada-qa/node_modules/.bin/playwright" install --with-deps chromium
       - run: node tools/browser-stage3.js
+      - run: node tools/test-assistant-ux.js
       - uses: actions/upload-artifact@v4
         if: always()
         with:

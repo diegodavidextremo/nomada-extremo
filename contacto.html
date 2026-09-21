@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
 <link rel="stylesheet" href="assets/css/faq-contact-premium.css?v=20260614-1">
-<link rel="stylesheet" href="assets/css/design-system.css?v=20260914-3">
+<link rel="stylesheet" href="assets/css/design-system.css?v=20260920-4">
 </head>
 <body>
 <div id="nav-placeholder"></div>
@@ -111,8 +111,8 @@
           <p>Cuéntanos qué experiencia te interesa, número de personas, fecha aproximada, nivel físico, experiencia previa y cualquier dato importante sobre salud, agua, altura, vértigo o movilidad.</p>
           <div><span>Nivel</span><span>Fecha</span><span>Personas</span><span>Actividad</span><span>Seguridad</span><span>Audiovisual</span></div>
         </aside>
-        <form action="https://formsubmit.co/diegodavidexplorer@gmail.com" method="POST" id="formContacto" style="background:var(--blanco);border:1px solid var(--crema-media);padding:2.5rem;border-radius:var(--radio);">
-          <h3 style="font-family:var(--display);font-size:1.3rem;letter-spacing:2px;color:var(--gris-oscuro);margin-bottom:1.5rem;">FORMULARIO DE CONTACTO</h3>
+        <form action="#formContacto" id="formContacto" style="background:var(--blanco);border:1px solid var(--crema-media);padding:2.5rem;border-radius:var(--radio);">
+          <h3 style="font-family:var(--display);font-size:1.3rem;letter-spacing:2px;color:var(--gris-oscuro);margin-bottom:1.5rem;">FORMULARIO DE DEMOSTRACIÓN</h3><p class="contact-demo-note" lang="es" translate="no">Este formulario no envía datos. Para contactar de verdad, usa los enlaces de WhatsApp o correo de esta página.</p>
           <div class="form-fila">
             <div class="form-grupo"><label for="contactName">Nombre *</label><input id="contactName" name="nombre" type="text" placeholder="Tu nombre" required></div>
             <div class="form-grupo"><label for="contactPhone">Teléfono</label><input id="contactPhone" name="telefono" type="tel" placeholder="+34 623 17 96 18"></div>
@@ -147,8 +147,8 @@
             <input type="checkbox" id="rgpdC" required style="width:auto;margin-top:3px;">
             <label for="rgpdC" style="text-transform:none;letter-spacing:0;font-size:0.72rem;color:var(--gris-calido);">Acepto la <a href="aviso-legal.html#privacidad" style="color:var(--mar);">política de privacidad</a>.</label>
           </div>
-          <button type="submit" class="btn btn-mar form-submit">ENVIAR MENSAJE</button>
-          <div id="contactMsg" style="display:none;margin-top:1rem;padding:0.8rem;background:rgba(45,90,61,0.1);border:1px solid var(--bosque-claro);border-radius:var(--radio);font-size:0.8rem;color:var(--bosque);text-align:center;">✓ Mensaje enviado. Te respondemos en menos de 24h.</div>
+          <button type="button" data-contact-demo class="btn btn-mar form-submit">PROBAR FORMULARIO</button>
+          <div id="contactMsg" style="display:none;margin-top:1rem;padding:0.8rem;background:rgba(45,90,61,0.1);border:1px solid var(--bosque-claro);border-radius:var(--radio);font-size:0.8rem;color:var(--bosque);text-align:center;">Simulación completada. No se ha enviado ningún mensaje.</div>
         </form>
       </div>
     </div>
@@ -192,7 +192,7 @@
           <div class="horario-item"><span class="horario-dia">Viernes</span><span class="horario-hora">8:00–21:00</span></div>
           <div class="horario-item"><span class="horario-dia">Sábado</span><span class="horario-hora">7:00–21:00</span></div>
           <div class="horario-item"><span class="horario-dia">Domingo</span><span class="horario-hora">7:00–20:00</span></div>
-          <div class="horario-item" style="background:rgba(196,150,106,0.1);"><span class="horario-dia" style="color:var(--arena);">WhatsApp</span><span class="horario-hora" style="color:var(--arena);">Siempre activo</span></div>
+          <div class="horario-item" style="background:rgba(196,150,106,0.1);"><span class="horario-dia" style="color:#62472c;">WhatsApp</span><span class="horario-hora" style="color:#62472c;">Siempre activo</span></div>
         </div>
         <div style="margin-top:2rem;padding:1.2rem;background:var(--cielo);border-radius:var(--radio);">
           <p style="font-size:0.78rem;color:var(--mar);line-height:1.75;">💡 <strong>Tiempo estimado de respuesta:</strong> objetivo de menos de 2 horas durante horario de atención. El email se atiende normalmente en menos de 24h laborables.</p>
@@ -204,9 +204,9 @@
 </section>
 
 <div id="footer-placeholder"></div>
-<script src="assets/js/components.js?v=20260914-3"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/chatbot.js?v=20260621-6"></script>
+<script src="assets/js/components.js?v=20260920-4"></script>
+<script src="assets/js/main.js?v=20260920-4"></script>
+<script src="assets/js/chatbot.js?v=20260920-4"></script>
 <script src="assets/js/stage3.js?v=20260914-3"></script>
 </body>
 </html>
