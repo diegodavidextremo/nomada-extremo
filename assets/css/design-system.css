@@ -210,3 +210,91 @@ body.chat-is-open #contactDock :is(#waFloat,#backToTop) { display:none; }
 }
 @media(max-height:500px) { #chatPanel { right:80px; bottom:8px; width:min(460px,calc(100vw - 96px)); height:calc(100dvh - 16px); max-height:calc(100dvh - 16px); } .chat-privacy { display:none; } #chatPanel .chat-header { padding:.35rem .7rem; } #chatPanel .chat-quick { min-height:32px; } }
 @media print { #contactDock,#chatPanel { display:none !important; } }
+
+/* September interface review: readable content and controls in document flow. */
+:root { --body:var(--sans); }
+body.defense-mode #contactDock,body.defense-mode #chatPanel { display:none !important; }
+.base-feature-grid { align-items:start; }
+.logbook-pro-grid .discipline-progress article :is(span,b) { color:#1e4a6b !important; font-size:.95rem; }
+.logbook-pro-grid { align-items:start; }
+.viajes-filter-details { margin:1.5rem 0; border:1px solid #cbd8de; border-radius:16px; background:#fff; }
+.viajes-filter-details > summary { padding:1rem 1.25rem; cursor:pointer; font-weight:700; color:#1e4a6b; }
+.viajes-filter-details .viajes-filter-shell { margin:0; box-shadow:none; }
+.viajes-notice { position:static !important; }
+body.modal-open { position:static !important; overflow:hidden; touch-action:auto; }
+.catalog-navigation { position:static; padding-block:1rem; }
+.catalog-navigation details { border-bottom:1px solid #cbd3d5; }
+.catalog-navigation summary { padding:.8rem 0; font-weight:700; color:#1e4a6b; cursor:pointer; }
+.catalog-links { display:flex; flex-wrap:wrap; gap:.5rem; padding:0 0 1rem; }
+.catalog-links a { padding:.6rem .9rem; border:1px solid #bdcbd1; border-radius:2rem; font-size:.9rem; }
+.activities-page .activities-filter-section { position:static !important; padding:1rem 0 !important; }
+.activities-page .activities-filter-section .grouped-filters { margin-top:0 !important; padding:1rem 1.25rem !important; border-radius:16px; box-shadow:none; }
+.activity-filter-tools { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-top:.6rem; }
+.activity-filter-tools .btn { width:auto !important; padding:.5rem .8rem; letter-spacing:.04em; }
+.filter-group-grid { gap:1rem; padding-top:1rem; }
+.filter-chip { min-height:40px; padding:.5rem .75rem; }
+.inline-whatsapp { display:inline-block; vertical-align:middle; margin-right:.5rem; border-radius:50%; }
+.process-card { display:flex; flex-direction:column; gap:.65rem; }
+.process-card p { line-height:1.8; font-size:.95rem; }
+.article-modal__panel { width:min(820px,calc(100vw - 24px)); padding:clamp(1.5rem,4vw,3.5rem); }
+#articleModalTitle { font-size:clamp(2rem,4vw,3.3rem) !important; line-height:1.12; max-width:19ch; margin:1rem 2rem 1.7rem 0; }
+#articleModalBody .texto { font-size:1.05rem; line-height:1.85; margin:0 0 1.5rem; color:#394a52; }
+#articleModalBody h3 { font-family:var(--body); font-size:1.2rem; font-weight:700; margin:1.8rem 0 .7rem; color:#1e4a6b; }
+#articleModalBody ul { list-style:disc; padding-left:1.3rem; margin:1rem 0 1.8rem; }
+#articleModalBody li { margin:.6rem 0; line-height:1.7; }
+.article-takeaway { background:#eef3f5; border-left:3px solid #1e4a6b; padding:1.2rem; margin:1.5rem 0; }
+.base-feature-grid,.base-card-grid,.base-phase-grid,.base-dual-grid,.base-timeline,.community-entry-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.25rem; margin-top:2rem; }
+.base-feature-grid > details,.base-card-grid > article,.base-phase-grid > article,.base-dual-grid > article,.base-timeline > article,.community-entry-grid > article { padding:1.6rem; background:#fff; color:#243e4b; border:1px solid #d9e0e2; border-radius:18px; }
+.base-feature-grid summary { font-size:1.1rem; font-weight:700; cursor:pointer; padding-bottom:.8rem; }
+.base-card-grid h3,.base-phase-grid h3,.base-dual-grid h3,.base-timeline h3,.community-entry-grid h3 { font-size:1.35rem; color:#1e4a6b !important; margin-bottom:.8rem; }
+.base-section p { line-height:1.85; }
+.base-feature-grid p,.base-card-grid p,.base-phase-grid p,.base-dual-grid p,.base-timeline p { color:#425963 !important; }
+.base-table-wrap { margin-top:2rem; overflow-x:auto; border-radius:16px; background:#fff; }
+.base-table-wrap table { width:100%; border-collapse:collapse; color:#243e4b !important; background:#fff; }
+.base-table-wrap th,.base-table-wrap td { color:#243e4b !important; padding:1.1rem 1.3rem; text-align:left; border-bottom:1px solid #d9e0e2; line-height:1.65; }
+.base-table-wrap th { background:#e9f0f3; font-weight:700; }
+.base-table-wrap td:first-child { font-weight:700; min-width:8rem; }
+.contact-channel-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; margin-top:2rem; }
+.contact-channel-grid .contact-card { border-radius:18px; padding:1.5rem; border:1px solid #cbd8de; background:#f7f9fa; display:flex; flex-direction:column; gap:.65rem; min-width:0; }
+.contact-channel-grid .contact-card:nth-child(-n+2) { background:#eaf2f6; border-top:4px solid #1e4a6b; }
+.contact-channel-grid .contact-card-valor { font-size:1rem; overflow-wrap:anywhere; }
+.contact-channel-grid .contact-card-info { font-size:.9rem; color:#4d606a; }
+.contact-channel-grid .contact-card-cta { margin-top:auto; padding-top:1rem; }
+.contact-card-icon img { border-radius:50%; }
+.logbook-pro-shell { display:grid !important; grid-template-columns:minmax(240px,.8fr) minmax(0,2fr) !important; gap:1.5rem; margin-top:2rem; align-items:start; }
+.logbook-pro-card { padding:1.8rem; border-radius:22px; background:#102c3c; color:#fff; }
+.logbook-pro-card h3 { color:#fff !important; font-size:2.4rem; line-height:1.15; margin:1.5rem 0 1rem; }
+.logbook-pro-top { display:flex; flex-wrap:wrap; gap:.7rem; }
+.logbook-pro-top span { font:700 1rem var(--body) !important; color:#f0d0a4 !important; letter-spacing:.06em; }
+.logbook-pro-card p,.logbook-pro-card span { color:#e5edf1; }
+.logbook-pro-grid { display:grid !important; grid-template-columns:repeat(2,minmax(0,1fr)) !important; gap:1rem; }
+.logbook-pro-grid > article:first-child { grid-row:span 3; }
+.logbook-pro-grid > article { padding:1.4rem; border:1px solid #d7e0e4; border-radius:18px; }
+.logbook-pro-grid h3 { font-size:1.5rem; margin-bottom:.7rem; }
+.logbook-pro-grid p { font-size:.95rem; line-height:1.75; }
+.logbook-pro-grid .discipline-progress { margin-top:1rem; display:grid; gap:1rem; }
+.logbook-pro-grid .discipline-progress article { background:#eef3f5; color:#1e4a6b; padding:.75rem; border-radius:10px; }
+.logbook-pro-grid .discipline-progress article div { display:flex; justify-content:space-between; gap:.5rem; }
+.logbook-pro-grid .discipline-progress i { display:block; height:7px; border-radius:4px; background:#d5dfe4; margin-top:.5rem; overflow:hidden; }
+.logbook-pro-grid .discipline-progress em { display:block; height:100%; background:#287499; }
+.logbook-pro-shell + .demo-inline-note { margin-top:1.5rem; }
+.summer-hero-grid,.summer-grid { display:grid !important; grid-template-columns:repeat(3,minmax(0,1fr)) !important; gap:1.25rem !important; margin-block:1.5rem; align-items:start; }
+.summer-grid > article,.summer-hero-grid > article { border-radius:18px; padding:1.25rem; min-width:0; }
+.summer-grid p,.summer-hero-grid p { font-size:.95rem !important; line-height:1.75; color:#e3edf2 !important; }
+.summer-grid img,.summer-hero-grid img { aspect-ratio:16/10; width:100%; object-fit:cover; }
+.verano-nomada .pack-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; }
+.verano-nomada .pack-grid > * { font-family:var(--body); letter-spacing:0; font-size:.95rem; line-height:1.7; border-radius:12px; padding:1rem; }
+.verano-nomada .pack-grid strong,.verano-nomada .pack-grid b { display:block; margin-bottom:.5rem; }
+.bg-noche > .container > .texto { color:#e0e8ed !important; }
+@media(max-width:900px) {
+ .contact-channel-grid,.summer-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+ .logbook-pro-shell { grid-template-columns:1fr !important; }
+}
+@media(max-width:600px) {
+ .base-feature-grid,.base-card-grid,.base-phase-grid,.base-dual-grid,.base-timeline,.community-entry-grid,.contact-channel-grid,.summer-grid,.summer-hero-grid,.verano-nomada .pack-grid,.logbook-pro-grid { grid-template-columns:1fr !important; }
+ .filter-summary-meta { display:none; }
+ .activity-filter-count { font-size:.85rem; }
+ .base-table-wrap th,.base-table-wrap td { padding:.8rem; font-size:.85rem; }
+ .article-modal__panel { padding:1.5rem; }
+ .logbook-pro-grid > article:first-child { grid-row:auto; }
+}

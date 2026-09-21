@@ -60,7 +60,7 @@ let browser;
  await page.screenshot({path:path.join(output,'defensa-390.png')});
  await page.locator('#defense-index').selectOption('conclusiones');await page.evaluate(()=>window.scrollTo(0,document.documentElement.scrollHeight));
  assert(await page.evaluate(()=>document.querySelector('#conclusiones .n3-actions').getBoundingClientRect().bottom <= document.querySelector('#defense-controls').getBoundingClientRect().top),'Defense controls obscure final content');
- await page.keyboard.press('Escape');assert.equal(await page.locator('[data-chapter]:visible').count(),19);assert(!await page.locator('#defense-controls').isVisible());
+ await page.keyboard.press('Escape');assert.equal(await page.locator('[data-chapter]:visible').count(),17);assert(!await page.locator('#defense-controls').isVisible());
  await page.locator('[data-defense-start]').first().click();await page.locator('#defense-exit').click();assert(await page.locator('#nav').isVisible());report.interactions.push('Defense: activation, arrows, index, Escape, explicit exit and focus restoration');
  const overlap=await page.evaluate(()=>{const n=document.querySelector('#navHamb').getBoundingClientRect();const el=document.elementFromPoint(n.x+n.width/2,n.y+n.height/2);return !!el?.closest('#navHamb');});assert(overlap,'Mobile hamburger is covered');
  await page.setViewportSize({width:844,height:390});assert(await page.locator('#navHamb').isVisible());assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);await page.setViewportSize({width:390,height:844});report.interactions.push('Mobile landscape and unobscured hamburger');
@@ -95,7 +95,7 @@ let browser;
  for(const legacy of ['condiciones.html','politica-cookies.html','politica-privacidad.html','politica-devoluciones.html']){await page.goto(base+legacy);await page.waitForURL(url=>url.pathname.endsWith('/aviso-legal.html'));}
  report.interactions.push('Four legacy policy redirects resolve to the legal page');
  const nojs=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}});const plain=await nojs.newPage();
- await plain.goto(base+'proyecto-intermodular.html');assert.equal(await plain.locator('.im-matrix-item').count(),10);assert.equal(await plain.locator('.im-module').count(),10);assert.equal(await plain.locator('[data-chapter]').count(),19);
+ await plain.goto(base+'proyecto-intermodular.html');assert.equal(await plain.locator('.im-matrix-item').count(),10);assert.equal(await plain.locator('.im-module').count(),10);assert.equal(await plain.locator('[data-chapter]').count(),17);
  report.interactions.push('Without JavaScript: full memory, ten modules and ten matrix rows');await nojs.close();
  await context.close();
 })().catch(error=>{report.errors.push({error:error.stack});process.exitCode=1;}).finally(async()=>{

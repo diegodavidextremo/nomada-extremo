@@ -31,6 +31,7 @@ jobs:
           "$RUNNER_TEMP/nomada-qa/node_modules/.bin/playwright" install --with-deps chromium
       - run: node tools/browser-stage3.js
       - run: node tools/test-assistant-ux.js
+      - run: node tools/test-interface-review.js
       - uses: actions/upload-artifact@v4
         if: always()
         with:

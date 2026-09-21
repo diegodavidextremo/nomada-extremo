@@ -134,7 +134,7 @@
 
   if (!document.querySelector('script[data-noext-i18n]')) {
     const languageScript = document.createElement('script');
-    languageScript.src = 'assets/js/i18n.js?v=20260914-3';
+    languageScript.src = 'assets/js/i18n.js?v=20260921-1';
     languageScript.dataset.noextI18n = 'runtime';
     document.head.appendChild(languageScript);
   }
@@ -149,7 +149,7 @@
 
   if (!document.querySelector('script[data-noext-global-search]')) {
     const searchScript = document.createElement('script');
-    searchScript.src = 'assets/js/global-search.js?v=20260914-3';
+    searchScript.src = 'assets/js/global-search.js?v=20260921-1';
     searchScript.defer = true;
     searchScript.dataset.noextGlobalSearch = 'runtime';
     document.body.appendChild(searchScript);

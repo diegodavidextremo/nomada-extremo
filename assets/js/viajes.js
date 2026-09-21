@@ -162,12 +162,12 @@
   };
 
   const calendar = [
-    ['Enero-Febrero', 'Canarias, Costa Blanca, El Chorro, Red Sea, Dubái, senderismo suave, escalada de invierno, buceo de invierno y formación.'],
-    ['Marzo-Abril', 'Costa Blanca, El Chorro, Cabo de Gata, Madeira, Red Sea, escalada, senderismo, vía ferrata y barrancos según caudal.'],
-    ['Mayo-Junio', 'Águilas, Cabo de Gata, Cabo de Palos, Sierra de Guara, Azores, kayak, snorkel, buceo, barranquismo, coasteering y cliff jumping controlado.'],
-    ['Julio-Agosto', 'Águilas, Cabo de Gata, Cabo de Palos, Sierra de Guara, Empuriabrava, acuáticas, paracaidismo, barranquismo acuático y snorkel. Evitar horas fuertes de calor.'],
-    ['Septiembre-Octubre', 'Ventana global potente: buceo, Cabo de Palos, Cabo de Gata, escalada, barranquismo, Madeira, Red Sea, rutas costeras y viajes europeos.'],
-    ['Noviembre-Diciembre', 'Canarias, Costa Blanca, El Chorro, Dubái, Red Sea, senderismo, escalada, rutas suaves, experiencias internacionales y planificación del año siguiente.']
+    ['Enero-Febrero', 'Canarias, Costa Blanca (Alicante), El Chorro (Málaga), Mar Rojo (Egipto), Dubái, senderismo suave, escalada de invierno, buceo de invierno y formación.'],
+    ['Marzo-Abril', 'Costa Blanca (Alicante), El Chorro (Málaga), Cabo de Gata (Almería), Madeira (Portugal), Mar Rojo (Egipto), escalada, senderismo, vía ferrata y barrancos según caudal.'],
+    ['Mayo-Junio', 'Águilas, Cabo de Gata (Almería), Cabo de Palos (Murcia), Sierra de Guara, Azores, kayak, snorkel, buceo, barranquismo, coasteering y cliff jumping controlado.'],
+    ['Julio-Agosto', 'Águilas, Cabo de Gata (Almería), Cabo de Palos (Murcia), Sierra de Guara, Empuriabrava, acuáticas, paracaidismo, barranquismo acuático y snorkel. Evitar horas fuertes de calor.'],
+    ['Septiembre-Octubre', 'Ventana global potente: buceo, Cabo de Palos (Murcia), Cabo de Gata (Almería), escalada, barranquismo, Madeira (Portugal), Mar Rojo (Egipto), rutas costeras y viajes europeos.'],
+    ['Noviembre-Diciembre', 'Canarias, Costa Blanca (Alicante), El Chorro (Málaga), Dubái, Mar Rojo (Egipto), senderismo, escalada, rutas suaves, experiencias internacionales y planificación del año siguiente.']
   ];
 
   const calendarLocales = {
@@ -230,7 +230,7 @@
     d('Dolomitas / Cortina d’Ampezzo','Italia','junio-septiembre',['vía ferrata','trekking','escalada','fotografía/vídeo'],['intermedio','avanzado','experto'],'1 semana','Ferratas históricas, refugios, roca alpina y paisaje de montaña muy técnico.','Nieve residual, tormentas, refugios, exposición, experiencia previa y guía cualificado.','inspiración futura','brutal',['Europa'],['montaña','vertical']),
     d('Kalymnos / Grecia','Grecia','abril-mayo · septiembre-noviembre',['escalada','snorkel','fotografía/vídeo'],['iniciación','intermedio','avanzado'],'1 semana','Escalada deportiva mediterránea, viaje de roca, mar y comunidad internacional.','Calor, sectores, grados, seguros, accesos, caídas y respeto al entorno.','inspiración futura','alto',['Europa'],['vertical','mar']),
     d('Azores / Portugal','Portugal','abril-octubre',['buceo','snorkel','senderismo','barranquismo','fotografía/vídeo'],['iniciación','intermedio','avanzado'],'1 semana','Islas verdes, océano, cetáceos, volcanes y aventura natural de alto valor.','Meteo atlántica, mar, proveedores, reservas, permisos y protección de fauna.','inspiración futura','brutal',['Europa'],['mar','montaña','mixto']),
-    d('Red Sea · Sharm el-Sheikh, Dahab, Marsa Alam','Egipto','marzo-mayo · septiembre-noviembre',['buceo','snorkel','fotografía/vídeo'],['iniciación','intermedio','avanzado'],'1 semana','Agua clara, arrecifes, freediving, buceo y fotografía submarina de primer nivel.','Calor, centro autorizado, salud, profundidad, seguros, vuelos tras inmersión y normativa local.','inspiración futura','brutal',['internacional'],['mar']),
+    d('Mar Rojo · Sharm el-Sheikh, Dahab, Marsa Alam','Egipto','marzo-mayo · septiembre-noviembre',['buceo','snorkel','fotografía/vídeo'],['iniciación','intermedio','avanzado'],'1 semana','Agua clara, arrecifes, freediving, buceo y fotografía submarina de primer nivel.','Calor, centro autorizado, salud, profundidad, seguros, vuelos tras inmersión y normativa local.','inspiración futura','brutal',['internacional'],['mar']),
     d('Dubái / Emiratos Árabes','Emiratos Árabes','noviembre-marzo',['paracaidismo','fotografía/vídeo'],['iniciación','avanzado'],'3-5 días','Aventura premium, salto sobre Palm Jumeirah, desierto y contenido audiovisual extremo.','Calor, proveedor autorizado, documentación, peso, meteo, normativa y coste.','inspiración futura','brutal',['internacional'],['aire','mixto']),
     d('Queenstown / Nueva Zelanda','Nueva Zelanda','noviembre-marzo · invierno para nieve',['puenting','paracaidismo','barranquismo','parapente','fotografía/vídeo'],['iniciación','intermedio','avanzado','experto'],'gran viaje','Capital aspiracional de aventura: bungy, swing, rafting, jet boat, aire y montaña.','Viaje largo, seguros, proveedores, meteo, salud, permisos y planificación por días.','inspiración futura','brutal',['internacional'],['aire','montaña','mixto']),
     d('Marruecos / Atlas y costa atlántica','Marruecos','marzo-mayo · septiembre-noviembre',['trekking','surf','senderismo','fotografía/vídeo'],['iniciación','intermedio','avanzado'],'1 semana','Aventura cercana desde España: Atlas, desierto, costa, cultura y fotografía.','Calor, guías locales, permisos, logística, hidratación, seguros y respeto cultural.','inspiración futura','alto',['internacional'],['montaña','mar','mixto'])

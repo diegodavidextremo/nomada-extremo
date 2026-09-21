@@ -22,7 +22,7 @@
   const selected=new Map();
   const groups=[...panel.querySelectorAll('.filter-group')];
   groups.forEach((group,index)=>{
-    const key=Object.keys(dimNames)[index]||dimNames[norm(group.querySelector('strong')?.textContent)]; if(!key)return;
+    const key=dimNames[norm(group.querySelector('strong')?.textContent)]; if(!key)return;
     selected.set(key,new Set());
     group.querySelectorAll('.filter-chip').forEach(chip=>{
       chip.setAttribute('role','button'); chip.setAttribute('tabindex','0'); chip.setAttribute('aria-pressed','false'); chip.dataset.filterDimension=key; chip.dataset.filterValue=norm(chip.textContent);
@@ -41,5 +41,10 @@
   function apply(){visibleCount=0;cards.forEach(card=>{const show=[...selected].every(([k,v])=>matches(card,k,v));if(show){card.hidden=false;card.classList.remove('filtering-out');card.classList.add('filtering-in');window.setTimeout(()=>card.classList.remove('filtering-in'),260);visibleCount++;}else{card.classList.remove('filtering-in');card.classList.add('filtering-out');window.setTimeout(()=>{if(card.classList.contains('filtering-out'))card.hidden=true;},190);}});empty.hidden=visibleCount!==0;updateLabels();}
   tools.querySelector('button').addEventListener('click',()=>{selected.forEach(s=>s.clear());panel.querySelectorAll('.filter-chip').forEach(c=>{c.classList.remove('is-active');c.setAttribute('aria-pressed','false');});apply();});
   window.addEventListener('noext:languagechange',updateLabels);
+  const sections=[...new Set(cards.map(card=>card.closest('section')).filter(Boolean))];
+  const updateSections=()=>sections.forEach(section=>{section.hidden=!cards.some(card=>card.closest('section')===section&&[...selected].every(([key,values])=>matches(card,key,values)));});
+  panel.addEventListener('click',updateSections);
+  panel.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' ')updateSections();});
+  document.querySelectorAll('.catalog-navigation a').forEach(link=>link.addEventListener('click',()=>{document.querySelector('.catalog-navigation details').open=false;}));
   apply();
 })();

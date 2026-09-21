@@ -196,7 +196,7 @@
 ];
 
   const searchItems = [
-    ['2.º GMN','Aprender','Curso activo 2026-2027, matrícula, profesorado y bitácora.','segundo-gmn.html','GM2','segundo 2026 2027 profesores matrícula'],
+    ['2.º GMN','Aprender','Curso activo 2026-2027, matrícula y profesorado.','segundo-gmn.html','GM2','segundo 2026 2027 profesores matrícula'],
     ['Inicio','Marca','Portada y visión general del proyecto.','index.html','IN','portada home aventura'],
     ['Actividades','Experiencias','Catálogo por medio, nivel, territorio y formato.','actividades.html','EX','deportes catálogo mar montaña aire vertical'],
     ['Guía de actividades','Experiencias','Comparativas y criterios para elegir cada experiencia.','guia-actividades.html','GU','comparar puenting snorkel trekking'],
