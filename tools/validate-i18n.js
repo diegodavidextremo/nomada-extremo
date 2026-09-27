@@ -92,7 +92,7 @@ const languages = ['en', 'fr', 'de', 'it', 'pt'];
     failures: results.filter(item => item.language !== item.requestedLanguage || item.missingCount || item.overflow || item.consoleErrors.length || item.modalVisible === false || item.modalComplete === false),
     results
   };
-  fs.writeFileSync(path.join(root, 'i18n', 'validation-report.json'), JSON.stringify(report, null, 2), 'utf8');
+  fs.writeFileSync(process.env.NOEXT_I18N_REPORT || path.join(root, 'i18n', 'validation-report.json'), JSON.stringify(report, null, 2), 'utf8');
   console.log(JSON.stringify({ checks: results.length, failures: report.failures.length }));
   if (report.failures.length) process.exitCode = 1;
 })().catch(error => {

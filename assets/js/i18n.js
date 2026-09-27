@@ -3,10 +3,11 @@
 
   const supported = ['es', 'en', 'fr', 'de', 'it', 'pt'];
   const storageKey = 'noext-language';
-  const catalogVersion = '20260921-1';
+  const catalogVersion = '20260927-1';
   const page = (location.pathname.split('/').pop() || 'index.html').replace('.html', '') || 'index';
   const ignoredTags = new Set(['SCRIPT', 'STYLE', 'NOSCRIPT', 'TEMPLATE', 'CODE', 'PRE']);
   const originalText = new WeakMap();
+  const initialTextNodes = new WeakSet();
   const originalAttributes = new WeakMap();
   const missingWarnings = new Set();
   const dictionaries = new Map();
@@ -125,6 +126,7 @@
 
     textNodes.forEach(node => {
       if (!node.parentElement || ignoredTags.has(node.parentElement.tagName) || node.parentElement.closest('[data-i18n],[translate="no"],[data-no-translate]')) return;
+      if (!observer) initialTextNodes.add(node);
       if (!originalText.has(node)) originalText.set(node, node.nodeValue);
       const raw = originalText.get(node);
       const source = normalize(raw);
@@ -233,11 +235,14 @@
     let node;
     while ((node = walker.nextNode())) {
       if (!node.parentElement || ignoredTags.has(node.parentElement.tagName) || node.parentElement.closest('[data-i18n],[translate="no"],[data-no-translate]')) continue;
+      if (!initialTextNodes.has(node)) continue;
       const style = getComputedStyle(node.parentElement);
       if (style.display === 'none' || style.visibility === 'hidden') continue;
       const source = normalize(originalText.get(node) ?? node.nodeValue);
       if (!source) continue;
-      if (fallback.strings?.[source] === undefined || (current !== 'es' && dictionary.strings?.[source] === undefined)) {
+      // Other scripts render some widgets directly in the chosen language.
+      // Audit only text with a Spanish source key in the shared catalogue.
+      if (fallback.strings?.[source] !== undefined && current !== 'es' && dictionary.strings?.[source] === undefined) {
         missing.push({ text: source, element: node.parentElement.tagName.toLowerCase(), page: location.pathname.split('/').pop() || 'index.html' });
       }
     }

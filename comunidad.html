@@ -22,7 +22,7 @@
     <nav class="breadcrumb"><ul><li><a href="index.html">Inicio</a></li><li>Logbook, Comunidad y App</li></ul></nav>
     <span class="label label-blanco" style="display:block;margin-top:1.5rem;">El ecosistema digital de Nómada Extremo</span>
     <h1 class="titulo" style="font-size:clamp(3rem,9vw,7rem);color:var(--blanco);">LOGBOOK,<br><span style="color:var(--arena-claro);">COMUNIDAD & APP</span></h1>
-    <p style="font-family:var(--serif);font-style:italic;font-size:1.2rem;color:rgba(245,242,236,0.85);max-width:760px;margin-top:1rem;line-height:1.8;">Tu ecosistema Nómada: registra aventuras, desbloquea retos, gana insignias, activa cupones, sigue al creador y sube de nivel dentro de la comunidad.</p>
+    <p style="font-family:var(--serif);font-style:italic;font-size:1.2rem;color:rgba(245,242,236,0.85);max-width:760px;margin-top:1rem;line-height:1.8;">El Club Nómada Extremo es la comunidad prevista para conectar experiencias, recuerdos y próximos retos. El logbook, las insignias y los cupones muestran cómo funcionaría dentro del modelo de empresa.</p>
     <div class="hero-ecosystem-actions">
       <a href="logbook.html" class="btn btn-arena">Ver Logbook Digital</a>
       <a href="#retos-premios" class="btn btn-mar">Ver retos</a>
@@ -83,7 +83,8 @@
         <span>Código</span>
         <strong>DIEGODAVIDEXTREMO</strong>
         <em>28% descuento</em>
-        <div class="coupon-actions"><a href="#condiciones-cupones">Ver condiciones</a><a href="#">Aplicar cupón</a></div>
+        <div class="coupon-actions"><a href="#condiciones-cupones">Ver condiciones</a><button type="button" id="simular-cupon">Simular aplicación</button></div>
+        <p id="resultado-cupon" role="status" hidden>Simulación completada: el descuento del 28 % se aplicaría tras comprobar las condiciones en una versión operativa. No se ha generado compra ni reserva.</p>
       </div>
     </div>
     <div class="demo-disclaimer">En una versión real, el envío de capturas implicaría tratamiento de datos personales. Se solicitaría únicamente la información necesaria, con consentimiento, finalidad clara y política de privacidad actualizada. En esta web se muestra como simulación académica.</div>
@@ -543,5 +544,11 @@
 <script src="assets/js/main.js?v=20260921-1"></script>
 <script src="assets/js/chatbot.js?v=20260920-4"></script>
 <script src="assets/js/stage3.js?v=20260914-3"></script>
+<script>
+document.getElementById('simular-cupon')?.addEventListener('click', () => {
+  const result = document.getElementById('resultado-cupon');
+  result.hidden = false;
+});
+</script>
 </body>
 </html>

@@ -38,14 +38,14 @@
         <div class="contact-card-icon"><img src="assets/images/whatsapp.webp" alt="" width="40" height="40"></div>
         <div class="contact-card-tipo">WhatsApp</div>
         <div class="contact-card-valor">+34 623 17 96 18</div>
-        <div class="contact-card-info">Objetivo: menos de 2h</div>
+        <div class="contact-card-info">Objetivo del plan: respuesta en menos de 2 h</div>
         <div class="contact-card-cta">Escribir ahora →</div>
       </a>
       <a href="mailto:nomadaextremoaguilas@gmail.com" class="contact-card reveal" style="text-decoration:none;">
         <div class="contact-card-icon"><img src="assets/images/contact/gmail.png" alt="" width="40" height="40"></div>
         <div class="contact-card-tipo">Email</div>
         <div class="contact-card-valor">nomadaextremoaguilas@gmail.com</div>
-        <div class="contact-card-info">Respuesta en 24h laborables</div>
+        <div class="contact-card-info">Objetivo del plan: 24 h laborables</div>
         <div class="contact-card-cta">Enviar email →</div>
       </a>
       <a href="https://t.me/DiegoDavidExtremo" target="_blank" rel="noopener noreferrer" class="contact-card reveal" style="text-decoration:none;">
@@ -69,20 +69,20 @@
         <div class="contact-card-info">Avisos, novedades y publicaciones breves del proyecto.</div>
         <div class="contact-card-cta">Seguir en X →</div>
       </a>
-      <div class="contact-card reveal">
+      <a class="contact-card reveal" href="#ubicacion-y-horarios" style="text-decoration:none;">
         <div class="contact-card-icon"><img src="assets/images/contact/maps.png" alt="" width="40" height="40"></div>
-        <div class="contact-card-tipo">Base operativa</div>
+        <div class="contact-card-tipo">Base operativa prevista</div>
         <div class="contact-card-valor">Águilas, Murcia</div>
-        <div class="contact-card-info">Sureste mediterráneo · España</div>
+        <div class="contact-card-info">Ubicación de referencia del plan de empresa</div>
         <div class="contact-card-cta">Ver ubicación ↓</div>
-      </div>
-      <div class="contact-card reveal">
+      </a>
+      <a class="contact-card reveal" href="#ubicacion-y-horarios" style="text-decoration:none;">
         <div class="contact-card-icon"><img src="assets/images/contact/reloj.png" alt="" width="40" height="40"></div>
         <div class="contact-card-tipo">Atención</div>
         <div class="contact-card-valor">Lun–Dom</div>
-        <div class="contact-card-info">8:00 – 21:00 h</div>
-        <div class="contact-card-cta">Consultar disponibilidad</div>
-      </div>
+        <div class="contact-card-info">Horario previsto en el plan de empresa</div>
+        <div class="contact-card-cta">Ver horario ↓</div>
+      </a>
     </div>
   </div>
 </section>
@@ -112,7 +112,7 @@
           <div><span>Nivel</span><span>Fecha</span><span>Personas</span><span>Actividad</span><span>Seguridad</span><span>Audiovisual</span></div>
         </aside>
         <form action="#formContacto" id="formContacto" style="background:var(--blanco);border:1px solid var(--crema-media);padding:2.5rem;border-radius:var(--radio);">
-          <h3 style="font-family:var(--display);font-size:1.3rem;letter-spacing:2px;color:var(--gris-oscuro);margin-bottom:1.5rem;">FORMULARIO DE DEMOSTRACIÓN</h3><p class="contact-demo-note" lang="es" translate="no">Este formulario no envía datos. Para contactar de verdad, usa los enlaces de WhatsApp o correo de esta página.</p>
+          <h3 style="font-family:var(--display);font-size:1.3rem;letter-spacing:2px;color:var(--gris-oscuro);margin-bottom:1.5rem;">FORMULARIO DE DEMOSTRACIÓN</h3><p class="contact-demo-note">Este formulario no envía datos. Para contactar de verdad, usa los enlaces de WhatsApp o correo de esta página.</p>
           <div class="form-fila">
             <div class="form-grupo"><label for="contactName">Nombre *</label><input id="contactName" name="nombre" type="text" placeholder="Tu nombre" required></div>
             <div class="form-grupo"><label for="contactPhone">Teléfono</label><input id="contactPhone" name="telefono" type="tel" placeholder="+34 623 17 96 18"></div>
@@ -167,6 +167,7 @@
 </section>
 
 <!-- MAPA Y HORARIOS -->
+<div id="ubicacion-y-horarios"></div>
 <section class="bg-blanco">
   <div class="container">
     <div class="grid-2" style="gap:3rem;align-items:start;">
@@ -182,7 +183,7 @@
         <p style="font-size:0.78rem;color:var(--gris-calido);margin-top:1rem;line-height:1.75;">Nómada Extremo no está operativo actualmente. Las localizaciones son aproximadas y demostrativas para el proyecto académico.</p>
       </div>
       <div>
-        <span class="label">Horarios de atención</span>
+        <span class="label">Horario de atención previsto</span>
         <h3 style="font-family:var(--display);font-size:2rem;letter-spacing:2px;color:var(--gris-oscuro);margin-bottom:1.5rem;">DISPONIBLES<br><span style="color:var(--mar);">TODA LA SEMANA</span></h3>
         <div class="horario-grid">
           <div class="horario-item"><span class="horario-dia">Lunes</span><span class="horario-hora">8:00–21:00</span></div>
@@ -192,10 +193,10 @@
           <div class="horario-item"><span class="horario-dia">Viernes</span><span class="horario-hora">8:00–21:00</span></div>
           <div class="horario-item"><span class="horario-dia">Sábado</span><span class="horario-hora">7:00–21:00</span></div>
           <div class="horario-item"><span class="horario-dia">Domingo</span><span class="horario-hora">7:00–20:00</span></div>
-          <div class="horario-item" style="background:rgba(196,150,106,0.1);"><span class="horario-dia" style="color:#62472c;">WhatsApp</span><span class="horario-hora" style="color:#62472c;">Siempre activo</span></div>
+          <div class="horario-item" style="background:rgba(196,150,106,0.1);"><span class="horario-dia" style="color:#62472c;">WhatsApp</span><span class="horario-hora" style="color:#62472c;">Canal de consulta</span></div>
         </div>
         <div style="margin-top:2rem;padding:1.2rem;background:var(--cielo);border-radius:var(--radio);">
-          <p style="font-size:0.78rem;color:var(--mar);line-height:1.75;">💡 <strong>Tiempo estimado de respuesta:</strong> objetivo de menos de 2 horas durante horario de atención. El email se atiende normalmente en menos de 24h laborables.</p>
+          <p style="font-size:0.78rem;color:var(--mar);line-height:1.75;">💡 <strong>Objetivo del plan operativo:</strong> responder por WhatsApp en menos de 2 horas durante el horario previsto y al correo en 24 horas laborables. Son metas para la empresa proyectada, no plazos garantizados actualmente.</p>
         </div>
         <a href="https://wa.me/34623179618" class="btn btn-arena" style="margin-top:1.5rem;display:inline-flex;align-items:center;gap:0.5rem;" target="_blank">WA Escribir por WhatsApp ahora</a>
       </div>

@@ -162,54 +162,54 @@
   };
 
   const calendar = [
-    ['Enero-Febrero', 'Canarias, Costa Blanca (Alicante), El Chorro (Málaga), Mar Rojo (Egipto), Dubái, senderismo suave, escalada de invierno, buceo de invierno y formación.'],
-    ['Marzo-Abril', 'Costa Blanca (Alicante), El Chorro (Málaga), Cabo de Gata (Almería), Madeira (Portugal), Mar Rojo (Egipto), escalada, senderismo, vía ferrata y barrancos según caudal.'],
+    ['Enero-Febrero', 'Canarias, Costa Blanca (Alicante), El Chorro (Álora, Málaga), Mar Rojo (Egipto), Dubái, senderismo suave, escalada de invierno, buceo de invierno y formación.'],
+    ['Marzo-Abril', 'Costa Blanca (Alicante), El Chorro (Álora, Málaga), Cabo de Gata (Almería), Madeira (Portugal), Mar Rojo (Egipto), escalada, senderismo, vía ferrata y barrancos según caudal.'],
     ['Mayo-Junio', 'Águilas, Cabo de Gata (Almería), Cabo de Palos (Murcia), Sierra de Guara, Azores, kayak, snorkel, buceo, barranquismo, coasteering y cliff jumping controlado.'],
     ['Julio-Agosto', 'Águilas, Cabo de Gata (Almería), Cabo de Palos (Murcia), Sierra de Guara, Empuriabrava, acuáticas, paracaidismo, barranquismo acuático y snorkel. Evitar horas fuertes de calor.'],
     ['Septiembre-Octubre', 'Ventana global potente: buceo, Cabo de Palos (Murcia), Cabo de Gata (Almería), escalada, barranquismo, Madeira (Portugal), Mar Rojo (Egipto), rutas costeras y viajes europeos.'],
-    ['Noviembre-Diciembre', 'Canarias, Costa Blanca (Alicante), El Chorro (Málaga), Dubái, Mar Rojo (Egipto), senderismo, escalada, rutas suaves, experiencias internacionales y planificación del año siguiente.']
+    ['Noviembre-Diciembre', 'Canarias, Costa Blanca (Alicante), El Chorro (Álora, Málaga), Dubái, Mar Rojo (Egipto), senderismo, escalada, rutas suaves, experiencias internacionales y planificación del año siguiente.']
   ];
 
   const calendarLocales = {
     en: [
-      ['January-February', 'Canary Islands, Costa Blanca, El Chorro, Red Sea, Dubai, easy hiking, winter climbing, winter diving and training.'],
-      ['March-April', 'Costa Blanca, El Chorro, Cabo de Gata, Madeira, Red Sea, climbing, hiking, via ferrata and canyoning depending on water flow.'],
+      ['January-February', 'Canary Islands, Costa Blanca, El Chorro (Álora, Málaga), Red Sea, Dubai, easy hiking, winter climbing, winter diving and training.'],
+      ['March-April', 'Costa Blanca, El Chorro (Álora, Málaga), Cabo de Gata, Madeira, Red Sea, climbing, hiking, via ferrata and canyoning depending on water flow.'],
       ['May-June', 'Águilas, Cabo de Gata, Cabo de Palos, Sierra de Guara, Azores, kayak, snorkel, diving, canyoning, coasteering and controlled cliff jumping.'],
       ['July-August', 'Águilas, Cabo de Gata, Cabo de Palos, Sierra de Guara, Empuriabrava, water activities, skydiving, aquatic canyoning and snorkel. Avoid peak heat hours.'],
       ['September-October', 'Powerful global window: diving, Cabo de Palos, Cabo de Gata, climbing, canyoning, Madeira, Red Sea, coastal routes and European trips.'],
-      ['November-December', 'Canary Islands, Costa Blanca, El Chorro, Dubai, Red Sea, hiking, climbing, easy routes, international experiences and next-year planning.']
+      ['November-December', 'Canary Islands, Costa Blanca, El Chorro (Álora, Málaga), Dubai, Red Sea, hiking, climbing, easy routes, international experiences and next-year planning.']
     ],
     fr: [
-      ['Janvier-février', 'Canaries, Costa Blanca, El Chorro, mer Rouge, Dubaï, randonnée douce, escalade hivernale, plongée d’hiver et formation.'],
-      ['Mars-avril', 'Costa Blanca, El Chorro, Cabo de Gata, Madère, mer Rouge, escalade, randonnée, via ferrata et canyoning selon le débit.'],
+      ['Janvier-février', 'Canaries, Costa Blanca, El Chorro (Álora, Málaga), mer Rouge, Dubaï, randonnée douce, escalade hivernale, plongée d’hiver et formation.'],
+      ['Mars-avril', 'Costa Blanca, El Chorro (Álora, Málaga), Cabo de Gata, Madère, mer Rouge, escalade, randonnée, via ferrata et canyoning selon le débit.'],
       ['Mai-juin', 'Águilas, Cabo de Gata, Cabo de Palos, Sierra de Guara, Açores, kayak, snorkeling, plongée, canyoning, coasteering et cliff jumping contrôlé.'],
       ['Juillet-août', 'Águilas, Cabo de Gata, Cabo de Palos, Sierra de Guara, Empuriabrava, activités aquatiques, parachutisme, canyoning aquatique et snorkeling. Éviter les heures de forte chaleur.'],
       ['Septembre-octobre', 'Grande fenêtre globale : plongée, Cabo de Palos, Cabo de Gata, escalade, canyoning, Madère, mer Rouge, routes côtières et voyages européens.'],
-      ['Novembre-décembre', 'Canaries, Costa Blanca, El Chorro, Dubaï, mer Rouge, randonnée, escalade, routes douces, expériences internationales et planification de l’année suivante.']
+      ['Novembre-décembre', 'Canaries, Costa Blanca, El Chorro (Álora, Málaga), Dubaï, mer Rouge, randonnée, escalade, routes douces, expériences internationales et planification de l’année suivante.']
     ],
     de: [
-      ['Januar-Februar', 'Kanarische Inseln, Costa Blanca, El Chorro, Rotes Meer, Dubai, leichte Wanderungen, Winterklettern, Wintertauchen und Ausbildung.'],
-      ['März-April', 'Costa Blanca, El Chorro, Cabo de Gata, Madeira, Rotes Meer, Klettern, Wandern, Klettersteig und Canyoning je nach Wasserstand.'],
+      ['Januar-Februar', 'Kanarische Inseln, Costa Blanca, El Chorro (Álora, Málaga), Rotes Meer, Dubai, leichte Wanderungen, Winterklettern, Wintertauchen und Ausbildung.'],
+      ['März-April', 'Costa Blanca, El Chorro (Álora, Málaga), Cabo de Gata, Madeira, Rotes Meer, Klettern, Wandern, Klettersteig und Canyoning je nach Wasserstand.'],
       ['Mai-Juni', 'Águilas, Cabo de Gata, Cabo de Palos, Sierra de Guara, Azoren, Kajak, Schnorcheln, Tauchen, Canyoning, Coasteering und kontrolliertes Cliff Jumping.'],
       ['Juli-August', 'Águilas, Cabo de Gata, Cabo de Palos, Sierra de Guara, Empuriabrava, Wasseraktivitäten, Fallschirmspringen, Wasser-Canyoning und Schnorcheln. Starke Hitze meiden.'],
       ['September-Oktober', 'Starkes globales Zeitfenster: Tauchen, Cabo de Palos, Cabo de Gata, Klettern, Canyoning, Madeira, Rotes Meer, Küstenrouten und Europareisen.'],
-      ['November-Dezember', 'Kanarische Inseln, Costa Blanca, El Chorro, Dubai, Rotes Meer, Wandern, Klettern, leichte Routen, internationale Erlebnisse und Planung fürs nächste Jahr.']
+      ['November-Dezember', 'Kanarische Inseln, Costa Blanca, El Chorro (Álora, Málaga), Dubai, Rotes Meer, Wandern, Klettern, leichte Routen, internationale Erlebnisse und Planung fürs nächste Jahr.']
     ],
     it: [
-      ['Gennaio-febbraio', 'Canarie, Costa Blanca, El Chorro, Mar Rosso, Dubai, trekking leggero, arrampicata invernale, immersioni invernali e formazione.'],
-      ['Marzo-aprile', 'Costa Blanca, El Chorro, Cabo de Gata, Madeira, Mar Rosso, arrampicata, trekking, via ferrata e canyoning secondo portata.'],
+      ['Gennaio-febbraio', 'Canarie, Costa Blanca, El Chorro (Álora, Málaga), Mar Rosso, Dubai, trekking leggero, arrampicata invernale, immersioni invernali e formazione.'],
+      ['Marzo-aprile', 'Costa Blanca, El Chorro (Álora, Málaga), Cabo de Gata, Madeira, Mar Rosso, arrampicata, trekking, via ferrata e canyoning secondo portata.'],
       ['Maggio-giugno', 'Águilas, Cabo de Gata, Cabo de Palos, Sierra de Guara, Azzorre, kayak, snorkel, immersioni, canyoning, coasteering e cliff jumping controllato.'],
       ['Luglio-agosto', 'Águilas, Cabo de Gata, Cabo de Palos, Sierra de Guara, Empuriabrava, attività acquatiche, paracadutismo, canyoning acquatico e snorkel. Evitare le ore più calde.'],
       ['Settembre-ottobre', 'Grande finestra globale: immersioni, Cabo de Palos, Cabo de Gata, arrampicata, canyoning, Madeira, Mar Rosso, rotte costiere e viaggi europei.'],
-      ['Novembre-dicembre', 'Canarie, Costa Blanca, El Chorro, Dubai, Mar Rosso, trekking, arrampicata, percorsi dolci, esperienze internazionali e pianificazione dell’anno successivo.']
+      ['Novembre-dicembre', 'Canarie, Costa Blanca, El Chorro (Álora, Málaga), Dubai, Mar Rosso, trekking, arrampicata, percorsi dolci, esperienze internazionali e pianificazione dell’anno successivo.']
     ],
     pt: [
-      ['Janeiro-fevereiro', 'Canárias, Costa Blanca, El Chorro, Mar Vermelho, Dubai, caminhadas suaves, escalada de inverno, mergulho de inverno e formação.'],
-      ['Março-abril', 'Costa Blanca, El Chorro, Cabo de Gata, Madeira, Mar Vermelho, escalada, caminhadas, via ferrata e canyoning conforme caudal.'],
+      ['Janeiro-fevereiro', 'Canárias, Costa Blanca, El Chorro (Álora, Málaga), Mar Vermelho, Dubai, caminhadas suaves, escalada de inverno, mergulho de inverno e formação.'],
+      ['Março-abril', 'Costa Blanca, El Chorro (Álora, Málaga), Cabo de Gata, Madeira, Mar Vermelho, escalada, caminhadas, via ferrata e canyoning conforme caudal.'],
       ['Maio-junho', 'Águilas, Cabo de Gata, Cabo de Palos, Sierra de Guara, Açores, kayak, snorkel, mergulho, canyoning, coasteering e cliff jumping controlado.'],
       ['Julho-agosto', 'Águilas, Cabo de Gata, Cabo de Palos, Sierra de Guara, Empuriabrava, atividades aquáticas, paraquedismo, canyoning aquático e snorkel. Evitar horas de maior calor.'],
       ['Setembro-outubro', 'Janela global forte: mergulho, Cabo de Palos, Cabo de Gata, escalada, canyoning, Madeira, Mar Vermelho, rotas costeiras e viagens europeias.'],
-      ['Novembro-dezembro', 'Canárias, Costa Blanca, El Chorro, Dubai, Mar Vermelho, caminhadas, escalada, rotas suaves, experiências internacionais e planeamento do ano seguinte.']
+      ['Novembro-dezembro', 'Canárias, Costa Blanca, El Chorro (Álora, Málaga), Dubai, Mar Vermelho, caminhadas, escalada, rotas suaves, experiências internacionais e planeamento do ano seguinte.']
     ]
   };
 

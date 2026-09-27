@@ -299,6 +299,14 @@ def polish_terms(source: str, value: str, language: str) -> str:
 
 source_strings = json.loads(SOURCE_CATALOG.read_text(encoding="utf-8")).get("strings", []) if SOURCE_CATALOG.exists() else []
 
+EDITORIAL_OVERRIDES = {
+    "en": ("DEMONSTRATION REQUEST COMPLETED", "Demonstration request completed", "Simulate discount"),
+    "fr": ("DEMANDE DE DÉMONSTRATION TERMINÉE", "Demande de démonstration terminée", "Simuler la remise"),
+    "de": ("DEMOANFRAGE ABGESCHLOSSEN", "Demoanfrage abgeschlossen", "Rabatt simulieren"),
+    "it": ("RICHIESTA DIMOSTRATIVA COMPLETATA", "Richiesta dimostrativa completata", "Simula lo sconto"),
+    "pt": ("PEDIDO DE DEMONSTRAÇÃO CONCLUÍDO", "Pedido de demonstração concluído", "Simular desconto"),
+}
+
 for language, faq in FAQ.items():
     path = I18N / f"{language}.json"
     dictionary = json.loads(path.read_text(encoding="utf-8"))
@@ -313,6 +321,11 @@ for language, faq in FAQ.items():
         strings.setdefault(source_text, source_text)
     strings.update(FIXED_LABELS)
     strings.update(LANGUAGE_OVERRIDES.get(language, {}))
+    if language in EDITORIAL_OVERRIDES:
+        heading, title, coupon_action = EDITORIAL_OVERRIDES[language]
+        strings["SOLICITUD DE EJEMPLO COMPLETADA"] = heading
+        strings["Solicitud de ejemplo completada | Nómada Extremo"] = f"{title} | Nómada Extremo"
+        strings["Simular aplicación"] = coupon_action
     for name in PACK_NAMES:
         if name in strings:
             strings[name] = name

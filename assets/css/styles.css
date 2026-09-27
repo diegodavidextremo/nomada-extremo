@@ -3536,6 +3536,7 @@ section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { co
 }
 .coupon-star::after {
   content: "28%";
+  pointer-events: none;
   position: absolute;
   right: -0.15em;
   bottom: -0.35em;
@@ -3585,7 +3586,7 @@ section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { co
   margin-top: 0.7rem;
   width: 100%;
 }
-.coupon-actions a {
+.coupon-actions a, .coupon-actions button {
   padding: 0.55rem 0.7rem;
   border-radius: 999px;
   text-decoration: none;
@@ -3596,6 +3597,8 @@ section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { co
   border: 1px solid rgba(255,255,255,0.2);
   background: rgba(255,255,255,0.08);
 }
+.coupon-actions button { cursor: pointer; font-family: inherit; text-align: left; }
+#resultado-cupon { margin-top: 0.75rem; color: var(--blanco); line-height: 1.5; }
 .coupon-tabs {
   display: flex;
   flex-wrap: wrap;
