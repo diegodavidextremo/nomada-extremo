@@ -8621,7 +8621,20 @@
     "La Manga": "La Manga",
     "Totana": "Totana",
     "hola@nomadaextremo.com": "hola@nomadaextremo.com",
-    "hola@nómadaextremo.com": "hola@nómadaextremo.com"
+    "hola@nómadaextremo.com": "hola@nómadaextremo.com",
+    "Experiencia Nómada": "Experiencia Nómada",
+    "Con centro especializado": "Con centro especializado",
+    "Guiada por el equipo propio de Nómada Extremo.": "Guiada por el equipo propio de Nómada Extremo.",
+    "Con un centro especializado colaborador habilitado en la disciplina.": "Con un centro especializado colaborador habilitado en la disciplina.",
+    "Línea prevista para el futuro.": "Línea prevista para el futuro.",
+    "Cómo trabajamos": "Cómo trabajamos",
+    "Experiencias propias desde Águilas": "Experiencias propias desde Águilas",
+    "El equipo de Nómada Extremo guía las experiencias de mar y montaña, las rutas interpretativas y las actividades de tiempo libre desde nuestra base en Águilas.": "El equipo de Nómada Extremo guía las experiencias de mar y montaña, las rutas interpretativas y las actividades de tiempo libre desde nuestra base en Águilas.",
+    "Red de centros especializados": "Red de centros especializados",
+    "Para las disciplinas técnicas, el modelo prevé trabajar con un centro especializado colaborador habilitado en cada actividad, con sus profesionales, material y protocolos. La selección se realiza para cada experiencia.": "Para las disciplinas técnicas, el modelo prevé trabajar con un centro especializado colaborador habilitado en cada actividad, con sus profesionales, material y protocolos. La selección se realiza para cada experiencia.",
+    "Crecer con sede y medios propios": "Crecer con sede y medios propios",
+    "A largo plazo, Horizonte Nómada plantea sede y medios propios para las líneas con más demanda: base, campamento, flota o escuela certificada. El crecimiento se adapta a la demanda y a la viabilidad de cada línea.": "A largo plazo, Horizonte Nómada plantea sede y medios propios para las líneas con más demanda: base, campamento, flota o escuela certificada. El crecimiento se adapta a la demanda y a la viabilidad de cada línea.",
+    "Experiencia Nómada: equipo propio · Con centro especializado: profesional colaborador habilitado · Horizonte: desarrollo futuro.": "Experiencia Nómada: equipo propio · Con centro especializado: profesional colaborador habilitado · Horizonte: desarrollo futuro."
   },
   "pages": {
     "faq": {
@@ -8853,5 +8866,21 @@
       "body": "Gracias, Alberto.\n\nNos hemos visto menos y hemos hablado más al final de la última evaluación, pero se nota rápido que eres una persona de diez y con un gran corazón.\n\nTambién se nota tu pasión por la naturaleza, por los viajes y por todo lo que haces.\n\nMe quedo con tu forma tranquila y cercana de estar con el grupo, y con esa sensación de que todavía queda mucho por aprender contigo.\n\nNos vemos el año que viene en equitación, ¡Alberto!\n\nMe hace mucha ilusión poder coincidir más contigo y seguir aprendiendo en una disciplina nueva.",
       "key": "Naturaleza, viajes, cercanía, equitación y ganas de seguir aprendiendo."
     }
+  },
+  "october": {
+    "own": "Experiencia Nómada",
+    "partner": "Con centro especializado",
+    "future": "Horizonte",
+    "ownHelp": "Guiada por el equipo propio de Nómada Extremo.",
+    "partnerHelp": "Con un centro especializado colaborador habilitado en la disciplina.",
+    "futureHelp": "Línea prevista para el futuro.",
+    "workTitle": "Cómo trabajamos",
+    "work1Title": "Experiencias propias desde Águilas",
+    "work1": "El equipo de Nómada Extremo guía las experiencias de mar y montaña, las rutas interpretativas y las actividades de tiempo libre desde nuestra base en Águilas.",
+    "work2Title": "Red de centros especializados",
+    "work2": "Para las disciplinas técnicas, el modelo prevé trabajar con un centro especializado colaborador habilitado en cada actividad, con sus profesionales, material y protocolos. La selección se realiza para cada experiencia.",
+    "work3Title": "Crecer con sede y medios propios",
+    "work3": "A largo plazo, Horizonte Nómada plantea sede y medios propios para las líneas con más demanda: base, campamento, flota o escuela certificada. El crecimiento se adapta a la demanda y a la viabilidad de cada línea.",
+    "legend": "Experiencia Nómada: equipo propio · Con centro especializado: profesional colaborador habilitado · Horizonte: desarrollo futuro."
   }
 }

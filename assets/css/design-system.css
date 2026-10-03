@@ -300,3 +300,14 @@ body.modal-open { position:static !important; overflow:hidden; touch-action:auto
  .article-modal__panel { padding:1.5rem; }
  .logbook-pro-grid > article:first-child { grid-row:auto; }
 }
+
+/* Modelo de prestación: propio, colaborador y horizonte. */
+.model-badge { display:inline-flex; align-items:center; max-width:100%; gap:.35rem; padding:.35rem .65rem; margin:.35rem .35rem .65rem 0; border:1px solid; border-radius:999px; font-family:var(--sans); font-size:.7rem; line-height:1.45; font-weight:600; letter-spacing:.015em; white-space:normal; }
+.model-badge--own { color:#184b3c; background:#eaf4ed; border-color:#8cb6a1; }
+.model-badge--partner { color:#163f5d; background:#e9f1f7; border-color:#8caabe; }
+.model-badge--future { color:#644423; background:#faf0e2; border-color:#c5ab86; }
+.model-legend { color:var(--text-secondary,#405764); font-size:.82rem; line-height:1.7; padding-block:1rem; }
+.act-card-content .model-badge { font-size:.65rem; margin-bottom:.35rem; }
+.noext-pack-card > .model-badge { margin-inline:.75rem; }
+.work-model .process-grid { margin-top:1.5rem; }
+.stat-num.stat-num--sun { font-size:clamp(1.15rem,3vw,2rem); line-height:1.25; }

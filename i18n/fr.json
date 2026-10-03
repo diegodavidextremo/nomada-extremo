@@ -8939,7 +8939,7 @@
     "Horario de atención previsto": "Horaires d'ouverture prévus",
     "Horario previsto en el plan de empresa": "Calendrier prévu dans le business plan",
     "Horario simulado: 09:00–20:00": "Horaire simulé : 09h00-20h00",
-    "Horizonte": "Horizon",
+    "Horizonte": "À l’horizon",
     "HORIZONTE": "HORIZON",
     "Horizonte Nómada": "Horizon nomade",
     "Horizonte Nómada · visión": "Horizon Nomade · vision",
@@ -9487,7 +9487,20 @@
     "kayak y snorkel en la costa de Águilas. Registro de muestra: lugar, actividad, condiciones, material revisado y aprendizaje del día. La validación interna sería una función de la empresa proyectada, no una certificación oficial.": "kayak et tuba sur la côte d'Águilas. Exemple de journal : lieu, activité, conditions, matériel examiné et apprentissage de la journée. La validation interne serait une fonction de l'entreprise concernée et non une certification officielle.",
     "Salida orientativa:": "Résultat du guidage :",
     "Simulación completada: el descuento del 28 % se aplicaría tras comprobar las condiciones en una versión operativa. No se ha generado compra ni reserva.": "Simulation terminée : la remise de 28% serait appliquée après vérification des conditions dans une version de travail. Aucun achat ni réservation n'a été généré.",
-    "Nuria Pons": "Nuria Pons"
+    "Nuria Pons": "Nuria Pons",
+    "Experiencia Nómada": "Expérience Nómada",
+    "Con centro especializado": "Avec un centre spécialisé",
+    "Guiada por el equipo propio de Nómada Extremo.": "Encadrée par l’équipe de Nómada Extremo.",
+    "Con un centro especializado colaborador habilitado en la disciplina.": "Avec un centre spécialisé partenaire habilité dans la discipline.",
+    "Línea prevista para el futuro.": "Une offre prévue pour l’avenir.",
+    "Cómo trabajamos": "Notre façon de travailler",
+    "Experiencias propias desde Águilas": "Nos expériences au départ d’Águilas",
+    "El equipo de Nómada Extremo guía las experiencias de mar y montaña, las rutas interpretativas y las actividades de tiempo libre desde nuestra base en Águilas.": "L’équipe de Nómada Extremo encadre les expériences en mer et en montagne, les balades d’interprétation et les activités de loisirs depuis notre base à Águilas.",
+    "Red de centros especializados": "Un réseau de centres spécialisés",
+    "Para las disciplinas técnicas, el modelo prevé trabajar con un centro especializado colaborador habilitado en cada actividad, con sus profesionales, material y protocolos. La selección se realiza para cada experiencia.": "Pour les disciplines techniques, le modèle prévoit un centre spécialisé partenaire habilité pour chaque activité, avec ses professionnels, son matériel et ses protocoles. Le choix se fait pour chaque expérience.",
+    "Crecer con sede y medios propios": "Grandir avec une base et des moyens propres",
+    "A largo plazo, Horizonte Nómada plantea sede y medios propios para las líneas con más demanda: base, campamento, flota o escuela certificada. El crecimiento se adapta a la demanda y a la viabilidad de cada línea.": "À long terme, Horizonte Nómada envisage une base et des moyens propres pour les offres les plus demandées : camp, flotte ou école certifiée. La croissance suit la demande et la viabilité de chaque offre.",
+    "Experiencia Nómada: equipo propio · Con centro especializado: profesional colaborador habilitado · Horizonte: desarrollo futuro.": "Experiencia Nómada : notre équipe · Avec un centre spécialisé : professionnel partenaire habilité · À l’horizon : développement futur."
   },
   "pages": {
     "faq": {
@@ -9719,5 +9732,21 @@
       "body": "Merci, Alberto. Nous nous sommes moins vus et avons davantage parlé à la fin du dernier trimestre, mais on comprend vite que tu es une personne formidable au grand cœur. Ta passion pour la nature, les voyages et tout ce que tu fais est évidente.\n\nJe retiens ta présence calme et proche auprès du groupe, ainsi que le sentiment qu’il reste beaucoup à apprendre avec toi. Rendez-vous l’an prochain en équitation, Alberto ! Je suis très heureux de pouvoir davantage te côtoyer et découvrir une nouvelle discipline.",
       "key": "Nature, voyages, proximité, équitation et envie de continuer à apprendre."
     }
+  },
+  "october": {
+    "own": "Expérience Nómada",
+    "partner": "Avec un centre spécialisé",
+    "future": "À l’horizon",
+    "ownHelp": "Encadrée par l’équipe de Nómada Extremo.",
+    "partnerHelp": "Avec un centre spécialisé partenaire habilité dans la discipline.",
+    "futureHelp": "Une offre prévue pour l’avenir.",
+    "workTitle": "Notre façon de travailler",
+    "work1Title": "Nos expériences au départ d’Águilas",
+    "work1": "L’équipe de Nómada Extremo encadre les expériences en mer et en montagne, les balades d’interprétation et les activités de loisirs depuis notre base à Águilas.",
+    "work2Title": "Un réseau de centres spécialisés",
+    "work2": "Pour les disciplines techniques, le modèle prévoit un centre spécialisé partenaire habilité pour chaque activité, avec ses professionnels, son matériel et ses protocoles. Le choix se fait pour chaque expérience.",
+    "work3Title": "Grandir avec une base et des moyens propres",
+    "work3": "À long terme, Horizonte Nómada envisage une base et des moyens propres pour les offres les plus demandées : camp, flotte ou école certifiée. La croissance suit la demande et la viabilité de chaque offre.",
+    "legend": "Experiencia Nómada : notre équipe · Avec un centre spécialisé : professionnel partenaire habilité · À l’horizon : développement futur."
   }
 }

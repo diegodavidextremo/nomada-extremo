@@ -9425,7 +9425,20 @@
     "kayak y snorkel en la costa de Águilas. Registro de muestra: lugar, actividad, condiciones, material revisado y aprendizaje del día. La validación interna sería una función de la empresa proyectada, no una certificación oficial.": "caiaque e snorkel na costa de Águilas. Registro de amostra: localização, atividade, condições, material revisado e aprendizado do dia. A validação interna seria uma função da empresa pretendida e não uma certificação oficial.",
     "Salida orientativa:": "Saída de orientação:",
     "Simulación completada: el descuento del 28 % se aplicaría tras comprobar las condiciones en una versión operativa. No se ha generado compra ni reserva.": "Simulação concluída: o desconto de 28% seria aplicado após verificação das condições em versão funcional. Nenhuma compra ou reserva foi gerada.",
-    "Nuria Pons": "Nuria Pons"
+    "Nuria Pons": "Nuria Pons",
+    "Experiencia Nómada": "Experiência Nómada",
+    "Con centro especializado": "Com um centro especializado",
+    "Guiada por el equipo propio de Nómada Extremo.": "Orientada pela equipa da Nómada Extremo.",
+    "Con un centro especializado colaborador habilitado en la disciplina.": "Com um centro especializado colaborador habilitado na modalidade.",
+    "Línea prevista para el futuro.": "Uma linha prevista para o futuro.",
+    "Cómo trabajamos": "Como trabalhamos",
+    "Experiencias propias desde Águilas": "Experiências próprias a partir de Águilas",
+    "El equipo de Nómada Extremo guía las experiencias de mar y montaña, las rutas interpretativas y las actividades de tiempo libre desde nuestra base en Águilas.": "A equipa da Nómada Extremo orienta experiências de mar e montanha, percursos interpretativos e atividades de tempos livres a partir da nossa base em Águilas.",
+    "Red de centros especializados": "Uma rede de centros especializados",
+    "Para las disciplinas técnicas, el modelo prevé trabajar con un centro especializado colaborador habilitado en cada actividad, con sus profesionales, material y protocolos. La selección se realiza para cada experiencia.": "Para as modalidades técnicas, o modelo prevê um centro especializado colaborador habilitado em cada atividade, com os seus profissionais, material e protocolos. A seleção é feita para cada experiência.",
+    "Crecer con sede y medios propios": "Crescer com sede e meios próprios",
+    "A largo plazo, Horizonte Nómada plantea sede y medios propios para las líneas con más demanda: base, campamento, flota o escuela certificada. El crecimiento se adapta a la demanda y a la viabilidad de cada línea.": "A longo prazo, Horizonte Nómada prevê sede e meios próprios para as linhas mais procuradas: base, campo, frota ou escola certificada. O crescimento acompanha a procura e a viabilidade de cada linha.",
+    "Experiencia Nómada: equipo propio · Con centro especializado: profesional colaborador habilitado · Horizonte: desarrollo futuro.": "Experiencia Nómada: equipa própria · Com um centro especializado: profissional colaborador habilitado · Horizonte: desenvolvimento futuro."
   },
   "pages": {
     "faq": {
@@ -9691,5 +9704,21 @@
       "body": "Obrigado, Alberto. Vimo-nos menos e falámos mais no final do último período, mas percebe-se rapidamente que és uma pessoa excecional e de grande coração. Nota-se também a tua paixão pela natureza, pelas viagens e por tudo o que fazes.\n\nLevo comigo a tua forma tranquila e próxima de estar com o grupo e a sensação de que ainda há muito para aprender contigo. Vemo-nos no próximo ano na equitação, Alberto! Faz-me muita ilusão coincidir mais contigo e continuar a aprender numa disciplina nova.",
       "key": "Natureza, viagens, proximidade, equitação e vontade de continuar a aprender."
     }
+  },
+  "october": {
+    "own": "Experiência Nómada",
+    "partner": "Com um centro especializado",
+    "future": "Horizonte",
+    "ownHelp": "Orientada pela equipa da Nómada Extremo.",
+    "partnerHelp": "Com um centro especializado colaborador habilitado na modalidade.",
+    "futureHelp": "Uma linha prevista para o futuro.",
+    "workTitle": "Como trabalhamos",
+    "work1Title": "Experiências próprias a partir de Águilas",
+    "work1": "A equipa da Nómada Extremo orienta experiências de mar e montanha, percursos interpretativos e atividades de tempos livres a partir da nossa base em Águilas.",
+    "work2Title": "Uma rede de centros especializados",
+    "work2": "Para as modalidades técnicas, o modelo prevê um centro especializado colaborador habilitado em cada atividade, com os seus profissionais, material e protocolos. A seleção é feita para cada experiência.",
+    "work3Title": "Crescer com sede e meios próprios",
+    "work3": "A longo prazo, Horizonte Nómada prevê sede e meios próprios para as linhas mais procuradas: base, campo, frota ou escola certificada. O crescimento acompanha a procura e a viabilidade de cada linha.",
+    "legend": "Experiencia Nómada: equipa própria · Com um centro especializado: profissional colaborador habilitado · Horizonte: desenvolvimento futuro."
   }
 }
