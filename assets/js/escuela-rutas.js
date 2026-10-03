@@ -12,7 +12,7 @@
       start: 'Biplaza de iniciación',
       goal: 'Autonomía supervisada',
       reference: 'Federación autonómica, escuela autorizada y progresión técnica en vuelo libre.',
-      responsible: 'Álvaro González',
+      responsible: 'Instructor/a de vuelo y paracaidismo',
       modules: [
         ['Biplaza de iniciación', 'Primer contacto con despegue, vuelo, aterrizaje, posición corporal y sensaciones reales acompañado por un piloto biplaza.'],
         ['Control de campa', 'Inflado, estabilización y control de la vela en tierra para comprender viento, frenos, bandas y respuesta del ala.'],
@@ -38,7 +38,7 @@
       start: 'Biplaza paratrike',
       goal: 'Seguridad avanzada',
       reference: 'Federación autonómica, escuela autorizada, normativa aérea y progresión en vuelo motorizado.',
-      responsible: 'Álvaro González',
+      responsible: 'Instructor/a de vuelo y paracaidismo',
       modules: [
         ['Biplaza paratrike', 'Primera experiencia para conocer despegue, navegación, motor, vibraciones, aterrizaje y sensaciones del vuelo motorizado.'],
         ['Teoría del motor', 'Motor, chasis, hélice, combustible, empuje, mantenimiento básico, revisiones y funcionamiento general.'],
@@ -65,7 +65,7 @@
       start: 'AFF Nivel 1',
       goal: 'Licencias A / B / C / D',
       reference: 'RFAE, centro autorizado y progresión oficial del centro; referencia internacional tipo USPA.',
-      responsible: 'Álvaro González + centro autorizado colaborador',
+      responsible: 'Instructor/a de vuelo y paracaidismo + centro autorizado colaborador',
       modules: [
         ['AFF Nivel 1', 'Primer salto acompañado: posición corporal, altura, apertura, comunicación y aterrizaje asistido.'],
         ['AFF Niveles 2 a 4', 'Estabilidad, señales, orientación, relajación y primeros movimientos controlados.'],
@@ -139,7 +139,7 @@
       start: 'Iniciación en roca',
       goal: 'Autonomía técnica progresiva',
       reference: 'Técnico Deportivo en Escalada, escuela de escalada y protocolos de seguridad en cuerda.',
-      responsible: 'Adrián Martínez',
+      responsible: 'Guía de montaña y vertical',
       modules: [
         ['Iniciación', 'Material, comunicación, colocación corporal, técnica de pies, agarres y confianza inicial.'],
         ['Nudos y equipo', 'Arnés, casco, cuerda, asegurador, mosquetones, cintas, ocho, anclaje, reuniones y chequeo cruzado.'],
@@ -165,7 +165,7 @@
       start: 'SUP base y control corporal',
       goal: 'Autonomía en foil y lectura del mar',
       reference: 'Escuela náutica, instructor especializado y protocolos de seguridad por modalidad.',
-      responsible: 'Héctor Navarro',
+      responsible: 'Instructor/a de foil y waterman',
       modules: [
         ['SUP base', 'Equilibrio, remada, posición, caídas, giros, control de tabla y lectura del agua.'],
         ['Seguridad en el agua', 'Leash, chaleco, casco, zonas, tráfico, viento, corriente, rescate y comunicación.'],
@@ -191,7 +191,7 @@
       start: 'Kayak / SUP litoral',
       goal: 'Autonomía básica costera',
       reference: 'Escuela náutica, guía de mar, instructor de viento y protocolos de rescate acuático.',
-      responsible: 'Laura García + Héctor Navarro según actividad',
+      responsible: 'Guía de mar y costa + Instructor/a de foil y waterman según actividad',
       modules: [
         ['Kayak / SUP litoral', 'Remada, postura, equilibrio, embarque, desembarque, ruta costera y seguridad.'],
         ['Lectura de costa', 'Viento, oleaje, corrientes, rocas, accesos, escapes y cambios de condiciones.'],
@@ -216,13 +216,13 @@
       count: '7 niveles principales',
       start: 'Bautismo',
       goal: 'Progresión recreativa, profesional o técnica',
-      reference: 'PADI / SSI / centro de buceo autorizado.',
-      responsible: 'Erika Hernández',
+      reference: 'SSI / centro de buceo autorizado.',
+      responsible: 'Instructor/a de buceo',
       modules: [
         ['Bautismo', 'Primera experiencia: equipo, respiración, señales, flotabilidad inicial y seguridad.'],
         ['Open Water', 'Base de autonomía recreativa con teoría, habilidades confinadas e inmersiones en mar.'],
-        ['Advanced Open Water', 'Mejora mediante inmersiones de aventura, profunda, navegación y especialidades.'],
-        ['Rescue Diver', 'Prevención, detección de estrés, asistencia y respuesta ante problemas.'],
+        ['SSI Advanced Adventurer', 'Mejora mediante inmersiones de aventura, profunda, navegación y especialidades.'],
+        ['SSI Diver Stress & Rescue', 'Prevención, detección de estrés, asistencia y respuesta ante problemas.'],
         ['Divemaster', 'Primer nivel profesional para asistir, organizar, controlar grupos y guiar certificados.'],
         ['Instructor', 'Nivel profesional para enseñar, evaluar y certificar según estándares.'],
         ['Técnico', 'Especialización avanzada con planificación, gases, redundancia y centros especializados.']
@@ -253,7 +253,7 @@
       start: 'Senderismo técnico',
       goal: 'Autonomía outdoor y progresión multiaventura',
       reference: 'Técnicos deportivos, guías especializados y protocolos de montaña, barrancos, BTT y orientación.',
-      responsible: 'Adrián Martínez, Raúl Giménez e Iván Torres según actividad',
+      responsible: 'Guía de montaña y vertical, Guía de barrancos, rafting y BTT e Instructor/a de bushcraft, orientación y supervivencia según actividad',
       modules: [
         ['Senderismo técnico', 'Ruta, ritmo, desnivel, material, hidratación, orientación y seguridad.'],
         ['Crestas y terreno expuesto', 'Aristas, pasos aéreos, equilibrio, cuerda de apoyo, vértigo y comunicación.'],
@@ -274,12 +274,12 @@
 
   const overviewRoutes = [
     {
-      number: '01', title: 'Buceo', subtitle: 'SSI preferente · PADI compatible', icon: 'BU', target: 'buceo', responsible: 'Erika Hernández',
+      number: '01', title: 'Buceo', subtitle: 'SSI', icon: 'BU', target: 'buceo', responsible: 'Instructor/a de buceo',
       items: [
         ['Bautismo de buceo', 'Primera experiencia subacuática, equipo básico, respiración y señales.', 'Experiencia'],
         ['Open Water / OWD', 'Curso base para iniciarse como buceador certificado.', 'Certificación inicial'],
-        ['Advanced Open Water', 'Progresión con inmersiones de aventura y especialidades elegidas con el centro.', 'Progresión recreativa'],
-        ['Rescue Diver', 'Prevención, asistencia, estrés, emergencias y seguridad de grupo.', 'Seguridad avanzada'],
+        ['SSI Advanced Adventurer', 'Progresión con inmersiones de aventura y especialidades elegidas con el centro.', 'Progresión recreativa'],
+        ['SSI Diver Stress & Rescue', 'Prevención, asistencia, estrés, emergencias y seguridad de grupo.', 'Seguridad avanzada'],
         ['Divemaster / Dive Guide', 'Primer nivel profesional, guía de buceadores y apoyo a instructores.', 'Profesional'],
         ['Instructor', 'Formación para enseñar y certificar según la organización autorizada.', 'Profesional avanzado'],
         ['Buceo técnico', 'Planificación avanzada, gases, redundancia, procedimientos y equipo específico.', 'Especialización']
@@ -287,7 +287,7 @@
       note: 'Especialidades posibles: Nitrox, Nocturno, Profunda, Navegación, Flotabilidad, Pecios, Search & Recovery y Fotografía subacuática.'
     },
     {
-      number: '02', title: 'Aire', subtitle: 'Paracaidismo · Parapente · Paramotor', icon: 'AI', target: 'aff', responsible: 'Álvaro González y centros autorizados',
+      number: '02', title: 'Aire', subtitle: 'Paracaidismo · Parapente · Paramotor', icon: 'AI', target: 'aff', responsible: 'Instructor/a de vuelo y paracaidismo y centros autorizados',
       items: [
         ['Paracaidismo tándem', 'Salto desde avión con instructor y experiencia directa de caída libre.', 'Experiencia'],
         ['AFF PARACAIDISMO', 'Ocho niveles con teoría, emergencias, caída libre, campana y consolidación.', 'Formación'],
@@ -301,7 +301,7 @@
       note: 'Progresión vinculada a centros autorizados, instructores habilitados, meteorología, normativa aérea y requisitos propios de cada modalidad.'
     },
     {
-      number: '03', title: 'Montaña y vertical', subtitle: 'Escalada · Ferratas · Rápel · Cuerda', icon: 'MV', target: 'escalada', responsible: 'Adrián Martínez y Daniel Ortega según actividad',
+      number: '03', title: 'Montaña y vertical', subtitle: 'Escalada · Ferratas · Rápel · Cuerda', icon: 'MV', target: 'escalada', responsible: 'Guía de montaña y vertical y Técnico/a de saltos pendulares, rope jumping y puenting según actividad',
       items: [
         ['Escalada iniciación', 'Técnica básica, pies, agarres, nudos, aseguramiento y comunicación.', 'Formación inicial'],
         ['Escalada deportiva', 'Chapaje, caída controlada, descuelgue, limpieza de vía y progresión.', 'Formación técnica'],
@@ -313,7 +313,7 @@
       note: 'La dificultad, el ratio y el material se adaptan al terreno, la exposición y la experiencia real del grupo.'
     },
     {
-      number: '04', title: 'Mar y waterman', subtitle: 'Kayak · SUP · Snorkel · Coasteering · Foil', icon: 'MW', target: 'litoral', responsible: 'Laura García y Héctor Navarro según modalidad',
+      number: '04', title: 'Mar y waterman', subtitle: 'Kayak · SUP · Snorkel · Coasteering · Foil', icon: 'MW', target: 'litoral', responsible: 'Guía de mar y costa y Instructor/a de foil y waterman según modalidad',
       items: [
         ['Kayak / SUP litoral', 'Remada, equilibrio, ruta costera, embarque y seguridad.', 'Experiencia / formación'],
         ['Snorkel seguro', 'Equipo, respiración, flotabilidad, observación marina y respeto ambiental.', 'Experiencia'],
@@ -327,7 +327,7 @@
       note: 'La selección de modalidad depende del viento, el estado del mar, la zona de práctica y la disponibilidad del equipo técnico.'
     },
     {
-      number: '05', title: 'Barrancos, río y BTT', subtitle: 'Barranquismo · Rafting · Aguas bravas · Bicicleta', icon: 'RB', target: 'tierra', responsible: 'Raúl Giménez',
+      number: '05', title: 'Barrancos, río y BTT', subtitle: 'Barranquismo · Rafting · Aguas bravas · Bicicleta', icon: 'RB', target: 'tierra', responsible: 'Guía de barrancos, rafting y BTT',
       items: [
         ['Barranco seco', 'Rápeles, destrepes, cuerda, escapes y progresión sin caudal.', 'Experiencia / formación'],
         ['Barranco acuático', 'Neopreno, caudal, saltos, toboganes, rápeles y comunicación.', 'Experiencia técnica'],
@@ -339,7 +339,7 @@
       note: 'Caudal, meteorología, terreno, escapes y nivel técnico determinan la viabilidad y el formato final de cada sesión.'
     },
     {
-      number: '06', title: 'Bushcraft, naturaleza y audiovisual', subtitle: 'Orientación · Vivac · Dron · FPV · 360', icon: 'NA', target: 'tierra', responsible: 'Iván Torres y Marcos López según área',
+      number: '06', title: 'Bushcraft, naturaleza y audiovisual', subtitle: 'Orientación · Vivac · Dron · FPV · 360', icon: 'NA', target: 'tierra', responsible: 'Instructor/a de bushcraft, orientación y supervivencia y Coordinador/a audiovisual y piloto de dron según área',
       items: [
         ['Técnicas de montaña', 'Orientación, meteorología, material, primeros auxilios y ruta.', 'Formación base'],
         ['Bushcraft y supervivencia', 'Refugio, agua, fuego permitido, nudos, vivac y autonomía.', 'Formación outdoor'],
