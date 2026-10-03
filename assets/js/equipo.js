@@ -1,5 +1,8 @@
 (() => {
   const profiles = [...document.querySelectorAll('.specialist-details')];
+  // Preserve Spanish source fragments before the asynchronous catalogue applies.
+  const sourceContent = new WeakMap(profiles.map(details => [details, details.querySelector('.specialist-details__content')?.cloneNode(true)]));
+  const sourceTags = new WeakMap(profiles.map(details => [details, details.closest('.specialist-card')?.querySelector('.specialist-tags')?.cloneNode(true)]));
   const leadershipButtons = [...document.querySelectorAll('.leadership-profile-button')];
   if ((!profiles.length && !leadershipButtons.length) || typeof HTMLDialogElement === 'undefined') return;
 
@@ -40,12 +43,15 @@
 
   function openProfile(details) {
     const card = details.closest('.specialist-card');
-    const content = details.querySelector('.specialist-details__content');
-    const tags = card?.querySelector('.specialist-tags');
+    const content = sourceContent.get(details);
+    const tags = sourceTags.get(details);
     if (!card || !content) return;
 
     const summary = details.querySelector('summary');
     details.open = false;
+    title.dataset.i18n = card.querySelector('h3')?.dataset.i18n || '';
+    role.dataset.i18n = card.querySelector('.specialist-card__role')?.dataset.i18n || '';
+    kicker.dataset.i18n = 'october.requirements';
     showProfile({
       profileKicker: (window.noextTranslate || (text => text))('Requisitos del puesto'),
       profileTitle: card.querySelector('h3')?.textContent?.trim() || 'Perfil profesional',
@@ -71,6 +77,10 @@
       const card = button.closest('.leadership-card');
       const template = card?.querySelector('.leadership-profile-template');
       if (!card || !template) return;
+
+      delete title.dataset.i18n;
+      delete role.dataset.i18n;
+      delete kicker.dataset.i18n;
 
       showProfile({
         profileKicker: 'Dirección financiera y operativa',

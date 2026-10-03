@@ -311,3 +311,23 @@ body.modal-open { position:static !important; overflow:hidden; touch-action:auto
 .noext-pack-card > .model-badge { margin-inline:.75rem; }
 .work-model .process-grid { margin-top:1.5rem; }
 .stat-num.stat-num--sun { font-size:clamp(1.15rem,3vw,2rem); line-height:1.25; }
+
+/* Portada compacta, con todo el contenido accesible. */
+.home-featured-actions { text-align:center; margin-top:1.5rem; }
+.home-featured-experiences.is-compact:not(.is-expanded) [data-featured-extra] { display:none !important; }
+.home-mobile-details { margin:0; }
+@media (min-width:768px) {
+  .home-mobile-details.is-desktop-expanded > summary { display:none; }
+}
+@media (max-width:767px) {
+  .home-mobile-details > summary { padding:1.1rem max(1rem,4vw); background:#edf1ed; color:#17394b; font-weight:600; cursor:pointer; }
+  .hero .hero-titulo { opacity:1 !important; animation:none !important; color:#fff; text-shadow:0 2px 6px #000,0 4px 24px #000a; }
+  .hero .hero-overlay { background:linear-gradient(180deg,#06151dd9,#06151d80 55%,#06151de6) !important; }
+  #contactDock { width:44px; right:max(16px,env(safe-area-inset-right)); bottom:max(24px,env(safe-area-inset-bottom)); gap:10px; }
+  #contactDock :is(#chatBtn,#waFloat,#backToTop) { width:44px; height:44px; min-height:44px; flex-basis:44px; }
+  #chatBtn img { width:36px; height:36px; }
+  .hero .aviso-ficticio { margin-right:72px; width:auto; }
+  .home-team-roles .specialist-grid, .grid-act { display:grid !important; grid-template-columns:none !important; grid-auto-flow:column; grid-auto-columns:minmax(0,88%); gap:1rem; overflow-x:auto; overscroll-behavior-x:contain; scroll-snap-type:x mandatory; padding-bottom:1rem; }
+  .home-team-roles .specialist-card, .grid-act > .act-card { scroll-snap-align:start; }
+  .home-team-roles .specialist-card { height:100%; }
+}
