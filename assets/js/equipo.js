@@ -8,7 +8,7 @@
   dialog.setAttribute('aria-labelledby', 'team-profile-title');
   dialog.innerHTML = `
     <div class="team-profile-dialog__panel">
-      <button class="team-profile-dialog__close" type="button" aria-label="Cerrar perfil profesional">×</button>
+      <button class="team-profile-dialog__close" type="button" aria-label="Cerrar perfil profesional" data-i18n-aria="october.closeProfile">×</button>
       <header class="team-profile-dialog__header">
         <span class="team-profile-dialog__kicker">Perfil profesional</span>
         <h2 id="team-profile-title"></h2>
@@ -47,7 +47,7 @@
     const summary = details.querySelector('summary');
     details.open = false;
     showProfile({
-      profileKicker: card.classList.contains('specialist-card--collaborator') ? 'Colaborador técnico especializado' : 'Perfil profesional',
+      profileKicker: (window.noextTranslate || (text => text))('Requisitos del puesto'),
       profileTitle: card.querySelector('h3')?.textContent?.trim() || 'Perfil profesional',
       profileRole: card.querySelector('.specialist-card__role')?.textContent?.trim() || '',
       profileContent: content.cloneNode(true),
