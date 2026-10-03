@@ -1,0 +1,570 @@
+{
+  "generatedAt": "2026-10-03T17:34:52.458Z",
+  "staticChecks": [
+    "No obsolete provider or specialist names in active HTML, JS or catalogues",
+    "Every new explicit key exists and is non-empty in all six languages",
+    "Twelve roles, four home profiles and correct delivery modes",
+    "Protected naturist page and founder narrative preserved",
+    "Prices and real contact endpoints preserved on every page"
+  ],
+  "browserChecks": [
+    {
+      "name": "index.html",
+      "width": 390,
+      "overflow": false,
+      "height": 33831,
+      "errors": []
+    },
+    {
+      "name": "equipo.html",
+      "width": 390,
+      "overflow": false,
+      "height": 13477,
+      "errors": []
+    },
+    {
+      "name": "actividades.html",
+      "width": 390,
+      "overflow": false,
+      "height": 72255,
+      "errors": []
+    },
+    {
+      "name": "packs.html",
+      "width": 390,
+      "overflow": false,
+      "height": 47920,
+      "errors": []
+    },
+    {
+      "name": "como-funciona.html",
+      "width": 390,
+      "overflow": false,
+      "height": 5296,
+      "errors": []
+    },
+    {
+      "name": "quienes-somos.html",
+      "width": 390,
+      "overflow": false,
+      "height": 7337,
+      "errors": []
+    },
+    {
+      "name": "fundador.html",
+      "width": 390,
+      "overflow": false,
+      "height": 12461,
+      "errors": []
+    },
+    {
+      "name": "formularios.html",
+      "width": 390,
+      "overflow": false,
+      "height": 12013,
+      "errors": []
+    },
+    {
+      "name": "escuela.html",
+      "width": 390,
+      "overflow": false,
+      "height": 33639,
+      "errors": []
+    },
+    {
+      "name": "senderismo-guiado.html",
+      "width": 390,
+      "overflow": false,
+      "height": 3371,
+      "errors": []
+    },
+    {
+      "name": "kayak-mar.html",
+      "width": 390,
+      "overflow": false,
+      "height": 3322,
+      "errors": []
+    },
+    {
+      "name": "snorkel-aventura.html",
+      "width": 390,
+      "overflow": false,
+      "height": 3238,
+      "errors": []
+    },
+    {
+      "name": "btt-costera.html",
+      "width": 390,
+      "overflow": false,
+      "height": 3213,
+      "errors": []
+    },
+    {
+      "name": "coasteering.html",
+      "width": 390,
+      "overflow": false,
+      "height": 3211,
+      "errors": []
+    },
+    {
+      "name": "multiaventura.html",
+      "width": 390,
+      "overflow": false,
+      "height": 3238,
+      "errors": []
+    },
+    {
+      "name": "bautismo-buceo.html",
+      "width": 390,
+      "overflow": false,
+      "height": 3211,
+      "errors": []
+    },
+    {
+      "name": "open-water.html",
+      "width": 390,
+      "overflow": false,
+      "height": 3343,
+      "errors": []
+    },
+    {
+      "name": "paramotor.html",
+      "width": 390,
+      "overflow": false,
+      "height": 3186,
+      "errors": []
+    },
+    {
+      "name": "parapente.html",
+      "width": 390,
+      "overflow": false,
+      "height": 3186,
+      "errors": []
+    },
+    {
+      "name": "rapel.html",
+      "width": 390,
+      "overflow": false,
+      "height": 3186,
+      "errors": []
+    },
+    {
+      "name": "via-ferrata.html",
+      "width": 390,
+      "overflow": false,
+      "height": 3213,
+      "errors": []
+    },
+    {
+      "name": "base-campamento.html",
+      "width": 390,
+      "overflow": false,
+      "height": 11664,
+      "errors": []
+    },
+    {
+      "name": "horizonte-nomada.html",
+      "width": 390,
+      "overflow": false,
+      "height": 11522,
+      "errors": []
+    },
+    {
+      "name": "viajes.html",
+      "width": 390,
+      "overflow": false,
+      "height": 18940,
+      "errors": []
+    },
+    {
+      "name": "index.html",
+      "width": 768,
+      "overflow": false,
+      "height": 31348,
+      "errors": []
+    },
+    {
+      "name": "equipo.html",
+      "width": 768,
+      "overflow": false,
+      "height": 8701,
+      "errors": []
+    },
+    {
+      "name": "actividades.html",
+      "width": 768,
+      "overflow": false,
+      "height": 45617,
+      "errors": []
+    },
+    {
+      "name": "packs.html",
+      "width": 768,
+      "overflow": false,
+      "height": 30786,
+      "errors": []
+    },
+    {
+      "name": "como-funciona.html",
+      "width": 768,
+      "overflow": false,
+      "height": 4094,
+      "errors": []
+    },
+    {
+      "name": "quienes-somos.html",
+      "width": 768,
+      "overflow": false,
+      "height": 5935,
+      "errors": []
+    },
+    {
+      "name": "fundador.html",
+      "width": 768,
+      "overflow": false,
+      "height": 10354,
+      "errors": []
+    },
+    {
+      "name": "formularios.html",
+      "width": 768,
+      "overflow": false,
+      "height": 9439,
+      "errors": []
+    },
+    {
+      "name": "escuela.html",
+      "width": 768,
+      "overflow": false,
+      "height": 20612,
+      "errors": []
+    },
+    {
+      "name": "senderismo-guiado.html",
+      "width": 768,
+      "overflow": false,
+      "height": 2567,
+      "errors": []
+    },
+    {
+      "name": "kayak-mar.html",
+      "width": 768,
+      "overflow": false,
+      "height": 2542,
+      "errors": []
+    },
+    {
+      "name": "snorkel-aventura.html",
+      "width": 768,
+      "overflow": false,
+      "height": 2509,
+      "errors": []
+    },
+    {
+      "name": "btt-costera.html",
+      "width": 768,
+      "overflow": false,
+      "height": 2459,
+      "errors": []
+    },
+    {
+      "name": "coasteering.html",
+      "width": 768,
+      "overflow": false,
+      "height": 2457,
+      "errors": []
+    },
+    {
+      "name": "multiaventura.html",
+      "width": 768,
+      "overflow": false,
+      "height": 2509,
+      "errors": []
+    },
+    {
+      "name": "bautismo-buceo.html",
+      "width": 768,
+      "overflow": false,
+      "height": 2457,
+      "errors": []
+    },
+    {
+      "name": "open-water.html",
+      "width": 768,
+      "overflow": false,
+      "height": 2590,
+      "errors": []
+    },
+    {
+      "name": "paramotor.html",
+      "width": 768,
+      "overflow": false,
+      "height": 2433,
+      "errors": []
+    },
+    {
+      "name": "parapente.html",
+      "width": 768,
+      "overflow": false,
+      "height": 2433,
+      "errors": []
+    },
+    {
+      "name": "rapel.html",
+      "width": 768,
+      "overflow": false,
+      "height": 2433,
+      "errors": []
+    },
+    {
+      "name": "via-ferrata.html",
+      "width": 768,
+      "overflow": false,
+      "height": 2459,
+      "errors": []
+    },
+    {
+      "name": "base-campamento.html",
+      "width": 768,
+      "overflow": false,
+      "height": 9307,
+      "errors": []
+    },
+    {
+      "name": "horizonte-nomada.html",
+      "width": 768,
+      "overflow": false,
+      "height": 7852,
+      "errors": []
+    },
+    {
+      "name": "viajes.html",
+      "width": 768,
+      "overflow": false,
+      "height": 11832,
+      "errors": []
+    },
+    {
+      "name": "index.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 26104,
+      "errors": []
+    },
+    {
+      "name": "equipo.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 7265,
+      "errors": []
+    },
+    {
+      "name": "actividades.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 30463,
+      "errors": []
+    },
+    {
+      "name": "packs.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 23388,
+      "errors": []
+    },
+    {
+      "name": "como-funciona.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 3328,
+      "errors": []
+    },
+    {
+      "name": "quienes-somos.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 5104,
+      "errors": []
+    },
+    {
+      "name": "fundador.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 8893,
+      "errors": []
+    },
+    {
+      "name": "formularios.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 8793,
+      "errors": []
+    },
+    {
+      "name": "escuela.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 16175,
+      "errors": []
+    },
+    {
+      "name": "senderismo-guiado.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 2247,
+      "errors": []
+    },
+    {
+      "name": "kayak-mar.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 2247,
+      "errors": []
+    },
+    {
+      "name": "snorkel-aventura.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 2189,
+      "errors": []
+    },
+    {
+      "name": "btt-costera.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 2164,
+      "errors": []
+    },
+    {
+      "name": "coasteering.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 2162,
+      "errors": []
+    },
+    {
+      "name": "multiaventura.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 2189,
+      "errors": []
+    },
+    {
+      "name": "bautismo-buceo.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 2162,
+      "errors": []
+    },
+    {
+      "name": "open-water.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 2247,
+      "errors": []
+    },
+    {
+      "name": "paramotor.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 2138,
+      "errors": []
+    },
+    {
+      "name": "parapente.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 2138,
+      "errors": []
+    },
+    {
+      "name": "rapel.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 2138,
+      "errors": []
+    },
+    {
+      "name": "via-ferrata.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 2164,
+      "errors": []
+    },
+    {
+      "name": "base-campamento.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 9518,
+      "errors": []
+    },
+    {
+      "name": "horizonte-nomada.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 6584,
+      "errors": []
+    },
+    {
+      "name": "viajes.html",
+      "width": 1366,
+      "overflow": false,
+      "height": 10159,
+      "errors": []
+    }
+  ],
+  "interactions": [
+    {
+      "width": 390,
+      "moreLess": true
+    },
+    {
+      "mobileHero": {
+        "titleOpacity": "1",
+        "titleAnimation": "none",
+        "overlapNotice": false,
+        "overlapButtons": false,
+        "height": 33831
+      }
+    },
+    {
+      "width": 768,
+      "moreLess": true
+    },
+    {
+      "width": 1366,
+      "moreLess": true
+    },
+    {
+      "language": "es",
+      "pages": 24,
+      "dialogs": true
+    },
+    {
+      "language": "en",
+      "pages": 24,
+      "dialogs": true
+    },
+    {
+      "language": "fr",
+      "pages": 24,
+      "dialogs": true
+    },
+    {
+      "language": "de",
+      "pages": 24,
+      "dialogs": true
+    },
+    {
+      "language": "it",
+      "pages": 24,
+      "dialogs": true
+    },
+    {
+      "language": "pt",
+      "pages": 24,
+      "dialogs": true
+    }
+  ],
+  "errors": []
+}

@@ -253,7 +253,7 @@
       start: 'Senderismo técnico',
       goal: 'Autonomía outdoor y progresión multiaventura',
       reference: 'Técnicos deportivos, guías especializados y protocolos de montaña, barrancos, BTT y orientación.',
-      responsible: 'Guía de montaña y vertical, Guía de barrancos, rafting y BTT e Instructor/a de bushcraft, orientación y supervivencia según actividad',
+      responsible: 'Puestos de montaña, barrancos, BTT y orientación según actividad',
       modules: [
         ['Senderismo técnico', 'Ruta, ritmo, desnivel, material, hidratación, orientación y seguridad.'],
         ['Crestas y terreno expuesto', 'Aristas, pasos aéreos, equilibrio, cuerda de apoyo, vértigo y comunicación.'],
