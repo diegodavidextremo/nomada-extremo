@@ -15,6 +15,8 @@ for(const page of pages){
  const duplicates=names.filter((n,i)=>names.indexOf(n)!==i);
  if(duplicates.length)fail(page,'IDs duplicados: '+[...new Set(duplicates)].join(', '));
 }
+// School route anchors are rendered from this same checked-in route definition.
+for(const match of read('assets/js/escuela-rutas.js').matchAll(/\bid: '([^']+)'/g)) ids.get('escuela.html').add('route-'+match[1]);
 function localRef(file,ref,anchors=true){
  ref=decode(ref.trim());
  if(!ref||/^(https?:|mailto:|tel:|data:|javascript:|blob:|\/\/)/i.test(ref)||ref.includes('${'))return;

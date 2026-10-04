@@ -12,7 +12,7 @@
     const section=card.closest('section'); const id=section?.id||''; const text=norm(card.textContent); const sectionText=norm(section?.textContent);
     const mapped=sectionMap[id]||['montaña','multiaventura','todo el año'];
     card.dataset.medio=mapped[0]; card.dataset.tipo=mapped[1]; card.dataset.temporada=mapped[2];
-    card.dataset.nivel=norm(card.querySelector('.nivel-badge')?.textContent||'iniciación');
+    card.dataset.nivel=norm(card.dataset.levels||card.querySelector('.nivel-badge')?.textContent||'iniciación');
     card.dataset.zona=zones.filter(z=>sectionText.includes(norm(z))).map(norm).join(',')||'aguilas';
     const tags=[...card.querySelectorAll('.ficha-tag')].map(x=>norm(x.textContent));
     card.dataset.duracion=tags.find(x=>/h|dia|jornada|semana/.test(x))||'medio dia';
@@ -30,19 +30,22 @@
       chip.addEventListener('click',toggle);chip.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle();}});
     });
   });
+  let query='';
+  const search=document.createElement('label');search.className='catalog-search';search.innerHTML='<span>Buscar actividad o modalidad</span><input type="search" placeholder="Buscar actividad o modalidad" autocomplete="off">';panel.prepend(search);search.querySelector('input').addEventListener('input',event=>{query=norm(event.target.value);apply();});
   const tools=document.createElement('div'); tools.className='activity-filter-tools'; tools.innerHTML='<p class="activity-filter-count" aria-live="polite"></p><button class="btn btn-outline activity-filter-clear" type="button">Limpiar filtros</button>';
   panel.append(tools);
   const empty=document.createElement('div');empty.className='activity-filter-empty';empty.hidden=true;empty.setAttribute('role','status');empty.textContent='No hay actividades que coincidan con esta combinación. Prueba a limpiar algún filtro.';
   document.querySelector('#top-fichas')?.before(empty);
   const matches=(card,key,values)=>!values.size||[...values].some(v=>norm(card.dataset[key]).split(',').some(item=>item.includes(v)||v.includes(item)));
   const translate=source=>window.noextTranslate?.(source)||source;
-  function updateLabels(){tools.querySelector('.activity-filter-clear').textContent=translate('Limpiar filtros');tools.querySelector('.activity-filter-count').textContent=visibleCount+' '+translate('actividades encontradas');empty.textContent=translate('No hay actividades que coincidan con esta combinación. Prueba a limpiar algún filtro.');}
+  function updateLabels(){tools.querySelector('.activity-filter-clear').textContent=translate('Limpiar filtros');tools.querySelector('.activity-filter-count').textContent=visibleCount+' '+translate(visibleCount===1?'propuesta encontrada':'propuestas encontradas');empty.textContent=translate('No hay actividades que coincidan con esta combinación. Prueba a limpiar algún filtro.');}
   let visibleCount=cards.length;
-  function apply(){visibleCount=0;cards.forEach(card=>{const show=[...selected].every(([k,v])=>matches(card,k,v));if(show){card.hidden=false;card.classList.remove('filtering-out');card.classList.add('filtering-in');window.setTimeout(()=>card.classList.remove('filtering-in'),260);visibleCount++;}else{card.classList.remove('filtering-in');card.classList.add('filtering-out');window.setTimeout(()=>{if(card.classList.contains('filtering-out'))card.hidden=true;},190);}});empty.hidden=visibleCount!==0;updateLabels();}
-  tools.querySelector('button').addEventListener('click',()=>{selected.forEach(s=>s.clear());panel.querySelectorAll('.filter-chip').forEach(c=>{c.classList.remove('is-active');c.setAttribute('aria-pressed','false');});apply();});
+  const selectedMatches=card=>[...selected].every(([k,v])=>matches(card,k,v))&&(!query||norm(card.dataset.search+' '+card.textContent).includes(query));
+  function apply(){visibleCount=0;cards.forEach(card=>{const show=selectedMatches(card);if(show){card.hidden=false;card.classList.remove('filtering-out');card.classList.add('filtering-in');window.setTimeout(()=>card.classList.remove('filtering-in'),260);visibleCount++;}else{card.classList.remove('filtering-in');card.classList.add('filtering-out');window.setTimeout(()=>{if(card.classList.contains('filtering-out'))card.hidden=true;},190);}});empty.hidden=visibleCount!==0;sections.forEach(section=>section.hidden=!cards.some(card=>card.closest('section')===section&&selectedMatches(card)));updateLabels();}
+  tools.querySelector('button').addEventListener('click',()=>{query='';search.querySelector('input').value='';selected.forEach(s=>s.clear());panel.querySelectorAll('.filter-chip').forEach(c=>{c.classList.remove('is-active');c.setAttribute('aria-pressed','false');});apply();});
   window.addEventListener('noext:languagechange',updateLabels);
   const sections=[...new Set(cards.map(card=>card.closest('section')).filter(Boolean))];
-  const updateSections=()=>sections.forEach(section=>{section.hidden=!cards.some(card=>card.closest('section')===section&&[...selected].every(([key,values])=>matches(card,key,values)));});
+  const updateSections=()=>sections.forEach(section=>{section.hidden=!cards.some(card=>card.closest('section')===section&&selectedMatches(card));});
   panel.addEventListener('click',updateSections);
   panel.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' ')updateSections();});
   document.querySelectorAll('.catalog-navigation a').forEach(link=>link.addEventListener('click',()=>{document.querySelector('.catalog-navigation details').open=false;}));

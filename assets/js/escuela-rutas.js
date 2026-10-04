@@ -236,7 +236,8 @@
       extras: [
         ['Deep / Profunda', 'Planificación y control de inmersiones a mayor profundidad recreativa.'],
         ['Navegación', 'Brújula, referencias naturales y control de rumbo bajo el agua.'],
-        ['Nocturna', 'Poca luz, linterna, comunicación y control del grupo.'],
+        ['Nocturna · Night & Limited Visibility', 'Poca luz, linterna, comunicación y control del grupo.'],
+        ['Foto y vídeo', 'Fotografía y vídeo subacuático, control de flotabilidad y respeto del fondo.'],
         ['Nitrox', 'Mezclas enriquecidas, planificación y límites de exposición.'],
         ['Flotabilidad', 'Control, consumo, posición y respeto del fondo.'],
         ['Búsqueda y recuperación', 'Patrones, cabos, boyas y recuperación de objetos.'],

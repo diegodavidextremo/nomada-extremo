@@ -477,16 +477,17 @@ document.addEventListener('DOMContentLoaded', () => {
     Object.entries(imageFocusData).map(([key, value]) => [normalizeTitle(key), value])
   );
 
-  document.querySelectorAll('.fichas-grid .ficha').forEach(card => {
-    const titleEl = card.querySelector('.ficha-titulo');
-    const body = card.querySelector('.ficha-cuerpo');
+  document.querySelectorAll('.fichas-grid .ficha, .catalog-mode').forEach(card => {
+    if (card.dataset.noTech) return;
+    const titleEl = card.querySelector('.ficha-titulo') || {textContent:card.dataset.activitySource};
+    const body = card.querySelector('.ficha-cuerpo') || (card.classList.contains('catalog-mode') ? card : null);
     if (!titleEl || !body || body.querySelector('.activity-detail-panel')) return;
-    const data = activityLookup[normalizeTitle(titleEl.textContent)];
+    const data = activityLookup[normalizeTitle(card.dataset.activitySource || titleEl.textContent)];
     if (!data) return;
     card.classList.add('activity-card');
     body.classList.add('activity-card-body');
     const image = card.querySelector('.ficha-img');
-    const imageFocus = imageFocusLookup[normalizeTitle(titleEl.textContent)];
+    const imageFocus = imageFocusLookup[normalizeTitle(card.dataset.activitySource || titleEl.textContent)];
     if (image && imageFocus) {
       image.classList.add('activity-image');
       image.style.setProperty('--activity-img-position', imageFocus.pos);
@@ -765,6 +766,22 @@ document.addEventListener('DOMContentLoaded', () => {
   function getActivitySpec(title){const n=normalizeTitle(title);return specLookup[n]||Object.entries(specLookup).find(([k])=>n.includes(k)||k.includes(n))?.[1]||fallbackTechnicalSpec;}
   function renderTechnicalSheet(s){const tr=window.noextTranslate||((value)=>value);const rows=[['Familia',s.familia],['Duración',s.duracion],['Edad recomendada',s.edad],['Nivel físico',s.fisico],['Nivel técnico',s.tecnico],['Experiencia previa',s.experiencia],['Ratio orientativo',s.ratio],['Material incluido',s.material],['Qué traer',s.trae],['Temporada recomendada',s.temporada],['Meteorología límite',s.meteo],['Motivos de cambio o cancelación',s.cancelacion],['Riesgos principales',s.riesgos],['Requisitos en versión operativa',s.operativo],['Nota académica',s.nota],['Versiones posibles',s.versiones]];return `<div class="modal-technical-sheet"><div class="technical-grid">${rows.map(([l,v])=>`<span class="technical-item"><strong>${tr(l)}</strong>${tr(v)}</span>`).join('')}</div></div>`;}
   function placeTechnicalButton(card,btn){const body=card.querySelector('.ficha-cuerpo')||card;if(card.classList.contains('process-card')){let row=card.querySelector('.action-row');const primary=card.querySelector('a.btn, button.btn');if(!row){row=document.createElement('div');row.className='action-row action-row--stack-mobile';if(primary){primary.parentNode.insertBefore(row,primary);row.appendChild(primary)}else{card.appendChild(row)}}row.appendChild(btn);return}body.appendChild(btn)}
-  document.querySelectorAll('.ficha').forEach(card=>{const title=card.querySelector('.ficha-titulo, h3')?.textContent?.trim();if(!title||card.querySelector('.ficha-tech-btn'))return;const btn=document.createElement('button');btn.type='button';btn.className='ficha-tech-btn';btn.textContent='Ver ficha técnica';btn.addEventListener('click',()=>{const tr=window.noextTranslate||((value)=>value);window.noextOpenModal(`${tr('Ficha técnica')} · ${tr(title)}`,renderTechnicalSheet(getActivitySpec(title)))});placeTechnicalButton(card,btn)});
+  document.querySelectorAll('.ficha, .catalog-mode').forEach(card => {
+    if (card.dataset.noTech || card.querySelector('.ficha-tech-btn')) return;
+    const heading = card.querySelector('.ficha-titulo, h3')?.textContent?.trim();
+    const source = card.dataset.activitySource || heading;
+    if (!source) return;
+    const sources = [...new Set([source, ...[...card.querySelectorAll('.catalog-mode')].map(mode => mode.dataset.activitySource)])];
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'ficha-tech-btn';
+    btn.textContent = 'Ver ficha técnica';
+    btn.addEventListener('click', () => {
+      const tr = window.noextTranslate || (value => value);
+      const content = sources.map(name => `<h3>${tr(name)}</h3>${renderTechnicalSheet(getActivitySpec(name))}`).join('');
+      window.noextOpenModal(`${tr('Ficha técnica')} · ${tr(heading || source)}`, content);
+    });
+    placeTechnicalButton(card, btn);
+  });
   document.querySelectorAll('a.btn, button.btn, .ficha-btn').forEach(el=>{if(el.dataset.noextBound)return;el.dataset.noextBound='1';el.addEventListener('click',()=>{const text=el.textContent.trim();if(/Solicitar|Regalar|Consultar|Reservar|Contactar|Unirme/i.test(text))window.noextToast(`${text.replace('→','').trim()} · solicitud preparada`)})});
 });

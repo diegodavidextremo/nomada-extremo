@@ -16,8 +16,8 @@ assert.equal(await page.locator('.catalog-navigation').evaluate(e=>getComputedSt
 assert.equal(await page.locator('.filter-groups').getAttribute('open'),null);
 await page.locator('#montana').scrollIntoViewIfNeeded();await page.waitForTimeout(600);await page.screenshot({path:'tools/reports/review-activities-mobile.png'});
 await page.locator('.filter-groups summary').click();await page.locator('.filter-chip').filter({hasText:/^Mar$/}).click();await page.waitForTimeout(300);
-assert(await page.locator('.ficha:visible').count()>0);assert(await page.locator('.ficha:visible').count()<46);
-await page.locator('.activity-filter-clear').click();await page.waitForTimeout(300);assert.equal(await page.locator('.ficha:visible').count(),46);
+assert(await page.locator('.ficha:visible').count()>0);assert(await page.locator('.ficha:visible').count()<33);
+await page.locator('.activity-filter-clear').click();await page.waitForTimeout(300);assert.equal(await page.locator('.ficha:visible').count(),33);
 await page.locator('.filter-groups summary').click();await page.locator('.ficha-tech-btn').last().scrollIntoViewIfNeeded();await page.waitForTimeout(150);const y=await page.evaluate(()=>scrollY);
 await page.locator('.ficha-tech-btn').last().click();await page.keyboard.press('Escape');assert(Math.abs((await page.evaluate(()=>scrollY))-y)<5,'technical modal retains scroll');
 for(const f of ['grupos.html','como-funciona.html']){await visit(f);assert.equal(await page.locator('.process-card .ficha-tech-btn').count(),0);}

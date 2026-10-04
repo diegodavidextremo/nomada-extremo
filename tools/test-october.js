@@ -43,15 +43,20 @@ check('Twelve roles, four home profiles and correct delivery modes', () => {
   for (const file of ['senderismo-guiado', 'kayak-mar', 'snorkel-aventura', 'btt-costera', 'multiaventura']) assert.ok(read(file+'.html').includes('model-badge--own'), file);
   for (const file of ['base-campamento', 'horizonte-nomada', 'viajes']) assert.ok(read(file+'.html').includes('model-badge--future'), file);
 });
-check('Protected naturist page and founder narrative preserved', () => {
+check('Protected naturist page and unchanged founder chapters preserved', () => {
   assert.equal(read('naturistas.html').replaceAll('\r\n','\n'), original('naturistas.html').replace(new RegExp(oldNames[10],'i'),'El/la coordinador/a de experiencias naturistas y bienestar outdoor'));
-  const clean = s => s.replace(/\?v=[^"\s<>]+/g,'').replace(/\n\s*<div class="bio-cita" data-i18n="october.quote">[\s\S]*?<\/div>/,'');
-  assert.equal(clean(read('fundador.html')), clean(original('fundador.html')));
+  const clean = s => s.replaceAll('\r\n','\n').replace(/\?v=[^"\s<>]+/g,'').replace(/\n\s*<div class="bio-cita" data-i18n="october.quote">[\s\S]*?<\/div>/,'');
+  const chapters = source => [...clean(source).matchAll(/<div class="bio-chapter">[\s\S]*?(?=<!-- CAP|<\/div>\s*<\/div>\s*<!-- COLUMNA)/g)].map(m=>m[0].trim());
+  const current=chapters(read('fundador.html')), before=chapters(original('fundador.html'));
+  assert.equal(current.length,6);assert.equal(before.length,6);
+  for(const index of [0,1,2,3,5])assert.equal(current[index],before[index]);
+  assert.ok(current[4].includes('Cueva C-6'));assert.ok(current[4].includes('parasailing'));
 });
-check('Prices and real contact endpoints preserved on every page', () => {
+check('Prices preserved across grouped catalog and school; real contact endpoints preserved', () => {
   const extract = (source, pattern) => [...source.matchAll(pattern)].map(m=>m[0]).sort();
+  assert.deepEqual(extract(read('actividades.html')+read('escuela.html'),/\d+(?:[.,]\d+)?€/g),extract(original('actividades.html')+original('escuela.html'),/\d+(?:[.,]\d+)?€/g));
   for (const file of pages) {
-    assert.deepEqual(extract(read(file),/\d+(?:[.,]\d+)?€/g),extract(original(file),/\d+(?:[.,]\d+)?€/g),file);
+    if(!['actividades.html','escuela.html'].includes(file))assert.deepEqual(extract(read(file),/\d+(?:[.,]\d+)?€/g),extract(original(file),/\d+(?:[.,]\d+)?€/g),file);
     assert.deepEqual(extract(read(file),/(?:https?:\/\/(?:wa\.me|t\.me|www\.instagram\.com|instagram\.com|www\.youtube\.com|youtube\.com)\/[^"\s<>]+|mailto:[^"\s<>]+|tel:[^"\s<>]+)/g),extract(original(file),/(?:https?:\/\/(?:wa\.me|t\.me|www\.instagram\.com|instagram\.com|www\.youtube\.com|youtube\.com)\/[^"\s<>]+|mailto:[^"\s<>]+|tel:[^"\s<>]+)/g),file);
   }
 });

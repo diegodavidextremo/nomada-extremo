@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-03T17:34:52.458Z",
+  "generatedAt": "2026-10-04T15:53:54.506Z",
   "staticChecks": [
     "No obsolete provider or specialist names in active HTML, JS or catalogues",
     "Every new explicit key exists and is non-empty in all six languages",
     "Twelve roles, four home profiles and correct delivery modes",
-    "Protected naturist page and founder narrative preserved",
-    "Prices and real contact endpoints preserved on every page"
+    "Protected naturist page and unchanged founder chapters preserved",
+    "Prices preserved across grouped catalog and school; real contact endpoints preserved"
   ],
   "browserChecks": [
     {
       "name": "index.html",
       "width": 390,
       "overflow": false,
-      "height": 33831,
+      "height": 34094,
       "errors": []
     },
     {
@@ -26,7 +26,7 @@
       "name": "actividades.html",
       "width": 390,
       "overflow": false,
-      "height": 72255,
+      "height": 57554,
       "errors": []
     },
     {
@@ -47,14 +47,14 @@
       "name": "quienes-somos.html",
       "width": 390,
       "overflow": false,
-      "height": 7337,
+      "height": 7631,
       "errors": []
     },
     {
       "name": "fundador.html",
       "width": 390,
       "overflow": false,
-      "height": 12461,
+      "height": 12550,
       "errors": []
     },
     {
@@ -68,7 +68,7 @@
       "name": "escuela.html",
       "width": 390,
       "overflow": false,
-      "height": 33639,
+      "height": 34928,
       "errors": []
     },
     {
@@ -180,7 +180,7 @@
       "name": "index.html",
       "width": 768,
       "overflow": false,
-      "height": 31348,
+      "height": 31409,
       "errors": []
     },
     {
@@ -194,7 +194,7 @@
       "name": "actividades.html",
       "width": 768,
       "overflow": false,
-      "height": 45617,
+      "height": 38256,
       "errors": []
     },
     {
@@ -222,7 +222,7 @@
       "name": "fundador.html",
       "width": 768,
       "overflow": false,
-      "height": 10354,
+      "height": 10442,
       "errors": []
     },
     {
@@ -236,7 +236,7 @@
       "name": "escuela.html",
       "width": 768,
       "overflow": false,
-      "height": 20612,
+      "height": 22018,
       "errors": []
     },
     {
@@ -348,7 +348,7 @@
       "name": "index.html",
       "width": 1366,
       "overflow": false,
-      "height": 26104,
+      "height": 26165,
       "errors": []
     },
     {
@@ -362,7 +362,7 @@
       "name": "actividades.html",
       "width": 1366,
       "overflow": false,
-      "height": 30463,
+      "height": 28463,
       "errors": []
     },
     {
@@ -390,7 +390,7 @@
       "name": "fundador.html",
       "width": 1366,
       "overflow": false,
-      "height": 8893,
+      "height": 8951,
       "errors": []
     },
     {
@@ -404,7 +404,7 @@
       "name": "escuela.html",
       "width": 1366,
       "overflow": false,
-      "height": 16175,
+      "height": 17765,
       "errors": []
     },
     {
@@ -524,7 +524,7 @@
         "titleAnimation": "none",
         "overlapNotice": false,
         "overlapButtons": false,
-        "height": 33831
+        "height": 34094
       }
     },
     {

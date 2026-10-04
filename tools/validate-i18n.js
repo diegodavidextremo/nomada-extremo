@@ -43,6 +43,7 @@ const languages = ['en', 'fr', 'de', 'it', 'pt'];
     const technicalButtons = page.locator('.ficha-tech-btn');
     const technicalCount = await technicalButtons.count();
     for (let index = 0; index < technicalCount; index += 1) {
+      await technicalButtons.nth(index).evaluate(button => {for(let node=button.parentElement;node;node=node.parentElement)if(node.tagName==='DETAILS')node.open=true;});
       await technicalButtons.nth(index).click();
       await page.waitForTimeout(10);
       const dynamicAudit = await page.evaluate(() => {
@@ -68,7 +69,7 @@ const languages = ['en', 'fr', 'de', 'it', 'pt'];
           overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth + 1,
           title: document.querySelector('#noext-modal-title')?.textContent?.trim() || '',
           modalVisible: Boolean(modal?.classList.contains('open')),
-          modalComplete: items.length === 16 && items.every(item => item.textContent.trim().length > 0),
+          modalComplete: items.length >= 16 && items.length % 16 === 0 && items.every(item => item.textContent.trim().length > 0),
           modalText: text.slice(0, 240)
         };
       });
