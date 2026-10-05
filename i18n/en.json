@@ -93,6 +93,12 @@
     }
   },
   "strings": {
+    "BUCEO SSI:": "SSI DIVING:",
+    "UNA PROGRESIÓN CLARA": "A CLEAR PROGRESSION",
+    "En Nómada Extremo la formación de buceo se orienta hacia": "At Nómada Extremo, diving training follows",
+    "SSI — Scuba Schools International": "SSI — Scuba Schools International",
+    "y se coordina con un centro especializado.": "and is coordinated with a specialist centre.",
+    "El itinerario se adapta al nivel y al historial de cada alumno, desde la iniciación hasta las especialidades y la progresión profesional.": "The pathway adapts to each student’s level and training history, from introductory diving to specialties and professional progression.",
     "Kayak y SUP en aguas resguardadas, snorkel y buceo con protección térmica, y formación acuática cuando el mar y la temperatura acompañan.": "Kayak and SUP in sheltered waters, snorkelling and diving with thermal protection, and water training when sea conditions and temperatures allow.",
     "Senderismo, trekking, orientación, BTT, escalada, rápel, vías ferratas, barrancos secos y bushcraft en jornadas de tiempo estable.": "Hiking, trekking, orienteering, mountain biking, climbing, abseiling, via ferratas, dry canyoning and bushcraft on days with stable weather.",
     "Parapente, paramotor, paratrike y paracaidismo en ventanas meteorológicas adecuadas. Técnica, seguridad, material y progresión en la Escuela Nómada.": "Paragliding, paramotor, paratrike and skydiving in suitable weather windows. Technique, safety, equipment and progression at the Nomad School.",
@@ -4212,7 +4218,7 @@
     "Paddle surf + snorkel + juegos + fotos familiares": "Paddle surf + snorkel + games + family photos",
     "Paddle surf, windsurf, wingfoil, e-foil, snorkel y kayak según condiciones. Cupón WATERMANSUMMER.": "Paddle surf, windsurf, wingfoil, e-foil, snorkel and kayak depending on conditions. WATERMANSUMMER coupon.",
     "Paddle surf, wingfoil, windsurf o e-foil según zona y condiciones.": "Paddle surf, wingfoil, windsurf or e-foil depending on area and conditions.",
-    "SSI": "SSI preferred SSI supported",
+    "SSI": "SSI",
     "SSI · Módulo 2 · Costa de Águilas": "SSI · Module 2 · Costa de Águilas",
     "SSI · Progresión completa": "SSI Complete progression",
     "SSI / centro de buceo autorizado.": "SSI / authorized diving center.",

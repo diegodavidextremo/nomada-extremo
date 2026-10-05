@@ -128,3 +128,7 @@
 @media (prefers-reduced-motion: reduce) {
   .home-guarantee .sello { opacity: 1 !important; transform: none !important; transition: none !important; }
 }
+.home-page .card-icon:has(.home-line-icon),
+.home-page .curso-icono:has(.home-line-icon) { color: var(--mar); line-height: 1; }
+.home-page .curso-icono .home-line-icon { width: 36px; height: 36px; color: var(--bosque); }
+.home-page .act-card-hover-icon .home-line-icon { width: 44px; height: 44px; color: #fff; }
