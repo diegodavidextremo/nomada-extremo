@@ -45,3 +45,41 @@ p > .ui-line-icon, .btn > .ui-line-icon {
   justify-content: center;
   gap: 0.65rem;
 }
+.card-icon .ui-line-icon, .form-icono .ui-line-icon,
+.itin-icon .ui-line-icon, .alq-icon .ui-line-icon {
+  width: 32px;
+  height: 32px;
+}
+.cam-icon .ui-line-icon { width: 40px; height: 40px; }
+.badge-circle .ui-line-icon { width: 30px; height: 30px; color: inherit; }
+.badge-circle:not(.bloqueado) .ui-line-icon { color: var(--mar); }
+.form-tipo-badge .ui-line-icon, .itin-tag .ui-line-icon,
+.logbook-entry-badge .ui-line-icon {
+  width: 13px;
+  height: 13px;
+  color: inherit;
+}
+.credencial-qr .ui-line-icon { width: 32px; height: 32px; color: inherit; }
+.btn-form > .ui-line-icon {
+  width: 17px;
+  height: 17px;
+  margin-right: 0.35rem;
+  color: inherit;
+}
+.flujo-num .ui-line-icon { width: 21px; height: 21px; color: var(--blanco); }
+.sustainability-actions { margin-top: 1.5rem; gap: 1rem; }
+.sustainability-actions .btn {
+  max-width: 100%;
+  white-space: normal;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.rental-safety-note {
+  margin-top: 1.5rem;
+  padding: 1rem 1.2rem;
+  border-left: 3px solid var(--bosque);
+  background: var(--blanco);
+  color: var(--mar);
+  font-size: 0.82rem;
+  line-height: 1.7;
+}
