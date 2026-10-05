@@ -1,0 +1,47 @@
+/* Shared line icons for contact, packs and gift vouchers. */
+.ui-line-icon {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  flex-shrink: 0;
+  vertical-align: middle;
+  color: var(--mar);
+}
+.config-opt, .super-pack-act {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.config-opt .ui-line-icon, .super-pack-act .ui-line-icon,
+.config-titulo .ui-line-icon, .super-pack-av .ui-line-icon,
+.pack-badge .ui-line-icon, .super-pack-tag .ui-line-icon {
+  width: 17px;
+  height: 17px;
+  color: inherit;
+}
+p > .ui-line-icon, .btn > .ui-line-icon {
+  width: 19px;
+  height: 19px;
+  margin-right: 0.35rem;
+  color: inherit;
+}
+.bono-icono .ui-line-icon {
+  width: 36px;
+  height: 36px;
+  color: var(--bosque);
+}
+.bono-card.premium .bono-icono .ui-line-icon { color: var(--mar); }
+.bono-custom .bono-icono .ui-line-icon { color: var(--arena-claro); }
+.mapa-pin .ui-line-icon { width: 52px; height: 52px; }
+.ui-whatsapp-logo {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+.btn:has(.ui-whatsapp-logo) {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+}
