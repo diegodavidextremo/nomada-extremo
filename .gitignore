@@ -5,3 +5,4 @@ node_modules/
 tools/reports/community-image-imports.json
 tools/reports/check-community-assets.js
 tools/reports/community-new-assets.jpg
+tools/reports/official-generation/

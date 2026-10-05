@@ -1,0 +1,230 @@
+{
+  "tool": "Built-in image_gen",
+  "reference": "assets/images/emblema-referencia-catalogo-noche.png",
+  "referenceApproved": "OFICIAL 5 OCTUBRE 2026 VERSIÓN OFICIAL DE LA NOCHE",
+  "referenceSha256": "5e33e699b1c05b535238c2c4c0a97178f39c77617ece8b22df26034bffc72b33",
+  "assets": [
+    {
+      "file": "app-nomada-extremo.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Create an exceptional premium photorealistic product/editorial image. Premium wide product photograph of smartphone upright showing polished outdoor community app in navy/cobalt/orange with supplied full official emblem at top, clean cards, small coastal photo, simple progress charts with minimal text, daylight rock desk beside bottle printed same full logo. Elegant realistic device, sharp screen, no fictional gibberish headlines. Image 1 is the ONLY current official NIGHT emblem: silver NÓMADA over orange EXTREMO, REAL ÁGUILAS CASTLE coastal scene, mountain compass AT THE BOTTOM. Preserve lettering, shield outline, scene and color; no old center-compass logos. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "bolsa-estanca-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Edit target image 1. Preserve the exact product design, latest official NIGHT emblem, small front clothing badge, material, colors, tailoring and presentation. Replace ALL outdoor background (sky, sea, castle, cliffs, rocks, trees, landscape) and ground with a clean seamless PASTEL LIGHT BEIGE #F4E9DD studio backdrop, soft neutral shadows and refined daylight. No scenery outside the emblem's own artwork. Remove miscellaneous background props. Preserve all product views. Image 2 is the approved current emblem. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "botella-reutilizable-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Edit target image 1. Preserve the exact product design, latest official NIGHT emblem, small front clothing badge, material, colors, tailoring and presentation. Replace ALL outdoor background (sky, sea, castle, cliffs, rocks, trees, landscape) and ground with a clean seamless PASTEL LIGHT BEIGE #F4E9DD studio backdrop, soft neutral shadows and refined daylight. No scenery outside the emblem's own artwork. Remove miscellaneous background props. Preserve all product views. Image 2 is the approved current emblem. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "braga-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Edit target image 1. Preserve the exact product design, latest official NIGHT emblem, small front clothing badge, material, colors, tailoring and presentation. Replace ALL outdoor background (sky, sea, castle, cliffs, rocks, trees, landscape) and ground with a clean seamless PASTEL LIGHT BEIGE #F4E9DD studio backdrop, soft neutral shadows and refined daylight. No scenery outside the emblem's own artwork. Remove miscellaneous background props. Preserve all product views. Image 2 is the approved current emblem. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "camiseta-carnaval-noext.svg",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Create an exceptional premium photorealistic product/editorial image. CARNAVAL DE ÁGUILAS technical T-shirt front and back, refined intricate cobalt/turquoise/orange/gold masks, feather plumes, fine ornamental filigree and Mediterranean waves, matching folded gaiter. Front has only a SMALL left-chest badge. BACK: supporting source photograph must be reproduced as a photographic print panel with original REAL low rounded tan castle high LEFT, connected ochre hill/ridge and isolated thin Roncaor rock far RIGHT, palms, town and blue sea. Do not redraw or alter castle/coast geography or create fantasy towers. The rest of the fabric has elegant carnival mask/feather borders. Image 1 is the ONLY current official NIGHT emblem: silver NÓMADA over orange EXTREMO, REAL ÁGUILAS CASTLE coastal scene, mountain compass AT THE BOTTOM. Preserve lettering, shield outline, scene and color; no old center-compass logos. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige",
+      "originalPhotograph": "assets/images/castillo-aguilas-roncaor-referencia.jpg",
+      "originalPhotographSha256": "1d7cc69e57634719ed17740e19e4a734dc11a11edab6a2c3e55dfd549ec2a2fa",
+      "embeddedPhotograph": "assets/images/castillo-aguilas-roncaor-web.jpg",
+      "embeddedPhotographSha256": "c2a671ad1124c23c0309dc54de828092be6756fcb02366c423691bc460164086",
+      "composition": "Native SVG embeds the original photograph, uniformly resized and JPEG compressed for web; no AI redraw, warping, crop or recoloring."
+    },
+    {
+      "file": "camiseta-edicion-verano-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Create an exceptional premium photorealistic product/editorial image. Front and back of SUMMER designer technical tee with sophisticated detailed Mediterranean wave engraving, orange sunlit mountain forms and turquoise sea panels, full supplied emblem prominently on front, coastal illustration on back, bright summer editorial product scene. Image 1 is the ONLY current official NIGHT emblem: silver NÓMADA over orange EXTREMO, REAL ÁGUILAS CASTLE coastal scene, mountain compass AT THE BOTTOM. Preserve lettering, shield outline, scene and color; no old center-compass logos. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "camiseta-halloween-1-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Create an exceptional premium photorealistic product/editorial image. HALLOWEEN HUNTER T-shirt front and back, intricate illustrated coastal canyon with jack-o-lantern pumpkins, bats, black forest silhouettes, luminous orange climbing rope trails, cobalt/turquoise nighttime texture. REMOVE ALL CASTLES, BUILDINGS AND MOON DISKS from the artwork. No castles, haunted buildings, towers, architectural silhouettes or big moon motifs anywhere. Seasonal illustrated artwork dominates front and back, SMALL left-chest badge only, matching folded gaiter. Image 1 is the ONLY current official NIGHT emblem: silver NÓMADA over orange EXTREMO, REAL ÁGUILAS CASTLE coastal scene, mountain compass AT THE BOTTOM. Preserve lettering, shield outline, scene and color; no old center-compass logos. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed. STRICT: NO castles, NO buildings/towers and NO large moon discs anywhere. Keep rich pumpkin/bat/forest or reef seasonal design.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "camiseta-halloween-2-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Create an exceptional premium photorealistic product/editorial image. HALLOWEEN EXTREME II alternate T-shirt front and back: intricate spectral underwater reef, skeleton fish, sea cave silhouettes, ghostly turquoise mist, violet/cobalt highlights, glowing orange pumpkin-corals and tiny bats. NO CASTLES, NO BUILDINGS, NO TOWERS, NO MOON DISKS. Only SMALL left-chest badge, rich wearable artwork on all remaining fabric, matching gaiter. Image 1 is the ONLY current official NIGHT emblem: silver NÓMADA over orange EXTREMO, REAL ÁGUILAS CASTLE coastal scene, mountain compass AT THE BOTTOM. Preserve lettering, shield outline, scene and color; no old center-compass logos. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed. STRICT: NO castles, NO buildings/towers and NO large moon discs anywhere. Keep rich pumpkin/bat/forest or reef seasonal design.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "camiseta-licra-banador-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Edit target image 1. Preserve the exact product design, latest official NIGHT emblem, small front clothing badge, material, colors, tailoring and presentation. Replace ALL outdoor background (sky, sea, castle, cliffs, rocks, trees, landscape) and ground with a clean seamless PASTEL LIGHT BEIGE #F4E9DD studio backdrop, soft neutral shadows and refined daylight. No scenery outside the emblem's own artwork. Remove miscellaneous background props. Preserve all product views. Image 2 is the approved current emblem. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "camiseta-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Edit target image 1. Preserve the exact product design, latest official NIGHT emblem, small front clothing badge, material, colors, tailoring and presentation. Replace ALL outdoor background (sky, sea, castle, cliffs, rocks, trees, landscape) and ground with a clean seamless PASTEL LIGHT BEIGE #F4E9DD studio backdrop, soft neutral shadows and refined daylight. No scenery outside the emblem's own artwork. Remove miscellaneous background props. Preserve all product views. Image 2 is the approved current emblem. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "carnet-nomada-premium.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Create an exceptional premium photorealistic product/editorial image. Wide premium membership card product mockup, navy cobalt foil edges, full supplied official emblem large left, subtle coastal contour pattern, clean silver exact small heading CLUB NÓMADA, polished light stone background. No old compass-only badge, no real personal information. Image 1 is the ONLY current official NIGHT emblem: silver NÓMADA over orange EXTREMO, REAL ÁGUILAS CASTLE coastal scene, mountain compass AT THE BOTTOM. Preserve lettering, shield outline, scene and color; no old center-compass logos. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "casco-tecnico-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Edit target image 1. Preserve the exact product design, latest official NIGHT emblem, small front clothing badge, material, colors, tailoring and presentation. Replace ALL outdoor background (sky, sea, castle, cliffs, rocks, trees, landscape) and ground with a clean seamless PASTEL LIGHT BEIGE #F4E9DD studio backdrop, soft neutral shadows and refined daylight. No scenery outside the emblem's own artwork. Remove miscellaneous background props. Preserve all product views. Image 2 is the approved current emblem. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "cliff-jumping-summer-days.webp",
+      "width": 1400,
+      "height": 933,
+      "prompt": "Create an exceptional premium photorealistic product/editorial image. Wide editorial controlled coastal adventure briefing on rocky Mediterranean shore: adults in helmets and buoyancy vests listening to guide, safe shore context, turquoise water and dramatic rocks, full official emblem on guide's vest back, bright sharp detailed photograph, no dangerous airborne action or extra words. Image 1 is the ONLY current official NIGHT emblem: silver NÓMADA over orange EXTREMO, REAL ÁGUILAS CASTLE coastal scene, mountain compass AT THE BOTTOM. Preserve lettering, shield outline, scene and color; no old center-compass logos. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. Wide bright editorial scene, realistic people and gear, refined brand colors.",
+      "background": "editorial"
+    },
+    {
+      "file": "costa-salvaje-summer.webp",
+      "width": 1400,
+      "height": 933,
+      "prompt": "Create an exceptional premium photorealistic product/editorial image. Wide crisp cinematic coastal adventure image of rugged Mediterranean cliffs, turquoise sea and mountain ridge, small adult hikers in technical packs on safe trail, full current official emblem decal clearly on foreground drybag placed on rock, warm sunlight, no extra words. Image 1 is the ONLY current official NIGHT emblem: silver NÓMADA over orange EXTREMO, REAL ÁGUILAS CASTLE coastal scene, mountain compass AT THE BOTTOM. Preserve lettering, shield outline, scene and color; no old center-compass logos. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. Wide bright editorial scene, realistic people and gear, refined brand colors.",
+      "background": "editorial"
+    },
+    {
+      "file": "cupones-premium.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Create an exceptional premium photorealistic product/editorial image. Wide premium printed coupon ticket set with die-cut ends and rich navy cobalt orange patterned borders, FULL supplied current official emblem large on left and exact text 28% on right; elegant silver foil, light warm studio stone, sharp legible professionally art directed branded vouchers. Image 1 is the ONLY current official NIGHT emblem: silver NÓMADA over orange EXTREMO, REAL ÁGUILAS CASTLE coastal scene, mountain compass AT THE BOTTOM. Preserve lettering, shield outline, scene and color; no old center-compass logos. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "dashboard-logbook.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Create an exceptional premium photorealistic product/editorial image. Wide premium editorial laptop photograph with crisp navy white cobalt orange outdoor logbook dashboard: supplied full official emblem in header, six clean progress bars and coastal memory thumbnails, minimal readable UI without verbose text; realistic laptop on warm bright desk beside technical notebook bearing same full emblem. Image 1 is the ONLY current official NIGHT emblem: silver NÓMADA over orange EXTREMO, REAL ÁGUILAS CASTLE coastal scene, mountain compass AT THE BOTTOM. Preserve lettering, shield outline, scene and color; no old center-compass logos. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "gorra-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Edit target image 1. Preserve the exact product design, latest official NIGHT emblem, small front clothing badge, material, colors, tailoring and presentation. Replace ALL outdoor background (sky, sea, castle, cliffs, rocks, trees, landscape) and ground with a clean seamless PASTEL LIGHT BEIGE #F4E9DD studio backdrop, soft neutral shadows and refined daylight. No scenery outside the emblem's own artwork. Remove miscellaneous background props. Preserve all product views. Image 2 is the approved current emblem. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "hero-club-nomada.webp",
+      "width": 1400,
+      "height": 933,
+      "prompt": "Create an exceptional premium photorealistic product/editorial image. Wide cinematic editorial photograph of diverse adult adventure community sharing a cheerful coastal campsite briefing near Mediterranean sea and mountains in bright golden daylight. Full supplied current emblem visible on central upright fabric camp banner and jackets, realistic people, vivid cobalt turquoise orange, generous sky negative space, no extra words. Image 1 is the ONLY current official NIGHT emblem: silver NÓMADA over orange EXTREMO, REAL ÁGUILAS CASTLE coastal scene, mountain compass AT THE BOTTOM. Preserve lettering, shield outline, scene and color; no old center-compass logos. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. Wide bright editorial scene, realistic people and gear, refined brand colors.",
+      "background": "editorial"
+    },
+    {
+      "file": "insignias-nomada.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Create an exceptional premium photorealistic product/editorial image. Premium collectible insignia product photo: large embroidered patch faithfully reproducing complete supplied current full emblem, surrounded by smaller matching richly detailed discipline patches sea, mountain, parachute, climbing, cyclist and foil. Designer navy cobalt orange silver fabric thread, light canvas background, no old circular logo or extra words. Image 1 is the ONLY current official NIGHT emblem: silver NÓMADA over orange EXTREMO, REAL ÁGUILAS CASTLE coastal scene, mountain compass AT THE BOTTOM. Preserve lettering, shield outline, scene and color; no old center-compass logos. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "material-arnes-vertical-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Edit target image 1. Preserve the exact product design, latest official NIGHT emblem, small front clothing badge, material, colors, tailoring and presentation. Replace ALL outdoor background (sky, sea, castle, cliffs, rocks, trees, landscape) and ground with a clean seamless PASTEL LIGHT BEIGE #F4E9DD studio backdrop, soft neutral shadows and refined daylight. No scenery outside the emblem's own artwork. Remove miscellaneous background props. Preserve all product views. Image 2 is the approved current emblem. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "navidad-nomada.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Create an exceptional premium photorealistic product/editorial image. CHRISTMAS sweatshirt and matching winter beanie with rich snow-white/ice-blue Nordic jacquard motifs of mountain ridges, fir trees, compass stars, snowflakes, kayak paddles and little orange parachutes on midnight blue, tasteful orange cuffs. SMALL left-chest official badge ONLY, matching designed gift box with orange ribbon and just a small festive evergreen sprig. Real festive collection, not a plain hoodie. Image 1 is the ONLY current official NIGHT emblem: silver NÓMADA over orange EXTREMO, REAL ÁGUILAS CASTLE coastal scene, mountain compass AT THE BOTTOM. Preserve lettering, shield outline, scene and color; no old center-compass logos. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "neopreno-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Edit target image 1. Preserve the exact product design, latest official NIGHT emblem, small front clothing badge, material, colors, tailoring and presentation. Replace ALL outdoor background (sky, sea, castle, cliffs, rocks, trees, landscape) and ground with a clean seamless PASTEL LIGHT BEIGE #F4E9DD studio backdrop, soft neutral shadows and refined daylight. No scenery outside the emblem's own artwork. Remove miscellaneous background props. Preserve all product views. Image 2 is the approved current emblem. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "pack-audiovisual-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Create an exceptional premium photorealistic product/editorial image. Outdoor creator kit: action cameras, compact 360 camera, drone folded, straps and tough carrycase navy/orange, full current official emblem sticker on case. Clearly camera lenses, accurate plausible hardware, no invented brand labels, bright studio. Image 1 is the ONLY current official NIGHT emblem: silver NÓMADA over orange EXTREMO, REAL ÁGUILAS CASTLE coastal scene, mountain compass AT THE BOTTOM. Preserve lettering, shield outline, scene and color; no old center-compass logos. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "pack-btt-rider.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Create an exceptional premium photorealistic product/editorial image. BTT rider kit: patterned cobalt/navy/orange cycling jersey, helmet, bottle and gloves, refined trail contour graphics, complete supplied emblem on jersey and bottle, sharp bright editorial product flatlay. Image 1 is the ONLY current official NIGHT emblem: silver NÓMADA over orange EXTREMO, REAL ÁGUILAS CASTLE coastal scene, mountain compass AT THE BOTTOM. Preserve lettering, shield outline, scene and color; no old center-compass logos. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "pack-costa-salvaje.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Create an exceptional premium photorealistic product/editorial image. Premium coastal adventure kit: rolltop waterproof bag, rashguard, snorkel mask, folded microfiber towel, insulated bottle. Matching turquoise/navy/orange wave detailing and full official emblem printed on bag, rashguard and bottle. Editorial ivory product shot. Image 1 is the ONLY current official NIGHT emblem: silver NÓMADA over orange EXTREMO, REAL ÁGUILAS CASTLE coastal scene, mountain compass AT THE BOTTOM. Preserve lettering, shield outline, scene and color; no old center-compass logos. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "pack-starter-nomada.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Create an exceptional premium photorealistic product/editorial image. Premium welcome kit flatlay: technical navy tee, orange-accent cap, steel bottle, embroidered patch and stickers, all displaying full supplied official emblem. Thoughtful matching contour graphics, cobalt gift tray, natural ivory studio, all items clear. Image 1 is the ONLY current official NIGHT emblem: silver NÓMADA over orange EXTREMO, REAL ÁGUILAS CASTLE coastal scene, mountain compass AT THE BOTTOM. Preserve lettering, shield outline, scene and color; no old center-compass logos. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "pack-vertical.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Create an exceptional premium photorealistic product/editorial image. Climbing outdoor product kit harness, certified-looking but unlabeled helmet, rope, locking carabiners and chalk pouch; full exact official emblem decals on helmet and pouch, navy/orange matching colors, actual realistic gear geometry, bright detailed studio. Image 1 is the ONLY current official NIGHT emblem: silver NÓMADA over orange EXTREMO, REAL ÁGUILAS CASTLE coastal scene, mountain compass AT THE BOTTOM. Preserve lettering, shield outline, scene and color; no old center-compass logos. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "semana-santa-nomada.webp",
+      "width": 1400,
+      "height": 933,
+      "prompt": "Create an exceptional premium photorealistic product/editorial image. Wide bright spring EASTER adventure family product-and-lifestyle campaign: adult parents with teens on coastal trail, wildflowers and tasteful painted Easter eggs in small gift basket in foreground beside branded technical shirts bearing supplied full official emblem. Refined joyful spring styling, realistic anatomy, no extra text. Image 1 is the ONLY current official NIGHT emblem: silver NÓMADA over orange EXTREMO, REAL ÁGUILAS CASTLE coastal scene, mountain compass AT THE BOTTOM. Preserve lettering, shield outline, scene and color; no old center-compass logos. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. Wide bright editorial scene, realistic people and gear, refined brand colors.",
+      "background": "editorial"
+    },
+    {
+      "file": "sudadera-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Edit target image 1. Preserve the exact product design, latest official NIGHT emblem, small front clothing badge, material, colors, tailoring and presentation. Replace ALL outdoor background (sky, sea, castle, cliffs, rocks, trees, landscape) and ground with a clean seamless PASTEL LIGHT BEIGE #F4E9DD studio backdrop, soft neutral shadows and refined daylight. No scenery outside the emblem's own artwork. Remove miscellaneous background props. Preserve all product views. Image 2 is the approved current emblem. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. BACKGROUND REQUIREMENT: uniform seamless light PASTEL BEIGE #F4E9DD, no outdoor scenes, no buildings/trees/sky, only soft product shadows. Square product photograph. The coast printed INSIDE approved logo is preserved, never removed.",
+      "background": "pastel-beige"
+    },
+    {
+      "file": "sunset-kayak-sessions.webp",
+      "width": 1400,
+      "height": 933,
+      "prompt": "Create an exceptional premium photorealistic product/editorial image. Wide cinematic golden sunset sea kayaking session, two adults in lifejackets, realistic orange kayaks on calm Mediterranean bay, rich amber and cobalt atmosphere, full supplied official emblem decal on foreground kayak bow, no extra words. Image 1 is the ONLY current official NIGHT emblem: silver NÓMADA over orange EXTREMO, REAL ÁGUILAS CASTLE coastal scene, mountain compass AT THE BOTTOM. Preserve lettering, shield outline, scene and color; no old center-compass logos. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. Wide bright editorial scene, realistic people and gear, refined brand colors.",
+      "background": "editorial"
+    },
+    {
+      "file": "verano-nomada-aguilas.webp",
+      "width": 1400,
+      "height": 933,
+      "prompt": "Create an exceptional premium photorealistic product/editorial image. Wide sunlit Mediterranean summer adventure editorial photograph, orange kayaks and adult paddlers in lifejackets on turquoise coastal bay, navy orange branded drybag in foreground with full supplied emblem printed large. Vivid welcoming sea, realistic paddles, no extra words. Image 1 is the ONLY current official NIGHT emblem: silver NÓMADA over orange EXTREMO, REAL ÁGUILAS CASTLE coastal scene, mountain compass AT THE BOTTOM. Preserve lettering, shield outline, scene and color; no old center-compass logos. GLOBAL BRAND RULE OVERRIDES OTHER SUBJECT WORDING: clothing/jackets/wetsuits use SMALL LEFT-CHEST emblem only, approximately 8 cm wide and at most 15% garment width; no enormous central front logo. Large back print permitted. Caps use a restrained badge at most 30% of front panel width. Fine realistic materials, tasteful designer art direction, whole products visible, NO extra words or price tags, NO collage grids or inset detail tiles. Wide bright editorial scene, realistic people and gear, refined brand colors.",
+      "background": "editorial"
+    }
+  ]
+}

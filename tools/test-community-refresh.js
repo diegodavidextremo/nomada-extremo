@@ -22,11 +22,16 @@ let browser;
    await page.waitForFunction(()=>[...document.images].every(img=>img.complete));
    assert.deepEqual(await page.locator('img').evaluateAll(images=>images.filter(img=>!img.naturalWidth).map(img=>img.src)),[]);
    assert.equal(await page.locator('img[src*="/noext/"]').count(),0);
+   assert.equal(await page.locator('img[src*="community-2026/"]').count(),0);
+   assert((await page.locator('.nav-logo-img').getAttribute('src')).includes('emblema-oficial-web.webp'));
+   assert((await page.locator('.footer-brand-head img').getAttribute('src')).includes('emblema-oficial-web.webp'));
+   assert((await page.locator('#chatBtn img').getAttribute('src')).includes('emblema-oficial-web.webp'));
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),file+' overflow '+width);
    if(file==='comunidad'){
     assert.equal(await page.locator('.coupon-copy').count(),22);
     assert.equal(await page.locator('.social-premium-card .social-icon img').count(),6);
     assert.equal(await page.locator('.reward-grid img').count(),3);
+    assert.equal(await page.locator('img[src*="navidad-nomada"]').count(),2);
     const filters=page.locator('[data-coupon-filter]');
     for(let i=0;i<await filters.count();i++){
      await filters.nth(i).click();assert(await page.locator('.promo-coupon:visible').count()>0);
@@ -58,5 +63,8 @@ let browser;
    }
   }
  }
+ const manifest=JSON.parse(fs.readFileSync(path.join(root,'assets/images/community-oficial-2026/generation-prompts.json'),'utf8'));
+ assert.equal(manifest.assets.length,31);assert(manifest.referenceApproved.includes('NOCHE'));
+ const crypto=require('node:crypto');assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,manifest.reference))).digest('hex'),manifest.referenceSha256);
  assert.deepEqual(errors,[]);console.log('Six languages passed; all generated images load; no JavaScript errors.');
 })().catch(error=>{console.error(error);process.exitCode=1}).finally(async()=>{await browser?.close();server.close()});

@@ -348,3 +348,6 @@ body.modal-open { position:static !important; overflow:hidden; touch-action:auto
 .ficha[id], .catalog-school-section {scroll-margin-top:100px;}
 .catalog-search {display:flex;flex-direction:column;gap:.5rem;margin-bottom:1rem;font-size:.8rem;}
 .catalog-search input {width:100%;max-width:620px;padding:.8rem;border:1px solid var(--crema-media);border-radius:var(--radio);font:inherit;background:var(--blanco);color:var(--gris-oscuro);}
+/* The approved emblem is shown complete, including its wordmark and shield. */
+.nav-logo-img,.footer-brand-head img,.chat-avatar-logo,#chatBtn img,.logbook-profile-logo{object-fit:contain;border-radius:0!important;background:transparent}
+#chatBtn img{width:42px;height:42px}

@@ -11,7 +11,7 @@
   <div class="project-top-notice" role="note">Proyecto académico no operativo · 2.º GMN 2026-2027 · Sin reservas, cobros ni ventas</div>
   <nav id="nav" aria-label="Navegación principal">
     <a href="index.html" class="nav-logo-wrap" aria-label="Nómada Extremo — Inicio">
-      <img src="assets/images/logo-photoroom.png" alt="Logo Nómada Extremo" class="nav-logo-img" decoding="async">
+      <img src="assets/images/emblema-oficial-web.webp?v=20261005-8" alt="Logo Nómada Extremo" class="nav-logo-img" decoding="async">
       <div class="nav-logo-text" aria-hidden="true">
         <span class="ln1">NÓMADA EXTREMO</span>
         <span class="ln2">Aventura, técnica y naturaleza</span>
@@ -109,7 +109,7 @@
 <footer id="footer" class="footer-compact">
   <div class="container">
     <div class="footer-topline">
-      <a class="footer-brand-head" href="index.html"><img src="assets/images/logo-photoroom.png" alt="" width="52" height="52" loading="lazy"><span class="footer-marca-nombre">NÓMADA EXTREMO<small>Águilas · Aventura, técnica y naturaleza</small></span></a>
+      <a class="footer-brand-head" href="index.html"><img src="assets/images/emblema-oficial-web.webp?v=20261005-8" alt="" width="52" height="52" loading="lazy"><span class="footer-marca-nombre">NÓMADA EXTREMO<small>Águilas · Aventura, técnica y naturaleza</small></span></a>
       <nav class="footer-primary" aria-label="Enlaces principales del pie"><a href="actividades.html">Actividades</a><a href="proyecto-intermodular.html">Proyecto intermodular</a><a href="fundador.html">Fundador</a><a href="equipo.html">Equipo</a><a href="contacto.html">Contacto</a></nav>
     </div>
     <p class="footer-purpose">Proyecto académico no operativo · 2.º GMN · 2026–2027. Sin reservas, cobros ni ventas reales.</p>

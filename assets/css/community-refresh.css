@@ -36,7 +36,7 @@
 .comunidad-page .summer-feature,.comunidad-page .summer-grid>article{background:#183544;border:1px solid #ffffff1f}
 .comunidad-page .noext-product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.25rem}
 .comunidad-page .noext-product-card,.comunidad-page .noext-pack-card{position:relative;padding:.75rem .75rem 1.3rem;background:white;border-radius:18px;min-width:0}
-.comunidad-page .noext-product-card>img,.comunidad-page .noext-product-card.tall>img,.comunidad-page .noext-pack-card>img{width:100%;height:auto;min-height:0;aspect-ratio:1;object-fit:contain;border-radius:12px;box-shadow:none;background:#faf5ed}
+.comunidad-page .noext-product-card img,.comunidad-page .noext-product-card.tall img,.comunidad-page .noext-pack-card img{width:100%;height:auto;min-height:0;aspect-ratio:1;object-fit:contain;border-radius:12px;box-shadow:none;background:#f4e9dd}
 .comunidad-page .noext-product-card>strong,.comunidad-page .noext-pack-card>strong{display:block;padding:.9rem .35rem .35rem;font-family:var(--display);font-size:1.4rem;letter-spacing:.04em}
 .comunidad-page .noext-product-card>span,.comunidad-page .noext-pack-card>span{display:block;padding:0 .35rem;font-size:.76rem;line-height:1.6}
 .comunidad-page .reward-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;align-items:start}
@@ -86,3 +86,5 @@
 
 .comunidad-page .coupon-star .coupon-code>em:last-of-type{display:block;width:auto;height:auto;border-radius:0;background:none;color:#f1bb84;font-size:clamp(2rem,5vw,3rem);line-height:1.15;letter-spacing:0}
 .comunidad-page .coupon-hero .creator-socials a{color:var(--mar);background:#fff;border:1px solid #c8dce8;text-shadow:none}
+
+.comunidad-page .product-photo-link{display:block;border-radius:12px;cursor:zoom-in}.comunidad-page .product-photo-link:focus-visible{outline:3px solid #db8b42;outline-offset:4px}
