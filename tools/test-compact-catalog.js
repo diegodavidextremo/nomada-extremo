@@ -1,0 +1,100 @@
+const {chromium} = require('playwright');
+const fs = require('node:fs'), path = require('node:path'), http = require('node:http');
+const assert = require('node:assert/strict');
+const root = path.resolve(__dirname, '..');
+const server = http.createServer((req, res) => {
+  const file = path.resolve(root, '.' + decodeURIComponent(new URL(req.url, 'http://local').pathname));
+  if (!file.startsWith(root + path.sep) || !fs.existsSync(file) || !fs.statSync(file).isFile()) { res.writeHead(404).end(); return; }
+  const types = {'.html':'text/html','.js':'text/javascript','.json':'application/json','.css':'text/css'};
+  res.setHeader('Content-Type', (types[path.extname(file)] || 'application/octet-stream') + '; charset=utf-8');
+  fs.createReadStream(file).pipe(res);
+});
+let browser;
+(async () => {
+  await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
+  const base = 'http://127.0.0.1:' + server.address().port + '/';
+  browser = await chromium.launch({headless:true, executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'});
+  const page = await browser.newPage({reducedMotion:'reduce'});
+  const errors = [];
+  page.on('pageerror', error => {errors.push(error.message); console.error('Page error:', error.message);});
+  for (const [width, height] of [[1366,768],[1280,720],[1024,600],[768,600],[390,844],[320,740]]) {
+    await page.setViewportSize({width,height});
+    await page.goto(base + 'actividades.html');
+    await page.locator('.activity-compare-toggle').first().waitFor({state:'attached', timeout:5000}).catch(async error => {console.log(await page.evaluate(() => ({spec:typeof window.noextGetActivitySpec, cards:document.querySelectorAll('.activities-page .ficha[data-activity-source]').length, body:document.body.className, scripts:[...document.scripts].map(s=>s.src)})));throw error;});
+    await page.locator('.filter-panel').scrollIntoViewIfNeeded();
+    const panelHeight = await page.locator('.filter-panel').evaluate(el => el.getBoundingClientRect().height);
+    assert(panelHeight <= (width > 700 ? 95 : 155), `${width}: filter height ${panelHeight}`);
+    assert(await page.locator('.activity-filter-clear').isHidden());
+    assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `${width}: catalog overflow`);
+    await page.screenshot({path:`tools/reports/compact-filters-${width}.png`});
+    await page.locator('.filter-groups summary').click();
+    await page.locator('.filter-chip').filter({hasText:/^Mar$/}).click();
+    await page.waitForTimeout(300);
+    const filtered = await page.locator('.ficha:visible').count();
+    assert(filtered > 0 && filtered < 33);
+    await page.locator('.activity-filter-clear').click();
+    await page.waitForTimeout(300);
+    assert.equal(await page.locator('.ficha:not([hidden])').count(), 33);
+    await page.locator('.filter-groups summary').click();
+    await page.locator('.catalog-search input').fill('senderismo');
+    await page.waitForTimeout(300);
+    assert(await page.locator('.ficha:not([hidden])').count() > 0);
+    assert(await page.locator('.ficha:not([hidden])').count() < 33);
+    assert(await page.locator('#senderismo-guiado').isVisible());
+    await page.locator('.activity-filter-clear').click();
+    await page.waitForTimeout(300);
+    for (let i = 0; i < 4; i++) await page.locator('.activity-compare-toggle').nth(i).click();
+    assert.equal(await page.locator('.activity-compare-toggle[aria-pressed="true"]').count(), 3);
+    await page.locator('[data-compare-open]').click();
+    assert.equal(await page.locator('.activity-comparison thead th').count(), 4);
+    assert.equal(await page.locator('.activity-comparison tbody tr').count(), 5);
+    const displayed = await page.locator('.activity-comparison tbody tr').first().locator('td').first().innerText();
+    const expected = await page.evaluate(() => window.noextGetActivitySpec('SENDERISMO GUIADO').duracion);
+    assert.equal(displayed, expected);
+    if (width === 1366 || width === 390) await page.screenshot({path:`tools/reports/activity-comparison-${width}.png`});
+    await page.keyboard.press('Escape');
+    assert.equal(await page.locator('#noext-modal').getAttribute('aria-hidden'), 'true');
+    assert(await page.locator('[data-compare-open]').evaluate(el => el === document.activeElement));
+    await page.locator('[data-compare-clear]').click();
+    assert(await page.locator('.activity-compare-dock').isHidden());
+    await page.goto(base + 'index.html');
+    await page.locator('.home-adventure-help').waitFor();
+    assert.equal(await page.locator('.home-orientation-section').count(), 0);
+    assert.equal(await page.locator('#resenas .testi-card').count(), 3);
+    assert(await page.locator('.home-adventure-help').evaluate(el => !el.open));
+    await page.locator('.home-adventure-help > summary').click();
+    assert(await page.locator('.selector-group').first().isVisible());
+    await page.goto(base + 'index.html#selector-aventura');
+    assert(await page.locator('.home-adventure-help').evaluate(el => el.open));
+    await page.goto(base + 'index.html');
+    await page.waitForTimeout(300);
+    assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `${width}: home overflow`);
+    if (width > 700) {
+      const bottom = await page.locator('.hero-btns').evaluate(el => el.getBoundingClientRect().bottom);
+      assert(bottom <= height, `${width}x${height}: hero buttons below fold (${bottom})`);
+    }
+    if (width === 1366 || width === 1024 || width === 390) await page.screenshot({path:`tools/reports/compact-home-${width}.png`});
+    console.log(`${width}x${height}: filter ${Math.round(panelHeight)}px, search, comparison and home passed`);
+  }
+  await page.setViewportSize({width:1366,height:768});
+  for (const language of ['en','fr','de','it','pt','es']) {
+    const dictionary = JSON.parse(fs.readFileSync(path.join(root, 'i18n', language + '.json'), 'utf8'));
+    await page.goto(base + 'actividades.html');
+    await page.locator(`[data-language-switcher] [data-lang="${language}"]`).first().click();
+    await page.waitForFunction(lang => document.documentElement.lang === lang, language);
+    await page.waitForTimeout(150);
+    const button = page.locator('.activity-compare-toggle').first();
+    assert.equal(await button.innerText(), dictionary.strings['Comparar']);
+    await button.click();
+    assert.equal(await button.innerText(), dictionary.strings['Quitar de comparación']);
+    await page.locator('.activity-compare-toggle').nth(1).click();
+    await page.locator('[data-compare-open]').click();
+    assert.equal(await page.locator('#noext-modal-title').textContent(), dictionary.strings['Comparar actividades']);
+    await page.keyboard.press('Escape');
+    await page.goto(base + 'index.html');
+    await page.waitForFunction(lang => document.documentElement.lang === lang, language);
+    assert.equal(await page.locator('.home-adventure-help > summary').innerText(), dictionary.strings['Ayúdame a elegir una aventura']);
+  }
+  console.log('Six languages: comparison controls and home labels passed');
+  assert.deepEqual(errors, []);
+})().catch(error => { console.error(error); process.exitCode = 1; }).finally(async () => { await browser?.close(); server.close(); });
