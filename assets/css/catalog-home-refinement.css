@@ -85,3 +85,46 @@
   .home-page .hero-titulo { font-size: clamp(4.5rem, 7vw, 6rem) !important; }
   .home-page .hero-lema { margin-top: .65rem; }
 }
+
+/* Homepage typography, restrained iconography and fuller seasonal guidance. */
+.home-page .home-team-roles .specialist-card__header h3 {
+  color: #fff !important; font-family: var(--display) !important;
+  font-size: clamp(1.65rem, 2.1vw, 2.15rem); font-weight: 400;
+  line-height: 1.08; letter-spacing: .04em; text-transform: uppercase;
+  margin: 0; overflow-wrap: normal; hyphens: none;
+}
+.home-page .home-team-roles .specialist-card__header { min-height: 270px; justify-content: flex-start; }
+.home-page .bono-card.popular .bono-badge {
+  color: #fff !important; background: var(--bosque); text-transform: uppercase;
+  font-size: .68rem; letter-spacing: .12em; padding: .4rem .85rem;
+  line-height: 1.3; font-weight: 700;
+}
+.home-whatsapp-logo { width: 28px; height: 28px; object-fit: contain; border-radius: 7px; flex: 0 0 auto; }
+.home-page a.btn:has(.home-whatsapp-logo) { display: inline-flex; align-items: center; justify-content: center; gap: .65rem; }
+.home-line-icon { display: inline-block; width: 32px; height: 32px; vertical-align: middle; flex: 0 0 auto; }
+.home-page .home-guarantee .sellos { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; max-width: 1120px; margin-inline: auto; }
+.home-page .home-guarantee .sello { display: flex; align-items: center; gap: 1rem; padding: 1.15rem; margin: 0; text-align: left; min-width: 0; }
+.home-page .home-guarantee .sello-icon { display: grid; place-items: center; width: 50px; height: 50px; flex: 0 0 50px; border-radius: 12px; background: var(--crema); color: var(--mar); }
+.home-page .home-guarantee .sello strong { display: block; color: var(--mar); font-family: var(--display); font-weight: 400; font-size: 1.3rem; letter-spacing: .04em; text-transform: uppercase; line-height: 1.15; }
+.home-page .home-guarantee .sello span { display: block; margin-top: .35rem; line-height: 1.5; }
+.home-page .home-naturist-activity { color: var(--bosque) !important; font-size: .85rem !important; font-weight: 600; }
+.home-naturist-activity .home-line-icon { margin-bottom: .6rem; }
+.home-page .grid-4:has(> .home-naturist-activity) { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+.season-intro { max-width: 850px; margin-bottom: 1.5rem; }
+#temporadas-home .season-panel { padding: clamp(1.25rem, 3vw, 2rem); }
+.home-page #temporadas-home .grid-4 { display: block !important; width: 100%; max-width: none !important; }
+.home-page #temporadas-home .season-panel { width: 100%; max-width: none !important; }
+.season-activity-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.5rem; margin-top: 1rem; }
+.home-page .season-activity-grid h3 { font-family: var(--display); text-transform: uppercase; color: var(--mar); font-size: 1.35rem; font-weight: 400; letter-spacing: .04em; line-height: 1.2; margin-bottom: .6rem; }
+.season-activity-grid .card-desc { font-size: .85rem; line-height: 1.7; }
+.season-planning-note { margin-top: 1rem; font-size: .8rem; line-height: 1.6; max-width: 900px; color: var(--gris-calido); }
+@media (max-width: 950px) {
+  .home-page .home-guarantee .sellos { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .season-activity-grid { grid-template-columns: 1fr; gap: 1rem; }
+}
+@media (max-width: 540px) {
+  .home-page .home-guarantee .sellos { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-guarantee .sello { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
