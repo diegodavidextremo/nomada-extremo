@@ -1,0 +1,1 @@
+TikTok, Threads y Facebook: SVG de Simple Icons (CC0), https://github.com/simple-icons/simple-icons/tree/develop/icons. Instagram, X y YouTube reutilizan los archivos de marca existentes en este proyecto.

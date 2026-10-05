@@ -1,0 +1,186 @@
+{
+  "tool": "Built-in image_gen",
+  "reference": "assets/images/logo-oficial.png",
+  "assets": [
+    {
+      "file": "sudadera-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Premium photorealistic ecommerce product photograph for Nómada Extremo adventure brand. Square composition. premium navy zip hoodie with small official chest emblem, textured heavyweight cotton. Faithfully use the supplied official NÓMADA EXTREMO logo, keeping the blue compass star, orange and turquoise adventure figures and its exact lettering; no invented replacement logo. Warm ivory studio background, soft natural directional daylight, authentic sharp material texture, realistic shadows, confident blue/orange brand palette. Entire product visible, centered with generous breathing room, fills 75% frame. No other typography, labels, border, collage or watermark. Professional bright outdoor catalogue photograph."
+    },
+    {
+      "file": "gorra-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Premium photorealistic ecommerce product photograph for Nómada Extremo adventure brand. Square composition. single cobalt technical outdoor baseball cap, official emblem embroidered on front, orange stitching. Faithfully use the supplied official NÓMADA EXTREMO logo, keeping the blue compass star, orange and turquoise adventure figures and its exact lettering; no invented replacement logo. Warm ivory studio background, soft natural directional daylight, authentic sharp material texture, realistic shadows, confident blue/orange brand palette. Entire product visible, centered with generous breathing room, fills 75% frame. No other typography, labels, border, collage or watermark. Professional bright outdoor catalogue photograph."
+    },
+    {
+      "file": "braga-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Premium photorealistic ecommerce product photograph for Nómada Extremo adventure brand. Square composition. single tubular neck gaiter upright with mountain navy/turquoise pattern and official emblem on front. Faithfully use the supplied official NÓMADA EXTREMO logo, keeping the blue compass star, orange and turquoise adventure figures and its exact lettering; no invented replacement logo. Warm ivory studio background, soft natural directional daylight, authentic sharp material texture, realistic shadows, confident blue/orange brand palette. Entire product visible, centered with generous breathing room, fills 75% frame. No other typography, labels, border, collage or watermark. Professional bright outdoor catalogue photograph."
+    },
+    {
+      "file": "botella-reutilizable-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Premium photorealistic ecommerce product photograph for Nómada Extremo adventure brand. Square composition. single matte cobalt insulated steel water bottle with orange cap and official emblem on front. Faithfully use the supplied official NÓMADA EXTREMO logo, keeping the blue compass star, orange and turquoise adventure figures and its exact lettering; no invented replacement logo. Warm ivory studio background, soft natural directional daylight, authentic sharp material texture, realistic shadows, confident blue/orange brand palette. Entire product visible, centered with generous breathing room, fills 75% frame. No other typography, labels, border, collage or watermark. Professional bright outdoor catalogue photograph."
+    },
+    {
+      "file": "camiseta-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Premium cobalt technical shirt studio photograph using the official supplied Nómada Extremo logo."
+    },
+    {
+      "file": "bolsa-estanca-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: product-mockup. Create one professional square website image for Nómada Extremo. Subject: single turquoise waterproof roll-top dry bag with black buckles and official emblem on front. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Bright warm ivory background, soft directional daylight, sharp material textures, natural grounded shadows, full products visible with generous margins, professional ecommerce styling. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "camiseta-licra-banador-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: product-mockup. Create one professional square website image for Nómada Extremo. Subject: matching navy long-sleeve UV rashguard and turquoise technical swim shorts arranged as one coordinated set, small official emblem on both pieces. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Bright warm ivory background, soft directional daylight, sharp material textures, natural grounded shadows, full products visible with generous margins, professional ecommerce styling. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "neopreno-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: product-mockup. Create one professional square website image for Nómada Extremo. Subject: single anatomically realistic full-length navy neoprene wetsuit with turquoise shoulder accents and official chest emblem, no person. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Bright warm ivory background, soft directional daylight, sharp material textures, natural grounded shadows, full products visible with generous margins, professional ecommerce styling. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "material-arnes-vertical-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: product-mockup. Create one professional square website image for Nómada Extremo. Subject: climbing harness, neatly coiled dynamic rope and three carabiners, authentic technical details, small official brand patch on harness storage pouch. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Bright warm ivory background, soft directional daylight, sharp material textures, natural grounded shadows, full products visible with generous margins, professional ecommerce styling. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "casco-tecnico-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: product-mockup. Create one professional square website image for Nómada Extremo. Subject: single orange ventilated technical climbing helmet in three-quarter view, proper chin strap and small official emblem on front. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Bright warm ivory background, soft directional daylight, sharp material textures, natural grounded shadows, full products visible with generous margins, professional ecommerce styling. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "camiseta-edicion-verano-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: product-mockup. Create one professional square website image for Nómada Extremo. Subject: single turquoise technical shirt with orange coastline accent and faithful official chest emblem, bright summer edition. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Bright warm ivory background, soft directional daylight, sharp material textures, natural grounded shadows, full products visible with generous margins, professional ecommerce styling. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "camiseta-carnaval-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: product-mockup. Create one professional square website image for Nómada Extremo. Subject: single cobalt technical t-shirt with elegant purple and orange carnival ribbon graphic accents around faithful official chest emblem, tasteful Águilas carnival edition. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Bright warm ivory background, soft directional daylight, sharp material textures, natural grounded shadows, full products visible with generous margins, professional ecommerce styling. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "camiseta-halloween-1-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: product-mockup. Create one professional square website image for Nómada Extremo. Subject: single black technical t-shirt, official emblem at chest, restrained orange crescent and contour-line design, premium outdoor Halloween edition, not cartoon. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Bright warm ivory background, soft directional daylight, sharp material textures, natural grounded shadows, full products visible with generous margins, professional ecommerce styling. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "camiseta-halloween-2-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: product-mockup. Create one professional square website image for Nómada Extremo. Subject: single charcoal technical t-shirt, official emblem at chest, subtle silver mountain silhouette and orange night-sky motif, distinct premium Halloween edition. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Bright warm ivory background, soft directional daylight, sharp material textures, natural grounded shadows, full products visible with generous margins, professional ecommerce styling. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "pack-starter-nomada.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: product-mockup. Create one professional square website image for Nómada Extremo. Subject: coordinated outdoor welcome kit: folded navy technical shirt, cobalt cap and reusable bottle with small faithful official emblems, neat arrangement, not cluttered. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Bright warm ivory background, soft directional daylight, sharp material textures, natural grounded shadows, full products visible with generous margins, professional ecommerce styling. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "pack-costa-salvaje.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: product-mockup. Create one professional square website image for Nómada Extremo. Subject: coordinated Mediterranean adventure kit: turquoise dry bag, UV rashguard, reusable bottle, snorkel mask, small faithful official emblems on branded textile pieces. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Bright warm ivory background, soft directional daylight, sharp material textures, natural grounded shadows, full products visible with generous margins, professional ecommerce styling. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "pack-vertical.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: product-mockup. Create one professional square website image for Nómada Extremo. Subject: coordinated vertical adventure kit: orange climbing helmet, harness, coiled rope and branded navy technical shirt, authentic hardware, small faithful official emblems on helmet and shirt. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Bright warm ivory background, soft directional daylight, sharp material textures, natural grounded shadows, full products visible with generous margins, professional ecommerce styling. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "pack-btt-rider.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: product-mockup. Create one professional square website image for Nómada Extremo. Subject: coordinated mountain biking kit: navy jersey, bicycle helmet, gloves and reusable bottle, faithful official emblem on jersey and bottle. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Bright warm ivory background, soft directional daylight, sharp material textures, natural grounded shadows, full products visible with generous margins, professional ecommerce styling. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "pack-audiovisual-noext.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: product-mockup. Create one professional square website image for Nómada Extremo. Subject: premium outdoor filmmaking kit: unbranded compact action camera, 360 camera, drone folded safely, rugged navy camera case with faithful official emblem, studio arrangement without invented device labels. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Bright warm ivory background, soft directional daylight, sharp material textures, natural grounded shadows, full products visible with generous margins, professional ecommerce styling. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "hero-club-nomada.webp",
+      "width": 1400,
+      "height": 788,
+      "prompt": "Use case: photorealistic-natural. Create one professional landscape website image for Nómada Extremo. Subject: wide editorial photograph of five adult friends wearing navy/turquoise adventure shirts, after a coastal hike on a natural Mediterranean headland near Águilas, warm daylight, real relaxed candid expressions, sea bright turquoise, small official emblem on shirts, no signage. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Authentic Spanish Mediterranean outdoors, crisp natural photography, vibrant yet realistic colors, no text overlays. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "semana-santa-nomada.webp",
+      "width": 1400,
+      "height": 933,
+      "prompt": "Use case: photorealistic-natural. Create one professional landscape website image for Nómada Extremo. Subject: wide bright Mediterranean spring coastal scene: a small family walking a coastal trail toward a calm cove with kayaks in distance, navy branded backpacks bearing small official emblem, native arid coastal plants, inviting daylight. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Authentic Spanish Mediterranean outdoors, crisp natural photography, vibrant yet realistic colors, no text overlays. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "verano-nomada-aguilas.webp",
+      "width": 1400,
+      "height": 933,
+      "prompt": "Use case: photorealistic-natural. Create one professional landscape website image for Nómada Extremo. Subject: wide summer editorial photo of friends launching bright orange and turquoise kayaks from a calm Mediterranean cove, protective lifejackets worn, blue sea and arid Spanish coastal hills, small faithful official emblem on one dry bag, sunny clear daylight. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Authentic Spanish Mediterranean outdoors, crisp natural photography, vibrant yet realistic colors, no text overlays. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "costa-salvaje-summer.webp",
+      "width": 1400,
+      "height": 933,
+      "prompt": "Use case: photorealistic-natural. Create one professional landscape website image for Nómada Extremo. Subject: wide beautiful Mediterranean rocky coast at golden daylight, two adult adventurers on a coastal trail overlooking turquoise water, one navy branded backpack with small official emblem, believable dry Águilas landscape. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Authentic Spanish Mediterranean outdoors, crisp natural photography, vibrant yet realistic colors, no text overlays. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "sunset-kayak-sessions.webp",
+      "width": 1400,
+      "height": 933,
+      "prompt": "Use case: photorealistic-natural. Create one professional landscape website image for Nómada Extremo. Subject: wide cinematic photograph of two kayaks with adults wearing lifejackets in calm Mediterranean water at warm sunset, glints on water, navy/turquoise dry bag with small official emblem, no improbable cliffs. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Authentic Spanish Mediterranean outdoors, crisp natural photography, vibrant yet realistic colors, no text overlays. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "cliff-jumping-summer-days.webp",
+      "width": 1400,
+      "height": 788,
+      "prompt": "Use case: photorealistic-natural. Create one professional landscape website image for Nómada Extremo. Subject: wide editorial photo of adult coasteering group wearing helmets and buoyancy aids beside a low coastal rock ledge with calm turquoise sea, instructor briefing group before water entry, one navy bag carrying official emblem, believable safe composition. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Authentic Spanish Mediterranean outdoors, crisp natural photography, vibrant yet realistic colors, no text overlays. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "insignias-nomada.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: product-mockup. Create one professional square website image for Nómada Extremo. Subject: premium bright studio photograph of a tidy collection of six embroidered adventure patches, beautifully textured blue orange turquoise stitching: wave, mountain, compass, kayak, parachute, leaf. The central larger patch faithfully reproduces supplied official NÓMADA EXTREMO emblem. Arrange neatly on ivory canvas with natural soft shadows, absolutely no extra written labels. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Bright warm ivory background, soft directional daylight, sharp material textures, natural grounded shadows, full products visible with generous margins, professional ecommerce styling. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "app-nomada-extremo.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: product-mockup. Create one professional square website image for Nómada Extremo. Subject: premium photorealistic product scene of a modern smartphone standing on ivory desk beside a navy branded notebook with exact supplied official emblem. Phone displays crisp minimal light adventure app dashboard with blue progress rings, six small discipline cards and a coastal photograph, only short text LOGBOOK and NÓMADA EXTREMO, no dense tiny writing, no financial figures, realistic screen. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Bright warm ivory background, soft directional daylight, sharp material textures, natural grounded shadows, full products visible with generous margins, professional ecommerce styling. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "dashboard-logbook.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: product-mockup. Create one professional square website image for Nómada Extremo. Subject: wide polished laptop on light ivory desk overlooking a Mediterranean window, exact supplied official emblem as small dashboard header brand. Screen shows bright clean adventure logbook with one turquoise coastline photograph, blue progress bars and orange milestones, only short text LOGBOOK, no dense illegible text. Laptop front three-quarter view, realistic details and soft daylight. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Bright warm ivory background, soft directional daylight, sharp material textures, natural grounded shadows, full products visible with generous margins, professional ecommerce styling. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "carnet-nomada-premium.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: product-mockup. Create one professional square website image for Nómada Extremo. Subject: premium product photograph of one cobalt blue physical adventure club member card with faithful supplied official emblem, elegant matte surface, subtle embossed topographic texture, only exact text NÓMADA EXTREMO and CLUB, no QR code, no personal numbers, on ivory desktop. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Bright warm ivory background, soft directional daylight, sharp material textures, natural grounded shadows, full products visible with generous margins, professional ecommerce styling. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    },
+    {
+      "file": "cupones-premium.webp",
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: product-mockup. Create one professional square website image for Nómada Extremo. Subject: premium bright editorial product photograph of two elegant cobalt/turquoise printed adventure gift coupons with faithful supplied official emblem, one small exact 28% and exact CLUB printed prominently, generous blank space, natural ivory paper and soft daylight, no dense conditions or text, no QR. Reference image is the user's official logo: preserve its identity, blue compass star, orange and turquoise activity silhouettes and exact NÓMADA EXTREMO lettering wherever branding is requested. Do not invent or simplify a new logo. Bright warm ivory background, soft directional daylight, sharp material textures, natural grounded shadows, full products visible with generous margins, professional ecommerce styling. No collage, border, watermarks or extraneous words. High clarity at website card sizes."
+    }
+  ]
+}

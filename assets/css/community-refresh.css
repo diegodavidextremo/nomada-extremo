@@ -1,0 +1,88 @@
+/* Community refresh: real images, readable offers and responsive cards. */
+.comunidad-page .coupon-hero{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:2rem;padding:clamp(1.3rem,3vw,2.5rem);border-radius:24px;background:#edf5f9;border:1px solid #c8dce8;box-shadow:0 14px 38px #1e4a6b12}
+.comunidad-page .coupon-hero h3{font-size:clamp(1.5rem,3vw,2.4rem);overflow-wrap:anywhere}
+.comunidad-page .coupon-code{display:flex;flex-direction:column;justify-content:center;gap:.9rem;padding:2rem;border-radius:18px;background:var(--mar);color:white;min-width:0}
+.comunidad-page .coupon-code strong{color:white;font-size:clamp(1.15rem,2.6vw,2rem);overflow-wrap:anywhere}
+.comunidad-page .coupon-code>em{color:#f1bb84;font-style:normal}
+.comunidad-page .coupon-code>em:last-of-type{font-family:var(--display);font-size:3rem;line-height:1}
+.comunidad-page .coupon-actions{display:flex;flex-wrap:wrap;gap:.7rem}
+.comunidad-page .coupon-actions a,.comunidad-page .coupon-actions button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:.65rem 1rem;border:1px solid #ffffff60;border-radius:9px;color:white;background:#ffffff12;font:inherit;font-size:.75rem}
+.comunidad-page .coupon-tabs{display:flex;flex-wrap:wrap;gap:.6rem;margin:2rem 0 1rem}
+.comunidad-page .coupon-tabs button{padding:.6rem 1rem;border-radius:999px;border:1px solid #c7d9e5;color:var(--mar);background:#fff;cursor:pointer;font:inherit;font-size:.8rem}
+.comunidad-page .coupon-tabs button[aria-pressed=true]{background:var(--mar);color:white;border-color:var(--mar)}
+.comunidad-page .coupon-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;align-items:stretch}
+.comunidad-page .promo-coupon{display:flex;flex-direction:column;min-width:0;padding:1.5rem;border-radius:18px;background:white;border:1px solid #dce4e8;border-top:4px solid var(--mar);box-shadow:0 8px 26px #1e4a6b0d}
+.comunidad-page .promo-coupon.featured{background:#eef5f8;border-top-color:#dc843d}
+.comunidad-page .promo-coupon>span{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mar)}
+.comunidad-page .promo-coupon h3{font-size:clamp(1.4rem,2vw,1.85rem);line-height:1.1;margin:.9rem 0;overflow-wrap:anywhere}
+.comunidad-page .promo-coupon>strong{font-family:var(--display);font-size:2.8rem;line-height:1;color:var(--mar)}
+.comunidad-page .promo-coupon>p{font-size:.83rem;line-height:1.7;margin:1rem 0}
+.comunidad-page .promo-coupon details{margin:auto 0 1rem;padding-top:.8rem;border-top:1px dashed #c8d6de}
+.comunidad-page details summary{cursor:pointer;color:var(--mar);font-weight:600;font-size:.78rem}
+.comunidad-page .promo-coupon details ul{margin:.8rem 0;padding-left:1.1rem}
+.comunidad-page .promo-coupon details small{font-size:.7rem}
+.coupon-copy{min-height:44px;border:1px solid #c6d8e4;border-radius:8px;background:#edf5f9;color:var(--mar);cursor:pointer;font:inherit;font-size:.78rem;padding:.65rem 1rem}
+.coupon-feedback{display:block;min-height:1.4rem;margin-top:.4rem;color:var(--bosque);font-size:.74rem}
+.promo-coupon[hidden]{display:none!important}
+.comunidad-page .campaign-grid,.comunidad-page .summer-hero-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}
+.comunidad-page .summer-hero-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.comunidad-page .premium-campaign,.comunidad-page .summer-feature,.comunidad-page .summer-grid>article{border-radius:20px;padding:1.35rem;overflow:hidden;min-width:0}
+.comunidad-page .premium-campaign{background:#fff;border:1px solid #e3e8e8;box-shadow:0 10px 32px #1e4a6b0a}
+.comunidad-page .premium-campaign .noext-card-img{width:100%;height:auto;min-height:0;aspect-ratio:4/3;object-fit:contain;margin:0 0 1.25rem;border-radius:13px;box-shadow:none;background:#f8f3eb}
+.comunidad-page .premium-campaign h3{font-size:1.8rem;line-height:1.05;margin:.8rem 0}
+.comunidad-page .premium-campaign>span{letter-spacing:.06em;font-size:.68rem}
+.comunidad-page .premium-campaign details{margin-top:1rem;border-top:1px solid #e6ebee;padding-top:1rem}
+.comunidad-page .summer-feature img,.comunidad-page .summer-grid img{width:100%;height:auto;min-height:0;aspect-ratio:4/3;object-fit:cover;box-shadow:none}
+.comunidad-page .summer-feature,.comunidad-page .summer-grid>article{background:#183544;border:1px solid #ffffff1f}
+.comunidad-page .noext-product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.25rem}
+.comunidad-page .noext-product-card,.comunidad-page .noext-pack-card{position:relative;padding:.75rem .75rem 1.3rem;background:white;border-radius:18px;min-width:0}
+.comunidad-page .noext-product-card>img,.comunidad-page .noext-product-card.tall>img,.comunidad-page .noext-pack-card>img{width:100%;height:auto;min-height:0;aspect-ratio:1;object-fit:contain;border-radius:12px;box-shadow:none;background:#faf5ed}
+.comunidad-page .noext-product-card>strong,.comunidad-page .noext-pack-card>strong{display:block;padding:.9rem .35rem .35rem;font-family:var(--display);font-size:1.4rem;letter-spacing:.04em}
+.comunidad-page .noext-product-card>span,.comunidad-page .noext-pack-card>span{display:block;padding:0 .35rem;font-size:.76rem;line-height:1.6}
+.comunidad-page .reward-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;align-items:start}
+.comunidad-page .reward-grid>article{padding:1rem;border-radius:18px;background:#fff;min-height:0}
+.comunidad-page .reward-grid img{width:100%;aspect-ratio:4/3;height:auto;min-height:0;object-fit:cover;box-shadow:none}
+.comunidad-page .social-premium-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem}
+.comunidad-page .social-premium-card{padding:1.6rem;min-height:230px;border-radius:18px;background:#183544;border:1px solid #ffffff25}
+.comunidad-page .social-premium-card h3{font-size:1.8rem;margin-top:1rem}
+.comunidad-page .social-premium-card b{min-height:44px;display:inline-flex;align-items:center;padding:.55rem 1rem;margin-top:1rem}
+.comunidad-page .social-icon{background:transparent!important;border:0!important;width:40px;height:40px;display:inline-flex;flex-shrink:0;align-items:center;justify-content:center}
+.comunidad-page .social-icon img{width:100%;height:100%;object-fit:contain;border-radius:7px}
+.comunidad-page .social-icon.facebook img,.comunidad-page .social-icon.x img,.comunidad-page .social-icon.threads img,.comunidad-page .social-icon.tiktok img{background:white;padding:5px}
+.comunidad-page .creator-socials .social-icon{width:24px;height:24px}
+.comunidad-page .creator-socials a{display:inline-flex;align-items:center;gap:.5rem;overflow-wrap:anywhere}
+.comunidad-page .future-card{opacity:.75}
+.logbook-page .logbook-pro-shell{grid-template-columns:minmax(240px,.7fr) minmax(0,1.7fr);gap:1.5rem}
+.logbook-page .logbook-pro-card{background:linear-gradient(150deg,#1e4a6b,#122d3b);color:white;border-radius:22px;padding:1.6rem;box-shadow:0 16px 40px #1e4a6b20}
+.logbook-page .logbook-profile-logo{display:block;width:76px;height:76px;border-radius:50%;margin:1.3rem 0;object-fit:cover}
+.logbook-page .logbook-pro-card h3{color:white;font-size:2.1rem}
+.logbook-page .logbook-pro-card p{color:#d4e4ec;line-height:1.7}
+.logbook-page .logbook-pro-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem;margin:1.5rem 0}
+.logbook-page .logbook-pro-kpis article{padding:.8rem .5rem;border:1px solid #ffffff28;background:#ffffff0a;border-radius:12px}
+.logbook-page .logbook-pro-kpis strong{font-size:2rem;color:#f5bc83}
+.logbook-page .logbook-pro-kpis span{font-size:.7rem;color:#d4e4ec}
+.logbook-page .logbook-pro-status{display:flex;flex-wrap:wrap;gap:.5rem}
+.logbook-page .logbook-pro-status span{background:#ffffff12;color:#d4e4ec;padding:.5rem .65rem;border-radius:8px;font-size:.68rem}
+.logbook-page .logbook-pro-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.logbook-page .logbook-pro-grid>article{border-radius:18px;padding:1.4rem;background:#fff;border:1px solid #dce5ea}
+.logbook-page .logbook-pro-grid>article:first-child{grid-column:1/-1}
+.logbook-page .logbook-pro-grid h3{font-size:1.45rem;margin-bottom:.7rem}
+.logbook-page .discipline-progress{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem 1.5rem}
+.logbook-page .discipline-progress i{height:7px;border-radius:999px;background:#e4edf2}
+.logbook-page .discipline-progress em{background:linear-gradient(90deg,#1e4a6b,#32a5bd);border-radius:inherit}
+.logbook-page .logbook-pro-timeline{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.25rem}
+.logbook-page .logbook-pro-timeline span{padding:.65rem .9rem;background:#edf5f9;color:var(--mar);border-radius:999px;font-size:.75rem}
+.logbook-page .logbook-badge-wall{grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.logbook-page .logbook-badge-wall article{padding:1.5rem;border-radius:18px;border:1px solid #d7e2e8;background:#f7fafb}
+.logbook-page .logbook-badge-wall article.unlocked{border-top:4px solid #317c66;background:#f1f8f4}
+.logbook-page .logbook-badge-wall article.progress{border-top:4px solid #d98a43}
+.logbook-page .media-memory-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem}
+.logbook-page .media-memory-grid img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:18px}
+.logbook-page .qr-credential-card{border-radius:20px}
+.comunidad-page button:focus-visible,.comunidad-page summary:focus-visible{outline:3px solid #db8b42;outline-offset:3px}
+@media(max-width:1050px){.comunidad-page .noext-product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.comunidad-page .coupon-card-grid,.comunidad-page .summer-hero-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.comunidad-page .coupon-hero,.logbook-page .logbook-pro-shell{grid-template-columns:minmax(0,1fr)}.comunidad-page .noext-product-grid,.comunidad-page .social-premium-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.comunidad-page .reward-grid,.logbook-page .media-memory-grid{grid-template-columns:minmax(0,1fr)}.logbook-page .logbook-badge-wall{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:540px){.comunidad-page .coupon-card-grid,.comunidad-page .campaign-grid,.comunidad-page .summer-hero-grid,.comunidad-page .social-premium-grid,.logbook-page .logbook-pro-grid,.logbook-page .discipline-progress,.logbook-page .logbook-badge-wall{grid-template-columns:minmax(0,1fr)}.comunidad-page .coupon-code{padding:1.2rem}.comunidad-page .noext-product-card>strong{font-size:1.15rem}}
+
+.comunidad-page .coupon-star .coupon-code>em:last-of-type{display:block;width:auto;height:auto;border-radius:0;background:none;color:#f1bb84;font-size:clamp(2rem,5vw,3rem);line-height:1.15;letter-spacing:0}
+.comunidad-page .coupon-hero .creator-socials a{color:var(--mar);background:#fff;border:1px solid #c8dce8;text-shadow:none}
