@@ -1,0 +1,211 @@
+{
+  "reviewed": "2026-10-06",
+  "packs": [
+    [
+      "horizonte-salvaje",
+      "Horizonte Salvaje",
+      "Jornadas",
+      "Senderismo costero · kayak · snorkel",
+      "Un recorrido por la costa de Águilas a pie y desde el agua, con pausas para conocer el paisaje.",
+      "Iniciación",
+      "1 día",
+      "95 €",
+      "Saber nadar para el tramo acuático. Recorrido adaptado al estado del mar."
+    ],
+    [
+      "costa-vertical",
+      "Costa Vertical",
+      "Jornadas",
+      "Vía ferrata · rápel · costa",
+      "Una jornada de progresión vertical. El cierre en kayak se plantea solo cuando los accesos y la logística lo permiten.",
+      "Medio",
+      "1 día",
+      "135 €",
+      "Tolerancia a la altura y validación de nivel con el técnico. El desplazamiento a la zona vertical se concreta antes."
+    ],
+    [
+      "mar-de-acero",
+      "Mar de Acero",
+      "Jornadas",
+      "Buceo guiado · costa al atardecer",
+      "Una inmersión para personas certificadas y una pausa junto al mar. El kayak nocturno es una opción sujeta a condiciones.",
+      "OWD o equivalente",
+      "Tarde y noche",
+      "149 €",
+      "Centro de buceo autorizado y titulación compatible con la inmersión. La actividad posterior se ajusta al descanso y al mar."
+    ],
+    [
+      "cielo-nomada",
+      "Cielo Nómada",
+      "Jornadas",
+      "Parapente biplaza · paratrike",
+      "Dos formas de descubrir el aire: vuelo libre y vuelo motorizado. Cada salida se coordina con su operador.",
+      "Iniciación",
+      "1–2 días",
+      "249 €",
+      "Límites de edad y peso del operador y ventana meteorológica. Los vuelos pueden programarse en días distintos."
+    ],
+    [
+      "abismo-mediterraneo",
+      "Abismo Mediterráneo",
+      "Escapadas",
+      "Barranquismo · bautismo de buceo",
+      "Agua interior y paisaje submarino en dos jornadas, con tiempo para desplazamientos y descanso.",
+      "Medio",
+      "2 días",
+      "Consultar",
+      "Saber nadar y valoración de cada disciplina. El bautismo se realiza con un centro especializado."
+    ],
+    [
+      "rastro-salvaje",
+      "Rastro Salvaje",
+      "Jornadas",
+      "BTT litoral · orientación",
+      "Senderos, lectura del terreno y navegación con mapa. La ruta se adapta al manejo de la bicicleta.",
+      "Iniciación–medio",
+      "1 día",
+      "Consultar",
+      "Bicicleta y casco revisados, autonomía básica y recorrido acorde al grupo."
+    ],
+    [
+      "abismo-interior",
+      "Abismo Interior",
+      "Jornadas",
+      "Espeleoaventura · orientación en cavidad",
+      "Una exploración guiada de grupo reducido. La progresión con cuerda se incluye únicamente si forma parte del recorrido elegido.",
+      "Medio",
+      "1 día",
+      "145–195 €",
+      "Movilidad adecuada y comodidad en espacios cerrados. Acceso autorizado y equipo de iluminación."
+    ],
+    [
+      "nomada-animal",
+      "Nómada Animal",
+      "Jornadas",
+      "Senderismo interpretativo · observación de fauna",
+      "Una salida de ritmo tranquilo para leer rastros, observar a distancia y fotografiar el paisaje sin alterar la fauna.",
+      "Iniciación",
+      "Media jornada",
+      "55–85 €",
+      "Calzado de ruta, silencio y respeto de las distancias. La observación depende de la naturaleza."
+    ],
+    [
+      "nomada-familia",
+      "Nómada Familia",
+      "Jornadas",
+      "Orientación · kayak tranquilo",
+      "Una propuesta familiar con juegos de orientación, pausas y una salida acuática ajustada a las edades.",
+      "Adaptable",
+      "1 día",
+      "169–249 €",
+      "Importe por familia; composición y edades por confirmar. Alternativa en tierra si el agua no es adecuada."
+    ],
+    [
+      "waterman-weekend",
+      "Waterman Weekend",
+      "Escapadas",
+      "SUP y wing · iniciación al e-foil",
+      "Dos sesiones en dos días para trabajar equilibrio y lectura del mar. Se elige la progresión adecuada; el kitesurf se ofrece como itinerario independiente.",
+      "Iniciación",
+      "2 días",
+      "310 €",
+      "Saber nadar. Material y profundidad adecuados, instructor por modalidad y adaptación al viento."
+    ],
+    [
+      "nomada-72h",
+      "Nómada 72H",
+      "Escapadas",
+      "Costa · aire · vertical",
+      "Tres jornadas organizadas por medios: costa el primer día, vuelo el segundo y roca el tercero. El plan audiovisual se acuerda antes.",
+      "Según actividades",
+      "3 días",
+      "749 €",
+      "Plan personalizado con desplazamientos, profesionales por disciplina y alternativas meteorológicas."
+    ],
+    [
+      "elite-nomada",
+      "Élite Nómada",
+      "Privadas",
+      "Ruta privada · audiovisual · pausa en cala",
+      "Una experiencia diseñada alrededor del grupo: selección de actividades, guía dedicado y recuerdo audiovisual acordado.",
+      "A medida",
+      "1–2 días",
+      "Desde 349 €",
+      "Presupuesto según duración y actividades. Dron y FPV solo cuando sean viables y autorizados."
+    ]
+  ],
+  "naturist": [
+    [
+      "naturista-mar",
+      "Mar en Calma",
+      "Baño tranquilo · costa · conversación",
+      "Una mañana sin prisa en una cala, para disfrutar del agua y compartir el entorno.",
+      "Suave",
+      "3 h",
+      "55 €"
+    ],
+    [
+      "naturista-sendero",
+      "Sendero y Sol",
+      "Senderismo suave · interpretación",
+      "Una ruta de baja dificultad en un entorno adecuado al naturismo, con pausas y lectura del paisaje.",
+      "Suave",
+      "Media jornada",
+      "65 €"
+    ],
+    [
+      "naturista-dia-activo",
+      "Día Naturista Activo",
+      "Ruta suave · baño · convivencia",
+      "Una jornada para caminar, compartir una pausa y disfrutar de un baño opcional en un entorno adecuado.",
+      "Suave",
+      "1 día",
+      "85 €"
+    ],
+    [
+      "naturista-amanecer",
+      "Amanecer Nómada",
+      "Contemplación · baño al alba",
+      "La costa a primera hora: una pausa compartida frente al mar y un baño opcional.",
+      "Suave",
+      "2 h",
+      "45 €"
+    ],
+    [
+      "naturista-ritual",
+      "Ritual Nómada",
+      "Pausa consciente · conversación",
+      "Un encuentro de ritmo tranquilo para observar el entorno, descansar y conversar con respeto.",
+      "Contemplativo",
+      "Media jornada",
+      "45 €"
+    ],
+    [
+      "naturista-horizonte",
+      "Horizonte Libre",
+      "Snorkel · observación del litoral",
+      "Una exploración suave de aguas poco profundas para observar el fondo y disfrutar del mar sin prisa.",
+      "Suave",
+      "3 h",
+      "55 €"
+    ]
+  ],
+  "review": {
+    "consolidated": [
+      "Cielo Total y Halcón del Mediterráneo → Cielo Nómada",
+      "Costa Impacto y Costa Salvaje Pro → Horizonte Salvaje (opciones a medida)",
+      "Depredador Azul → Mar de Acero (fotografía opcional)",
+      "Pack Élite Nómada y Nómada Élite → Élite Nómada",
+      "Colecciones de fines de semana → Escapadas",
+      "Dos catálogos de bonos → Un catálogo de importes"
+    ],
+    "removed": [
+      "Descuentos con valor tachado sin respaldo",
+      "Curso Open Water vendido como fin de semana de dos días",
+      "Promesas de producción FPV garantizada",
+      "Packs de fauna y naturismo con nombres redundantes",
+      "Archivo de expectativas previo al inicio de 2.º GMN"
+    ],
+    "note": "Los servicios no incluidos en el catálogo pueden consultarse como propuesta a medida; no se han eliminado actividades individuales."
+  }
+}

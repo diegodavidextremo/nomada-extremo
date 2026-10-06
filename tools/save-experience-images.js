@@ -1,0 +1,3 @@
+const fs=require('fs'),path=require('path'),sharp=require('sharp');
+const root=path.resolve(__dirname,'..');
+(async()=>{const manifest=JSON.parse(fs.readFileSync(path.join(root,'assets/images/packs-2026/generation-prompts.json'),'utf8'));for(const item of manifest.entries){const meta=await sharp(item.source).metadata();if(Math.abs(meta.width/meta.height-1.5)>.02)throw Error('Unexpected aspect ratio: '+item.id);await sharp(item.source).resize(1440,960,{fit:'contain',background:'#e5ece7'}).webp({quality:88}).toFile(path.join(root,item.path));console.log(item.id,meta.width+'x'+meta.height);}})().catch(e=>{console.error(e);process.exitCode=1});

@@ -1,0 +1,10 @@
+# Naturist photo credits
+
+These are illustrative photographs from other locations, not photographs of Nómada Extremo activities. Each derivative remains under its source license. Full frames are retained.
+
+- [Naked swimming.jpg](https://commons.wikimedia.org/wiki/File:Naked_swimming.jpg) — Wernikto — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0). File: `assets/images/packs-2026/naturista-mar.webp`. Resized and padded to 1440×960 without cropping; WebP encoding.
+- [Free-hiking in Sicily.jpg](https://commons.wikimedia.org/wiki/File:Free-hiking_in_Sicily.jpg) — The Naked Gentleman — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0). File: `assets/images/packs-2026/naturista-sendero.webp`. Resized and padded to 1440×960 without cropping; WebP encoding.
+- [Nacktwanderung im Harz II.JPG](https://commons.wikimedia.org/wiki/File:Nacktwanderung_im_Harz_II.JPG) — Nadalo — [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). File: `assets/images/packs-2026/naturista-dia-activo.webp`. Resized and padded to 1440×960 without cropping; WebP encoding.
+- [Beautiful sunrise from Taitung beach.jpg](https://commons.wikimedia.org/wiki/File:Beautiful_sunrise_from_Taitung_beach.jpg) — Albert Yam — [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). File: `assets/images/packs-2026/naturista-amanecer.webp`. Resized and padded to 1440×960 without cropping; WebP encoding.
+- [Naturist woman sitting next to pond.jpg](https://commons.wikimedia.org/wiki/File:Naturist_woman_sitting_next_to_pond.jpg) — Truenudists — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0). File: `assets/images/packs-2026/naturista-ritual.webp`. Resized and padded to 1440×960 without cropping; WebP encoding.
+- [Naturist in crimea.jpg](https://commons.wikimedia.org/wiki/File:Naturist_in_crimea.jpg) — Wernikto — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0). File: `assets/images/packs-2026/naturista-horizonte.webp`. Resized and padded to 1440×960 without cropping; WebP encoding.

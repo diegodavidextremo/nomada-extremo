@@ -168,7 +168,7 @@
     {
       "title": "MATERIAL Y EQUIPAMIENTO",
       "href": "material.html",
-      "keywords": "Material y equipamiento Nómada Extremo: montaña, vertical, mar, buceo, BTT, aire, audiovisual, comunicación, botiquín y emergencia. Senderismo y orientación Arnés, casco y cuerda Kayak, SUP y coasteering Equipo subacuático Bicicleta y protección Vuelo y zonas Captura de aventura Control de grupo Botiquín y primeros auxilios Gestión de compra y reposición de material MARCAS Y MATERIAL TÉCNICO CATÁLOGO TÉCNICO A COMPARAR QUÉ SE PODRÍA ALQUILAR O NO Alquilable con control Solo con técnico No alquiler libre Responsable de compras '+decodeBrandText(b[1]).split(',').slice(0,4).join(', ')+'"
+      "keywords": "Material y equipamiento Nómada Extremo: montaña, vertical, mar, buceo, BTT, aire, audiovisual, comunicación, botiquín y emergencia. Senderismo y orientación Arnés, casco y cuerda Kayak, SUP y coasteering Equipo subacuático Bicicleta y protección Vuelo y zonas Captura de aventura Control de grupo Botiquín y primeros auxilios Gestión de compra y reposición de material CATÁLOGO TÉCNICO A COMPARAR QUÉ SE PODRÍA ALQUILAR O NO Alquilable con control Solo con técnico No alquiler libre Responsable de compras '+tr(categoryLabels[b[0]]||b[0])+'"
     },
     {
       "title": "MULTI AVENTURA",
@@ -183,7 +183,7 @@
     {
       "title": "NÓMADA NATURISTA",
       "href": "naturistas.html",
-      "keywords": "Línea Naturista de Nómada Extremo — actividades acuáticas y terrestres para personas afines a la filosofía naturista. Águilas, Murcia. NO ES UNA MODA LOS VALORES DE ESTE ESPACIO LO QUE PUEDES VIVIR UN DÍA AL MES EN LA NATURALEZA CÓDIGO DE CONVIVENCIA NATURISTA Principios Actividades compatibles Límites del espacio Normas de convivencia Privacidad total Consentimiento claro Formato Bienestar antes que rendimiento Coordinación discreta Una forma de bajar el ruido La privacidad no es un detalle: es parte de la experiencia. PACKS NATURISTAS BIENESTAR Y CONEXIÓN"
+      "keywords": "Línea Naturista de Nómada Extremo — actividades acuáticas y terrestres para personas afines a la filosofía naturista. Águilas, Murcia. NO ES UNA MODA LOS VALORES DE ESTE ESPACIO LO QUE PUEDES VIVIR UN DÍA AL MES EN LA NATURALEZA CÓDIGO DE CONVIVENCIA NATURISTA Principios Actividades compatibles Límites del espacio Normas de convivencia Privacidad total Consentimiento claro Formato Bienestar antes que rendimiento Coordinación discreta Una forma de bajar el ruido La privacidad no es un detalle: es parte de la experiencia. NATURALEZA. A TU RITMO. Mar en Calma Sendero y Sol Día Naturista Activo Amanecer Nómada Ritual Nómada Horizonte Libre BIENESTAR Y CONEXIÓN Calma Conexión Libertad Autoaceptación Presencia Comunidad"
     },
     {
       "title": "OPEN WATER DEMO",
@@ -193,7 +193,7 @@
     {
       "title": "PACKS ESPECIALES",
       "href": "packs.html",
-      "keywords": "Packs especiales Nómada Extremo — Horizonte Salvaje, Costa Vertical, Mar de Acero, Trilogía Extrema, Pack Élite Nómada y más. JORNADAS COMPLETAS PACKS BRUTALES WEEKENDS BRUTALES PACKS ÉLITE WEEKENDS BRUTALES DISEÑA TU EXPERIENCIA ¿NO ENCUENTRAS TU PACK IDEAL? BONOS REGALO REGALA AVENTURA CON CRITERIO Seguros, requisitos y responsabilidad"
+      "keywords": "Packs especiales Nómada Extremo — Horizonte Salvaje, Costa Vertical, Mar de Acero, Trilogía Extrema, Pack Élite Nómada y más. EXPERIENCIAS CON SENTIDO. Horizonte Salvaje Costa Vertical Mar de Acero Cielo Nómada Abismo Mediterráneo Rastro Salvaje Abismo Interior Nómada Animal Nómada Familia Waterman Weekend Nómada 72H Élite Nómada DISEÑA TU EXPERIENCIA UN REGALO. MUCHAS POSIBILIDADES. Primer contacto Más aventura Un regalo especial Importe personalizado ¿Quieres otra combinación?"
     },
     {
       "title": "PARAMOTOR PANORAMICO",
@@ -238,7 +238,7 @@
     {
       "title": "2.º GMN. 2026-2027",
       "href": "segundo-gmn.html",
-      "keywords": "Segundo curso activo desde el 14 de septiembre de 2026 en el IES Europa de Águilas: matrícula, docentes y Proyecto Intermodular. 9 MÓDULOS + FASE DE EMPRESA II. APRENDIZAJE QUE CONSTRUYE CRITERIO. DE PRIMERO A LA ETAPA INTERMODULAR. Nacimiento y primer curso Inicio de segundo Desarrollo intermodular Revisión y defensa Posible implantación LO QUE ME ESPERA EN 2.º GMN Seguridad Aventura Profesionalidad Proyecto real"
+      "keywords": "Segundo curso activo desde el 14 de septiembre de 2026 en el IES Europa de Águilas: matrícula, docentes y Proyecto Intermodular. 9 MÓDULOS + FASE DE EMPRESA II. APRENDIZAJE QUE CONSTRUYE CRITERIO. QUÉ VOY A DOCUMENTAR. Cuerdas y socorrismo Tiempo libre y grupos Equitación y guía ecuestre Sostenibilidad y empleabilidad DE PRIMERO A LA ETAPA INTERMODULAR. Nacimiento y primer curso Inicio de segundo Desarrollo intermodular Revisión y defensa"
     },
     {
       "title": "SEGURIDAD Y GESTIÓN DEL RIESGO",
