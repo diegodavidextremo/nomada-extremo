@@ -13,7 +13,7 @@
     <a href="index.html" class="nav-logo-wrap" aria-label="Nómada Extremo — Inicio">
       <img src="assets/images/emblema-oficial-web.webp?v=20261005-8" alt="Logo Nómada Extremo" class="nav-logo-img" decoding="async">
       <div class="nav-logo-text" aria-hidden="true">
-        <span class="ln1">NÓMADA EXTREMO</span>
+        <span class="ln1"><span class="brand-word brand-word--nomada">NÓMADA</span> <span class="brand-word brand-word--extremo">EXTREMO</span></span>
         <span class="ln2">Aventura, técnica y naturaleza</span>
       </div>
     </a>
