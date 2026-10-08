@@ -78,7 +78,7 @@ let browser;
  let externalSubmits=0;
  const noSubmit=r=>{if(r.method()==='POST')externalSubmits++;};page.on('request',noSubmit);
  await page.locator('#review-demo').evaluate(form=>{const details=form.closest('details');if(details)details.open=true;});
- await page.locator('#review-demo input[name="nombre"]').fill('Demostración');await page.locator('#review-demo input[name="actividad"]').fill('Prueba local');await page.locator('#review-demo textarea').fill('Reseña de prueba no enviada.');await page.locator('#review-demo select').selectOption({index:1});await page.locator('#review-consent').check();await page.locator('[data-demo-review]').click();assert.match(await page.locator('#review-demo [role="status"]').innerText(),/No se ha enviado/);assert.equal(externalSubmits,0);page.off('request',noSubmit);report.interactions.push('Review demo: local feedback, zero POST requests');
+ await page.locator('#review-demo input[name="nombre"]').fill('Demostración');await page.locator('#review-demo input[name="actividad"]').fill('Prueba local');await page.locator('#review-demo textarea').fill('Reseña de prueba no enviada.');await page.locator('#review-demo select').selectOption({index:1});await page.locator('#review-consent').check();await page.locator('[data-story-review]').click();assert.match(await page.locator('#review-demo [role="status"]').innerText(),/No se ha enviado/);assert.equal(externalSubmits,0);page.off('request',noSubmit);report.interactions.push('Review demo: local feedback, zero POST requests');
  for(const language of ['es','en','fr','de','it','pt']){
   const c=await browser.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'});
   await c.addInitScript(lang=>localStorage.setItem('noext-language',lang),language);
