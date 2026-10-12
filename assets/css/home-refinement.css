@@ -1,0 +1,53 @@
+/* Remaining home components: restrained typography, complete images, visible navigation. */
+.home-page .home-explore-panel{width:calc(100% - 48px);max-width:1280px;margin:14px auto!important;border:1px solid #d8e2df!important;border-radius:16px!important;background:#fff!important;overflow:hidden;box-shadow:0 5px 20px #193c4506}
+.home-page .home-explore-panel>summary{display:flex!important;align-items:center;justify-content:space-between;gap:20px;padding:22px 26px!important;min-height:68px;font:600 16px/1.5 var(--sans)!important;letter-spacing:0!important;color:#244d60!important;cursor:pointer;background:#fff!important;text-align:left!important;list-style:none}
+.home-page .home-explore-panel>summary::-webkit-details-marker{display:none}
+.home-page .home-explore-panel>summary::after{content:'+';font:400 26px var(--sans);color:#94653b;flex:none}
+.home-page .home-explore-panel[open]>summary::after{content:'−'}
+.home-page .home-explore-panel[open]>summary{border-bottom:1px solid #d8e2df;background:#f3f6f2!important}
+.home-page .home-explore-panel>section{padding:40px 0!important;margin:0!important}
+.home-page .home-explore-panel .container{width:100%;max-width:none;padding:0 26px}
+.home-page .home-explore-panel .titulo{font-size:clamp(32px,4vw,52px)!important;line-height:1.08}
+.home-page .grid-act{max-width:1280px;width:calc(100% - 48px);margin:40px auto!important;display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;grid-auto-flow:row!important;grid-auto-columns:auto!important;overflow:visible!important;gap:18px!important}
+.home-page .act-card{height:auto!important;min-height:0!important;aspect-ratio:auto!important;opacity:1!important;transform:none!important;visibility:visible!important;background:#fff;border:1px solid #d8e2df;border-radius:16px!important;overflow:hidden;display:flex;flex-direction:column;box-shadow:none!important}
+.home-page .act-card-bg{position:relative!important;inset:auto!important;height:auto!important;aspect-ratio:3/2;background-size:contain!important;background-repeat:no-repeat;background-position:center!important;background-color:#dae6e3;transform:none!important;filter:none!important}
+.home-page .act-card-overlay,.home-page .act-card-num,.home-page .act-card-hover-icon{display:none!important}
+.home-page .act-card-content{position:static!important;padding:16px 16px 0!important;color:#214b60;transform:none!important;opacity:1!important}
+.home-page .act-card-content .model-badge{font-size:10px!important;margin:0 0 12px!important;max-width:100%;white-space:normal}
+.home-page .act-card-titulo{color:#214b60!important;font-size:22px!important;line-height:1.15;letter-spacing:.02em}
+.home-page .act-card-sub{color:#52676e!important;font-size:12px!important;line-height:1.7;margin-top:8px;opacity:1!important}
+.home-page .act-card-hover{position:static!important;opacity:1!important;visibility:visible!important;transform:none!important;background:none!important;color:#52676e!important;padding:12px 16px 18px!important;display:flex!important;flex-direction:column;align-items:stretch!important;text-align:left!important;flex:1}
+.home-page .act-card-hover p{font-size:12px!important;line-height:1.65;color:#52676e!important;margin-bottom:12px}
+.home-page .act-card-hover a{color:#214b60!important;border-top:1px solid #d8e2df;display:flex;align-items:center;min-height:44px;margin-top:auto!important;font:600 12px var(--sans)!important;letter-spacing:.03em!important}
+.refinement-icon{width:30px;height:30px;color:#24526a;flex:none}
+.prep-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.home-page .material-prep-card{box-shadow:none!important;border:1px solid #d8e2df!important;background:#fff!important;padding:26px!important;border-radius:14px!important}
+.home-page .material-prep-card::before{display:none!important}
+.home-page .material-prep-card h3{font-size:23px!important}
+.home-page .material-prep-card--statement{background:#1e495d!important}
+.home-page .material-prep-card--statement .refinement-icon{color:#e8c69e}
+.home-page .material-prep-card--statement p{color:#e5edef!important}
+.home-journey{list-style:none;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;counter-reset:journey}
+.home-journey li{padding:20px;border:1px solid #d8e2df;border-radius:12px;background:#fff}
+.journey-number{display:block;color:#94653b;font-size:12px;letter-spacing:.15em;margin-bottom:20px}
+.home-journey h3,.home-assurance h3{font:600 16px/1.4 var(--sans);color:#244d60;margin:0 0 8px}
+.home-journey p,.home-assurance p{font:400 14px/1.75 var(--sans);color:#52676e;margin:0}
+.home-assurance{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.home-assurance article{padding:24px;background:#fff;border:1px solid #d8e2df;border-radius:14px}
+.home-assurance .refinement-icon{margin-bottom:24px}
+.home-page .home-territorio .titulo{font-size:clamp(36px,4vw,58px)!important;line-height:1.08}
+.home-page .home-territorio .grid-2{gap:40px!important}
+.home-page .home-territory-cards{padding:0!important;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;background:transparent!important;border:0!important;box-shadow:none!important}
+.home-page .home-territory-cards>div{padding:22px!important;display:flex!important;flex-direction:column!important;gap:12px!important;background:#fff;border:1px solid #d8e2df;border-radius:12px}
+.home-page .home-territory-cards strong{font-size:19px!important;color:#214b60}
+.home-page .home-territory-cards span{font-size:13px!important;line-height:1.65;color:#52676e}
+.home-page .bono-card{text-align:left!important;display:flex;flex-direction:column;padding:26px!important;box-shadow:none!important;position:relative;border:1px solid #d8e2df!important;background:linear-gradient(145deg,#f3f6f2,#fff)!important}
+.gift-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px;padding-bottom:20px;border-bottom:1px dashed #b7cbc6}
+.gift-card-code{font:600 10px var(--sans);letter-spacing:.15em;color:#52676e}
+.home-page .bono-card .card-titulo{font-size:24px!important;color:#214b60!important;margin:0 0 12px!important}
+.home-page .bono-card>strong{font:400 38px/1.15 var(--display);color:#805529;margin-bottom:16px}
+.home-page .bono-card .card-desc{margin:0 0 24px!important;flex:1}
+.home-page .bono-card .btn{font-size:11px!important;margin-top:auto}
+.home-page .bono-card.popular{border-color:#ba8c5e!important;background:#f5eee5!important}
+@media(max-width:1100px){.home-page .grid-act{grid-template-columns:repeat(2,minmax(0,1fr))!important}.home-journey{grid-template-columns:repeat(2,minmax(0,1fr))}.home-assurance{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.home-page .home-explore-panel,.home-page .grid-act{width:calc(100% - 28px)}.home-page .home-explore-panel>summary{padding:18px!important;font-size:14px!important}.home-page .home-explore-panel .container{padding:0 18px}.home-page .home-explore-panel>section{padding:28px 0!important}.home-page .grid-act{gap:12px!important}.home-page .act-card-titulo{font-size:20px!important}.home-page .act-card-content{padding:12px 12px 0!important}.home-page .act-card-hover{padding:10px 12px 14px!important}.home-page .act-card-hover p{display:none}.home-page .act-card-sub{font-size:11px!important}.home-journey,.home-assurance{grid-template-columns:1fr}.home-journey li{display:flex;gap:18px}.journey-number{margin:3px 0 0}.home-page .home-territory-cards{grid-template-columns:1fr}.home-page .bono-card{padding:22px!important}}

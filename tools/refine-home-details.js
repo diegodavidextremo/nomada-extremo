@@ -1,0 +1,23 @@
+const fs=require('fs');
+const file='index.html';let s=fs.readFileSync(file,'utf8');
+if(s.includes('assets/css/home-refinement.css')){console.log('Home refinement is already applied.');process.exit(0);}
+const icon=(path)=>`<svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${path}</svg>`;
+const icons=[icon('<path d="m3 20 6-12 4 7 3-10 5 15Z"/>'),icon('<path d="M4 8h16v12H4zM8 8V5h8v3M4 13h16M10 13v3h4v-3"/>'),icon('<circle cx="12" cy="12" r="8"/><path d="m8 12 3 3 5-6"/>'),icon('<circle cx="8" cy="7" r="3"/><circle cx="17" cy="9" r="2"/><path d="M3 21v-6a5 5 0 0 1 10 0v6m2 0v-5a4 4 0 0 1 6 0v5"/>'),icon('<path d="m12 3 3 6 6 1-4 5 1 6-6-3-6 3 1-6-4-5 6-1Z"/>'),icon('<path d="m12 3 8 3v6c0 5-8 9-8 9S4 17 4 12V6zM8 12l3 3 5-6"/>')];
+// Keep every existing section and deep-link ID. Only change the component wrappers.
+s=s.replace(/class="n3-home-details"/g,'class="n3-home-details home-explore-panel"');
+s=s.replace(/class="site-depth"/g,'class="site-depth home-explore-panel"');
+s=s.replace(/<span class="material-prep-card__number">(\d+)<\/span>/g,(_,n)=>`<div class="prep-heading">${icons[(+n-1)%6]}<span class="material-prep-card__number">${n}</span></div>`);
+const journey=[['Solicitud','Comparte tu idea y el nivel del grupo.'],['Confirmación','Se concreta la propuesta y su viabilidad.'],['Preparación','Requisitos, equipo y condiciones previstas.'],['Punto de encuentro','Lugar y horario claros antes de salir.'],['Briefing','Repaso del equipo y de las indicaciones.'],['Actividad','La experiencia, al ritmo del grupo.'],['Pausa','Tiempo para descansar y recuperar energía.'],['Cierre','Revisión final y regreso organizado.'],['Audiovisual','Recuerdo cuando sea viable y autorizado.'],['Logbook','Una memoria personal de lo vivido.']];
+const start=s.indexOf('<section class="bg-gris" id="dia-nomada-home"');const end=s.indexOf('</section>',start)+10;
+let part=s.slice(start,end);part=part.replace(/<div class="timeline-compact">[\s\S]*?<\/div>/,`<ol class="home-journey">${journey.map(([t,d],i)=>`<li><span class="journey-number">${String(i+1).padStart(2,'0')}</span><div><h3>${t}</h3><p>${d}</p></div></li>`).join('')}</ol>`);s=s.slice(0,start)+part+s.slice(end);
+const safeStart=s.indexOf('<section class="bg-crema" id="garantia-nomada-ampliada"');const safeEnd=s.indexOf('</section>',safeStart)+10;
+part=s.slice(safeStart,safeEnd);const groups=[['Antes de salir','Comunicación previa · Guías titulados · Briefing claro'],['Equipo y entorno','Material revisado · Lectura meteorológica · Ratios de grupo'],['Durante la experiencia','Seguridad · Respeto ambiental · Planes alternativos'],['Lo que queda','Audiovisual · Cierre de experiencia · Mejora continua']];
+part=part.replace(/<div class="timeline-compact">[\s\S]*?<\/div>/,`<div class="home-assurance">${groups.map(([t,d],i)=>`<article>${icons[[2,1,5,4][i]]}<h3>${t}</h3><p>${d}</p></article>`).join('')}</div>`);s=s.slice(0,safeStart)+part+s.slice(safeEnd);
+s=s.replace('ÁGUILAS COMO BASE.<br><span class="mar">TODA MURCIA COMO TERRITORIO DE AVENTURA.</span>','ÁGUILAS COMO BASE.<br><span class="mar">MURCIA POR DESCUBRIR.</span>');
+s=s.replace('<div class="territorio-mini-map">','<div class="territorio-mini-map home-territory-cards">');
+const familyImages=['senderismo-guiado','via-ferrata','kayak-mar','buceo-guiado','parapente-biplaza','barranquismo-acuatico','btt-costero',null,'wingfoil',null];
+let familyIndex=0;s=s.replace(/<div class="act-card-bg" style="[^"]*"><\/div>/g,()=>{const i=familyIndex++;const replacement=i===7?'assets/images/packs-2026/horizonte-salvaje.webp':i===9?'assets/images/packs-2026/naturista-sendero.webp':'assets/images/activities-2026/'+familyImages[i]+'.webp';return `<div class="act-card-bg" style="background-image:url('${replacement}')"></div>`;});
+s=s.replace('Regalar Nómada Extremo es regalar una historia. Un recuerdo que queda. 12 meses de validez, canje por cualquier actividad.','Una aventura pensada para alguien especial. Explora las propuestas de bono de este proyecto académico: importes de referencia, sin venta ni cobro real.');
+let gift=0;s=s.replace(/(<article class="bono-card[^>]*>)<svg class="site-icon"[\s\S]*?<\/svg>/g,(_,a)=>{const i=gift++;return a+`<div class="gift-card-top"><span class="gift-card-code">NÓMADA / ${String(i+1).padStart(2,'0')}</span>${icons[[0,1,4,2][i]]}</div>`;});
+if(!s.includes('assets/css/home-refinement.css'))s=s.replace('</head>','<link rel="stylesheet" href="assets/css/home-refinement.css?v=20261012-2">\n</head>');
+fs.writeFileSync(file,s);console.log('Updated home components; '+familyIndex+' family images, '+gift+' vouchers.');

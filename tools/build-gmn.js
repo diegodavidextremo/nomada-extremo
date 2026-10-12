@@ -56,7 +56,7 @@ function page(title, description, body, filename) {
 write('proyecto-intermodular.html',page('Proyecto Intermodular 2026-2027 · NÓMADA EXTREMO 3.0','Memoria central de 2.º GMN: diez áreas académicas, decisiones, bienestar animal, seguridad, sostenibilidad, viabilidad y planificación. Proyecto no operativo.',template,'proyecto-intermodular.html'));
 const second=fs.readFileSync(path.join(__dirname,'templates/segundo-actual.html'),'utf8').replace(/\{\{(\w+)\}\}/g,(_,key)=>({dashboard,moduleList}[key]||''));
 write('segundo-gmn.html',page('2.º GMN · Curso 2026-2027 | NÓMADA EXTREMO','Segundo curso activo desde el 14 de septiembre de 2026 en el IES Europa de Águilas: matrícula, docentes y Proyecto Intermodular.',second,'segundo-gmn.html'));
-replaceBlock('index.html','home',`<details class="site-depth"><summary>Formación y proyecto académico</summary><section class="n3 n3-home-intro n3-section"><div class="n3-shell"><span class="n3-kicker">NÓMADA EXTREMO 3.0 · Curso ${esc(data.course)}</span>${summary}${layers}</div></section></details>`);
+replaceBlock('index.html','home',`<details class="site-depth home-explore-panel"><summary>Formación y proyecto académico</summary><section class="n3 n3-home-intro n3-section"><div class="n3-shell"><span class="n3-kicker">NÓMADA EXTREMO 3.0 · Curso ${esc(data.course)}</span>${summary}${layers}</div></section></details>`);
 replaceBlock('formacion-gmn.html','summary',`<section class="n3-section n3-shell">${summary}${moduleList}</section>`);
 if (check && writes.length) { console.error('Bloques académicos desactualizados:',writes.join(', ')); process.exitCode=1; }
 else console.log(check?'Datos y HTML sincronizados.':`Generados ${writes.length} archivos académicos.`);

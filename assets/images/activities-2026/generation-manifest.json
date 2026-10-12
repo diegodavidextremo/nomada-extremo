@@ -652,35 +652,37 @@
     "name": "WINGFOIL",
     "id": "wingfoil",
     "scene": "Adult wingfoil rider on a hydrofoil board just above Mediterranean water, holding an inflatable handheld wing directly with handles, helmet and impact vest, leashes visible, no kite lines, complete wing board and rider in frame.",
-    "prompt": "Use case: photorealistic-natural. Asset type: activity catalogue image for a Spanish adventure academic prototype. Documentary adventure photography, authentic equipment and correct activity identity. Landscape 3:2 full frame composition, complete participants and essential equipment not cut off, uncluttered natural background, natural Mediterranean light, believable anatomy and physics, photographic texture, restrained rich colors. All people adults. No logos, no lettering, no watermark, no collage. Scene: Adult wingfoil rider on a hydrofoil board just above Mediterranean water, holding an inflatable handheld wing directly with handles, helmet and impact vest, leashes visible, no kite lines, complete wing board and rider in frame.",
-    "source": "C:\\Users\\Diego\\.codex\\generated_images\\01a10cc9-c5cd-7d23-8f30-0ed8dd670527\\exec-c748b13b-a446-4085-8ad6-a248bad116bf.png",
+    "prompt": "Photorealistic editorial sports photograph for a wingfoil activity catalogue. Landscape 3:2. An adult rider on a short hydrofoil board lifted just above Mediterranean water, holding a fully visible inflated turquoise handheld wing overhead at a natural diagonal, BOTH hands visibly gripping the rigid central boom beneath the wing. Entire wing including both tips and central strut inside frame, entire rider and board and foil mast visible. Correct wingfoil equipment, no kite lines or sail mast. Moderate wind, believable balance, natural anatomy, bright textured water, low Mediterranean coastline. Camera from nearby boat, medium wide view with equipment prominent, not clipped. No writing, logos, watermark.",
+    "source": "C:\\Users\\Diego\\.codex\\generated_images\\01a10cc9-c5cd-7d23-8f30-0ed8dd670527\\exec-3f552b8a-b41a-4b8a-98a8-0ebb762c1c2b.png",
     "mode": "built-in image_gen",
     "path": "assets/images/activities-2026/wingfoil.webp",
     "width": 1440,
     "height": 960,
-    "bytes": 171736,
+    "bytes": 280720,
     "mobile": {
       "path": "assets/images/activities-2026/wingfoil-640.webp",
       "width": 640,
-      "bytes": 40140
-    }
+      "bytes": 63800
+    },
+    "revision": "2026-10-12 complete equipment framing"
   },
   {
     "name": "KITESURF",
     "id": "kitesurf",
     "scene": "Adult kitesurfer riding a twin tip board on Mediterranean water, waist harness and control bar, long taut lines leading to a complete inflatable kite high overhead, buoyancy impact vest, modest breeze, whole kite and rider visible, no handheld wing.",
-    "prompt": "Use case: photorealistic-natural. Asset type: activity catalogue image for a Spanish adventure academic prototype. Documentary adventure photography, authentic equipment and correct activity identity. Landscape 3:2 full frame composition, complete participants and essential equipment not cut off, uncluttered natural background, natural Mediterranean light, believable anatomy and physics, photographic texture, restrained rich colors. All people adults. No logos, no lettering, no watermark, no collage. Scene: Adult kitesurfer riding a twin tip board on Mediterranean water, waist harness and control bar, long taut lines leading to a complete inflatable kite high overhead, buoyancy impact vest, modest breeze, whole kite and rider visible, no handheld wing.",
-    "source": "C:\\Users\\Diego\\.codex\\generated_images\\01a10cc9-c5cd-7d23-8f30-0ed8dd670527\\exec-0f693201-bf27-48bb-bd29-0a116f65716e.png",
+    "prompt": "Photorealistic editorial sports photograph for a kitesurf activity catalogue. Landscape 3:2. Wide coastal action view: adult kitesurfer on twin tip board lower left, connected by taut thin kite lines from a clearly held control bar to a LARGE fully visible crescent inflatable orange kite upper right. Compose rider, complete kite and connecting lines together so the kite occupies about one third of image width and is immediately recognizable. Kite realistically distant from rider, use long lens compressed side perspective from shore, generous frame margins. Harness, believable riding stance, spray, Mediterranean water and low coast. Correct kitesurf equipment, no handheld wing, no windsurf mast, no impossible lines. Natural realistic photograph, no text or logos.",
+    "source": "C:\\Users\\Diego\\.codex\\generated_images\\01a10cc9-c5cd-7d23-8f30-0ed8dd670527\\exec-55c3e115-2aea-48ab-87ea-89a0dcee859d.png",
     "mode": "built-in image_gen",
     "path": "assets/images/activities-2026/kitesurf.webp",
     "width": 1440,
     "height": 960,
-    "bytes": 163634,
+    "bytes": 136810,
     "mobile": {
       "path": "assets/images/activities-2026/kitesurf-640.webp",
       "width": 640,
-      "bytes": 35546
-    }
+      "bytes": 30484
+    },
+    "revision": "2026-10-12 complete equipment framing"
   },
   {
     "name": "WINDSURF",
