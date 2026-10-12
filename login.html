@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<html lang="es"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Acceso a tu zona privada Nómada Extremo — logbook, historial, reservas y certificaciones.">
-<title>Acceso | Nómada Extremo</title>
+<meta name="description" content="Explora la demostración del Logbook y la comunidad de Nómada Extremo. Sin cuentas ni contraseñas.">
+<title>Espacio Nómada · Demostración del proyecto</title>
 <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico?v=20261005-8">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png?v=20261005-8">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png?v=20261005-8">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png?v=20261005-8">
 <link rel="manifest" href="site.webmanifest?v=20261005-8">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&amp;family=DM+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
 <style>
 .login-bg {
@@ -47,119 +46,5 @@
 </style>
 <link rel="stylesheet" href="assets/css/design-system.css?v=20261005-8">
 <link rel="stylesheet" href="assets/css/brand-interface.css?v=20261006-1">
-</head>
-<body class="login-page">
-<div id="nav-placeholder"></div>
-<div class="login-bg">
-  <div class="login-wrap">
-
-    <!-- LEFT: Brand -->
-    <div class="login-left">
-      <div>
-        <div class="login-logo">
-          <img src="assets/images/emblema-oficial-web.webp?v=20261005-8" alt="Nómada Extremo">
-          <div class="login-logo-txt">NÓMADA EXTREMO</div>
-        </div>
-        <p class="login-tagline" style="margin-top:2.5rem;">"Tu aventura, documentada. Tu progresión, trazable."</p>
-      </div>
-      <div>
-        <p style="font-size:0.62rem;letter-spacing:3px;text-transform:uppercase;color:var(--arena-claro);margin-bottom:0.8rem;">Zona privada</p>
-        <ul class="login-features">
-          <li>Historial de actividades y reservas</li>
-          <li>Logbook digital y certificaciones</li>
-          <li>Bonos regalo y créditos</li>
-          <li>Insignias y progresión</li>
-          <li>Valoraciones y comunidad</li>
-          <li>Gestión de contenido (Propietario)</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- RIGHT: Form -->
-    <div class="login-right">
-      <div class="login-tab">
-        <button class="active" id="tabLogin" onclick="showTab('login')">Entrar</button>
-        <button id="tabReg" onclick="showTab('reg')">Registrarse</button>
-      </div>
-
-      <!-- LOGIN FORM -->
-      <div id="panelLogin">
-        <h1 class="login-title">BIENVENIDO</h1>
-        <p class="login-subtitle">Accede con tu email y contraseña</p>
-        <div class="login-input-group">
-          <label for="loginUser">Email o usuario</label>
-          <input type="text" id="loginUser" placeholder="nomadaextremoaguilas@gmail.com" autocomplete="username">
-        </div>
-        <div class="login-input-group">
-          <label for="loginPass">Contraseña</label>
-          <input type="password" id="loginPass" placeholder="••••••••" autocomplete="current-password">
-        </div>
-        <button onclick="handleLogin()" class="btn btn-mar" style="width:100%;margin-top:0.5rem;padding:0.85rem;font-size:0.75rem;letter-spacing:2px;">
-          ACCEDER →
-        </button>
-        <p style="text-align:center;font-size:0.72rem;color:var(--piedra);margin-top:1rem;cursor:pointer;" onclick="alert('Enviaremos un enlace de recuperación a tu email.')">¿Olvidaste tu contraseña?</p>
-        <hr class="login-sep">
-        <div class="admin-badge">
-          <strong style="display:block;font-size:0.65rem;letter-spacing:2px;color:var(--tierra);text-transform:uppercase;margin-bottom:0.3rem;">⚙️ Acceso Propietario (prototipo)</strong>
-          Usuario: <code style="background:rgba(196,150,106,0.15);padding:0.1rem 0.4rem;border-radius:4px;">diegodavidextremo</code><br>
-          Contraseña: solo disponible en entorno local de administración.
-          <br><em style="font-size:0.67rem;color:var(--piedra);">Este es un proyecto académico. El sistema de autenticación requiere backend para producción.</em>
-        </div>
-      </div>
-
-      <!-- REGISTRO FORM -->
-      <div id="panelReg" style="display:none;">
-        <h2 class="login-title">ÚNETE</h2>
-        <p class="login-subtitle">Crea tu perfil de aventurero Nómada</p>
-        <div class="login-input-group">
-          <label for="regName">Nombre completo</label>
-          <input type="text" id="regName" autocomplete="name" placeholder="Tu nombre">
-        </div>
-        <div class="login-input-group">
-          <label for="regEmail">Email</label>
-          <input type="email" id="regEmail" autocomplete="email" placeholder="hola@email.com">
-        </div>
-        <div class="login-input-group">
-          <label for="regPass">Contraseña</label>
-          <input type="password" id="regPass" autocomplete="new-password" placeholder="Mínimo 8 caracteres">
-        </div>
-        <div class="login-input-group">
-          <label for="regPass2">Confirmar contraseña</label>
-          <input type="password" id="regPass2" autocomplete="new-password" placeholder="Repite tu contraseña">
-        </div>
-        <button onclick="alert('Registro recibido. Recibirás un email de confirmación en breve.')" class="btn btn-bosque" style="width:100%;margin-top:0.5rem;padding:0.85rem;font-size:0.75rem;letter-spacing:2px;">
-          CREAR PERFIL →
-        </button>
-        <p style="font-size:0.68rem;color:var(--piedra);text-align:center;margin-top:1rem;line-height:1.65;">Al registrarte aceptas los <a href="aviso-legal.html#condiciones-generales" style="color:var(--mar);">Términos de uso</a> y la <a href="aviso-legal.html#privacidad" style="color:var(--mar);">Política de privacidad</a>.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="footer-placeholder"></div>
-<script src="assets/js/components.js?v=20261006-1"></script>
-<script>
-function showTab(tab) {
-  document.getElementById('panelLogin').style.display = tab === 'login' ? 'block' : 'none';
-  document.getElementById('panelReg').style.display   = tab === 'reg'   ? 'block' : 'none';
-  document.getElementById('tabLogin').classList.toggle('active', tab === 'login');
-  document.getElementById('tabReg').classList.toggle('active',   tab === 'reg');
-}
-
-function handleLogin() {
-  const u = document.getElementById('loginUser').value.trim();
-  const p = document.getElementById('loginPass').value.trim();
-  if (u === 'diegodavidextremo' && p === 'arroztresdeliciasconsalsaagridulce88') {
-    alert('✅ Acceso propietario concedido.\n\nBienvenido, Diego David.\n\nNota: Este es un panel conceptual. El sistema de gestión completo requiere backend en producción.');
-    window.location.href = 'index.html';
-  } else if (u && p.length >= 6) {
-    alert('✅ Acceso simulado correcto.\n\nBienvenido a tu zona privada Nómada Extremo.\n\nNota: Sistema prototipo — la autenticación real requiere backend.');
-    window.location.href = 'comunidad.html';
-  } else {
-    alert('⚠️ Por favor completa todos los campos correctamente.');
-  }
-}
-</script>
-<script src="assets/js/stage3.js?v=20260914-3"></script>
-</body>
-</html>
+<link rel="stylesheet" href="assets/css/site-coherence.css?v=20261012-1"></head>
+<body class="login-page"><div id="nav-placeholder"></div><main id="main-content" class="site-demo-entry"><span class="label">Demostración del proyecto</span><h1>EXPLORA TU<br>ESPACIO NÓMADA</h1><p>Conoce cómo podría organizarse el progreso, los recuerdos y la comunidad. Esta demostración no crea cuentas ni solicita contraseñas.</p><div class="site-demo-options"><a href="logbook.html"><strong>Explorar el Logbook →</strong><span>Progreso por disciplina, credenciales y recuerdos.</span></a><a href="comunidad.html"><strong>Descubrir la comunidad →</strong><span>Campañas, retos e ideas para conectar experiencias.</span></a></div><p><a href="proyecto-academico.html">Conocer el estado actual del proyecto</a></p></main><div id="footer-placeholder"></div><script src="assets/js/components.js?v=20261006-1"></script><script src="assets/js/stage3.js?v=20260914-3"></script></body></html>

@@ -21,7 +21,7 @@ let browser;
    if(file==='escuela'){
     assert.equal(await page.locator('.school-overview-card__icon svg').count(),6);assert.equal(await page.locator('.common-training-card__icon svg').count(),10);
     await page.locator('.common-training-card__detail summary').first().click();assert(await page.locator('.common-training-card__detail[open] p').first().isVisible());
-    await page.locator('[data-route-id]').first().click();assert(await page.locator('dialog[open]').count()>0);await page.keyboard.press('Escape');assert.equal(await page.locator('dialog[open]').count(),0);
+    await page.locator('[data-route-id]').first().evaluate(e=>{for(let p=e.parentElement;p;p=p.parentElement)if(p.tagName==='DETAILS')p.open=true;});await page.locator('[data-route-id]').first().click();assert(await page.locator('dialog[open]').count()>0);await page.keyboard.press('Escape');assert.equal(await page.locator('dialog[open]').count(),0);
    }
    if(file==='comunidad'){assert.equal(await page.locator('.pack-grid article>strong').count(),8);assert.equal(await page.locator('.summer-campaign-icon svg').count(),4);}
    if(file==='logbook'){assert.equal(await page.locator('.qr-fake i').count(),0);assert.equal(await page.locator('.qr-fake img').count(),1);}

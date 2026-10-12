@@ -1,0 +1,8 @@
+/* Apply only the exact files validated in the separate preview, with a full local backup. */
+const fs=require('fs'),path=require('path'),assert=require('assert/strict'),crypto=require('crypto');const root=path.resolve(__dirname,'..'),workspace=path.dirname(root),preview=path.join(workspace,'site-preview-2026-10-12');
+const report=JSON.parse(fs.readFileSync(path.join(preview,'validation.json'),'utf8'));assert.equal(report.pages.length,122);assert.deepEqual(report.errors,[]);assert.equal(report.approvedFiles.length,61);const hash=s=>crypto.createHash('sha256').update(s).digest('hex');
+for(const file of report.approvedFiles){assert(/^[a-z0-9-]+\.html$/.test(file));assert.equal(hash(fs.readFileSync(path.join(preview,file),'utf8')),report.approvedHashes[file],file+' preview changed after review');assert.equal(hash(fs.readFileSync(path.join(root,file),'utf8')),report.originalHashes[file],file+' original changed after review');}
+const backup=path.resolve(workspace,'site-backup-2026-10-12-'+Date.now());assert(backup.startsWith(workspace+path.sep));fs.mkdirSync(backup);
+for(const file of [...report.approvedFiles,'assets/data/experience-catalog.json','tools/build-gmn.js']){const target=path.join(backup,file);fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(path.join(root,file),target);}
+for(const file of report.approvedFiles)fs.copyFileSync(path.join(preview,file),path.join(root,file));fs.copyFileSync(path.join(preview,'assets/data/experience-catalog.json'),path.join(root,'assets/data/experience-catalog.json'));
+fs.writeFileSync(path.join(backup,'preview-validation.json'),JSON.stringify(report,null,2));console.log('Applied '+report.approvedFiles.length+' verified pages. Backup: '+backup);

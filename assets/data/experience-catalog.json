@@ -207,5 +207,31 @@
       "Archivo de expectativas previo al inicio de 2.º GMN"
     ],
     "note": "Los servicios no incluidos en el catálogo pueden consultarse como propuesta a medida; no se han eliminado actividades individuales."
-  }
+  },
+  "gifts": [
+    [
+      "primera-aventura",
+      "Primera aventura",
+      "50 €",
+      "Un primer contacto con las experiencias del catálogo."
+    ],
+    [
+      "aventura-libre",
+      "Aventura libre",
+      "100 €",
+      "Un importe de referencia para elegir una experiencia."
+    ],
+    [
+      "aventura-premium",
+      "Aventura premium",
+      "200 €",
+      "Una propuesta combinada o con recuerdo audiovisual."
+    ],
+    [
+      "a-medida",
+      "A tu medida",
+      "Importe a elegir",
+      "Una propuesta ajustada a la persona y al presupuesto."
+    ]
+  ]
 }
