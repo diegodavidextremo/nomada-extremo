@@ -1,0 +1,10 @@
+/* Prepare isolated offline translation input; this script does not contact a translation service. */
+const fs=require('fs'),path=require('path'),vm=require('vm');
+const out=path.resolve('..','tmp/nl-translation');fs.mkdirSync(out,{recursive:true});
+function endValue(s,start){let depth=0,quote='',escape=false;for(let i=start;i<s.length;i++){const c=s[i];if(quote){if(escape)escape=false;else if(c==='\\')escape=true;else if(c===quote)quote='';continue;}if(c==='"'||c==="'"||c==='`'){quote=c;continue;}if('([{'.includes(c))depth++;else if(')]}'.includes(c)){depth--;if(depth===0)return i+1;if(depth<0)return i;}else if(depth===0&&(c===','||c==='\n'))return i;}return s.length;}
+const dynamic=[];for(const name of fs.readdirSync('assets/js').filter(n=>n.endsWith('.js'))){const file='assets/js/'+name,s=fs.readFileSync(file,'utf8');for(const match of s.matchAll(/\ben\s*:\s*/g)){const start=match.index+match[0].length,end=endValue(s,start),raw=s.slice(start,end).trim();try{const value=vm.runInNewContext('('+raw+')',{}, {timeout:100});if(typeof value==='string'||Array.isArray(value)||value&&typeof value==='object')dynamic.push({file,start,end,value});}catch{}}}
+const english=JSON.parse(fs.readFileSync('i18n/en.json','utf8'));
+for(const name of fs.readdirSync('assets/js').filter(n=>n.endsWith('.js'))){const file='assets/js/'+name,s=fs.readFileSync(file,'utf8');for(const m of s.matchAll(/(\w+)\.en\s*=\s*clone\(\s*\w+\.es\s*,\s*/g)){const start=m.index+m[0].length,end=endValue(s,start);const value=vm.runInNewContext('('+s.slice(start,end)+')',{}, {timeout:100});dynamic.push({file,start,end,value,assignment:m[1],insertAfter:s.indexOf(';',end)+1});}}
+const texts=new Set();function collect(value){if(typeof value==='string')texts.add(value);else if(value&&typeof value==='object')Object.values(value).forEach(collect);}
+collect(english);dynamic.forEach(item=>collect(item.value));
+fs.writeFileSync(path.join(out,'input.json'),JSON.stringify({english,dynamic,texts:[...texts]},null,2));console.log(JSON.stringify({dictionaryStrings:Object.keys(english.strings).length,dynamicEntries:dynamic.length,uniqueTexts:texts.size}));

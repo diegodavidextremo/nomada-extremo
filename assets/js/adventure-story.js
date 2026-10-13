@@ -13,7 +13,7 @@
     preview.hidden=false;
     let status=form.querySelector('[role="status"]');
     if(!status){status=document.createElement('p');status.setAttribute('role','status');form.appendChild(status);}
-    const messages={es:'Vista previa preparada. No se ha enviado ni guardado ningún dato.',en:'Preview ready. No data has been sent or saved.',fr:'Aperçu prêt. Aucune donnée envoyée ou enregistrée.',de:'Vorschau bereit. Es wurden keine Daten gesendet oder gespeichert.',it:'Anteprima pronta. Nessun dato inviato o salvato.',pt:'Pré-visualização pronta. Nenhum dado enviado ou guardado.'};
+    const messages={es:'Vista previa preparada. No se ha enviado ni guardado ningún dato.',en:'Preview ready. No data has been sent or saved.', nl: "Voorbeeld gereed. Er zijn geen gegevens verzonden of opgeslagen.",fr:'Aperçu prêt. Aucune donnée envoyée ou enregistrée.',de:'Vorschau bereit. Es wurden keine Daten gesendet oder gespeichert.',it:'Anteprima pronta. Nessun dato inviato o salvato.',pt:'Pré-visualização pronta. Nenhum dado enviado ou guardado.'};
     status.textContent=messages[document.documentElement.lang]||messages.es;
   });
 })();

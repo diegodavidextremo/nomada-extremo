@@ -1,0 +1,434 @@
+{
+  "viewports": 7,
+  "languages": 7,
+  "dutchPages": [
+    {
+      "file": "404.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Pagina niet gevonden Nómada Extremo"
+    },
+    {
+      "file": "actividad-detalle.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Activiteiten Template Nómada Extremo"
+    },
+    {
+      "file": "actividades.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Avontuuractiviteiten NÓMADA EXTREMO"
+    },
+    {
+      "file": "agradecimiento-1-gmn.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Bedankt 1e GMN | NÓMADA EXTREMO"
+    },
+    {
+      "file": "alquiler.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Materiaal Huur Nómada Extremo"
+    },
+    {
+      "file": "articulo-bautismo-buceo.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Duikend doopsel: wat te verwachten voordat u het water in gaat ? Nómada Extremo"
+    },
+    {
+      "file": "articulo-kayak-aguilas.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Wat te brengen aan uw eerste zee kajakken route in Águilas | Nómada Extremo"
+    },
+    {
+      "file": "articulo-primer-vuelo.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Paragliding, paramotor of paratrike: verschillen bij het kiezen van uw eerste vlucht . Nómada Extremo"
+    },
+    {
+      "file": "audiovisual.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Audiovisueel Nómada Extremo"
+    },
+    {
+      "file": "aviso-legal.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Juridische kennisgeving, Algemene Voorwaarden en Beleidslijnen"
+    },
+    {
+      "file": "base-campamento.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "NÓMADA EXTREMO Basis- en kamphut, school, vloot en avonturenkamp"
+    },
+    {
+      "file": "bautismo-buceo.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Duikend doopsel Nómada Extremo"
+    },
+    {
+      "file": "blog.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Adventure blog in Águilas | Nómada Extremo"
+    },
+    {
+      "file": "btt-costera.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Kust MTB Nómada Extremo"
+    },
+    {
+      "file": "certificaciones.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Certificaten en C-voorwaarden Nómada Extremo"
+    },
+    {
+      "file": "coasteering.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Coaches Nómada Extremo"
+    },
+    {
+      "file": "como-funciona.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Hoe de ervaring werkt Nómada Extremo"
+    },
+    {
+      "file": "comunidad.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Logbook, Gemeenschap en App Nómada Extremo"
+    },
+    {
+      "file": "condiciones.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Juridische kennisgeving, Algemene Voorwaarden en Beleidslijnen"
+    },
+    {
+      "file": "contacto.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Contactpersoon: NÓMADA EXTREMO"
+    },
+    {
+      "file": "equipo.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Professioneel team Nómada Extremo"
+    },
+    {
+      "file": "escuela.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Nomad-school Buitentraining"
+    },
+    {
+      "file": "faq.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "FAQ NÓMADA EXTREMO"
+    },
+    {
+      "file": "formacion-gmn.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "GMN Opleiding · Jaar 2 aan de gang 2026-2027 NÓMADA EXTREMO"
+    },
+    {
+      "file": "formularios.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Formulieren en check-in Nómada Extremo"
+    },
+    {
+      "file": "fundador.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "De Stichter. Nómada Extremo"
+    },
+    {
+      "file": "gracias.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Demonstratieverzoek voltooid Nómada Extremo"
+    },
+    {
+      "file": "grupos.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Groepen, centra en bedrijven Nómada Extremo"
+    },
+    {
+      "file": "guia-actividades.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Nomaden activiteitengids Nómada Extremo"
+    },
+    {
+      "file": "horizonte-nomada.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Nomad Horizon De toekomstvisie van NÓMADA EXTREMO"
+    },
+    {
+      "file": "index.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "NÓMADA EXTREMO Avontuur, extreme sport en natuur"
+    },
+    {
+      "file": "kayak-mar.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Zeekajak Nómada Extremo"
+    },
+    {
+      "file": "logbook.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Logbook, Gemeenschap en App Nómada Extremo"
+    },
+    {
+      "file": "login.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Nómada Ruimte · Project demonstratie"
+    },
+    {
+      "file": "material.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Materiaal en uitrusting Nómada Extremo"
+    },
+    {
+      "file": "multiaventura.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Multi-avontuur Nómada Extremo"
+    },
+    {
+      "file": "naturaleza.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Nómada Natuur Avontuur- en milieueducatie"
+    },
+    {
+      "file": "naturistas.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Nomad Naturisme NÓMADA EXTREMO"
+    },
+    {
+      "file": "open-water.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Open Water demo Nómada Extremo"
+    },
+    {
+      "file": "packs.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Avontuurpakketten en cadeaubonnen NÓMADA EXTREMO"
+    },
+    {
+      "file": "paramotor.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Paramotor Nómada Extremo"
+    },
+    {
+      "file": "parapente.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Paragliding Nómada Extremo"
+    },
+    {
+      "file": "politica-cookies.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Juridische kennisgeving, Algemene Voorwaarden en Beleidslijnen"
+    },
+    {
+      "file": "politica-devoluciones.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Juridische kennisgeving, Algemene Voorwaarden en Beleidslijnen"
+    },
+    {
+      "file": "politica-privacidad.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Juridische kennisgeving, Algemene Voorwaarden en Beleidslijnen"
+    },
+    {
+      "file": "proyecto-academico.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Academisch Project Nómada Extremo"
+    },
+    {
+      "file": "proyecto-completo.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Voltooi project Nómada Extremo"
+    },
+    {
+      "file": "proyecto-intermodular.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Interdisciplinair project 2026-2027 · NÓMADA EXTREMO 3.0"
+    },
+    {
+      "file": "quienes-somos.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Wie zijn we? Nómada Extremo"
+    },
+    {
+      "file": "rapel.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Technische afrolling Nómada Extremo"
+    },
+    {
+      "file": "reservas.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Begeleidingsverzoeken Nómada Extremo"
+    },
+    {
+      "file": "segundo-gmn.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "GMN Jaar 2 · 2026-2027 NÓMADA EXTREMO"
+    },
+    {
+      "file": "seguridad.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Veiligheid en risicobeheer NÓMADA EXTREMO"
+    },
+    {
+      "file": "senderismo-guiado.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Begeleide wandeling Nómada Extremo"
+    },
+    {
+      "file": "snorkel-aventura.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Avontuur Snorkelen . Nómada Extremo"
+    },
+    {
+      "file": "sostenibilidad.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Duurzaamheid en minimale impact Nómada Extremo"
+    },
+    {
+      "file": "tecnologia.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Nomadische technologie Nómada Extremo"
+    },
+    {
+      "file": "transparencia-financiacion.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Transparantie en financiering Nómada Extremo"
+    },
+    {
+      "file": "via-ferrata.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Via ferrata Nómada Extremo"
+    },
+    {
+      "file": "viajes.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Reis | NÓMADA EXTREMO"
+    },
+    {
+      "file": "zonas.html",
+      "language": "nl",
+      "missing": [],
+      "overflow": false,
+      "title": "Nomadenkaart en avonturenzones Nómada Extremo"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,1144 @@
+[
+  {
+    "code": "es",
+    "name": "Español",
+    "flag": "es",
+    "groups": [
+      {
+        "key": "countries",
+        "regions": [
+          {
+            "id": "es",
+            "region": "es",
+            "flag": "es"
+          },
+          {
+            "id": "mx",
+            "region": "mx",
+            "flag": "mx"
+          },
+          {
+            "id": "ar",
+            "region": "ar",
+            "flag": "ar"
+          },
+          {
+            "id": "co",
+            "region": "co",
+            "flag": "co"
+          },
+          {
+            "id": "pe",
+            "region": "pe",
+            "flag": "pe"
+          },
+          {
+            "id": "cl",
+            "region": "cl",
+            "flag": "cl"
+          },
+          {
+            "id": "ve",
+            "region": "ve",
+            "flag": "ve"
+          },
+          {
+            "id": "ec",
+            "region": "ec",
+            "flag": "ec"
+          },
+          {
+            "id": "bo",
+            "region": "bo",
+            "flag": "bo"
+          },
+          {
+            "id": "py",
+            "region": "py",
+            "flag": "py"
+          },
+          {
+            "id": "uy",
+            "region": "uy",
+            "flag": "uy"
+          },
+          {
+            "id": "cu",
+            "region": "cu",
+            "flag": "cu"
+          },
+          {
+            "id": "do",
+            "region": "do",
+            "flag": "do"
+          },
+          {
+            "id": "gt",
+            "region": "gt",
+            "flag": "gt"
+          },
+          {
+            "id": "hn",
+            "region": "hn",
+            "flag": "hn"
+          },
+          {
+            "id": "sv",
+            "region": "sv",
+            "flag": "sv"
+          },
+          {
+            "id": "ni",
+            "region": "ni",
+            "flag": "ni"
+          },
+          {
+            "id": "cr",
+            "region": "cr",
+            "flag": "cr"
+          },
+          {
+            "id": "pa",
+            "region": "pa",
+            "flag": "pa"
+          },
+          {
+            "id": "gq",
+            "region": "gq",
+            "flag": "gq"
+          }
+        ]
+      },
+      {
+        "key": "territories",
+        "regions": [
+          {
+            "id": "pr",
+            "region": "pr",
+            "flag": "pr"
+          }
+        ]
+      },
+      {
+        "key": "secondLanguage",
+        "regions": [
+          {
+            "id": "ag",
+            "region": "ag",
+            "flag": "ag"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "en",
+    "name": "English",
+    "flag": "gb",
+    "groups": [
+      {
+        "key": "europeAmerica",
+        "regions": [
+          {
+            "id": "gb",
+            "region": "gb",
+            "flag": "gb"
+          },
+          {
+            "id": "us",
+            "region": "us",
+            "flag": "us"
+          },
+          {
+            "id": "ca",
+            "region": "ca",
+            "flag": "ca"
+          },
+          {
+            "id": "ie",
+            "region": "ie",
+            "flag": "ie"
+          },
+          {
+            "id": "mt",
+            "region": "mt",
+            "flag": "mt"
+          },
+          {
+            "id": "ag",
+            "region": "ag",
+            "flag": "ag"
+          },
+          {
+            "id": "bs",
+            "region": "bs",
+            "flag": "bs"
+          },
+          {
+            "id": "bb",
+            "region": "bb",
+            "flag": "bb"
+          },
+          {
+            "id": "bz",
+            "region": "bz",
+            "flag": "bz"
+          },
+          {
+            "id": "dm",
+            "region": "dm",
+            "flag": "dm"
+          },
+          {
+            "id": "gd",
+            "region": "gd",
+            "flag": "gd"
+          },
+          {
+            "id": "gy",
+            "region": "gy",
+            "flag": "gy"
+          },
+          {
+            "id": "jm",
+            "region": "jm",
+            "flag": "jm"
+          },
+          {
+            "id": "kn",
+            "region": "kn",
+            "flag": "kn"
+          },
+          {
+            "id": "lc",
+            "region": "lc",
+            "flag": "lc"
+          },
+          {
+            "id": "vc",
+            "region": "vc",
+            "flag": "vc"
+          },
+          {
+            "id": "tt",
+            "region": "tt",
+            "flag": "tt"
+          }
+        ]
+      },
+      {
+        "key": "ukCountries",
+        "regions": [
+          {
+            "id": "england",
+            "flag": "gb-eng",
+            "names": {
+              "es": "Inglaterra",
+              "en": "England",
+              "fr": "Angleterre",
+              "de": "England",
+              "it": "Inghilterra",
+              "pt": "Inglaterra",
+              "nl": "Engeland"
+            }
+          },
+          {
+            "id": "scotland",
+            "flag": "gb-sct",
+            "names": {
+              "es": "Escocia",
+              "en": "Scotland",
+              "fr": "Écosse",
+              "de": "Schottland",
+              "it": "Scozia",
+              "pt": "Escócia",
+              "nl": "Schotland"
+            }
+          },
+          {
+            "id": "wales",
+            "flag": "gb-wls",
+            "names": {
+              "es": "Gales",
+              "en": "Wales",
+              "fr": "Pays de Galles",
+              "de": "Wales",
+              "it": "Galles",
+              "pt": "País de Gales",
+              "nl": "Wales"
+            }
+          },
+          {
+            "id": "northernIreland",
+            "flag": "gb",
+            "names": {
+              "es": "Irlanda del Norte",
+              "en": "Northern Ireland",
+              "fr": "Irlande du Nord",
+              "de": "Nordirland",
+              "it": "Irlanda del Nord",
+              "pt": "Irlanda do Norte",
+              "nl": "Noord-Ierland"
+            }
+          }
+        ]
+      },
+      {
+        "key": "africa",
+        "regions": [
+          {
+            "id": "bw",
+            "region": "bw",
+            "flag": "bw"
+          },
+          {
+            "id": "bi",
+            "region": "bi",
+            "flag": "bi"
+          },
+          {
+            "id": "cm",
+            "region": "cm",
+            "flag": "cm"
+          },
+          {
+            "id": "sz",
+            "region": "sz",
+            "flag": "sz"
+          },
+          {
+            "id": "gm",
+            "region": "gm",
+            "flag": "gm"
+          },
+          {
+            "id": "gh",
+            "region": "gh",
+            "flag": "gh"
+          },
+          {
+            "id": "ke",
+            "region": "ke",
+            "flag": "ke"
+          },
+          {
+            "id": "ls",
+            "region": "ls",
+            "flag": "ls"
+          },
+          {
+            "id": "lr",
+            "region": "lr",
+            "flag": "lr"
+          },
+          {
+            "id": "mw",
+            "region": "mw",
+            "flag": "mw"
+          },
+          {
+            "id": "na",
+            "region": "na",
+            "flag": "na"
+          },
+          {
+            "id": "ng",
+            "region": "ng",
+            "flag": "ng"
+          },
+          {
+            "id": "rw",
+            "region": "rw",
+            "flag": "rw"
+          },
+          {
+            "id": "sc",
+            "region": "sc",
+            "flag": "sc"
+          },
+          {
+            "id": "sl",
+            "region": "sl",
+            "flag": "sl"
+          },
+          {
+            "id": "za",
+            "region": "za",
+            "flag": "za"
+          },
+          {
+            "id": "ss",
+            "region": "ss",
+            "flag": "ss"
+          },
+          {
+            "id": "sd",
+            "region": "sd",
+            "flag": "sd"
+          },
+          {
+            "id": "tz",
+            "region": "tz",
+            "flag": "tz"
+          },
+          {
+            "id": "ug",
+            "region": "ug",
+            "flag": "ug"
+          },
+          {
+            "id": "zm",
+            "region": "zm",
+            "flag": "zm"
+          },
+          {
+            "id": "zw",
+            "region": "zw",
+            "flag": "zw"
+          }
+        ]
+      },
+      {
+        "key": "asiaOceania",
+        "regions": [
+          {
+            "id": "in",
+            "region": "in",
+            "flag": "in"
+          },
+          {
+            "id": "pk",
+            "region": "pk",
+            "flag": "pk"
+          },
+          {
+            "id": "ph",
+            "region": "ph",
+            "flag": "ph"
+          },
+          {
+            "id": "sg",
+            "region": "sg",
+            "flag": "sg"
+          },
+          {
+            "id": "au",
+            "region": "au",
+            "flag": "au"
+          },
+          {
+            "id": "fj",
+            "region": "fj",
+            "flag": "fj"
+          },
+          {
+            "id": "ki",
+            "region": "ki",
+            "flag": "ki"
+          },
+          {
+            "id": "mh",
+            "region": "mh",
+            "flag": "mh"
+          },
+          {
+            "id": "fm",
+            "region": "fm",
+            "flag": "fm"
+          },
+          {
+            "id": "nr",
+            "region": "nr",
+            "flag": "nr"
+          },
+          {
+            "id": "nz",
+            "region": "nz",
+            "flag": "nz"
+          },
+          {
+            "id": "pw",
+            "region": "pw",
+            "flag": "pw"
+          },
+          {
+            "id": "pg",
+            "region": "pg",
+            "flag": "pg"
+          },
+          {
+            "id": "ws",
+            "region": "ws",
+            "flag": "ws"
+          },
+          {
+            "id": "sb",
+            "region": "sb",
+            "flag": "sb"
+          },
+          {
+            "id": "to",
+            "region": "to",
+            "flag": "to"
+          },
+          {
+            "id": "tv",
+            "region": "tv",
+            "flag": "tv"
+          },
+          {
+            "id": "vu",
+            "region": "vu",
+            "flag": "vu"
+          }
+        ]
+      },
+      {
+        "key": "territories",
+        "regions": [
+          {
+            "id": "ai",
+            "region": "ai",
+            "flag": "ai"
+          },
+          {
+            "id": "bm",
+            "region": "bm",
+            "flag": "bm"
+          },
+          {
+            "id": "ky",
+            "region": "ky",
+            "flag": "ky"
+          },
+          {
+            "id": "cw",
+            "region": "cw",
+            "flag": "cw"
+          },
+          {
+            "id": "gi",
+            "region": "gi",
+            "flag": "gi"
+          },
+          {
+            "id": "gg",
+            "region": "gg",
+            "flag": "gg"
+          },
+          {
+            "id": "gu",
+            "region": "gu",
+            "flag": "gu"
+          },
+          {
+            "id": "hk",
+            "region": "hk",
+            "flag": "hk"
+          },
+          {
+            "id": "im",
+            "region": "im",
+            "flag": "im"
+          },
+          {
+            "id": "je",
+            "region": "je",
+            "flag": "je"
+          },
+          {
+            "id": "ms",
+            "region": "ms",
+            "flag": "ms"
+          },
+          {
+            "id": "mp",
+            "region": "mp",
+            "flag": "mp"
+          },
+          {
+            "id": "nf",
+            "region": "nf",
+            "flag": "nf"
+          },
+          {
+            "id": "pn",
+            "region": "pn",
+            "flag": "pn"
+          },
+          {
+            "id": "pr",
+            "region": "pr",
+            "flag": "pr"
+          },
+          {
+            "id": "as",
+            "region": "as",
+            "flag": "as"
+          },
+          {
+            "id": "sx",
+            "region": "sx",
+            "flag": "sx"
+          },
+          {
+            "id": "tc",
+            "region": "tc",
+            "flag": "tc"
+          },
+          {
+            "id": "vi",
+            "region": "vi",
+            "flag": "vi"
+          },
+          {
+            "id": "vg",
+            "region": "vg",
+            "flag": "vg"
+          },
+          {
+            "id": "cx",
+            "region": "cx",
+            "flag": "cx"
+          },
+          {
+            "id": "cc",
+            "region": "cc",
+            "flag": "cc"
+          },
+          {
+            "id": "tk",
+            "region": "tk",
+            "flag": "tk"
+          },
+          {
+            "id": "ck",
+            "region": "ck",
+            "flag": "ck"
+          },
+          {
+            "id": "nu",
+            "region": "nu",
+            "flag": "nu"
+          },
+          {
+            "id": "sh",
+            "region": "sh",
+            "flag": "sh"
+          },
+          {
+            "id": "fk",
+            "region": "fk",
+            "flag": "fk"
+          },
+          {
+            "id": "gs",
+            "region": "gs",
+            "flag": "gs"
+          },
+          {
+            "id": "akrotiriDhekelia",
+            "flag": "gb",
+            "names": {
+              "es": "Akrotiri y Dhekelia",
+              "en": "Akrotiri and Dhekelia",
+              "fr": "Akrotiri et Dhekelia",
+              "de": "Akrotiri und Dhekelia",
+              "it": "Akrotiri e Dhekelia",
+              "pt": "Akrotiri e Dhekelia",
+              "nl": "Akrotiri en Dhekelia"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "fr",
+    "name": "Français",
+    "flag": "fr",
+    "groups": [
+      {
+        "key": "europeAmerica",
+        "regions": [
+          {
+            "id": "fr",
+            "region": "fr",
+            "flag": "fr"
+          },
+          {
+            "id": "be",
+            "region": "be",
+            "flag": "be"
+          },
+          {
+            "id": "ch",
+            "region": "ch",
+            "flag": "ch"
+          },
+          {
+            "id": "lu",
+            "region": "lu",
+            "flag": "lu"
+          },
+          {
+            "id": "mc",
+            "region": "mc",
+            "flag": "mc"
+          },
+          {
+            "id": "ca",
+            "region": "ca",
+            "flag": "ca"
+          },
+          {
+            "id": "ht",
+            "region": "ht",
+            "flag": "ht"
+          }
+        ]
+      },
+      {
+        "key": "africaOceania",
+        "regions": [
+          {
+            "id": "bj",
+            "region": "bj",
+            "flag": "bj"
+          },
+          {
+            "id": "bi",
+            "region": "bi",
+            "flag": "bi"
+          },
+          {
+            "id": "cm",
+            "region": "cm",
+            "flag": "cm"
+          },
+          {
+            "id": "cf",
+            "region": "cf",
+            "flag": "cf"
+          },
+          {
+            "id": "td",
+            "region": "td",
+            "flag": "td"
+          },
+          {
+            "id": "km",
+            "region": "km",
+            "flag": "km"
+          },
+          {
+            "id": "cg",
+            "region": "cg",
+            "flag": "cg"
+          },
+          {
+            "id": "cd",
+            "region": "cd",
+            "flag": "cd"
+          },
+          {
+            "id": "ci",
+            "region": "ci",
+            "flag": "ci"
+          },
+          {
+            "id": "dj",
+            "region": "dj",
+            "flag": "dj"
+          },
+          {
+            "id": "ga",
+            "region": "ga",
+            "flag": "ga"
+          },
+          {
+            "id": "gn",
+            "region": "gn",
+            "flag": "gn"
+          },
+          {
+            "id": "gq",
+            "region": "gq",
+            "flag": "gq"
+          },
+          {
+            "id": "mg",
+            "region": "mg",
+            "flag": "mg"
+          },
+          {
+            "id": "rw",
+            "region": "rw",
+            "flag": "rw"
+          },
+          {
+            "id": "sn",
+            "region": "sn",
+            "flag": "sn"
+          },
+          {
+            "id": "sc",
+            "region": "sc",
+            "flag": "sc"
+          },
+          {
+            "id": "tg",
+            "region": "tg",
+            "flag": "tg"
+          },
+          {
+            "id": "vu",
+            "region": "vu",
+            "flag": "vu"
+          }
+        ]
+      },
+      {
+        "key": "frenchTerritories",
+        "regions": [
+          {
+            "id": "gp",
+            "region": "gp",
+            "flag": "fr"
+          },
+          {
+            "id": "gf",
+            "region": "gf",
+            "flag": "fr"
+          },
+          {
+            "id": "mq",
+            "region": "mq",
+            "flag": "fr"
+          },
+          {
+            "id": "yt",
+            "region": "yt",
+            "flag": "fr"
+          },
+          {
+            "id": "re",
+            "region": "re",
+            "flag": "fr"
+          },
+          {
+            "id": "nc",
+            "region": "nc",
+            "flag": "fr"
+          },
+          {
+            "id": "pf",
+            "region": "pf",
+            "flag": "fr"
+          },
+          {
+            "id": "bl",
+            "region": "bl",
+            "flag": "fr"
+          },
+          {
+            "id": "mf",
+            "region": "mf",
+            "flag": "fr"
+          },
+          {
+            "id": "pm",
+            "region": "pm",
+            "flag": "fr"
+          },
+          {
+            "id": "wf",
+            "region": "wf",
+            "flag": "fr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "de",
+    "name": "Deutsch",
+    "flag": "de",
+    "groups": [
+      {
+        "key": "countries",
+        "regions": [
+          {
+            "id": "de",
+            "region": "de",
+            "flag": "de"
+          },
+          {
+            "id": "at",
+            "region": "at",
+            "flag": "at"
+          },
+          {
+            "id": "ch",
+            "region": "ch",
+            "flag": "ch"
+          },
+          {
+            "id": "li",
+            "region": "li",
+            "flag": "li"
+          },
+          {
+            "id": "lu",
+            "region": "lu",
+            "flag": "lu"
+          },
+          {
+            "id": "be",
+            "region": "be",
+            "flag": "be"
+          }
+        ]
+      },
+      {
+        "key": "regional",
+        "regions": [
+          {
+            "id": "southTyrol",
+            "flag": "it",
+            "names": {
+              "es": "Tirol del Sur · Italia",
+              "en": "South Tyrol · Italy",
+              "fr": "Tyrol du Sud · Italie",
+              "de": "Südtirol · Italien",
+              "it": "Alto Adige · Italia",
+              "pt": "Tirol do Sul · Itália",
+              "nl": "Zuid-Tirol · Italië"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "it",
+    "name": "Italiano",
+    "flag": "it",
+    "groups": [
+      {
+        "key": "countries",
+        "regions": [
+          {
+            "id": "it",
+            "region": "it",
+            "flag": "it"
+          },
+          {
+            "id": "ch",
+            "region": "ch",
+            "flag": "ch"
+          },
+          {
+            "id": "sm",
+            "region": "sm",
+            "flag": "sm"
+          },
+          {
+            "id": "va",
+            "region": "va",
+            "flag": "va"
+          }
+        ]
+      },
+      {
+        "key": "regional",
+        "regions": [
+          {
+            "id": "sloveneCoast",
+            "flag": "si",
+            "names": {
+              "es": "Litoral esloveno · Eslovenia",
+              "en": "Slovene Littoral · Slovenia",
+              "fr": "Littoral slovène · Slovénie",
+              "de": "Slowenisches Küstenland · Slowenien",
+              "it": "Litorale sloveno · Slovenia",
+              "pt": "Litoral esloveno · Eslovénia",
+              "nl": "Sloveense kust · Slovenië"
+            }
+          },
+          {
+            "id": "croatianIstria",
+            "flag": "hr",
+            "names": {
+              "es": "Istria · Croacia",
+              "en": "Istria · Croatia",
+              "fr": "Istrie · Croatie",
+              "de": "Istrien · Kroatien",
+              "it": "Istria · Croazia",
+              "pt": "Ístria · Croácia",
+              "nl": "Istrië · Kroatië"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "pt",
+    "name": "Português",
+    "flag": "pt",
+    "groups": [
+      {
+        "key": "countries",
+        "regions": [
+          {
+            "id": "pt",
+            "region": "pt",
+            "flag": "pt"
+          },
+          {
+            "id": "br",
+            "region": "br",
+            "flag": "br"
+          },
+          {
+            "id": "ao",
+            "region": "ao",
+            "flag": "ao"
+          },
+          {
+            "id": "mz",
+            "region": "mz",
+            "flag": "mz"
+          },
+          {
+            "id": "cv",
+            "region": "cv",
+            "flag": "cv"
+          },
+          {
+            "id": "gw",
+            "region": "gw",
+            "flag": "gw"
+          },
+          {
+            "id": "st",
+            "region": "st",
+            "flag": "st"
+          },
+          {
+            "id": "tl",
+            "region": "tl",
+            "flag": "tl"
+          },
+          {
+            "id": "gq",
+            "region": "gq",
+            "flag": "gq"
+          }
+        ]
+      },
+      {
+        "key": "territories",
+        "regions": [
+          {
+            "id": "mo",
+            "region": "mo",
+            "flag": "mo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "nl",
+    "name": "Nederlands",
+    "flag": "nl",
+    "groups": [
+      {
+        "key": "countries",
+        "regions": [
+          {
+            "id": "nl",
+            "region": "nl",
+            "flag": "nl"
+          },
+          {
+            "id": "be",
+            "region": "be",
+            "flag": "be"
+          },
+          {
+            "id": "sr",
+            "region": "sr",
+            "flag": "sr"
+          }
+        ]
+      },
+      {
+        "key": "caribbeanCountries",
+        "regions": [
+          {
+            "id": "aw",
+            "region": "aw",
+            "flag": "aw"
+          },
+          {
+            "id": "cw",
+            "region": "cw",
+            "flag": "cw"
+          },
+          {
+            "id": "sx",
+            "region": "sx",
+            "flag": "sx"
+          }
+        ]
+      },
+      {
+        "key": "caribbeanNetherlands",
+        "regions": [
+          {
+            "id": "bonaire",
+            "flag": "nl",
+            "names": {
+              "es": "Bonaire",
+              "en": "Bonaire",
+              "fr": "Bonaire",
+              "de": "Bonaire",
+              "it": "Bonaire",
+              "pt": "Bonaire",
+              "nl": "Bonaire"
+            }
+          },
+          {
+            "id": "saba",
+            "flag": "nl",
+            "names": {
+              "es": "Saba",
+              "en": "Saba",
+              "fr": "Saba",
+              "de": "Saba",
+              "it": "Saba",
+              "pt": "Saba",
+              "nl": "Saba"
+            }
+          },
+          {
+            "id": "sintEustatius",
+            "flag": "nl",
+            "names": {
+              "es": "San Eustaquio",
+              "en": "Sint Eustatius",
+              "fr": "Saint-Eustache",
+              "de": "Sint Eustatius",
+              "it": "Sint Eustatius",
+              "pt": "Santo Eustáquio",
+              "nl": "Sint Eustatius"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

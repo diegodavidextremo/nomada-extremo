@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  const supported = ['es', 'en', 'fr', 'de', 'it', 'pt'];
+  const supported = ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'];
   const state = { language: localStorage.getItem('noext-language') || 'es', filters: {} };
 
   const ui = {
@@ -68,6 +68,7 @@
     naturaleza: { kicker: 'Respectful line', title: 'NOMAD NATURE<br><span class="mar">TRIPS</span>', text: 'A line focused on nature, responsible body freedom, privacy, authorised or tolerated beaches, wellbeing and connection with the environment. Always separated from technical or risk sports when needed.', chip1: 'Coastal walks', chip2: 'Coves', chip3: 'Nature photography', chip4: 'Bathing', chip5: 'Soft snorkel', chip6: 'Disconnect' },
     labels: { region: 'Country / region', best: 'Best window', activities: 'Activities', level: 'Level', duration: 'Ideal duration', why: 'Why it matters', risk: 'To check', status: 'Status', content: 'Content', view: 'View experience', save: 'Save destination', interest: 'Request interest', detail: 'I am interested in this adventure', material: 'Required equipment', safety: 'Safety conditions', check: 'What to check before going', youtube: 'YouTube/Instagram potential', materialText: 'Specific equipment according to the activity, water, sun protection, layered clothing and gear validated by the provider.', checkText: 'Permits, weather, insurance, qualified guide, local rules, fitness and alternative plan.' }
   });
+  ui.nl = clone(ui.es, {"nav":{"home":"Start","travel":"Reis"},"hero":{"kicker":"Strategische avontuurkalender","title":"Nómada-reizen: de kalender voor bijzondere avonturen","subtitle":"Optimale data, krachtige bestemmingen en geselecteerde ervaringen om te leven over zee, bergen, lucht en adrenaline in en buiten Spanje.","brand":"Voor mensen die het avontuur willen beleven.","ctaPrimary":"Agenda verkennen","ctaSecondary":"Zie bestemmingen per activiteit"},"intro":{"kicker":"Van Águilas naar de wereld","title":"EEN MAP VAN<br><span class=\"mar\">POSSIBILITEITEN</span>","p1":"NÓMADA EXTREMO begint in Águilas, Murcia, maar kijkt naar Spanje, Europa en de wereld. Deze pagina is een inspiratie en planning gids om te begrijpen wanneer elk avontuur het beste past: duiken, kajak, snorkelen, klimmen, via ferrata, canyoning, paragliding, paramotor, paratrike, skydiven, coastering, kliffen springen, wandelen, trekking, MTB, speleologie, kitesurf, surfen, paddle surf, bungee jumping, naturisten ervaringen, foto/video en zee + berg combinaties.","quote":"Sommige bestemmingen worden niet bezocht: ze zijn overleefd, gemarkeerd op de huid en veranderen hoe je kijkt naar de wereld."},"notice":{"title":"Oriëntatieplanning","text":"Data, bestemmingen en ervaringen zijn oriëntatievoorstellen afhankelijk van beschikbaarheid, vergunningen, weersomstandigheden, lokale regels, erkende partners en de werkelijke evolutie van NÓMADA EXTREMO. Reizen pakketten, vervoer of accommodatie zou naleving van de toepasselijke toeristische voorschriften vereisen."},"filters":{"kicker":"Werkfilters","title":"VIND UW<br><span class=\"mar\">IDEALE WINDOW</span>","all":"Alles","clear":"Filters wissen","found":"{count} avonturen gevonden","empty":"Geen avonturen komen overeen met deze filters. Probeer één criterium op te ruimen.","fields":{"season":"Datum / seizoen","scope":"Toepassingsgebied","medium":"Middel","activity":"Activiteit","level":"Niveau","duration":"Duur","type":"Type","recording":"Opname"}},"calendar":{"kicker":"Jaarlijkse kalender","title":"WANNE<br><span class=\"arena\">BEWEGING</span>"},"safety":{"kicker":"Veiligheid en duurzaamheid","title":"REIZEN MET BEWIJS<br><span class=\"acento\">IS OOK ADVENTURE</span>","card1Title":"Technisch oordeel","card1Text":"Geen improviseren canyoning, duiken, paragliding, paramotor, skydiven, kliffen springen of speleologie zonder professionals, apparatuur, vergunningen en geschikte omstandigheden.","card2Title":"Beschermde omgevingen","card2Text":"Vermijd overbevolking gevoelige gebieden, respect voor wilde dieren en planten, herziening van lokale regels en voorkomen dat het publiceren van delicate locaties wanneer het kan schade aan de plaats.","card3Title":"Documentatie","card3Text":"Weer, verzekering, kwalificaties, toegestane gidsen, vergunningen, uitrusting, gezondheid, logistiek en alternatieven moeten worden gecontroleerd voordat u reist."},"naturaleza":{"kicker":"Respectvolle lijn","title":"NOMAD NATUUR<br><span class=\"mar\">TRIPS</span>","text":"Een lijn gericht op natuur, verantwoorde lichaam vrijheid, privacy, toegestane of getolereerde stranden, welzijn en verbinding met het milieu. Altijd gescheiden van technische of risico sport wanneer nodig.","chip1":"Kustwandelingen","chip2":"Baaien","chip3":"Natuurfotografie","chip4":"Zwemmen","chip5":"Zachte snorkel","chip6":"Verbinding verbreken"},"labels":{"region":"Land/regio","best":"Beste venster","activities":"Activiteiten","level":"Niveau","duration":"Ideale duur","why":"Waarom het belangrijk is","risk":"Om te controleren","status":"Status","content":"Inhoud","view":"Ervaring bekijken","save":"Doel opslaan","interest":"Verzoek om rente","detail":"Ik ben geïnteresseerd in dit avontuur.","material":"Vereiste uitrusting","safety":"Veiligheidsvoorwaarden","check":"Wat te controleren voordat u gaat","youtube":"YouTube/Instagram potentieel","materialText":"Specifieke uitrusting volgens de activiteit, water, zonbescherming, gelaagde kleding en vistuig gevalideerd door de provider.","checkText":"Vergunningen, weersomstandigheden, verzekeringen, gekwalificeerde gids, lokale regels, fitness en een alternatief plan."}});
   ui.fr = clone(ui.es, {
     nav: { home: 'Accueil', travel: 'Voyages' },
     hero: { kicker: 'Calendrier stratégique d’aventure', title: 'Voyages Nomades : le calendrier de l’aventure extrême', subtitle: 'Dates optimales, destinations fortes et expériences sélectionnées pour vivre la mer, la montagne, l’air et l’adrénaline en Espagne et ailleurs.', brand: 'Pour ceux qui veulent une vraie aventure.', ctaPrimary: 'Explorer le calendrier', ctaSecondary: 'Voir par activité' },
@@ -127,7 +128,7 @@
       summary: item => `${item.name} is a selected NÓMADA EXTREMO destination for ${item.activities.slice(0, 3).join(', ')}, with an optimal window around ${item.best}.`,
       risk: 'Check weather, permits, authorised providers, insurance, group level, equipment and local regulations before planning.',
       saved: 'Saved'
-    },
+    }, nl: {"risk":"Controleer het weer, vergunningen, geautoriseerde aanbieders, verzekeringen, groepsniveau, apparatuur en lokale regelgeving voor de planning.","saved":"Opgeslagen"},
     fr: {
       summary: item => `${item.name} est une destination sélectionnée par NÓMADA EXTREMO pour ${item.activities.slice(0, 3).join(', ')}, avec une fenêtre idéale autour de ${item.best}.`,
       risk: 'Vérifier météo, autorisations, prestataires habilités, assurances, niveau du groupe, matériel et réglementation locale.',
@@ -150,6 +151,7 @@
     }
   };
 
+  languageText.nl.summary = item => `${item.name} is een geselecteerde bestemming van NÓMADA EXTREMO voor ${item.activities.slice(0,3).map(value => typeof window.noextTranslate === 'function' ? window.noextTranslate(value) : value).join(', ')}. De aanbevolen periode is ${typeof window.noextTranslate === 'function' ? window.noextTranslate(item.best) : item.best}.`;
   const tax = {
     season: ['invierno', 'primavera', 'verano', 'otoño', 'todo el año'],
     scope: ['local', 'Región de Murcia', 'nacional', 'Europa', 'internacional'],
@@ -178,7 +180,7 @@
       ['July-August', 'Águilas, Cabo de Gata, Cabo de Palos, Sierra de Guara, Empuriabrava, water activities, skydiving, aquatic canyoning and snorkel. Avoid peak heat hours.'],
       ['September-October', 'Powerful global window: diving, Cabo de Palos, Cabo de Gata, climbing, canyoning, Madeira, Red Sea, coastal routes and European trips.'],
       ['November-December', 'Canary Islands, Costa Blanca, El Chorro (Álora, Málaga), Dubai, Red Sea, hiking, climbing, easy routes, international experiences and next-year planning.']
-    ],
+    ], nl: [["Januari-februari","Canarische Eilanden, Costa Blanca, El Chorro (Álora, Málaga), Rode Zee, Dubai, gemakkelijk wandelen, winterklimmen, winterduiken en training."],["Maart-april","Costa Blanca, El Chorro (Álora, Málaga), Cabo de Gata, Madeira, Rode Zee, klimmen, wandelen, via ferrata en canyoning afhankelijk van de waterstroom."],["Mei-juni","Águilas, Cabo de Gata, Cabo de Palos, Sierra de Guara, Azoren, kajak, snorkelen, duiken, canyoning, coastering en gecontroleerde klifspringen."],["Juli-augustus","Águilas, Cabo de Gata, Cabo de Palos, Sierra de Guara, Empuriabrava, water activiteiten, parachutespringen, aquatische canyoning en snorkel."],["september-oktober","Krachtig wereldwijd venster: duiken, Cabo de Palos, Cabo de Gata, klimmen, canyoning, Madeira, Rode Zee, kustroutes en Europese reizen."],["November-december","Canarische Eilanden, Costa Blanca, El Chorro (Álora, Málaga), Dubai, Rode Zee, wandelen, klimmen, gemakkelijke routes, internationale ervaringen en volgende jaarplanning."]],
     fr: [
       ['Janvier-février', 'Canaries, Costa Blanca, El Chorro (Álora, Málaga), mer Rouge, Dubaï, randonnée douce, escalade hivernale, plongée d’hiver et formation.'],
       ['Mars-avril', 'Costa Blanca, El Chorro (Álora, Málaga), Cabo de Gata, Madère, mer Rouge, escalade, randonnée, via ferrata et canyoning selon le débit.'],
@@ -268,34 +270,34 @@
 
   function labelValue(value) {
     const table = {
-      invierno: { en:'winter', fr:'hiver', de:'Winter', it:'inverno', pt:'inverno' },
-      primavera: { en:'spring', fr:'printemps', de:'Frühling', it:'primavera', pt:'primavera' },
-      verano: { en:'summer', fr:'été', de:'Sommer', it:'estate', pt:'verão' },
-      otoño: { en:'autumn', fr:'automne', de:'Herbst', it:'autunno', pt:'outono' },
-      'todo el año': { en:'all year', fr:'toute l’année', de:'ganzjährig', it:'tutto l’anno', pt:'todo o ano' },
-      local: { en:'local', fr:'local', de:'lokal', it:'locale', pt:'local' },
-      nacional: { en:'national', fr:'national', de:'national', it:'nazionale', pt:'nacional' },
-      internacional: { en:'international', fr:'international', de:'international', it:'internazionale', pt:'internacional' },
-      mar: { en:'sea', fr:'mer', de:'Meer', it:'mare', pt:'mar' },
-      montaña: { en:'mountain', fr:'montagne', de:'Berg', it:'montagna', pt:'montanha' },
-      aire: { en:'air', fr:'air', de:'Luft', it:'aria', pt:'ar' },
-      vertical: { en:'vertical', fr:'vertical', de:'vertikal', it:'verticale', pt:'vertical' },
-      subterráneo: { en:'underground', fr:'souterrain', de:'unterirdisch', it:'sotterraneo', pt:'subterrâneo' },
-      mixto: { en:'mixed', fr:'mixte', de:'gemischt', it:'misto', pt:'misto' },
-      naturista: { en:'naturist', fr:'naturiste', de:'Naturismus', it:'naturista', pt:'naturista' },
-      iniciación: { en:'beginner', fr:'initiation', de:'Einstieg', it:'iniziazione', pt:'iniciação' },
-      intermedio: { en:'intermediate', fr:'intermédiaire', de:'mittel', it:'intermedio', pt:'intermédio' },
-      avanzado: { en:'advanced', fr:'avancé', de:'fortgeschritten', it:'avanzato', pt:'avançado' },
-      experto: { en:'expert', fr:'expert', de:'Experte', it:'esperto', pt:'especialista' },
-      '1 día': { en:'1 day', fr:'1 jour', de:'1 Tag', it:'1 giorno', pt:'1 dia' },
-      'fin de semana': { en:'weekend', fr:'week-end', de:'Wochenende', it:'weekend', pt:'fim de semana' },
-      '3-5 días': { en:'3-5 days', fr:'3-5 jours', de:'3-5 Tage', it:'3-5 giorni', pt:'3-5 dias' },
-      '1 semana': { en:'1 week', fr:'1 semaine', de:'1 Woche', it:'1 settimana', pt:'1 semana' },
-      'gran viaje': { en:'big trip', fr:'grand voyage', de:'große Reise', it:'grande viaggio', pt:'grande viagem' },
-      'experiencia propia': { en:'own experience', fr:'expérience propre', de:'eigene Erfahrung', it:'esperienza propria', pt:'experiência própria' },
-      colaboración: { en:'collaboration', fr:'collaboration', de:'Zusammenarbeit', it:'collaborazione', pt:'colaboração' },
-      'inspiración futura': { en:'future inspiration', fr:'inspiration future', de:'Zukunftsidee', it:'ispirazione futura', pt:'inspiração futura' },
-      'formación/escuela': { en:'training/school', fr:'formation/école', de:'Ausbildung/Schule', it:'formazione/scuola', pt:'formação/escola' }
+      invierno: { en:'winter', nl: "winter", fr:'hiver', de:'Winter', it:'inverno', pt:'inverno' },
+      primavera: { en:'spring', nl: "lente", fr:'printemps', de:'Frühling', it:'primavera', pt:'primavera' },
+      verano: { en:'summer', nl: "zomer", fr:'été', de:'Sommer', it:'estate', pt:'verão' },
+      otoño: { en:'autumn', nl: "herfst", fr:'automne', de:'Herbst', it:'autunno', pt:'outono' },
+      'todo el año': { en:'all year', nl: "het hele jaar", fr:'toute l’année', de:'ganzjährig', it:'tutto l’anno', pt:'todo o ano' },
+      local: { en:'local', nl: "lokaal", fr:'local', de:'lokal', it:'locale', pt:'local' },
+      nacional: { en:'national', nl: "nationaal", fr:'national', de:'national', it:'nazionale', pt:'nacional' },
+      internacional: { en:'international', nl: "internationaal", fr:'international', de:'international', it:'internazionale', pt:'internacional' },
+      mar: { en:'sea', nl: "zee", fr:'mer', de:'Meer', it:'mare', pt:'mar' },
+      montaña: { en:'mountain', nl: "berg", fr:'montagne', de:'Berg', it:'montagna', pt:'montanha' },
+      aire: { en:'air', nl: "lucht", fr:'air', de:'Luft', it:'aria', pt:'ar' },
+      vertical: { en:'vertical', nl: "verticaal", fr:'vertical', de:'vertikal', it:'verticale', pt:'vertical' },
+      subterráneo: { en:'underground', nl: "ondergronds", fr:'souterrain', de:'unterirdisch', it:'sotterraneo', pt:'subterrâneo' },
+      mixto: { en:'mixed', nl: "gemengd", fr:'mixte', de:'gemischt', it:'misto', pt:'misto' },
+      naturista: { en:'naturist', nl: "naturist", fr:'naturiste', de:'Naturismus', it:'naturista', pt:'naturista' },
+      iniciación: { en:'beginner', nl: "beginner", fr:'initiation', de:'Einstieg', it:'iniziazione', pt:'iniciação' },
+      intermedio: { en:'intermediate', nl: "intermediair", fr:'intermédiaire', de:'mittel', it:'intermedio', pt:'intermédio' },
+      avanzado: { en:'advanced', nl: "gevorderd", fr:'avancé', de:'fortgeschritten', it:'avanzato', pt:'avançado' },
+      experto: { en:'expert', nl: "deskundige", fr:'expert', de:'Experte', it:'esperto', pt:'especialista' },
+      '1 día': { en:'1 day', nl: "1 dag", fr:'1 jour', de:'1 Tag', it:'1 giorno', pt:'1 dia' },
+      'fin de semana': { en:'weekend', nl: "weekend", fr:'week-end', de:'Wochenende', it:'weekend', pt:'fim de semana' },
+      '3-5 días': { en:'3-5 days', nl: "3-5 dagen", fr:'3-5 jours', de:'3-5 Tage', it:'3-5 giorni', pt:'3-5 dias' },
+      '1 semana': { en:'1 week', nl: "1 week", fr:'1 semaine', de:'1 Woche', it:'1 settimana', pt:'1 semana' },
+      'gran viaje': { en:'big trip', nl: "grote reis", fr:'grand voyage', de:'große Reise', it:'grande viaggio', pt:'grande viagem' },
+      'experiencia propia': { en:'own experience', nl: "eigen ervaring", fr:'expérience propre', de:'eigene Erfahrung', it:'esperienza propria', pt:'experiência própria' },
+      colaboración: { en:'collaboration', nl: "samenwerking", fr:'collaboration', de:'Zusammenarbeit', it:'collaborazione', pt:'colaboração' },
+      'inspiración futura': { en:'future inspiration', nl: "toekomstige inspiratie", fr:'inspiration future', de:'Zukunftsidee', it:'ispirazione futura', pt:'inspiração futura' },
+      'formación/escuela': { en:'training/school', nl: "opleiding/school", fr:'formation/école', de:'Ausbildung/Schule', it:'formazione/scuola', pt:'formação/escola' }
     };
     return table[value]?.[state.language] || value;
   }

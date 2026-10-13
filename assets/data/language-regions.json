@@ -1,0 +1,1229 @@
+{
+  "version": "20261013-1",
+  "languages": [
+    {
+      "code": "es",
+      "name": "Español",
+      "flag": "es",
+      "groups": [
+        {
+          "key": "countries",
+          "regions": [
+            {
+              "id": "es",
+              "region": "es",
+              "flag": "es",
+              "label": "España"
+            },
+            {
+              "id": "mx",
+              "region": "mx",
+              "flag": "mx",
+              "label": "México"
+            },
+            {
+              "id": "ar",
+              "region": "ar",
+              "flag": "ar",
+              "label": "Argentina"
+            },
+            {
+              "id": "co",
+              "region": "co",
+              "flag": "co",
+              "label": "Colombia"
+            },
+            {
+              "id": "pe",
+              "region": "pe",
+              "flag": "pe",
+              "label": "Perú"
+            },
+            {
+              "id": "cl",
+              "region": "cl",
+              "flag": "cl",
+              "label": "Chile"
+            },
+            {
+              "id": "ve",
+              "region": "ve",
+              "flag": "ve",
+              "label": "Venezuela"
+            },
+            {
+              "id": "ec",
+              "region": "ec",
+              "flag": "ec",
+              "label": "Ecuador"
+            },
+            {
+              "id": "bo",
+              "region": "bo",
+              "flag": "bo",
+              "label": "Bolivia"
+            },
+            {
+              "id": "py",
+              "region": "py",
+              "flag": "py",
+              "label": "Paraguay"
+            },
+            {
+              "id": "uy",
+              "region": "uy",
+              "flag": "uy",
+              "label": "Uruguay"
+            },
+            {
+              "id": "cu",
+              "region": "cu",
+              "flag": "cu",
+              "label": "Cuba"
+            },
+            {
+              "id": "do",
+              "region": "do",
+              "flag": "do",
+              "label": "República Dominicana"
+            },
+            {
+              "id": "gt",
+              "region": "gt",
+              "flag": "gt",
+              "label": "Guatemala"
+            },
+            {
+              "id": "hn",
+              "region": "hn",
+              "flag": "hn",
+              "label": "Honduras"
+            },
+            {
+              "id": "sv",
+              "region": "sv",
+              "flag": "sv",
+              "label": "El Salvador"
+            },
+            {
+              "id": "ni",
+              "region": "ni",
+              "flag": "ni",
+              "label": "Nicaragua"
+            },
+            {
+              "id": "cr",
+              "region": "cr",
+              "flag": "cr",
+              "label": "Costa Rica"
+            },
+            {
+              "id": "pa",
+              "region": "pa",
+              "flag": "pa",
+              "label": "Panamá"
+            },
+            {
+              "id": "gq",
+              "region": "gq",
+              "flag": "gq",
+              "label": "Guinea Ecuatorial"
+            }
+          ]
+        },
+        {
+          "key": "territories",
+          "regions": [
+            {
+              "id": "pr",
+              "region": "pr",
+              "flag": "pr",
+              "label": "Puerto Rico"
+            }
+          ]
+        },
+        {
+          "key": "secondLanguage",
+          "regions": [
+            {
+              "id": "ag",
+              "region": "ag",
+              "flag": "ag",
+              "label": "Antigua y Barbuda"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "en",
+      "name": "English",
+      "flag": "gb",
+      "groups": [
+        {
+          "key": "europeAmerica",
+          "regions": [
+            {
+              "id": "gb",
+              "region": "gb",
+              "flag": "gb",
+              "label": "United Kingdom"
+            },
+            {
+              "id": "us",
+              "region": "us",
+              "flag": "us",
+              "label": "United States"
+            },
+            {
+              "id": "ca",
+              "region": "ca",
+              "flag": "ca",
+              "label": "Canada"
+            },
+            {
+              "id": "ie",
+              "region": "ie",
+              "flag": "ie",
+              "label": "Ireland"
+            },
+            {
+              "id": "mt",
+              "region": "mt",
+              "flag": "mt",
+              "label": "Malta"
+            },
+            {
+              "id": "ag",
+              "region": "ag",
+              "flag": "ag",
+              "label": "Antigua & Barbuda"
+            },
+            {
+              "id": "bs",
+              "region": "bs",
+              "flag": "bs",
+              "label": "Bahamas"
+            },
+            {
+              "id": "bb",
+              "region": "bb",
+              "flag": "bb",
+              "label": "Barbados"
+            },
+            {
+              "id": "bz",
+              "region": "bz",
+              "flag": "bz",
+              "label": "Belize"
+            },
+            {
+              "id": "dm",
+              "region": "dm",
+              "flag": "dm",
+              "label": "Dominica"
+            },
+            {
+              "id": "gd",
+              "region": "gd",
+              "flag": "gd",
+              "label": "Grenada"
+            },
+            {
+              "id": "gy",
+              "region": "gy",
+              "flag": "gy",
+              "label": "Guyana"
+            },
+            {
+              "id": "jm",
+              "region": "jm",
+              "flag": "jm",
+              "label": "Jamaica"
+            },
+            {
+              "id": "kn",
+              "region": "kn",
+              "flag": "kn",
+              "label": "St. Kitts & Nevis"
+            },
+            {
+              "id": "lc",
+              "region": "lc",
+              "flag": "lc",
+              "label": "St. Lucia"
+            },
+            {
+              "id": "vc",
+              "region": "vc",
+              "flag": "vc",
+              "label": "St. Vincent & Grenadines"
+            },
+            {
+              "id": "tt",
+              "region": "tt",
+              "flag": "tt",
+              "label": "Trinidad & Tobago"
+            }
+          ]
+        },
+        {
+          "key": "ukCountries",
+          "regions": [
+            {
+              "id": "england",
+              "flag": "gb-eng",
+              "label": "England"
+            },
+            {
+              "id": "scotland",
+              "flag": "gb-sct",
+              "label": "Scotland"
+            },
+            {
+              "id": "wales",
+              "flag": "gb-wls",
+              "label": "Wales"
+            },
+            {
+              "id": "northernIreland",
+              "flag": "gb",
+              "label": "Northern Ireland"
+            }
+          ]
+        },
+        {
+          "key": "africa",
+          "regions": [
+            {
+              "id": "bw",
+              "region": "bw",
+              "flag": "bw",
+              "label": "Botswana"
+            },
+            {
+              "id": "bi",
+              "region": "bi",
+              "flag": "bi",
+              "label": "Burundi"
+            },
+            {
+              "id": "cm",
+              "region": "cm",
+              "flag": "cm",
+              "label": "Cameroon"
+            },
+            {
+              "id": "sz",
+              "region": "sz",
+              "flag": "sz",
+              "label": "Eswatini"
+            },
+            {
+              "id": "gm",
+              "region": "gm",
+              "flag": "gm",
+              "label": "Gambia"
+            },
+            {
+              "id": "gh",
+              "region": "gh",
+              "flag": "gh",
+              "label": "Ghana"
+            },
+            {
+              "id": "ke",
+              "region": "ke",
+              "flag": "ke",
+              "label": "Kenya"
+            },
+            {
+              "id": "ls",
+              "region": "ls",
+              "flag": "ls",
+              "label": "Lesotho"
+            },
+            {
+              "id": "lr",
+              "region": "lr",
+              "flag": "lr",
+              "label": "Liberia"
+            },
+            {
+              "id": "mw",
+              "region": "mw",
+              "flag": "mw",
+              "label": "Malawi"
+            },
+            {
+              "id": "na",
+              "region": "na",
+              "flag": "na",
+              "label": "Namibia"
+            },
+            {
+              "id": "ng",
+              "region": "ng",
+              "flag": "ng",
+              "label": "Nigeria"
+            },
+            {
+              "id": "rw",
+              "region": "rw",
+              "flag": "rw",
+              "label": "Rwanda"
+            },
+            {
+              "id": "sc",
+              "region": "sc",
+              "flag": "sc",
+              "label": "Seychelles"
+            },
+            {
+              "id": "sl",
+              "region": "sl",
+              "flag": "sl",
+              "label": "Sierra Leone"
+            },
+            {
+              "id": "za",
+              "region": "za",
+              "flag": "za",
+              "label": "South Africa"
+            },
+            {
+              "id": "ss",
+              "region": "ss",
+              "flag": "ss",
+              "label": "South Sudan"
+            },
+            {
+              "id": "sd",
+              "region": "sd",
+              "flag": "sd",
+              "label": "Sudan"
+            },
+            {
+              "id": "tz",
+              "region": "tz",
+              "flag": "tz",
+              "label": "Tanzania"
+            },
+            {
+              "id": "ug",
+              "region": "ug",
+              "flag": "ug",
+              "label": "Uganda"
+            },
+            {
+              "id": "zm",
+              "region": "zm",
+              "flag": "zm",
+              "label": "Zambia"
+            },
+            {
+              "id": "zw",
+              "region": "zw",
+              "flag": "zw",
+              "label": "Zimbabwe"
+            }
+          ]
+        },
+        {
+          "key": "asiaOceania",
+          "regions": [
+            {
+              "id": "in",
+              "region": "in",
+              "flag": "in",
+              "label": "India"
+            },
+            {
+              "id": "pk",
+              "region": "pk",
+              "flag": "pk",
+              "label": "Pakistan"
+            },
+            {
+              "id": "ph",
+              "region": "ph",
+              "flag": "ph",
+              "label": "Philippines"
+            },
+            {
+              "id": "sg",
+              "region": "sg",
+              "flag": "sg",
+              "label": "Singapore"
+            },
+            {
+              "id": "au",
+              "region": "au",
+              "flag": "au",
+              "label": "Australia"
+            },
+            {
+              "id": "fj",
+              "region": "fj",
+              "flag": "fj",
+              "label": "Fiji"
+            },
+            {
+              "id": "ki",
+              "region": "ki",
+              "flag": "ki",
+              "label": "Kiribati"
+            },
+            {
+              "id": "mh",
+              "region": "mh",
+              "flag": "mh",
+              "label": "Marshall Islands"
+            },
+            {
+              "id": "fm",
+              "region": "fm",
+              "flag": "fm",
+              "label": "Micronesia"
+            },
+            {
+              "id": "nr",
+              "region": "nr",
+              "flag": "nr",
+              "label": "Nauru"
+            },
+            {
+              "id": "nz",
+              "region": "nz",
+              "flag": "nz",
+              "label": "New Zealand"
+            },
+            {
+              "id": "pw",
+              "region": "pw",
+              "flag": "pw",
+              "label": "Palau"
+            },
+            {
+              "id": "pg",
+              "region": "pg",
+              "flag": "pg",
+              "label": "Papua New Guinea"
+            },
+            {
+              "id": "ws",
+              "region": "ws",
+              "flag": "ws",
+              "label": "Samoa"
+            },
+            {
+              "id": "sb",
+              "region": "sb",
+              "flag": "sb",
+              "label": "Solomon Islands"
+            },
+            {
+              "id": "to",
+              "region": "to",
+              "flag": "to",
+              "label": "Tonga"
+            },
+            {
+              "id": "tv",
+              "region": "tv",
+              "flag": "tv",
+              "label": "Tuvalu"
+            },
+            {
+              "id": "vu",
+              "region": "vu",
+              "flag": "vu",
+              "label": "Vanuatu"
+            }
+          ]
+        },
+        {
+          "key": "territories",
+          "regions": [
+            {
+              "id": "ai",
+              "region": "ai",
+              "flag": "ai",
+              "label": "Anguilla"
+            },
+            {
+              "id": "bm",
+              "region": "bm",
+              "flag": "bm",
+              "label": "Bermuda"
+            },
+            {
+              "id": "ky",
+              "region": "ky",
+              "flag": "ky",
+              "label": "Cayman Islands"
+            },
+            {
+              "id": "cw",
+              "region": "cw",
+              "flag": "cw",
+              "label": "Curaçao"
+            },
+            {
+              "id": "gi",
+              "region": "gi",
+              "flag": "gi",
+              "label": "Gibraltar"
+            },
+            {
+              "id": "gg",
+              "region": "gg",
+              "flag": "gg",
+              "label": "Guernsey"
+            },
+            {
+              "id": "gu",
+              "region": "gu",
+              "flag": "gu",
+              "label": "Guam"
+            },
+            {
+              "id": "hk",
+              "region": "hk",
+              "flag": "hk",
+              "label": "Hong Kong SAR China"
+            },
+            {
+              "id": "im",
+              "region": "im",
+              "flag": "im",
+              "label": "Isle of Man"
+            },
+            {
+              "id": "je",
+              "region": "je",
+              "flag": "je",
+              "label": "Jersey"
+            },
+            {
+              "id": "ms",
+              "region": "ms",
+              "flag": "ms",
+              "label": "Montserrat"
+            },
+            {
+              "id": "mp",
+              "region": "mp",
+              "flag": "mp",
+              "label": "Northern Mariana Islands"
+            },
+            {
+              "id": "nf",
+              "region": "nf",
+              "flag": "nf",
+              "label": "Norfolk Island"
+            },
+            {
+              "id": "pn",
+              "region": "pn",
+              "flag": "pn",
+              "label": "Pitcairn Islands"
+            },
+            {
+              "id": "pr",
+              "region": "pr",
+              "flag": "pr",
+              "label": "Puerto Rico"
+            },
+            {
+              "id": "as",
+              "region": "as",
+              "flag": "as",
+              "label": "American Samoa"
+            },
+            {
+              "id": "sx",
+              "region": "sx",
+              "flag": "sx",
+              "label": "Sint Maarten"
+            },
+            {
+              "id": "tc",
+              "region": "tc",
+              "flag": "tc",
+              "label": "Turks & Caicos Islands"
+            },
+            {
+              "id": "vi",
+              "region": "vi",
+              "flag": "vi",
+              "label": "U.S. Virgin Islands"
+            },
+            {
+              "id": "vg",
+              "region": "vg",
+              "flag": "vg",
+              "label": "British Virgin Islands"
+            },
+            {
+              "id": "cx",
+              "region": "cx",
+              "flag": "cx",
+              "label": "Christmas Island"
+            },
+            {
+              "id": "cc",
+              "region": "cc",
+              "flag": "cc",
+              "label": "Cocos (Keeling) Islands"
+            },
+            {
+              "id": "tk",
+              "region": "tk",
+              "flag": "tk",
+              "label": "Tokelau"
+            },
+            {
+              "id": "ck",
+              "region": "ck",
+              "flag": "ck",
+              "label": "Cook Islands"
+            },
+            {
+              "id": "nu",
+              "region": "nu",
+              "flag": "nu",
+              "label": "Niue"
+            },
+            {
+              "id": "sh",
+              "region": "sh",
+              "flag": "sh",
+              "label": "St. Helena"
+            },
+            {
+              "id": "fk",
+              "region": "fk",
+              "flag": "fk",
+              "label": "Falkland Islands"
+            },
+            {
+              "id": "gs",
+              "region": "gs",
+              "flag": "gs",
+              "label": "South Georgia & South Sandwich Islands"
+            },
+            {
+              "id": "akrotiriDhekelia",
+              "flag": "gb",
+              "label": "Akrotiri and Dhekelia"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "fr",
+      "name": "Français",
+      "flag": "fr",
+      "groups": [
+        {
+          "key": "europeAmerica",
+          "regions": [
+            {
+              "id": "fr",
+              "region": "fr",
+              "flag": "fr",
+              "label": "France"
+            },
+            {
+              "id": "be",
+              "region": "be",
+              "flag": "be",
+              "label": "Belgique"
+            },
+            {
+              "id": "ch",
+              "region": "ch",
+              "flag": "ch",
+              "label": "Suisse"
+            },
+            {
+              "id": "lu",
+              "region": "lu",
+              "flag": "lu",
+              "label": "Luxembourg"
+            },
+            {
+              "id": "mc",
+              "region": "mc",
+              "flag": "mc",
+              "label": "Monaco"
+            },
+            {
+              "id": "ca",
+              "region": "ca",
+              "flag": "ca",
+              "label": "Canada"
+            },
+            {
+              "id": "ht",
+              "region": "ht",
+              "flag": "ht",
+              "label": "Haïti"
+            }
+          ]
+        },
+        {
+          "key": "africaOceania",
+          "regions": [
+            {
+              "id": "bj",
+              "region": "bj",
+              "flag": "bj",
+              "label": "Bénin"
+            },
+            {
+              "id": "bi",
+              "region": "bi",
+              "flag": "bi",
+              "label": "Burundi"
+            },
+            {
+              "id": "cm",
+              "region": "cm",
+              "flag": "cm",
+              "label": "Cameroun"
+            },
+            {
+              "id": "cf",
+              "region": "cf",
+              "flag": "cf",
+              "label": "République centrafricaine"
+            },
+            {
+              "id": "td",
+              "region": "td",
+              "flag": "td",
+              "label": "Tchad"
+            },
+            {
+              "id": "km",
+              "region": "km",
+              "flag": "km",
+              "label": "Comores"
+            },
+            {
+              "id": "cg",
+              "region": "cg",
+              "flag": "cg",
+              "label": "Congo-Brazzaville"
+            },
+            {
+              "id": "cd",
+              "region": "cd",
+              "flag": "cd",
+              "label": "Congo-Kinshasa"
+            },
+            {
+              "id": "ci",
+              "region": "ci",
+              "flag": "ci",
+              "label": "Côte d’Ivoire"
+            },
+            {
+              "id": "dj",
+              "region": "dj",
+              "flag": "dj",
+              "label": "Djibouti"
+            },
+            {
+              "id": "ga",
+              "region": "ga",
+              "flag": "ga",
+              "label": "Gabon"
+            },
+            {
+              "id": "gn",
+              "region": "gn",
+              "flag": "gn",
+              "label": "Guinée"
+            },
+            {
+              "id": "gq",
+              "region": "gq",
+              "flag": "gq",
+              "label": "Guinée équatoriale"
+            },
+            {
+              "id": "mg",
+              "region": "mg",
+              "flag": "mg",
+              "label": "Madagascar"
+            },
+            {
+              "id": "rw",
+              "region": "rw",
+              "flag": "rw",
+              "label": "Rwanda"
+            },
+            {
+              "id": "sn",
+              "region": "sn",
+              "flag": "sn",
+              "label": "Sénégal"
+            },
+            {
+              "id": "sc",
+              "region": "sc",
+              "flag": "sc",
+              "label": "Seychelles"
+            },
+            {
+              "id": "tg",
+              "region": "tg",
+              "flag": "tg",
+              "label": "Togo"
+            },
+            {
+              "id": "vu",
+              "region": "vu",
+              "flag": "vu",
+              "label": "Vanuatu"
+            }
+          ]
+        },
+        {
+          "key": "frenchTerritories",
+          "regions": [
+            {
+              "id": "gp",
+              "region": "gp",
+              "flag": "fr",
+              "label": "Guadeloupe"
+            },
+            {
+              "id": "gf",
+              "region": "gf",
+              "flag": "fr",
+              "label": "Guyane française"
+            },
+            {
+              "id": "mq",
+              "region": "mq",
+              "flag": "fr",
+              "label": "Martinique"
+            },
+            {
+              "id": "yt",
+              "region": "yt",
+              "flag": "fr",
+              "label": "Mayotte"
+            },
+            {
+              "id": "re",
+              "region": "re",
+              "flag": "fr",
+              "label": "La Réunion"
+            },
+            {
+              "id": "nc",
+              "region": "nc",
+              "flag": "fr",
+              "label": "Nouvelle-Calédonie"
+            },
+            {
+              "id": "pf",
+              "region": "pf",
+              "flag": "fr",
+              "label": "Polynésie française"
+            },
+            {
+              "id": "bl",
+              "region": "bl",
+              "flag": "fr",
+              "label": "Saint-Barthélemy"
+            },
+            {
+              "id": "mf",
+              "region": "mf",
+              "flag": "fr",
+              "label": "Saint-Martin"
+            },
+            {
+              "id": "pm",
+              "region": "pm",
+              "flag": "fr",
+              "label": "Saint-Pierre-et-Miquelon"
+            },
+            {
+              "id": "wf",
+              "region": "wf",
+              "flag": "fr",
+              "label": "Wallis-et-Futuna"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "de",
+      "name": "Deutsch",
+      "flag": "de",
+      "groups": [
+        {
+          "key": "countries",
+          "regions": [
+            {
+              "id": "de",
+              "region": "de",
+              "flag": "de",
+              "label": "Deutschland"
+            },
+            {
+              "id": "at",
+              "region": "at",
+              "flag": "at",
+              "label": "Österreich"
+            },
+            {
+              "id": "ch",
+              "region": "ch",
+              "flag": "ch",
+              "label": "Schweiz"
+            },
+            {
+              "id": "li",
+              "region": "li",
+              "flag": "li",
+              "label": "Liechtenstein"
+            },
+            {
+              "id": "lu",
+              "region": "lu",
+              "flag": "lu",
+              "label": "Luxemburg"
+            },
+            {
+              "id": "be",
+              "region": "be",
+              "flag": "be",
+              "label": "Belgien"
+            }
+          ]
+        },
+        {
+          "key": "regional",
+          "regions": [
+            {
+              "id": "southTyrol",
+              "flag": "it",
+              "label": "Südtirol · Italien"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "it",
+      "name": "Italiano",
+      "flag": "it",
+      "groups": [
+        {
+          "key": "countries",
+          "regions": [
+            {
+              "id": "it",
+              "region": "it",
+              "flag": "it",
+              "label": "Italia"
+            },
+            {
+              "id": "ch",
+              "region": "ch",
+              "flag": "ch",
+              "label": "Svizzera"
+            },
+            {
+              "id": "sm",
+              "region": "sm",
+              "flag": "sm",
+              "label": "San Marino"
+            },
+            {
+              "id": "va",
+              "region": "va",
+              "flag": "va",
+              "label": "Città del Vaticano"
+            }
+          ]
+        },
+        {
+          "key": "regional",
+          "regions": [
+            {
+              "id": "sloveneCoast",
+              "flag": "si",
+              "label": "Litorale sloveno · Slovenia"
+            },
+            {
+              "id": "croatianIstria",
+              "flag": "hr",
+              "label": "Istria · Croazia"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "pt",
+      "name": "Português",
+      "flag": "pt",
+      "groups": [
+        {
+          "key": "countries",
+          "regions": [
+            {
+              "id": "pt",
+              "region": "pt",
+              "flag": "pt",
+              "label": "Portugal"
+            },
+            {
+              "id": "br",
+              "region": "br",
+              "flag": "br",
+              "label": "Brasil"
+            },
+            {
+              "id": "ao",
+              "region": "ao",
+              "flag": "ao",
+              "label": "Angola"
+            },
+            {
+              "id": "mz",
+              "region": "mz",
+              "flag": "mz",
+              "label": "Moçambique"
+            },
+            {
+              "id": "cv",
+              "region": "cv",
+              "flag": "cv",
+              "label": "Cabo Verde"
+            },
+            {
+              "id": "gw",
+              "region": "gw",
+              "flag": "gw",
+              "label": "Guiné-Bissau"
+            },
+            {
+              "id": "st",
+              "region": "st",
+              "flag": "st",
+              "label": "São Tomé e Príncipe"
+            },
+            {
+              "id": "tl",
+              "region": "tl",
+              "flag": "tl",
+              "label": "Timor-Leste"
+            },
+            {
+              "id": "gq",
+              "region": "gq",
+              "flag": "gq",
+              "label": "Guiné Equatorial"
+            }
+          ]
+        },
+        {
+          "key": "territories",
+          "regions": [
+            {
+              "id": "mo",
+              "region": "mo",
+              "flag": "mo",
+              "label": "Macau, RAE da China"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "nl",
+      "name": "Nederlands",
+      "flag": "nl",
+      "groups": [
+        {
+          "key": "countries",
+          "regions": [
+            {
+              "id": "nl",
+              "region": "nl",
+              "flag": "nl",
+              "label": "Nederland"
+            },
+            {
+              "id": "be",
+              "region": "be",
+              "flag": "be",
+              "label": "België"
+            },
+            {
+              "id": "sr",
+              "region": "sr",
+              "flag": "sr",
+              "label": "Suriname"
+            }
+          ]
+        },
+        {
+          "key": "caribbeanCountries",
+          "regions": [
+            {
+              "id": "aw",
+              "region": "aw",
+              "flag": "aw",
+              "label": "Aruba"
+            },
+            {
+              "id": "cw",
+              "region": "cw",
+              "flag": "cw",
+              "label": "Curaçao"
+            },
+            {
+              "id": "sx",
+              "region": "sx",
+              "flag": "sx",
+              "label": "Sint-Maarten"
+            }
+          ]
+        },
+        {
+          "key": "caribbeanNetherlands",
+          "regions": [
+            {
+              "id": "bonaire",
+              "flag": "nl",
+              "label": "Bonaire"
+            },
+            {
+              "id": "saba",
+              "flag": "nl",
+              "label": "Saba"
+            },
+            {
+              "id": "sintEustatius",
+              "flag": "nl",
+              "label": "Sint Eustatius"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

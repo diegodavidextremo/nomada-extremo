@@ -8,16 +8,26 @@
   const $=id=>document.getElementById(id), panel=$('chatPanel'), button=$('chatBtn'), body=$('chatBody'), input=$('chatInput');
   const normalize=s=>s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9\s]/g,' ').replace(/\s+/g,' ').trim();
   let started=false, context=null, pages=[], generation=0;
+  const isDutch=()=>document.documentElement.lang==='nl';
+  const tr=text=>{
+    if(!isDutch())return text;
+    if(text.startsWith('Para ')&&text.includes(', consulta material'))return `Bekijk de uitrusting en voorwaarden op de fiche van ${tr(text.slice(5,text.indexOf(', consulta material')))}. De definitieve uitrustingslijst voor een echte activiteit wordt door de aanbieder bepaald.`;
+    if(text.startsWith('Aquí tienes la información de '))return `Hier vind je informatie over ${tr(text.slice(29,text.indexOf('. ¿Quieres')))}. Wil je de uitrusting, voorbereiding of veiligheid bekijken?`;
+    for(const [prefix,target]of [['Abrir ficha: ','Activiteitsfiche openen: '],['Ficha: ','Activiteitsfiche: '],['Consultar ','Bekijken: ']])if(text.startsWith(prefix))return target+tr(text.slice(prefix.length));
+    return typeof window.noextTranslate==='function'?window.noextTranslate(text):text;
+  };
+  function updateDutchUI(){const nl=isDutch();panel.lang=nl?'nl':'es';$('chatTitle').textContent=nl?'Nómada-assistent':'Asistente Nómada';panel.querySelector('.chat-estado').textContent=nl?'Websitegids · in het Nederlands':'Guía de la web · en español';$('chatClose').setAttribute('aria-label',nl?'Assistent sluiten':'Cerrar asistente');panel.querySelector('label[for=chatInput]').textContent=nl?'Stel je vraag':'Escribe tu pregunta';input.placeholder=nl?'Bijv.: uitrusting voor kajakken':'Ej.: material para kayak';$('chatForm').querySelector('button').textContent=nl?'Versturen':'Enviar';$('chatClear').textContent=nl?'Opnieuw beginnen':'Reiniciar';panel.querySelector('.chat-tools a[href="contacto.html"]').textContent=nl?'Contact':'Contacto';panel.querySelector('.chat-privacy').textContent=nl?'Antwoorden uit de website, zonder generatieve AI. Het gesprek wordt niet verzonden of opgeslagen.':'Respuestas de la web, sin IA generativa. La conversación no se envía ni se guarda.';}
+  window.addEventListener('noext:languagechange',updateDutchUI);
   const ready=fetch('assets/data/assistant-index.json').then(r=>{if(!r.ok)throw Error('index');return r.json();}).then(data=>{pages=data.pages||[];}).catch(()=>{});
   const defaults=['Explorar actividades','Proyecto intermodular','Contactar'];
-  function suggestions(items=defaults){$('chatQuick').replaceChildren();items.forEach(text=>{const b=document.createElement('button');b.type='button';b.className='chat-quick';b.textContent=text;b.onclick=()=>ask(text);$('chatQuick').append(b);});}
+  function suggestions(items=defaults){$('chatQuick').replaceChildren();items.forEach(text=>{const b=document.createElement('button');b.type='button';b.className='chat-quick';b.textContent=tr(text);b.onclick=()=>ask(text,tr(text));$('chatQuick').append(b);});}
   function message(text,links=[],user=false){
-    const row=document.createElement('div'),bubble=document.createElement('div'),p=document.createElement('p');row.className=`chat-msg ${user?'user':'bot'}`;bubble.className='chat-burbuja';p.textContent=text;bubble.append(p);
-    if(links.length){const list=document.createElement('ul');list.className='chat-result-links';links.forEach(([label,href])=>{if(!/^[a-z0-9-]+\.html(?:#[a-z0-9-]+)?$/i.test(href))return;const li=document.createElement('li'),a=document.createElement('a');a.href=href;a.textContent=label;li.append(a);list.append(li);});bubble.append(list);}
+    const row=document.createElement('div'),bubble=document.createElement('div'),p=document.createElement('p');row.className=`chat-msg ${user?'user':'bot'}`;bubble.className='chat-burbuja';p.textContent=user?text:tr(text);bubble.append(p);
+    if(links.length){const list=document.createElement('ul');list.className='chat-result-links';links.forEach(([label,href])=>{if(!/^[a-z0-9-]+\.html(?:#[a-z0-9-]+)?$/i.test(href))return;const li=document.createElement('li'),a=document.createElement('a');a.href=href;a.textContent=tr(label);li.append(a);list.append(li);});bubble.append(list);}
     row.append(bubble);body.append(row);while(body.children.length>80)body.firstElementChild.remove();body.scrollTop=body.scrollHeight;
   }
   function welcome(){message('Hola. Te ayudo a encontrar actividades, material, la trayectoria de Diego y el proyecto de 2.º GMN. Esta web es un proyecto académico: no gestiona reservas ni pagos. ¿Qué quieres consultar?');suggestions();}
-  function open(value){panel.hidden=!value;panel.classList.toggle('open',value);button.setAttribute('aria-expanded',String(value));document.body.classList.toggle('chat-is-open',value);if(value){if(!started){welcome();started=true;}input.focus();}else button.focus();}
+  function open(value){updateDutchUI();panel.hidden=!value;panel.classList.toggle('open',value);button.setAttribute('aria-expanded',String(value));document.body.classList.toggle('chat-is-open',value);if(value){if(!started){welcome();started=true;}input.focus();}else button.focus();}
   const activities=[['kayak',/kayak/,'kayak-mar.html'],['snorkel',/snorkel/,'snorkel-aventura.html'],['Open Water',/open water|ssi/,'open-water.html'],['buceo',/buceo|inmersion/,'bautismo-buceo.html'],['parapente',/parapente/,'parapente.html'],['paratrike y paramotor',/paratrike|paramotor/,'paramotor.html'],['senderismo',/senderismo|caminar|trekking/,'senderismo-guiado.html'],['vía ferrata',/ferrata/,'via-ferrata.html'],['rápel',/rapel/,'rapel.html'],['BTT',/\bbtt\b|bici|ciclismo/,'btt-costera.html'],['coasteering',/coasteering/,'coasteering.html'],['saltos y actividades extremas',/puenting|rope jumping|paracaid|parasailing/,'actividades.html']];
   const safety=['Requisitos y seguridad','seguridad.html'], contact=['Canales de contacto','contacto.html'];
   function curated(q){
@@ -42,8 +52,8 @@
     if(/^(hola|buenas|ayuda|gracias|muchas gracias)$/.test(q))return ['Puedo ayudarte con una actividad, material, formación o cualquier sección de la web. ¿Qué quieres consultar?',[],defaults];
     return null;
   }
-  async function ask(raw){
-    raw=raw.trim().slice(0,400);if(!raw)return;const version=generation;message(raw,[],true);input.value='';const q=normalize(raw),answer=curated(q);
+  async function ask(raw,display=raw){
+    raw=raw.trim().slice(0,400);if(!raw)return;const version=generation;message(display,[],true);input.value='';let q=normalize(raw);if(isDutch()){const words={duiken:'buceo',duik:'buceo',vliegen:'vuelo',vlucht:'vuelo',wandelen:'senderismo',wandeltocht:'senderismo',uitrusting:'material',kleding:'ropa',veiligheid:'seguridad',verzekering:'seguridad',reserveren:'reservar',boeking:'reserva',betalen:'pagar',boeken:'reservar',gezin:'familia',kinderen:'nino',groep:'grupo',opleiding:'formacion',docenten:'profesores',prijzen:'precio',prijs:'precio',cadeaubon:'bono',noodgeval:'emergencia',hulp:'ayuda',hallo:'hola',dank:'gracias',mountainbike:'btt',kajak:'kayak',kajakken:'kayak',project:'proyecto'};q=q.split(' ').map(w=>words[w]||w).join(' ');}const answer=curated(q);
     if(answer){message(answer[0],answer[1]);suggestions(answer[2]);return;}
     await ready;if(version!==generation)return;
     const stop=new Set('a al de del el en la las los un una y o que es hay para por con como donde quiero saber sobre me puedes mostrar tiene'.split(' ')),tokens=q.split(' ').filter(w=>w.length>2&&!stop.has(w));

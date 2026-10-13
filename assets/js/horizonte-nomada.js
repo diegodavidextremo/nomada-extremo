@@ -8,7 +8,7 @@
   const empty = document.querySelector('[data-horizon-empty]');
   if (!filterForm || !grid || !count || !empty) return;
 
-  const supportedLanguages = ['es', 'en', 'fr', 'de', 'it', 'pt'];
+  const supportedLanguages = ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'];
   const storageKey = 'noext-horizon-state';
   const favoritesKey = 'noext-favorites';
   const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;

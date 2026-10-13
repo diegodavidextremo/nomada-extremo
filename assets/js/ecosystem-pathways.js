@@ -14,17 +14,17 @@
   const config = pageConfig[page];
   if (!config) return;
 
-  const supported = ['es', 'en', 'fr', 'de', 'it', 'pt'];
+  const supported = ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'];
   const destinations = {
-    activities: { href: 'actividades.html', title: { es: 'Explorar experiencias', en: 'Explore experiences', fr: 'Explorer les expériences', de: 'Erlebnisse entdecken', it: 'Esplora le esperienze', pt: 'Explorar experiências' } },
-    zones: { href: 'zonas.html', title: { es: 'Leer el territorio', en: 'Read the territory', fr: 'Lire le territoire', de: 'Das Gebiet verstehen', it: 'Leggi il territorio', pt: 'Ler o território' } },
-    safety: { href: 'seguridad.html', title: { es: 'Validar la seguridad', en: 'Validate safety', fr: 'Valider la sécurité', de: 'Sicherheit prüfen', it: 'Valuta la sicurezza', pt: 'Validar a segurança' } },
-    material: { href: 'material.html', title: { es: 'Preparar el material', en: 'Prepare equipment', fr: 'Préparer le matériel', de: 'Ausrüstung vorbereiten', it: "Prepara l'attrezzatura", pt: 'Preparar o material' } },
-    packs: { href: 'packs.html', title: { es: 'Combinar un pack', en: 'Combine a pack', fr: 'Composer un pack', de: 'Ein Paket kombinieren', it: 'Combina un pack', pt: 'Combinar um pack' } },
-    school: { href: 'escuela.html', title: { es: 'Progresar en la Escuela', en: 'Progress through the School', fr: "Progresser dans l'École", de: 'In der Schule vorankommen', it: 'Progredisci nella Scuola', pt: 'Progredir na Escola' } },
-    logbook: { href: 'logbook.html', title: { es: 'Registrar el aprendizaje', en: 'Record your learning', fr: "Enregistrer l'apprentissage", de: 'Lernen dokumentieren', it: "Registra l'apprendimento", pt: 'Registar a aprendizagem' } },
-    community: { href: 'comunidad.html', title: { es: 'Conectar con la comunidad', en: 'Connect with the community', fr: 'Rejoindre la communauté', de: 'Mit der Community verbinden', it: 'Connettiti con la comunità', pt: 'Ligar-se à comunidade' } },
-    rental: { href: 'alquiler.html', title: { es: 'Consultar alquiler', en: 'Check equipment rental', fr: 'Consulter la location', de: 'Verleih ansehen', it: 'Consulta il noleggio', pt: 'Consultar aluguer' } }
+    activities: { href: 'actividades.html', title: { es: 'Explorar experiencias', en: 'Explore experiences', nl: "Ervaringen onderzoeken", fr: 'Explorer les expériences', de: 'Erlebnisse entdecken', it: 'Esplora le esperienze', pt: 'Explorar experiências' } },
+    zones: { href: 'zonas.html', title: { es: 'Leer el territorio', en: 'Read the territory', nl: "Lees het gebied", fr: 'Lire le territoire', de: 'Das Gebiet verstehen', it: 'Leggi il territorio', pt: 'Ler o território' } },
+    safety: { href: 'seguridad.html', title: { es: 'Validar la seguridad', en: 'Validate safety', nl: "Veiligheid valideren", fr: 'Valider la sécurité', de: 'Sicherheit prüfen', it: 'Valuta la sicurezza', pt: 'Validar a segurança' } },
+    material: { href: 'material.html', title: { es: 'Preparar el material', en: 'Prepare equipment', nl: "Bereid je uitrusting voor", fr: 'Préparer le matériel', de: 'Ausrüstung vorbereiten', it: "Prepara l'attrezzatura", pt: 'Preparar o material' } },
+    packs: { href: 'packs.html', title: { es: 'Combinar un pack', en: 'Combine a pack', nl: "Combineer een verpakking", fr: 'Composer un pack', de: 'Ein Paket kombinieren', it: 'Combina un pack', pt: 'Combinar um pack' } },
+    school: { href: 'escuela.html', title: { es: 'Progresar en la Escuela', en: 'Progress through the School', nl: "Vooruitgang via de school", fr: "Progresser dans l'École", de: 'In der Schule vorankommen', it: 'Progredisci nella Scuola', pt: 'Progredir na Escola' } },
+    logbook: { href: 'logbook.html', title: { es: 'Registrar el aprendizaje', en: 'Record your learning', nl: "Je leren opnemen", fr: "Enregistrer l'apprentissage", de: 'Lernen dokumentieren', it: "Registra l'apprendimento", pt: 'Registar a aprendizagem' } },
+    community: { href: 'comunidad.html', title: { es: 'Conectar con la comunidad', en: 'Connect with the community', nl: "Verbinden met de gemeenschap", fr: 'Rejoindre la communauté', de: 'Mit der Community verbinden', it: 'Connettiti con la comunità', pt: 'Ligar-se à comunidade' } },
+    rental: { href: 'alquiler.html', title: { es: 'Consultar alquiler', en: 'Check equipment rental', nl: "Bekijk de verhuurmogelijkheden", fr: 'Consulter la location', de: 'Verleih ansehen', it: 'Consulta il noleggio', pt: 'Consultar aluguer' } }
   };
 
   const ui = {
@@ -59,7 +59,7 @@
         community: 'Discover challenges, stories and participation in the project.',
         rental: 'Check what could be rented and what requires supervision.'
       }
-    },
+    }, nl: {"eyebrow":"Alles hangt samen","title":"ZET JE NÓMADA-REIS VOORT","intro":"Elke pagina behoort tot één reis: ontdek, bereid je voor, valideer, beleef en neem op. Ga verder met de stap die zinvol is voor jou.","stages":["Ontdekken","Voorbereiden","Controleren","Ervaring","Vastleggen"],"action":"Sectie openen","descriptions":{"activities":"Vergelijk disciplines, intensiteit, duur en echte catalogusvereisten.","zones":"Verbind elke ervaring met zijn omgeving, toegang en voorwaarden.","safety":"Beoordelen voorbereiding, risico's, annuleringscriteria en documentatie.","material":"Onderscheid persoonlijke, gedeelde, verplichte en aanbevolen apparatuur.","packs":"Combineer compatibele activiteiten met coherente timing en validatie.","school":"Begrijp niveaus, vaardigheden, progressie en daarmee samenhangende training.","logbook":"Verander de ervaring in geschiedenis, bewijs en volgende doelen.","community":"Ontdek uitdagingen, verhalen en deelname aan het project.","rental":"Controleer wat gehuurd kan worden en wat toezicht vereist."}},
     fr: {
       eyebrow: "Connexions de l'écosystème", title: 'POURSUIVEZ VOTRE PARCOURS NÓMADA',
       intro: 'Chaque page appartient au même parcours : découvrir, préparer, valider, vivre et enregistrer. Continuez avec l’étape qui vous convient.',

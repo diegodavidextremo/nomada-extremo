@@ -1,9 +1,9 @@
 (function () {
   'use strict';
 
-  const supported = ['es', 'en', 'fr', 'de', 'it', 'pt'];
+  const supported = ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'];
   const storageKey = 'noext-language';
-  const catalogVersion = '20261005-6';
+  const catalogVersion = '20261013-1';
   const page = (location.pathname.split('/').pop() || 'index.html').replace('.html', '') || 'index';
   const ignoredTags = new Set(['SCRIPT', 'STYLE', 'NOSCRIPT', 'TEMPLATE', 'CODE', 'PRE']);
   const originalText = new WeakMap();
@@ -162,7 +162,7 @@
   }
 
   function updateSwitcher(language) {
-    document.querySelectorAll('[data-language-switcher] button').forEach(button => {
+    document.querySelectorAll('[data-language-switcher] button[data-lang]').forEach(button => {
       const active = button.dataset.lang === language;
       button.classList.toggle('is-active', active);
       button.setAttribute('aria-pressed', String(active));

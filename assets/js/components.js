@@ -12,7 +12,7 @@
   <nav id="nav" aria-label="Navegación principal">
     <a href="index.html" class="nav-logo-wrap" aria-label="Nómada Extremo — Inicio">
       <img src="assets/images/emblema-oficial-web.webp?v=20261005-8" alt="Logo Nómada Extremo" class="nav-logo-img" decoding="async">
-      <div class="nav-logo-text" aria-hidden="true">
+      <div class="nav-logo-text" aria-hidden="true" translate="no">
         <span class="ln1"><span class="brand-word brand-word--nomada">NÓMADA</span> <span class="brand-word brand-word--extremo">EXTREMO</span></span>
         <span class="ln2">Aventura, técnica y naturaleza</span>
       </div>
@@ -67,6 +67,7 @@
       <button type="button" data-lang="de" aria-label="Deutsch">DE</button>
       <button type="button" data-lang="it" aria-label="Italiano">IT</button>
       <button type="button" data-lang="pt" aria-label="Português">PT</button>
+      <button type="button" data-lang="nl" aria-label="Nederlands">NL</button>
     </div>
     <button class="nav-hamburger" id="navHamb" type="button" aria-label="Abrir menú" aria-controls="mobileNav" aria-expanded="false">
       <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
@@ -82,6 +83,7 @@
       <button type="button" data-lang="de" aria-label="Deutsch">DE</button>
       <button type="button" data-lang="it" aria-label="Italiano">IT</button>
       <button type="button" data-lang="pt" aria-label="Português">PT</button>
+      <button type="button" data-lang="nl" aria-label="Nederlands">NL</button>
     </div>
     <a href="index.html">Inicio</a>
     <a href="actividades.html">Actividades</a>
@@ -134,9 +136,21 @@
 
   if (!document.querySelector('script[data-noext-i18n]')) {
     const languageScript = document.createElement('script');
-    languageScript.src = 'assets/js/i18n.js?v=20261005-6';
+    languageScript.src = 'assets/js/i18n.js?v=20261013-1';
     languageScript.dataset.noextI18n = 'runtime';
     document.head.appendChild(languageScript);
+  }
+
+  if (!document.querySelector('script[data-noext-language-regions]')) {
+    const styles = document.createElement('link');
+    styles.rel = 'stylesheet';
+    styles.href = 'assets/css/language-regions.css?v=20261013-1';
+    document.head.appendChild(styles);
+    const script = document.createElement('script');
+    script.src = 'assets/js/language-regions.js?v=20261013-1';
+    script.dataset.noextLanguageRegions = '';
+    script.defer = true;
+    document.body.appendChild(script);
   }
 
   if (!document.querySelector('link[data-noext-global-search]')) {
@@ -149,7 +163,7 @@
 
   if (!document.querySelector('script[data-noext-global-search]')) {
     const searchScript = document.createElement('script');
-    searchScript.src = 'assets/js/global-search.js?v=20260921-1';
+    searchScript.src = 'assets/js/global-search.js?v=20261013-1';
     searchScript.defer = true;
     searchScript.dataset.noextGlobalSearch = 'runtime';
     document.body.appendChild(searchScript);
@@ -165,7 +179,7 @@
 
   if (!document.querySelector('script[data-noext-ecosystem-pathways]')) {
     const pathwayScript = document.createElement('script');
-    pathwayScript.src = 'assets/js/ecosystem-pathways.js?v=20260717-1';
+    pathwayScript.src = 'assets/js/ecosystem-pathways.js?v=20261013-1';
     pathwayScript.defer = true;
     pathwayScript.dataset.noextEcosystemPathways = 'runtime';
     document.body.appendChild(pathwayScript);

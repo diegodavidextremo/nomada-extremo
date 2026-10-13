@@ -4,7 +4,7 @@
   const root = document.getElementById('selector-aventura');
   if (!root) return;
 
-  const supported = ['es', 'en', 'fr', 'de', 'it', 'pt'];
+  const supported = ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'];
   const groupWeights = { medium: 4, intensity: 3, duration: 2, company: 1, objective: 4 };
   const state = { medium: '', intensity: '', duration: '', company: '', objective: '' };
   const optionKeys = {
@@ -35,7 +35,7 @@
       count: n => `${n} ${n === 1 ? 'option' : 'options'}`, view: 'View experience',
       defaultReason: 'A real catalogue proposal to start exploring the Nómada universe.',
       matchReason: values => `A good fit for ${values.join(', ')}.`
-    },
+    }, nl: {"eyebrow":"Persoonlijke begeleiding","titleA":"VIND UW","titleB":"VOLGENDE AVONTUUR","intro":"Kies wat u zoekt en wij laten u echte cataloguservaringen zien die bij u passen.","medium":"Milieu","intensity":"Intensie","duration":"Duur","company":"Onderneming","objective":"Doel","reset":"Selectie wissen","resultsEyebrow":"Nómada selectie","resultsTitle":"Aanbevolen ervaringen","note":"Deze aanbeveling is indicatief. De uiteindelijke haalbaarheid hangt af van het niveau, het weer en de technische validatie van elke activiteit.","view":"Ervaring bekijken","defaultReason":"Een echt catalogiseringsvoorstel om de Nómada Universum."},
     fr: {
       eyebrow: 'Orientation personnalisée', titleA: 'TROUVEZ VOTRE', titleB: 'PROCHAINE AVENTURE',
       intro: 'Choisissez ce que vous recherchez et découvrez des expériences réelles du catalogue qui vous correspondent.',
@@ -78,6 +78,8 @@
     }
   };
 
+  copy.nl.count = n => n + (n === 1 ? " optie" : " opties");
+  copy.nl.matchReason = values => "Geschikt voor " + values.join(", ") + ".";
   const labels = {
     es: {
       sea: 'mar', coast: 'costa', mountain: 'montaña', air: 'aire', inland: 'interior', mixed: 'mixto',
@@ -92,7 +94,7 @@
       short: 'up to 2 h', half: 'half day', full: 'full day', weekend: 'weekend', multi: 'several days',
       solo: 'solo', couple: 'couple', friends: 'friends', family: 'family', group: 'group', school: 'education group',
       learn: 'learning', explore: 'exploring', challenge: 'a challenge', relax: 'relaxing', create: 'creating content', nature: 'nature', adrenaline: 'adrenaline'
-    },
+    }, nl: {"sea":"zee","coast":"kust","mountain":"berg","air":"lucht","inland":"binnenland","mixed":"gemengd","calm":"kalm","active":"actief","intense":"intens","extreme":"extreem","short":"tot 2 uur","half":"halve dag","full":"volledige dag","weekend":"weekend","multi":"meerdere dagen","solo":"solo","couple":"paar","friends":"vrienden","family":"familie","group":"groep","school":"Onderwijsgroep","learn":"leren","explore":"verkennen","challenge":"een uitdaging","relax":"ontspannen","create":"inhoud aanmaken","nature":"natuur","adrenaline":"adrenaline"},
     fr: {
       sea: 'mer', coast: 'côte', mountain: 'montagne', air: 'air', inland: 'intérieur', mixed: 'mixte',
       calm: 'calme', active: 'active', intense: 'intense', extreme: 'extrême',
@@ -124,18 +126,18 @@
   };
 
   const names = {
-    senderismo: { es: 'Senderismo guiado', en: 'Guided hiking', fr: 'Randonnée guidée', de: 'Geführte Wanderung', it: 'Escursionismo guidato', pt: 'Caminhada guiada' },
-    kayak: { es: 'Kayak de mar', en: 'Sea kayaking', fr: 'Kayak de mer', de: 'Seekajak', it: 'Kayak da mare', pt: 'Caiaque de mar' },
-    snorkel: { es: 'Snorkel de aventura', en: 'Adventure snorkelling', fr: "Snorkel d'aventure", de: 'Abenteuer-Schnorcheln', it: "Snorkeling d'avventura", pt: 'Snorkel de aventura' },
-    coasteering: { es: 'Coasteering', en: 'Coasteering', fr: 'Coasteering', de: 'Coasteering', it: 'Coasteering', pt: 'Coasteering' },
-    bautismo: { es: 'Bautismo de buceo', en: 'Try scuba diving', fr: 'Baptême de plongée', de: 'Schnuppertauchen', it: 'Battesimo subacqueo', pt: 'Batismo de mergulho' },
-    openwater: { es: 'Ruta Open Water', en: 'Open Water pathway', fr: 'Parcours Open Water', de: 'Open-Water-Weg', it: 'Percorso Open Water', pt: 'Percurso Open Water' },
-    ferrata: { es: 'Vía ferrata', en: 'Via ferrata', fr: 'Via ferrata', de: 'Klettersteig', it: 'Via ferrata', pt: 'Via ferrata' },
-    rapel: { es: 'Rápel técnico', en: 'Technical abseiling', fr: 'Rappel technique', de: 'Technisches Abseilen', it: 'Discesa tecnica in corda', pt: 'Rappel técnico' },
-    btt: { es: 'BTT costera', en: 'Coastal MTB', fr: 'VTT côtier', de: 'Küsten-MTB', it: 'MTB costiera', pt: 'BTT costeiro' },
-    parapente: { es: 'Parapente biplaza', en: 'Tandem paragliding', fr: 'Parapente biplace', de: 'Tandem-Gleitschirm', it: 'Parapendio biposto', pt: 'Parapente duplo' },
-    paramotor: { es: 'Vuelo en paramotor', en: 'Paramotor flight', fr: 'Vol en paramoteur', de: 'Motorschirmflug', it: 'Volo in paramotore', pt: 'Voo de paramotor' },
-    multiaventura: { es: 'Multiaventura a medida', en: 'Tailored multi-adventure', fr: 'Multi-aventure sur mesure', de: 'Individuelles Multi-Abenteuer', it: 'Multiavventura su misura', pt: 'Multiaventura à medida' }
+    senderismo: { es: 'Senderismo guiado', en: 'Guided hiking', nl: "Begeleide wandeltocht", fr: 'Randonnée guidée', de: 'Geführte Wanderung', it: 'Escursionismo guidato', pt: 'Caminhada guiada' },
+    kayak: { es: 'Kayak de mar', en: 'Sea kayaking', nl: "Zeekajakken", fr: 'Kayak de mer', de: 'Seekajak', it: 'Kayak da mare', pt: 'Caiaque de mar' },
+    snorkel: { es: 'Snorkel de aventura', en: 'Adventure snorkelling', nl: "Avontuursnorkelen", fr: "Snorkel d'aventure", de: 'Abenteuer-Schnorcheln', it: "Snorkeling d'avventura", pt: 'Snorkel de aventura' },
+    coasteering: { es: 'Coasteering', en: 'Coasteering', nl: "Coaches", fr: 'Coasteering', de: 'Coasteering', it: 'Coasteering', pt: 'Coasteering' },
+    bautismo: { es: 'Bautismo de buceo', en: 'Try scuba diving', nl: "Probeer duiken.", fr: 'Baptême de plongée', de: 'Schnuppertauchen', it: 'Battesimo subacqueo', pt: 'Batismo de mergulho' },
+    openwater: { es: 'Ruta Open Water', en: 'Open Water pathway', nl: "Open Water pad", fr: 'Parcours Open Water', de: 'Open-Water-Weg', it: 'Percorso Open Water', pt: 'Percurso Open Water' },
+    ferrata: { es: 'Vía ferrata', en: 'Via ferrata', nl: "Via ferrata", fr: 'Via ferrata', de: 'Klettersteig', it: 'Via ferrata', pt: 'Via ferrata' },
+    rapel: { es: 'Rápel técnico', en: 'Technical abseiling', nl: "Technische abseilen", fr: 'Rappel technique', de: 'Technisches Abseilen', it: 'Discesa tecnica in corda', pt: 'Rappel técnico' },
+    btt: { es: 'BTT costera', en: 'Coastal MTB', nl: "Kust MTB", fr: 'VTT côtier', de: 'Küsten-MTB', it: 'MTB costiera', pt: 'BTT costeiro' },
+    parapente: { es: 'Parapente biplaza', en: 'Tandem paragliding', nl: "Tandemparagliding", fr: 'Parapente biplace', de: 'Tandem-Gleitschirm', it: 'Parapendio biposto', pt: 'Parapente duplo' },
+    paramotor: { es: 'Vuelo en paramotor', en: 'Paramotor flight', nl: "Paramotorvlucht", fr: 'Vol en paramoteur', de: 'Motorschirmflug', it: 'Volo in paramotore', pt: 'Voo de paramotor' },
+    multiaventura: { es: 'Multiaventura a medida', en: 'Tailored multi-adventure', nl: "Multi-avontuur op maat", fr: 'Multi-aventure sur mesure', de: 'Individuelles Multi-Abenteuer', it: 'Multiavventura su misura', pt: 'Multiaventura à medida' }
   };
 
   const activities = [
