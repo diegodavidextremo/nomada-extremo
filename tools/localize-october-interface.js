@@ -1,0 +1,15 @@
+/* Small editorial corrections translated locally; no external service. */
+const fs=require('node:fs');
+const languages=['es','en','fr','de','it','pt','nl'];
+const rows=[
+ ['El proyecto académico plantea','The academic project proposes','Le projet académique propose','Das akademische Projekt sieht vor','Il progetto accademico propone','O projeto académico propõe','Het academische project stelt voor'],
+ ['una jornada al mes, sin calendario operativo ni salidas confirmadas','one day per month, with no operational schedule or confirmed outings','une journée par mois, sans calendrier opérationnel ni sorties confirmées','einen Tag pro Monat, ohne verbindlichen Betriebskalender oder bestätigte Ausflüge','una giornata al mese, senza calendario operativo né uscite confermate','um dia por mês, sem calendário operacional nem saídas confirmadas','één dag per maand, zonder operationele planning of bevestigde uitstapjes'],
+ [', planteada como una jornada al mes dentro del proyecto académico, en entornos seleccionados específicamente y con una gestión cuidadosa de todos los aspectos relacionados con la privacidad, el consentimiento y la convivencia.',', envisaged as one day per month within the academic project, in specially selected surroundings, with careful management of privacy, consent and respectful coexistence.',', envisagée à raison d’une journée par mois dans le cadre du projet académique, dans des environnements spécialement sélectionnés, avec une gestion attentive de la vie privée, du consentement et de la cohabitation respectueuse.',', als ein Tag pro Monat im Rahmen des akademischen Projekts geplant, in gezielt ausgewählter Umgebung und mit sorgfältiger Berücksichtigung von Privatsphäre, Einwilligung und respektvollem Miteinander.',', pensata come una giornata al mese nell’ambito del progetto accademico, in ambienti appositamente selezionati e con un’attenta gestione della privacy, del consenso e della convivenza.',', prevista como um dia por mês no âmbito do projeto académico, em locais especificamente selecionados e com uma gestão cuidadosa da privacidade, do consentimento e da convivência.',', bedoeld als één dag per maand binnen het academische project, in speciaal geselecteerde omgevingen en met zorgvuldige aandacht voor privacy, toestemming en respectvol samenleven.'],
+ ['Seleccionar idioma','Select language','Choisir la langue','Sprache auswählen','Seleziona la lingua','Selecionar idioma','Taal kiezen'],
+ ['Nederlands','Nederlands','Nederlands','Nederlands','Nederlands','Nederlands','Nederlands'],
+ ['NL','NL','NL','NL','NL','NL','NL']
+];
+for(const [i,lang]of languages.entries()){const f='i18n/'+lang+'.json',d=JSON.parse(fs.readFileSync(f,'utf8'));for(const row of rows)d.strings[row[0]]=row[i];fs.writeFileSync(f,JSON.stringify(d,null,2)+'\n');}
+let f='assets/js/i18n.js',s=fs.readFileSync(f,'utf8').replaceAll('20261013-1','20261014-1');fs.writeFileSync(f,s);
+f='assets/js/components.js';s=fs.readFileSync(f,'utf8').replace('i18n.js?v=20261013-1','i18n.js?v=20261014-1');fs.writeFileSync(f,s);
+console.log('Schedule correction available in all seven languages.');

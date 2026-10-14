@@ -107,11 +107,16 @@
   </nav>
 </header>`;
 
+  if (!document.querySelector('[data-editorial-interface]')) {
+    const sheet = document.createElement('link');
+    sheet.rel = 'stylesheet'; sheet.href = 'assets/css/editorial-interface.css?v=20261014-1';
+    sheet.dataset.editorialInterface = ''; document.head.appendChild(sheet);
+  }
   const FOOTER = `
 <footer id="footer" class="footer-compact">
   <div class="container">
     <div class="footer-topline">
-      <a class="footer-brand-head" href="index.html"><img src="assets/images/emblema-oficial-web.webp?v=20261005-8" alt="" width="52" height="52" loading="lazy"><span class="footer-marca-nombre">NÓMADA EXTREMO<small>Águilas · Aventura, técnica y naturaleza</small></span></a>
+      <a class="footer-brand-head" href="index.html"><img src="assets/images/emblema-oficial-web.webp?v=20261005-8" alt="" width="52" height="52" loading="lazy"><span class="footer-marca-nombre"><span translate="no">NÓMADA EXTREMO</span><small>Águilas · Aventura, técnica y naturaleza</small></span></a>
       <nav class="footer-primary" aria-label="Enlaces principales del pie"><a href="actividades.html">Actividades</a><a href="proyecto-intermodular.html">Proyecto intermodular</a><a href="fundador.html">Fundador</a><a href="equipo.html">Equipo</a><a href="contacto.html">Contacto</a></nav>
     </div>
     <p class="footer-purpose">Proyecto académico no operativo · 2.º GMN · 2026–2027. Sin reservas, cobros ni ventas reales.</p>
@@ -136,7 +141,7 @@
 
   if (!document.querySelector('script[data-noext-i18n]')) {
     const languageScript = document.createElement('script');
-    languageScript.src = 'assets/js/i18n.js?v=20261013-1';
+    languageScript.src = 'assets/js/i18n.js?v=20261014-1';
     languageScript.dataset.noextI18n = 'runtime';
     document.head.appendChild(languageScript);
   }
