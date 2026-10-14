@@ -109,7 +109,7 @@
 
   if (!document.querySelector('[data-editorial-interface]')) {
     const sheet = document.createElement('link');
-    sheet.rel = 'stylesheet'; sheet.href = 'assets/css/editorial-interface.css?v=20261014-1';
+    sheet.rel = 'stylesheet'; sheet.href = 'assets/css/editorial-interface.css?v=20261014-2';
     sheet.dataset.editorialInterface = ''; document.head.appendChild(sheet);
   }
   const FOOTER = `

@@ -101,9 +101,10 @@ body.actividades-page .territorio-card:first-child{background:#163f47!important;
 .naturist-preview-values strong{color:#e2c093!important}
 .naturist-landscape{width:100%;height:auto;display:block;margin:-10px 0 25px;border-radius:12px;background:#8aa88d}
 /* Shared exploration summaries and editorial review cards. */
-.home-page .home-explore-panel{border-color:#ccd8d0!important;box-shadow:none!important;overflow:hidden}
-.home-page .home-explore-panel>summary{background:#edf2ec!important;min-height:72px!important;padding:22px 28px!important;color:#244d58!important;font-size:1rem!important;border-bottom:0!important}
-.home-page .home-explore-panel[open]>summary{border-bottom:1px solid #ccd8d0!important;background:#e6ece6!important}
+.home-page .home-explore-panel{border-color:#d6dcd5!important;background:#f5f4ef!important;box-shadow:none!important;overflow:hidden}
+.home-page .home-explore-panel>summary{width:100%!important;max-width:none!important;margin:0!important;box-sizing:border-box!important;background:#f5f4ef!important;min-height:72px!important;padding:22px 28px!important;color:#244d58!important;font-size:1rem!important;border-bottom:0!important}
+.home-page .home-explore-panel[open]>summary{border-bottom:1px solid #d6dcd5!important;background:#f5f4ef!important}
+.home-page .home-explore-panel>section:not(.bg-noche):not(.bg-mar):not(.bg-bosque){background:#f5f4ef!important}
 .home-page .home-explore-panel>summary:after{color:#8f6239!important}
 .home-page .adventure-reviews{padding:36px 28px!important;background:#f5f4ef!important}
 .home-page .adventure-reviews .adventure-section-heading{gap:24px!important;margin-bottom:25px!important}

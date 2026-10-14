@@ -45,11 +45,11 @@ write('index.html',s);
 s=read('assets/js/components.js');
 if(!s.includes('data-editorial-interface'))s=s.replace('  const FOOTER = `',`  if (!document.querySelector('[data-editorial-interface]')) {
     const sheet = document.createElement('link');
-    sheet.rel = 'stylesheet'; sheet.href = 'assets/css/editorial-interface.css?v=20261014-1';
+    sheet.rel = 'stylesheet'; sheet.href = 'assets/css/editorial-interface.css?v=20261014-2';
     sheet.dataset.editorialInterface = ''; document.head.appendChild(sheet);
   }
   const FOOTER = \``);
 s=s.replace('class="footer-marca-nombre">NÓMADA EXTREMO<small>','class="footer-marca-nombre"><span translate="no">NÓMADA EXTREMO</span><small>');
 write('assets/js/components.js',s);
-for(const f of fs.readdirSync('.').filter(f=>f.endsWith('.html'))){s=read(f);const next=s.replaceAll('components.js?v=20261013-1','components.js?v=20261014-1');if(next!==s)write(f,next);}
+for(const f of fs.readdirSync('.').filter(f=>f.endsWith('.html'))){s=read(f);const next=s.replaceAll('components.js?v=20261013-1','components.js?v=20261014-2').replaceAll('components.js?v=20261014-1','components.js?v=20261014-2');if(next!==s)write(f,next);}
 console.log('Targeted interface structures and shared stylesheet loader updated.');
