@@ -1,0 +1,36 @@
+{
+  "nativeEvents": [
+    {
+      "event": "start",
+      "error": null
+    },
+    {
+      "event": "end",
+      "error": null
+    }
+  ],
+  "testedLanguages": [
+    "es",
+    "en",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "nl"
+  ],
+  "viewports": [
+    320,
+    390,
+    768,
+    1366,
+    1920
+  ],
+  "nativeCapability": {
+    "supported": true,
+    "languages": [
+      "es-ES",
+      "en-US"
+    ]
+  },
+  "errors": []
+}
