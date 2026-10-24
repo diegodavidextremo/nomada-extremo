@@ -664,8 +664,7 @@
   padding: 6rem 0;
   color: #fff;
   background:
-    linear-gradient(120deg, rgba(7, 27, 34, .98), rgba(12, 45, 58, .94) 62%, rgba(36, 79, 61, .9)),
-    url("../images/noext/fondo-index-noext.png") center / cover;
+    linear-gradient(120deg, #071b22, #0c2d3a 62%, #244f3d);
 }
 
 .horizon-preview__grid {

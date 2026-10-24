@@ -1,5 +1,44 @@
 /* October 14: readable activity sheets, editorial territory, quieter naturism. */
 :root{--editorial-deep:#163b45;--editorial-paper:#f3f1eb;--editorial-sand:#c59a6b}
+/* Shared audit components: indexes, focus and preparation use the existing design tokens. */
+.document-index{display:flex;flex-wrap:wrap;gap:.55rem;max-width:1280px;margin:1.5rem auto;padding:0 24px}
+.document-index a{display:block;padding:.7rem 1rem;border:1px solid #b9ccc7;border-radius:8px;background:#f5f4ef;color:#204c59;font:500 .9rem/1.5 var(--sans);text-decoration:none}
+.document-index a:hover{background:#e8efea}
+.home-explore-directory{width:calc(100% - 48px);max-width:1280px;margin:2rem auto;display:grid;gap:14px}
+.home-explore-group{background:var(--editorial-paper);border:1px solid #cbd8d1;border-radius:14px;overflow:hidden}
+.home-explore-group>summary{display:flex;justify-content:space-between;align-items:center;padding:24px;min-height:72px;font:600 1.05rem/1.5 var(--sans);color:#204c59;cursor:pointer;list-style:none}
+.home-explore-group>summary::-webkit-details-marker{display:none}
+.home-explore-group>summary::after{content:'+';font-size:1.5rem;color:#805b36}
+.home-explore-group[open]>summary::after{content:'−'}
+.home-page .home-explore-group .home-explore-panel{width:100%;max-width:none;margin:0!important;border:0!important;border-radius:0!important;border-top:1px solid #d6dcd5!important}
+.home-explore-group-content{padding:0 16px 16px}
+.preparation-print{margin:1.5rem 0 .5rem;color:#204c59;background:#fff;border:1px solid #8da8a9}
+.page-hero .audit-context-link a{color:#e4c296;text-decoration:underline;text-underline-offset:4px;display:inline-block;padding:12px 0;font:500 1rem/1.5 var(--sans)}
+.article-decision{margin:2rem 0;padding:clamp(20px,4vw,32px);border:1px solid #cad8d1;border-left:3px solid var(--editorial-sand);border-radius:12px;background:#f3f5ef}
+.article-decision h2{font:500 1.6rem/1.3 var(--display);color:#254d59;margin-bottom:1rem}
+.article-decision li{margin:.7rem 0;line-height:1.7}
+.article-next{display:flex;flex-wrap:wrap;gap:12px;margin-top:1.5rem}
+.article-reviewed{font:.82rem/1.7 var(--sans);color:#45646c;margin-top:1.2rem}
+.responsive-table:focus-visible,.finance-table-wrap:focus-visible{outline:3px solid #267a90;outline-offset:4px}
+.home-page .hero-bg{background-image:url('../images/optimized/home-1440.webp')}
+@media(min-width:1500px){.home-page .hero-bg{background-image:url('../images/optimized/home-1920.webp')}}
+@media(max-width:768px){.home-page .hero-bg{background-image:url('../images/optimized/home-768.webp')}}
+body[data-page-purpose="reference"] .page-hero{min-height:0!important;padding-bottom:35px!important;background:#183e4d!important}
+body[data-page-purpose="reference"] .page-hero h1{font-size:clamp(2.6rem,5vw,4.8rem)!important;line-height:1.05}
+body[data-page-purpose="reference"] .page-hero-bg{background-image:none!important}
+body[data-page-purpose="reference"] .page-hero-gradient,body[data-page-purpose="reference"] .page-hero::before,body[data-page-purpose="reference"] .page-hero::after{display:none!important}
+body .experience-results,#pack-results{color:#365561}
+.naturist-page #leer-naturaleza-a-tu-ritmo .label-bosque{color:#365a44}
+@media print{
+  body.site-activity{background:white;color:#172f38}
+  body.site-activity .site-header,body.site-activity #footer,body.site-activity #contactDock,body.site-activity .chatbot,body.site-activity .n3-state-strip,body.site-activity .nomada-hero-actions,body.site-activity .preparation-print,body.site-activity [role="dialog"],body.site-activity .site-hero-photo,body.site-activity .noext-toast{display:none!important}
+  body.site-activity .page-hero{padding:0!important;background:white!important}
+  body.site-activity .page-hero h1{font-size:30pt!important}
+  body.site-activity section{padding:12pt 0!important;break-inside:auto}
+  body.site-activity .container{width:100%!important;max-width:none!important}
+  body.site-activity .activity-panel{break-inside:avoid;box-shadow:none!important}
+  body.site-activity .activity-meta-list,body.site-activity .activity-detail-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
 .editorial-icon{width:48px;height:48px;display:block;color:#39717b;margin-bottom:1.4rem;flex-shrink:0}
 /* Respect the complete equipment in the reference photographs. */
 body.actividades-page .ficha .ficha-img{height:auto!important;min-height:0!important;aspect-ratio:3/2!important;overflow:hidden;background:#e9efec!important}
@@ -23,7 +62,7 @@ body.actividades-page .ficha .ficha-img img{width:100%!important;height:auto!imp
 .site-activity .activity-detail-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:18px!important;align-items:stretch}
 .site-activity .activity-panel{padding:28px!important;background:#fff!important;border:1px solid #d7dfda!important;border-top:3px solid #39717b!important;border-radius:12px!important;box-shadow:none!important}
 .site-activity .activity-panel:nth-child(2),.site-activity .activity-panel:nth-child(5){border-top-color:var(--editorial-sand)!important}
-.site-activity .activity-panel h3{font-size:1.65rem!important;line-height:1.15;color:#254d59!important;margin:10px 0 16px!important}
+.site-activity .activity-panel h2{font-size:1.65rem!important;line-height:1.15;color:#254d59!important;margin:10px 0 16px!important}
 .site-activity .activity-panel p,.site-activity .activity-panel li{font-size:.92rem!important;line-height:1.8!important;color:#52676b!important}
 .site-activity .activity-panel ul{padding-left:1rem!important}
 /* Twelve activity cards: photograph, discipline, title, then one clear action. */
@@ -142,7 +181,7 @@ footer.footer-compact{background:#153740!important;padding:50px 0 26px!important
 .footer-compact .footer-directory{border:0!important;border-bottom:1px solid #527078!important;margin-bottom:22px!important}
 .footer-compact .footer-directory>summary{padding:16px 0 20px!important;font-size:.9rem;font-weight:600;min-height:52px;color:#edeee7!important}
 .footer-compact .footer-directory-grid{gap:30px!important;padding:20px 0 30px!important}
-.footer-compact .footer-col h5{color:#e1b887!important;font-size:.8rem!important;letter-spacing:.1em;line-height:1.8}
+.footer-compact .footer-col h2{color:#e1b887!important;font-size:.8rem!important;letter-spacing:.1em;line-height:1.8}
 .footer-compact .footer-col a,.footer-compact .footer-col span{color:#d4e3e3!important;font-size:.84rem!important;line-height:1.85}
 .footer-compact .footer-bottom{gap:15px 24px!important;align-items:center!important;flex-wrap:wrap}
 .footer-compact .footer-legal,.footer-compact .footer-social{gap:14px!important;display:flex;flex-wrap:wrap}

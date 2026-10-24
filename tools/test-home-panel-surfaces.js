@@ -10,6 +10,7 @@ let browser;
  for(const width of [390,768,1366,1920]){
   await page.setViewportSize({width,height:1000});await page.goto('http://127.0.0.1:'+server.address().port+'/index.html');
   await page.waitForFunction(()=>[...document.querySelectorAll('.home-explore-panel>summary')].every(e=>getComputedStyle(e).maxWidth==='none'));
+  await page.evaluate(()=>document.querySelectorAll('.home-explore-group').forEach(group=>group.open=true));
   const panels=page.locator('.home-explore-panel');
   for(const panel of await panels.all()){
    await panel.evaluate(e=>e.open=false);

@@ -94,6 +94,12 @@
     "login": {
       "title": "Nómada Ruimte · Project demonstratie",
       "description": "Verken de Nómada Extremo Logbook Geen accounts of wachtwoorden."
+    },
+    "comunidad": {
+      "title": "Community en club | Nómada Extremo"
+    },
+    "logbook": {
+      "title": "Logbook · Mijn voortgang | Nómada Extremo"
     }
   },
   "strings": {
@@ -1829,7 +1835,7 @@
     "Comunicar instrucciones claras, adaptar propuestas, incluir, motivar, escuchar y cerrar actividades con reflexión.": "Communiceer duidelijke instructies, pas voorstellen aan, omvatten, motiveren, luisteren en nauwe activiteiten met reflectie.",
     "comunicar mejor en un sector con visitantes internacionales.": "beter communiceren in een sector met internationale bezoekers.",
     "Comunidad": "Gemeenschap",
-    "COMUNIDAD": "GEMEENSCHAP",
+    "COMUNIDAD": "COMMUNITY",
     "COMUNIDAD & APP": "COMMUNITY-APP",
     "Comunidad Nómada": "Nomadische Gemeenschap",
     "Comunidad privada": "Gesloten Gemeenschap",
@@ -10230,7 +10236,29 @@
     ", planteada como una jornada al mes dentro del proyecto académico, en entornos seleccionados específicamente y con una gestión cuidadosa de todos los aspectos relacionados con la privacidad, el consentimiento y la convivencia.": ", bedoeld als één dag per maand binnen het academische project, in speciaal geselecteerde omgevingen en met zorgvuldige aandacht voor privacy, toestemming en respectvol samenleven.",
     "Seleccionar idioma": "Taal kiezen",
     "Nederlands": "Nederlands",
-    "NL": "NL"
+    "NL": "NL",
+    "Imprimir preparación": "Voorbereiding afdrukken",
+    "Tabla desplazable": "Schuifbare tabel",
+    "Selección de formato": "Kies een formaat",
+    "Según programación": "Volgens planning",
+    "Elegir experiencia": "Kies een ervaring",
+    "Preparar mi actividad": "Mijn activiteit voorbereiden",
+    "Conocer el proyecto": "Ontdek het project",
+    "Explorar Nómada Extremo": "Ontdek Nómada Extremo",
+    "Y CLUB": "EN CLUB",
+    "MI PROGRESO": "MIJN VOORTGANG",
+    "SEGÚN PROGRAMACIÓN": "VOLGENS PLANNING",
+    "Antes de elegir una salida": "Voordat je een uitstap kiest",
+    "¿Dónde empieza y termina la ruta?": "Waar begint en eindigt de route?",
+    "¿Qué material aporta el centro?": "Welke uitrusting levert het centrum?",
+    "¿Qué alternativa hay si cambia el mar?": "Wat is het alternatief als de omstandigheden op zee veranderen?",
+    "¿Es una primera experiencia o un curso?": "Is dit een kennismaking of een cursus?",
+    "¿Cómo se revisan los requisitos personales?": "Hoe worden persoonlijke vereisten gecontroleerd?",
+    "¿Qué ocurre si decido no continuar?": "Wat gebeurt er als ik besluit niet verder te gaan?",
+    "¿Qué modalidad y operador se proponen?": "Welke variant en aanbieder worden voorgesteld?",
+    "¿Cómo se confirma la fecha según las condiciones?": "Hoe wordt de datum bevestigd op basis van de omstandigheden?",
+    "¿Qué incluye la propuesta y qué es opcional?": "Wat is inbegrepen in het voorstel en wat is optioneel?",
+    "Revisión editorial": "Redactionele controle"
   },
   "pages": {
     "faq": {

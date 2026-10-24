@@ -1,6 +1,8 @@
 # Capturas locales de validación; CI las adjunta como artefactos.
 tools/reports/*.png
 node_modules/
+tools/reports/audit-improvements/
+tools/reports/accessibility-improvements.json
 
 tools/reports/community-image-imports.json
 tools/reports/check-community-assets.js

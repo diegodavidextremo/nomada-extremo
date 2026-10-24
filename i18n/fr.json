@@ -94,6 +94,12 @@
     "login": {
       "title": "Espace Nómada · Démonstration du projet",
       "description": "Découvrez la démonstration du Logbook et de la communauté Nómada Extremo. Sans comptes ni mots de passe."
+    },
+    "comunidad": {
+      "title": "Communauté et club | Nómada Extremo"
+    },
+    "logbook": {
+      "title": "Logbook · Ma progression | Nómada Extremo"
     }
   },
   "strings": {
@@ -10181,7 +10187,29 @@
     ", planteada como una jornada al mes dentro del proyecto académico, en entornos seleccionados específicamente y con una gestión cuidadosa de todos los aspectos relacionados con la privacidad, el consentimiento y la convivencia.": ", envisagée à raison d’une journée par mois dans le cadre du projet académique, dans des environnements spécialement sélectionnés, avec une gestion attentive de la vie privée, du consentement et de la cohabitation respectueuse.",
     "Seleccionar idioma": "Choisir la langue",
     "Nederlands": "Nederlands",
-    "NL": "NL"
+    "NL": "NL",
+    "Imprimir preparación": "Imprimer la préparation",
+    "Tabla desplazable": "Tableau défilant",
+    "Selección de formato": "Choisir un format",
+    "Según programación": "Selon la programmation",
+    "Elegir experiencia": "Choisir une expérience",
+    "Preparar mi actividad": "Préparer mon activité",
+    "Conocer el proyecto": "Découvrir le projet",
+    "Explorar Nómada Extremo": "Explorer Nómada Extremo",
+    "Y CLUB": "ET CLUB",
+    "MI PROGRESO": "MA PROGRESSION",
+    "SEGÚN PROGRAMACIÓN": "SELON LA PROGRAMMATION",
+    "Antes de elegir una salida": "Avant de choisir une sortie",
+    "¿Dónde empieza y termina la ruta?": "Où commence et se termine le parcours ?",
+    "¿Qué material aporta el centro?": "Quel matériel le centre fournit-il ?",
+    "¿Qué alternativa hay si cambia el mar?": "Quelle alternative si les conditions en mer changent ?",
+    "¿Es una primera experiencia o un curso?": "Est-ce une découverte ou une formation ?",
+    "¿Cómo se revisan los requisitos personales?": "Comment les conditions personnelles sont-elles vérifiées ?",
+    "¿Qué ocurre si decido no continuar?": "Que se passe-t-il si je décide de ne pas continuer ?",
+    "¿Qué modalidad y operador se proponen?": "Quelle formule et quel opérateur sont proposés ?",
+    "¿Cómo se confirma la fecha según las condiciones?": "Comment la date est-elle confirmée selon les conditions ?",
+    "¿Qué incluye la propuesta y qué es opcional?": "Que comprend la proposition et que reste-t-il en option ?",
+    "Revisión editorial": "Révision éditoriale"
   },
   "pages": {
     "faq": {

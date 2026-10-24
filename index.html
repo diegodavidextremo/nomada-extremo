@@ -16,8 +16,8 @@
 <link rel="manifest" href="site.webmanifest?v=20261005-8">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&amp;family=DM+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/styles.css?v=20260612-4">
-<link rel="stylesheet" href="assets/css/horizonte-nomada.css?v=20260717-1">
+<link rel="stylesheet" href="assets/css/styles.css?v=20261025">
+<link rel="stylesheet" href="assets/css/horizonte-nomada.css?v=20261025">
 <link rel="stylesheet" href="assets/css/adventure-selector.css?v=20260717-1">
 <link rel="stylesheet" href="assets/css/design-fixes-20260722.css?v=20260722-2">
 <link rel="stylesheet" href="assets/css/design-system.css?v=20261005-8">
@@ -27,6 +27,9 @@
 <link rel="stylesheet" href="assets/css/brand-interface.css?v=20261006-1">
 <link rel="stylesheet" href="assets/css/adventure-story.css?v=20261008-1">
 <link rel="stylesheet" href="assets/css/site-coherence.css?v=20261012-1"><link rel="stylesheet" href="assets/css/home-refinement.css?v=20261012-2">
+<link rel="stylesheet" href="assets/css/shared.css?v=20261025">
+<link rel="preload" as="image" href="assets/images/optimized/home-1440.webp" imagesrcset="assets/images/optimized/home-768.webp 768w, assets/images/optimized/home-1440.webp 1440w, assets/images/optimized/home-1920.webp 1920w" imagesizes="100vw" fetchpriority="high">
+<meta property="og:image" content="https://diegodavidextremo.github.io/nomada-extremo/assets/images/social/index.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
 </head>
 <body class="home-page n3-home">
 
@@ -35,7 +38,7 @@
 <!-- ═══ HERO PRINCIPAL ═══ -->
 <section class="hero">
   <!-- Imagen de fondo principal -->
-  <div class="hero-bg" role="img" aria-label="Imagen hero de Nómada Extremo con mar, montaña y aventura" style="background-image:url('assets/images/noext/hero-principal.png')"></div>
+  <div class="hero-bg" role="img" aria-label="Imagen hero de Nómada Extremo con mar, montaña y aventura"></div>
   <div class="hero-overlay"></div>
   <div class="hero-bottom-fade"></div>
 
@@ -87,7 +90,7 @@
         </div>
       </div>
       <div>
-        <figure class="adventure-origin-photo"><img src="assets/images/aventura-con-alma-2026.webp" alt="Dos aventureros se ayudan en una cresta rocosa frente a una bahía mediterránea iluminada al amanecer" loading="lazy" width="1536" height="1024"><figcaption><span>Mar. Tierra. Compañía.</span><strong>Lo que importa está ahí fuera.</strong></figcaption></figure>
+        <figure class="adventure-origin-photo"><img src="assets/images/optimized/aventura-con-alma-2026-1280.webp" alt="Dos aventureros se ayudan en una cresta rocosa frente a una bahía mediterránea iluminada al amanecer" loading="lazy" width="1536" height="1024" srcset="assets/images/optimized/aventura-con-alma-2026-640.webp 640w, assets/images/optimized/aventura-con-alma-2026-1280.webp 1280w" sizes="(max-width:700px) 100vw, 50vw" decoding="async"><figcaption><span>Mar. Tierra. Compañía.</span><strong>Lo que importa está ahí fuera.</strong></figcaption></figure>
         <div class="grid-3 home-origin-values" style="gap:1.2rem;margin-top:1.2rem;">
           <div class="card reveal reveal-delay-1"><div class="card-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"></circle><path d="m16 8-2 6-6 2 2-6 6-2Zm-6 2 4 4M12 1v2m0 18v2M1 12h2m18 0h2"></path></svg></div><div class="card-titulo">Aventura Real</div><p class="card-desc">Sin artificios. Experiencias genuinas diseñadas por quienes las viven en primera persona.</p></div>
           <div class="card reveal reveal-delay-2"><div class="card-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6z"></path><path d="m8 12 3 3 5-6"></path></svg></div><div class="card-titulo">Seguridad</div><p class="card-desc">La adrenalina no está reñida con el rigor técnico. Aquí la seguridad es innegociable.</p></div>
@@ -98,12 +101,274 @@
   </div>
 </section>
 
-<!-- gmn:home:start -->
+<section class="home-explore-directory" aria-label="Explorar Nómada Extremo"><details class="home-explore-group"><summary>Elegir experiencia</summary><div class="home-explore-group-content"><details class="n3-home-details home-explore-panel"><summary>Comparar niveles de experiencia</summary><section class="bg-crema" id="experiencias-nivel-home"><div class="container"><span class="label">Experiencias por nivel</span><h2 class="titulo">ELIGE TU<br><span class="mar">INTENSIDAD</span></h2><div class="divisor"></div><div class="process-grid"><article class="process-card"><span class="step">Base</span><h3>Iniciación</h3><p>Primer contacto con mar, montaña, kayak, snorkel, senderismo o movilidad outdoor.</p></article><article class="process-card"><span class="step">Progresión</span><h3>Intermedio</h3><p>Rutas largas, BTT, ferratas sencillas, travesías costeras y técnica básica.</p></article><article class="process-card"><span class="step">Técnico</span><h3>Avanzado</h3><p>Cuerda, vertical, barrancos, buceo, orientación, meteo y material específico.</p></article><article class="process-card"><span class="step">Alta emoción</span><h3>Extremo</h3><p>Alta exposición solo con validación, permisos, especialistas y condiciones favorables.</p></article><article class="process-card"><span class="step">Cuidado</span><h3>Familiar</h3><p>Planes suaves para familias, parejas, cumpleaños y primeras aventuras compartidas.</p></article><article class="process-card"><span class="step">A medida</span><h3>Premium</h3><p>Privados, amanecer, atardecer, reportaje audiovisual y grupo reducido.</p></article><article class="process-card"><span class="step">Escuela</span><h3>Formación</h3><p>Aprender antes de apretar: técnica, seguridad, entorno y progresión.</p></article></div></div></section></details>
+<details class="n3-home-details home-explore-panel"><summary>Explorar los medios naturales</summary><section class="bg-blanco" id="experiencias-medio-home"><div class="container"><span class="label">Experiencias por medio</span><h2 class="titulo">MAR, ROCA,<br><span class="arena">AIRE Y MONTAÑA</span></h2><div class="divisor"></div><div class="grid-3" style="gap:1rem;"><div class="card"><div class="card-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 8c3-4 5-4 8 0s5 4 8 0 3-2 4-2M2 14c3-4 5-4 8 0s5 4 8 0 3-2 4-2M2 20c3-4 5-4 8 0s5 4 8 0 3-2 4-2"></path></svg></div><div class="card-titulo">Mar</div><p class="card-desc">Kayak, snorkel, SUP, buceo, coasteering y costa mediterránea.</p></div><div class="card"><div class="card-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m2 20 7-13 4 7 3-10 6 16H2Z"></path><path d="m6 13 3 2 3-3m2-2 2 2 2-2"></path></svg></div><div class="card-titulo">Montaña</div><p class="card-desc">Senderismo, trekking, BTT, orientación, fotografía y rutas de cresta.</p></div><div class="card"><div class="card-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10a9 9 0 0 1 18 0H3Zm0 0 7 9m11-9-7 9M8 10l3 9m5-9-3 9M12 2c-3 2-4 5-4 8m4-8c3 2 4 5 4 8"></path><rect x="10" y="19" width="4" height="3" rx="1"></rect></svg></div><div class="card-titulo">Aire</div><p class="card-desc">Parapente, paramotor, paratrike y vuelos panorámicos sujetos a meteo.</p></div><div class="card"><div class="card-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 2v20M17 5h4M17 11h4M17 17h4M3 21l4-7 3 2 3 5"></path><circle cx="9" cy="5" r="2"></circle><path d="m8 9-2 5 5 2m-3-7 5 3 4-3"></path></svg></div><div class="card-titulo">Vertical</div><p class="card-desc">Vía ferrata, escalada, rápel, cuerda, puentes y exposición controlada.</p></div><div class="card"><div class="card-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3 2 3 6-3 8 3 6M21 2l-3 6 3 8-3 6M12 3v13m-3-3 3 3 3-3M9 20c2-2 4-2 6 0"></path></svg></div><div class="card-titulo">Barrancos</div><p class="card-desc">Agua, roca, cuerda, caudal, accesos y lectura técnica del entorno.</p></div><div class="card"><div class="card-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="6" width="20" height="15" rx="2"></rect><path d="M2 11h20M5 6l3-4m3 4 3-4m3 4 3-4m-9 13 5-3-5-3v6Z"></path></svg></div><div class="card-titulo">Audiovisual</div><p class="card-desc">Reel, POV, 360, dron cuando proceda, foto y recuerdo familiar.</p></div></div></div></section></details>
+<details class="n3-home-details home-explore-panel"><summary>Recorrer un día Nómada · prototipo</summary><section class="bg-gris" id="dia-nomada-home"><div class="container"><span class="label">Un día con Nómada Extremo</span><h2 class="titulo">DE LA SOLICITUD<br><span class="mar">AL RECUERDO</span></h2><div class="divisor"></div><ol class="home-journey"><li><span class="journey-number">01</span><div><h3>Solicitud</h3><p>Comparte tu idea y el nivel del grupo.</p></div></li><li><span class="journey-number">02</span><div><h3>Confirmación</h3><p>Se concreta la propuesta y su viabilidad.</p></div></li><li><span class="journey-number">03</span><div><h3>Preparación</h3><p>Requisitos, equipo y condiciones previstas.</p></div></li><li><span class="journey-number">04</span><div><h3>Punto de encuentro</h3><p>Lugar y horario claros antes de salir.</p></div></li><li><span class="journey-number">05</span><div><h3>Briefing</h3><p>Repaso del equipo y de las indicaciones.</p></div></li><li><span class="journey-number">06</span><div><h3>Actividad</h3><p>La experiencia, al ritmo del grupo.</p></div></li><li><span class="journey-number">07</span><div><h3>Pausa</h3><p>Tiempo para descansar y recuperar energía.</p></div></li><li><span class="journey-number">08</span><div><h3>Cierre</h3><p>Revisión final y regreso organizado.</p></div></li><li><span class="journey-number">09</span><div><h3>Audiovisual</h3><p>Recuerdo cuando sea viable y autorizado.</p></div></li><li><span class="journey-number">10</span><div><h3>Logbook</h3><p>Una memoria personal de lo vivido.</p></div></li></ol></div></section></details>
+<details class="n3-home-details home-explore-panel"><summary>Aventura y contenido audiovisual</summary><section class="bg-noche" id="aventura-contenido-home"><div class="container"><span class="label">Aventura + contenido</span><h2 class="titulo">VIVIRLO<br><span class="acento">Y CONTARLO BIEN</span></h2><div class="divisor"></div><div class="grid-3" style="gap:1rem;"><div class="card"><div class="card-titulo">Mini documental</div><p class="card-desc">Historia breve, voz de experiencia, ritmo y recuerdo con valor real.</p></div><div class="card"><div class="card-titulo">Reel / POV / 360</div><p class="card-desc">Formatos ágiles para redes, casco, manillar, agua o grupo familiar.</p></div><div class="card"><div class="card-titulo">YouTube y foto</div><p class="card-desc">Miniatura, teaser, tráiler, fotos editadas, clips y carpeta organizada.</p></div></div></div></section></details>
+<details class="n3-home-details home-explore-panel"><summary>Para quién se diseña la propuesta</summary><section class="bg-blanco" id="para-quien-home"><div class="container"><span class="label">Para quién es</span><h2 class="titulo">NO TODO EL MUNDO<br><span class="arena">BUSCA LO MISMO</span></h2><div class="divisor"></div><div class="timeline-compact"><span>Principiantes</span><span>Familias</span><span>Deportistas</span><span>Creadores</span><span>Empresas</span><span>Centros educativos</span><span>Parejas</span><span>Amigos</span><span>Aventureros extremos</span></div></div></section></details>
+<details class="n3-home-details home-explore-panel"><summary data-i18n="october.reviews">Leer las reseñas de ejemplo</summary><section class="adventure-reviews" id="resenas"><div class="container"><div class="adventure-section-heading"><div><span class="label">Historias de aventura</span><h2 class="titulo">LO QUE<br><span class="mar">TE LLEVAS</span></h2></div><p>El vértigo del primer salto. La calma del mar. La confianza en quien camina a tu lado.</p></div><p class="adventure-editorial-note">Reseñas de ejemplo del proyecto académico: relatos editoriales, no valoraciones de clientes reales.</p><div class="adventure-review-grid"><article class="adventure-review"><div class="adventure-review-top"><span class="review-stars" aria-label="5 de 5 estrellas">★★★★★</span><span class="adventure-review-example">Ejemplo editorial</span></div><blockquote>El paracaidismo tándem fue la experiencia más brutal de mi vida. El equipo te prepara bien, el entorno de Águilas es espectacular y el vídeo que me dieron fue cinematográfico de verdad. Volveré.</blockquote><footer><span class="adventure-review-number" aria-hidden="true">01</span><div><strong>Miguel A.</strong><span>Paracaidismo tándem · Madrid</span></div></footer></article>
+<article class="adventure-review"><div class="adventure-review-top"><span class="review-stars" aria-label="5 de 5 estrellas">★★★★★</span><span class="adventure-review-example">Ejemplo editorial</span></div><blockquote>Hice el Open Water SSI en tres días con la instructora. Su paciencia, el fondo marino de Águilas y la forma en que organizan todo desde el formulario previo hasta el check-in lo hace muy serio. Recomendado 100%.</blockquote><footer><span class="adventure-review-number" aria-hidden="true">02</span><div><strong>Sandra M.</strong><span>Open Water SSI · Valencia</span></div></footer></article>
+<article class="adventure-review"><div class="adventure-review-top"><span class="review-stars" aria-label="5 de 5 estrellas">★★★★★</span><span class="adventure-review-example">Ejemplo editorial</span></div><blockquote>El pack de ferrata + kayak de regreso fue increíble. Salimos siendo cuatro amigos sin experiencia y llegamos como si lleváramos años haciendo esto. El guía se nota que conoce cada centímetro de esas paredes.</blockquote><footer><span class="adventure-review-number" aria-hidden="true">03</span><div><strong>Roberto y grupo</strong><span>Pack Costa Vertical · Murcia</span></div></footer></article>
+<article class="adventure-review"><div class="adventure-review-top"><span class="review-stars" aria-label="4 de 5 estrellas">★★★★☆</span><span class="adventure-review-example">Ejemplo editorial</span></div><blockquote>El e-foil fue una sesión épica. El instructor explica con mucha paciencia y las condiciones en Águilas ese día eran perfectas. Me esperaba que fuera mucho más difícil. Estoy enganchada.</blockquote><footer><span class="adventure-review-number" aria-hidden="true">04</span><div><strong>Carla T.</strong><span>E-foil iniciación · Alicante</span></div></footer></article>
+<article class="adventure-review"><div class="adventure-review-top"><span class="review-stars" aria-label="5 de 5 estrellas">★★★★★</span><span class="adventure-review-example">Ejemplo editorial</span></div><blockquote>Reservé una jornada de barranquismo acuático para mi cumpleaños y fue un éxito total. La organización fue perfecta: formulario previo, punto de encuentro claro y el guía cuidando cada detalle de seguridad.</blockquote><footer><span class="adventure-review-number" aria-hidden="true">05</span><div><strong>Daniela R.</strong><span>Barranquismo acuático · Almería</span></div></footer></article>
+<article class="adventure-review"><div class="adventure-review-top"><span class="review-stars" aria-label="5 de 5 estrellas">★★★★★</span><span class="adventure-review-example">Ejemplo editorial</span></div><blockquote>La ruta de kayak al amanecer fue justo lo que esperaba: tranquila, bien explicada y con un ritmo cómodo. La parte audiovisual quedó como recuerdo perfecto para enseñar a la familia.</blockquote><footer><span class="adventure-review-number" aria-hidden="true">06</span><div><strong>Lucía F.</strong><span>Kayak de mar · Caso editorial</span></div></footer></article>
+<article class="adventure-review"><div class="adventure-review-top"><span class="review-stars" aria-label="5 de 5 estrellas">★★★★★</span><span class="adventure-review-example">Ejemplo editorial</span></div><blockquote>Tres horas de kayak por las calas de Águilas sin ver a nadie más. Solo roca, mar y silencio. Una experiencia que no tiene precio y no se olvida.</blockquote><footer><span class="adventure-review-number" aria-hidden="true">07</span><div><strong>MARCOS T.</strong><span>Kayak de mar · Calas de Águilas</span></div></footer></article>
+<article class="adventure-review"><div class="adventure-review-top"><span class="review-stars" aria-label="5 de 5 estrellas">★★★★★</span><span class="adventure-review-example">Ejemplo editorial</span></div><blockquote>El bautismo de buceo fue una revelación. Empecé el Open Water a la semana siguiente. No esperaba que el fondo del mar fuera tan adictivo a 6 metros.</blockquote><footer><span class="adventure-review-number" aria-hidden="true">08</span><div><strong>JORGE P.</strong><span>Bautismo de buceo · Costa de Águilas</span></div></footer></article>
+<article class="adventure-review"><div class="adventure-review-top"><span class="review-stars" aria-label="5 de 5 estrellas">★★★★★</span><span class="adventure-review-example">Ejemplo editorial</span></div><blockquote>El salto lo regaló mi novia por mi cumpleaños. Pensaba que me iba a morir. En realidad fue lo más vivo que me he sentido en toda mi vida hasta ahora.</blockquote><footer><span class="adventure-review-number" aria-hidden="true">09</span><div><strong>ÁLVARO S.</strong><span>Paracaidismo tándem</span></div></footer></article></div><div class="adventure-review-workshop"><div class="adventure-review-invite"><span class="label">Tu experiencia importa</span><h3>Hay historias que merecen contarse.</h3><p>¿Qué momento te sorprendió? ¿Qué aprendiste? ¿Qué mejorarías? Una buena reseña cuenta lo que se sintió, con tus propias palabras.</p><div class="adventure-review-prompts"><span>El momento</span><span>El equipo</span><span>El recuerdo</span></div><p class="adventure-review-privacy">Prueba el formulario y revisa cómo queda tu relato. La demostración se muestra en esta página y no envía ni guarda datos.</p></div><div class="adventure-review-form"><h3>Escribe tu historia</h3><form id="review-demo">
+
+
+          <div class="form-grupo">
+            <label for="n3-field-1">Nombre</label><input id="n3-field-1" type="text" name="nombre" placeholder="Tu nombre" required="">
+          </div>
+          <div class="form-grupo">
+            <label for="n3-field-2">Actividad realizada</label><input id="n3-field-2" type="text" name="actividad" placeholder="Ej: Kayak de mar, bautismo de buceo..." required="">
+          </div>
+          <div class="form-grupo">
+            <label for="n3-field-3">Valoración</label><select id="n3-field-3" name="valoracion" required="">
+              <option value="">Selecciona...</option>
+              <option>★★★★★ Excepcional</option>
+              <option>★★★★☆ Muy buena</option>
+              <option>★★★☆☆ Buena</option>
+              <option>★★☆☆☆ Mejorable</option>
+            </select>
+          </div>
+          <div class="form-grupo">
+            <label for="n3-field-4">Tu comentario</label><textarea id="n3-field-4" name="comentario" rows="4" placeholder="Cuéntanos tu experiencia con el mayor detalle que quieras..." required=""></textarea>
+          </div>
+          <div>
+            <input id="review-consent" aria-label="Confirmar que es una reseña de demostración" type="checkbox" name="consentimiento" required="">
+            <label for="review-consent">Autorizo el uso de esta reseña dentro del contexto del proyecto y acepto su revisión editorial.</label>
+          </div>
+          <button type="submit" data-story-review="" class="btn btn-bosque">Previsualizar mi reseña →</button>
+        </form><article class="adventure-review adventure-review-preview" hidden="" aria-label="Vista previa de tu reseña"><div class="adventure-review-top"><span class="review-stars"></span><span class="adventure-review-example">Tu vista previa</span></div><blockquote></blockquote><footer><div><strong></strong><span></span></div></footer></article></div></div></div></section></details>
+<details class="site-depth home-explore-panel"><summary>Escuela nómada</summary><section class="bg-blanco">
+  <div class="container">
+    <div class="grid-2" style="align-items:center;gap:5rem;">
+      <div>
+    <span class="label">Formación técnica</span>
+        <h2 class="titulo">ESCUELA<br><span class="bosque">NÓMADA</span></h2>
+        <div class="divisor divisor-mar"></div>
+        <p class="texto" style="margin-bottom:1.5rem;">La Escuela Nómada es el corazón formativo del proyecto. Aquí la aventura se convierte en conocimiento, progresión técnica y credenciales de aprendizaje para explicar una escuela seria.</p>
+        <p class="texto" style="margin-bottom:2rem;">Open Water, Advanced, AFF, Parapente, Paramotor, Ferratas, Rápel, Técnicas de montaña. Progresión trazable y documentada con logbook digital.</p>
+        <a href="escuela.html" class="btn btn-bosque">Ver la Escuela Nómada →</a>
+      </div>
+      <div class="grid-2" style="gap:1.2rem;">
+        <div class="curso-card reveal"><span class="model-badge model-badge--partner" data-i18n="october.partner" data-i18n-title="october.partnerHelp" title="Con un centro especializado colaborador habilitado en la disciplina.">Con centro especializado</span><div class="curso-icono"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="8" width="14" height="8" rx="3"></rect><path d="M10 8v8M4 5h11m5-3v14c0 4-4 5-6 3"></path></svg></div><div class="curso-titulo">Buceo SSI</div><p class="curso-desc">Open Water hasta Divemaster. Progresión certificada en el litoral murciano.</p></div>
+        <div class="curso-card reveal"><span class="model-badge model-badge--own" data-i18n="october.own" data-i18n-title="october.ownHelp" title="Guiada por el equipo propio de Nómada Extremo.">Experiencia Nómada</span><div class="curso-icono"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10a9 9 0 0 1 18 0H3Zm0 0 7 9m11-9-7 9M8 10l3 9m5-9-3 9M12 2c-3 2-4 5-4 8m4-8c3 2 4 5 4 8"></path><rect x="10" y="19" width="4" height="3" rx="1"></rect></svg></div><div class="curso-titulo">AFF / Parapente</div><p class="curso-desc">Del salto tándem al vuelo autónomo. Progresión seria y real.</p></div>
+        <div class="curso-card reveal"><span class="model-badge model-badge--partner" data-i18n="october.partner" data-i18n-title="october.partnerHelp" title="Con un centro especializado colaborador habilitado en la disciplina.">Con centro especializado</span><div class="curso-icono"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 2v20M17 5h4M17 11h4M17 17h4M3 21l4-7 3 2 3 5"></path><circle cx="9" cy="5" r="2"></circle><path d="m8 9-2 5 5 2m-3-7 5 3 4-3"></path></svg></div><div class="curso-titulo">Línea Vertical</div><p class="curso-desc">Escalada, ferratas, rápel. Técnica progresiva con guía titulado.</p></div>
+        <div class="curso-card reveal"><span class="model-badge model-badge--own" data-i18n="october.own" data-i18n-title="october.ownHelp" title="Guiada por el equipo propio de Nómada Extremo.">Experiencia Nómada</span><div class="curso-icono"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m2 20 7-13 4 7 3-10 6 16H2Z"></path><path d="m6 13 3 2 3-3m2-2 2 2 2-2"></path></svg></div><div class="curso-titulo">Montaña Técnica</div><p class="curso-desc">Orientación, meteorología, bushcraft, supervivencia. Saber estar.</p></div>
+      </div>
+    </div>
+  </div>
+</section></details>
+<details class="site-depth home-explore-panel"><summary>El equipo</summary><section class="bg-gris home-team-roles">
+  <div class="container">
+    <span class="label">Equipo de referencia</span>
+    <h2 class="titulo">EL <span class="mar">EQUIPO</span></h2>
+    <div class="divisor"></div>
+    <p class="texto" style="margin-bottom:3rem;">En Nómada Extremo no existe el monitor todoterreno. Cada disciplina tiene su especialista de referencia, su material, su lectura del entorno y su forma de preparar al grupo.</p>
+    <div class="specialist-grid">
+      <article class="specialist-card reveal" data-role="01"><header class="specialist-card__header"><span class="specialist-card__index">01</span><h3 data-i18n="october.title1">Guía de montaña y vertical</h3><p class="specialist-card__role" data-i18n="october.staff">Plantilla Nómada</p><span class="model-badge model-badge--own" data-i18n="october.own" data-i18n-title="october.ownHelp" title="Guiada por el equipo propio de Nómada Extremo.">Experiencia Nómada</span></header><div class="specialist-card__body"><div class="specialist-block"><h4 data-i18n="october.qualification">Titulación requerida (orientativa)</h4><p data-i18n="october.qual1">Técnico Deportivo en Media Montaña y Técnico Deportivo en Escalada</p></div><div class="specialist-block"><h4 data-i18n="october.functions">Funciones</h4><p data-i18n="october.scope1">Guía rutas de montaña y prepara al grupo. Coordina escalada, ferratas y rápel técnico con un centro especializado colaborador.</p></div><div class="specialist-block specialist-block--safety"><h4 data-i18n="october.safety">Seguridad</h4><p data-i18n="october.risk1">Material y sistemas revisados, ratios adaptados, control meteorológico y plan de evacuación.</p></div><details class="specialist-details"><summary data-i18n="october.profile">Ver perfil profesional completo</summary><div class="specialist-details__content"><div class="specialist-block"><h4 data-i18n="october.functions">Funciones</h4><p data-i18n="october.scope1">Guía rutas de montaña y prepara al grupo. Coordina escalada, ferratas y rápel técnico con un centro especializado colaborador.</p></div><div class="specialist-block"><h4 data-i18n="october.requirements">Requisitos del puesto</h4><p data-i18n="october.qual1">Técnico Deportivo en Media Montaña y Técnico Deportivo en Escalada</p></div><div class="specialist-meaning"><h4 data-i18n="october.meaning">Qué significa esta titulación</h4><p>El título de Técnico Deportivo en Escalada y Media Montaña acredita formación específica para guiar, enseñar y gestionar actividades en montaña con criterios técnicos y de seguridad. La formación en autorrescate, instalación de reuniones y progresión por cuerda permite actuar en situaciones complejas en pared, ferratas o rápeles. Los primeros auxilios en zonas remotas refuerzan la capacidad de respuesta cuando una actividad se desarrolla lejos de asistencia inmediata.</p></div><div class="specialist-block specialist-block--safety"><h4 data-i18n="october.safety">Seguridad</h4><p>Revisión previa de material, ratios por dificultad, plan de evacuación, control meteorológico, protocolos de incidente en pared, comprobación cruzada de sistemas y adaptación de la actividad al nivel real del grupo.</p></div></div></details><div class="specialist-tags"><span>Montaña</span><span>Ferratas</span><span>Escalada</span><span>Rápel</span><span>Rescate vertical</span></div></div></article>
+      <article class="specialist-card specialist-card--collaborator reveal" data-role="02"><header class="specialist-card__header"><span class="specialist-card__index">02</span><h3 data-i18n="october.title2">Instructor/a de buceo</h3><p class="specialist-card__role" data-i18n="october.centre">Centro especializado colaborador</p><span class="model-badge model-badge--partner" data-i18n="october.partner" data-i18n-title="october.partnerHelp" title="Con un centro especializado colaborador habilitado en la disciplina.">Con centro especializado</span></header><div class="specialist-card__body"><div class="specialist-block"><h4 data-i18n="october.qualification">Titulación requerida (orientativa)</h4><p data-i18n="october.qual2">Instructor SSI (Open Water Instructor o superior) y React Right</p></div><div class="specialist-block"><h4 data-i18n="october.functions">Funciones</h4><p data-i18n="october.duty2">Imparte bautismos y cursos SSI, guía inmersiones y prepara el briefing de seguridad.</p></div><div class="specialist-block specialist-block--safety"><h4 data-i18n="october.safety">Seguridad</h4><p data-i18n="october.risk2">Briefing, control de aire y profundidad, parejas, oxígeno de emergencia y revisión del mar y del equipo.</p></div><details class="specialist-details"><summary data-i18n="october.profile">Ver perfil profesional completo</summary><div class="specialist-details__content"><div class="specialist-block"><h4 data-i18n="october.functions">Funciones</h4><p data-i18n="october.duty2">Imparte bautismos y cursos SSI, guía inmersiones y prepara el briefing de seguridad.</p></div><div class="specialist-block"><h4 data-i18n="october.requirements">Requisitos del puesto</h4><p data-i18n="october.qual2">Instructor SSI (Open Water Instructor o superior) y React Right</p></div><div class="specialist-meaning"><h4 data-i18n="october.meaning">Qué significa esta titulación</h4><p data-i18n="october.divingMeaning">SSI Open Water Instructor es la referencia formativa para enseñar buceo recreativo dentro de su ámbito. React Right aporta formación en respuesta a emergencias. Se verifican la habilitación vigente, el centro, los seguros y los protocolos antes de cada experiencia.</p></div><div class="specialist-block specialist-block--safety"><h4 data-i18n="october.safety">Seguridad</h4><p>Briefing completo, control de consumo de aire, flotabilidad, profundidad, parejas de buceo, plan de emergencia, botiquín, oxígeno, revisión del equipo, análisis del estado del mar y supervisión constante durante toda la inmersión.</p></div></div></details><div class="specialist-tags"><span>Buceo</span><span>SSI</span><span>Rescate</span><span>Nitrox</span><span>Profundidad</span></div></div></article>
+      <article class="specialist-card specialist-card--collaborator reveal" data-role="03"><header class="specialist-card__header"><span class="specialist-card__index">03</span><h3 data-i18n="october.title3">Instructor/a de vuelo y paracaidismo</h3><p class="specialist-card__role" data-i18n="october.centre">Centro especializado colaborador</p><span class="model-badge model-badge--partner" data-i18n="october.partner" data-i18n-title="october.partnerHelp" title="Con un centro especializado colaborador habilitado en la disciplina.">Con centro especializado</span></header><div class="specialist-card__body"><div class="specialist-block"><h4 data-i18n="october.qualification">Titulación requerida (orientativa)</h4><p data-i18n="october.qual3">Instructor de vuelo libre y paramotor habilitado; instructor tándem de paracaidismo con licencia en vigor</p></div><div class="specialist-block"><h4 data-i18n="october.functions">Funciones</h4><p data-i18n="october.duty3">Coordina vuelos y saltos, evalúa la meteorología y valida la preparación del pasajero.</p></div><div class="specialist-block specialist-block--safety"><h4 data-i18n="october.safety">Seguridad</h4><p data-i18n="october.risk3">Viento, zonas de despegue y aterrizaje, material y pasajero validados. Se aplaza si no hay margen seguro.</p></div><details class="specialist-details"><summary data-i18n="october.profile">Ver perfil profesional completo</summary><div class="specialist-details__content"><div class="specialist-block"><h4 data-i18n="october.functions">Funciones</h4><p data-i18n="october.duty3">Coordina vuelos y saltos, evalúa la meteorología y valida la preparación del pasajero.</p></div><div class="specialist-block"><h4 data-i18n="october.requirements">Requisitos del puesto</h4><p data-i18n="october.qual3">Instructor de vuelo libre y paramotor habilitado; instructor tándem de paracaidismo con licencia en vigor</p></div><div class="specialist-meaning"><h4 data-i18n="october.meaning">Qué significa esta titulación</h4><p>La formación como instructor de parapente, paramotor y paratrike acredita capacidad para enseñar progresión de vuelo, control de vela, despegues, aterrizajes y seguridad aérea. La habilitación biplaza permite realizar vuelos con pasajero. La formación SIV trabaja la simulación de incidencias en vuelo, como plegadas o maniobras de recuperación, en un entorno controlado. USPA Coach/AFF está relacionado con la formación en paracaidismo, especialmente en progresión de alumnos y saltos supervisados.</p></div><div class="specialist-block specialist-block--safety"><h4 data-i18n="october.safety">Seguridad</h4><p>Decide la viabilidad de cada actividad según viento, rachas, térmicas, zona de despegue, aterrizaje, peso del pasajero, material, experiencia previa y margen operativo. Si las condiciones no son claras, la actividad se aplaza.</p></div></div></details><div class="specialist-tags"><span>Aire</span><span>Parapente</span><span>Paramotor</span><span>Paracaidismo</span><span>SIV</span></div></div></article>
+      <article class="specialist-card reveal" data-role="04"><header class="specialist-card__header"><span class="specialist-card__index">04</span><h3 data-i18n="october.title4">Guía de mar y costa</h3><p class="specialist-card__role" data-i18n="october.staff">Plantilla Nómada</p><span class="model-badge model-badge--own" data-i18n="october.own" data-i18n-title="october.ownHelp" title="Guiada por el equipo propio de Nómada Extremo.">Experiencia Nómada</span></header><div class="specialist-card__body"><div class="specialist-block"><h4 data-i18n="october.qualification">Titulación requerida (orientativa)</h4><p data-i18n="october.qual4">Técnico Deportivo en Piragüismo o monitor de kayak de mar, y socorrista en medio acuático</p></div><div class="specialist-block"><h4 data-i18n="october.functions">Funciones</h4><p data-i18n="october.scope4">Guía kayak de mar, paddle surf y snorkel, interpreta el litoral y adapta las rutas al grupo. Coordina el coasteering con un centro especializado colaborador.</p></div><div class="specialist-block specialist-block--safety"><h4 data-i18n="october.safety">Seguridad</h4><p data-i18n="october.risk4">Viento, oleaje, corrientes y salidas revisados; flotación, comunicación y regreso alternativo preparados.</p></div><details class="specialist-details"><summary data-i18n="october.profile">Ver perfil profesional completo</summary><div class="specialist-details__content"><div class="specialist-block"><h4 data-i18n="october.functions">Funciones</h4><p data-i18n="october.scope4">Guía kayak de mar, paddle surf y snorkel, interpreta el litoral y adapta las rutas al grupo. Coordina el coasteering con un centro especializado colaborador.</p></div><div class="specialist-block"><h4 data-i18n="october.requirements">Requisitos del puesto</h4><p data-i18n="october.qual4">Técnico Deportivo en Piragüismo o monitor de kayak de mar, y socorrista en medio acuático</p></div><div class="specialist-meaning"><h4 data-i18n="october.meaning">Qué significa esta titulación</h4><p>La formación como guía de kayak de mar e instructora SUP acredita conocimientos para dirigir actividades en entornos costeros, controlar grupos y adaptar la ruta al nivel del participante. El socorrismo acuático y el rescate en aguas abiertas son claves para actuar ante caídas, fatiga, corrientes o problemas durante la actividad. La navegación costera y la meteorología marítima permiten interpretar viento, oleaje, accesos, puntos de salida y cambios de condiciones en el mar.</p></div><div class="specialist-block specialist-block--safety"><h4 data-i18n="october.safety">Seguridad</h4><p>Análisis de viento, oleaje, corrientes, accesos, salidas del agua, puntos de escape, temperatura, nivel del grupo, material de flotación, comunicación y alternativas de regreso.</p></div></div></details><div class="specialist-tags"><span>Kayak</span><span>SUP</span><span>Coasteering</span><span>Snorkel</span><span>Rescate acuático</span></div></div></article>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="equipo.html" class="btn btn-outline">Ver el equipo completo →</a>
+    </div>
+  </div>
+</section></details>
+<details class="site-depth home-explore-panel"><summary>Nómada naturista</summary><section class="bg-cielo">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;" class="grid-2">
+      <div>
+        <span class="label label-bosque">Línea específica y diferenciada</span>
+        <h2 class="titulo">NÓMADA<br><span class="bosque">NATURISTA</span></h2>
+        <div class="divisor"></div>
+        <p class="texto" style="margin-bottom:1.5rem;">Una propuesta puntual, filosófica y completamente diferente. Un día al mes en entornos seleccionados, con claridad total, respeto absoluto y conexión genuina con la naturaleza.</p>
+        <a href="naturistas.html" class="btn btn-bosque">Conocer la línea naturista →</a>
+      </div>
+      <div class="grid-4" style="gap:0.8rem;">
+        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);" class="home-naturist-activity"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 14c4 5 14 5 18 0M5 14h14M5 3l14 15M4 2l3 1-2 3-2-2zm13 15 2-2 2 3-2 2z"></path></svg><br>Kayak</div>
+        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);" class="home-naturist-activity"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="5" r="2"></circle><path d="M12 9v6m-5-4 5-2 5 2M7 11l-3 3m13-3 3 3M12 15c-3-3-9 2-6 4h12c3-2-3-7-6-4Z"></path></svg><br>Yoga</div>
+        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);" class="home-naturist-activity"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="15" cy="6" r="2"></circle><path d="m5 12 5-4 5 4m-5-4-3-4-4 1M2 17c2-2 4-2 6 0s4 2 6 0 4-2 8 0M2 21c2-2 4-2 6 0s4 2 6 0 4-2 8 0"></path></svg><br>Natación</div>
+        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);" class="home-naturist-activity"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="8" width="14" height="8" rx="3"></rect><path d="M10 8v8M4 5h11m5-3v14c0 4-4 5-6 3"></path></svg><br>Snorkel</div>
+        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);" class="home-naturist-activity"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 20c4-2 16-2 20 0M12 9v5l-3 4m3-4 3 4m-3-9 5 2 3 7M17 3v18"></path><circle cx="12" cy="5" r="2"></circle></svg><br>SUP</div>
+        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);" class="home-naturist-activity"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="13" cy="4" r="2"></circle><path d="m12 8-2 6 4 3 1 5m-5-8-4 7m5-11 5 2 3-3m0 0v13M9 8 6 7l-2 6 4 1"></path></svg><br>Senderismo</div>
+        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);" class="home-naturist-activity"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"></circle><path d="M12 3v9l8 4M12 12l-8 4M5 6c1 3 4 5 7 6m6-7c-2 2-3 5-3 9M8 20c3-1 6-3 7-6"></path></svg><br>Voleibol</div>
+        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);" class="home-naturist-activity"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="6" r="2"></circle><path d="M12 10v5m-6-2 6-3 6 3M6 13l-3 2m15-2 3 2M12 15c-4-3-9 2-6 4h12c3-2-2-7-6-4Z"></path></svg><br>Meditación</div>
+      </div>
+    </div>
+  </div>
+</section></details>
+<details class="site-depth home-explore-panel"><summary>Bonos regalo</summary><section class="bg-blanco">
+  <div class="container" style="text-align:center;">
+    <span class="label">El regalo que no se olvida</span>
+    <h2 class="titulo">BONOS<br><span class="arena">REGALO</span></h2>
+    <div class="divisor" style="margin:1.5rem auto;"></div>
+    <p class="texto" style="margin:0 auto 3rem;">Una aventura pensada para alguien especial. Explora las propuestas de bono de este proyecto académico: importes de referencia, sin venta ni cobro real.</p>
+    <div class="grid-4"><article class="bono-card "><div class="gift-card-top"><span class="gift-card-code">NÓMADA / 01</span><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 20 6-12 4 7 3-10 5 15Z"/></svg></div><h3 class="card-titulo">Primera aventura</h3><strong>50 €</strong><p class="card-desc">Un primer contacto con las experiencias del catálogo.</p><a class="btn btn-mar" href="packs.html#bonos">Ver bono de referencia →</a></article><article class="bono-card "><div class="gift-card-top"><span class="gift-card-code">NÓMADA / 02</span><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16v12H4zM8 8V5h8v3M4 13h16M10 13v3h4v-3"/></svg></div><h3 class="card-titulo">Aventura libre</h3><strong>100 €</strong><p class="card-desc">Un importe de referencia para elegir una experiencia.</p><a class="btn btn-mar" href="packs.html#bonos">Ver bono de referencia →</a></article><article class="bono-card popular"><div class="gift-card-top"><span class="gift-card-code">NÓMADA / 03</span><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 3 6 6 1-4 5 1 6-6-3-6 3 1-6-4-5 6-1Z"/></svg></div><h3 class="card-titulo">Aventura premium</h3><strong>200 €</strong><p class="card-desc">Una propuesta combinada o con recuerdo audiovisual.</p><a class="btn btn-mar" href="packs.html#bonos">Ver bono de referencia →</a></article><article class="bono-card "><div class="gift-card-top"><span class="gift-card-code">NÓMADA / 04</span><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="m8 12 3 3 5-6"/></svg></div><h3 class="card-titulo">A tu medida</h3><strong>Importe a elegir</strong><p class="card-desc">Una propuesta ajustada a la persona y al presupuesto.</p><a class="btn btn-mar" href="packs.html#bonos">Ver bono de referencia →</a></article></div>
+  </div>
+</section></details>
+<details class="site-depth home-explore-panel"><summary>Graba tu aventura</summary><section class="bg-noche">
+  <div class="container">
+    <div class="grid-2" style="gap:4rem;align-items:center;">
+      <div>
+        <span class="label label-blanco">Captura · Edita · Revive</span>
+        <h2 class="titulo"><span class="blanco">GRABA TU</span><br><span class="arena">AVENTURA</span></h2>
+        <div class="divisor"></div>
+        <p style="font-family:var(--serif);font-style:italic;font-size:1.15rem;color:rgba(200,189,181,0.8);margin-bottom:1.5rem;line-height:1.8;">"La adrenalina dura segundos. El vídeo dura para siempre."</p>
+        <p style="font-size:0.88rem;color:rgba(200,189,181,0.65);line-height:1.85;margin-bottom:2rem;">Insta360 X5, DJI Osmo Action 6, GoPro MISSION 1 PRO, Insta360 GO Ultra, dron 4K estabilizado y FPV sujeto a normativa AESA. Packs desde recuerdo familiar hasta producción tipo documental corto.</p>
+        <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+          <a href="audiovisual.html#packs-audiovisuales" class="btn btn-arena">Ver packs audiovisuales</a>
+          <a href="audiovisual.html#precios" class="btn btn-outline-blanco">Ver precios →</a>
+          <a href="reservas.html#audiovisual" class="btn btn-outline-blanco">Añadir a mi reserva</a>
+        </div>
+      </div>
+      <div class="noext-feature-panel reveal">
+        <img class="noext-visual" src="assets/images/community-oficial-2026/pack-audiovisual-noext.webp" alt="Pack audiovisual de Nómada Extremo" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section></details>
+<details class="site-depth home-explore-panel"><summary>Blog nómada</summary><section class="bg-crema">
+  <div class="container">
+    <span class="label">Ideas, técnica y aventura</span>
+    <h2 class="titulo">BLOG<br><span class="mar">NÓMADA</span></h2>
+    <div class="divisor"></div>
+    <div class="grid-3" style="margin-top:3rem;">
+      <div class="blog-card reveal">
+        <div class="blog-img" style="background-image:url('assets/images/actividades/familia-montana.jpg');height:195px;background-size:cover;background-position:center;"></div>
+        <div class="blog-cuerpo">
+          <div class="blog-cat">Montaña</div>
+          <div class="blog-titulo">Las 5 rutas ocultas de Águilas que nadie conoce</div>
+          <p class="blog-extracto">El litoral de Águilas esconde senderos que conectan calas vírgenes, puntos geológicos únicos y miradores que te dejan sin palabras.</p>
+          <div class="blog-fecha">Marzo 2025</div>
+        </div>
+      </div>
+      <div class="blog-card reveal">
+        <div class="blog-img" style="background-image:url('assets/images/actividades/ficha-open-water.jpg');height:195px;background-size:cover;background-position:center;"></div>
+        <div class="blog-cuerpo">
+          <div class="blog-cat">Buceo</div>
+          <div class="blog-titulo">Aprender a bucear en el Mediterráneo: por qué y cómo</div>
+          <p class="blog-extracto">El Mediterráneo no es el Mar Rojo, pero tiene su propia magia. Posidonias, pecios y fauna local te esperan a pocos metros.</p>
+          <div class="blog-fecha">Febrero 2025</div>
+        </div>
+      </div>
+      <div class="blog-card reveal">
+        <div class="blog-img" style="background-image:url('assets/images/actividades/ficha-parapente-biplaza.jpg');height:195px;background-size:cover;background-position:center;"></div>
+        <div class="blog-cuerpo">
+          <div class="blog-cat">Aire</div>
+          <div class="blog-titulo">Paramotor en Águilas: el litoral perfecto para volar</div>
+          <p class="blog-extracto">Orografía, clima y espacio abierto. Águilas tiene las condiciones ideales para el vuelo motorizado ultraligero.</p>
+          <div class="blog-fecha">Enero 2025</div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="blog.html" class="btn btn-outline">Ver todos los artículos →</a>
+    </div>
+  </div>
+</section></details></div></details>
+<details class="home-explore-group"><summary>Preparar mi actividad</summary><div class="home-explore-group-content"><details class="n3-home-details home-explore-panel"><summary>Preparación y material</summary><section class="bg-blanco" id="material-preparacion-home">
+  <div class="container">
+    <span class="label">Material y preparación</span>
+    <h2 class="titulo">LLEGAR LISTOS<br><span class="arena">CAMBIA TODO</span></h2>
+    <div class="divisor"></div>
+    <div class="material-prep-grid">
+      <article class="material-prep-card">
+        <div class="prep-heading"><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 20 6-12 4 7 3-10 5 15Z"/></svg><span class="material-prep-card__number">01</span></div>
+        <h3>Aporta Nómada Extremo</h3>
+        <p>Material técnico indicado, revisión, briefing, organización de grupo y criterio de seguridad.</p>
+      </article>
+      <article class="material-prep-card">
+        <div class="prep-heading"><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16v12H4zM8 8V5h8v3M4 13h16M10 13v3h4v-3"/></svg><span class="material-prep-card__number">02</span></div>
+        <h3>Trae el participante</h3>
+        <p>Ropa adecuada, agua, protección solar, calzado, documentación y medicación personal si procede.</p>
+      </article>
+      <article class="material-prep-card">
+        <div class="prep-heading"><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="m8 12 3 3 5-6"/></svg><span class="material-prep-card__number">03</span></div>
+        <h3>Se revisa antes</h3>
+        <p>Meteo, accesos, permisos, ratios, condiciones del entorno, nivel y alternativas.</p>
+      </article>
+      <article class="material-prep-card">
+        <div class="prep-heading"><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="7" r="3"/><circle cx="17" cy="9" r="2"/><path d="M3 21v-6a5 5 0 0 1 10 0v6m2 0v-5a4 4 0 0 1 6 0v5"/></svg><span class="material-prep-card__number">04</span></div>
+        <h3>Aventura familiar</h3>
+        <p>Planes suaves para familias, parejas, cumpleaños y primeras veces con edad adecuada.</p>
+      </article>
+      <article class="material-prep-card">
+        <div class="prep-heading"><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 3 6 6 1-4 5 1 6-6-3-6 3 1-6-4-5 6-1Z"/></svg><span class="material-prep-card__number">05</span></div>
+        <h3>Aventura premium</h3>
+        <p>Privados, amanecer, atardecer, reportaje audiovisual, pareja, familia y grupos reducidos.</p>
+      </article>
+      <article class="material-prep-card material-prep-card--statement">
+        <div class="prep-heading"><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 8 3v6c0 5-8 9-8 9S4 17 4 12V6zM8 12l3 3 5-6"/></svg><span class="material-prep-card__number">06</span></div>
+        <h3>No hacemos locuras</h3>
+        <p>La diferencia no está en hacer algo peligroso. Está en convertir una experiencia intensa en algo preparado, medido y memorable.</p>
+      </article>
+    </div>
+  </div>
+</section></details>
+<details class="n3-home-details home-explore-panel"><summary data-i18n="october.seasons">Explorar las temporadas</summary><section class="bg-crema" id="temporadas-home"><div class="container"><span class="label">Temporadas</span><h2 class="titulo">EL AÑO<br><span class="mar">TIENE RITMO</span></h2><div class="divisor"></div><p class="texto season-intro">Muchas aventuras se pueden disfrutar todo el año. La estación orienta el plan; el mar, el viento, la temperatura y el nivel del grupo deciden el mejor momento.</p><div class="grid-4" style="gap:1rem;"><div class="card"><div class="card-titulo">Invierno</div><div class="season-activity-grid"><div><h3>Mar y costa</h3><p class="card-desc">Kayak y SUP en aguas resguardadas, snorkel y buceo con protección térmica, y formación acuática cuando el mar y la temperatura acompañan.</p></div><div><h3>Montaña y vertical</h3><p class="card-desc">Senderismo, trekking, orientación, BTT, escalada, rápel, vías ferratas, barrancos secos y bushcraft en jornadas de tiempo estable.</p></div><div><h3>Aire y formación</h3><p class="card-desc">Parapente, paramotor, paratrike y paracaidismo en ventanas meteorológicas adecuadas. Técnica, seguridad, material y progresión en la Escuela Nómada.</p></div></div></div><div class="card"><div class="card-titulo">Primavera</div><div class="season-activity-grid"><div><h3>Mar y costa</h3><p class="card-desc">Kayak, SUP, snorkel, buceo, coasteering, e-foil y primeras sesiones de surf. Wingfoil, windsurf y kitesurf según viento y nivel.</p></div><div><h3>Montaña y río</h3><p class="card-desc">Senderismo, trekking, BTT, escalada, ferratas, rápel, espeleología, rafting y barrancos acuáticos con caudal y accesos adecuados.</p></div><div><h3>Aire y experiencias</h3><p class="card-desc">Parapente, paramotor, paratrike y paracaidismo según condiciones. Packs de mar y montaña, formación, fotografía y salidas de grupo.</p></div></div></div><div class="card"><div class="card-titulo">Verano</div><div class="season-activity-grid"><div><h3>Mar y costa</h3><p class="card-desc">Kayak al amanecer o al atardecer, SUP, snorkel, buceo, coasteering, surf, e-foil y jetsurf. Wingfoil, windsurf y kitesurf con viento adecuado.</p></div><div><h3>Montaña y río</h3><p class="card-desc">Senderismo temprano, rutas al atardecer, BTT y orientación evitando las horas de calor. Escalada en sombra, espeleología, rafting y barrancos acuáticos aptos.</p></div><div><h3>Aire y experiencias</h3><p class="card-desc">Parapente, paramotor, paratrike y paracaidismo cuando las condiciones lo permiten. Multiaventura, escuela, salidas naturistas y recuerdos audiovisuales.</p></div></div></div><div class="card"><div class="card-titulo">Otoño</div><div class="season-activity-grid"><div><h3>Mar y costa</h3><p class="card-desc">Kayak, SUP, snorkel, buceo y coasteering mientras la temperatura y el mar acompañan. Surf y deportes de viento según oleaje, viento y nivel.</p></div><div><h3>Montaña y vertical</h3><p class="card-desc">Senderismo, trekking, BTT, escalada, vías ferratas, rápel, espeleología, vivac y bushcraft. Barrancos y rafting tras revisar lluvia y caudal.</p></div><div><h3>Aire y formación</h3><p class="card-desc">Parapente, paramotor, paratrike y paracaidismo en ventanas de tiempo estable. Progresión técnica, packs combinados y salidas fotográficas.</p></div></div></div></div><p class="season-planning-note">Las salidas de aire, agua y vertical se ajustan a las condiciones del día y al criterio del especialista. Siempre hay una alternativa para adaptar la experiencia.</p></div></section></details>
+<details class="n3-home-details home-explore-panel"><summary>Criterios de realismo y seguridad</summary><section class="bg-crema" id="garantia-nomada-ampliada"><div class="container"><span class="label">Garantía Nómada</span><h2 class="titulo">REALISMO,<br><span class="mar">SEGURIDAD Y MEMORIA</span></h2><div class="divisor"></div><div class="home-assurance"><article><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="m8 12 3 3 5-6"/></svg><h3>Antes de salir</h3><p>Comunicación previa · Guías titulados · Briefing claro</p></article><article><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16v12H4zM8 8V5h8v3M4 13h16M10 13v3h4v-3"/></svg><h3>Equipo y entorno</h3><p>Material revisado · Lectura meteorológica · Ratios de grupo</p></article><article><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 8 3v6c0 5-8 9-8 9S4 17 4 12V6zM8 12l3 3 5-6"/></svg><h3>Durante la experiencia</h3><p>Seguridad · Respeto ambiental · Planes alternativos</p></article><article><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 3 6 6 1-4 5 1 6-6-3-6 3 1-6-4-5 6-1Z"/></svg><h3>Lo que queda</h3><p>Audiovisual · Cierre de experiencia · Mejora continua</p></article></div></div></section></details>
+<details class="site-depth home-explore-panel"><summary>La garantía nómada</summary><section class="bg-crema home-guarantee">
+  <div class="container" style="text-align:center;">
+    <span class="label" style="justify-content:center;">Por qué elegir Nómada Extremo</span>
+    <h2 class="titulo" style="margin-bottom:3rem;">LA <span class="mar">GARANTÍA</span><br>NÓMADA</h2>
+    <div class="sellos" style="justify-content:center;">
+      <div class="sello"><div class="sello-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6z"></path><path d="m8 12 3 3 5-6"></path></svg></div><div><strong>Seguridad real</strong><span>No aparente. Sistema integral.</span></div></div>
+      <div class="sello"><div class="sello-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="5"></circle><path d="m8 12-2 9 6-3 6 3-2-9"></path></svg></div><div><strong>Guías titulados</strong><span>Especialistas por disciplina.</span></div></div>
+      <div class="sello"><div class="sello-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="2" width="12" height="20" rx="3"></rect><path d="M10 5h4m-3 14h2m-4-8 2 2 4-4"></path></svg></div><div><strong>Solicitar experiencia digital</strong><span>Solicitud guiada y seguimiento claro.</span></div></div>
+      <div class="sello"><div class="sello-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="5" width="14" height="17" rx="2"></rect><rect x="9" y="2" width="6" height="5" rx="1"></rect><path d="m8 13 2 2 5-5m-7 8h8"></path></svg></div><div><strong>Material revisado</strong><span>Check técnico antes de cada salida.</span></div></div>
+      <div class="sello"><div class="sello-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 3C8 3 3 8 5 18c10 2 15-3 15-15Z"></path><path d="M3 21 16 8M8 16v-5m0 5h5"></path></svg></div><div><strong>Respeto al entorno</strong><span>Aventura responsable siempre.</span></div></div>
+      <div class="sello"><div class="sello-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="9" width="18" height="4" rx="1"></rect><path d="M5 13v8h14v-8M12 9v12"></path><path d="M12 9C4 9 4 2 8 3c3 0 4 6 4 6s1-6 4-6c4-1 4 6-4 6Z"></path></svg></div><div><strong>Bonos regalo</strong><span>La aventura más memorable.</span></div></div>
+    </div>
+  </div>
+</section></details></div></details>
+<details class="home-explore-group"><summary>Conocer el proyecto</summary><div class="home-explore-group-content"><!-- gmn:home:start -->
 <details class="site-depth home-explore-panel"><summary>Formación y proyecto académico</summary><section class="n3 n3-home-intro n3-section"><div class="n3-shell"><span class="n3-kicker">NÓMADA EXTREMO 3.0 · Curso 2026-2027</span><div class="n3"><span class="n3-badge">Presente · 2.º GMN en curso</span><h2>2.º GMN · 2026-2027</h2><p>Etapa Intermodular en el IES Europa de Águilas (Murcia). Inicio: <time datetime="2026-09-14">14 de septiembre de 2026</time>.</p><p>9 módulos + Fase de Empresa II. Las diez áreas académicas están contempladas; conexiones con el proyecto en desarrollo.</p><div class="n3-actions"><a class="n3-button" href="segundo-gmn.html">Conocer el curso</a><a class="n3-button n3-button--quiet" href="proyecto-intermodular.html">Proyecto Intermodular →</a></div></div><div class="n3-grid">
 <article class="n3-layer"><span class="n3-badge">● Presente · real / actual</span><h3>Lo que existe hoy</h3><p>Diego David, la formación GMN, la historia de primero y el inicio confirmado de segundo. Aprendizajes y evidencias se incorporan cuando se documentan.</p><a href="formacion-gmn.html">Conocer la formación →</a></article>
 <article class="n3-layer"><span class="n3-badge n3-badge--prototype">◐ Prototipo · académico</span><h3>Lo que estamos diseñando</h3><p>Catálogo, Escuela, reservas simuladas, packs, gestión, material y Logbook. Sistemas de demostración sin servicios comerciales operativos.</p><a href="proyecto-intermodular.html#matriz">Ver cómo se conecta →</a></article>
 <article class="n3-layer"><span class="n3-badge n3-badge--future">○ Futuro · visión / estudio</span><h3>Lo que podría llegar</h3><p>Base, Campamento, Hangar, flota, viajes e infraestructura. Ideas sujetas a investigación, recursos y validación, sin aperturas anunciadas.</p><a href="horizonte-nomada.html">Explorar el horizonte →</a></article></div></div></section></details>
 <!-- gmn:home:end -->
+<details class="n3-home-details home-explore-panel"><summary>Cómo se organiza el sistema Nómada</summary><section class="bg-crema" id="sistema-nomada-home">
+  <div class="container">
+    <span class="label">Proyecto académico completo</span>
+    <h2 class="titulo">SISTEMA<br><span class="mar">NÓMADA EXTREMO</span></h2>
+    <div class="divisor"></div>
+    <p class="texto" style="max-width:860px;margin-bottom:2rem;">La web se organiza como una marca de aventura mediterránea completa: catálogo, seguridad, material, zonas, escuela, comunidad digital, audiovisual, sostenibilidad, grupos, bonos y solicitudes de experiencia.</p>
+    <div class="process-grid">
+      <article class="process-card"><span class="step">Mapa</span><h3>Proyecto completo</h3><p>Índice maestro de aventura, formación, comunidad, gestión, contenido y marca.</p><a href="proyecto-completo.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Explorar mapa</a></article><article class="process-card"><span class="step">Flujo</span><h3>Cómo funciona</h3><p>Elección, requisitos, solicitud, briefing, formularios, check-in, desarrollo y logbook.</p><a href="como-funciona.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver proceso</a></article>
+      <article class="process-card"><span class="step">Riesgo</span><h3>Seguridad Nómada</h3><p>Evaluación previa, material, meteo, ratios, validaciones y criterios de cancelación.</p><a href="seguridad.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver seguridad</a></article>
+      <article class="process-card"><span class="step">Territorio</span><h3>Mapa de zonas</h3><p>Águilas como base y la Región de Murcia como escenario de costa, montaña, agua y aire.</p><a href="zonas.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver zonas</a></article>
+      <article class="process-card"><span class="step">Digital</span><h3>Logbook y App</h3><p>Perfil, XP, insignias, retos, álbum audiovisual, credenciales QR y comunidad no competitiva.</p><a href="logbook.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver logbook</a></article>
+      <article class="process-card"><span class="step">Equipo</span><h3>Material</h3><p>Qué aportaría la empresa, qué trae el participante y qué se revisa antes de salir.</p><a href="material.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver material</a></article>
+      <article class="process-card"><span class="step">Impacto</span><h3>Sostenibilidad</h3><p>No dejar rastro, posidonia, flora, fauna, residuos, grupos reducidos y educación ambiental.</p><a href="sostenibilidad.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver impacto</a></article>
+      <article class="process-card"><span class="step">Colectivos</span><h3>Grupos y empresas</h3><p>Centros educativos, team building, familias y experiencias privadas en formato a medida.</p><a href="grupos.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver grupos</a></article>
+      <article class="process-card"><span class="step">Dudas</span><h3>FAQ rápida</h3><p>Reservas, pagos, seguros, formularios, menores, experiencia previa y línea naturista.</p><a href="faq.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver FAQ</a></article>
+      <article class="process-card"><span class="step">Top</span><h3>Fichas destacadas</h3><p>Doce actividades principales con detalles de nivel, material, riesgos y condiciones.</p><a href="actividades.html#top-fichas" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver fichas</a></article>
+    </div>
+  </div>
+</section></details>
+<details class="site-depth home-explore-panel"><summary>Método nómada</summary><section class="bg-blanco" id="metodo-nomada">
+  <div class="container">
+    <span class="label">Sistema de trabajo conceptual</span>
+    <h2 class="titulo">MÉTODO<br><span class="mar">NÓMADA</span></h2>
+    <div class="divisor"></div>
+    <p class="subtitulo-editorial" style="max-width:760px;margin-bottom:1rem;">No hacemos locuras. Diseñamos aventuras con cabeza.</p>
+    <p class="texto" style="max-width:920px;margin-bottom:2rem;">La adrenalina no consiste en improvisar. Consiste en preparar bien una experiencia intensa para vivirla con seguridad, lectura del entorno, material adecuado y respeto por los límites del grupo. Esta metodología forma parte del proyecto académico y muestra cómo podría estructurarse una operación profesional futura.</p>
+    <div class="process-grid">
+      <article class="process-card"><span class="step">01</span><h3>Análisis del grupo</h3><p>Edad, nivel, experiencia, condición física, miedos, expectativas y necesidades especiales.</p></article>
+      <article class="process-card"><span class="step">02</span><h3>Lectura del entorno</h3><p>Meteorología, mar, viento, oleaje, temperatura, accesos, escapatorias, terreno y normativa.</p></article>
+      <article class="process-card"><span class="step">03</span><h3>Briefing y material</h3><p>Qué se va a hacer, qué no se va a hacer, cómo actuar, qué material se revisa y qué aporta cada persona.</p></article>
+      <article class="process-card"><span class="step">04</span><h3>Desarrollo de la actividad</h3><p>Ritmo adaptado, comunicación clara, puntos de control, seguridad y disfrute.</p></article>
+      <article class="process-card"><span class="step">05</span><h3>Registro audiovisual</h3><p>Fotos, vídeo, POV o 360 si procede, siempre sin entorpecer la seguridad.</p></article>
+      <article class="process-card"><span class="step">06</span><h3>Cierre y Logbook</h3><p>Resumen de la experiencia, aprendizajes, valoración y recuerdo final.</p></article>
+      <article class="process-card"><span class="step">07</span><h3>Mejora continua</h3><p>Feedback del grupo, revisión interna y ajustes para futuras actividades.</p></article>
+    </div>
+    <p class="texto" style="font-size:0.82rem;color:var(--gris-calido);margin-top:1.5rem;">Método base de diseño y organización: seguridad, lectura del entorno, material adecuado, límites del grupo y mejora continua antes que improvisación.</p>
+  </div>
+</section></details></div></details></section>
 <p class="model-legend container" data-i18n="october.legend">Experiencia Nómada: equipo propio · Con centro especializado: profesional colaborador habilitado · Horizonte: desarrollo futuro.</p>
 
 <!-- ═══ STATS ═══ -->
@@ -229,93 +494,19 @@
 
 
 <!-- ═══ INTRODUCCIÓN MARCA ═══ -->
-<details class="n3-home-details home-explore-panel"><summary>Cómo se organiza el sistema Nómada</summary><section class="bg-crema" id="sistema-nomada-home">
-  <div class="container">
-    <span class="label">Proyecto académico completo</span>
-    <h2 class="titulo">SISTEMA<br><span class="mar">NÓMADA EXTREMO</span></h2>
-    <div class="divisor"></div>
-    <p class="texto" style="max-width:860px;margin-bottom:2rem;">La web se organiza como una marca de aventura mediterránea completa: catálogo, seguridad, material, zonas, escuela, comunidad digital, audiovisual, sostenibilidad, grupos, bonos y solicitudes de experiencia.</p>
-    <div class="process-grid">
-      <article class="process-card"><span class="step">Mapa</span><h3>Proyecto completo</h3><p>Índice maestro de aventura, formación, comunidad, gestión, contenido y marca.</p><a href="proyecto-completo.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Explorar mapa</a></article><article class="process-card"><span class="step">Flujo</span><h3>Cómo funciona</h3><p>Elección, requisitos, solicitud, briefing, formularios, check-in, desarrollo y logbook.</p><a href="como-funciona.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver proceso</a></article>
-      <article class="process-card"><span class="step">Riesgo</span><h3>Seguridad Nómada</h3><p>Evaluación previa, material, meteo, ratios, validaciones y criterios de cancelación.</p><a href="seguridad.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver seguridad</a></article>
-      <article class="process-card"><span class="step">Territorio</span><h3>Mapa de zonas</h3><p>Águilas como base y la Región de Murcia como escenario de costa, montaña, agua y aire.</p><a href="zonas.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver zonas</a></article>
-      <article class="process-card"><span class="step">Digital</span><h3>Logbook y App</h3><p>Perfil, XP, insignias, retos, álbum audiovisual, credenciales QR y comunidad no competitiva.</p><a href="logbook.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver logbook</a></article>
-      <article class="process-card"><span class="step">Equipo</span><h3>Material</h3><p>Qué aportaría la empresa, qué trae el participante y qué se revisa antes de salir.</p><a href="material.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver material</a></article>
-      <article class="process-card"><span class="step">Impacto</span><h3>Sostenibilidad</h3><p>No dejar rastro, posidonia, flora, fauna, residuos, grupos reducidos y educación ambiental.</p><a href="sostenibilidad.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver impacto</a></article>
-      <article class="process-card"><span class="step">Colectivos</span><h3>Grupos y empresas</h3><p>Centros educativos, team building, familias y experiencias privadas en formato a medida.</p><a href="grupos.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver grupos</a></article>
-      <article class="process-card"><span class="step">Dudas</span><h3>FAQ rápida</h3><p>Reservas, pagos, seguros, formularios, menores, experiencia previa y línea naturista.</p><a href="faq.html" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver FAQ</a></article>
-      <article class="process-card"><span class="step">Top</span><h3>Fichas destacadas</h3><p>Doce actividades principales con detalles de nivel, material, riesgos y condiciones.</p><a href="actividades.html#top-fichas" class="btn btn-mar" style="font-size:0.65rem;margin-top:1rem;">Ver fichas</a></article>
-    </div>
-  </div>
-</section></details>
-
-<details class="site-depth home-explore-panel"><summary>Método nómada</summary><section class="bg-blanco" id="metodo-nomada">
-  <div class="container">
-    <span class="label">Sistema de trabajo conceptual</span>
-    <h2 class="titulo">MÉTODO<br><span class="mar">NÓMADA</span></h2>
-    <div class="divisor"></div>
-    <p class="subtitulo-editorial" style="max-width:760px;margin-bottom:1rem;">No hacemos locuras. Diseñamos aventuras con cabeza.</p>
-    <p class="texto" style="max-width:920px;margin-bottom:2rem;">La adrenalina no consiste en improvisar. Consiste en preparar bien una experiencia intensa para vivirla con seguridad, lectura del entorno, material adecuado y respeto por los límites del grupo. Esta metodología forma parte del proyecto académico y muestra cómo podría estructurarse una operación profesional futura.</p>
-    <div class="process-grid">
-      <article class="process-card"><span class="step">01</span><h3>Análisis del grupo</h3><p>Edad, nivel, experiencia, condición física, miedos, expectativas y necesidades especiales.</p></article>
-      <article class="process-card"><span class="step">02</span><h3>Lectura del entorno</h3><p>Meteorología, mar, viento, oleaje, temperatura, accesos, escapatorias, terreno y normativa.</p></article>
-      <article class="process-card"><span class="step">03</span><h3>Briefing y material</h3><p>Qué se va a hacer, qué no se va a hacer, cómo actuar, qué material se revisa y qué aporta cada persona.</p></article>
-      <article class="process-card"><span class="step">04</span><h3>Desarrollo de la actividad</h3><p>Ritmo adaptado, comunicación clara, puntos de control, seguridad y disfrute.</p></article>
-      <article class="process-card"><span class="step">05</span><h3>Registro audiovisual</h3><p>Fotos, vídeo, POV o 360 si procede, siempre sin entorpecer la seguridad.</p></article>
-      <article class="process-card"><span class="step">06</span><h3>Cierre y Logbook</h3><p>Resumen de la experiencia, aprendizajes, valoración y recuerdo final.</p></article>
-      <article class="process-card"><span class="step">07</span><h3>Mejora continua</h3><p>Feedback del grupo, revisión interna y ajustes para futuras actividades.</p></article>
-    </div>
-    <p class="texto" style="font-size:0.82rem;color:var(--gris-calido);margin-top:1.5rem;">Método base de diseño y organización: seguridad, lectura del entorno, material adecuado, límites del grupo y mejora continua antes que improvisación.</p>
-  </div>
-</section></details>
 
 
-<details class="n3-home-details home-explore-panel"><summary>Comparar niveles de experiencia</summary><section class="bg-crema" id="experiencias-nivel-home"><div class="container"><span class="label">Experiencias por nivel</span><h2 class="titulo">ELIGE TU<br><span class="mar">INTENSIDAD</span></h2><div class="divisor"></div><div class="process-grid"><article class="process-card"><span class="step">Base</span><h3>Iniciación</h3><p>Primer contacto con mar, montaña, kayak, snorkel, senderismo o movilidad outdoor.</p></article><article class="process-card"><span class="step">Progresión</span><h3>Intermedio</h3><p>Rutas largas, BTT, ferratas sencillas, travesías costeras y técnica básica.</p></article><article class="process-card"><span class="step">Técnico</span><h3>Avanzado</h3><p>Cuerda, vertical, barrancos, buceo, orientación, meteo y material específico.</p></article><article class="process-card"><span class="step">Alta emoción</span><h3>Extremo</h3><p>Alta exposición solo con validación, permisos, especialistas y condiciones favorables.</p></article><article class="process-card"><span class="step">Cuidado</span><h3>Familiar</h3><p>Planes suaves para familias, parejas, cumpleaños y primeras aventuras compartidas.</p></article><article class="process-card"><span class="step">A medida</span><h3>Premium</h3><p>Privados, amanecer, atardecer, reportaje audiovisual y grupo reducido.</p></article><article class="process-card"><span class="step">Escuela</span><h3>Formación</h3><p>Aprender antes de apretar: técnica, seguridad, entorno y progresión.</p></article></div></div></section></details>
-<details class="n3-home-details home-explore-panel"><summary>Explorar los medios naturales</summary><section class="bg-blanco" id="experiencias-medio-home"><div class="container"><span class="label">Experiencias por medio</span><h2 class="titulo">MAR, ROCA,<br><span class="arena">AIRE Y MONTAÑA</span></h2><div class="divisor"></div><div class="grid-3" style="gap:1rem;"><div class="card"><div class="card-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 8c3-4 5-4 8 0s5 4 8 0 3-2 4-2M2 14c3-4 5-4 8 0s5 4 8 0 3-2 4-2M2 20c3-4 5-4 8 0s5 4 8 0 3-2 4-2"></path></svg></div><div class="card-titulo">Mar</div><p class="card-desc">Kayak, snorkel, SUP, buceo, coasteering y costa mediterránea.</p></div><div class="card"><div class="card-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m2 20 7-13 4 7 3-10 6 16H2Z"></path><path d="m6 13 3 2 3-3m2-2 2 2 2-2"></path></svg></div><div class="card-titulo">Montaña</div><p class="card-desc">Senderismo, trekking, BTT, orientación, fotografía y rutas de cresta.</p></div><div class="card"><div class="card-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10a9 9 0 0 1 18 0H3Zm0 0 7 9m11-9-7 9M8 10l3 9m5-9-3 9M12 2c-3 2-4 5-4 8m4-8c3 2 4 5 4 8"></path><rect x="10" y="19" width="4" height="3" rx="1"></rect></svg></div><div class="card-titulo">Aire</div><p class="card-desc">Parapente, paramotor, paratrike y vuelos panorámicos sujetos a meteo.</p></div><div class="card"><div class="card-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 2v20M17 5h4M17 11h4M17 17h4M3 21l4-7 3 2 3 5"></path><circle cx="9" cy="5" r="2"></circle><path d="m8 9-2 5 5 2m-3-7 5 3 4-3"></path></svg></div><div class="card-titulo">Vertical</div><p class="card-desc">Vía ferrata, escalada, rápel, cuerda, puentes y exposición controlada.</p></div><div class="card"><div class="card-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3 2 3 6-3 8 3 6M21 2l-3 6 3 8-3 6M12 3v13m-3-3 3 3 3-3M9 20c2-2 4-2 6 0"></path></svg></div><div class="card-titulo">Barrancos</div><p class="card-desc">Agua, roca, cuerda, caudal, accesos y lectura técnica del entorno.</p></div><div class="card"><div class="card-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="6" width="20" height="15" rx="2"></rect><path d="M2 11h20M5 6l3-4m3 4 3-4m3 4 3-4m-9 13 5-3-5-3v6Z"></path></svg></div><div class="card-titulo">Audiovisual</div><p class="card-desc">Reel, POV, 360, dron cuando proceda, foto y recuerdo familiar.</p></div></div></div></section></details>
-<details class="n3-home-details home-explore-panel"><summary>Recorrer un día Nómada · prototipo</summary><section class="bg-gris" id="dia-nomada-home"><div class="container"><span class="label">Un día con Nómada Extremo</span><h2 class="titulo">DE LA SOLICITUD<br><span class="mar">AL RECUERDO</span></h2><div class="divisor"></div><ol class="home-journey"><li><span class="journey-number">01</span><div><h3>Solicitud</h3><p>Comparte tu idea y el nivel del grupo.</p></div></li><li><span class="journey-number">02</span><div><h3>Confirmación</h3><p>Se concreta la propuesta y su viabilidad.</p></div></li><li><span class="journey-number">03</span><div><h3>Preparación</h3><p>Requisitos, equipo y condiciones previstas.</p></div></li><li><span class="journey-number">04</span><div><h3>Punto de encuentro</h3><p>Lugar y horario claros antes de salir.</p></div></li><li><span class="journey-number">05</span><div><h3>Briefing</h3><p>Repaso del equipo y de las indicaciones.</p></div></li><li><span class="journey-number">06</span><div><h3>Actividad</h3><p>La experiencia, al ritmo del grupo.</p></div></li><li><span class="journey-number">07</span><div><h3>Pausa</h3><p>Tiempo para descansar y recuperar energía.</p></div></li><li><span class="journey-number">08</span><div><h3>Cierre</h3><p>Revisión final y regreso organizado.</p></div></li><li><span class="journey-number">09</span><div><h3>Audiovisual</h3><p>Recuerdo cuando sea viable y autorizado.</p></div></li><li><span class="journey-number">10</span><div><h3>Logbook</h3><p>Una memoria personal de lo vivido.</p></div></li></ol></div></section></details>
-<details class="n3-home-details home-explore-panel"><summary>Preparación y material</summary><section class="bg-blanco" id="material-preparacion-home">
-  <div class="container">
-    <span class="label">Material y preparación</span>
-    <h2 class="titulo">LLEGAR LISTOS<br><span class="arena">CAMBIA TODO</span></h2>
-    <div class="divisor"></div>
-    <div class="material-prep-grid">
-      <article class="material-prep-card">
-        <div class="prep-heading"><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 20 6-12 4 7 3-10 5 15Z"/></svg><span class="material-prep-card__number">01</span></div>
-        <h3>Aporta Nómada Extremo</h3>
-        <p>Material técnico indicado, revisión, briefing, organización de grupo y criterio de seguridad.</p>
-      </article>
-      <article class="material-prep-card">
-        <div class="prep-heading"><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16v12H4zM8 8V5h8v3M4 13h16M10 13v3h4v-3"/></svg><span class="material-prep-card__number">02</span></div>
-        <h3>Trae el participante</h3>
-        <p>Ropa adecuada, agua, protección solar, calzado, documentación y medicación personal si procede.</p>
-      </article>
-      <article class="material-prep-card">
-        <div class="prep-heading"><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="m8 12 3 3 5-6"/></svg><span class="material-prep-card__number">03</span></div>
-        <h3>Se revisa antes</h3>
-        <p>Meteo, accesos, permisos, ratios, condiciones del entorno, nivel y alternativas.</p>
-      </article>
-      <article class="material-prep-card">
-        <div class="prep-heading"><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="7" r="3"/><circle cx="17" cy="9" r="2"/><path d="M3 21v-6a5 5 0 0 1 10 0v6m2 0v-5a4 4 0 0 1 6 0v5"/></svg><span class="material-prep-card__number">04</span></div>
-        <h3>Aventura familiar</h3>
-        <p>Planes suaves para familias, parejas, cumpleaños y primeras veces con edad adecuada.</p>
-      </article>
-      <article class="material-prep-card">
-        <div class="prep-heading"><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 3 6 6 1-4 5 1 6-6-3-6 3 1-6-4-5 6-1Z"/></svg><span class="material-prep-card__number">05</span></div>
-        <h3>Aventura premium</h3>
-        <p>Privados, amanecer, atardecer, reportaje audiovisual, pareja, familia y grupos reducidos.</p>
-      </article>
-      <article class="material-prep-card material-prep-card--statement">
-        <div class="prep-heading"><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 8 3v6c0 5-8 9-8 9S4 17 4 12V6zM8 12l3 3 5-6"/></svg><span class="material-prep-card__number">06</span></div>
-        <h3>No hacemos locuras</h3>
-        <p>La diferencia no está en hacer algo peligroso. Está en convertir una experiencia intensa en algo preparado, medido y memorable.</p>
-      </article>
-    </div>
-  </div>
-</section></details>
-<details class="n3-home-details home-explore-panel"><summary data-i18n="october.seasons">Explorar las temporadas</summary><section class="bg-crema" id="temporadas-home"><div class="container"><span class="label">Temporadas</span><h2 class="titulo">EL AÑO<br><span class="mar">TIENE RITMO</span></h2><div class="divisor"></div><p class="texto season-intro">Muchas aventuras se pueden disfrutar todo el año. La estación orienta el plan; el mar, el viento, la temperatura y el nivel del grupo deciden el mejor momento.</p><div class="grid-4" style="gap:1rem;"><div class="card"><div class="card-titulo">Invierno</div><div class="season-activity-grid"><div><h3>Mar y costa</h3><p class="card-desc">Kayak y SUP en aguas resguardadas, snorkel y buceo con protección térmica, y formación acuática cuando el mar y la temperatura acompañan.</p></div><div><h3>Montaña y vertical</h3><p class="card-desc">Senderismo, trekking, orientación, BTT, escalada, rápel, vías ferratas, barrancos secos y bushcraft en jornadas de tiempo estable.</p></div><div><h3>Aire y formación</h3><p class="card-desc">Parapente, paramotor, paratrike y paracaidismo en ventanas meteorológicas adecuadas. Técnica, seguridad, material y progresión en la Escuela Nómada.</p></div></div></div><div class="card"><div class="card-titulo">Primavera</div><div class="season-activity-grid"><div><h3>Mar y costa</h3><p class="card-desc">Kayak, SUP, snorkel, buceo, coasteering, e-foil y primeras sesiones de surf. Wingfoil, windsurf y kitesurf según viento y nivel.</p></div><div><h3>Montaña y río</h3><p class="card-desc">Senderismo, trekking, BTT, escalada, ferratas, rápel, espeleología, rafting y barrancos acuáticos con caudal y accesos adecuados.</p></div><div><h3>Aire y experiencias</h3><p class="card-desc">Parapente, paramotor, paratrike y paracaidismo según condiciones. Packs de mar y montaña, formación, fotografía y salidas de grupo.</p></div></div></div><div class="card"><div class="card-titulo">Verano</div><div class="season-activity-grid"><div><h3>Mar y costa</h3><p class="card-desc">Kayak al amanecer o al atardecer, SUP, snorkel, buceo, coasteering, surf, e-foil y jetsurf. Wingfoil, windsurf y kitesurf con viento adecuado.</p></div><div><h3>Montaña y río</h3><p class="card-desc">Senderismo temprano, rutas al atardecer, BTT y orientación evitando las horas de calor. Escalada en sombra, espeleología, rafting y barrancos acuáticos aptos.</p></div><div><h3>Aire y experiencias</h3><p class="card-desc">Parapente, paramotor, paratrike y paracaidismo cuando las condiciones lo permiten. Multiaventura, escuela, salidas naturistas y recuerdos audiovisuales.</p></div></div></div><div class="card"><div class="card-titulo">Otoño</div><div class="season-activity-grid"><div><h3>Mar y costa</h3><p class="card-desc">Kayak, SUP, snorkel, buceo y coasteering mientras la temperatura y el mar acompañan. Surf y deportes de viento según oleaje, viento y nivel.</p></div><div><h3>Montaña y vertical</h3><p class="card-desc">Senderismo, trekking, BTT, escalada, vías ferratas, rápel, espeleología, vivac y bushcraft. Barrancos y rafting tras revisar lluvia y caudal.</p></div><div><h3>Aire y formación</h3><p class="card-desc">Parapente, paramotor, paratrike y paracaidismo en ventanas de tiempo estable. Progresión técnica, packs combinados y salidas fotográficas.</p></div></div></div></div><p class="season-planning-note">Las salidas de aire, agua y vertical se ajustan a las condiciones del día y al criterio del especialista. Siempre hay una alternativa para adaptar la experiencia.</p></div></section></details>
-<details class="n3-home-details home-explore-panel"><summary>Aventura y contenido audiovisual</summary><section class="bg-noche" id="aventura-contenido-home"><div class="container"><span class="label">Aventura + contenido</span><h2 class="titulo">VIVIRLO<br><span class="acento">Y CONTARLO BIEN</span></h2><div class="divisor"></div><div class="grid-3" style="gap:1rem;"><div class="card"><div class="card-titulo">Mini documental</div><p class="card-desc">Historia breve, voz de experiencia, ritmo y recuerdo con valor real.</p></div><div class="card"><div class="card-titulo">Reel / POV / 360</div><p class="card-desc">Formatos ágiles para redes, casco, manillar, agua o grupo familiar.</p></div><div class="card"><div class="card-titulo">YouTube y foto</div><p class="card-desc">Miniatura, teaser, tráiler, fotos editadas, clips y carpeta organizada.</p></div></div></div></section></details>
-<details class="n3-home-details home-explore-panel"><summary>Para quién se diseña la propuesta</summary><section class="bg-blanco" id="para-quien-home"><div class="container"><span class="label">Para quién es</span><h2 class="titulo">NO TODO EL MUNDO<br><span class="arena">BUSCA LO MISMO</span></h2><div class="divisor"></div><div class="timeline-compact"><span>Principiantes</span><span>Familias</span><span>Deportistas</span><span>Creadores</span><span>Empresas</span><span>Centros educativos</span><span>Parejas</span><span>Amigos</span><span>Aventureros extremos</span></div></div></section></details>
-<details class="n3-home-details home-explore-panel"><summary>Criterios de realismo y seguridad</summary><section class="bg-crema" id="garantia-nomada-ampliada"><div class="container"><span class="label">Garantía Nómada</span><h2 class="titulo">REALISMO,<br><span class="mar">SEGURIDAD Y MEMORIA</span></h2><div class="divisor"></div><div class="home-assurance"><article><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="m8 12 3 3 5-6"/></svg><h3>Antes de salir</h3><p>Comunicación previa · Guías titulados · Briefing claro</p></article><article><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16v12H4zM8 8V5h8v3M4 13h16M10 13v3h4v-3"/></svg><h3>Equipo y entorno</h3><p>Material revisado · Lectura meteorológica · Ratios de grupo</p></article><article><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 8 3v6c0 5-8 9-8 9S4 17 4 12V6zM8 12l3 3 5-6"/></svg><h3>Durante la experiencia</h3><p>Seguridad · Respeto ambiental · Planes alternativos</p></article><article><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 3 6 6 1-4 5 1 6-6-3-6 3 1-6-4-5 6-1Z"/></svg><h3>Lo que queda</h3><p>Audiovisual · Cierre de experiencia · Mejora continua</p></article></div></div></section></details>
+
+
+
+
+
+
+
+
+
+
+
 
 <section class="bg-gris home-territorio">
   <div class="container">
@@ -357,7 +548,7 @@
   </div>
   <div class="grid-act" style="margin-top:3rem;">
     <div class="act-card">
-      <div class="act-card-bg" style="background-image:url('assets/images/activities-2026/senderismo-guiado.webp')"></div>
+      <div class="act-card-bg" data-background-src="assets/images/activities-2026/senderismo-guiado.webp"></div>
       <div class="act-card-overlay"></div>
       <div class="act-card-content"><span class="model-badge model-badge--own" data-i18n="october.own" data-i18n-title="october.ownHelp" title="Guiada por el equipo propio de Nómada Extremo.">Experiencia Nómada</span>
         <div class="act-card-num">01</div>
@@ -371,7 +562,7 @@
       </div>
     </div>
     <div class="act-card">
-      <div class="act-card-bg" style="background-image:url('assets/images/activities-2026/via-ferrata.webp')"></div>
+      <div class="act-card-bg" data-background-src="assets/images/activities-2026/via-ferrata.webp"></div>
       <div class="act-card-overlay"></div>
       <div class="act-card-content"><span class="model-badge model-badge--partner" data-i18n="october.partner" data-i18n-title="october.partnerHelp" title="Con un centro especializado colaborador habilitado en la disciplina.">Con centro especializado</span>
         <div class="act-card-num">02</div>
@@ -385,7 +576,7 @@
       </div>
     </div>
     <div class="act-card">
-      <div class="act-card-bg" style="background-image:url('assets/images/activities-2026/kayak-mar.webp')"></div>
+      <div class="act-card-bg" data-background-src="assets/images/activities-2026/kayak-mar.webp"></div>
       <div class="act-card-overlay"></div>
       <div class="act-card-content"><span class="model-badge model-badge--own" data-i18n="october.own" data-i18n-title="october.ownHelp" title="Guiada por el equipo propio de Nómada Extremo.">Experiencia Nómada</span><span class="model-badge model-badge--partner" data-i18n="october.partner" data-i18n-title="october.partnerHelp" title="Con un centro especializado colaborador habilitado en la disciplina.">Con centro especializado</span>
         <div class="act-card-num">03</div>
@@ -399,7 +590,7 @@
       </div>
     </div>
     <div class="act-card">
-      <div class="act-card-bg" style="background-image:url('assets/images/activities-2026/buceo-guiado.webp')"></div>
+      <div class="act-card-bg" data-background-src="assets/images/activities-2026/buceo-guiado.webp"></div>
       <div class="act-card-overlay"></div>
       <div class="act-card-content"><span class="model-badge model-badge--partner" data-i18n="october.partner" data-i18n-title="october.partnerHelp" title="Con un centro especializado colaborador habilitado en la disciplina.">Con centro especializado</span>
         <div class="act-card-num">04</div>
@@ -413,7 +604,7 @@
       </div>
     </div>
     <div class="act-card">
-      <div class="act-card-bg" style="background-image:url('assets/images/activities-2026/parapente-biplaza.webp')"></div>
+      <div class="act-card-bg" data-background-src="assets/images/activities-2026/parapente-biplaza.webp"></div>
       <div class="act-card-overlay"></div>
       <div class="act-card-content"><span class="model-badge model-badge--own" data-i18n="october.own" data-i18n-title="october.ownHelp" title="Guiada por el equipo propio de Nómada Extremo.">Experiencia Nómada</span>
         <div class="act-card-num">05</div>
@@ -427,7 +618,7 @@
       </div>
     </div>
     <div class="act-card">
-      <div class="act-card-bg" style="background-image:url('assets/images/activities-2026/barranquismo-acuatico.webp')"></div>
+      <div class="act-card-bg" data-background-src="assets/images/activities-2026/barranquismo-acuatico.webp"></div>
       <div class="act-card-overlay"></div>
       <div class="act-card-content"><span class="model-badge model-badge--partner" data-i18n="october.partner" data-i18n-title="october.partnerHelp" title="Con un centro especializado colaborador habilitado en la disciplina.">Con centro especializado</span>
         <div class="act-card-num">06</div>
@@ -441,7 +632,7 @@
       </div>
     </div>
     <div class="act-card">
-      <div class="act-card-bg" style="background-image:url('assets/images/activities-2026/btt-costero.webp')"></div>
+      <div class="act-card-bg" data-background-src="assets/images/activities-2026/btt-costero.webp"></div>
       <div class="act-card-overlay"></div>
       <div class="act-card-content"><span class="model-badge model-badge--own" data-i18n="october.own" data-i18n-title="october.ownHelp" title="Guiada por el equipo propio de Nómada Extremo.">Experiencia Nómada</span>
         <div class="act-card-num">07</div>
@@ -455,7 +646,7 @@
       </div>
     </div>
     <div class="act-card">
-      <div class="act-card-bg" style="background-image:url('assets/images/packs-2026/horizonte-salvaje.webp')"></div>
+      <div class="act-card-bg" data-background-src="assets/images/packs-2026/horizonte-salvaje.webp"></div>
       <div class="act-card-overlay"></div>
       <div class="act-card-content"><span class="model-badge model-badge--own" data-i18n="october.own" data-i18n-title="october.ownHelp" title="Guiada por el equipo propio de Nómada Extremo.">Experiencia Nómada</span>
         <div class="act-card-num">08</div>
@@ -469,7 +660,7 @@
       </div>
     </div>
     <div class="act-card">
-      <div class="act-card-bg" style="background-image:url('assets/images/activities-2026/wingfoil.webp')"></div>
+      <div class="act-card-bg" data-background-src="assets/images/activities-2026/wingfoil.webp"></div>
       <div class="act-card-overlay"></div>
       <div class="act-card-content"><span class="model-badge model-badge--partner" data-i18n="october.partner" data-i18n-title="october.partnerHelp" title="Con un centro especializado colaborador habilitado en la disciplina.">Con centro especializado</span>
         <div class="act-card-num">09</div>
@@ -483,7 +674,7 @@
       </div>
     </div>
     <div class="act-card">
-      <div class="act-card-bg" style="background-image:url('assets/images/packs-2026/naturista-sendero.webp')"></div>
+      <div class="act-card-bg" data-background-src="assets/images/packs-2026/naturista-sendero.webp"></div>
       <div class="act-card-overlay"></div>
       <div class="act-card-content"><span class="model-badge model-badge--own" data-i18n="october.own" data-i18n-title="october.ownHelp" title="Guiada por el equipo propio de Nómada Extremo.">Experiencia Nómada</span>
         <div class="act-card-num">10</div>
@@ -599,7 +790,7 @@
       </div>
 
       <div class="ficha reveal" data-featured-extra="">
-        <div class="ficha-img" style="background-image:url('assets/images/actividades/familia-multiaventura.jpg')">
+        <div class="ficha-img" data-background-src="assets/images/actividades/familia-multiaventura.jpg">
           <span class="nivel-badge nivel-medio">Intermedio</span>
         </div>
         <div class="ficha-cuerpo"><span class="model-badge model-badge--own" data-i18n="october.own" data-i18n-title="october.ownHelp" title="Guiada por el equipo propio de Nómada Extremo.">Experiencia Nómada</span>
@@ -655,41 +846,7 @@
 <!-- ═══ MANIFIESTO ═══ -->
 
 <!-- ═══ RESEÑAS DE EJEMPLO ═══ -->
-<details class="n3-home-details home-explore-panel"><summary data-i18n="october.reviews">Leer las reseñas de ejemplo</summary><section class="adventure-reviews" id="resenas"><div class="container"><div class="adventure-section-heading"><div><span class="label">Historias de aventura</span><h2 class="titulo">LO QUE<br><span class="mar">TE LLEVAS</span></h2></div><p>El vértigo del primer salto. La calma del mar. La confianza en quien camina a tu lado.</p></div><p class="adventure-editorial-note">Reseñas de ejemplo del proyecto académico: relatos editoriales, no valoraciones de clientes reales.</p><div class="adventure-review-grid"><article class="adventure-review"><div class="adventure-review-top"><span class="review-stars" aria-label="5 de 5 estrellas">★★★★★</span><span class="adventure-review-example">Ejemplo editorial</span></div><blockquote>El paracaidismo tándem fue la experiencia más brutal de mi vida. El equipo te prepara bien, el entorno de Águilas es espectacular y el vídeo que me dieron fue cinematográfico de verdad. Volveré.</blockquote><footer><span class="adventure-review-number" aria-hidden="true">01</span><div><strong>Miguel A.</strong><span>Paracaidismo tándem · Madrid</span></div></footer></article>
-<article class="adventure-review"><div class="adventure-review-top"><span class="review-stars" aria-label="5 de 5 estrellas">★★★★★</span><span class="adventure-review-example">Ejemplo editorial</span></div><blockquote>Hice el Open Water SSI en tres días con la instructora. Su paciencia, el fondo marino de Águilas y la forma en que organizan todo desde el formulario previo hasta el check-in lo hace muy serio. Recomendado 100%.</blockquote><footer><span class="adventure-review-number" aria-hidden="true">02</span><div><strong>Sandra M.</strong><span>Open Water SSI · Valencia</span></div></footer></article>
-<article class="adventure-review"><div class="adventure-review-top"><span class="review-stars" aria-label="5 de 5 estrellas">★★★★★</span><span class="adventure-review-example">Ejemplo editorial</span></div><blockquote>El pack de ferrata + kayak de regreso fue increíble. Salimos siendo cuatro amigos sin experiencia y llegamos como si lleváramos años haciendo esto. El guía se nota que conoce cada centímetro de esas paredes.</blockquote><footer><span class="adventure-review-number" aria-hidden="true">03</span><div><strong>Roberto y grupo</strong><span>Pack Costa Vertical · Murcia</span></div></footer></article>
-<article class="adventure-review"><div class="adventure-review-top"><span class="review-stars" aria-label="4 de 5 estrellas">★★★★☆</span><span class="adventure-review-example">Ejemplo editorial</span></div><blockquote>El e-foil fue una sesión épica. El instructor explica con mucha paciencia y las condiciones en Águilas ese día eran perfectas. Me esperaba que fuera mucho más difícil. Estoy enganchada.</blockquote><footer><span class="adventure-review-number" aria-hidden="true">04</span><div><strong>Carla T.</strong><span>E-foil iniciación · Alicante</span></div></footer></article>
-<article class="adventure-review"><div class="adventure-review-top"><span class="review-stars" aria-label="5 de 5 estrellas">★★★★★</span><span class="adventure-review-example">Ejemplo editorial</span></div><blockquote>Reservé una jornada de barranquismo acuático para mi cumpleaños y fue un éxito total. La organización fue perfecta: formulario previo, punto de encuentro claro y el guía cuidando cada detalle de seguridad.</blockquote><footer><span class="adventure-review-number" aria-hidden="true">05</span><div><strong>Daniela R.</strong><span>Barranquismo acuático · Almería</span></div></footer></article>
-<article class="adventure-review"><div class="adventure-review-top"><span class="review-stars" aria-label="5 de 5 estrellas">★★★★★</span><span class="adventure-review-example">Ejemplo editorial</span></div><blockquote>La ruta de kayak al amanecer fue justo lo que esperaba: tranquila, bien explicada y con un ritmo cómodo. La parte audiovisual quedó como recuerdo perfecto para enseñar a la familia.</blockquote><footer><span class="adventure-review-number" aria-hidden="true">06</span><div><strong>Lucía F.</strong><span>Kayak de mar · Caso editorial</span></div></footer></article>
-<article class="adventure-review"><div class="adventure-review-top"><span class="review-stars" aria-label="5 de 5 estrellas">★★★★★</span><span class="adventure-review-example">Ejemplo editorial</span></div><blockquote>Tres horas de kayak por las calas de Águilas sin ver a nadie más. Solo roca, mar y silencio. Una experiencia que no tiene precio y no se olvida.</blockquote><footer><span class="adventure-review-number" aria-hidden="true">07</span><div><strong>MARCOS T.</strong><span>Kayak de mar · Calas de Águilas</span></div></footer></article>
-<article class="adventure-review"><div class="adventure-review-top"><span class="review-stars" aria-label="5 de 5 estrellas">★★★★★</span><span class="adventure-review-example">Ejemplo editorial</span></div><blockquote>El bautismo de buceo fue una revelación. Empecé el Open Water a la semana siguiente. No esperaba que el fondo del mar fuera tan adictivo a 6 metros.</blockquote><footer><span class="adventure-review-number" aria-hidden="true">08</span><div><strong>JORGE P.</strong><span>Bautismo de buceo · Costa de Águilas</span></div></footer></article>
-<article class="adventure-review"><div class="adventure-review-top"><span class="review-stars" aria-label="5 de 5 estrellas">★★★★★</span><span class="adventure-review-example">Ejemplo editorial</span></div><blockquote>El salto lo regaló mi novia por mi cumpleaños. Pensaba que me iba a morir. En realidad fue lo más vivo que me he sentido en toda mi vida hasta ahora.</blockquote><footer><span class="adventure-review-number" aria-hidden="true">09</span><div><strong>ÁLVARO S.</strong><span>Paracaidismo tándem</span></div></footer></article></div><div class="adventure-review-workshop"><div class="adventure-review-invite"><span class="label">Tu experiencia importa</span><h3>Hay historias que merecen contarse.</h3><p>¿Qué momento te sorprendió? ¿Qué aprendiste? ¿Qué mejorarías? Una buena reseña cuenta lo que se sintió, con tus propias palabras.</p><div class="adventure-review-prompts"><span>El momento</span><span>El equipo</span><span>El recuerdo</span></div><p class="adventure-review-privacy">Prueba el formulario y revisa cómo queda tu relato. La demostración se muestra en esta página y no envía ni guarda datos.</p></div><div class="adventure-review-form"><h3>Escribe tu historia</h3><form id="review-demo">
 
-
-          <div class="form-grupo">
-            <label for="n3-field-1">Nombre</label><input id="n3-field-1" type="text" name="nombre" placeholder="Tu nombre" required="">
-          </div>
-          <div class="form-grupo">
-            <label for="n3-field-2">Actividad realizada</label><input id="n3-field-2" type="text" name="actividad" placeholder="Ej: Kayak de mar, bautismo de buceo..." required="">
-          </div>
-          <div class="form-grupo">
-            <label for="n3-field-3">Valoración</label><select id="n3-field-3" name="valoracion" required="">
-              <option value="">Selecciona...</option>
-              <option>★★★★★ Excepcional</option>
-              <option>★★★★☆ Muy buena</option>
-              <option>★★★☆☆ Buena</option>
-              <option>★★☆☆☆ Mejorable</option>
-            </select>
-          </div>
-          <div class="form-grupo">
-            <label for="n3-field-4">Tu comentario</label><textarea id="n3-field-4" name="comentario" rows="4" placeholder="Cuéntanos tu experiencia con el mayor detalle que quieras..." required=""></textarea>
-          </div>
-          <div>
-            <input id="review-consent" aria-label="Confirmar que es una reseña de demostración" type="checkbox" name="consentimiento" required="">
-            <label for="review-consent">Autorizo el uso de esta reseña dentro del contexto del proyecto y acepto su revisión editorial.</label>
-          </div>
-          <button type="submit" data-story-review="" class="btn btn-bosque">Previsualizar mi reseña →</button>
-        </form><article class="adventure-review adventure-review-preview" hidden="" aria-label="Vista previa de tu reseña"><div class="adventure-review-top"><span class="review-stars"></span><span class="adventure-review-example">Tu vista previa</span></div><blockquote></blockquote><footer><div><strong></strong><span></span></div></footer></article></div></div></div></section></details>
 
 <div class="manifiesto">
   <p class="manifiesto-texto">
@@ -702,42 +859,10 @@
 </div>
 
 <!-- ═══ SELLOS CONFIANZA ═══ -->
-<details class="site-depth home-explore-panel"><summary>La garantía nómada</summary><section class="bg-crema home-guarantee">
-  <div class="container" style="text-align:center;">
-    <span class="label" style="justify-content:center;">Por qué elegir Nómada Extremo</span>
-    <h2 class="titulo" style="margin-bottom:3rem;">LA <span class="mar">GARANTÍA</span><br>NÓMADA</h2>
-    <div class="sellos" style="justify-content:center;">
-      <div class="sello"><div class="sello-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6z"></path><path d="m8 12 3 3 5-6"></path></svg></div><div><strong>Seguridad real</strong><span>No aparente. Sistema integral.</span></div></div>
-      <div class="sello"><div class="sello-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="5"></circle><path d="m8 12-2 9 6-3 6 3-2-9"></path></svg></div><div><strong>Guías titulados</strong><span>Especialistas por disciplina.</span></div></div>
-      <div class="sello"><div class="sello-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="2" width="12" height="20" rx="3"></rect><path d="M10 5h4m-3 14h2m-4-8 2 2 4-4"></path></svg></div><div><strong>Solicitar experiencia digital</strong><span>Solicitud guiada y seguimiento claro.</span></div></div>
-      <div class="sello"><div class="sello-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="5" width="14" height="17" rx="2"></rect><rect x="9" y="2" width="6" height="5" rx="1"></rect><path d="m8 13 2 2 5-5m-7 8h8"></path></svg></div><div><strong>Material revisado</strong><span>Check técnico antes de cada salida.</span></div></div>
-      <div class="sello"><div class="sello-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 3C8 3 3 8 5 18c10 2 15-3 15-15Z"></path><path d="M3 21 16 8M8 16v-5m0 5h5"></path></svg></div><div><strong>Respeto al entorno</strong><span>Aventura responsable siempre.</span></div></div>
-      <div class="sello"><div class="sello-icon"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="9" width="18" height="4" rx="1"></rect><path d="M5 13v8h14v-8M12 9v12"></path><path d="M12 9C4 9 4 2 8 3c3 0 4 6 4 6s1-6 4-6c4-1 4 6-4 6Z"></path></svg></div><div><strong>Bonos regalo</strong><span>La aventura más memorable.</span></div></div>
-    </div>
-  </div>
-</section></details>
+
 
 <!-- ═══ ESCUELA NÓMADA ═══ -->
-<details class="site-depth home-explore-panel"><summary>Escuela nómada</summary><section class="bg-blanco">
-  <div class="container">
-    <div class="grid-2" style="align-items:center;gap:5rem;">
-      <div>
-    <span class="label">Formación técnica</span>
-        <h2 class="titulo">ESCUELA<br><span class="bosque">NÓMADA</span></h2>
-        <div class="divisor divisor-mar"></div>
-        <p class="texto" style="margin-bottom:1.5rem;">La Escuela Nómada es el corazón formativo del proyecto. Aquí la aventura se convierte en conocimiento, progresión técnica y credenciales de aprendizaje para explicar una escuela seria.</p>
-        <p class="texto" style="margin-bottom:2rem;">Open Water, Advanced, AFF, Parapente, Paramotor, Ferratas, Rápel, Técnicas de montaña. Progresión trazable y documentada con logbook digital.</p>
-        <a href="escuela.html" class="btn btn-bosque">Ver la Escuela Nómada →</a>
-      </div>
-      <div class="grid-2" style="gap:1.2rem;">
-        <div class="curso-card reveal"><span class="model-badge model-badge--partner" data-i18n="october.partner" data-i18n-title="october.partnerHelp" title="Con un centro especializado colaborador habilitado en la disciplina.">Con centro especializado</span><div class="curso-icono"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="8" width="14" height="8" rx="3"></rect><path d="M10 8v8M4 5h11m5-3v14c0 4-4 5-6 3"></path></svg></div><div class="curso-titulo">Buceo SSI</div><p class="curso-desc">Open Water hasta Divemaster. Progresión certificada en el litoral murciano.</p></div>
-        <div class="curso-card reveal"><span class="model-badge model-badge--own" data-i18n="october.own" data-i18n-title="october.ownHelp" title="Guiada por el equipo propio de Nómada Extremo.">Experiencia Nómada</span><div class="curso-icono"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10a9 9 0 0 1 18 0H3Zm0 0 7 9m11-9-7 9M8 10l3 9m5-9-3 9M12 2c-3 2-4 5-4 8m4-8c3 2 4 5 4 8"></path><rect x="10" y="19" width="4" height="3" rx="1"></rect></svg></div><div class="curso-titulo">AFF / Parapente</div><p class="curso-desc">Del salto tándem al vuelo autónomo. Progresión seria y real.</p></div>
-        <div class="curso-card reveal"><span class="model-badge model-badge--partner" data-i18n="october.partner" data-i18n-title="october.partnerHelp" title="Con un centro especializado colaborador habilitado en la disciplina.">Con centro especializado</span><div class="curso-icono"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 2v20M17 5h4M17 11h4M17 17h4M3 21l4-7 3 2 3 5"></path><circle cx="9" cy="5" r="2"></circle><path d="m8 9-2 5 5 2m-3-7 5 3 4-3"></path></svg></div><div class="curso-titulo">Línea Vertical</div><p class="curso-desc">Escalada, ferratas, rápel. Técnica progresiva con guía titulado.</p></div>
-        <div class="curso-card reveal"><span class="model-badge model-badge--own" data-i18n="october.own" data-i18n-title="october.ownHelp" title="Guiada por el equipo propio de Nómada Extremo.">Experiencia Nómada</span><div class="curso-icono"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m2 20 7-13 4 7 3-10 6 16H2Z"></path><path d="m6 13 3 2 3-3m2-2 2 2 2-2"></path></svg></div><div class="curso-titulo">Montaña Técnica</div><p class="curso-desc">Orientación, meteorología, bushcraft, supervivencia. Saber estar.</p></div>
-      </div>
-    </div>
-  </div>
-</section></details>
+
 
 <!-- ═══ CTA CENTRAL ═══ -->
 <div class="cta-band">
@@ -758,91 +883,25 @@
     <span class="label">Propuestas del catálogo</span>
     <h2 class="titulo">PACKS<br><span class="mar">ESPECIALES</span></h2>
     <div class="divisor"></div>
-    <div class="site-pack-preview"><article><img src="assets/images/packs-2026/horizonte-salvaje.webp" alt="Horizonte Salvaje" loading="lazy" width="1440" height="960"><div><h3>Horizonte Salvaje</h3><p>Senderismo costero · kayak · snorkel</p><p>1 día · Iniciación · 95 € por persona</p><a class="btn btn-mar" href="packs.html#pack-horizonte-salvaje">Explorar el pack →</a></div></article><article><img src="assets/images/packs-2026/costa-vertical.webp" alt="Costa Vertical" loading="lazy" width="1440" height="960"><div><h3>Costa Vertical</h3><p>Vía ferrata · rápel · costa</p><p>1 día · Medio · 135 € por persona</p><a class="btn btn-mar" href="packs.html#pack-costa-vertical">Explorar el pack →</a></div></article><article><img src="assets/images/packs-2026/cielo-nomada.webp" alt="Cielo Nómada" loading="lazy" width="1440" height="960"><div><h3>Cielo Nómada</h3><p>Parapente biplaza · paratrike</p><p>1–2 días · Iniciación · 249 € por persona</p><a class="btn btn-mar" href="packs.html#pack-cielo-nomada">Explorar el pack →</a></div></article></div>
+    <div class="site-pack-preview"><article><img src="assets/images/optimized/horizonte-salvaje-1280.webp" alt="Horizonte Salvaje" loading="lazy" width="1440" height="960" srcset="assets/images/optimized/horizonte-salvaje-640.webp 640w, assets/images/optimized/horizonte-salvaje-1280.webp 1280w" sizes="(max-width:700px) 100vw, 50vw" decoding="async"><div><h3>Horizonte Salvaje</h3><p>Senderismo costero · kayak · snorkel</p><p>1 día · Iniciación · 95 € por persona</p><a class="btn btn-mar" href="packs.html#pack-horizonte-salvaje">Explorar el pack →</a></div></article><article><img src="assets/images/optimized/costa-vertical-1280.webp" alt="Costa Vertical" loading="lazy" width="1440" height="960" srcset="assets/images/optimized/costa-vertical-640.webp 640w, assets/images/optimized/costa-vertical-1280.webp 1280w" sizes="(max-width:700px) 100vw, 50vw" decoding="async"><div><h3>Costa Vertical</h3><p>Vía ferrata · rápel · costa</p><p>1 día · Medio · 135 € por persona</p><a class="btn btn-mar" href="packs.html#pack-costa-vertical">Explorar el pack →</a></div></article><article><img src="assets/images/optimized/cielo-nomada-1280.webp" alt="Cielo Nómada" loading="lazy" width="1440" height="960" srcset="assets/images/optimized/cielo-nomada-640.webp 640w, assets/images/optimized/cielo-nomada-1280.webp 1280w" sizes="(max-width:700px) 100vw, 50vw" decoding="async"><div><h3>Cielo Nómada</h3><p>Parapente biplaza · paratrike</p><p>1–2 días · Iniciación · 249 € por persona</p><a class="btn btn-mar" href="packs.html#pack-cielo-nomada">Explorar el pack →</a></div></article></div>
   </div>
 </section>
 
 <!-- ═══ EQUIPO ═══ -->
-<details class="site-depth home-explore-panel"><summary>El equipo</summary><section class="bg-gris home-team-roles">
-  <div class="container">
-    <span class="label">Equipo de referencia</span>
-    <h2 class="titulo">EL <span class="mar">EQUIPO</span></h2>
-    <div class="divisor"></div>
-    <p class="texto" style="margin-bottom:3rem;">En Nómada Extremo no existe el monitor todoterreno. Cada disciplina tiene su especialista de referencia, su material, su lectura del entorno y su forma de preparar al grupo.</p>
-    <div class="specialist-grid">
-      <article class="specialist-card reveal" data-role="01"><header class="specialist-card__header"><span class="specialist-card__index">01</span><h3 data-i18n="october.title1">Guía de montaña y vertical</h3><p class="specialist-card__role" data-i18n="october.staff">Plantilla Nómada</p><span class="model-badge model-badge--own" data-i18n="october.own" data-i18n-title="october.ownHelp" title="Guiada por el equipo propio de Nómada Extremo.">Experiencia Nómada</span></header><div class="specialist-card__body"><div class="specialist-block"><h4 data-i18n="october.qualification">Titulación requerida (orientativa)</h4><p data-i18n="october.qual1">Técnico Deportivo en Media Montaña y Técnico Deportivo en Escalada</p></div><div class="specialist-block"><h4 data-i18n="october.functions">Funciones</h4><p data-i18n="october.scope1">Guía rutas de montaña y prepara al grupo. Coordina escalada, ferratas y rápel técnico con un centro especializado colaborador.</p></div><div class="specialist-block specialist-block--safety"><h4 data-i18n="october.safety">Seguridad</h4><p data-i18n="october.risk1">Material y sistemas revisados, ratios adaptados, control meteorológico y plan de evacuación.</p></div><details class="specialist-details"><summary data-i18n="october.profile">Ver perfil profesional completo</summary><div class="specialist-details__content"><div class="specialist-block"><h4 data-i18n="october.functions">Funciones</h4><p data-i18n="october.scope1">Guía rutas de montaña y prepara al grupo. Coordina escalada, ferratas y rápel técnico con un centro especializado colaborador.</p></div><div class="specialist-block"><h4 data-i18n="october.requirements">Requisitos del puesto</h4><p data-i18n="october.qual1">Técnico Deportivo en Media Montaña y Técnico Deportivo en Escalada</p></div><div class="specialist-meaning"><h4 data-i18n="october.meaning">Qué significa esta titulación</h4><p>El título de Técnico Deportivo en Escalada y Media Montaña acredita formación específica para guiar, enseñar y gestionar actividades en montaña con criterios técnicos y de seguridad. La formación en autorrescate, instalación de reuniones y progresión por cuerda permite actuar en situaciones complejas en pared, ferratas o rápeles. Los primeros auxilios en zonas remotas refuerzan la capacidad de respuesta cuando una actividad se desarrolla lejos de asistencia inmediata.</p></div><div class="specialist-block specialist-block--safety"><h4 data-i18n="october.safety">Seguridad</h4><p>Revisión previa de material, ratios por dificultad, plan de evacuación, control meteorológico, protocolos de incidente en pared, comprobación cruzada de sistemas y adaptación de la actividad al nivel real del grupo.</p></div></div></details><div class="specialist-tags"><span>Montaña</span><span>Ferratas</span><span>Escalada</span><span>Rápel</span><span>Rescate vertical</span></div></div></article>
-      <article class="specialist-card specialist-card--collaborator reveal" data-role="02"><header class="specialist-card__header"><span class="specialist-card__index">02</span><h3 data-i18n="october.title2">Instructor/a de buceo</h3><p class="specialist-card__role" data-i18n="october.centre">Centro especializado colaborador</p><span class="model-badge model-badge--partner" data-i18n="october.partner" data-i18n-title="october.partnerHelp" title="Con un centro especializado colaborador habilitado en la disciplina.">Con centro especializado</span></header><div class="specialist-card__body"><div class="specialist-block"><h4 data-i18n="october.qualification">Titulación requerida (orientativa)</h4><p data-i18n="october.qual2">Instructor SSI (Open Water Instructor o superior) y React Right</p></div><div class="specialist-block"><h4 data-i18n="october.functions">Funciones</h4><p data-i18n="october.duty2">Imparte bautismos y cursos SSI, guía inmersiones y prepara el briefing de seguridad.</p></div><div class="specialist-block specialist-block--safety"><h4 data-i18n="october.safety">Seguridad</h4><p data-i18n="october.risk2">Briefing, control de aire y profundidad, parejas, oxígeno de emergencia y revisión del mar y del equipo.</p></div><details class="specialist-details"><summary data-i18n="october.profile">Ver perfil profesional completo</summary><div class="specialist-details__content"><div class="specialist-block"><h4 data-i18n="october.functions">Funciones</h4><p data-i18n="october.duty2">Imparte bautismos y cursos SSI, guía inmersiones y prepara el briefing de seguridad.</p></div><div class="specialist-block"><h4 data-i18n="october.requirements">Requisitos del puesto</h4><p data-i18n="october.qual2">Instructor SSI (Open Water Instructor o superior) y React Right</p></div><div class="specialist-meaning"><h4 data-i18n="october.meaning">Qué significa esta titulación</h4><p data-i18n="october.divingMeaning">SSI Open Water Instructor es la referencia formativa para enseñar buceo recreativo dentro de su ámbito. React Right aporta formación en respuesta a emergencias. Se verifican la habilitación vigente, el centro, los seguros y los protocolos antes de cada experiencia.</p></div><div class="specialist-block specialist-block--safety"><h4 data-i18n="october.safety">Seguridad</h4><p>Briefing completo, control de consumo de aire, flotabilidad, profundidad, parejas de buceo, plan de emergencia, botiquín, oxígeno, revisión del equipo, análisis del estado del mar y supervisión constante durante toda la inmersión.</p></div></div></details><div class="specialist-tags"><span>Buceo</span><span>SSI</span><span>Rescate</span><span>Nitrox</span><span>Profundidad</span></div></div></article>
-      <article class="specialist-card specialist-card--collaborator reveal" data-role="03"><header class="specialist-card__header"><span class="specialist-card__index">03</span><h3 data-i18n="october.title3">Instructor/a de vuelo y paracaidismo</h3><p class="specialist-card__role" data-i18n="october.centre">Centro especializado colaborador</p><span class="model-badge model-badge--partner" data-i18n="october.partner" data-i18n-title="october.partnerHelp" title="Con un centro especializado colaborador habilitado en la disciplina.">Con centro especializado</span></header><div class="specialist-card__body"><div class="specialist-block"><h4 data-i18n="october.qualification">Titulación requerida (orientativa)</h4><p data-i18n="october.qual3">Instructor de vuelo libre y paramotor habilitado; instructor tándem de paracaidismo con licencia en vigor</p></div><div class="specialist-block"><h4 data-i18n="october.functions">Funciones</h4><p data-i18n="october.duty3">Coordina vuelos y saltos, evalúa la meteorología y valida la preparación del pasajero.</p></div><div class="specialist-block specialist-block--safety"><h4 data-i18n="october.safety">Seguridad</h4><p data-i18n="october.risk3">Viento, zonas de despegue y aterrizaje, material y pasajero validados. Se aplaza si no hay margen seguro.</p></div><details class="specialist-details"><summary data-i18n="october.profile">Ver perfil profesional completo</summary><div class="specialist-details__content"><div class="specialist-block"><h4 data-i18n="october.functions">Funciones</h4><p data-i18n="october.duty3">Coordina vuelos y saltos, evalúa la meteorología y valida la preparación del pasajero.</p></div><div class="specialist-block"><h4 data-i18n="october.requirements">Requisitos del puesto</h4><p data-i18n="october.qual3">Instructor de vuelo libre y paramotor habilitado; instructor tándem de paracaidismo con licencia en vigor</p></div><div class="specialist-meaning"><h4 data-i18n="october.meaning">Qué significa esta titulación</h4><p>La formación como instructor de parapente, paramotor y paratrike acredita capacidad para enseñar progresión de vuelo, control de vela, despegues, aterrizajes y seguridad aérea. La habilitación biplaza permite realizar vuelos con pasajero. La formación SIV trabaja la simulación de incidencias en vuelo, como plegadas o maniobras de recuperación, en un entorno controlado. USPA Coach/AFF está relacionado con la formación en paracaidismo, especialmente en progresión de alumnos y saltos supervisados.</p></div><div class="specialist-block specialist-block--safety"><h4 data-i18n="october.safety">Seguridad</h4><p>Decide la viabilidad de cada actividad según viento, rachas, térmicas, zona de despegue, aterrizaje, peso del pasajero, material, experiencia previa y margen operativo. Si las condiciones no son claras, la actividad se aplaza.</p></div></div></details><div class="specialist-tags"><span>Aire</span><span>Parapente</span><span>Paramotor</span><span>Paracaidismo</span><span>SIV</span></div></div></article>
-      <article class="specialist-card reveal" data-role="04"><header class="specialist-card__header"><span class="specialist-card__index">04</span><h3 data-i18n="october.title4">Guía de mar y costa</h3><p class="specialist-card__role" data-i18n="october.staff">Plantilla Nómada</p><span class="model-badge model-badge--own" data-i18n="october.own" data-i18n-title="october.ownHelp" title="Guiada por el equipo propio de Nómada Extremo.">Experiencia Nómada</span></header><div class="specialist-card__body"><div class="specialist-block"><h4 data-i18n="october.qualification">Titulación requerida (orientativa)</h4><p data-i18n="october.qual4">Técnico Deportivo en Piragüismo o monitor de kayak de mar, y socorrista en medio acuático</p></div><div class="specialist-block"><h4 data-i18n="october.functions">Funciones</h4><p data-i18n="october.scope4">Guía kayak de mar, paddle surf y snorkel, interpreta el litoral y adapta las rutas al grupo. Coordina el coasteering con un centro especializado colaborador.</p></div><div class="specialist-block specialist-block--safety"><h4 data-i18n="october.safety">Seguridad</h4><p data-i18n="october.risk4">Viento, oleaje, corrientes y salidas revisados; flotación, comunicación y regreso alternativo preparados.</p></div><details class="specialist-details"><summary data-i18n="october.profile">Ver perfil profesional completo</summary><div class="specialist-details__content"><div class="specialist-block"><h4 data-i18n="october.functions">Funciones</h4><p data-i18n="october.scope4">Guía kayak de mar, paddle surf y snorkel, interpreta el litoral y adapta las rutas al grupo. Coordina el coasteering con un centro especializado colaborador.</p></div><div class="specialist-block"><h4 data-i18n="october.requirements">Requisitos del puesto</h4><p data-i18n="october.qual4">Técnico Deportivo en Piragüismo o monitor de kayak de mar, y socorrista en medio acuático</p></div><div class="specialist-meaning"><h4 data-i18n="october.meaning">Qué significa esta titulación</h4><p>La formación como guía de kayak de mar e instructora SUP acredita conocimientos para dirigir actividades en entornos costeros, controlar grupos y adaptar la ruta al nivel del participante. El socorrismo acuático y el rescate en aguas abiertas son claves para actuar ante caídas, fatiga, corrientes o problemas durante la actividad. La navegación costera y la meteorología marítima permiten interpretar viento, oleaje, accesos, puntos de salida y cambios de condiciones en el mar.</p></div><div class="specialist-block specialist-block--safety"><h4 data-i18n="october.safety">Seguridad</h4><p>Análisis de viento, oleaje, corrientes, accesos, salidas del agua, puntos de escape, temperatura, nivel del grupo, material de flotación, comunicación y alternativas de regreso.</p></div></div></details><div class="specialist-tags"><span>Kayak</span><span>SUP</span><span>Coasteering</span><span>Snorkel</span><span>Rescate acuático</span></div></div></article>
-    </div>
-    <div style="text-align:center;margin-top:2.5rem;">
-      <a href="equipo.html" class="btn btn-outline">Ver el equipo completo →</a>
-    </div>
-  </div>
-</section></details>
+
 
 <!-- ═══ TESTIMONIOS ═══ -->
 
 
 <!-- ═══ NATURISMO ═══ -->
-<details class="site-depth home-explore-panel"><summary>Nómada naturista</summary><section class="bg-cielo">
-  <div class="container">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;" class="grid-2">
-      <div>
-        <span class="label label-bosque">Línea específica y diferenciada</span>
-        <h2 class="titulo">NÓMADA<br><span class="bosque">NATURISTA</span></h2>
-        <div class="divisor"></div>
-        <p class="texto" style="margin-bottom:1.5rem;">Una propuesta puntual, filosófica y completamente diferente. Un día al mes en entornos seleccionados, con claridad total, respeto absoluto y conexión genuina con la naturaleza.</p>
-        <a href="naturistas.html" class="btn btn-bosque">Conocer la línea naturista →</a>
-      </div>
-      <div class="grid-4" style="gap:0.8rem;">
-        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);" class="home-naturist-activity"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 14c4 5 14 5 18 0M5 14h14M5 3l14 15M4 2l3 1-2 3-2-2zm13 15 2-2 2 3-2 2z"></path></svg><br>Kayak</div>
-        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);" class="home-naturist-activity"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="5" r="2"></circle><path d="M12 9v6m-5-4 5-2 5 2M7 11l-3 3m13-3 3 3M12 15c-3-3-9 2-6 4h12c3-2-3-7-6-4Z"></path></svg><br>Yoga</div>
-        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);" class="home-naturist-activity"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="15" cy="6" r="2"></circle><path d="m5 12 5-4 5 4m-5-4-3-4-4 1M2 17c2-2 4-2 6 0s4 2 6 0 4-2 8 0M2 21c2-2 4-2 6 0s4 2 6 0 4-2 8 0"></path></svg><br>Natación</div>
-        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);" class="home-naturist-activity"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="8" width="14" height="8" rx="3"></rect><path d="M10 8v8M4 5h11m5-3v14c0 4-4 5-6 3"></path></svg><br>Snorkel</div>
-        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);" class="home-naturist-activity"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 20c4-2 16-2 20 0M12 9v5l-3 4m3-4 3 4m-3-9 5 2 3 7M17 3v18"></path><circle cx="12" cy="5" r="2"></circle></svg><br>SUP</div>
-        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);" class="home-naturist-activity"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="13" cy="4" r="2"></circle><path d="m12 8-2 6 4 3 1 5m-5-8-4 7m5-11 5 2 3-3m0 0v13M9 8 6 7l-2 6 4 1"></path></svg><br>Senderismo</div>
-        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);" class="home-naturist-activity"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"></circle><path d="M12 3v9l8 4M12 12l-8 4M5 6c1 3 4 5 7 6m6-7c-2 2-3 5-3 9M8 20c3-1 6-3 7-6"></path></svg><br>Voleibol</div>
-        <div style="padding:1rem;text-align:center;background:white;border-radius:var(--radio);font-size:0.78rem;color:var(--gris-calido);box-shadow:var(--sombra-l);" class="home-naturist-activity"><svg class="home-line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="6" r="2"></circle><path d="M12 10v5m-6-2 6-3 6 3M6 13l-3 2m15-2 3 2M12 15c-4-3-9 2-6 4h12c3-2-2-7-6-4Z"></path></svg><br>Meditación</div>
-      </div>
-    </div>
-  </div>
-</section></details>
+
 
 <!-- ═══ BONOS REGALO ═══ -->
-<details class="site-depth home-explore-panel"><summary>Bonos regalo</summary><section class="bg-blanco">
-  <div class="container" style="text-align:center;">
-    <span class="label">El regalo que no se olvida</span>
-    <h2 class="titulo">BONOS<br><span class="arena">REGALO</span></h2>
-    <div class="divisor" style="margin:1.5rem auto;"></div>
-    <p class="texto" style="margin:0 auto 3rem;">Una aventura pensada para alguien especial. Explora las propuestas de bono de este proyecto académico: importes de referencia, sin venta ni cobro real.</p>
-    <div class="grid-4"><article class="bono-card "><div class="gift-card-top"><span class="gift-card-code">NÓMADA / 01</span><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 20 6-12 4 7 3-10 5 15Z"/></svg></div><h3 class="card-titulo">Primera aventura</h3><strong>50 €</strong><p class="card-desc">Un primer contacto con las experiencias del catálogo.</p><a class="btn btn-mar" href="packs.html#bonos">Ver bono de referencia →</a></article><article class="bono-card "><div class="gift-card-top"><span class="gift-card-code">NÓMADA / 02</span><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16v12H4zM8 8V5h8v3M4 13h16M10 13v3h4v-3"/></svg></div><h3 class="card-titulo">Aventura libre</h3><strong>100 €</strong><p class="card-desc">Un importe de referencia para elegir una experiencia.</p><a class="btn btn-mar" href="packs.html#bonos">Ver bono de referencia →</a></article><article class="bono-card popular"><div class="gift-card-top"><span class="gift-card-code">NÓMADA / 03</span><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 3 6 6 1-4 5 1 6-6-3-6 3 1-6-4-5 6-1Z"/></svg></div><h3 class="card-titulo">Aventura premium</h3><strong>200 €</strong><p class="card-desc">Una propuesta combinada o con recuerdo audiovisual.</p><a class="btn btn-mar" href="packs.html#bonos">Ver bono de referencia →</a></article><article class="bono-card "><div class="gift-card-top"><span class="gift-card-code">NÓMADA / 04</span><svg class="refinement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="m8 12 3 3 5-6"/></svg></div><h3 class="card-titulo">A tu medida</h3><strong>Importe a elegir</strong><p class="card-desc">Una propuesta ajustada a la persona y al presupuesto.</p><a class="btn btn-mar" href="packs.html#bonos">Ver bono de referencia →</a></article></div>
-  </div>
-</section></details>
+
 
 
 <!-- ═══ AUDIOVISUAL PREVIEW ═══ -->
-<details class="site-depth home-explore-panel"><summary>Graba tu aventura</summary><section class="bg-noche">
-  <div class="container">
-    <div class="grid-2" style="gap:4rem;align-items:center;">
-      <div>
-        <span class="label label-blanco">Captura · Edita · Revive</span>
-        <h2 class="titulo"><span class="blanco">GRABA TU</span><br><span class="arena">AVENTURA</span></h2>
-        <div class="divisor"></div>
-        <p style="font-family:var(--serif);font-style:italic;font-size:1.15rem;color:rgba(200,189,181,0.8);margin-bottom:1.5rem;line-height:1.8;">"La adrenalina dura segundos. El vídeo dura para siempre."</p>
-        <p style="font-size:0.88rem;color:rgba(200,189,181,0.65);line-height:1.85;margin-bottom:2rem;">Insta360 X5, DJI Osmo Action 6, GoPro MISSION 1 PRO, Insta360 GO Ultra, dron 4K estabilizado y FPV sujeto a normativa AESA. Packs desde recuerdo familiar hasta producción tipo documental corto.</p>
-        <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
-          <a href="audiovisual.html#packs-audiovisuales" class="btn btn-arena">Ver packs audiovisuales</a>
-          <a href="audiovisual.html#precios" class="btn btn-outline-blanco">Ver precios →</a>
-          <a href="reservas.html#audiovisual" class="btn btn-outline-blanco">Añadir a mi reserva</a>
-        </div>
-      </div>
-      <div class="noext-feature-panel reveal">
-        <img class="noext-visual" src="assets/images/community-oficial-2026/pack-audiovisual-noext.webp" alt="Pack audiovisual de Nómada Extremo" loading="lazy">
-      </div>
-    </div>
-  </div>
-</section></details>
+
 
 <!-- ═══ HORIZONTE NÓMADA ═══ -->
 <section class="horizon-preview" id="horizonte-nomada-home" data-no-translate="">
@@ -864,45 +923,7 @@
 </section>
 
 <!-- ═══ BLOG PREVIEW ═══ -->
-<details class="site-depth home-explore-panel"><summary>Blog nómada</summary><section class="bg-crema">
-  <div class="container">
-    <span class="label">Ideas, técnica y aventura</span>
-    <h2 class="titulo">BLOG<br><span class="mar">NÓMADA</span></h2>
-    <div class="divisor"></div>
-    <div class="grid-3" style="margin-top:3rem;">
-      <div class="blog-card reveal">
-        <div class="blog-img" style="background-image:url('assets/images/actividades/familia-montana.jpg');height:195px;background-size:cover;background-position:center;"></div>
-        <div class="blog-cuerpo">
-          <div class="blog-cat">Montaña</div>
-          <div class="blog-titulo">Las 5 rutas ocultas de Águilas que nadie conoce</div>
-          <p class="blog-extracto">El litoral de Águilas esconde senderos que conectan calas vírgenes, puntos geológicos únicos y miradores que te dejan sin palabras.</p>
-          <div class="blog-fecha">Marzo 2025</div>
-        </div>
-      </div>
-      <div class="blog-card reveal">
-        <div class="blog-img" style="background-image:url('assets/images/actividades/ficha-open-water.jpg');height:195px;background-size:cover;background-position:center;"></div>
-        <div class="blog-cuerpo">
-          <div class="blog-cat">Buceo</div>
-          <div class="blog-titulo">Aprender a bucear en el Mediterráneo: por qué y cómo</div>
-          <p class="blog-extracto">El Mediterráneo no es el Mar Rojo, pero tiene su propia magia. Posidonias, pecios y fauna local te esperan a pocos metros.</p>
-          <div class="blog-fecha">Febrero 2025</div>
-        </div>
-      </div>
-      <div class="blog-card reveal">
-        <div class="blog-img" style="background-image:url('assets/images/actividades/ficha-parapente-biplaza.jpg');height:195px;background-size:cover;background-position:center;"></div>
-        <div class="blog-cuerpo">
-          <div class="blog-cat">Aire</div>
-          <div class="blog-titulo">Paramotor en Águilas: el litoral perfecto para volar</div>
-          <p class="blog-extracto">Orografía, clima y espacio abierto. Águilas tiene las condiciones ideales para el vuelo motorizado ultraligero.</p>
-          <div class="blog-fecha">Enero 2025</div>
-        </div>
-      </div>
-    </div>
-    <div style="text-align:center;margin-top:2.5rem;">
-      <a href="blog.html" class="btn btn-outline">Ver todos los artículos →</a>
-    </div>
-  </div>
-</section></details>
+
 
 <!-- ═══ CONTACTO RÁPIDO ═══ -->
 <section class="editorial-contact bg-mar" >
@@ -920,11 +941,12 @@
 </section>
 
 <div id="footer-placeholder"></div>
-<script src="assets/js/components.js?v=20261014-2"></script>
+<script src="assets/js/components.js?v=20261025"></script>
 <script src="assets/js/horizonte-nomada-copy.js?v=20261013-1"></script>
 <script src="assets/js/adventure-selector.js?v=20261013-1"></script>
-<script src="assets/js/main.js?v=20261005-1"></script>
-<script src="assets/js/chatbot.js?v=20261013-1"></script>
+<script src="assets/js/activity-specs.js?v=20261025"></script>
+<script src="assets/js/main.js?v=20261025"></script>
+<script src="assets/js/chatbot.js?v=20261025"></script>
 <script src="assets/js/stage3.js?v=20261013-1"></script>
 <script src="assets/js/equipo.js?v=20261004-1"></script>
 <script src="assets/js/home-layout.js?v=20261004-1"></script>

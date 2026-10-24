@@ -10115,7 +10115,29 @@
     ", planteada como una jornada al mes dentro del proyecto académico, en entornos seleccionados específicamente y con una gestión cuidadosa de todos los aspectos relacionados con la privacidad, el consentimiento y la convivencia.": ", pensata come una giornata al mese nell’ambito del progetto accademico, in ambienti appositamente selezionati e con un’attenta gestione della privacy, del consenso e della convivenza.",
     "Seleccionar idioma": "Seleziona la lingua",
     "Nederlands": "Nederlands",
-    "NL": "NL"
+    "NL": "NL",
+    "Imprimir preparación": "Stampa la preparazione",
+    "Tabla desplazable": "Tabella scorrevole",
+    "Selección de formato": "Scegli un formato",
+    "Según programación": "Secondo il programma",
+    "Elegir experiencia": "Scegli un’esperienza",
+    "Preparar mi actividad": "Preparare la mia attività",
+    "Conocer el proyecto": "Scopri il progetto",
+    "Explorar Nómada Extremo": "Esplora Nómada Extremo",
+    "Y CLUB": "E CLUB",
+    "MI PROGRESO": "I MIEI PROGRESSI",
+    "SEGÚN PROGRAMACIÓN": "SECONDO IL PROGRAMMA",
+    "Antes de elegir una salida": "Prima di scegliere un’uscita",
+    "¿Dónde empieza y termina la ruta?": "Dove inizia e finisce il percorso?",
+    "¿Qué material aporta el centro?": "Quale attrezzatura fornisce il centro?",
+    "¿Qué alternativa hay si cambia el mar?": "Qual è l’alternativa se cambiano le condizioni del mare?",
+    "¿Es una primera experiencia o un curso?": "È una prima esperienza o un corso?",
+    "¿Cómo se revisan los requisitos personales?": "Come vengono verificati i requisiti personali?",
+    "¿Qué ocurre si decido no continuar?": "Cosa succede se decido di non continuare?",
+    "¿Qué modalidad y operador se proponen?": "Quale modalità e quale operatore sono proposti?",
+    "¿Cómo se confirma la fecha según las condiciones?": "Come viene confermata la data in base alle condizioni?",
+    "¿Qué incluye la propuesta y qué es opcional?": "Cosa include la proposta e cosa è facoltativo?",
+    "Revisión editorial": "Revisione editoriale"
   },
   "pages": {
     "faq": {
@@ -10295,6 +10317,12 @@
     "login": {
       "title": "Spazio Nómada · Dimostrazione del progetto",
       "description": "Esplora la dimostrazione del Logbook e della comunità Nómada Extremo. Senza account o password."
+    },
+    "comunidad": {
+      "title": "Comunità e club | Nómada Extremo"
+    },
+    "logbook": {
+      "title": "Logbook · I miei progressi | Nómada Extremo"
     }
   },
   "materialPage": {

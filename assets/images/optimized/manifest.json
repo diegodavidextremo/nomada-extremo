@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-25",
+  "derivatives": [
+    {
+      "source": "assets/images/packs-2026/horizonte-salvaje.webp",
+      "small": "assets/images/optimized/horizonte-salvaje-640.webp",
+      "large": "assets/images/optimized/horizonte-salvaje-1280.webp"
+    },
+    {
+      "source": "assets/images/packs-2026/costa-vertical.webp",
+      "small": "assets/images/optimized/costa-vertical-640.webp",
+      "large": "assets/images/optimized/costa-vertical-1280.webp"
+    },
+    {
+      "source": "assets/images/packs-2026/mar-de-acero.webp",
+      "small": "assets/images/optimized/mar-de-acero-640.webp",
+      "large": "assets/images/optimized/mar-de-acero-1280.webp"
+    },
+    {
+      "source": "assets/images/packs-2026/cielo-nomada.webp",
+      "small": "assets/images/optimized/cielo-nomada-640.webp",
+      "large": "assets/images/optimized/cielo-nomada-1280.webp"
+    },
+    {
+      "source": "assets/images/packs-2026/abismo-mediterraneo.webp",
+      "small": "assets/images/optimized/abismo-mediterraneo-640.webp",
+      "large": "assets/images/optimized/abismo-mediterraneo-1280.webp"
+    },
+    {
+      "source": "assets/images/aventura-con-alma-2026.webp",
+      "small": "assets/images/optimized/aventura-con-alma-2026-640.webp",
+      "large": "assets/images/optimized/aventura-con-alma-2026-1280.webp"
+    },
+    {
+      "source": "assets/images/packs-2026/naturista-amanecer.webp",
+      "small": "assets/images/optimized/naturista-amanecer-640.webp",
+      "large": "assets/images/optimized/naturista-amanecer-1280.webp"
+    },
+    {
+      "source": "assets/images/packs-2026/naturista-mar.webp",
+      "small": "assets/images/optimized/naturista-mar-640.webp",
+      "large": "assets/images/optimized/naturista-mar-1280.webp"
+    },
+    {
+      "source": "assets/images/packs-2026/naturista-sendero.webp",
+      "small": "assets/images/optimized/naturista-sendero-640.webp",
+      "large": "assets/images/optimized/naturista-sendero-1280.webp"
+    },
+    {
+      "source": "assets/images/packs-2026/naturista-dia-activo.webp",
+      "small": "assets/images/optimized/naturista-dia-activo-640.webp",
+      "large": "assets/images/optimized/naturista-dia-activo-1280.webp"
+    },
+    {
+      "source": "assets/images/packs-2026/naturista-ritual.webp",
+      "small": "assets/images/optimized/naturista-ritual-640.webp",
+      "large": "assets/images/optimized/naturista-ritual-1280.webp"
+    },
+    {
+      "source": "assets/images/packs-2026/naturista-horizonte.webp",
+      "small": "assets/images/optimized/naturista-horizonte-640.webp",
+      "large": "assets/images/optimized/naturista-horizonte-1280.webp"
+    },
+    {
+      "source": "assets/images/packs-2026/rastro-salvaje.webp",
+      "small": "assets/images/optimized/rastro-salvaje-640.webp",
+      "large": "assets/images/optimized/rastro-salvaje-1280.webp"
+    },
+    {
+      "source": "assets/images/packs-2026/abismo-interior.webp",
+      "small": "assets/images/optimized/abismo-interior-640.webp",
+      "large": "assets/images/optimized/abismo-interior-1280.webp"
+    },
+    {
+      "source": "assets/images/packs-2026/nomada-animal.webp",
+      "small": "assets/images/optimized/nomada-animal-640.webp",
+      "large": "assets/images/optimized/nomada-animal-1280.webp"
+    },
+    {
+      "source": "assets/images/packs-2026/nomada-familia.webp",
+      "small": "assets/images/optimized/nomada-familia-640.webp",
+      "large": "assets/images/optimized/nomada-familia-1280.webp"
+    },
+    {
+      "source": "assets/images/packs-2026/waterman-weekend.webp",
+      "small": "assets/images/optimized/waterman-weekend-640.webp",
+      "large": "assets/images/optimized/waterman-weekend-1280.webp"
+    },
+    {
+      "source": "assets/images/packs-2026/nomada-72h.webp",
+      "small": "assets/images/optimized/nomada-72h-640.webp",
+      "large": "assets/images/optimized/nomada-72h-1280.webp"
+    },
+    {
+      "source": "assets/images/packs-2026/elite-nomada.webp",
+      "small": "assets/images/optimized/elite-nomada-640.webp",
+      "large": "assets/images/optimized/elite-nomada-1280.webp"
+    }
+  ]
+}

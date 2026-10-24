@@ -86,6 +86,12 @@
     "login": {
       "title": "Espacio Nómada · Demostración del proyecto",
       "description": "Explora la demostración del Logbook y la comunidad de Nómada Extremo. Sin cuentas ni contraseñas."
+    },
+    "comunidad": {
+      "title": "Comunidad y club | Nómada Extremo"
+    },
+    "logbook": {
+      "title": "Logbook · Mi progreso | Nómada Extremo"
     }
   },
   "strings": {
@@ -9270,7 +9276,29 @@
     ", planteada como una jornada al mes dentro del proyecto académico, en entornos seleccionados específicamente y con una gestión cuidadosa de todos los aspectos relacionados con la privacidad, el consentimiento y la convivencia.": ", planteada como una jornada al mes dentro del proyecto académico, en entornos seleccionados específicamente y con una gestión cuidadosa de todos los aspectos relacionados con la privacidad, el consentimiento y la convivencia.",
     "Seleccionar idioma": "Seleccionar idioma",
     "Nederlands": "Nederlands",
-    "NL": "NL"
+    "NL": "NL",
+    "Imprimir preparación": "Imprimir preparación",
+    "Tabla desplazable": "Tabla desplazable",
+    "Selección de formato": "Selección de formato",
+    "Según programación": "Según programación",
+    "Elegir experiencia": "Elegir experiencia",
+    "Preparar mi actividad": "Preparar mi actividad",
+    "Conocer el proyecto": "Conocer el proyecto",
+    "Explorar Nómada Extremo": "Explorar Nómada Extremo",
+    "Y CLUB": "Y CLUB",
+    "MI PROGRESO": "MI PROGRESO",
+    "SEGÚN PROGRAMACIÓN": "SEGÚN PROGRAMACIÓN",
+    "Antes de elegir una salida": "Antes de elegir una salida",
+    "¿Dónde empieza y termina la ruta?": "¿Dónde empieza y termina la ruta?",
+    "¿Qué material aporta el centro?": "¿Qué material aporta el centro?",
+    "¿Qué alternativa hay si cambia el mar?": "¿Qué alternativa hay si cambia el mar?",
+    "¿Es una primera experiencia o un curso?": "¿Es una primera experiencia o un curso?",
+    "¿Cómo se revisan los requisitos personales?": "¿Cómo se revisan los requisitos personales?",
+    "¿Qué ocurre si decido no continuar?": "¿Qué ocurre si decido no continuar?",
+    "¿Qué modalidad y operador se proponen?": "¿Qué modalidad y operador se proponen?",
+    "¿Cómo se confirma la fecha según las condiciones?": "¿Cómo se confirma la fecha según las condiciones?",
+    "¿Qué incluye la propuesta y qué es opcional?": "¿Qué incluye la propuesta y qué es opcional?",
+    "Revisión editorial": "Revisión editorial"
   },
   "pages": {
     "faq": {

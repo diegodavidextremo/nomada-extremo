@@ -692,7 +692,7 @@ section { padding:6.5rem 0; }
 .footer-marca-nombre { font-family:var(--display); font-size:1.8rem; letter-spacing:3px; color:var(--arena-claro); margin-bottom:0.3rem; }
 .footer-marca-lema { font-size:0.65rem; letter-spacing:3px; text-transform:uppercase; color:var(--salvia-claro); margin-bottom:1rem; }
 .footer-marca-desc { font-size:0.78rem; color:rgba(200,189,181,0.6); line-height:1.75; }
-.footer-col h5 { font-family:var(--display); font-size:0.9rem; letter-spacing:3px; color:var(--crema); margin-bottom:1.2rem; }
+.footer-col h2 { font-family:var(--display); font-size:0.9rem; letter-spacing:3px; color:var(--crema); margin-bottom:1.2rem; }
 .footer-col li { margin-bottom:0.5rem; }
 .footer-col li a { font-size:0.77rem; color:rgba(200,189,181,0.6); transition:color var(--trans); }
 .footer-col li a:hover { color:var(--arena-claro); }
@@ -1667,7 +1667,7 @@ section { padding:6.5rem 0; }
 /* ─── FOOTER — mejorar todos los enlaces ─── */
 #footer .footer-col li a { color: rgba(200,189,181,0.7) !important; }
 #footer .footer-col li a:hover { color: var(--arena-claro) !important; }
-#footer .footer-col h5 { color: var(--crema) !important; }
+#footer .footer-col h2 { color: var(--crema) !important; }
 #footer .footer-marca-nombre { color: var(--arena-claro) !important; }
 #footer .footer-marca-lema { color: var(--salvia-claro) !important; }
 #footer .footer-marca-desc { color: rgba(200,189,181,0.65) !important; }
@@ -5065,9 +5065,9 @@ section.bg-blanco .label.label-bosque, section.bg-cielo .label.label-bosque { co
 .process-card h3,
 .risk-card h3,
 .zone-card h3,
-.material-card h3,
+.material-card h2,
 .group-card h3,
-.activity-panel h3,
+.activity-panel h2,
 .blog-upgrade-card h3,
 .app-panel h3 {
   font-family: var(--display);

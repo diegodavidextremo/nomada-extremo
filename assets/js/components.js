@@ -11,7 +11,7 @@
   <div class="project-top-notice" role="note">Proyecto académico no operativo · 2.º GMN 2026-2027 · Sin reservas, cobros ni ventas</div>
   <nav id="nav" aria-label="Navegación principal">
     <a href="index.html" class="nav-logo-wrap" aria-label="Nómada Extremo — Inicio">
-      <img src="assets/images/emblema-oficial-web.webp?v=20261005-8" alt="Logo Nómada Extremo" class="nav-logo-img" decoding="async">
+      <img src="assets/images/emblema-oficial-web.webp?v=20261005-8" srcset="assets/images/optimized/emblema-oficial-256.webp 256w, assets/images/emblema-oficial-web.webp 768w" sizes="88px" alt="Logo Nómada Extremo" class="nav-logo-img" decoding="async">
       <div class="nav-logo-text" aria-hidden="true" translate="no">
         <span class="ln1"><span class="brand-word brand-word--nomada">NÓMADA</span> <span class="brand-word brand-word--extremo">EXTREMO</span></span>
         <span class="ln2">Aventura, técnica y naturaleza</span>
@@ -107,50 +107,40 @@
   </nav>
 </header>`;
 
-  if (!document.querySelector('[data-editorial-interface]')) {
-    const sheet = document.createElement('link');
-    sheet.rel = 'stylesheet'; sheet.href = 'assets/css/editorial-interface.css?v=20261014-2';
-    sheet.dataset.editorialInterface = ''; document.head.appendChild(sheet);
-  }
   const FOOTER = `
 <footer id="footer" class="footer-compact">
   <div class="container">
     <div class="footer-topline">
-      <a class="footer-brand-head" href="index.html"><img src="assets/images/emblema-oficial-web.webp?v=20261005-8" alt="" width="52" height="52" loading="lazy"><span class="footer-marca-nombre"><span translate="no">NÓMADA EXTREMO</span><small>Águilas · Aventura, técnica y naturaleza</small></span></a>
+      <a class="footer-brand-head" href="index.html"><img src="assets/images/emblema-oficial-web.webp?v=20261005-8" srcset="assets/images/optimized/emblema-oficial-256.webp 256w, assets/images/emblema-oficial-web.webp 768w" sizes="88px" alt="" width="52" height="52" loading="lazy"><span class="footer-marca-nombre"><span translate="no">NÓMADA EXTREMO</span><small>Águilas · Aventura, técnica y naturaleza</small></span></a>
       <nav class="footer-primary" aria-label="Enlaces principales del pie"><a href="actividades.html">Actividades</a><a href="proyecto-intermodular.html">Proyecto intermodular</a><a href="fundador.html">Fundador</a><a href="equipo.html">Equipo</a><a href="contacto.html">Contacto</a></nav>
     </div>
     <p class="footer-purpose">Proyecto académico no operativo · 2.º GMN · 2026–2027. Sin reservas, cobros ni ventas reales.</p>
-    <details class="footer-directory"><summary>Todas las secciones</summary><div class="footer-directory-grid"><div class="footer-col"><h5>Experiencias</h5><ul><li><a href="actividades.html">Actividades</a></li><li><a href="viajes.html">Viajes</a></li><li><a href="packs.html">Packs</a></li><li><a href="packs.html#bonos">Bonos regalo</a></li><li><a href="grupos.html">Grupos, centros y empresas</a></li><li><a href="zonas.html">Zonas de aventura</a></li><li><a href="naturistas.html">Nómada Naturista</a></li></ul></div><div class="footer-col"><h5>Sistema Nómada</h5><ul><li><a href="como-funciona.html">Cómo funciona</a></li><li><a href="index.html#metodo-nomada">Método Nómada</a></li><li><a href="seguridad.html">Seguridad</a></li><li><a href="seguridad.html#seguros-documentacion">Seguros y documentación</a></li><li><a href="material.html">Material y marcas</a></li><li><a href="alquiler.html">Alquiler orientativo</a></li><li><a href="logbook.html">Logbook y app</a></li><li><a href="certificaciones.html">Credenciales digitales</a></li><li><a href="formularios.html">Formularios</a></li><li><a href="escuela.html">Escuela Nómada</a></li><li><a href="audiovisual.html">Audiovisual</a></li></ul></div><div class="footer-col"><h5>Marca</h5><ul><li><a href="quienes-somos.html">Quiénes somos</a></li><li><a href="fundador.html">Fundador</a></li><li><a href="equipo.html">Equipo</a></li><li><a href="equipo.html#direccion-principal">Nuria P. F.</a></li><li><a href="sostenibilidad.html">Sostenibilidad</a></li><li><a href="naturaleza.html">Naturaleza Nómada</a></li><li><a href="horizonte-nomada.html" translate="no">Horizonte Nómada</a></li><li><a href="blog.html">Blog</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="mailto:nomadaextremoaguilas@gmail.com">Email</a></li><li><a href="https://wa.me/34623179618" target="_blank" rel="noopener noreferrer">WhatsApp: +34 623 17 96 18</a></li><li><span>Horario: lunes a domingo · 8:00–21:00</span></li><li><span>Origen del proyecto: Águilas, Murcia</span></li><li><a href="https://t.me/DiegoDavidExtremo" target="_blank" rel="noopener noreferrer">Telegram</a></li></ul></div><div class="footer-col"><h5>Proyecto académico</h5><ul><li><a href="proyecto-completo.html">Proyecto completo</a></li><li><a href="proyecto-academico.html">Marco académico</a></li><li><a href="proyecto-intermodular.html">Proyecto Intermodular 2026-2027</a></li><li><a href="segundo-gmn.html">2.º GMN · curso activo</a></li><li><a href="formacion-gmn.html">Formación GMN</a></li><li><a href="base-campamento.html">Base y campamento</a></li><li><a href="viajes.html">Viajes</a></li><li><a href="blog.html#articulos-destacados">Art&iacute;culos destacados</a></li><li><a href="guia-actividades.html">Guía de actividades</a></li><li><a href="transparencia-financiacion.html">Transparencia y financiación</a></li><li><a href="faq.html">FAQ</a></li></ul></div><div class="footer-col"><h5>Legal</h5><ul><li><a href="aviso-legal.html">Aviso legal</a></li><li><a href="aviso-legal.html#condiciones-generales">Condiciones</a></li><li><a href="aviso-legal.html#devoluciones">Política de devoluciones</a></li><li><a href="aviso-legal.html#privacidad">Privacidad</a></li><li><a href="aviso-legal.html#cookies">Cookies</a></li></ul></div></div></details>
+    <details class="footer-directory"><summary>Todas las secciones</summary><div class="footer-directory-grid"><div class="footer-col"><h2>Experiencias</h2><ul><li><a href="actividades.html">Actividades</a></li><li><a href="viajes.html">Viajes</a></li><li><a href="packs.html">Packs</a></li><li><a href="packs.html#bonos">Bonos regalo</a></li><li><a href="grupos.html">Grupos, centros y empresas</a></li><li><a href="zonas.html">Zonas de aventura</a></li><li><a href="naturistas.html">Nómada Naturista</a></li></ul></div><div class="footer-col"><h2>Sistema Nómada</h2><ul><li><a href="como-funciona.html">Cómo funciona</a></li><li><a href="index.html#metodo-nomada">Método Nómada</a></li><li><a href="seguridad.html">Seguridad</a></li><li><a href="seguridad.html#seguros-documentacion">Seguros y documentación</a></li><li><a href="material.html">Material y marcas</a></li><li><a href="alquiler.html">Alquiler orientativo</a></li><li><a href="logbook.html">Logbook y app</a></li><li><a href="certificaciones.html">Credenciales digitales</a></li><li><a href="formularios.html">Formularios</a></li><li><a href="escuela.html">Escuela Nómada</a></li><li><a href="audiovisual.html">Audiovisual</a></li></ul></div><div class="footer-col"><h2>Marca</h2><ul><li><a href="quienes-somos.html">Quiénes somos</a></li><li><a href="fundador.html">Fundador</a></li><li><a href="equipo.html">Equipo</a></li><li><a href="equipo.html#direccion-principal">Nuria P. F.</a></li><li><a href="sostenibilidad.html">Sostenibilidad</a></li><li><a href="naturaleza.html">Naturaleza Nómada</a></li><li><a href="horizonte-nomada.html" translate="no">Horizonte Nómada</a></li><li><a href="blog.html">Blog</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="mailto:nomadaextremoaguilas@gmail.com">Email</a></li><li><a href="https://wa.me/34623179618" target="_blank" rel="noopener noreferrer">WhatsApp: +34 623 17 96 18</a></li><li><span>Horario: lunes a domingo · 8:00–21:00</span></li><li><span>Origen del proyecto: Águilas, Murcia</span></li><li><a href="https://t.me/DiegoDavidExtremo" target="_blank" rel="noopener noreferrer">Telegram</a></li></ul></div><div class="footer-col"><h2>Proyecto académico</h2><ul><li><a href="proyecto-completo.html">Proyecto completo</a></li><li><a href="proyecto-academico.html">Marco académico</a></li><li><a href="proyecto-intermodular.html">Proyecto Intermodular 2026-2027</a></li><li><a href="segundo-gmn.html">2.º GMN · curso activo</a></li><li><a href="formacion-gmn.html">Formación GMN</a></li><li><a href="base-campamento.html">Base y campamento</a></li><li><a href="viajes.html">Viajes</a></li><li><a href="blog.html#articulos-destacados">Art&iacute;culos destacados</a></li><li><a href="guia-actividades.html">Guía de actividades</a></li><li><a href="transparencia-financiacion.html">Transparencia y financiación</a></li><li><a href="faq.html">FAQ</a></li></ul></div><div class="footer-col"><h2>Legal</h2><ul><li><a href="aviso-legal.html">Aviso legal</a></li><li><a href="aviso-legal.html#condiciones-generales">Condiciones</a></li><li><a href="aviso-legal.html#devoluciones">Política de devoluciones</a></li><li><a href="aviso-legal.html#privacidad">Privacidad</a></li><li><a href="aviso-legal.html#cookies">Cookies</a></li></ul></div></div></details>
     <div class="footer-bottom"><p class="footer-copy">© 2026 Nómada Extremo · Diego David Gómez García</p><nav class="footer-legal" aria-label="Información legal"><a href="aviso-legal.html">Aviso legal</a><a href="aviso-legal.html#privacidad">Privacidad</a><a href="aviso-legal.html#cookies">Cookies</a></nav><div class="footer-social"><a href="https://www.youtube.com/@diegodavidextremo" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://www.instagram.com/nomadaextremoes/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.tiktok.com/@diegodavidextremo" target="_blank" rel="noopener noreferrer">TikTok</a><a href="https://x.com/nomadaextremoES" target="_blank" rel="noopener noreferrer">X</a></div></div>
   </div>
 </footer>
-<div id="contactDock" aria-label="Ayuda y navegación rápida"><a href="${WHATSAPP_URL}" id="waFloat" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp" title="WhatsApp"><img src="assets/images/whatsapp.webp" alt="" width="56" height="56"></a><a href="#main-content" id="backToTop" aria-label="Volver arriba" title="Volver arriba">↑</a></div>`;
+<nav id="contactDock" aria-label="Ayuda y navegación rápida"><a href="${WHATSAPP_URL}" id="waFloat" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp" title="WhatsApp"><img src="assets/images/whatsapp.webp" alt="" width="56" height="56"></a><a href="#main-content" id="backToTop" aria-label="Volver arriba" title="Volver arriba">↑</a></nav>`;
+
+  const improvements = document.createElement('script');
+  improvements.src = 'assets/js/site-improvements.js?v=20261025';
+  improvements.defer = true;
+  document.body.appendChild(improvements);
 
   const np = document.getElementById('nav-placeholder');
   if (np) np.outerHTML = NAV;
   const fp = document.getElementById('footer-placeholder');
   if (fp) fp.outerHTML = FOOTER;
 
-  if (!document.querySelector('link[data-noext-i18n]')) {
-    const languageStyles = document.createElement('link');
-    languageStyles.rel = 'stylesheet';
-    languageStyles.href = 'assets/css/i18n.css?v=20260621-6';
-    languageStyles.dataset.noextI18n = 'styles';
-    document.head.appendChild(languageStyles);
-  }
+
 
   if (!document.querySelector('script[data-noext-i18n]')) {
     const languageScript = document.createElement('script');
-    languageScript.src = 'assets/js/i18n.js?v=20261014-1';
+    languageScript.src = 'assets/js/i18n.js?v=20261025';
     languageScript.dataset.noextI18n = 'runtime';
     document.head.appendChild(languageScript);
   }
 
   if (!document.querySelector('script[data-noext-language-regions]')) {
-    const styles = document.createElement('link');
-    styles.rel = 'stylesheet';
-    styles.href = 'assets/css/language-regions.css?v=20261013-1';
-    document.head.appendChild(styles);
     const script = document.createElement('script');
     script.src = 'assets/js/language-regions.js?v=20261013-1';
     script.dataset.noextLanguageRegions = '';
@@ -158,13 +148,7 @@
     document.body.appendChild(script);
   }
 
-  if (!document.querySelector('link[data-noext-global-search]')) {
-    const searchStyles = document.createElement('link');
-    searchStyles.rel = 'stylesheet';
-    searchStyles.href = 'assets/css/global-search.css?v=20260717-1';
-    searchStyles.dataset.noextGlobalSearch = 'styles';
-    document.head.appendChild(searchStyles);
-  }
+
 
   if (!document.querySelector('script[data-noext-global-search]')) {
     const searchScript = document.createElement('script');
@@ -174,13 +158,7 @@
     document.body.appendChild(searchScript);
   }
 
-  if (!document.querySelector('link[data-noext-ecosystem-pathways]')) {
-    const pathwayStyles = document.createElement('link');
-    pathwayStyles.rel = 'stylesheet';
-    pathwayStyles.href = 'assets/css/ecosystem-pathways.css?v=20260717-1';
-    pathwayStyles.dataset.noextEcosystemPathways = 'styles';
-    document.head.appendChild(pathwayStyles);
-  }
+
 
   if (!document.querySelector('script[data-noext-ecosystem-pathways]')) {
     const pathwayScript = document.createElement('script');
@@ -608,13 +586,7 @@
 // Carga la capa modular de animaciones sin obligar a duplicar imports en cada HTML.
 (function loadNoextEnhancementLayer(){
   var version = '20260722-1';
-  var cssHref = 'assets/css/skeleton.css?v=' + version;
-  if (!document.querySelector('link[href^="assets/css/skeleton.css"]')) {
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = cssHref;
-    document.head.appendChild(link);
-  }
+
   ['navbar','scroll-reveal','counters','typewriter','tilt','ui-extras'].forEach(function(name){
     var src = 'assets/js/' + name + '.js?v=' + version;
     if (document.querySelector('script[src^="assets/js/' + name + '.js"]')) return;

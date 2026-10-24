@@ -10115,7 +10115,29 @@
     ", planteada como una jornada al mes dentro del proyecto académico, en entornos seleccionados específicamente y con una gestión cuidadosa de todos los aspectos relacionados con la privacidad, el consentimiento y la convivencia.": ", prevista como um dia por mês no âmbito do projeto académico, em locais especificamente selecionados e com uma gestão cuidadosa da privacidade, do consentimento e da convivência.",
     "Seleccionar idioma": "Selecionar idioma",
     "Nederlands": "Nederlands",
-    "NL": "NL"
+    "NL": "NL",
+    "Imprimir preparación": "Imprimir preparação",
+    "Tabla desplazable": "Tabela deslocável",
+    "Selección de formato": "Escolher formato",
+    "Según programación": "Conforme a programação",
+    "Elegir experiencia": "Escolher uma experiência",
+    "Preparar mi actividad": "Preparar a minha atividade",
+    "Conocer el proyecto": "Conhecer o projeto",
+    "Explorar Nómada Extremo": "Explorar Nómada Extremo",
+    "Y CLUB": "E CLUBE",
+    "MI PROGRESO": "O MEU PROGRESSO",
+    "SEGÚN PROGRAMACIÓN": "CONFORME A PROGRAMAÇÃO",
+    "Antes de elegir una salida": "Antes de escolher uma saída",
+    "¿Dónde empieza y termina la ruta?": "Onde começa e termina o percurso?",
+    "¿Qué material aporta el centro?": "Que equipamento fornece o centro?",
+    "¿Qué alternativa hay si cambia el mar?": "Qual é a alternativa se as condições do mar mudarem?",
+    "¿Es una primera experiencia o un curso?": "É uma primeira experiência ou um curso?",
+    "¿Cómo se revisan los requisitos personales?": "Como são verificados os requisitos pessoais?",
+    "¿Qué ocurre si decido no continuar?": "O que acontece se decidir não continuar?",
+    "¿Qué modalidad y operador se proponen?": "Que modalidade e operador são propostos?",
+    "¿Cómo se confirma la fecha según las condiciones?": "Como é confirmada a data em função das condições?",
+    "¿Qué incluye la propuesta y qué es opcional?": "O que inclui a proposta e o que é opcional?",
+    "Revisión editorial": "Revisão editorial"
   },
   "pages": {
     "faq": {
@@ -10295,6 +10317,12 @@
     "login": {
       "title": "Espaço Nómada · Demonstração do projeto",
       "description": "Explora a demonstração do Logbook e da comunidade Nómada Extremo. Sem contas nem palavras-passe."
+    },
+    "comunidad": {
+      "title": "Comunidade e clube | Nómada Extremo"
+    },
+    "logbook": {
+      "title": "Logbook · O meu progresso | Nómada Extremo"
     }
   },
   "materialPage": {

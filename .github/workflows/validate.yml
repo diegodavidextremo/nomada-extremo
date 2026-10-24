@@ -14,6 +14,7 @@ jobs:
         with:
           node-version: '22'
       - run: node tools/audit-stage3.js
+      - run: node tools/build-audit-assets.js --check
       - run: node tools/build-assistant-index.js --check
       - run: node tools/responsive-accessibility-audit.js --summary
   browser:
@@ -26,12 +27,14 @@ jobs:
           node-version: '22'
       - name: Instalar herramientas de prueba aisladas
         run: |
-          npm install --prefix "$RUNNER_TEMP/nomada-qa" --no-package-lock playwright@1.62.1
+          npm install --prefix "$RUNNER_TEMP/nomada-qa" --no-package-lock playwright@1.62.1 axe-core@4.10.3
           echo "NODE_PATH=$RUNNER_TEMP/nomada-qa/node_modules" >> "$GITHUB_ENV"
           "$RUNNER_TEMP/nomada-qa/node_modules/.bin/playwright" install --with-deps chromium
       - run: node tools/browser-stage3.js
       - run: node tools/test-assistant-ux.js
       - run: node tools/test-interface-review.js
+      - run: node tools/test-audit-improvements.js
+      - run: node tools/test-audit-accessibility.js
       - uses: actions/upload-artifact@v4
         if: always()
         with:

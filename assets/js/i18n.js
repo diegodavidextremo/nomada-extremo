@@ -3,7 +3,7 @@
 
   const supported = ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'];
   const storageKey = 'noext-language';
-  const catalogVersion = '20261014-1';
+  const catalogVersion = '20261025';
   const page = (location.pathname.split('/').pop() || 'index.html').replace('.html', '') || 'index';
   const ignoredTags = new Set(['SCRIPT', 'STYLE', 'NOSCRIPT', 'TEMPLATE', 'CODE', 'PRE']);
   const originalText = new WeakMap();
@@ -11,11 +11,16 @@
   const originalAttributes = new WeakMap();
   const missingWarnings = new Set();
   const dictionaries = new Map();
+  const fullCatalogs = new Set();
+  const recovery = new Map();
+  const sourceHashes = new Map();
+  const hash = source => {let n=2166136261;for(let i=0;i<source.length;i++)n=Math.imul(n^source.charCodeAt(i),16777619);return n>>>0;};
   const originalTitle = document.title;
   const originalDescription = document.querySelector('meta[name="description"]')?.getAttribute('content') || '';
   let current = readStoredLanguage();
   let applying = false;
   let observer;
+  let languageRevision = 0;
 
   function readStoredLanguage() {
     try {
@@ -47,11 +52,22 @@
 
   async function load(language) {
     if (dictionaries.has(language)) return dictionaries.get(language);
-    const response = await fetch(`i18n/${language}.json?v=${catalogVersion}`, { cache: 'default' });
-    if (!response.ok) throw new Error(`No se pudo cargar i18n/${language}.json`);
-    const dictionary = await response.json();
+    const responses = await Promise.all(['common',page].map(part => fetch(`i18n/compact/${language}/${part}.json?v=${catalogVersion}`, { cache: 'default' })));
+    if (responses.some(response => !response.ok)) return loadFull(language);
+    const [common, local] = await Promise.all(responses.map(response=>response.json()));
+    const dictionary = {...common,strings:{...common.strings,...local.strings}};
+    sourceHashes.set(language,new Set(common.sourceHashes));
     dictionaries.set(language, dictionary);
     return dictionary;
+  }
+
+  function loadFull(language) {
+    if (recovery.has(language)) return recovery.get(language);
+    const pending = fetch(`i18n/${language}.json?v=${catalogVersion}`, {cache:'default'})
+      .then(response=>{if(!response.ok)throw new Error('No se pudo cargar el catálogo');return response.json();})
+      .then(dictionary=>{dictionaries.set(language,dictionary);fullCatalogs.add(language);return dictionary;});
+    recovery.set(language,pending);
+    return pending;
   }
 
   function translatedValue(source, language, dictionary, fallback, explicitKey) {
@@ -60,6 +76,17 @@
     const target = explicitKey ? valueFor(dictionary, explicitKey) : dictionary.strings?.[source];
     if (typeof target === 'string') return target;
     const fallbackValue = explicitKey ? valueFor(fallback, explicitKey) : fallback.strings?.[source];
+    // Dynamic templates can add a phrase absent from the static page subset. Recover once,
+    // without marking an available translation as missing or interrupting the interaction.
+    if (!fullCatalogs.has(language) && sourceHashes.get(language)?.has(hash(source))) {
+      window.dispatchEvent(new CustomEvent('noext:i18n-recovery',{detail:{language,source}}));
+      loadFull(language).then(() => {
+        const base=dictionaries.get('es');
+        if(base)applyDocument(current,dictionaries.get(current)||base,base);
+      }).catch(()=>{});
+      return typeof fallbackValue === 'string' ? fallbackValue : source;
+    }
+    if (!explicitKey && !sourceHashes.get(language)?.has(hash(source)) && fallbackValue === undefined) return source;
     if (language !== 'es') warnMissing(key, language);
     return typeof fallbackValue === 'string' ? fallbackValue : source;
   }
@@ -180,15 +207,18 @@
   }
 
   async function setLanguage(language, announce = true) {
+    const revision = ++languageRevision;
     const next = supported.includes(language) ? language : 'es';
     try {
       const fallback = await load('es');
       const dictionary = next === 'es' ? fallback : await load(next);
+      if (revision !== languageRevision) return;
       current = next;
       storeLanguage(current);
       applyDocument(current, dictionary, fallback);
       if (announce) window.dispatchEvent(new CustomEvent('noext:languagechange', { detail: { language: current, dictionary, fallback } }));
     } catch (error) {
+      if (revision !== languageRevision) return;
       console.warn('[Nómada Extremo i18n]', error.message);
       const fallback = dictionaries.get('es');
       if (fallback) {

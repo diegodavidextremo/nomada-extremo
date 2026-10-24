@@ -178,7 +178,7 @@ body.chat-is-open #contactDock :is(#waFloat,#backToTop) { display:none; }
 .footer-directory { border-block:1px solid #ffffff30; }
 .footer-directory>summary { cursor:pointer; padding:.75rem 0; font-size:.85rem; color:#e8c79e; }
 .footer-directory-grid { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:1.5rem; padding:1rem 0 1.5rem; }
-#footer .footer-col h5 { font-size:1rem; color:#fff; margin-bottom:.5rem; }
+#footer .footer-col h2 { font-size:1rem; color:#fff; margin-bottom:.5rem; }
 #footer .footer-col :is(a,span) { font-size:.82rem; line-height:1.6; color:#d9e3e7; }
 #footer .footer-col li { margin:0 0 .4rem; }
 #footer .footer-bottom { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:.5rem 1.5rem; margin-top:1rem; padding:0; border:0; }

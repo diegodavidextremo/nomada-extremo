@@ -94,6 +94,12 @@
     "login": {
       "title": "Nómada Space · Project demonstration",
       "description": "Explore the Nómada Extremo Logbook and community demonstration. No accounts or passwords."
+    },
+    "comunidad": {
+      "title": "Community and club | Nómada Extremo"
+    },
+    "logbook": {
+      "title": "Logbook · My progress | Nómada Extremo"
     }
   },
   "strings": {
@@ -10182,7 +10188,29 @@
     ", planteada como una jornada al mes dentro del proyecto académico, en entornos seleccionados específicamente y con una gestión cuidadosa de todos los aspectos relacionados con la privacidad, el consentimiento y la convivencia.": ", envisaged as one day per month within the academic project, in specially selected surroundings, with careful management of privacy, consent and respectful coexistence.",
     "Seleccionar idioma": "Select language",
     "Nederlands": "Nederlands",
-    "NL": "NL"
+    "NL": "NL",
+    "Imprimir preparación": "Print preparation",
+    "Tabla desplazable": "Scrollable table",
+    "Selección de formato": "Choose a format",
+    "Según programación": "Subject to scheduling",
+    "Elegir experiencia": "Choose an experience",
+    "Preparar mi actividad": "Prepare for my activity",
+    "Conocer el proyecto": "Discover the project",
+    "Explorar Nómada Extremo": "Explore Nómada Extremo",
+    "Y CLUB": "AND CLUB",
+    "MI PROGRESO": "MY PROGRESS",
+    "SEGÚN PROGRAMACIÓN": "SUBJECT TO SCHEDULING",
+    "Antes de elegir una salida": "Before choosing an outing",
+    "¿Dónde empieza y termina la ruta?": "Where does the route start and end?",
+    "¿Qué material aporta el centro?": "What equipment does the centre provide?",
+    "¿Qué alternativa hay si cambia el mar?": "What is the alternative if sea conditions change?",
+    "¿Es una primera experiencia o un curso?": "Is this an introductory experience or a course?",
+    "¿Cómo se revisan los requisitos personales?": "How are individual requirements checked?",
+    "¿Qué ocurre si decido no continuar?": "What happens if I decide not to continue?",
+    "¿Qué modalidad y operador se proponen?": "Which activity format and operator are proposed?",
+    "¿Cómo se confirma la fecha según las condiciones?": "How is the date confirmed based on conditions?",
+    "¿Qué incluye la propuesta y qué es opcional?": "What is included in the proposal and what is optional?",
+    "Revisión editorial": "Editorial review"
   },
   "pages": {
     "faq": {
