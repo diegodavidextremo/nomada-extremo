@@ -122,7 +122,7 @@
 <nav id="contactDock" aria-label="Ayuda y navegación rápida"><a href="#main-content" id="backToTop" aria-label="Volver arriba" title="Volver arriba">↑</a></nav>`;
 
   const improvements = document.createElement('script');
-  improvements.src = 'assets/js/site-improvements.js?v=20261025-2';
+  improvements.src = 'assets/js/site-improvements.js?v=20261025-3';
   improvements.defer = true;
   document.body.appendChild(improvements);
 

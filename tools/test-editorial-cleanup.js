@@ -14,6 +14,7 @@ let browser;const report={checks:[],errors:[],pages:[]};
  const page=await browser.newPage({viewport:{width:1440,height:1000},reducedMotion:'reduce'});page.on('pageerror',e=>report.errors.push(e.message));
  const visit=async file=>{await page.goto(base+file);await page.waitForTimeout(450);};
  await visit('fixture-headings.html');assert.deepEqual(await page.locator('.document-index a').allTextContents(),['CANALES OFICIALES','LA AVENTURA EMPIEZA CON CRITERIO.','TRES ESTADOS. UNA IDENTIDAD.','LA TECNOLOGÍA AL SERVICIO DEL MÉTODO.']);report.checks.push('Index labels preserve line-break spaces and punctuation');
+ await page.locator('h2').first().evaluate(h=>{h.innerHTML='CONTACT<br><span>CHANNELS</span>';window.dispatchEvent(new CustomEvent('noext:languagechange'));});assert.equal(await page.locator('.document-index a').first().innerText(),'CONTACT CHANNELS');report.checks.push('Index labels update when the language changes');
  const contacts=['https://wa.me/34623179618','mailto:nomadaextremoaguilas@gmail.com','https://t.me/DiegoDavidExtremo','https://www.instagram.com/nomadaextremoes/','https://x.com/nomadaextremoES','https://www.youtube.com/@diegodavidextremo','https://www.tiktok.com/@diegodavidextremo'];
  for(const language of ['es','en','fr','de','it','pt','nl']){
   await page.evaluate(l=>localStorage.setItem('noext-language',l),language);await visit('contacto.html');await page.waitForFunction(l=>document.documentElement.lang===l,language);

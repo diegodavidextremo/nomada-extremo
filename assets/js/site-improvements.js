@@ -3,6 +3,13 @@
   'use strict';
   const run = () => {
     const tr = source => window.noextTranslate?.(source) || source;
+    const indexTargets = new Map();
+    const headingLabel = h => {
+      const copy = h.cloneNode(true);
+      copy.querySelectorAll('br').forEach(br=>br.replaceWith(document.createTextNode(' ')));
+      const authored = h.dataset.indexLabel || h.closest('[data-chapter]')?.dataset.chapter;
+      return (authored ? tr(authored) : copy.textContent).replace(/\s+/g,' ').replace(/([.!?])(?=\p{L})/gu,'$1 ').trim();
+    };
     document.querySelectorAll('[data-contact-hub]').forEach(link=>{
       const peers=[...link.parentElement.querySelectorAll(':scope > [data-contact-hub]')];
       const existing=link.parentElement.querySelector(':scope > a[href^="contacto.html"]:not([data-contact-hub])');
@@ -43,10 +50,8 @@
           h.id ||= 'document-section-' + i;
           const a = document.createElement('a');
           a.href = '#' + h.id;
-          const copy = h.cloneNode(true);
-          copy.querySelectorAll('br').forEach(br=>br.replaceWith(document.createTextNode(' ')));
-          a.textContent = (h.dataset.indexLabel || h.closest('[data-chapter]')?.dataset.chapter || copy.textContent)
-            .replace(/\s+/g,' ').replace(/([.!?])(?=\p{L})/gu,'$1 ').trim();
+          a.textContent = headingLabel(h);
+          indexTargets.set(a,h);
           nav.append(a);
         });
         const intro = main.querySelector('.page-hero') || main.querySelector('h1');
@@ -54,6 +59,7 @@
       }
     }
     const label = () => {
+      indexTargets.forEach((heading,link)=>{link.textContent=headingLabel(heading);});
       document.querySelectorAll('.preparation-print').forEach(b => { b.textContent = tr('Imprimir preparación'); });
       document.querySelectorAll('.document-index').forEach(n => n.setAttribute('aria-label', tr('Índice de esta página')));
       tableRegions.filter(r=>!r.hasAttribute('aria-labelledby')).forEach(r=>r.setAttribute('aria-label',tr('Tabla desplazable')));
