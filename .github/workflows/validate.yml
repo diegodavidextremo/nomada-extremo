@@ -34,6 +34,7 @@ jobs:
       - run: node tools/test-assistant-ux.js
       - run: node tools/test-interface-review.js
       - run: node tools/test-audit-improvements.js
+      - run: node tools/test-editorial-cleanup.js
       - run: node tools/test-audit-accessibility.js
       - uses: actions/upload-artifact@v4
         if: always()

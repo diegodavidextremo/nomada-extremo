@@ -2,10 +2,10 @@
 .intermodular-page { background:var(--color-white); }
 .intermodular-page main { padding-top:var(--header-offset); }
 .im-hero { background:var(--color-ocean-950); color:var(--color-cream); padding-block:clamp(3rem,6vw,6rem); position:relative; overflow:hidden; }
-.im-hero::after { content:'03'; position:absolute; right:1%; top:2rem; font:clamp(12rem,35vw,36rem)/1 var(--display); color:#ffffff04; pointer-events:none; }
+.im-hero::after { content:none; }
 .im-hero .n3-shell { position:relative; z-index:1; }
 .im-hero .breadcrumb { margin-bottom:2rem; color:var(--color-cream); }
-.im-hero h1 { font:clamp(3.6rem,9.7vw,8.8rem)/.92 var(--display); letter-spacing:.01em; max-width:13ch; color:var(--color-white); margin:1.5rem 0; }
+.im-hero h1 { font:clamp(3.3rem,7vw,6.5rem)/1.02 var(--display); letter-spacing:.01em; max-width:18ch; color:var(--color-white); margin:1.5rem 0; }
 .im-hero h1 span { color:var(--color-sand); display:block; }
 .im-hero .n3-lead { max-width:57ch; color:#d9e5e8; }
 .im-hero .n3-stats { margin-top:3rem; }

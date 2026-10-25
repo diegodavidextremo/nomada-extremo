@@ -2084,7 +2084,7 @@
     "DE AVENTURAS": "ABENTEUER",
     "DE BUCEO": "TAUCHEN",
     "DE CALIDAD": "QUALITÄT",
-    "DE EJEMPLO": "BEISPIEL",
+    "DE EJEMPLO": "ALS BEISPIEL",
     "DE LA ACTIVIDAD": "DER AKTIVITÄT",
     "DE LA APP": "AUS DER APP",
     "DE LA EXPLORACIÓN A LA OBSESIÓN POR LA ADRENALINA": "VON DER ERKUNDUNG ZUR ADRENALIN-OBSESSION",
@@ -10209,7 +10209,20 @@
     "¿Qué modalidad y operador se proponen?": "Welche Variante und welcher Anbieter werden vorgeschlagen?",
     "¿Cómo se confirma la fecha según las condiciones?": "Wie wird der Termin je nach Bedingungen bestätigt?",
     "¿Qué incluye la propuesta y qué es opcional?": "Was ist enthalten und was ist optional?",
-    "Revisión editorial": "Redaktionelle Überprüfung"
+    "Revisión editorial": "Redaktionelle Überprüfung",
+    "Contacto y redes": "Kontakt und soziale Medien",
+    "Todo en un lugar": "Alles an einem Ort",
+    "CONTACTO Y REDES": "KONTAKT UND SOZIALE MEDIEN",
+    "Elige un canal para escribir o sigue las novedades del proyecto.": "Wähle einen Kontaktweg oder verfolge die Neuigkeiten zum Projekt.",
+    "Para hablar": "Kontakt aufnehmen",
+    "Para seguir el proyecto": "Das Projekt verfolgen",
+    "Una consulta, una idea o una colaboración. Aquí tienes todas las formas de contactar.": "Eine Frage, eine Idee oder eine Zusammenarbeit. Hier findest du alle Kontaktmöglichkeiten.",
+    "Origen del proyecto. El horario previsto en el plan es de lunes a domingo, de 8:00 a 21:00; todavía no hay atención comercial operativa.": "Ursprungsort des Projekts. Geplant ist Montag bis Sonntag von 8 bis 21 Uhr; ein kommerzieller Kundenservice besteht noch nicht.",
+    "UNA CONSULTA": "EINE ANFRAGE",
+    "Probar el formulario": "Formular ausprobieren",
+    "Puedes probar los campos y ver cómo se prepararía una consulta. El formulario no envía mensajes ni guarda tus datos.": "Probiere die Felder aus, um eine Anfrage vorzubereiten. Das Formular sendet keine Nachrichten und speichert keine Daten.",
+    "Para contactar, utiliza los canales reunidos al principio de esta página.": "Nutze zur Kontaktaufnahme die oben auf dieser Seite aufgeführten Kanäle.",
+    "El Proyecto Intermodular explica la idea, el trabajo de clase de los lunes y lo que aporta cada asignatura de 2.º GMN. Puedes leer un resumen o abrir el documento de clase desde la página.": "Das fächerübergreifende Projekt erklärt die Idee, die montägliche Klassenarbeit und den Beitrag jedes Fachs im zweiten GMN-Jahr. Auf der Seite findest du eine Zusammenfassung und das Unterrichtsdokument."
   },
   "pages": {
     "faq": {

@@ -28,7 +28,7 @@ let browser;const report={checks:[],errors:[]};
  check('Enlace contextual kayak',await page.locator('#chatBody .bot').last().locator('a[href="kayak-mar.html"]').count()===1);
  await ask('y seguridad','profesional');await ask('otra actividad','entorno');await ask('Mar y buceo','propuestas');
  await ask('¿Puedo reservar?','No hay reservas');await ask('¿Puedo volar después de buceo?','centro');await ask('quiero ver a Nuria','Nuria P. F.');
- await ask('Diego fundador','cronología');await ask('proyecto intermodular','diez módulos');await ask('sostenibilidad','páginas relacionadas');
+ await ask('Diego fundador','cronología');await ask('proyecto intermodular','trabajo de clase');await ask('sostenibilidad','páginas relacionadas');
  await ask('xyz inexistente','No he encontrado');await ask('<img src=x onerror=alert(1)>','No he encontrado');check('Texto del usuario no ejecuta HTML',await page.locator('#chatBody img').count()===0);
  const links=await page.locator('#chatBody a').evaluateAll(es=>es.map(e=>e.getAttribute('href')));
  for(const href of new Set(links)){const [name,id]=href.split('#');const html=fs.readFileSync(path.join(root,name),'utf8');check(`Destino existente ${href}`,!id||html.includes(`id="${id}"`));}

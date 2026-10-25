@@ -2084,7 +2084,7 @@
     "DE AVENTURAS": "ADVENTURE",
     "DE BUCEO": "DIVING",
     "DE CALIDAD": "QUALITY",
-    "DE EJEMPLO": "EXAMPLE",
+    "DE EJEMPLO": "ENQUIRY",
     "DE LA ACTIVIDAD": "OF THE ACTIVITY",
     "DE LA APP": "FROM THE APP",
     "DE LA EXPLORACIÓN A LA OBSESIÓN POR LA ADRENALINA": "FROM EXPLORATION TO ADRENALINE OBSESSION",
@@ -10210,7 +10210,20 @@
     "¿Qué modalidad y operador se proponen?": "Which activity format and operator are proposed?",
     "¿Cómo se confirma la fecha según las condiciones?": "How is the date confirmed based on conditions?",
     "¿Qué incluye la propuesta y qué es opcional?": "What is included in the proposal and what is optional?",
-    "Revisión editorial": "Editorial review"
+    "Revisión editorial": "Editorial review",
+    "Contacto y redes": "Contact and social media",
+    "Todo en un lugar": "Everything in one place",
+    "CONTACTO Y REDES": "CONTACT AND SOCIAL MEDIA",
+    "Elige un canal para escribir o sigue las novedades del proyecto.": "Choose a channel to write to us or follow project updates.",
+    "Para hablar": "Get in touch",
+    "Para seguir el proyecto": "Follow the project",
+    "Una consulta, una idea o una colaboración. Aquí tienes todas las formas de contactar.": "A question, an idea or a collaboration. Find all our contact options here.",
+    "Origen del proyecto. El horario previsto en el plan es de lunes a domingo, de 8:00 a 21:00; todavía no hay atención comercial operativa.": "The project’s home. The plan proposes Monday to Sunday, 8:00–21:00; commercial customer service is not yet operating.",
+    "UNA CONSULTA": "A SAMPLE",
+    "Probar el formulario": "Try the form",
+    "Puedes probar los campos y ver cómo se prepararía una consulta. El formulario no envía mensajes ni guarda tus datos.": "Try the fields to see how an enquiry could be prepared. The form does not send messages or save your data.",
+    "Para contactar, utiliza los canales reunidos al principio de esta página.": "To get in touch, use the channels listed at the top of this page.",
+    "El Proyecto Intermodular explica la idea, el trabajo de clase de los lunes y lo que aporta cada asignatura de 2.º GMN. Puedes leer un resumen o abrir el documento de clase desde la página.": "The Intermodular Project explains the idea, the class work developed on Mondays and how each GMN Year 2 subject contributes. You can read a summary or open the class document from the page."
   },
   "pages": {
     "faq": {

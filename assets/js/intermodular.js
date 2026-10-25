@@ -44,10 +44,10 @@
       const values=fields.map(f=>f.valueAsNumber), output=document.getElementById('economy-result');
       if(values.some(v=>!Number.isFinite(v)||v<0)) {output.textContent='Completa los tres valores con números válidos, iguales o superiores a cero.';return;}
       const [fixed,price,variable]=values, margin=price-variable;
-      if(margin<=0) {output.textContent='Con estos supuestos no hay un margen unitario positivo: no se puede calcular un punto de equilibrio finito.';return;}
+      if(margin<=0) {output.textContent='Con ese precio no queda dinero para cubrir los gastos fijos. Revisa el precio y el gasto por participante.';return;}
       const units=Math.ceil(fixed/margin);
       if(!Number.isSafeInteger(units)) {output.textContent='Los supuestos exceden el rango de este explorador. Revisa los importes.';return;}
-      output.textContent=`Supuesto didáctico: margen unitario ${margin.toLocaleString('es-ES',{style:'currency',currency:'EUR'})}; ${units.toLocaleString('es-ES')} unidades para cubrir los costes fijos del periodo. No son resultados reales del proyecto.`;
+      output.textContent=`Harían falta ${units.toLocaleString('es-ES')} plazas para cubrir los gastos fijos indicados. Cada plaza dejaría ${margin.toLocaleString('es-ES',{style:'currency',currency:'EUR'})} después del gasto por participante. Es un ejemplo de clase, no un resultado real del proyecto.`;
     });
     form.addEventListener('input',()=>{document.getElementById('economy-result').textContent='Supuestos modificados. Vuelve a calcular para actualizar el resultado.';});
   }

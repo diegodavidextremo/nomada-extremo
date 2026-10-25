@@ -2085,7 +2085,7 @@
     "DE AVENTURAS": "AVONTUUR",
     "DE BUCEO": "DUIKEN",
     "DE CALIDAD": "KWALITEIT",
-    "DE EJEMPLO": "VOORBEELD",
+    "DE EJEMPLO": "VAN EEN AANVRAAG",
     "DE LA ACTIVIDAD": "VAN DE ACTIVITEIT",
     "DE LA APP": "VAN DE APP",
     "DE LA EXPLORACIÓN A LA OBSESIÓN POR LA ADRENALINA": "VAN EXPLORATIE NAAR ADRENALINE OBSESSIOP",
@@ -10258,7 +10258,20 @@
     "¿Qué modalidad y operador se proponen?": "Welke variant en aanbieder worden voorgesteld?",
     "¿Cómo se confirma la fecha según las condiciones?": "Hoe wordt de datum bevestigd op basis van de omstandigheden?",
     "¿Qué incluye la propuesta y qué es opcional?": "Wat is inbegrepen in het voorstel en wat is optioneel?",
-    "Revisión editorial": "Redactionele controle"
+    "Revisión editorial": "Redactionele controle",
+    "Contacto y redes": "Contact en sociale media",
+    "Todo en un lugar": "Alles op één plek",
+    "CONTACTO Y REDES": "CONTACT EN SOCIALE MEDIA",
+    "Elige un canal para escribir o sigue las novedades del proyecto.": "Kies een kanaal om ons te schrijven of volg het projectnieuws.",
+    "Para hablar": "Neem contact op",
+    "Para seguir el proyecto": "Volg het project",
+    "Una consulta, una idea o una colaboración. Aquí tienes todas las formas de contactar.": "Een vraag, een idee of een samenwerking. Hier vind je alle contactmogelijkheden.",
+    "Origen del proyecto. El horario previsto en el plan es de lunes a domingo, de 8:00 a 21:00; todavía no hay atención comercial operativa.": "De thuisbasis van het project. Het plan voorziet maandag tot zondag, 8.00–21.00 uur; er is nog geen commerciële klantenservice actief.",
+    "UNA CONSULTA": "EEN VOORBEELD",
+    "Probar el formulario": "Probeer het formulier",
+    "Puedes probar los campos y ver cómo se prepararía una consulta. El formulario no envía mensajes ni guarda tus datos.": "Probeer de velden om te zien hoe een aanvraag wordt voorbereid. Het formulier verstuurt geen berichten en slaat je gegevens niet op.",
+    "Para contactar, utiliza los canales reunidos al principio de esta página.": "Gebruik de kanalen bovenaan deze pagina om contact op te nemen.",
+    "El Proyecto Intermodular explica la idea, el trabajo de clase de los lunes y lo que aporta cada asignatura de 2.º GMN. Puedes leer un resumen o abrir el documento de clase desde la página.": "Het vakoverstijgende project legt het idee uit, het klaswerk op maandag en de bijdrage van elk vak in het tweede GMN-jaar. Op de pagina kun je een samenvatting lezen of het klasdocument openen."
   },
   "pages": {
     "faq": {

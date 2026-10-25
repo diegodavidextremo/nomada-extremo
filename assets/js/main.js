@@ -633,6 +633,13 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       btn.textContent = '✓ Simulación completada';
       btn.style.background = 'var(--bosque)';
+      const message = document.getElementById('contactMsg');
+      if (message) {
+        message.setAttribute('role','status');
+        message.setAttribute('aria-live','polite');
+        message.textContent = window.noextTranslate?.('Simulación completada. No se ha enviado ningún mensaje.') || 'Simulación completada. No se ha enviado ningún mensaje.';
+        message.style.display = 'block';
+      }
       setTimeout(() => { btn.textContent = orig; btn.style.background = ''; btn.disabled = false; fContact.reset(); }, 4000);
     }, 1100);
   });

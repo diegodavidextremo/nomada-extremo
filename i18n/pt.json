@@ -2210,7 +2210,7 @@
     "DE AVENTURAS": "AVENTURA",
     "DE BUCEO": "MERGULHO",
     "DE CALIDAD": "QUALIDADE",
-    "DE EJEMPLO": "EXEMPLO",
+    "DE EJEMPLO": "DE EXEMPLO",
     "DE LA ACTIVIDAD": "DA ATIVIDADE",
     "DE LA APP": "DO APLICATIVO",
     "DE LA EXPLORACIÓN A LA OBSESIÓN POR LA ADRENALINA": "DA EXPLORAÇÃO À OBSESSÃO POR ADRENALINA",
@@ -10137,7 +10137,20 @@
     "¿Qué modalidad y operador se proponen?": "Que modalidade e operador são propostos?",
     "¿Cómo se confirma la fecha según las condiciones?": "Como é confirmada a data em função das condições?",
     "¿Qué incluye la propuesta y qué es opcional?": "O que inclui a proposta e o que é opcional?",
-    "Revisión editorial": "Revisão editorial"
+    "Revisión editorial": "Revisão editorial",
+    "Contacto y redes": "Contacto e redes sociais",
+    "Todo en un lugar": "Tudo num só lugar",
+    "CONTACTO Y REDES": "CONTACTO E REDES SOCIAIS",
+    "Elige un canal para escribir o sigue las novedades del proyecto.": "Escolhe um canal para escrever ou acompanha as novidades do projeto.",
+    "Para hablar": "Para falar",
+    "Para seguir el proyecto": "Para seguir o projeto",
+    "Una consulta, una idea o una colaboración. Aquí tienes todas las formas de contactar.": "Uma pergunta, uma ideia ou uma colaboração. Aqui estão todas as formas de contacto.",
+    "Origen del proyecto. El horario previsto en el plan es de lunes a domingo, de 8:00 a 21:00; todavía no hay atención comercial operativa.": "Local de origem do projeto. O plano prevê segunda a domingo, das 8h às 21h; ainda não existe atendimento comercial em funcionamento.",
+    "UNA CONSULTA": "UMA CONSULTA",
+    "Probar el formulario": "Experimentar o formulário",
+    "Puedes probar los campos y ver cómo se prepararía una consulta. El formulario no envía mensajes ni guarda tus datos.": "Podes experimentar os campos para ver como preparar uma consulta. O formulário não envia mensagens nem guarda os teus dados.",
+    "Para contactar, utiliza los canales reunidos al principio de esta página.": "Para contactar, utiliza os canais reunidos no início desta página.",
+    "El Proyecto Intermodular explica la idea, el trabajo de clase de los lunes y lo que aporta cada asignatura de 2.º GMN. Puedes leer un resumen o abrir el documento de clase desde la página.": "O Projeto Intermodular explica a ideia, o trabalho de aula das segundas-feiras e o contributo de cada disciplina do segundo ano GMN. A página permite ler um resumo ou abrir o documento de aula."
   },
   "pages": {
     "faq": {
