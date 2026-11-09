@@ -27,16 +27,17 @@ const server = http.createServer((request, response) => {
   response.writeHead(200, headers).end(cache.get(file));
 });
 
+// Gallery pages allow for Chromium's larger native lazy-loading window on CI.
 const limits = {
   'index.html': [720_000, 820_000],
-  'actividades.html': [950_000, 1_050_000],
+  'actividades.html': [1_100_000, 1_750_000],
   'senderismo-guiado.html': [480_000, 480_000],
   'proyecto-intermodular.html': [320_000, 320_000],
   'contacto.html': [360_000, 360_000],
   'equipo.html': [700_000, 800_000],
   'agradecimiento-1-gmn.html': [520_000, 730_000],
   'blog.html': [730_000, 730_000],
-  'packs.html': [1_020_000, 1_350_000]
+  'packs.html': [1_200_000, 1_620_000]
 };
 
 async function run() {
