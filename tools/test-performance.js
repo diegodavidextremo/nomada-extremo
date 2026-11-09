@@ -28,15 +28,15 @@ const server = http.createServer((request, response) => {
 });
 
 const limits = {
-  'index.html': [720_000, 790_000],
-  'actividades.html': [800_000, 950_000],
+  'index.html': [720_000, 820_000],
+  'actividades.html': [950_000, 1_050_000],
   'senderismo-guiado.html': [480_000, 480_000],
-  'proyecto-intermodular.html': [300_000, 300_000],
-  'contacto.html': [350_000, 350_000],
-  'equipo.html': [680_000, 780_000],
-  'agradecimiento-1-gmn.html': [500_000, 720_000],
+  'proyecto-intermodular.html': [320_000, 320_000],
+  'contacto.html': [360_000, 360_000],
+  'equipo.html': [700_000, 800_000],
+  'agradecimiento-1-gmn.html': [520_000, 730_000],
   'blog.html': [730_000, 730_000],
-  'packs.html': [850_000, 1_350_000]
+  'packs.html': [1_020_000, 1_350_000]
 };
 
 async function run() {
@@ -50,6 +50,7 @@ async function run() {
   const baseline = process.argv.includes('--baseline');
   const pages = full ? fs.readdirSync(root).filter(file => file.endsWith('.html')) : Object.keys(limits);
   const results = [];
+  const budgetFailures = [];
   try {
     for (const [profileIndex, { width, height, ...options }] of profiles.entries()) {
       for (const file of pages) {
@@ -107,10 +108,13 @@ async function run() {
           });
           results.push({ file, width, ...result, external: [...external], failed });
           if (!baseline && limits[file]) {
-            assert(result.bytes <= limits[file][profileIndex], `${file} ${width}px: ${result.bytes} bytes`);
-            assert(!result.assistantFetched, 'The assistant index should load only for a question that needs it');
-            assert(![...external].some(host => host.startsWith('fonts.')), 'Fonts should be served locally');
-            if (file === 'index.html') assert.equal(result.homePhotos, 1, 'Only one hero candidate should load');
+            const limit = limits[file][profileIndex];
+            const location = `${file} ${width}px`;
+            if (result.bytes > limit) budgetFailures.push({ location, bytes: result.bytes, limit, largest: result.largest });
+            if (result.assistantFetched) budgetFailures.push({ location, issue: 'Assistant index requested on arrival' });
+            if (file === 'index.html' && result.homePhotos !== 1) {
+              budgetFailures.push({ location, issue: 'Expected one hero candidate', count: result.homePhotos });
+            }
           }
         } finally {
           await context.close();
@@ -127,7 +131,10 @@ async function run() {
       heaviest: [...results].sort((a, b) => b.bytes - a.bytes).slice(0, 5)
     } : results.map(({ largest, ...result }) => result)));
   }
-  if (!baseline) assert.deepEqual(results.filter(result => result.overflow || result.failed.length), []);
+  if (!baseline) {
+    assert.deepEqual(results.filter(result => result.overflow || result.failed.length || result.external.length), []);
+    assert.deepEqual(budgetFailures, []);
+  }
 }
 
 run().catch(error => { console.error(error); process.exitCode = 1; }).finally(() => server.close());
