@@ -75,22 +75,6 @@
     bars.forEach(bar => observer.observe(bar));
   }
 
-  // Muestra skeletons breves en fichas destacadas de portada.
-  function initSkeletonCards() {
-    const cards = [...document.querySelectorAll('.home-page .ficha')].slice(0, 6);
-    if (!cards.length || reduceMotion) return;
-    cards.forEach(card => {
-      card.classList.add('is-skeleton-loading');
-      if (!card.querySelector('.skeleton-card')) {
-        const skeleton = document.createElement('div');
-        skeleton.className = 'skeleton-card';
-        skeleton.innerHTML = '<div class="skeleton skeleton-hero"></div><div class="skeleton skeleton-line"></div><div class="skeleton skeleton-line short"></div><div class="skeleton skeleton-button"></div>';
-        card.appendChild(skeleton);
-      }
-    });
-    window.setTimeout(() => cards.forEach(card => card.classList.remove('is-skeleton-loading')), 600);
-  }
-
   // Inserta barra de progreso de lectura en p?ginas largas.
   function initReadingProgress() {
     const longPages = ['actividades.html', 'proyecto-completo.html', 'escuela.html'];
@@ -145,7 +129,6 @@
   function initUiExtras() {
     initSeasonTabs();
     initIntensityBars();
-    initSkeletonCards();
     initReadingProgress();
     initBadgePop();
   }

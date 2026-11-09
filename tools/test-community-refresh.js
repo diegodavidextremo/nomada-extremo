@@ -23,9 +23,9 @@ let browser;
    assert.deepEqual(await page.locator('img').evaluateAll(images=>images.filter(img=>!img.naturalWidth).map(img=>img.src)),[]);
    assert.equal(await page.locator('img[src*="/noext/"]').count(),0);
    assert.equal(await page.locator('img[src*="community-2026/"]').count(),0);
-   assert((await page.locator('.nav-logo-img').getAttribute('src')).includes('emblema-oficial-web.webp'));
-   assert((await page.locator('.footer-brand-head img').getAttribute('src')).includes('emblema-oficial-web.webp'));
-   assert((await page.locator('#chatBtn img').getAttribute('src')).includes('emblema-oficial-web.webp'));
+   for (const selector of ['.nav-logo-img','.footer-brand-head img','#chatBtn img']) {
+    assert((await page.locator(selector).getAttribute('src')).endsWith('/emblema-web-192.webp'));
+   }
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),file+' overflow '+width);
    if(file==='comunidad'){
     assert.equal(await page.locator('.coupon-copy').count(),22);

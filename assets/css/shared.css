@@ -39,9 +39,8 @@
 .article-next{display:flex;flex-wrap:wrap;gap:12px;margin-top:1.5rem}
 .article-reviewed{font:.82rem/1.7 var(--sans);color:#45646c;margin-top:1.2rem}
 .responsive-table:focus-visible,.finance-table-wrap:focus-visible{outline:3px solid #267a90;outline-offset:4px}
-.home-page .hero-bg{background-image:url('../images/optimized/home-1440.webp')}
-@media(min-width:1500px){.home-page .hero-bg{background-image:url('../images/optimized/home-1920.webp')}}
-@media(max-width:768px){.home-page .hero-bg{background-image:url('../images/optimized/home-768.webp')}}
+.hero-bg picture, .hero-bg img, .page-hero-bg picture, .page-hero-bg img{display:block;width:100%;height:100%;object-fit:cover;object-position:var(--hero-position,center)}
+.home-page .hero-bg{transform:none;transition:none}
 body[data-page-purpose="reference"] .page-hero{min-height:0!important;padding-bottom:35px!important;background:#183e4d!important}
 body[data-page-purpose="reference"] .page-hero h1{font-size:clamp(2.6rem,5vw,4.8rem)!important;line-height:1.05}
 body[data-page-purpose="reference"] .page-hero-bg{background-image:none!important}

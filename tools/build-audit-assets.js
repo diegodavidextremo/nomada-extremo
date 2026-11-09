@@ -25,13 +25,15 @@ const langs=['es','en','fr','de','it','pt','nl'];
 let total=0;
 for(const lang of langs){
  const dict=JSON.parse(read('i18n/'+lang+'.json'));
- const commonKeys=new Set(Object.keys(dict.strings).filter(key=>commonSource.includes(key)));
- const common={...dict,sourceHashes:Object.keys(dict.strings).map(hash),strings:Object.fromEntries(Object.entries(dict.strings).filter(([key])=>commonKeys.has(key)))};
+ // Spanish prose is already in the HTML. Keep explicit bindings and only store actual text overrides.
+ const strings=Object.entries(dict.strings).filter(([key,value])=>lang!=='es'||key!==value);
+ const commonKeys=new Set(strings.filter(([key])=>commonSource.includes(key)).map(([key])=>key));
+ const common={...dict,sourceHashes:strings.map(([key])=>hash(key)),strings:Object.fromEntries(strings.filter(([key])=>commonKeys.has(key)))};
  write('i18n/compact/'+lang+'/common.json',JSON.stringify(common));
  for(const page of pages){
    const source=normalize(read(page)).replace(/&amp;/g,'&').replace(/&#39;/g,"'").replace(/&quot;/g,'"');
-   const strings=Object.fromEntries(Object.entries(dict.strings).filter(([key])=>!commonKeys.has(key)&&source.includes(key)));
-   write('i18n/compact/'+lang+'/'+page.replace('.html','.json'),JSON.stringify({strings}));
+   const pageStrings=Object.fromEntries(strings.filter(([key])=>!commonKeys.has(key)&&source.includes(key)));
+   write('i18n/compact/'+lang+'/'+page.replace('.html','.json'),JSON.stringify({strings:pageStrings}));
  }
  total+=Buffer.byteLength(JSON.stringify(common));
 }

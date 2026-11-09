@@ -11,7 +11,7 @@
   <div class="project-top-notice" role="note">Proyecto académico no operativo · 2.º GMN 2026-2027 · Sin reservas, cobros ni ventas</div>
   <nav id="nav" aria-label="Navegación principal">
     <a href="index.html" class="nav-logo-wrap" aria-label="Nómada Extremo — Inicio">
-      <img src="assets/images/emblema-oficial-web.webp?v=20261005-8" srcset="assets/images/optimized/emblema-oficial-256.webp 256w, assets/images/emblema-oficial-web.webp 768w" sizes="88px" alt="Logo Nómada Extremo" class="nav-logo-img" decoding="async">
+      <img src="assets/images/optimized/emblema-web-192.webp" alt="Logo Nómada Extremo" class="nav-logo-img" decoding="async">
       <div class="nav-logo-text" aria-hidden="true" translate="no">
         <span class="ln1"><span class="brand-word brand-word--nomada">NÓMADA</span> <span class="brand-word brand-word--extremo">EXTREMO</span></span>
         <span class="ln2">Aventura, técnica y naturaleza</span>
@@ -111,7 +111,7 @@
 <footer id="footer" class="footer-compact">
   <div class="container">
     <div class="footer-topline">
-      <a class="footer-brand-head" href="index.html"><img src="assets/images/emblema-oficial-web.webp?v=20261005-8" srcset="assets/images/optimized/emblema-oficial-256.webp 256w, assets/images/emblema-oficial-web.webp 768w" sizes="88px" alt="" width="52" height="52" loading="lazy"><span class="footer-marca-nombre"><span translate="no">NÓMADA EXTREMO</span><small>Águilas · Aventura, técnica y naturaleza</small></span></a>
+      <a class="footer-brand-head" href="index.html"><img src="assets/images/optimized/emblema-web-192.webp" alt="" width="52" height="52" loading="lazy"><span class="footer-marca-nombre"><span translate="no">NÓMADA EXTREMO</span><small>Águilas · Aventura, técnica y naturaleza</small></span></a>
       <nav class="footer-primary" aria-label="Enlaces principales del pie"><a href="actividades.html">Actividades</a><a href="proyecto-intermodular.html">Proyecto intermodular</a><a href="fundador.html">Fundador</a><a href="equipo.html">Equipo</a><a href="contacto.html">Contacto</a></nav>
     </div>
     <p class="footer-purpose">Proyecto académico no operativo · 2.º GMN · 2026–2027. Sin reservas, cobros ni ventas reales.</p>
@@ -135,7 +135,7 @@
 
   if (!document.querySelector('script[data-noext-i18n]')) {
     const languageScript = document.createElement('script');
-    languageScript.src = 'assets/js/i18n.js?v=20261025-2';
+    languageScript.src = 'assets/js/i18n.js?v=20261109';
     languageScript.dataset.noextI18n = 'runtime';
     document.head.appendChild(languageScript);
   }
@@ -310,83 +310,10 @@
     if (backToTop) { const toggleTop = () => backToTop.classList.toggle('visible', window.scrollY > 600); window.addEventListener('scroll', toggleTop, { passive: true }); toggleTop(); }
 
 
-    const initNoextMotion = () => {
-      if (window.__noextMotionReady) return;
-      window.__noextMotionReady = true;
-      const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      document.documentElement.classList.add('motion-ready');
-
-      const targets = [
-        '.hero', '.page-hero', '.stats-strip', '.section-block', '.final-section',
-        '.card', '.ficha', '.process-card', '.pack-card', '.bono-card', '.blog-card',
-        '.equipo-card', '.teacher-card', '.learning-card', '.reading-card', '.final-card',
-        '.rental-item', '.finance-grid article', '.brand-grid article', '.tech-water-grid article',
-        '.material-prep-card', '.route-card', '.activity-route-card', '.faq-premium-card'
-      ].join(',');
-
-      const elements = [...document.querySelectorAll(targets)]
-        .filter(el => !el.closest('#site-header, #mobileNav, #footer, .noext-modal, .chat-widget'));
-
-      elements.forEach((el, index) => {
-        if (!el.classList.contains('motion-reveal')) el.classList.add('motion-reveal');
-        if (!el.dataset.motion) {
-          if (el.classList.contains('hero') || el.classList.contains('page-hero')) el.dataset.motion = 'rise';
-          else el.dataset.motion = index % 3 === 1 ? 'left' : index % 3 === 2 ? 'right' : 'rise';
-        }
-        el.style.setProperty('--motion-delay', Math.min((index % 8) * 55, 385) + 'ms');
-        if (reduceMotion) el.classList.add('is-inview');
-      });
-
-      if (!reduceMotion && 'IntersectionObserver' in window) {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (!entry.isIntersecting) return;
-            entry.target.classList.add('is-inview');
-            observer.unobserve(entry.target);
-          });
-        }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
-        elements.forEach(el => observer.observe(el));
-      } else {
-        elements.forEach(el => el.classList.add('is-inview'));
-      }
-
-      const counters = [...document.querySelectorAll('.stat-num[data-count], .lb-stat-num[data-count], [data-countup]')];
-      if (reduceMotion || !counters.length || !('IntersectionObserver' in window)) return;
-      const animateCounter = (el) => {
-        const target = Number(el.dataset.count || el.dataset.countup || String(el.textContent).replace(/[^0-9.]/g, ''));
-        if (!Number.isFinite(target)) return;
-        const suffix = el.dataset.suffix || (el.textContent.includes('+') ? '+' : '');
-        const duration = 1500;
-        const start = performance.now();
-        el.classList.add('is-counting');
-        const tick = (now) => {
-          const progress = Math.min((now - start) / duration, 1);
-          const eased = 1 - Math.pow(1 - progress, 3);
-          el.textContent = Math.round(target * eased) + (progress >= 1 ? suffix : '');
-          if (progress < 1) requestAnimationFrame(tick);
-          else el.classList.remove('is-counting');
-        };
-        requestAnimationFrame(tick);
-      };
-      const counterObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting || entry.target.dataset.counted === 'true') return;
-          entry.target.dataset.counted = 'true';
-          animateCounter(entry.target);
-          counterObserver.unobserve(entry.target);
-        });
-      }, { threshold: 0.45 });
-      counters.forEach(el => counterObserver.observe(el));
-    };
-
-    initNoextMotion();
-
-
     const initAdvancedThemeInteractions = () => {
       if (window.__noextAdvancedThemeReady) return;
       window.__noextAdvancedThemeReady = true;
       const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      const finePointer = window.matchMedia && window.matchMedia('(pointer: fine)').matches;
 
       const markActiveSection = () => {
         const links = [...document.querySelectorAll('#nav a[href*="#"]')];
@@ -403,70 +330,6 @@
           });
         }, { rootMargin: '-30% 0px -55% 0px', threshold: 0.01 });
         sections.forEach(([, section]) => sectionObserver.observe(section));
-      };
-
-      const initTiltCards = () => {
-        if (reduceMotion || !finePointer) return;
-        document.querySelectorAll('.ficha').forEach(card => {
-          card.addEventListener('mousemove', event => {
-            const rect = card.getBoundingClientRect();
-            const x = (event.clientX - rect.left) / rect.width - .5;
-            const y = (event.clientY - rect.top) / rect.height - .5;
-            card.classList.add('is-tilting');
-            card.style.transform = 'perspective(900px) rotateX(' + (-y * 8).toFixed(2) + 'deg) rotateY(' + (x * 8).toFixed(2) + 'deg) translateY(-4px)';
-          });
-          card.addEventListener('mouseleave', () => {
-            card.classList.remove('is-tilting');
-            card.style.transform = '';
-          });
-        });
-      };
-
-      const initCursor = () => {
-        if (reduceMotion || !finePointer || document.querySelector('.noext-cursor')) return;
-        const cursor = document.createElement('div');
-        cursor.className = 'noext-cursor';
-        cursor.setAttribute('aria-hidden', 'true');
-        cursor.innerHTML = '<svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="15" fill="rgba(10,24,30,.82)" stroke="#c4966a"/><path d="M20 6l4 14-4 14-4-14z" fill="#f4efe8" stroke="#c4966a"/><circle cx="20" cy="20" r="3" fill="#c4966a"/></svg>';
-        document.body.appendChild(cursor);
-        document.body.classList.add('has-noext-cursor');
-        const placeCursor = event => {
-          cursor.style.transform = 'translate3d(' + event.clientX + 'px,' + event.clientY + 'px,0) translate(-50%,-50%)';
-          cursor.classList.add('is-visible');
-          const target = event.target;
-          cursor.classList.toggle('is-cta', !!target.closest('a, button, .btn, .ficha-btn, .nav-menu a, .nav-drop a, .language-switcher button'));
-          cursor.classList.toggle('is-nav', !!target.closest('#site-header, #nav, .nav-drop, .language-switcher'));
-          cursor.classList.toggle('is-image', !!target.closest('img, .ficha-img, .act-card-bg, .blog-img'));
-        };
-        document.addEventListener('pointermove', placeCursor, { passive: true, capture: true });
-        document.addEventListener('pointerleave', () => cursor.classList.remove('is-visible'));
-        window.addEventListener('blur', () => cursor.classList.remove('is-visible'));
-      };
-
-      const initTypewriter = () => {
-        const quote = document.querySelector('.manifiesto-texto');
-        if (!quote || quote.dataset.typewriterReady === 'true') return;
-        const fullText = quote.textContent.replace(/\s+/g, ' ').trim();
-        quote.dataset.typewriterReady = 'true';
-        if (reduceMotion) return;
-        quote.textContent = '';
-        quote.classList.add('typewriter-ready');
-        const start = () => {
-          let index = 0;
-          const write = () => {
-            quote.textContent = fullText.slice(0, index++);
-            if (index <= fullText.length) setTimeout(write, 24 + Math.random() * 42);
-          };
-          write();
-        };
-        if ('IntersectionObserver' in window) {
-          const observer = new IntersectionObserver(entries => {
-            if (!entries.some(entry => entry.isIntersecting)) return;
-            observer.disconnect();
-            start();
-          }, { threshold: .45 });
-          observer.observe(quote);
-        } else start();
       };
 
       const initSeasonTabs = () => {
@@ -533,25 +396,6 @@
         }
       };
 
-      const initLogbookSkeletons = () => {
-        if (!document.body.classList.contains('logbook-page') || reduceMotion) {
-          document.body.classList.add('logbook-loaded');
-          return;
-        }
-        const targets = [...document.querySelectorAll('.logbook-command, .logbook-pro-shell, .logbook-kpi-grid, .discipline-progress, .logbook-badge-wall')];
-        if (!targets.length) return;
-        targets.forEach(target => target.classList.add('logbook-loading-target'));
-        const wrap = document.createElement('div');
-        wrap.className = 'logbook-skeleton-wrap';
-        wrap.setAttribute('aria-hidden', 'true');
-        wrap.innerHTML = '<div class="logbook-skeleton-card"></div><div class="logbook-skeleton-card"></div><div class="logbook-skeleton-card"></div>';
-        targets[0].before(wrap);
-        window.setTimeout(() => {
-          wrap.remove();
-          document.body.classList.add('logbook-loaded');
-        }, 1200);
-      };
-
       const initBadgePop = () => {
         const badges = [...document.querySelectorAll('.badge-item, .badge-circle, .logbook-badge-wall article')];
         badges.forEach((badge, index) => {
@@ -570,12 +414,9 @@
       };
 
       markActiveSection();
-      initTiltCards();
-      initCursor();
-      initTypewriter();
       initSeasonTabs();
       initIntensityBars();
-      initLogbookSkeletons();
+      document.body.classList.add('logbook-loaded');
       initBadgePop();
     };
 
@@ -585,9 +426,9 @@
 
 // Carga la capa modular de animaciones sin obligar a duplicar imports en cada HTML.
 (function loadNoextEnhancementLayer(){
-  var version = '20260722-1';
+  var version = '20261109';
 
-  ['navbar','scroll-reveal','counters','typewriter','tilt','ui-extras'].forEach(function(name){
+  ['navbar','ui-extras'].forEach(function(name){
     var src = 'assets/js/' + name + '.js?v=' + version;
     if (document.querySelector('script[src^="assets/js/' + name + '.js"]')) return;
     var script = document.createElement('script');

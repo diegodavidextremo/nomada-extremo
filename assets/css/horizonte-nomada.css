@@ -39,7 +39,7 @@
   background-image:
     linear-gradient(90deg, rgba(5, 22, 28, .96) 0%, rgba(5, 22, 28, .78) 48%, rgba(5, 22, 28, .42) 100%),
     linear-gradient(0deg, rgba(5, 22, 28, .98) 0%, transparent 58%),
-    url('../images/noext/hero-principal.png');
+    url('../images/optimized/home-1440.webp?v=20261109');
   background-position: center;
   background-size: cover;
   transform: scale(1.015);

@@ -2,9 +2,9 @@
 (() => {
   'use strict';
   if (document.getElementById('chatBtn')) return;
-  const logo='assets/images/emblema-oficial-web.webp?v=20261005-8';
-  (document.getElementById('contactDock')||document.body).insertAdjacentHTML('afterbegin',`<button id="chatBtn" type="button" title="Asistente Nómada" aria-label="Abrir asistente Nómada" aria-expanded="false" aria-controls="chatPanel"><img src="${logo}" srcset="assets/images/optimized/emblema-oficial-256.webp 256w" sizes="48px" alt="" width="48" height="48"></button>`);
-  document.body.insertAdjacentHTML('beforeend',`<section id="chatPanel" role="dialog" aria-modal="false" aria-labelledby="chatTitle" hidden lang="es" translate="no"><header class="chat-header"><img class="chat-avatar-logo" src="${logo}" srcset="assets/images/optimized/emblema-oficial-256.webp 256w" sizes="48px" alt="" width="44" height="44"><div><h2 class="chat-nombre" id="chatTitle">Asistente Nómada</h2><p class="chat-estado">Guía de la web · en español</p></div><button class="chat-close" id="chatClose" type="button" aria-label="Cerrar asistente">×</button></header><div class="chat-body" id="chatBody" role="log" aria-label="Conversación" aria-live="polite" aria-relevant="additions"></div><div class="chat-controls"><div class="chat-quick-btns" id="chatQuick" aria-label="Sugerencias"></div><form class="chat-input-row" id="chatForm"><label class="sr-only" for="chatInput">Escribe tu pregunta</label><input id="chatInput" autocomplete="off" placeholder="Ej.: material para kayak" maxlength="400"><button type="submit">Enviar</button></form><div class="chat-tools"><button type="button" id="chatClear">Reiniciar</button><a href="contacto.html">Contacto</a><a href="faq.html">FAQ</a></div><p class="chat-privacy">Respuestas de la web, sin IA generativa. La conversación no se envía ni se guarda.</p></div></section>`);
+  const logo='assets/images/optimized/emblema-web-192.webp';
+  (document.getElementById('contactDock')||document.body).insertAdjacentHTML('afterbegin',`<button id="chatBtn" type="button" title="Asistente Nómada" aria-label="Abrir asistente Nómada" aria-expanded="false" aria-controls="chatPanel"><img src="${logo}" alt="" width="48" height="48"></button>`);
+  document.body.insertAdjacentHTML('beforeend',`<section id="chatPanel" role="dialog" aria-modal="false" aria-labelledby="chatTitle" hidden lang="es" translate="no"><header class="chat-header"><img class="chat-avatar-logo" src="${logo}" alt="" width="44" height="44"><div><h2 class="chat-nombre" id="chatTitle">Asistente Nómada</h2><p class="chat-estado">Guía de la web · en español</p></div><button class="chat-close" id="chatClose" type="button" aria-label="Cerrar asistente">×</button></header><div class="chat-body" id="chatBody" role="log" aria-label="Conversación" aria-live="polite" aria-relevant="additions"></div><div class="chat-controls"><div class="chat-quick-btns" id="chatQuick" aria-label="Sugerencias"></div><form class="chat-input-row" id="chatForm"><label class="sr-only" for="chatInput">Escribe tu pregunta</label><input id="chatInput" autocomplete="off" placeholder="Ej.: material para kayak" maxlength="400"><button type="submit">Enviar</button></form><div class="chat-tools"><button type="button" id="chatClear">Reiniciar</button><a href="contacto.html">Contacto</a><a href="faq.html">FAQ</a></div><p class="chat-privacy">Respuestas de la web, sin IA generativa. La conversación no se envía ni se guarda.</p></div></section>`);
   const $=id=>document.getElementById(id), panel=$('chatPanel'), button=$('chatBtn'), body=$('chatBody'), input=$('chatInput');
   const normalize=s=>s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9\s]/g,' ').replace(/\s+/g,' ').trim();
   let started=false, context=null, pages=[], generation=0;
@@ -18,7 +18,19 @@
   };
   function updateDutchUI(){const nl=isDutch();panel.lang=nl?'nl':'es';$('chatTitle').textContent=nl?'Nómada-assistent':'Asistente Nómada';panel.querySelector('.chat-estado').textContent=nl?'Websitegids · in het Nederlands':'Guía de la web · en español';$('chatClose').setAttribute('aria-label',nl?'Assistent sluiten':'Cerrar asistente');panel.querySelector('label[for=chatInput]').textContent=nl?'Stel je vraag':'Escribe tu pregunta';input.placeholder=nl?'Bijv.: uitrusting voor kajakken':'Ej.: material para kayak';$('chatForm').querySelector('button').textContent=nl?'Versturen':'Enviar';$('chatClear').textContent=nl?'Opnieuw beginnen':'Reiniciar';panel.querySelector('.chat-tools a[href="contacto.html"]').textContent=nl?'Contact':'Contacto';panel.querySelector('.chat-privacy').textContent=nl?'Antwoorden uit de website, zonder generatieve AI. Het gesprek wordt niet verzonden of opgeslagen.':'Respuestas de la web, sin IA generativa. La conversación no se envía ni se guarda.';}
   window.addEventListener('noext:languagechange',updateDutchUI);
-  const ready=fetch('assets/data/assistant-index.json').then(r=>{if(!r.ok)throw Error('index');return r.json();}).then(data=>{pages=data.pages||[];}).catch(()=>{});
+  let indexRequest;
+  function loadIndex() {
+    if (!indexRequest) {
+      indexRequest = fetch('assets/data/assistant-index.json')
+        .then(response => {
+          if (!response.ok) throw new Error('No se pudo cargar el índice');
+          return response.json();
+        })
+        .then(data => { pages = data.pages || []; })
+        .catch(() => { indexRequest = undefined; });
+    }
+    return indexRequest;
+  }
   const defaults=['Explorar actividades','Proyecto intermodular','Contactar'];
   function suggestions(items=defaults){$('chatQuick').replaceChildren();items.forEach(text=>{const b=document.createElement('button');b.type='button';b.className='chat-quick';b.textContent=tr(text);b.onclick=()=>ask(text,tr(text));$('chatQuick').append(b);});}
   function message(text,links=[],user=false){
@@ -55,7 +67,7 @@
   async function ask(raw,display=raw){
     raw=raw.trim().slice(0,400);if(!raw)return;const version=generation;message(display,[],true);input.value='';let q=normalize(raw);if(isDutch()){const words={duiken:'buceo',duik:'buceo',vliegen:'vuelo',vlucht:'vuelo',wandelen:'senderismo',wandeltocht:'senderismo',uitrusting:'material',kleding:'ropa',veiligheid:'seguridad',verzekering:'seguridad',reserveren:'reservar',boeking:'reserva',betalen:'pagar',boeken:'reservar',gezin:'familia',kinderen:'nino',groep:'grupo',opleiding:'formacion',docenten:'profesores',prijzen:'precio',prijs:'precio',cadeaubon:'bono',noodgeval:'emergencia',hulp:'ayuda',hallo:'hola',dank:'gracias',mountainbike:'btt',kajak:'kayak',kajakken:'kayak',project:'proyecto'};q=q.split(' ').map(w=>words[w]||w).join(' ');}const answer=curated(q);
     if(answer){message(answer[0],answer[1]);suggestions(answer[2]);return;}
-    await ready;if(version!==generation)return;
+    await loadIndex();if(version!==generation)return;
     const stop=new Set('a al de del el en la las los un una y o que es hay para por con como donde quiero saber sobre me puedes mostrar tiene'.split(' ')),tokens=q.split(' ').filter(w=>w.length>2&&!stop.has(w));
     const matches=pages.map(p=>{const title=normalize(p.title),all=title+' '+normalize(p.keywords),count=tokens.filter(w=>all.includes(w)).length;return {...p,score:count===tokens.length&&count>0?tokens.reduce((n,w)=>n+(title.includes(w)?6:1),0):0};}).filter(p=>p.score>0).sort((a,b)=>b.score-a.score).slice(0,3);
     if(matches.length)message('He encontrado estas páginas relacionadas. Abre la que corresponda para consultar su contenido:',matches.map(p=>[p.title,p.href]));

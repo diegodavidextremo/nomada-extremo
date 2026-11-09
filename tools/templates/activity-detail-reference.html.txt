@@ -9,8 +9,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png?v=20261005-8">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png?v=20261005-8">
 <link rel="manifest" href="site.webmanifest?v=20261005-8">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&amp;family=DM+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/styles.css?v=20261109">
 <link rel="stylesheet" href="assets/css/design-system.css?v=20261005-8">
 <link rel="stylesheet" href="assets/css/brand-interface.css?v=20261006-1">
 <link rel="stylesheet" href="assets/css/site-coherence.css?v=20261012-1"></head>
@@ -39,6 +38,6 @@
 </tbody></table></div>
 <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;"><a href="reservas.html" class="btn btn-arena">Solicitar experiencia</a><a href="https://wa.me/34623179618" class="btn btn-mar" target="_blank" rel="noopener">Consultar por WhatsApp</a></div>
 </div></main>
-<div id="footer-placeholder"></div><script src="assets/js/components.js?v=20261014-2"></script><script src="assets/js/main.js?v=20261004-1"></script><script src="assets/js/chatbot.js?v=20261013-1"></script><script src="assets/js/stage3.js?v=20261013-1"></script>
+<div id="footer-placeholder"></div><script defer src="assets/js/components.js?v=20261109"></script><script defer src="assets/js/main.js?v=20261109"></script><script defer src="assets/js/chatbot.js?v=20261109"></script><script defer src="assets/js/stage3.js?v=20261013-1"></script>
 
 </body></html>

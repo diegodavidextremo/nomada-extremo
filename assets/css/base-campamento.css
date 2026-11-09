@@ -21,7 +21,7 @@
 .base-hero__bg {
   background:
     linear-gradient(110deg, rgba(15,26,19,.96), rgba(30,74,107,.74), rgba(196,150,106,.28)),
-    url('../images/noext/hero-principal.png') center/cover no-repeat;
+    url('../images/optimized/home-1440.webp?v=20261109') center/cover no-repeat;
   transform: scale(1.03);
 }
 

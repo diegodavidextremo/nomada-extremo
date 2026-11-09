@@ -3,7 +3,7 @@
 
   const supported = ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'];
   const storageKey = 'noext-language';
-  const catalogVersion = '20261025-2';
+  const catalogVersion = '20261109';
   const page = (location.pathname.split('/').pop() || 'index.html').replace('.html', '') || 'index';
   const ignoredTags = new Set(['SCRIPT', 'STYLE', 'NOSCRIPT', 'TEMPLATE', 'CODE', 'PRE']);
   const originalText = new WeakMap();
@@ -108,7 +108,8 @@
   }
 
   function applyExplicit(root, language, dictionary, fallback) {
-    const scope = root.nodeType === Node.ELEMENT_NODE ? root : document;
+    const scope = root.nodeType === Node.TEXT_NODE ? root.parentElement?.closest('[data-i18n]') : root;
+    if (!scope) return;
     const candidates = [];
     if (scope.matches?.('[data-i18n]')) candidates.push(scope);
     scope.querySelectorAll?.('[data-i18n]').forEach(element => candidates.push(element));
@@ -210,13 +211,12 @@
     const revision = ++languageRevision;
     const next = supported.includes(language) ? language : 'es';
     try {
-      const fallback = await load('es');
-      const dictionary = next === 'es' ? fallback : await load(next);
+      const [fallback, dictionary] = await Promise.all([load('es'), next === 'es' ? null : load(next)]);
       if (revision !== languageRevision) return;
       current = next;
       storeLanguage(current);
-      applyDocument(current, dictionary, fallback);
-      if (announce) window.dispatchEvent(new CustomEvent('noext:languagechange', { detail: { language: current, dictionary, fallback } }));
+      applyDocument(current, dictionary || fallback, fallback);
+      if (announce) window.dispatchEvent(new CustomEvent('noext:languagechange', { detail: { language: current, dictionary: dictionary || fallback, fallback } }));
     } catch (error) {
       if (revision !== languageRevision) return;
       console.warn('[Nómada Extremo i18n]', error.message);
@@ -272,7 +272,7 @@
       if (!source) continue;
       // Other scripts render some widgets directly in the chosen language.
       // Audit only text with a Spanish source key in the shared catalogue.
-      if (fallback.strings?.[source] !== undefined && current !== 'es' && dictionary.strings?.[source] === undefined) {
+      if (current !== 'es' && sourceHashes.get(current)?.has(hash(source)) && dictionary.strings?.[source] === undefined) {
         missing.push({ text: source, element: node.parentElement.tagName.toLowerCase(), page: location.pathname.split('/').pop() || 'index.html' });
       }
     }

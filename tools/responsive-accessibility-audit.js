@@ -43,7 +43,7 @@ for (const file of pages) {
     .filter(href => !fs.existsSync(path.resolve(path.dirname(file), decodeURIComponent(href))));
   if (!has(/<meta\s+name=["']viewport["']/i, html)) checks.push('Falta meta viewport');
   if (!isRedirect && h1Count !== 1) checks.push(`H1 esperado 1, encontrado ${h1Count}`);
-  if (!isRedirect && !has(/<script\s+src=["']assets\/js\/components\.js(?:\?[^"']*)?["']/i, html)) checks.push('No carga components.js compartido');
+  if (!isRedirect && !has(/<script\b[^>]*\bsrc=["']assets\/js\/components\.js(?:\?[^"']*)?["']/i, html)) checks.push('No carga components.js compartido');
   if (!isRedirect && !has(/<link\s+rel=["']icon["']/i, html)) checks.push('No declara favicon');
   if (!isRedirect && !has(/<meta\s+name=["']description["']/i, html)) checks.push('Falta meta description');
   if (duplicateIds.length) checks.push(`ID duplicado: ${duplicateIds.join(', ')}`);
