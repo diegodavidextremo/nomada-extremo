@@ -35,13 +35,20 @@
   const tools=document.createElement('div'); tools.className='activity-filter-tools'; tools.innerHTML='<p class="activity-filter-count" aria-live="polite"></p><button class="btn btn-outline activity-filter-clear" type="button">Limpiar filtros</button>';
   panel.append(tools);
   const empty=document.createElement('div');empty.className='activity-filter-empty';empty.hidden=true;empty.setAttribute('role','status');empty.textContent='No hay actividades que coincidan con esta combinación. Prueba a limpiar algún filtro.';
-  document.querySelector('#top-fichas')?.before(empty);
+  const featured = document.querySelector('#top-fichas');
+  const familyNav = document.querySelector('.catalog-navigation');
+  featured?.before(empty);
+  const hasFilters = () => Boolean(query || [...selected.values()].some(values => values.size));
   const matches=(card,key,values)=>!values.size||[...values].some(v=>norm(card.dataset[key]).split(',').some(item=>item.includes(v)||v.includes(item)));
   const translate=source=>window.noextTranslate?.(source)||source;
-  function updateLabels(){tools.querySelector('.activity-filter-clear').textContent=translate('Limpiar filtros');tools.querySelector('.activity-filter-clear').hidden=!query&&![...selected.values()].some(values=>values.size);tools.querySelector('.activity-filter-count').textContent=visibleCount+' '+translate(visibleCount===1?'propuesta encontrada':'propuestas encontradas');empty.textContent=translate('No hay actividades que coincidan con esta combinación. Prueba a limpiar algún filtro.');}
+  function updateLabels(){tools.querySelector('.activity-filter-clear').textContent=translate('Limpiar filtros');tools.querySelector('.activity-filter-clear').hidden=!hasFilters();tools.querySelector('.activity-filter-count').textContent=visibleCount+' '+translate(visibleCount===1?'propuesta encontrada':'propuestas encontradas');empty.textContent=translate('No hay actividades que coincidan con esta combinación. Prueba a limpiar algún filtro.');}
   let visibleCount=cards.length;
   const selectedMatches=card=>[...selected].every(([k,v])=>matches(card,k,v))&&(!query||norm(card.dataset.search+' '+card.textContent).includes(query));
-  function apply(){saveFilters();visibleCount=0;cards.forEach(card=>{const show=selectedMatches(card);if(show){card.hidden=false;card.classList.remove('filtering-out');card.classList.add('filtering-in');window.setTimeout(()=>card.classList.remove('filtering-in'),260);visibleCount++;}else{card.classList.remove('filtering-in');card.classList.add('filtering-out');window.setTimeout(()=>{if(card.classList.contains('filtering-out'))card.hidden=true;},190);}});empty.hidden=visibleCount!==0;sections.forEach(section=>section.hidden=!cards.some(card=>card.closest('section')===section&&selectedMatches(card)));updateLabels();}
+  function apply(){saveFilters();visibleCount=0;cards.forEach(card=>{const show=selectedMatches(card);if(show){card.hidden=false;card.classList.remove('filtering-out');card.classList.add('filtering-in');window.setTimeout(()=>card.classList.remove('filtering-in'),260);visibleCount++;}else{card.classList.remove('filtering-in');card.classList.add('filtering-out');window.setTimeout(()=>{if(card.classList.contains('filtering-out'))card.hidden=true;},190);}});empty.hidden=visibleCount!==0;updateSections();
+    if (featured) featured.hidden = hasFilters();
+    if (familyNav) familyNav.hidden = hasFilters();
+    updateLabels();
+  }
   tools.querySelector('button').addEventListener('click',()=>{query='';search.querySelector('input').value='';selected.forEach(s=>s.clear());panel.querySelectorAll('.filter-chip').forEach(c=>{c.classList.remove('is-active');c.setAttribute('aria-pressed','false');});apply();});
   window.addEventListener('noext:languagechange',updateLabels);
   const sections=[...new Set(cards.map(card=>card.closest('section')).filter(Boolean))];
@@ -58,6 +65,8 @@
   const restored=new URLSearchParams(location.search);
   query=norm(restored.get('q'));search.querySelector('input').value=restored.get('q')||'';
   selected.forEach((values,key)=>{for(const value of (restored.get('f-'+key)||'').split('|').filter(Boolean))values.add(value);});
+  const filterGroups = panel.querySelector('.filter-groups');
+  if (filterGroups && [...selected.values()].some(values => values.size)) filterGroups.open = true;
   panel.querySelectorAll('.filter-chip').forEach(chip=>{const active=selected.get(chip.dataset.filterDimension)?.has(chip.dataset.filterValue)||false;chip.classList.toggle('is-active',active);chip.setAttribute('aria-pressed',String(active));});
   apply();
 })();

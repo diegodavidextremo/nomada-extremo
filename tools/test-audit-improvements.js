@@ -34,6 +34,15 @@ const report={date:'2026-10-25',checks:[],pages:[],errors:[],missing:[],snapshot
  assert(await page.locator('#material-preparacion-home').isVisible());
  report.checks.push('Home: deep link opens all ancestor groups');
  await visit('packs.html');
+ const packCards = page.locator('.experience-card');
+ assert.equal(await packCards.count(), 12);
+ assert(await packCards.evaluateAll(cards => cards.every(card => {
+   const metadata = card.querySelector('.experience-card__meta');
+   return metadata.children.length === 3
+     && metadata.children[1].textContent === card.dataset.packCategory
+     && metadata.previousElementSibling.tagName === 'H3'
+     && metadata.nextElementSibling.classList.contains('experience-card__combo');
+ })));
  const formats=page.locator('#configurador .config-opt.arena');assert.equal(await formats.count(),5);
  assert.equal(await page.locator('#configurador span.config-opt').count(),0);
  for(const b of await formats.all()){await b.click();assert.equal(await b.getAttribute('aria-pressed'),'true');assert.equal(await page.locator('#configurador .config-opt.arena.sel').count(),1);}
@@ -51,11 +60,24 @@ const report={date:'2026-10-25',checks:[],pages:[],errors:[],missing:[],snapshot
  await page.screenshot({path:path.join(out,'kayak-mobile.png'),fullPage:true});
  report.checks.push('Kayak: canonical data equals sheet; preparation print layout; H2 panels');
  await visit('actividad-detalle.html');assert(page.url().endsWith('kayak-mar.html'));report.checks.push('Old sample redirects to canonical kayak');
- await visit('actividades.html');await page.locator('.filter-groups summary').click();await page.locator('.filter-chip').filter({hasText:/^Mar$/}).click();await page.waitForTimeout(350);
+ await visit('actividades.html');
+ assert.equal(await page.locator('.editorial-top-card:visible').count(), 3);
+ await page.locator('.more-featured-activities > summary').click();
+ assert.equal(await page.locator('.editorial-top-card:visible').count(), 12);
+ await page.locator('.activities-hero a.btn').click();
+ assert.equal(new URL(page.url()).hash, '#filtros-actividades');
+ await page.locator('.filter-groups summary').click();await page.locator('.filter-chip').filter({hasText:/^Mar$/}).click();await page.waitForTimeout(350);
  const count=await page.locator('.ficha:visible').count();assert(count>0&&count<33);assert(page.url().includes('f-'));
+ assert(!(await page.locator('#top-fichas').isVisible()));
+ await page.locator('#kayak-mar .catalog-detail-link').click();
+ assert(page.url().endsWith('kayak-mar.html'));
+ await page.goBack();
+ assert.equal(new URL(page.url()).searchParams.get('f-medio'), 'mar');
+ await page.waitForFunction(() => document.querySelector('[data-filter-value=mar]')?.getAttribute('aria-pressed') === 'true');
  await page.reload();await page.waitForTimeout(550);assert.equal(await page.locator('.ficha:visible').count(),count);
  await page.locator('.activity-filter-clear').click();await page.waitForTimeout(350);assert.equal(await page.locator('.ficha:visible').count(),33);
- report.checks.push('Catalog: filters survive reload and reset to all 33 activities');
+ assert(await page.locator('#top-fichas').isVisible());
+ report.checks.push('Catalog: featured cards, filter shortcut, detail navigation and filter restoration');
  for(const file of ['audiovisual.html','grupos.html','transparencia-financiacion.html']){await visit(file);for(const region of await page.locator('.responsive-table,.finance-table-wrap').all()){assert.equal(await region.getAttribute('tabindex'),'0');assert.equal(await region.getAttribute('role'),'region');await region.focus();assert(await region.evaluate(e=>document.activeElement===e));}}
  report.checks.push('Scrollable tables accept keyboard focus');
  const pages=fs.readdirSync(root).filter(f=>f.endsWith('.html')&&!/http-equiv="refresh"/.test(fs.readFileSync(path.join(root,f),'utf8')));

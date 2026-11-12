@@ -20,3 +20,20 @@ body:has(form) form:not(.search-form){border-radius:18px!important;box-shadow:0 
 @media(min-width:1700px){.experience-catalog>.container,.experience-gifts>.container{max-width:1440px!important}}
 @media(max-width:1050px){.experience-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.experience-gift-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#brandProGrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:650px){.experience-grid{grid-template-columns:1fr!important}.experience-gift-grid,.experience-values,.gmn-applied .experience-values{grid-template-columns:1fr}.experience-toolbar>span{width:100%;margin-left:0}.experience-card__content{padding:1.2rem}.catalog-mode .activity-location-grid{grid-template-columns:1fr!important}.catalog-mode .ficha-tech-btn{width:100%!important}.catalog-mode .activity-detail-panel>div{grid-template-columns:1fr!important}#brandProGrid{grid-template-columns:1fr!important}.experience-ending .btn{width:100%}.experience-gift{padding:1.5rem}}
+
+.packs-page .experience-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin: .6rem 0 .85rem;
+}
+.packs-page .experience-card__meta > span {
+  border-radius: 6px;
+  padding: .25rem .5rem;
+  background: #edf2ef;
+  color: #274d55;
+}
+.packs-page .experience-card__meta > span:first-child {
+  background: #f1e8dc;
+  color: #654623;
+}
