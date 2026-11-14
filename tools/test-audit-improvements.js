@@ -36,6 +36,12 @@ const report={date:'2026-10-25',checks:[],pages:[],errors:[],missing:[],snapshot
  await visit('packs.html');
  const packCards = page.locator('.experience-card');
  assert.equal(await packCards.count(), 12);
+ const lastPack = page.locator('#pack-elite-nomada');
+ assert.equal(await lastPack.locator('img').count(), 0);
+ await page.locator('[data-pack-filter="Privadas"]').click();
+ await lastPack.scrollIntoViewIfNeeded();
+ await page.waitForFunction(() => document.querySelector('#pack-elite-nomada img')?.naturalWidth > 0);
+ await page.locator('[data-pack-filter="Todos"]').click();
  assert(await packCards.evaluateAll(cards => cards.every(card => {
    const metadata = card.querySelector('.experience-card__meta');
    return metadata.children.length === 3
@@ -71,9 +77,14 @@ const report={date:'2026-10-25',checks:[],pages:[],errors:[],missing:[],snapshot
  assert(!(await page.locator('#top-fichas').isVisible()));
  await page.locator('#kayak-mar .catalog-detail-link').click();
  assert(page.url().endsWith('kayak-mar.html'));
+ const kayakRequirements = await page.locator('.activity-meta-list div').filter({hasText:'Experiencia previa'}).locator('strong').innerText();
  await page.goBack();
  assert.equal(new URL(page.url()).searchParams.get('f-medio'), 'mar');
  await page.waitForFunction(() => document.querySelector('[data-filter-value=mar]')?.getAttribute('aria-pressed') === 'true');
+ const kayak = page.locator('#kayak-mar .catalog-mode-details').first();
+ await kayak.locator('summary').click();
+ assert.equal(await kayak.locator('[data-spec-duration]').innerText(), duration);
+ assert.match(await kayak.locator('.catalog-requirements').innerText(), new RegExp(kayakRequirements.replace(/[.*+?^$()|[\]{}]/g, '\\$&')));
  await page.reload();await page.waitForTimeout(550);assert.equal(await page.locator('.ficha:visible').count(),count);
  await page.locator('.activity-filter-clear').click();await page.waitForTimeout(350);assert.equal(await page.locator('.ficha:visible').count(),33);
  assert(await page.locator('#top-fichas').isVisible());

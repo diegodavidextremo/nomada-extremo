@@ -1,4 +1,20 @@
 document.addEventListener('DOMContentLoaded',()=>{
+ const deferredPhotos = document.querySelectorAll('.packs-page template[data-pack-photo]');
+ const showPhoto = template => template.replaceWith(template.content);
+ if ('IntersectionObserver' in window && deferredPhotos.length) {
+  const templates = new Map([...deferredPhotos].map(template => [template.parentElement, template]));
+  const observer = new IntersectionObserver(entries => {
+   for (const entry of entries) {
+    if (!entry.isIntersecting) continue;
+    showPhoto(templates.get(entry.target));
+    templates.delete(entry.target);
+    observer.unobserve(entry.target);
+   }
+  }, {rootMargin:'240px'});
+  templates.forEach((template, photo) => observer.observe(photo));
+ } else {
+  deferredPhotos.forEach(showPhoto);
+ }
  document.querySelectorAll('[data-pack-filter]').forEach(button=>button.addEventListener('click',()=>{
   document.querySelectorAll('[data-pack-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
   let count=0;document.querySelectorAll('[data-pack-category]').forEach(card=>{card.hidden=button.dataset.packFilter!=='Todos'&&card.dataset.packCategory!==button.dataset.packFilter;if(!card.hidden)count++;});
