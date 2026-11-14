@@ -107,6 +107,8 @@
     if(event.key==='End'){event.preventDefault();show(chapters.length-1);}
   });
   function revealHash() {
+    const guide = document.getElementById('presentar');
+    if (guide && location.hash === '#presentar') guide.open = true;
     const target=document.getElementById(decodeURIComponent(location.hash.slice(1)));
     if(!target)return;
     const chapter=target.closest('[data-chapter]');
@@ -115,6 +117,7 @@
     target.scrollIntoView({block:'start',behavior:'instant'});
   }
   window.addEventListener('hashchange',revealHash);
+  if (location.hash === '#presentar') revealHash();
   document.addEventListener('click',event=>{
     const a=event.target.closest('a[href^="#"]');
     if(!active||!a)return;
