@@ -10,6 +10,19 @@
 .im-hero .n3-lead { max-width:57ch; color:#d9e5e8; }
 .im-hero .n3-stats { margin-top:3rem; }
 .im-meta { display:flex; flex-wrap:wrap; gap:.7rem 2rem; font-size:.8rem; margin-top:1.25rem; }
+.im-presentation { padding-block:clamp(2rem,5vw,4rem); background:#edf3f0; }
+.im-presentation-stops {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));
+  gap:1rem;
+  margin:1.5rem 0 0;
+  padding-inline-start:1.5rem;
+}
+.im-presentation-stops li { padding:.85rem 1rem; background:#fff; border:1px solid #cfddda; border-radius:12px; }
+.im-presentation-stops li::marker { color:#285864; font-weight:700; }
+.im-presentation-stops a { display:inline-flex; align-items:center; min-height:44px; color:#194d61; text-decoration:underline; text-underline-offset:.2em; }
+.im-presentation-stops p { margin:0; line-height:1.55; }
+body.defense-mode .im-presentation { display:none; }
 .im-layout { display:grid; grid-template-columns:210px minmax(0,1fr); gap:clamp(2rem,5vw,5rem); }
 .im-index { position:sticky; top:calc(var(--header-offset) + 1rem); align-self:start; max-height:calc(100dvh - var(--header-offset) - 2rem); overflow-y:auto; padding-block:2rem; font-size:.77rem; }
 .im-index strong { display:block; letter-spacing:.1em; text-transform:uppercase; margin-bottom:.75rem; }
